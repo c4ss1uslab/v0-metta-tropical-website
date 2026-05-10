@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Metta Tropical Collective Design System */
+  --background: #FFFFFF;
+  --foreground: #111827;
+  
+  /* Primary Colors */
+  --surface-base: #FFFFFF;
+  --surface-cream: #FAF8F5;
+  --surface-accent: #F3FF82;
+  --surface-technical: #4FC1E0;
+  --surface-organic: #7D8764;
+  --surface-raised: #AD2831;
+  --surface-ritual: #5B21B6;
+  
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --text-tertiary: #8C877F;
+  
+  /* Borders */
+  --border-default: #E5E7EB;
+  --border-muted: #1C1C1C;
+  
+  /* Component tokens */
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  --popover: #FFFFFF;
+  --popover-foreground: #111827;
+  --primary: #111827;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FAF8F5;
+  --secondary-foreground: #111827;
+  --muted: #FAF8F5;
+  --muted-foreground: #4B5563;
+  --accent: #F3FF82;
+  --accent-foreground: #111827;
+  --destructive: #AD2831;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #7D8764;
+  --radius: 0.25rem;
+}
+
+@theme inline {
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  
+  /* Custom colors */
+  --color-cream: var(--surface-cream);
+  --color-yellow: var(--surface-accent);
+  --color-olive: var(--surface-organic);
+  --color-cyan: var(--surface-technical);
+  --color-crimson: var(--surface-raised);
+  --color-ritual: var(--surface-ritual);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  p, span, div {
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  .font-editorial {
+    font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  }
+  
+  .font-ui {
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Selection */
+::selection {
+  background: var(--surface-accent);
+  color: var(--text-primary);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
