@@ -49,21 +49,21 @@ export function MettaExplanation() {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Name</span>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
               <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 Why Metta?
               </h2>
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              At its heart, <em className="text-foreground">Metta</em>, from the Pali language, means a kind of boundless and self-giving love. For us, it holds three energies embedded in our work:
+              At its heart, <em className="text-foreground">Metta</em>, from the Pali language, means a kind of boundless and self-giving love towards all living beings. For us, it holds three energies embedded in our work:
             </p>
 
             <div className="space-y-6">
               <div className="pl-6 border-l-2 border-olive">
                 <h3 className="font-serif text-xl font-medium text-foreground">Loving-kindness</h3>
                 <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                  A fierce, boundless and self-giving love towards all living beings, especially in a time of societal collapse.
+                  A fierce, boundless and all embracing love towards the liberation and flourishing of all life. It evokes the heart of the Bodhisattva in a time of societal collapse. 
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export function MettaExplanation() {
             </div>
 
             <p className="text-foreground font-medium italic">
-              Metta is the orientation that allows us to face the metacrisis without collapsing into despair, simplistic solutions or domination.
+              Metta is the orientation that allows us to face the metacrisis with the kind of wisdom that prevent us from collapsing into despair, simplistic solutions or domination.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export function TropicalSection() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              <em className="text-foreground">Tropical</em> is an invocation. It calls in the heat, the pulse, the wild intelligence of life. The eros, aliveness and creative force that lives in Brazil and across the Global South.
+              <em className="text-foreground">Tropical</em> is an invocation. It calls in the warmth, the pulse, the wild intelligence of life. The eros, aliveness and creative force that lives in Brazil and across the Global South.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -118,12 +118,13 @@ export function TropicalSection() {
               <p className="font-serif text-xl text-foreground italic leading-relaxed">
                 To be tropical is to sense from soul,<br />
                 to be rooted in territory,<br />
-                to act from eros.
+                to celebrate life,<br />
+                to follow our eros.
               </p>
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              It reminds us that any response to the metacrisis and future worth building must weave global south wisdom.
+              It reminds us that what has survived erasure still holds something essential. And that any honest reckoning with collapse must find its way back to it.
             </p>
           </div>
 
@@ -152,21 +153,33 @@ export function CollectiveSection() {
         </h2>
 
         <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-          From Latin, <em className="text-background">collectivus</em> means &ldquo;gathering together&rdquo;. We say yes to that, but go beyond. It&apos;s a commitment to become something larger than ourselves.
+          Because you cannot wake up alone.
         </p>
 
         <p className="mt-6 text-background/80 leading-relaxed max-w-2xl mx-auto">
-          Collective names the movement from separation to inter-being, from individuals with shared interests coming together to a living body and field of relationships that are bound to each other. It is the slow formation of trust, intimacy, mutual accountability, and devotion to walk together towards a shared vision.
+          Collective names the movement from separation to inter-being, from individualism to interdependence, from a gathering of individuals with shared values to a living field of relationships bound to each other and to something larger than ourselves.
         </p>
 
         <div className="mt-12 p-8 bg-background/10 border border-background/20">
           <p className="font-serif text-xl text-background italic leading-relaxed">
-            We are evoking the spirit of a Sangha and friendship: not just a group of individuals, but a &ldquo;body&rdquo; or &ldquo;river&rdquo; that flows together, where individuals share collective practices, worldviews, visions and language that supports individual and collective unfolding.
+            We are evoking the spirit of Sangha. Not a network, but a group of friends who practice together, grieves together, thinks together, listens together and finds — in the space between us — the wisdom none of us carries alone.
           </p>
         </div>
 
         <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-          It is a relational path, where we remember how to live, care and love as a single organism in service of life.
+          This where we can be truly transformed. Where our ways of seeing, being, knowing and doing are cracked open and rebuilt in deeper alignment with life. Where we remember, slowly, imperfectly and together, how to care, love and support each other.
+        </p>
+
+        <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          We are inviting the ones who feel the weight of this moment and have chosen to offer their lives in response to join us. And as we do so, we do the work of building trust, intimacy, shared language, shared vision, and shared understanding of who we are, where we are, and what is being asked of us.
+        </p>
+
+        <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          So that when things get harder — and they will — we are not starting from scratch. We already know how to move as one body.
+        </p>
+
+        <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          It is in times of collapse, when small islands of coherence have the capacity to shift the entire system to a higher order.
         </p>
       </div>
     </section>
