@@ -60,15 +60,15 @@ export function IntroductionSection() {
               </div>
 
               <p className="text-muted-foreground leading-relaxed">
-                And many of our attempts to respond have only been deepening the crisis—reproducing the very logic that created it.
+                And many of our attempts to respond have only been deepening the crisis—reproducing the very logic of separation, extraction and control that created it.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Metta Tropical Collective</strong> is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away. Those convinced that any serious response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
+                <strong className="text-foreground">Metta Tropical Collective</strong>  is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                We come together not to optimize and fix a broken system in order to work for a greater number of humans and species, but to hospice it. To question its own foundations and engage with intimate communities, sacred spaces, radical ideas and collective practices that shift the very ways we see, be, know and respond to the metacrisis we are facing.
+                We come together not to optimize or fix a broken system in order to work for a greater number of humans and species, but to question its own foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
               </p>
             </div>
 
