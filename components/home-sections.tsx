@@ -99,12 +99,24 @@ export function IntroductionSection() {
             </blockquote>
 
             <p className="text-muted-foreground leading-relaxed">
-              We are building the educational and communal structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to offering their lives in service of the liberation and flourishing of all life.
+              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns — ways of perceiving, valuing, and participating in the world that are no longer serving life.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              We are relentlessly cultivating the soil for the emergence of a different kind of human, a different kind of community, capable of stewarding culture and society in this time between worlds. One rooted in a shared story of value, wisdom, belonging, and intimate relationship with all life.
+              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of human development.
             </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
+            </p>
+
+           <p className="text-muted-foreground leading-relaxed">
+              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will.
+            </p>           
+
+           <p className="text-muted-foreground leading-relaxed">
+              Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
+            </p>           
 
             <div className="relative aspect-[21/9] overflow-hidden my-12">
               <Image
@@ -162,7 +174,10 @@ export function FieldsOfWorkSection() {
             Fields of Work
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Within our Collective, we serve five main areas of exploration that we consider crucial for responding to our time of crisis.
+            In response to this scenario, we are exploring how to build new forms of Relational & Educational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
+          </p>
+          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Our work is ultimately an inquiry into who we must become and what kind of containers must emerge in this time between worlds in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility, and in service of the flourishing of all life.
           </p>
         </div>
 
