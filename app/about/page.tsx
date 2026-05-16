@@ -208,9 +208,8 @@ export default function AboutPage() {
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-olive font-medium text-sm tracking-wide uppercase">Our Fields</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Fields of Work
+                Our Fields of Work
               </h2>
               <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Metta Tropical Collective is a living community, intentionally small and deeply relational. Within our Collective, we serve five main areas of exploration.
