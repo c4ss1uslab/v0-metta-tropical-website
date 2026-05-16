@@ -99,7 +99,7 @@ export function IntroductionSection() {
             </blockquote>
 
             <p className="text-muted-foreground leading-relaxed">
-              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns — ways of perceiving, valuing, and participating in the world that are no longer serving life.
+              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns — <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -145,21 +145,21 @@ export function FieldsOfWorkSection() {
     {
       title: "Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
-      description: "Deep investigation into what has brought us here, what is happening now, and what is trying to emerge through articles, essays, and collaborative thinking.",
+      description: "This is the space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to the kind of narrative-building and cultural sensemaking that can orient action in a time of uncertainty.",
       color: "border-cyan",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rosette%20Bearing%20the%20Names%20and%20Titles%20of%20Shah%20Jahan%2C%20vintage%20illustration.%20Image%20by%20rawpixel-xIf2OhkvtW6WrGpOH53bXXaPFg2kKR.jpg",
     },
     {
       title: "Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
-      description: "Mapping, connecting, and weaving remarkable initiatives into a coherent, multi-decade developmental pathway accessible to those in the Global South.",
+      description: "We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway—making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South. Think of it as the educational space that doesn&apos;t yet exist.",
       color: "border-yellow",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
     },
     {
       title: "Collective Practice",
       subtitle: "Transforming worldview into embodied action",
-      description: "Where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act.",
+      description: "This is the space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving together, listening deeply, working with our bodies, practicing being with the natural world.",
       color: "border-crimson",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/designretrospace-Lej4ROEDLMRjlkDkkYE8wc5yFqra7s.jpeg",
     },

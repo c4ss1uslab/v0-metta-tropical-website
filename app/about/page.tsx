@@ -224,7 +224,7 @@ export default function AboutPage() {
                   <h3 className="font-serif text-2xl font-medium text-foreground">Transformative Educational Lab</h3>
                   <p className="text-olive text-sm font-medium">Education for the end of the world as we know it</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    This is the living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep experimenting with what it actually takes to build the foundations for a wisdom-centered education.
+                    This is the living laboratory where we are continuously testing, refining and deepening the parts and pieces of our Educational Architecture. Through retreats, residencies, courses, practices and immersive and experiential programs—developed in-house and in collaboration with fellow educators—we keep experimenting with what it actually takes to build the foundations for a wisdom-centered education capable of deeply transforming the ways in which we relate to all life - self, other, world and the sacred - as a way of preparing ourselves to respond to the metacrisis and serve the flourishing of all life.
                   </p>
                 </div>
                 <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden">
@@ -251,7 +251,7 @@ export default function AboutPage() {
                   <h3 className="font-serif text-2xl font-medium text-foreground">Research & Inquiry</h3>
                   <p className="text-cyan text-sm font-medium">Investigating the most pressing questions shaping our world today</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    This is the space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to the kind of narrative-building and cultural sensemaking that can orient action in a time of uncertainty.
+                    This is the space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to the kind of narrative-building and cultural sensemaking that can orient action in a time of uncertainty. If you are writing and thinking at the edge of culture—on soul, systems, soil, or society—we want to think alongside you.
                   </p>
                 </div>
               </div>
