@@ -46,73 +46,80 @@ export function HeroSection() {
 }
 
 export function IntroductionSection() {
-        {/* Introduction */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              <div className="space-y-8">
-                <div>
-                  <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                    We are living through the unraveling of a world that can no longer sustain its own promises.
-                  </h2>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  And many of our attempts to respond have only been deepening the crisis—reproducing the very logic that created it.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Metta Tropical Collective</strong> is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away. Those convinced that any serious response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  We come together not to optimize and fix a broken system in order to work for a greater number of humans and species, but to hospice it. To question its own foundations and engage with intimate communities, sacred spaces, radical ideas and collective practices that shift the very ways we see, be, know and respond to the metacrisis we are facing.
-                </p>
-              </div>
-
-              <div className="relative aspect-[4/5] rounded-sm overflow-hidden lg:sticky lg:top-24">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PNG%20Toucan%20Ariel%2C%20vintage%20Brazilian%20bird%20illustration%20on%20transparent%20background.%20Remixed%20by%20rawpixel.-8KQu3ICTu2kRiw9TlEOmcTvp8sSwWz.png"
-                  alt="Toucan Ariel, vintage Brazilian bird illustration"
-                  fill
-                  className="object-contain bg-foreground"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Educational Work */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+  return (
+    <>
+      {/* Introduction */}
+      <section className="py-24 lg:py-32 bg-background">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
               <div>
                 <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                  Our work is fundamentally educational.
+                  We are living through the unraveling of a world that can no longer sustain its own promises.
                 </h2>
               </div>
 
-“Education is the Metacrisis: Why it’s time to see planetary crises as a species-wide learning opportunity.” — Zak Stein
-
               <p className="text-muted-foreground leading-relaxed">
-                We are building the educational and communal structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to offering their lives in service of the liberation and flourishing of all life.
+                And many of our attempts to respond have only been deepening the crisis—reproducing the very logic that created it.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                We are relentlessly cultivating the soil for the emergence of a different kind of human, a different kind of community, capable of stewarding culture and society in this time between worlds. One rooted in a shared story of value, wisdom, belonging, and intimate relationship with all life.
+                <strong className="text-foreground">Metta Tropical Collective</strong> is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away. Those convinced that any serious response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
               </p>
 
-              <div className="relative aspect-[21/9] overflow-hidden my-12">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Peaks%20And%20Plateaus%20-%20jesse%20treece-4b8b9o6GISsRjOsmCjAj5JCXJJFKzO.jpeg"
-                  alt="Peaks and Plateaus collage by Jesse Treece - a surreal landscape representing layers of transformation"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                We come together not to optimize and fix a broken system in order to work for a greater number of humans and species, but to hospice it. To question its own foundations and engage with intimate communities, sacred spaces, radical ideas and collective practices that shift the very ways we see, be, know and respond to the metacrisis we are facing.
+              </p>
+            </div>
+
+            <div className="relative aspect-[4/5] rounded-sm overflow-hidden lg:sticky lg:top-24">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PNG%20Toucan%20Ariel%2C%20vintage%20Brazilian%20bird%20illustration%20on%20transparent%20background.%20Remixed%20by%20rawpixel.-8KQu3ICTu2kRiw9TlEOmcTvp8sSwWz.png"
+                alt="Toucan Ariel, vintage Brazilian bird illustration"
+                fill
+                className="object-contain bg-foreground"
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* Educational Work */}
+      <section className="py-24 lg:py-32 bg-background">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="space-y-8">
+            <div>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
+                Our work is fundamentally educational.
+              </h2>
+            </div>
+
+            <blockquote className="border-l-4 border-yellow pl-6 py-2 italic text-foreground/80">
+              {'"Education is the Metacrisis: Why it\'s time to see planetary crises as a species-wide learning opportunity." — Zak Stein'}
+            </blockquote>
+
+            <p className="text-muted-foreground leading-relaxed">
+              We are building the educational and communal structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to offering their lives in service of the liberation and flourishing of all life.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              We are relentlessly cultivating the soil for the emergence of a different kind of human, a different kind of community, capable of stewarding culture and society in this time between worlds. One rooted in a shared story of value, wisdom, belonging, and intimate relationship with all life.
+            </p>
+
+            <div className="relative aspect-[21/9] overflow-hidden my-12">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Peaks%20And%20Plateaus%20-%20jesse%20treece-4b8b9o6GISsRjOsmCjAj5JCXJJFKzO.jpeg"
+                alt="Peaks and Plateaus collage by Jesse Treece - a surreal landscape representing layers of transformation"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 export function FieldsOfWorkSection() {
   const fields = [
