@@ -27,6 +27,39 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
+
+        {/* Symptoms */}
+        <section className="py-24 lg:py-32 bg-cream">
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Symptoms</span>
+              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+                Our world is showing symptoms of life-threatening diseases
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: "Ecological Degradation", desc: "The destruction of the living systems that sustain all life" },
+                { title: "Political Polarization", desc: "The fragmentation of our capacity for collective action" },
+                { title: "Meaning Crisis", desc: "The loss of shared stories, values, and purpose" },
+                { title: "Technological Risk", desc: "AI and exponential technologies outpacing wisdom" },
+              ].map((symptom) => (
+                <div key={symptom.title} className="p-6 bg-background border-t-4 border-crimson">
+                  <h3 className="font-serif text-lg font-medium text-foreground">{symptom.title}</h3>
+                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed">{symptom.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                These diseases must be diagnosed with diligence and precision. Only proper diagnosis can lead to adequate responses. Any serious response must be tackling the root causes of our disease.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* The Predicament */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">

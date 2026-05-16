@@ -187,34 +187,40 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* Symptoms */}
-        <section className="py-24 lg:py-32 bg-cream">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        {/* Wisdom Questions */}
+        <section className="py-24 lg:py-32 bg-foreground text-background">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Symptoms</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Our world is showing symptoms of life-threatening diseases
+              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Ground</span>
+              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
+                Three Wisdom Questions
               </h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { title: "Ecological Degradation", desc: "The destruction of the living systems that sustain all life" },
-                { title: "Political Polarization", desc: "The fragmentation of our capacity for collective action" },
-                { title: "Meaning Crisis", desc: "The loss of shared stories, values, and purpose" },
-                { title: "Technological Risk", desc: "AI and exponential technologies outpacing wisdom" },
-              ].map((symptom) => (
-                <div key={symptom.title} className="p-6 bg-background border-t-4 border-crimson">
-                  <h3 className="font-serif text-lg font-medium text-foreground">{symptom.title}</h3>
-                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed">{symptom.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                These diseases must be diagnosed with diligence and precision. Only proper diagnosis can lead to adequate responses. Any serious response must be tackling the root causes of our disease.
+              <p className="mt-6 text-background/70 max-w-2xl mx-auto leading-relaxed">
+                Before rushing into action, we wrestle with the questions that matter most for life. These are wisdom questions—inquiries into the nature of self, reality, and systems in a time between worlds.
               </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-8 border border-background/20">
+                <h3 className="font-serif text-2xl font-medium text-yellow">Who are we?</h3>
+                <p className="mt-4 text-background/70 text-sm leading-relaxed">
+                  What is the human for? What is my true nature? Who do we need to become to navigate this crisis—and what individual and collective capacities does that require?
+                </p>
+              </div>
+
+              <div className="p-8 border border-background/20">
+                <h3 className="font-serif text-2xl font-medium text-cyan">Where are we?</h3>
+                <p className="mt-4 text-background/70 text-sm leading-relaxed">
+                  What is the true nature of reality? What defines the current moment in history? What are the deep roots of modernity and capitalism, and what existential dangers do they now carry?
+                </p>
+              </div>
+
+              <div className="p-8 border border-background/20">
+                <h3 className="font-serif text-2xl font-medium text-background">What is being asked of us?</h3>
+                <p className="mt-4 text-background/70 text-sm leading-relaxed">
+                  What does this moment ask of me? What is trying to emerge through us? How do we create the conditions for collective coordination in genuine service of all life?
+                </p>
+              </div>
             </div>
           </div>
         </section>

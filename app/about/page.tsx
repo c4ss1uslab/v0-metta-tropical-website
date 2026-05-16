@@ -9,6 +9,170 @@ export const metadata: Metadata = {
   description: "An experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away.",
 }
 
+export function EssenceSection() {
+  return (
+    <section className="py-24 lg:py-32 bg-background">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        <div className="text-center">
+          <span className="inline-block px-4 py-1 bg-yellow/30 text-sm font-medium text-foreground mb-8">
+            A Time Between Worlds
+          </span>
+          
+          <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground italic leading-relaxed text-pretty">
+            &ldquo;During times between worlds there emerge ideas and thinkers that are, properly speaking, without a world. Their work is liminal — not within the old world or the world to come, but serving as the bridge between them.&rdquo;
+          </blockquote>
+          
+          <cite className="block mt-6 text-muted-foreground text-sm not-italic">
+            — Zak Stein
+          </cite>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function MettaExplanation() {
+  return (
+    <section className="py-24 lg:py-32 bg-cream">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Image */}
+          <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ind%C3%ADgena%20statue-UEeF4odSMX5yLGlAC6txxib6JBR6dX.jpg"
+              alt="Indigenous statue depicting a mother holding a child, representing loving-kindness and intergenerational care"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Name</span>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+                Why Metta?
+              </h2>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              At its heart, <em className="text-foreground">Metta</em>, from the Pali language, means a kind of boundless and self-giving love. For us, it holds three energies embedded in our work:
+            </p>
+
+            <div className="space-y-6">
+              <div className="pl-6 border-l-2 border-olive">
+                <h3 className="font-serif text-xl font-medium text-foreground">Loving-kindness</h3>
+                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+                  A fierce, boundless and self-giving love towards all living beings, especially in a time of societal collapse.
+                </p>
+              </div>
+
+              <div className="pl-6 border-l-2 border-cyan">
+                <h3 className="font-serif text-xl font-medium text-foreground">Meta-awareness</h3>
+                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+                  The capacity to step back, to sense into the deeper patterns shaping our world, systems and crises. Meta as within (interiority), meta as between (relationality), and meta as beyond (different ways of seeing and being).
+                </p>
+              </div>
+
+              <div className="pl-6 border-l-2 border-crimson">
+                <h3 className="font-serif text-xl font-medium text-foreground">Metamorphosis</h3>
+                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+                  The recognition that these times are demanding us to be transformed, to have our Ego be shape-shifted, to become mature and wise adults in order to fully embody our soul&apos;s work.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-foreground font-medium italic">
+              Metta is the orientation that allows us to face the metacrisis without collapsing into despair, simplistic solutions or domination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function TropicalSection() {
+  return (
+    <section className="py-24 lg:py-32 bg-background">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div className="space-y-8 order-2 lg:order-1">
+            <div>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+                Why Tropical?
+              </h2>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              <em className="text-foreground">Tropical</em> is an invocation. It calls in the heat, the pulse, the wild intelligence of life. The eros, aliveness and creative force that lives in Brazil and across the Global South.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              It&apos;s a call to not be stuck in abstraction, but to return to the body, the land, the rhythm, and the relationships. Tropical honors the wisdom that has long lived in this territory—indigenous, quilombola, Afro-diasporic, and marginalized communities—which despite being ignored, silenced and erased, has endured, holding the keys for how to live through collapse.
+            </p>
+
+            <div className="py-6 border-y border-border">
+              <p className="font-serif text-xl text-foreground italic leading-relaxed">
+                To be tropical is to sense from soul,<br />
+                to be rooted in territory,<br />
+                to act from eros.
+              </p>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              It reminds us that any response to the metacrisis and future worth building must weave global south wisdom.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="relative aspect-[3/4] rounded-sm overflow-hidden order-1 lg:order-2">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Landscape%20in%20Brazil%20%281652%29%20by%20Frans%20Jansz%20Post.%20Digitally%20enhanced%20by%20rawpixel.-jk3ISmZEus2gjG7NRkhVsctNqKZIiL.jpg"
+              alt="Landscape in Brazil (1652) by Frans Jansz Post - a view through an arch of tropical vegetation"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function CollectiveSection() {
+  return (
+    <section className="py-24 lg:py-32 bg-foreground text-background">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+        <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
+        <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
+          Why Collective?
+        </h2>
+
+        <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          From Latin, <em className="text-background">collectivus</em> means &ldquo;gathering together&rdquo;. We say yes to that, but go beyond. It&apos;s a commitment to become something larger than ourselves.
+        </p>
+
+        <p className="mt-6 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          Collective names the movement from separation to inter-being, from individuals with shared interests coming together to a living body and field of relationships that are bound to each other. It is the slow formation of trust, intimacy, mutual accountability, and devotion to walk together towards a shared vision.
+        </p>
+
+        <div className="mt-12 p-8 bg-background/10 border border-background/20">
+          <p className="font-serif text-xl text-background italic leading-relaxed">
+            We are evoking the spirit of a Sangha and friendship: not just a group of individuals, but a &ldquo;body&rdquo; or &ldquo;river&rdquo; that flows together, where individuals share collective practices, worldviews, visions and language that supports individual and collective unfolding.
+          </p>
+        </div>
+
+        <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
+          It is a relational path, where we remember how to live, care and love as a single organism in service of life.
+        </p>
+      </div>
+    </section>
+  )
+}
+
 export default function AboutPage() {
   return (
     <>
@@ -19,117 +183,11 @@ export default function AboutPage() {
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-olive font-medium text-sm tracking-wide uppercase">About</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
-              What is Metta Tropical Collective?
+              Why Metta Tropical Collective?
             </h1>
             <p className="mt-8 text-xl text-muted-foreground leading-relaxed">
-              Reclaiming Leadership as a Sacred Duty & Responsibility Towards the Flourishing of All Life
+              “There is almost a sensual longing for communion with others who have a large vision. The immense fulfilment of the friendship between those engaged in furthering the evolution of consciousness has a quality impossible to describe.” — Pierre Teilhard de Chardin
             </p>
-          </div>
-        </section>
-
-        {/* Manifesto */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              <div className="space-y-8">
-                <div>
-                  <span className="text-crimson font-medium text-sm tracking-wide uppercase">Manifesto</span>
-                  <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                    We are living through the unraveling of a world that can no longer sustain its own promises.
-                  </h2>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  And many of our attempts to respond have only been deepening the crisis—reproducing the very logic that created it.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Metta Tropical Collective</strong> is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away. Those convinced that any serious response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  We come together not to optimize and fix a broken system in order to work for a greater number of humans and species, but to hospice it. To question its own foundations and engage with intimate communities, sacred spaces, radical ideas and collective practices that shift the very ways we see, be, know and respond to the metacrisis we are facing.
-                </p>
-              </div>
-
-              <div className="relative aspect-[4/5] rounded-sm overflow-hidden lg:sticky lg:top-24">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PNG%20Toucan%20Ariel%2C%20vintage%20Brazilian%20bird%20illustration%20on%20transparent%20background.%20Remixed%20by%20rawpixel.-8KQu3ICTu2kRiw9TlEOmcTvp8sSwWz.png"
-                  alt="Toucan Ariel, vintage Brazilian bird illustration"
-                  fill
-                  className="object-contain bg-foreground"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Wisdom Questions */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Ground</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
-                Three Wisdom Questions
-              </h2>
-              <p className="mt-6 text-background/70 max-w-2xl mx-auto leading-relaxed">
-                Before rushing into action, we wrestle with the questions that matter most for life. These are wisdom questions—inquiries into the nature of self, reality, and systems in a time between worlds.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-yellow">Who are we?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What is the human for? What is my true nature? Who do we need to become to navigate this crisis—and what individual and collective capacities does that require?
-                </p>
-              </div>
-
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-cyan">Where are we?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What is the true nature of reality? What defines the current moment in history? What are the deep roots of modernity and capitalism, and what existential dangers do they now carry?
-                </p>
-              </div>
-
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-background">What is being asked of us?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What does this moment ask of me? What is trying to emerge through us? How do we create the conditions for collective coordination in genuine service of all life?
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Educational Work */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="space-y-8">
-              <div>
-                <span className="text-olive font-medium text-sm tracking-wide uppercase">Our Purpose</span>
-                <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                  Our work is fundamentally educational.
-                </h2>
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed">
-                We are building the educational and communal structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to offering their lives in service of the liberation and flourishing of all life.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed">
-                We are relentlessly cultivating the soil for the emergence of a different kind of human, a different kind of community, capable of stewarding culture and society in this time between worlds. One rooted in a shared story of value, wisdom, belonging, and intimate relationship with all life.
-              </p>
-
-              <div className="relative aspect-[21/9] overflow-hidden my-12">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Peaks%20And%20Plateaus%20-%20jesse%20treece-4b8b9o6GISsRjOsmCjAj5JCXJJFKzO.jpeg"
-                  alt="Peaks and Plateaus collage by Jesse Treece - a surreal landscape representing layers of transformation"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
           </div>
         </section>
 
