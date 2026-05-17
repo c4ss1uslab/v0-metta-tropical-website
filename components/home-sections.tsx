@@ -145,8 +145,8 @@ export function IntroductionSection() {
 
             <div className="relative aspect-[21/9] overflow-hidden my-12">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Peaks%20And%20Plateaus%20-%20jesse%20treece-4b8b9o6GISsRjOsmCjAj5JCXJJFKzO.jpeg"
-                alt="Peaks and Plateaus collage by Jesse Treece - a surreal landscape representing layers of transformation"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Enfants%2C%20a%201930s%20photograph%20by%20Andr%C3%A8%20Kert%C3%A8sz-V6EI2vvR62GjAJ9EngLwInOfHDJ5nO.jpeg"
+                alt="Native children dancing in circle"
                 fill
                 className="object-cover"
               />
