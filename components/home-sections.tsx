@@ -94,16 +94,31 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            <figure className="my-12 py-10 px-8 md:px-12 bg-foreground text-background relative">
-              <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
-              <blockquote className="relative z-10 pt-4">
-                <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  Education is the Metacrisis
+<figure className="my-12 py-12 px-8 md:px-12 bg-foreground text-background relative overflow-hidden rounded-sm">
+              {/* Large decorative quote mark */}
+              <div className="absolute top-2 left-6 font-serif text-7xl text-yellow/20 leading-none select-none" aria-hidden="true">
+                {"\u201C"}
+              </div>
+              
+              <blockquote className="relative z-10 text-center space-y-6">
+                {/* Title Line: Bold and prominent */}
+                <p className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-yellow block">
+                  Education is the Metacrisis:
+                </p>
+                
+                {/* Visual separator line */}
+                <div className="w-12 h-[2px] bg-yellow/30 mx-auto" />
+                
+                {/* Subtitle Line: Elegant, italicized explanation */}
+                <p className="font-serif text-x1 md:text-2xl leading-relaxed text-background/90 italic max-w-2xl mx-auto block">
                   Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
                 </p>
               </blockquote>
-              <figcaption className="mt-6 text-center">
-                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Zak Stein</span>
+              
+              <figcaption className="mt-8 text-center relative z-10">
+                <span className="text-yellow/80 font-medium text-sm tracking-widest uppercase">
+                  — Zak Stein
+                </span>
               </figcaption>
             </figure>
 
