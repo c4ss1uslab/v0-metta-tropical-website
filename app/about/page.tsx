@@ -9,26 +9,24 @@ export const metadata: Metadata = {
   description: "An experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, spiritual practitioners and leaders who refuse to look away.",
 }
 
-export function EssenceSection() {
+export default function AboutPage() {
   return (
-    <section className="py-24 lg:py-32 bg-background">
-      <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="text-center">
-          <span className="inline-block px-4 py-1 bg-yellow/30 text-sm font-medium text-foreground mb-8">
-            A Time Between Worlds
-          </span>
-          
-          <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground italic leading-relaxed text-pretty">
-            &ldquo;During times between worlds there emerge ideas and thinkers that are, properly speaking, without a world. Their work is liminal — not within the old world or the world to come, but serving as the bridge between them.&rdquo;
-          </blockquote>
-          
-          <cite className="block mt-6 text-muted-foreground text-sm not-italic">
-            — Zak Stein
-          </cite>
-        </div>
-      </div>
-    </section>
-  )
+    <>
+      <Navigation />
+      <main className="pt-16">
+        {/* Hero */}
+        <section className="relative py-24 lg:py-32 bg-cream">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <span className="text-olive font-medium text-sm tracking-wide uppercase">About</span>
+            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
+              Why Metta Tropical Collective?
+            </h1>
+            <p className="mt-8 text-xl text-muted-foreground leading-relaxed">
+              “There is almost a sensual longing for communion with others who have a large vision. The immense fulfilment of the friendship between those engaged in furthering the evolution of consciousness has a quality impossible to describe.” — Pierre Teilhard de Chardin
+            </p>
+          </div>
+        </section>
+        )
 }
 
 export function MettaExplanation() {
@@ -183,137 +181,7 @@ export function CollectiveSection() {
         </p>
       </div>
     </section>
-  )
-}
 
-export default function AboutPage() {
-  return (
-    <>
-      <Navigation />
-      <main className="pt-16">
-        {/* Hero */}
-        <section className="relative py-24 lg:py-32 bg-cream">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-olive font-medium text-sm tracking-wide uppercase">About</span>
-            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
-              Why Metta Tropical Collective?
-            </h1>
-            <p className="mt-8 text-xl text-muted-foreground leading-relaxed">
-              “There is almost a sensual longing for communion with others who have a large vision. The immense fulfilment of the friendship between those engaged in furthering the evolution of consciousness has a quality impossible to describe.” — Pierre Teilhard de Chardin
-            </p>
-          </div>
-        </section>
-
-        {/* Fields of Work */}
-        <section className="py-24 lg:py-32 bg-cream">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Our Fields of Work
-              </h2>
-              <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Metta Tropical Collective is a living community, intentionally small and deeply relational. Within our Collective, we serve five main areas of exploration.
-              </p>
-            </div>
-
-            <div className="space-y-16">
-              {/* Transformative Educational Lab */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-3 space-y-4">
-                  <h3 className="font-serif text-2xl font-medium text-foreground">Transformative Educational Lab</h3>
-                  <p className="text-olive text-sm font-medium">Education for the end of the world as we know it</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    This is the living laboratory where we are continuously testing, refining and deepening the parts and pieces of our Educational Architecture. Through retreats, residencies, courses, practices and immersive and experiential programs—developed in-house and in collaboration with fellow educators—we keep experimenting with what it actually takes to build the foundations for a wisdom-centered education capable of deeply transforming the ways in which we relate to all life - self, other, world and the sacred - as a way of preparing ourselves to respond to the metacrisis and serve the flourishing of all life.
-                  </p>
-                </div>
-                <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos-MkJd4aqeKlMPCnfUcQt9O83ESh9O6Y.webp"
-                    alt="Traditional mandala pattern representing cosmic order and education"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Research & Inquiry */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden order-2 lg:order-1">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rosette%20Bearing%20the%20Names%20and%20Titles%20of%20Shah%20Jahan%2C%20vintage%20illustration.%20Image%20by%20rawpixel-xIf2OhkvtW6WrGpOH53bXXaPFg2kKR.jpg"
-                    alt="Ornate rosette pattern representing deep inquiry and research"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="lg:col-span-3 space-y-4 order-1 lg:order-2">
-                  <h3 className="font-serif text-2xl font-medium text-foreground">Research & Inquiry</h3>
-                  <p className="text-cyan text-sm font-medium">Investigating the most pressing questions shaping our world today</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    This is the space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to the kind of narrative-building and cultural sensemaking that can orient action in a time of uncertainty. If you are writing and thinking at the edge of culture—on soul, systems, soil, or society—we want to think alongside you.
-                  </p>
-                </div>
-              </div>
-
-              {/* Ecosystem Integration */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-3 space-y-4">
-                  <h3 className="font-serif text-2xl font-medium text-foreground">Ecosystem Integration</h3>
-                  <p className="text-olive text-sm font-medium">Tending to the emerging fabric of a wisdom-centered culture</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway—making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South. Think of it as the educational space that doesn&apos;t yet exist.
-                  </p>
-                </div>
-                <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg"
-                    alt="Vibrant floral pattern representing ecosystem diversity and integration"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Collective Practice */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden order-2 lg:order-1">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/designretrospace-Lej4ROEDLMRjlkDkkYE8wc5yFqra7s.jpeg"
-                    alt="Figures gathered before a rising sun representing collective practice"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="lg:col-span-3 space-y-4 order-1 lg:order-2">
-                  <h3 className="font-serif text-2xl font-medium text-foreground">Collective Practice</h3>
-                  <p className="text-crimson text-sm font-medium">Transforming worldview into embodied action</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    This is the space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving together, listening deeply, working with our bodies, practicing being with the natural world.
-                  </p>
-                </div>
-              </div>
-
-              {/* Intergenerational Responsibility */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-3 space-y-4">
-                  <h3 className="font-serif text-2xl font-medium text-foreground">Intergenerational Responsibility</h3>
-                  <p className="text-olive text-sm font-medium">Restoring the essence of what education has always been</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Education, at its deepest, is the sacred transmission of wisdom, values, cosmological orientation, and responsibility between generations. We are working to restore this—to create the conditions for a multigenerational community to fall back in love with each other—and with the shared responsibility of being alive at this time between worlds.
-                  </p>
-                </div>
-                <div className="lg:col-span-2 relative aspect-square rounded-sm overflow-hidden">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ind%C3%ADgena%20statue-UEeF4odSMX5yLGlAC6txxib6JBR6dX.jpg"
-                    alt="Indigenous statue of mother and child representing intergenerational care"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* CTA */}
         <section className="py-24 lg:py-32 bg-yellow">
