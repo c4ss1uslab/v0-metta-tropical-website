@@ -23,7 +23,7 @@ export function HeroSection() {
         </h1>
         
         <p className="mt-8 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed text-pretty">
-          Nurturing a community of transformation, inquiry and practice by supporting the emergence of a new generation of wisdom-centered leaders—postactivist thinkers, artists, educators, changemakers who are wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
+          A community of transformation, inquiry and practice nurturing the emergence of a new generation of wisdom-centered leaders—postactivist thinkers, artists, educators, changemakers—who are wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -64,11 +64,11 @@ export function IntroductionSection() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Metta Tropical Collective</strong>  is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — self, other, world, and the sacred.
+                <strong className="text-foreground">Metta Tropical Collective</strong>  is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — <strong className="text-foreground">self, other, world, and the sacred.</strong>
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                We come together not to optimize or fix a broken system in order to work for a greater number of humans and species, but to question its own foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
+                We come together not to optimize or fix a broken system in order for it to work for a greater number of humans and species, but to question and transform its foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
               </p>
             </div>
 
@@ -98,7 +98,8 @@ export function IntroductionSection() {
               <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
               <blockquote className="relative z-10 pt-4">
                 <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  Education is the Metacrisis: Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
+                  Education is the Metacrisis
+                  Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
                 </p>
               </blockquote>
               <figcaption className="mt-6 text-center">
@@ -107,7 +108,7 @@ export function IntroductionSection() {
             </figure>
 
             <p className="text-muted-foreground leading-relaxed">
-              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns — <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
+              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
