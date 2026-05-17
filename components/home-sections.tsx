@@ -111,7 +111,7 @@ export function IntroductionSection() {
     
     {/* Subtitle Line: Stepped up on mobile and desktop for better presence */}
     <p className="font-serif text-2xl md:text-2xl leading-relaxed text-background/90 italic max-w-2xl mx-auto block">
-      Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
+      It&apos;s time to see planetary crises as a species-wide learning opportunity.
     </p>
   </blockquote>
   

@@ -26,11 +26,11 @@ export default function AboutPage() {
               <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
               <blockquote className="relative z-10 pt-4">
                 <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  There is almost a sensual longing for communion with others who have a large vision. The immense fulfilment of the friendship between those engaged in furthering the evolution of consciousness has a quality impossible to describe.
+                  A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present.
                 </p>
               </blockquote>
               <figcaption className="mt-6 text-center">
-                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Pierre Teilhard de Chardin</span>
+                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Ninawa Huni Kuin</span>
               </figcaption>
             </figure>
           </div>
