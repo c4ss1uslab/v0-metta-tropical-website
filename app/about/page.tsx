@@ -144,7 +144,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Collective? */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
@@ -194,7 +194,7 @@ export default function AboutPage() {
                 href="/why-now"
                 className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
               >
-                Understand Why Now
+                Understand What's At Stake Now
               </Link>
               <Link
                 href="/fellowship"
