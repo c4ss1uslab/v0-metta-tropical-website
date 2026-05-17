@@ -49,7 +49,11 @@ export default function WhyNowPage() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                It cannot be addressed without wrestling with foundational questions: <em>What is reality? What is a human life for? Why are we here? What does it mean to live a meaningful life?</em> Our collective failure to seriously engage questions like that—and to transform our being accordingly—lies at the root of everything.
+                It cannot be addressed without wrestling with foundational questions: <em>What is reality? What is a human life for? Why are we here? What does it mean to live a meaningful life?</em>
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                Our collective failure to seriously engage questions like that—and to transform our being accordingly—lies at the root of everything.
               </p>
 
               <div className="relative aspect-[21/9] overflow-hidden my-12">
