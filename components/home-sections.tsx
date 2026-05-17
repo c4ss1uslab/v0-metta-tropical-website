@@ -94,18 +94,34 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            <figure className="my-12 py-10 px-8 md:px-12 bg-foreground text-background relative">
-              <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
-              <blockquote className="relative z-10 pt-4">
-                <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  Education is the Metacrisis
-                  Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 text-center">
-                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Zak Stein</span>
-              </figcaption>
-            </figure>
+<figure className="my-12 py-12 px-8 md:px-12 bg-foreground text-background relative overflow-hidden rounded-sm">
+  {/* Large decorative quote mark */}
+  <div className="absolute top-2 left-6 font-serif text-7xl text-yellow/20 leading-none select-none" aria-hidden="true">
+    {"\u201C"}
+  </div>
+  
+  <blockquote className="relative z-10 text-center space-y-6">
+    {/* Title Line: Bold and prominent */}
+    <p className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-yellow block">
+      Education is the Metacrisis
+    </p>
+    
+    {/* Visual separator line */}
+    <div className="w-12 h-[2px] bg-yellow/30 mx-auto" />
+    
+    {/* Subtitle Line: Stepped up on mobile and desktop for better presence */}
+    <p className="font-serif text-2xl md:text-2xl leading-relaxed text-background/90 italic max-w-2xl mx-auto block">
+      It&apos;s time to see planetary crises as a species-wide learning opportunity.
+    </p>
+  </blockquote>
+  
+  <figcaption className="mt-8 text-center relative z-10">
+    {/* Author Line: Tiny on mobile to balance uppercase/tracking, larger on desktop */}
+    <span className="text-yellow/80 font-medium text-xs md:text-sm tracking-widest uppercase">
+      — Zak Stein
+    </span>
+  </figcaption>
+</figure>
 
             <p className="text-muted-foreground leading-relaxed">
               We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
@@ -129,8 +145,8 @@ export function IntroductionSection() {
 
             <div className="relative aspect-[21/9] overflow-hidden my-12">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Peaks%20And%20Plateaus%20-%20jesse%20treece-4b8b9o6GISsRjOsmCjAj5JCXJJFKzO.jpeg"
-                alt="Peaks and Plateaus collage by Jesse Treece - a surreal landscape representing layers of transformation"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Enfants%2C%20a%201930s%20photograph%20by%20Andr%C3%A8%20Kert%C3%A8sz-V6EI2vvR62GjAJ9EngLwInOfHDJ5nO.jpeg"
+                alt="Native children dancing in circle"
                 fill
                 className="object-cover"
               />

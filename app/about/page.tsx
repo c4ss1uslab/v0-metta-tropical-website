@@ -13,9 +13,10 @@ export default function AboutPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
+      {/* Reduced from pt-16 to pt-8 */}
+      <main className="pt-8">
         {/* Hero with Quote */}
-        <section className="relative py-24 lg:py-32 bg-cream">
+        <section className="relative pt-12 pb-12 lg:pt-16 lg:pb-16 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-olive font-medium text-sm tracking-wide uppercase">About</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
@@ -26,18 +27,18 @@ export default function AboutPage() {
               <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
               <blockquote className="relative z-10 pt-4">
                 <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  There is almost a sensual longing for communion with others who have a large vision. The immense fulfilment of the friendship between those engaged in furthering the evolution of consciousness has a quality impossible to describe.
+                  A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present.
                 </p>
               </blockquote>
               <figcaption className="mt-6 text-center">
-                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Pierre Teilhard de Chardin</span>
+                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Ninawa Huni Kuin</span>
               </figcaption>
             </figure>
           </div>
         </section>
 
         {/* Why Metta? */}
-        <section className="py-24 lg:py-32 bg-cream">
+        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Image */}
@@ -64,7 +65,7 @@ export default function AboutPage() {
                 </p>
 
                 <div className="space-y-6">
-                  <div className="pl-6 border-l-2 border-olive">
+                  <div className="pl-6 border-l-2 border-crimson">
                     <h3 className="font-serif text-xl font-medium text-foreground">Loving-kindness</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       A fierce, boundless and all embracing love towards the liberation and flourishing of all life. It evokes the heart of the Bodhisattva in a time of societal collapse.
@@ -78,7 +79,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="pl-6 border-l-2 border-crimson">
+                  <div className="pl-6 border-l-2 border-olive">
                     <h3 className="font-serif text-xl font-medium text-foreground">Metamorphosis</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       The recognition that these times are demanding us to be transformed, to have our Ego be shape-shifted, to become mature and wise adults in order to fully embody our soul&apos;s work.
@@ -95,7 +96,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Tropical? */}
-        <section className="py-24 lg:py-32 bg-background">
+        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Content */}
@@ -143,7 +144,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Collective? */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
@@ -193,7 +194,7 @@ export default function AboutPage() {
                 href="/why-now"
                 className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
               >
-                Understand Why Now
+                Understand What's At Stake Now
               </Link>
               <Link
                 href="/fellowship"
