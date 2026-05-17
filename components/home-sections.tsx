@@ -85,7 +85,7 @@ export function IntroductionSection() {
       </section>
 
       {/* Educational Work */}
-      <section className="py-24 lg:py-32 bg-background">
+      <section className="py-24 lg:py-32 bg-cream">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div>
@@ -94,9 +94,17 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            <blockquote className="border-l-4 border-yellow pl-6 py-2 italic text-foreground/80">
-              {'"Education is the Metacrisis: Why it\'s time to see planetary crises as a species-wide learning opportunity." — Zak Stein'}
-            </blockquote>
+            <figure className="my-12 py-10 px-8 md:px-12 bg-foreground text-background relative">
+              <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
+              <blockquote className="relative z-10 pt-4">
+                <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
+                  Education is the Metacrisis: Why it&apos;s time to see planetary crises as a species-wide learning opportunity.
+                </p>
+              </blockquote>
+              <figcaption className="mt-6 text-center">
+                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Zak Stein</span>
+              </figcaption>
+            </figure>
 
             <p className="text-muted-foreground leading-relaxed">
               We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns — <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
@@ -140,28 +148,45 @@ export function FieldsOfWorkSection() {
       subtitle: "Education for the end of the world as we know it",
       description: "A living laboratory where our Educational Architecture is continuously tested, refined, and deepened through retreats, residencies, courses, and immersive programs.",
       color: "border-olive",
+      bgAccent: "bg-olive/5",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos-MkJd4aqeKlMPCnfUcQt9O83ESh9O6Y.webp",
+      link: "/about#educational-lab",
     },
     {
       title: "Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
-      description: "This is the space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to the kind of narrative-building and cultural sensemaking that can orient action in a time of uncertainty.",
+      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to narrative-building and cultural sensemaking.",
       color: "border-cyan",
+      bgAccent: "bg-cyan/5",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rosette%20Bearing%20the%20Names%20and%20Titles%20of%20Shah%20Jahan%2C%20vintage%20illustration.%20Image%20by%20rawpixel-xIf2OhkvtW6WrGpOH53bXXaPFg2kKR.jpg",
+      link: "/about#research",
     },
     {
       title: "Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
-      description: "We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway—making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South. Think of it as the educational space that doesn&apos;t yet exist.",
+      description: "We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway\u2014making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South.",
       color: "border-yellow",
+      bgAccent: "bg-yellow/10",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
+      link: "/about#ecosystem",
     },
     {
       title: "Collective Practice",
       subtitle: "Transforming worldview into embodied action",
-      description: "This is the space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving together, listening deeply, working with our bodies, practicing being with the natural world.",
+      description: "The space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving, listening deeply, working with our bodies.",
       color: "border-crimson",
+      bgAccent: "bg-crimson/5",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/designretrospace-Lej4ROEDLMRjlkDkkYE8wc5yFqra7s.jpeg",
+      link: "/about#practice",
+    },
+    {
+      title: "Intergenerational Transmission",
+      subtitle: "Bridging ancestral wisdom and future generations",
+      description: "The recognition that wisdom is not invented but received and passed on. We create spaces where elders, mentors, and emerging leaders meet\u2014where indigenous knowledge, contemplative traditions, and lived experience are honored as essential resources for navigating collapse.",
+      color: "border-olive",
+      bgAccent: "bg-olive/5",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ind%C3%ADgena%20statue-UEeF4odSMX5yLGlAC6txxib6JBR6dX.jpg",
+      link: "/about#intergenerational",
     },
   ]
 
@@ -174,16 +199,14 @@ export function FieldsOfWorkSection() {
             Fields of Work
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            In response to this scenario, we are exploring how to build new forms of Relational & Educational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
-          </p>
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Our work is ultimately an inquiry into who we must become and what kind of containers must emerge in this time between worlds in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility, and in service of the flourishing of all life.
+            We are exploring how to build new forms of Relational &amp; Educational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human development, collective sensemaking, community building and wiser forms of participation in the web of life.
           </p>
         </div>
 
+        {/* Top row - 2 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {fields.map((field) => (
-            <div key={field.title} className={`bg-background p-8 border-t-4 ${field.color}`}>
+          {fields.slice(0, 4).map((field) => (
+            <div key={field.title} className={`bg-background p-8 border-t-4 ${field.color} flex flex-col`}>
               <div className="relative h-48 mb-6 overflow-hidden">
                 <Image
                   src={field.image}
@@ -194,21 +217,46 @@ export function FieldsOfWorkSection() {
               </div>
               <h3 className="font-serif text-2xl font-medium text-foreground">{field.title}</h3>
               <p className="mt-2 text-olive text-sm font-medium">{field.subtitle}</p>
-              <p className="mt-4 text-muted-foreground text-sm leading-relaxed">{field.description}</p>
+              <p className="mt-4 text-muted-foreground text-sm leading-relaxed flex-1">{field.description}</p>
+              <Link
+                href={field.link}
+                className="mt-6 inline-flex items-center text-sm font-medium text-foreground hover:text-olive transition-colors"
+              >
+                Learn More
+                <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Link
-            href="/about"
-            className="inline-flex items-center text-foreground font-medium hover:text-olive transition-colors"
-          >
-            Learn more about our approach
-            <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+        {/* Bottom row - 5th field, full width */}
+        <div className="mt-8">
+          <div className={`bg-background border-t-4 ${fields[4].color} grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden`}>
+            <div className="relative h-64 md:h-auto">
+              <Image
+                src={fields[4].image}
+                alt={fields[4].title}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8 md:p-12 flex flex-col justify-center">
+              <h3 className="font-serif text-2xl font-medium text-foreground">{fields[4].title}</h3>
+              <p className="mt-2 text-olive text-sm font-medium">{fields[4].subtitle}</p>
+              <p className="mt-4 text-muted-foreground text-sm leading-relaxed">{fields[4].description}</p>
+              <Link
+                href={fields[4].link}
+                className="mt-6 inline-flex items-center text-sm font-medium text-foreground hover:text-olive transition-colors"
+              >
+                Learn More
+                <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
