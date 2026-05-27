@@ -28,8 +28,8 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* The Moment */}
-        <section className="py-24 lg:py-32 bg-background">
+{/* The Moment - REMOVED BOTTOM PADDING TO ELIMINATE WHITE SPACE BELOW IMAGE */}
+        <section className="pt-12 lg:pt-16 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="space-y-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
@@ -57,18 +57,21 @@ export default function WhyNowPage() {
             </div>
           </div>
 
-              <div className="relative aspect-[21/9] overflow-hidden my-12">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
-                  alt="Mountains and moon - representing the darkness before dawn"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* Adjusted margins so the image sits flush against the bottom of this section */}
+<div className="mx-auto max-w-4xl px-6 lg:px-8 mt-12 mb-0">
+            <div className="relative h-[320px] overflow-hidden rounded-sm">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
+                alt="Mountains and moon - representing the darkness before dawn"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </section>
 
-        {/* Historical Response */}
-        <section className="py-24 lg:py-32 bg-cream">
+        {/* Historical Response / Containers for Transformation */}
+        <section className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
@@ -111,7 +114,7 @@ export default function WhyNowPage() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. We believe this is what our time most urgently needs now.
+                These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong>We believe this is what our time most urgently needs now.</strong>
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -131,8 +134,8 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* What This Requires */}
-        <section className="py-24 lg:py-32 bg-background">
+        {/* What This Requires - REDUCED TOP AND BOTTOM MARGIN */}
+        <section className="pt-12 pb-12 lg:pt-16 lg:pb-16 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Threshold</span>
@@ -169,8 +172,8 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* Our Conviction */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
+        {/* Our Conviction - REDUCED TOP MARGIN */}
+        <section className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Our Conviction</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">
