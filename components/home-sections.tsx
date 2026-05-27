@@ -97,7 +97,7 @@ export function IntroductionSection() {
           <div className="space-y-8">
             <div>
               <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                Our work is fundamentally educational.
+                Our response is fundamentally educational.
               </h2>
             </div>
 
@@ -115,7 +115,7 @@ export function IntroductionSection() {
       <span className="text-[#D9A01B]">Education is the Metacrisis:</span>
     </p>
     <p className="font-serif text-lg md:text-xl leading-relaxed">
-      Why it’s time to see planetary crises as a species-wide learning opportunity.
+      It’s time to see planetary crises as a species-wide learning opportunity.
     </p>
   </blockquote>
 
@@ -143,7 +143,7 @@ export function IntroductionSection() {
       Education is the Metacrisis:
     </p>
     <p className="font-serif text-xl md:text-2xl text-foreground leading-snug italic">
-      Why it’s time to see planetary crises as a species-wide learning opportunity.
+      It’s time to see planetary crises as a species-wide learning opportunity.
     </p>
   </blockquote>
 
@@ -162,7 +162,7 @@ export function IntroductionSection() {
               <blockquote className="font-serif text-2xl md:text-3xl text-foreground/90 tracking-tight leading-tight">
                 Education is the Metacrisis
                 <span className="block text-lg md:text-xl font-sans mt-2 text-muted-foreground tracking-normal italic">
-                  Why it’s time to see planetary crises as a species-wide learning opportunity.
+                  It’s time to see planetary crises as a species-wide learning opportunity.
                 </span>
               </blockquote>
               <figcaption className="mt-4 text-[#D9A01B] font-semibold text-sm">
@@ -272,7 +272,7 @@ export function FieldsOfWorkSection() {
   <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
   {/* Changed to a block span with a top margin */}
   <span className="block mt-6 text-muted-foreground leading-relaxed">
-    Our focus is on 5 pillars:
+    Our focus is on 5 main pillars:
   </span>
 </p>
         </div>
