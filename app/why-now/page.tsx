@@ -16,14 +16,6 @@ export default function WhyNowPage() {
       <main className="pt-16">
         {/* Hero */}
         <section className="relative py-24 lg:py-32 bg-foreground text-background overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/phase%20space-kGHtKLISXDatryptSLcoqIun6t1Fsn.jpeg"
-              alt="Abstract phase space pattern"
-              fill
-              className="object-cover"
-            />
-          </div>
           <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Why Now</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
@@ -36,44 +28,50 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* The Moment */}
-        <section className="py-24 lg:py-32 bg-background">
+{/* The Moment - REMOVED BOTTOM PADDING TO ELIMINATE WHITE SPACE BELOW IMAGE */}
+        <section className="pt-12 lg:pt-16 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="space-y-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-                We are living through such a moment.
+                We are living through such a threshold.
               </h2>
 
               <p className="text-muted-foreground leading-relaxed">
-                What we face is not simply a cluster of interconnected crises—ecological collapse, social fragmentation, institutional failure, technological risk. These are symptoms. The root is what we call the <strong className="text-foreground">metacrisis</strong>: a crisis of perception, values, and worldview. A fundamental breakdown in how we relate to all life—to ourselves, to each other, to the world, and to what is sacred.
+                And the urgency of this work emerges from the ever greater magnitude of ecological collapse, social fragmentation, institutional breakdown, technological destabilization, and widespread crises of meaning and belonging.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>¹: a crisis of perception, values, and separation from the web of life. A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                It cannot be addressed without wrestling with foundational questions: <em>What is reality? What is a human life for? Why are we here? What does it mean to live a meaningful life?</em>
+                This crisis we are facing did not happen overnight. It is the culmination of centuries shaped by worldviews that desacralized life, separated human beings from the web of existence, and reduced reality into something to dominate, extract from, and control. It destroyed our sense of meaning, other living beings and our capacity to respond to complexity. The result is a civilization generating problems that exceed the wisdom, maturity, and capacities available to respond to them.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Our collective failure to seriously engage questions like that—and to transform our being accordingly—lies at the root of everything.
+                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.² We are being invited to actively participate in the creation of what comes next.
               </p>
-
-              <div className="relative aspect-[21/9] overflow-hidden my-12">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
-                  alt="Mountains and moon - representing the darkness before dawn"
-                  fill
-                  className="object-cover"
-                />
-              </div>
 
               <p className="text-muted-foreground leading-relaxed">
-                This crisis we are facing did not happen overnight. It is the culmination of centuries shaped by a worldview that desacralized the world and placed the human as separate from all other living beings, hollowing out our institutions, our sense of meaning, and our capacity to respond to complexity. The result is a civilization generating problems it no longer has the wisdom to solve.
+                We recognize this moment as a possible civilizational rite of passage: a collective initiation requiring humanity to shed old ways of seeing, being, and relating in order to grow into more mature, wise, and life-enhancing human beings. But rites of passage require guidance, community, practice, and structures capable of holding such profound transformation.
               </p>
+            </div>
+          </div>
+
+          {/* Adjusted margins so the image sits flush against the bottom of this section */}
+<div className="mx-auto max-w-4xl px-6 lg:px-8 mt-12 mb-0">
+            <div className="relative h-[320px] overflow-hidden rounded-sm">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
+                alt="Mountains and moon - representing the darkness before dawn"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </section>
 
-        {/* Historical Response */}
-        <section className="py-24 lg:py-32 bg-cream">
+        {/* Historical Response / Containers for Transformation */}
+        <section className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
@@ -115,15 +113,19 @@ export default function WhyNowPage() {
                   Each built the structures, practices, relational life and rites of passage needed to orient human life toward what is most meaningful—and to develop the capacities required to face the challenges of their time.
                 </p>
 
-                <p className="text-foreground font-medium italic">
-                  We must urgently reimagine such architectures for this time between worlds. And this is why we are here.
+                <p className="text-muted-foreground leading-relaxed">
+                These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong>We believe this is what our time most urgently needs now.</strong>
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Not simply new ideas, but new containers for human development and collective transformation. New educational architectures and communities capable of supporting individuals move through this threshold consciously, transforming societal rupture into initiation rather than collapse and despair alone.
                 </p>
               </div>
 
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-from-rawpixel-id-6605610-jpeg-EB7NqNkfVIwPesNkSnBfXQY1R1nCuq.jpg"
-                  alt="African mask representing ancestral wisdom and containers for transformation"
+                  src="https://i.postimg.cc/bw8XLYpx/Mandala-of-Jnanadakini-Tibet.jpg"
+                  alt="Mandala of Jnanadakini, Tibet, representing ancestral wisdom and containers for transformation"
                   fill
                   className="object-contain bg-cream"
                 />
@@ -132,8 +134,8 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* What This Requires */}
-        <section className="py-24 lg:py-32 bg-background">
+        {/* What This Requires - REDUCED TOP AND BOTTOM MARGIN */}
+        <section className="pt-12 pb-12 lg:pt-16 lg:pb-16 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Threshold</span>
@@ -170,8 +172,8 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* Our Conviction */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
+        {/* Our Conviction - REDUCED TOP MARGIN */}
+        <section className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Our Conviction</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">

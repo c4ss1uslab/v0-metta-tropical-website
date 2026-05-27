@@ -50,6 +50,7 @@ export const images = {
 
   // === COMMUNITY & COLLECTIVE ===
   childrenCircles: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Enfants%2C%20a%201930s%20photograph%20by%20Andr%C3%A8%20Kert%C3%A8sz-V6EI2vvR62GjAJ9EngLwInOfHDJ5nO.jpeg",
+  coloredCommunityCircle: "https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg"
 
   // === REFERENCE SCREENSHOTS (not for display) ===
   reference: {

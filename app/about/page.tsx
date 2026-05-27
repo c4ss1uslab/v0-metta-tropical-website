@@ -16,26 +16,56 @@ export default function AboutPage() {
       {/* Reduced from pt-16 to pt-8 */}
       <main className="pt-8">
         {/* Hero with Quote */}
-        <section className="relative pt-12 pb-12 lg:pt-16 lg:pb-16 bg-cream">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-olive font-medium text-sm tracking-wide uppercase">About</span>
-            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
-              Why Metta Tropical Collective?
-            </h1>
+        {/* ==========================================
+            VARIATION 3: THE SOFT PORTAL (Abstract Blend)
+            Uses a heavy blend mesh and radical rounded shapes to make 
+            the sunflower look like a natural lens or window into earth.
+           ========================================== */}
+        <section className="relative min-h-[60vh] flex items-center bg-cream overflow-visible pb-16 lg:pb-24">
+          <div className="absolute right-0 top-0 w-full lg:w-2/3 h-full opacity-90 z-0 pointer-events-none">
+            <Image 
+              src="https://i.postimg.cc/tJQjdqYk/cosmos-956257560.jpg" 
+              alt="Cosmos background" 
+              fill 
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent" />
+          </div>
 
-            <figure className="mt-12 py-10 px-8 md:px-12 bg-foreground text-background relative">
-              <div className="absolute top-4 left-6 font-serif text-6xl text-yellow/60 leading-none select-none" aria-hidden="true">{"\u201C"}</div>
-              <blockquote className="relative z-10 pt-4">
-                <p className="font-serif text-xl md:text-2xl leading-relaxed text-background/90 italic text-center">
-                  A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present.
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 text-center">
-                <span className="text-yellow font-medium text-sm tracking-wide uppercase">Ninawa Huni Kuin</span>
-              </figcaption>
-            </figure>
+          <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              
+              {/* Left Side: Soft Portal Overlap */}
+              <div className="lg:col-span-4 relative h-[300px] lg:h-[450px] w-full transform lg:translate-y-28 lg:-translate-x-6 z-20">
+                <div className="relative w-full h-full rounded-[60%_40%_70%_30%_/_40%_50%_60%_50%] overflow-hidden mix-blend-multiply opacity-90 filter contrast-125">
+                  <Image 
+                    src="https://i.postimg.cc/Gt4CGXPk/sunflower-8.jpg"
+                    alt="Sunflower"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Right Side Quote */}
+              <div className="lg:col-span-8 text-center lg:text-left">
+                <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8">
+                  Why Metta Tropical Collective?
+                </h1>
+                <blockquote className="space-y-4 max-w-xl mx-auto lg:mx-0">
+                  <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
+                    "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
+                  </p>
+                  <figcaption className="text-olive font-semibold text-xs tracking-widest uppercase">
+                    — Ninawa Huni Kuin
+                  </figcaption>
+                </blockquote>
+              </div>
+
+            </div>
           </div>
         </section>
+
 
         {/* Why Metta? */}
         <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-cream">
@@ -54,10 +84,11 @@ export default function AboutPage() {
               {/* Content */}
               <div className="space-y-8">
                 <div>
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
                   <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                     Why Metta?
                   </h2>
+                  <br />
+                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -102,10 +133,11 @@ export default function AboutPage() {
               {/* Content */}
               <div className="space-y-8 order-2 lg:order-1">
                 <div>
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
                   <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                     Why Tropical?
                   </h2>
+                  <br />
+                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -133,8 +165,8 @@ export default function AboutPage() {
               {/* Image */}
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Landscape%20in%20Brazil%20%281652%29%20by%20Frans%20Jansz%20Post.%20Digitally%20enhanced%20by%20rawpixel.-jk3ISmZEus2gjG7NRkhVsctNqKZIiL.jpg"
-                  alt="Landscape in Brazil (1652) by Frans Jansz Post - a view through an arch of tropical vegetation"
+                  src="https://i.postimg.cc/dVg3NTN6/main-mulata.png"
+                  alt="Brown woman enlightened by surreal sun rays"
                   fill
                   className="object-cover"
                 />
@@ -143,10 +175,11 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Why Collective? */}
+{/* Why Collective? */}
         <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
+            <br />
             <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
               Why Collective?
             </h2>
@@ -178,8 +211,17 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              It is in times of collapse, when small islands of coherence have the capacity to shift the entire system to a higher order.
+              It is in times of collapse that small islands of coherence have the capacity to shift the entire system to a higher order.
             </p>
+          </div>
+
+          {/* Centralized Bottom Image */}
+          <div className="mt-16 flex justify-center px-6 lg:px-8">
+            <img 
+              src="https://i.postimg.cc/hvN1tGPw/DSCF5618.jpg" 
+              alt="Collective Community" 
+              className="w-full max-w-5xl h-auto object-cover rounded-lg shadow-lg"
+            />
           </div>
         </section>
 
