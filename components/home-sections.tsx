@@ -175,7 +175,7 @@ export function IntroductionSection() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of human development.
+              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -208,7 +208,7 @@ export function IntroductionSection() {
 export function FieldsOfWorkSection() {
   const fields = [
     {
-      title: "Transformative Educational Lab",
+      title: "1. Transformative Educational Lab",
       subtitle: "Education for the end of the world as we know it",
       description: "A living laboratory where our Educational Architecture is continuously tested, refined, and deepened through retreats, residencies, courses, and immersive programs.",
       color: "border-olive",
@@ -218,7 +218,7 @@ export function FieldsOfWorkSection() {
       stroke: "#3d4a3e" // Dark Olive
     },
     {
-      title: "Research & Inquiry",
+      title: "2. Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
       description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to narrative-building and cultural sensemaking.",
       color: "border-cyan",
@@ -228,7 +228,7 @@ export function FieldsOfWorkSection() {
       stroke: "#155e75" // Dark Cyan
     },
     {
-      title: "Ecosystem Integration",
+      title: "3. Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
       description: "We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway\u2014making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South.",
       color: "border-[#D9A01B]", // Amber border
@@ -238,7 +238,7 @@ export function FieldsOfWorkSection() {
       stroke: "#D9A01B"
     },
     {
-      title: "Collective Practice",
+      title: "4. Collective Practice",
       subtitle: "Transforming worldview into embodied action",
       description: "The space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving, listening deeply, working with our bodies.",
       color: "border-crimson",
@@ -248,7 +248,7 @@ export function FieldsOfWorkSection() {
       stroke: "#991b1b" // Dark Crimson
     },
     {
-      title: "Intergenerational Transmission",
+      title: "5. Intergenerational Transmission",
       subtitle: "Bridging ancestral wisdom and future generations",
       description: "The recognition that wisdom is not invented but received and passed on. We create spaces where elders, mentors, and emerging leaders meet\u2014where indigenous knowledge, contemplative traditions, and lived experience are honored as essential resources for navigating collapse.",
       color: "border-indigo-800", // New distinct color
@@ -266,11 +266,15 @@ export function FieldsOfWorkSection() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             Our Work
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
-            <br />
-            <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
-          </p>
+<p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+  <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
+  <br />
+  <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
+  {/* Changed to a block span with a top margin */}
+  <span className="block mt-6 text-muted-foreground leading-relaxed">
+    Our focus is on 5 pillars:
+  </span>
+</p>
         </div>
 
         {/* Top row - 2 columns */}
