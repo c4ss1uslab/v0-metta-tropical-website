@@ -64,7 +64,7 @@ export function IntroductionSection() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Metta Tropical Collective</strong>  is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — <strong className="text-foreground">self, other, world, and the sacred.</strong>
+                Metta Tropical Collective is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — <strong className="text-foreground">self, other, world, and the sacred.</strong>
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
@@ -211,12 +211,12 @@ export function FieldsOfWorkSection() {
     <section className="py-24 lg:py-32 bg-cream">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-olive font-medium text-sm tracking-wide uppercase">Our Fields</span>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-            Fields of Work
+            Our Work
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            We are exploring how to build new forms of Relational &amp; Educational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human development, collective sensemaking, community building and wiser forms of participation in the web of life.
+            <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
+            Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.
           </p>
         </div>
 
