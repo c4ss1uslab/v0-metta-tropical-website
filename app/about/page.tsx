@@ -165,8 +165,8 @@ export default function AboutPage() {
               {/* Image */}
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Landscape%20in%20Brazil%20%281652%29%20by%20Frans%20Jansz%20Post.%20Digitally%20enhanced%20by%20rawpixel.-jk3ISmZEus2gjG7NRkhVsctNqKZIiL.jpg"
-                  alt="Landscape in Brazil (1652) by Frans Jansz Post - a view through an arch of tropical vegetation"
+                  src="https://i.postimg.cc/dVg3NTN6/main-mulata.png"
+                  alt="Brown woman enlightened by surreal sun rays"
                   fill
                   className="object-cover"
                 />
@@ -175,7 +175,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Why Collective? */}
+{/* Why Collective? */}
         <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
@@ -211,8 +211,17 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              It is in times of collapse, when small islands of coherence have the capacity to shift the entire system to a higher order.
+              It is in times of collapse that small islands of coherence have the capacity to shift the entire system to a higher order.
             </p>
+          </div>
+
+          {/* Centralized Bottom Image */}
+          <div className="mt-16 flex justify-center px-6 lg:px-8">
+            <img 
+              src="https://i.postimg.cc/hvN1tGPw/DSCF5618.jpg" 
+              alt="Collective Community" 
+              className="w-full max-w-5xl h-auto object-cover rounded-lg shadow-lg"
+            />
           </div>
         </section>
 
