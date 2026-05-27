@@ -16,14 +16,6 @@ export default function WhyNowPage() {
       <main className="pt-16">
         {/* Hero */}
         <section className="relative py-24 lg:py-32 bg-foreground text-background overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/phase%20space-kGHtKLISXDatryptSLcoqIun6t1Fsn.jpeg"
-              alt="Abstract phase space pattern"
-              fill
-              className="object-cover"
-            />
-          </div>
           <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Why Now</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
@@ -41,20 +33,29 @@ export default function WhyNowPage() {
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="space-y-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-                We are living through such a moment.
+                We are living through such a threshold.
               </h2>
 
               <p className="text-muted-foreground leading-relaxed">
-                What we face is not simply a cluster of interconnected crises—ecological collapse, social fragmentation, institutional failure, technological risk. These are symptoms. The root is what we call the <strong className="text-foreground">metacrisis</strong>: a crisis of perception, values, and worldview. A fundamental breakdown in how we relate to all life—to ourselves, to each other, to the world, and to what is sacred.
+                And the urgency of this work emerges from the ever greater magnitude of ecological collapse, social fragmentation, institutional breakdown, technological destabilization, and widespread crises of meaning and belonging.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>¹: a crisis of perception, values, and separation from the web of life. A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                It cannot be addressed without wrestling with foundational questions: <em>What is reality? What is a human life for? Why are we here? What does it mean to live a meaningful life?</em>
+                This crisis we are facing did not happen overnight. It is the culmination of centuries shaped by worldviews that desacralized life, separated human beings from the web of existence, and reduced reality into something to dominate, extract from, and control. It destroyed our sense of meaning, other living beings and our capacity to respond to complexity. The result is a civilization generating problems that exceed the wisdom, maturity, and capacities available to respond to them.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Our collective failure to seriously engage questions like that—and to transform our being accordingly—lies at the root of everything.
+                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.² We are being invited to actively participate in the creation of what comes next.
               </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                We recognize this moment as a possible civilizational rite of passage: a collective initiation requiring humanity to shed old ways of seeing, being, and relating in order to grow into more mature, wise, and life-enhancing human beings. But rites of passage require guidance, community, practice, and structures capable of holding such profound transformation.
+              </p>
+            </div>
+          </div>
 
               <div className="relative aspect-[21/9] overflow-hidden my-12">
                 <Image
@@ -64,12 +65,6 @@ export default function WhyNowPage() {
                   className="object-cover"
                 />
               </div>
-
-              <p className="text-muted-foreground leading-relaxed">
-                This crisis we are facing did not happen overnight. It is the culmination of centuries shaped by a worldview that desacralized the world and placed the human as separate from all other living beings, hollowing out our institutions, our sense of meaning, and our capacity to respond to complexity. The result is a civilization generating problems it no longer has the wisdom to solve.
-              </p>
-            </div>
-          </div>
         </section>
 
         {/* Historical Response */}
