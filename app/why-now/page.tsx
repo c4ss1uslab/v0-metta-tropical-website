@@ -110,15 +110,19 @@ export default function WhyNowPage() {
                   Each built the structures, practices, relational life and rites of passage needed to orient human life toward what is most meaningful—and to develop the capacities required to face the challenges of their time.
                 </p>
 
-                <p className="text-foreground font-medium italic">
-                  We must urgently reimagine such architectures for this time between worlds. And this is why we are here.
+                <p className="text-muted-foreground leading-relaxed">
+                These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. We believe this is what our time most urgently needs now.
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Not simply new ideas, but new containers for human development and collective transformation. New educational architectures and communities capable of supporting individuals move through this threshold consciously, transforming societal rupture into initiation rather than collapse and despair alone.
                 </p>
               </div>
 
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-from-rawpixel-id-6605610-jpeg-EB7NqNkfVIwPesNkSnBfXQY1R1nCuq.jpg"
-                  alt="African mask representing ancestral wisdom and containers for transformation"
+                  src="https://i.postimg.cc/bw8XLYpx/Mandala-of-Jnanadakini-Tibet.jpg"
+                  alt="Mandala of Jnanadakini, Tibet, representing ancestral wisdom and containers for transformation"
                   fill
                   className="object-contain bg-cream"
                 />
