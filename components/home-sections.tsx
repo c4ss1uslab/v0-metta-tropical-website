@@ -102,60 +102,47 @@ export function IntroductionSection() {
             </div>
 
             {/* --- QUOTE OPTION 2: The "Inset Box" (Structured) --- */}
+            <figure className="relative my-8 p-8 bg-foreground text-background rounded-sm flex flex-col items-center text-center">
+              <span className="absolute top-4 left-4 text-4xl font-serif text-background opacity-40 select-none">
+                &ldquo;
+              </span>
+              <blockquote className="max-w-2xl">
+                <p className="font-serif text-lg md:text-xl leading-relaxed">
+                  <span className="text-[#D9A01B]">Education is the Metacrisis:</span>
+                </p>
+                <p className="font-serif text-lg md:text-xl leading-relaxed">
+                  It’s time to see planetary crises as a species-wide learning opportunity.
+                </p>
+              </blockquote>
+              <span className="absolute bottom-4 right-4 text-4xl font-serif text-background opacity-40 select-none">
+                &rdquo;
+              </span>
+              <div className="mt-6 w-8 h-px bg-[#D9A01B]/40" />
+              <figcaption className="mt-4 text-background/70 font-medium text-xs tracking-widest uppercase">
+                Zak Stein
+              </figcaption>
+            </figure>
 
-<figure className="relative my-8 p-8 bg-foreground text-background rounded-sm flex flex-col items-center text-center">
-  
-  {/* Opening quote: changed text-foreground to text-background so it's visible on the dark box */}
-  <span className="absolute top-4 left-4 text-4xl font-serif text-background opacity-40 select-none">
-    &ldquo;
-  </span>
-
-  <blockquote className="max-w-2xl">
-    <p className="font-serif text-lg md:text-xl leading-relaxed">
-      <span className="text-[#D9A01B]">Education is the Metacrisis:</span>
-    </p>
-    <p className="font-serif text-lg md:text-xl leading-relaxed">
-      It’s time to see planetary crises as a species-wide learning opportunity.
-    </p>
-  </blockquote>
-
-  {/* Closing quote: changed text-foreground to text-background */}
-  <span className="absolute bottom-4 right-4 text-4xl font-serif text-background opacity-40 select-none">
-    &rdquo;
-  </span>
-
-  <div className="mt-6 w-8 h-px bg-[#D9A01B]/40" />
-  
-  <figcaption className="mt-4 text-background/70 font-medium text-xs tracking-widest uppercase">
-    Zak Stein
-  </figcaption>
-</figure>
-
-    {/* --- QUOTE OPTION 2 --- */}
-<figure className="relative my-8 py-6 border-y border-foreground/10 px-12">
-  {/* Opening quote at the top-left */}
-  <span className="absolute top-4 left-4 text-4xl font-serif text-foreground opacity-40 select-none">
-    &ldquo;
-  </span>
-
-  <blockquote className="text-center">
-    <p className="font-serif text-xl md:text-2xl text-foreground leading-snug">
-      Education is the Metacrisis:
-    </p>
-    <p className="font-serif text-xl md:text-2xl text-foreground leading-snug italic">
-      It’s time to see planetary crises as a species-wide learning opportunity.
-    </p>
-  </blockquote>
-
-  {/* Closing quote at the bottom-right */}
-  <span className="absolute bottom-4 right-4 text-4xl font-serif text-foreground opacity-40 select-none">
-    &rdquo;
-  </span>
+            {/* --- QUOTE OPTION 2 --- */}
+            <figure className="relative my-8 py-6 border-y border-foreground/10 px-12">
+              <span className="absolute top-4 left-4 text-4xl font-serif text-foreground opacity-40 select-none">
+                &ldquo;
+              </span>
+              <blockquote className="text-center">
+                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug">
+                  Education is the Metacrisis:
+                </p>
+                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug italic">
+                  It’s time to see planetary crises as a species-wide learning opportunity.
+                </p>
+              </blockquote>
+              <span className="absolute bottom-4 right-4 text-4xl font-serif text-foreground opacity-40 select-none">
+                &rdquo;
+              </span>
               <figcaption className="mt-4 text-center text-[#D9A01B] font-medium text-xs tracking-[0.2em] uppercase">
                 — Zak Stein
               </figcaption>
             </figure>
-
 
             {/* --- QUOTE OPTION 3: Modern Serif (High Elegance) --- */}
             <figure className="my-10 relative pl-8 border-l-2 border-[#D9A01B]">
@@ -182,11 +169,11 @@ export function IntroductionSection() {
               We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
             </p>
 
-           <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will.
             </p>           
 
-           <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
             </p>           
 
@@ -210,7 +197,7 @@ export function FieldsOfWorkSection() {
     {
       title: "1. Transformative Educational Lab",
       subtitle: "Education for the end of the world as we know it",
-      description: "A living laboratory where our Educational Architecture is continuously tested, refined, and deepened through retreats, residencies, courses, and immersive programs.",
+      description: "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep experimenting with what it takes to build the foundations for a wisdom-centered education.",
       color: "border-olive",
       textColor: "text-olive",
       image: "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
@@ -220,7 +207,7 @@ export function FieldsOfWorkSection() {
     {
       title: "2. Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
-      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through articles, essays, and collaborative thinking, we contribute to narrative-building and cultural sensemaking.",
+      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
       color: "border-cyan",
       textColor: "text-cyan-800",
       image: "https://i.postimg.cc/63CqR1MW/cosmos-830055812.jpg",
@@ -230,32 +217,12 @@ export function FieldsOfWorkSection() {
     {
       title: "3. Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
-      description: "We map, connect, and weave initiatives into a coherent, multi-decade developmental pathway\u2014making accessible what has until now been scattered, expensive, and out of reach for most people, especially in the Global South.",
+      description: "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
       color: "border-[#D9A01B]", // Amber border
       textColor: "text-[#B88610]", // Readable Amber
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
       link: "/about#ecosystem",
       stroke: "#D9A01B"
-    },
-    {
-      title: "4. Collective Practice",
-      subtitle: "Transforming worldview into embodied action",
-      description: "The space where worldview becomes embodied, where consistent, intentional practice reshapes not just what we think, but how we perceive, relate, and act. We practice together: sitting in silence, grieving, listening deeply, working with our bodies.",
-      color: "border-crimson",
-      textColor: "text-crimson",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/designretrospace-Lej4ROEDLMRjlkDkkYE8wc5yFqra7s.jpeg",
-      link: "/about#practice",
-      stroke: "#991b1b" // Dark Crimson
-    },
-    {
-      title: "5. Intergenerational Transmission",
-      subtitle: "Bridging ancestral wisdom and future generations",
-      description: "The recognition that wisdom is not invented but received and passed on. We create spaces where elders, mentors, and emerging leaders meet\u2014where indigenous knowledge, contemplative traditions, and lived experience are honored as essential resources for navigating collapse.",
-      color: "border-indigo-800", // New distinct color
-      textColor: "text-indigo-900",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ind%C3%ADgena%20statue-UEeF4odSMX5yLGlAC6txxib6JBR6dX.jpg",
-      link: "/about#intergenerational",
-      stroke: "#3730a3" // Dark Indigo
     },
   ]
 
@@ -266,20 +233,19 @@ export function FieldsOfWorkSection() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             Our Work
           </h2>
-<p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-  <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
-  <br />
-  <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
-  {/* Changed to a block span with a top margin */}
-  <span className="block mt-6 text-muted-foreground leading-relaxed">
-    Our focus is on 5 main pillars:
-  </span>
-</p>
+          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
+            <br />
+            <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
+            <span className="block mt-6 text-muted-foreground leading-relaxed">
+              Our focus is on 3 main pillars:
+            </span>
+          </p>
         </div>
 
-        {/* Top row - 2 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {fields.slice(0, 4).map((field) => (
+        {/* Pillars Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {fields.map((field) => (
             <div key={field.title} className={`bg-background p-8 border-t-4 ${field.color} flex flex-col`}>
               <div className="relative h-48 mb-6 overflow-hidden">
                 <Image
@@ -303,34 +269,6 @@ export function FieldsOfWorkSection() {
               </Link>
             </div>
           ))}
-        </div>
-
-        {/* Bottom row - 5th field, full width */}
-        <div className="mt-8">
-          <div className={`bg-background border-t-4 ${fields[4].color} grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden`}>
-            <div className="relative h-64 md:h-auto">
-              <Image
-                src={fields[4].image}
-                alt={fields[4].title}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h3 className="font-serif text-2xl font-medium text-foreground">{fields[4].title}</h3>
-              <p className={`mt-2 ${fields[4].textColor} text-sm font-medium`}>{fields[4].subtitle}</p>
-              <p className="mt-4 text-muted-foreground text-sm leading-relaxed">{fields[4].description}</p>
-              <Link
-                href={fields[4].link}
-                className="mt-6 inline-flex items-center text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
-              >
-                Learn More
-                <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke={fields[4].stroke}>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -357,7 +295,7 @@ export function CTASection() {
         </h2>
         
         <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-          If something in you senses that the responses available to us within the existing order are no longer enough, we invite you to explore our fellowship and community.
+          If something in you senses that most of our world and institutions are not responding adequately to our moment anymore, we invite you to explore our fellowship and community.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
