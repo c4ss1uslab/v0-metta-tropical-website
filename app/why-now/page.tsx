@@ -48,7 +48,17 @@ export default function WhyNowPage() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.² We are being invited to actively participate in the creation of what comes next.
+                For the first time in recorded history, we are facing risks not only to the existence of humanity, but of the whole biosphere.²
+              </p>
+
+
+              <p className="text-muted-foreground leading-relaxed">
+                And this scenario not only holds escalating challenges such as ecological points of no return, AI-accelerated catastrophic risks and more, but it also continues to perpetuate the consequences of systemic collapse, often upon those who are already suffering from the extractive dynamics of our dominant systems.³
+              </p>
+
+
+              <p className="text-muted-foreground leading-relaxed">
+                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.⁴ We are being invited to actively participate in the creation of what comes next.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
