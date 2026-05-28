@@ -101,49 +101,6 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            {/* --- QUOTE OPTION 2: The "Inset Box" (Structured) --- */}
-            <figure className="relative my-8 p-8 bg-foreground text-background rounded-sm flex flex-col items-center text-center">
-              <span className="absolute top-4 left-4 text-4xl font-serif text-background opacity-40 select-none">
-                &ldquo;
-              </span>
-              <blockquote className="max-w-2xl">
-                <p className="font-serif text-lg md:text-xl leading-relaxed">
-                  <span className="text-[#D9A01B]">Education is the Metacrisis:</span>
-                </p>
-                <p className="font-serif text-lg md:text-xl leading-relaxed">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </p>
-              </blockquote>
-              <span className="absolute bottom-4 right-4 text-4xl font-serif text-background opacity-40 select-none">
-                &rdquo;
-              </span>
-              <div className="mt-6 w-8 h-px bg-[#D9A01B]/40" />
-              <figcaption className="mt-4 text-background/70 font-medium text-xs tracking-widest uppercase">
-                Zak Stein
-              </figcaption>
-            </figure>
-
-            {/* --- QUOTE OPTION 2 --- */}
-            <figure className="relative my-8 py-6 border-y border-foreground/10 px-12">
-              <span className="absolute top-4 left-4 text-4xl font-serif text-foreground opacity-40 select-none">
-                &ldquo;
-              </span>
-              <blockquote className="text-center">
-                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug">
-                  Education is the Metacrisis:
-                </p>
-                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug italic">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </p>
-              </blockquote>
-              <span className="absolute bottom-4 right-4 text-4xl font-serif text-foreground opacity-40 select-none">
-                &rdquo;
-              </span>
-              <figcaption className="mt-4 text-center text-[#D9A01B] font-medium text-xs tracking-[0.2em] uppercase">
-                — Zak Stein
-              </figcaption>
-            </figure>
-
             {/* --- QUOTE OPTION 3: Modern Serif (High Elegance) --- */}
             <figure className="my-10 relative pl-8 border-l-2 border-[#D9A01B]">
               <blockquote className="font-serif text-2xl md:text-3xl text-foreground/90 tracking-tight leading-tight">

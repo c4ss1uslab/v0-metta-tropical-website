@@ -36,7 +36,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               
               {/* Left Side: Soft Portal Overlap */}
-              <div className="lg:col-span-4 relative h-[300px] lg:h-[450px] w-full transform lg:translate-y-28 lg:-translate-x-6 z-20">
+              <div className="lg:col-span-4 relative h-[240px] lg:h-[450px] w-full transform lg:translate-y-28 lg:-translate-x-6 z-20">
                 <div className="relative w-full h-full rounded-[60%_40%_70%_30%_/_40%_50%_60%_50%] overflow-hidden mix-blend-multiply opacity-90 filter contrast-125">
                   <Image 
                     src="https://i.postimg.cc/Gt4CGXPk/sunflower-8.jpg"
