@@ -23,7 +23,7 @@ export function HeroSection() {
         </h1>
         
         <p className="mt-8 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed text-pretty">
-          A community of transformation, inquiry and practice nurturing the emergence of a new generation of wisdom-centered leaders—postactivist thinkers, artists, educators, changemakers—who are wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
+          Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -101,49 +101,6 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            {/* --- QUOTE OPTION 2: The "Inset Box" (Structured) --- */}
-            <figure className="relative my-8 p-8 bg-foreground text-background rounded-sm flex flex-col items-center text-center">
-              <span className="absolute top-4 left-4 text-4xl font-serif text-background opacity-40 select-none">
-                &ldquo;
-              </span>
-              <blockquote className="max-w-2xl">
-                <p className="font-serif text-lg md:text-xl leading-relaxed">
-                  <span className="text-[#D9A01B]">Education is the Metacrisis:</span>
-                </p>
-                <p className="font-serif text-lg md:text-xl leading-relaxed">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </p>
-              </blockquote>
-              <span className="absolute bottom-4 right-4 text-4xl font-serif text-background opacity-40 select-none">
-                &rdquo;
-              </span>
-              <div className="mt-6 w-8 h-px bg-[#D9A01B]/40" />
-              <figcaption className="mt-4 text-background/70 font-medium text-xs tracking-widest uppercase">
-                Zak Stein
-              </figcaption>
-            </figure>
-
-            {/* --- QUOTE OPTION 2 --- */}
-            <figure className="relative my-8 py-6 border-y border-foreground/10 px-12">
-              <span className="absolute top-4 left-4 text-4xl font-serif text-foreground opacity-40 select-none">
-                &ldquo;
-              </span>
-              <blockquote className="text-center">
-                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug">
-                  Education is the Metacrisis:
-                </p>
-                <p className="font-serif text-xl md:text-2xl text-foreground leading-snug italic">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </p>
-              </blockquote>
-              <span className="absolute bottom-4 right-4 text-4xl font-serif text-foreground opacity-40 select-none">
-                &rdquo;
-              </span>
-              <figcaption className="mt-4 text-center text-[#D9A01B] font-medium text-xs tracking-[0.2em] uppercase">
-                — Zak Stein
-              </figcaption>
-            </figure>
-
             {/* --- QUOTE OPTION 3: Modern Serif (High Elegance) --- */}
             <figure className="my-10 relative pl-8 border-l-2 border-[#D9A01B]">
               <blockquote className="font-serif text-2xl md:text-3xl text-foreground/90 tracking-tight leading-tight">
@@ -162,19 +119,11 @@ export function IntroductionSection() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world.
+              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will.
-            </p>           
-
-            <p className="text-muted-foreground leading-relaxed">
-              Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
+              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
             </p>           
 
             <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
@@ -236,9 +185,9 @@ export function FieldsOfWorkSection() {
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
             <br />
-            <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
+            <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
             <span className="block mt-6 text-muted-foreground leading-relaxed">
-              Our focus is on 3 main pillars:
+              The 3 main pillars of our work are:
             </span>
           </p>
         </div>
