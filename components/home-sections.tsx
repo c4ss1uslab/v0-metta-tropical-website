@@ -295,7 +295,7 @@ export function CTASection() {
         </h2>
         
         <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-          If something in you senses that most of our world and institutions are not responding adequately to our moment anymore, we invite you to explore our fellowship and community.
+          If something in you senses that most of our world and institutions are not responding adequately to our moment, we invite you to explore our fellowship and community.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
