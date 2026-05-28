@@ -15,7 +15,7 @@ export default function WhyNowPage() {
       <Navigation />
       <main className="pt-16">
         {/* Hero */}
-        <section className="relative py-24 lg:py-32 bg-foreground text-background overflow-hidden">
+        <section className="relative py-16 lg:py-20 bg-foreground text-background overflow-hidden">
           <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Why Now</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
@@ -29,7 +29,7 @@ export default function WhyNowPage() {
         </section>
 
         {/* The Moment */}
-        <section className="py-24 lg:py-32 bg-background">
+        <section className="py-16 lg:py-20 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="space-y-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
@@ -55,20 +55,21 @@ export default function WhyNowPage() {
                 We recognize this moment as a possible civilizational rite of passage: a collective initiation requiring humanity to shed old ways of seeing, being, and relating in order to grow into more mature, wise, and life-enhancing human beings. But rites of passage require guidance, community, practice, and structures capable of holding such profound transformation.
               </p>
             </div>
-          </div>
 
-              <div className="relative aspect-[21/9] overflow-hidden my-12">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
-                  alt="Mountains and moon - representing the darkness before dawn"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            {/* Adjusted: Moved inside the max-w-4xl wrapper to match text size and reduced margin */}
+            <div className="relative aspect-[21/9] overflow-hidden mt-8">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
+                alt="Mountains and moon - representing the darkness before dawn"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Historical Response */}
-        <section className="py-24 lg:py-32 bg-cream">
+        <section className="py-16 lg:py-20 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
@@ -111,7 +112,7 @@ export default function WhyNowPage() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. We believe this is what our time most urgently needs now.
+                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -131,10 +132,10 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* What This Requires */}
-        <section className="py-24 lg:py-32 bg-background">
+{/* What This Moment Requires */}
+        <section className="py-16 lg:py-20 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Threshold</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 What This Moment Requires
@@ -142,100 +143,38 @@ export default function WhyNowPage() {
             </div>
 
             <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                This is what this threshold moment requires of us. Despair can be the precondition for genuine transformation, but only within containers strong enough to hold the shape-shift and metamorphosis. Without them, crisis tends not toward transformation, but toward a tightening grip on what is already broken.
+              <blockquote className="font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-crimson pl-6">
+                &ldquo;The civilization in breakdown is a civilization whose affordances are failing — whose old possibilities for being human are becoming unavailable faster than new ones are being unfolded.&rdquo;
+              </blockquote>
+              <cite className="mt-2 block text-muted-foreground/70 text-sm not-italic font-medium">— Steve March</cite>
+
+              <p className="text-muted-foreground leading-relaxed pt-4">
+                During moments of collapse, despair, grief, and disorientation can become conditions for profound transformation, but only when held within structures strong enough to support the metamorphosis required of us. Without such containers, crisis often leads not toward maturation, but toward deeper fragmentation, numbness, polarization, and retreat into what is already dying.
               </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-cream border-l-4 border-olive">
-                  <h3 className="font-serif text-xl font-medium text-foreground">Why Are We Needed Now?</h3>
-                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
-                    The velocity of ecological, cultural, political, and spiritual unraveling has sharpened. Many are watching events unfold with heartbreak and uncertainty about how to respond.
-                  </p>
-                </div>
-
-                <div className="p-6 bg-cream border-l-4 border-cyan">
-                  <h3 className="font-serif text-xl font-medium text-foreground">What Exactly Is Needed Now?</h3>
-                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
-                    New structures and architectures for human development, transformation and belonging—forms that can hold the long arc of human transformation.
-                  </p>
-                </div>
-              </div>
 
               <p className="text-muted-foreground leading-relaxed">
-                What we are building is, at its heart, an <strong className="text-foreground">educational sanctuary</strong>. A space where genuine transformation becomes possible, where the dying paradigm temporarily loses its grip, and where we are able to embody radically new ways of seeing, being, knowing and acting together.
+                Our wisdom-centered educational architecture is trying to offer another possibility.
               </p>
-            </div>
-          </div>
-        </section>
 
-        {/* Our Conviction */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-            <span className="text-yellow font-medium text-sm tracking-wide uppercase">Our Conviction</span>
-            <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">
-              Metta Tropical Collective was born from this conviction
-            </h2>
-            
-            <p className="mt-8 text-background/80 leading-relaxed max-w-3xl mx-auto">
-              That what is most urgently missing is not more information or better policy, but new structures and architectures for human development, transformation and belonging—new forms of educational architectures that can hold the long arc of human transformation, where we can unfold into the types of individuals who have the capacities to create the conditions for a new cultural paradigm to quietly, intimately, and relationally take root.
-            </p>
-
-            <div className="mt-12 inline-block p-8 bg-background/10 border border-background/20">
-              <p className="font-serif text-xl text-background italic">
-                Rooted in Brazil. Weaving a fragmented ecosystem.<br />
-                A community of transformation, inquiry and practice.
+              <p className="text-muted-foreground leading-relaxed">
+                A structure where people can move through this civilizational rite of passage with greater support, guidance, practice, and community. Spaces where individuals can grieve, question, heal, remember their belonging within the web of life, and gradually embody more mature and life-affirming ways of being human together.
               </p>
-            </div>
-          </div>
-        </section>
 
-        {/* Wisdom Questions */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Ground</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
-                Three Wisdom Questions
-              </h2>
-              <p className="mt-6 text-background/70 max-w-2xl mx-auto leading-relaxed">
-                Before rushing into action, we wrestle with the questions that matter most for life. These are wisdom questions—inquiries into the nature of self, reality, and systems in a time between worlds.
+              <p className="text-muted-foreground leading-relaxed">
+                At its heart, <strong className="text-foreground">this work is about cultivating the conditions for the long arc of transformation</strong> required for wiser humans, communities and cultures to emerge.
               </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-yellow">Who are we?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What is the human for? What is my true nature? Who do we need to become to navigate this crisis—and what individual and collective capacities does that require?
-                </p>
-              </div>
-
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-cyan">Where are we?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What is the true nature of reality? What defines the current moment in history? What are the deep roots of modernity and capitalism, and what existential dangers do they now carry?
-                </p>
-              </div>
-
-              <div className="p-8 border border-background/20">
-                <h3 className="font-serif text-2xl font-medium text-background">What is being asked of us?</h3>
-                <p className="mt-4 text-background/70 text-sm leading-relaxed">
-                  What does this moment ask of me? What is trying to emerge through us? How do we create the conditions for collective coordination in genuine service of all life?
-                </p>
-              </div>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-24 lg:py-32 bg-yellow">
+        <section className="py-16 lg:py-20 bg-yellow">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
               The time between worlds asks for those who are committed to building a new cultural paradigm.
             </h2>
             <p className="mt-6 text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-              There is a path, but it&apos;s not a given at all that we will take it. We are the ones who will have to build the new instructional manual.
+              There is a path, but it&apos;s not a given at all that we will take it. We are the ones who will have to figure out the appropriate responses for our time.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -248,7 +187,7 @@ export default function WhyNowPage() {
                 href="/fellowship"
                 className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-foreground text-foreground font-medium text-sm tracking-wide hover:bg-foreground/10 transition-colors"
               >
-                Join the Fellowship
+                Apply for the Fellowship
               </Link>
             </div>
           </div>
