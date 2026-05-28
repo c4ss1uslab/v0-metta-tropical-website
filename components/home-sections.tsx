@@ -23,7 +23,7 @@ export function HeroSection() {
         </h1>
         
         <p className="mt-8 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed text-pretty">
-          A community of transformation, inquiry and practice nurturing the emergence of a new generation of wisdom-centered leaders—postactivist thinkers, artists, educators, changemakers—who are wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
+          Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -162,19 +162,11 @@ export function IntroductionSection() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world.
+              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will.
-            </p>           
-
-            <p className="text-muted-foreground leading-relaxed">
-              Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
+              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
             </p>           
 
             <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
@@ -236,9 +228,9 @@ export function FieldsOfWorkSection() {
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
             <br />
-            <em className="italic block mt-2">We work to support individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
+            <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
             <span className="block mt-6 text-muted-foreground leading-relaxed">
-              Our focus is on 3 main pillars:
+              The 3 main pillars of our work are:
             </span>
           </p>
         </div>
