@@ -53,7 +53,7 @@ export default function WhyNowPage() {
 
 
               <p className="text-muted-foreground leading-relaxed">
-                And this scenario not only holds escalating challenges such as ecological points of no return, AI-accelerated catastrophic risks and more, but it also continues to perpetuate the consequences of systemic collapse, often upon those who are already suffering from the extractive dynamics of our dominant systems.³
+                And this scenario not only holds escalating challenges such as ecological points of no return, AI-accelerated catastrophic risks and more, but it also continues to perpetuate the consequences of systemic collapse - often upon those who are already suffering the most from the extractive dynamics of our dominant systems.³
               </p>
 
 
