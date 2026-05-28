@@ -40,7 +40,7 @@ export default function WhyNowPage() {
                 And the urgency of this work emerges from the ever greater magnitude of ecological collapse, social fragmentation, institutional breakdown, technological destabilization, and widespread crises of meaning and belonging.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>¹: a crisis of perception, values, and separation from the web of life. A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
+              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>: a crisis of perception, values, and separation from the web of life.¹ A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
