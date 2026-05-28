@@ -122,7 +122,7 @@ export default function WhyNowPage() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>
+                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>⁵
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
