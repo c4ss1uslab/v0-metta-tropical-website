@@ -9,43 +9,219 @@ export const metadata: Metadata = {
   description: "A 6-month initiatory journey for those who sense that something fundamental must change in how we relate to all life. Applications open for September 2026.",
 }
 
-export default function FellowshipPage() {
+export function EarthGrain() {
   return (
-    <>
-      <Navigation />
-      <main className="pt-16">
-        {/* Hero */}
-        <section className="relative py-24 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0">
+    <svg className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.15] mix-blend-overlay">
+      <filter id="earth-grain">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves={3}
+          stitchTiles="stitch"
+        />
+        <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#earth-grain)" />
+    </svg>
+  )
+}
+
+export function HeroOptionA() {
+  return (
+    <section className="relative py-24 lg:py-32 overflow-hidden border-b border-olive/20 bg-background">
+      {/* Background Indigenous Geometries Weave */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="indigenous-weave" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M0 20 L20 0 L40 20 L20 40 Z M20 0 L20 40 M0 20 L40 20" fill="none" stroke="currentColor" strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#indigenous-weave)" />
+        </svg>
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7 space-y-6">
+          <div className="inline-flex items-center gap-3 px-3 py-1 border border-yellow text-yellow text-xs tracking-widest uppercase bg-yellow/5 backdrop-blur-sm">
+            <span className="w-1.5 h-1.5 bg-yellow rounded-full animate-pulse" />
+            Applications Open — September 2026
+          </div>
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-[1.15]">
+            Wisdom-Centered Leadership <br />
+            <span className="italic text-olive font-normal">in a Time Between Worlds</span>
+          </h1>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+            A 6-month journey inviting participants into an initiatory process of transforming ourselves to become the types of beings who can embody a way of relating to all life that this time is asking for.
+          </p>
+          <div className="pt-4">
+            <Link href="#apply" className="group relative inline-flex items-center justify-center px-8 py-3.5 bg-foreground text-background font-medium text-sm tracking-wide transition-transform hover:-translate-y-0.5">
+              <span className="absolute inset-0 border border-foreground translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform" />
+              <span className="relative z-10">Begin the Journey</span>
+            </Link>
+          </div>
+        </div>
+
+        {/* Decorative Object Frame instead of a basic rectangle */}
+        <div className="lg:col-span-5 relative aspect-square max-w-md mx-auto w-full p-4 border border-olive/30 bg-cream/30 backdrop-blur-sm rounded-[2rem] shadow-inner">
+          <div className="absolute inset-0 m-4 border border-dashed border-olive/40 rounded-[1.7rem]" />
+          <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden opacity-90 contrast-105 mix-blend-multiply">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sunflower%2012-rYeVrLQePMq900vde9yBvm9cwrm3Hj.jpeg"
               alt="Sunflowers against a golden wall"
               fill
-              className="object-cover"
+              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
           </div>
-          
-          <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="inline-block px-4 py-1 bg-yellow text-foreground text-sm font-medium mb-6">
-              Applications Open — September 2026
-            </span>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
-              Wisdom-Centered Leadership in a Time Between Worlds
-            </h1>
-            <p className="mt-8 text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              A 6-month journey inviting participants into an initiatory process of transforming ourselves to become the types of beings who can embody a way of relating to all life that this time is asking for.
+          {/* Spiritual Accent: Minimalist Mandala Ornament overlaying the frame corner */}
+          <div className="absolute -bottom-4 -left-4 w-12 h-12 text-olive bg-background rounded-full p-2 border border-olive/30 shadow-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <path d="M12 2v20M2 12h20M5 5l14 14M5 19L14 5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function StreamsOptionB() {
+  const streams = [
+    { num: "1", name: "The Sacred", color: "text-yellow", border: "border-yellow/30", bg: "bg-yellow/5", sub: "The Nature of Reality — 4 weeks", desc: "We begin here because everything else depends on it. The sacred is not a separate realm above or outside of ordinary life. It is the depth dimension of reality itself." },
+    { num: "2", name: "Soul", color: "text-cyan", border: "border-cyan/30", bg: "bg-cyan/5", sub: "The Inner Work — 6 weeks", desc: "Grounded in the sacred, we turn inward. This stream is a process of clarification: learning to see more clearly who we actually are beneath the accumulated layers of conditioning." },
+    { num: "3", name: "Systems", color: "text-olive", border: "border-olive/30", bg: "bg-olive/5", sub: "The Complexity of Our Moment — 6 weeks", desc: "With a clearer sense of who we are, we turn to meet the world as it actually is. This stream develops the capacity to see clearly within complexity—tracing the roots of the metacrisis." },
+    { num: "4", name: "Soil", color: "text-olive", border: "border-olive/30", bg: "bg-olive/5", sub: "Returning to the Living World — 6 weeks", desc: "We will be immersed in indigenous and quilombola communities, not only hearing from their leaders but living alongside them, encountering what it actually feels like to inhabit a radically different relationship with the world." },
+    { num: "5", name: "Society", color: "text-crimson", border: "border-crimson/30", bg: "bg-crimson/5", sub: "From Formation to Action — 6 weeks", desc: "The journey culminates here—where inner formation meets outer responsibility. Having been grounded in the sacred, formed in soul, clear in understanding of systems, and rooted in the living world, we ask: how do we act?" }
+  ]
+
+  return (
+    <section className="py-24 lg:py-32 bg-cream/40 border-y border-olive/10 relative">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="max-w-2xl mb-20">
+          <span className="text-olive font-medium text-xs tracking-widest uppercase">The Map of the Crucible</span>
+          <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
+            Five Streams of Deep Transformation
+          </h2>
+          <div className="w-24 h-px bg-olive/30 my-4" />
+          <p className="text-muted-foreground text-sm">
+            Three wisdom questions serve as our orienting guides: <em>Who are we? Where are we? What is being asked of us?</em>
+          </p>
+        </div>
+
+        <div className="relative border-l border-dashed border-olive/30 ml-4 md:ml-8 space-y-12">
+          {streams.map((stream) => (
+            <div key={stream.num} className="relative pl-8 md:pl-12 group">
+              {/* Stitched Node Counter */}
+              <div className={`absolute -left-[17px] top-0 w-8 h-8 rounded-full ${stream.bg} border border-dashed border-olive/60 flex items-center justify-center text-xs font-serif font-bold text-foreground backdrop-blur-sm group-hover:scale-110 transition-transform`}>
+                {stream.num}
+              </div>
+              
+              <div className={`p-8 bg-background border ${stream.border} relative rounded-sm shadow-sm`}>
+                {/* Visual Accent: Tiny Cross-Stitch Embroidery Symbol in top-right */}
+                <div className="absolute top-4 right-4 text-olive/20 font-mono text-xs select-none">
+                  ✧ ╳ ✧
+                </div>
+                
+                <span className={`font-serif text-xs font-medium tracking-wider uppercase ${stream.color}`}>
+                  {stream.sub}
+                </span>
+                <h3 className="font-serif text-2xl font-medium text-foreground mt-1 mb-4">
+                  {stream.name}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed max-w-3xl">
+                  {stream.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function FormatOptionC() {
+  return (
+    <section className="py-24 lg:py-32 bg-foreground text-background relative overflow-hidden">
+      {/* Abstract Concentric Circles (Zen/Buddhist Lotus motif inspiration) */}
+      <div className="absolute -right-48 -bottom-48 w-96 h-96 opacity-[0.04] text-background pointer-events-none">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
+          <circle cx="50" cy="50" r="10" />
+          <circle cx="50" cy="50" r="20" />
+          <circle cx="50" cy="50" r="30" />
+          <circle cx="50" cy="50" r="40" />
+          <path d="M50 0v100M0 50h100" />
+        </svg>
+      </div>
+
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-start">
+          <div className="lg:col-span-1 lg:sticky lg:top-24 space-y-4">
+            <span className="text-yellow font-medium text-xs tracking-widest uppercase">The Container</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-medium text-background leading-tight">
+              The Structure Holding Transformation
+            </h2>
+            <p className="text-background/60 text-sm leading-relaxed">
+              An ecosystemic lifecycle framework built to balance immersive physical presence in nature with integrated remote dialogue.
             </p>
-            <div className="mt-10">
-              <Link
-                href="#apply"
-                className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-              >
-                Apply Now
-              </Link>
+          </div>
+
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Retreat card */}
+            <div className="p-6 bg-background/5 border border-background/10 rounded-sm hover:border-yellow/30 transition-colors">
+              <div className="flex items-center gap-2 text-yellow mb-4">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                </svg>
+                <h3 className="font-serif text-xl font-medium">Three In-Person Retreats</h3>
+              </div>
+              <p className="text-background/70 text-xs leading-relaxed mb-6">
+                Sanctuaries anchoring the arc of eight months. Where we grieve, listen deeply, hold paradoxes, and tend the relational field together.
+              </p>
+              <div className="space-y-3 pt-4 border-t border-background/10 text-xs text-background/80">
+                <div className="flex justify-between"><span className="text-background/40">Opening:</span><span>Sept 12-18, 2026 — São Paulo</span></div>
+                <div className="flex justify-between"><span className="text-background/40">Midpoint:</span><span>Jan 15-21, 2027 — Bahia</span></div>
+                <div className="flex justify-between"><span className="text-background/40">Closing:</span><span>May 1-7, 2027 — São Paulo</span></div>
+              </div>
+            </div>
+
+            {/* Online card */}
+            <div className="p-6 bg-background/5 border border-background/10 rounded-sm hover:border-cyan/30 transition-colors">
+              <div className="flex items-center gap-2 text-cyan mb-4">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9m0 0a9.015 9.015 0 010 18.03" />
+                </svg>
+                <h3 className="font-serif text-xl font-medium">Weekly Synchronous Work</h3>
+              </div>
+              <p className="text-background/70 text-xs leading-relaxed mb-6">
+                Two digital interactive blocks each week weaving ideas, systemic maps, collective therapeutic practices, and ancestral frameworks.
+              </p>
+              <div className="space-y-3 pt-4 border-t border-background/10 text-xs text-background/80">
+                <div className="flex justify-between"><span>Tuesdays:</span><span className="text-background/60">7-9pm BRT — Exploration</span></div>
+                <div className="flex justify-between"><span>Wednesdays:</span><span className="text-background/60">7-8:30pm BRT — Practice</span></div>
+                <div className="flex justify-between"><span>Thursdays:</span><span className="text-background/60">7-9pm BRT — Guest Masters</span></div>
+              </div>
+              
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// page
+
+export default function FellowshipPage() {
+  return (
+    <>
+      <EarthGrain />
+      <Navigation />
+      <main className="pt-16">
+        {/* Hero */}
+        <HeroOptionA />
 
         {/* What This Is */}
         <section className="py-24 lg:py-32 bg-background">
@@ -80,90 +256,10 @@ export default function FellowshipPage() {
         </section>
 
         {/* The Journey */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Journey</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
-                Five Streams of Transformation
-              </h2>
-              <p className="mt-6 text-background/70 max-w-2xl mx-auto leading-relaxed">
-                Three wisdom questions serve as our orienting guides: <em>Who are we? Where are we? What is being asked of us?</em>
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* The Sacred */}
-              <div className="p-8 bg-background/10 border border-background/20">
-                <div className="w-12 h-12 bg-yellow rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-xl font-medium text-foreground">1</span>
-                </div>
-                <h3 className="font-serif text-2xl font-medium text-yellow">The Sacred</h3>
-                <p className="mt-2 text-background/60 text-sm">The Nature of Reality — 4 weeks</p>
-                <p className="mt-4 text-background/80 text-sm leading-relaxed">
-                  We begin here because everything else depends on it. The sacred is not a separate realm above or outside of ordinary life. It is the depth dimension of reality itself—accessible through a certain quality of perception that modernity has largely taught us to close.
-                </p>
-              </div>
-
-              {/* Soul */}
-              <div className="p-8 bg-background/10 border border-background/20">
-                <div className="w-12 h-12 bg-cyan rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-xl font-medium text-foreground">2</span>
-                </div>
-                <h3 className="font-serif text-2xl font-medium text-cyan">Soul</h3>
-                <p className="mt-2 text-background/60 text-sm">The Inner Work — 6 weeks</p>
-                <p className="mt-4 text-background/80 text-sm leading-relaxed">
-                  Grounded in the sacred, we turn inward. This stream is a process of clarification: learning to see more clearly who we actually are beneath the accumulated layers of conditioning, trauma, and adaptive self-protection.
-                </p>
-              </div>
-
-              {/* Systems */}
-              <div className="p-8 bg-background/10 border border-background/20">
-                <div className="w-12 h-12 bg-olive rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-xl font-medium text-background">3</span>
-                </div>
-                <h3 className="font-serif text-2xl font-medium text-background">Systems</h3>
-                <p className="mt-2 text-background/60 text-sm">The Complexity of Our Moment — 6 weeks</p>
-                <p className="mt-4 text-background/80 text-sm leading-relaxed">
-                  With a clearer sense of who we are, we turn to meet the world as it actually is. This stream develops the capacity to see clearly within complexity—tracing the roots of the metacrisis.
-                </p>
-              </div>
-
-              {/* Soil */}
-              <div className="p-8 bg-background/10 border border-background/20">
-                <div className="w-12 h-12 bg-olive rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-xl font-medium text-background">4</span>
-                </div>
-                <h3 className="font-serif text-2xl font-medium text-background">Soil</h3>
-                <p className="mt-2 text-background/60 text-sm">Returning to the Living World — 6 weeks</p>
-                <p className="mt-4 text-background/80 text-sm leading-relaxed">
-                  We will be immersed in indigenous and quilombola communities, not only hearing from their leaders but living alongside them, encountering what it actually feels like to inhabit a radically different relationship with the world.
-                </p>
-              </div>
-
-              {/* Society */}
-              <div className="p-8 bg-background/10 border border-background/20">
-                <div className="w-12 h-12 bg-crimson rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-xl font-medium text-background">5</span>
-                </div>
-                <h3 className="font-serif text-2xl font-medium text-background">Society</h3>
-                <p className="mt-2 text-background/60 text-sm">From Formation to Action — 6 weeks</p>
-                <p className="mt-4 text-background/80 text-sm leading-relaxed">
-                  The journey culminates here—where inner formation meets outer responsibility. Having been grounded in the sacred, formed in soul, clear in understanding of systems, and rooted in the living world, we ask: how do we act?
-                </p>
-              </div>
-
-              {/* Note */}
-              <div className="p-8 bg-yellow/20 border border-yellow/30">
-                <p className="font-serif text-lg text-background italic leading-relaxed">
-                  These five streams are not separate modules to be completed. They are dimensions of a single transformation—the process of becoming more whole, more mature, and more capable of responding to these times.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Format */}
+        <StreamsOptionB />
+ 
+         {/* Format */}
+        <FormatOptionC />
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
