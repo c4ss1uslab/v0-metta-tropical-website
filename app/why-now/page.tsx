@@ -19,7 +19,7 @@ export default function WhyNowPage() {
           <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Why Now</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
-              A Time Between Worlds
+              A Time Between Worlds¹
             </h1>
             <blockquote className="mt-8 font-serif text-xl md:text-2xl text-background/80 italic leading-relaxed border-l-4 border-yellow pl-6">
               &ldquo;During times between worlds there emerge ideas and thinkers that are, properly speaking, without a world. Their work is liminal — not within the old world or the world to come, but serving as the bridge between them. The focus of work in the liminal is on foundations: metaphysics, religion, and the deeper codes of culture — education in its broadest sense.&rdquo;
@@ -40,7 +40,7 @@ export default function WhyNowPage() {
                 And the urgency of this work emerges from the ever greater magnitude of ecological collapse, social fragmentation, institutional breakdown, technological destabilization, and widespread crises of meaning and belonging.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>: a crisis of perception, values, and separation from the web of life.¹ A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
+              <p className="text-muted-foreground leading-relaxed">These crises are not separate. They are symptoms of a deeper civilizational disease, what some have called the <em>meta-crisis</em>: a crisis of perception, values, and separation from the web of life.² A fundamental breakdown in how we intimately relate with all life—to ourselves, to each other, to the world, and to what is sacred.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
@@ -48,17 +48,17 @@ export default function WhyNowPage() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                For the first time in recorded history, we are facing risks not only to the existence of humanity, but of the whole biosphere.²
+                For the first time in recorded history, we are facing risks not only to the existence of humanity, but of the whole biosphere.³
               </p>
 
 
               <p className="text-muted-foreground leading-relaxed">
-                And this scenario not only holds escalating challenges such as ecological points of no return, AI-accelerated catastrophic risks and more, but it also continues to perpetuate the consequences of systemic collapse - often upon those who are already suffering the most from the extractive dynamics of our dominant systems.³
+                And this scenario not only holds escalating challenges such as <em>ecological points of no return</em>, <em>AI-accelerated catastrophic risks</em> and more, but it also continues to perpetuate the consequences of systemic collapse - often upon those who are already suffering the most from the extractive dynamics of our dominant systems.⁴
               </p>
 
 
               <p className="text-muted-foreground leading-relaxed">
-                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.⁴ We are being invited to actively participate in the creation of what comes next.
+                Increasingly, it has become clear that the very structures that produced this crisis cannot guide us beyond it. We are living through a time between worlds. The old stories are breaking apart, yet the new ones have not fully arrived. There is no clear map for how to move through this threshold.⁵ We are being invited to actively participate in the creation of what comes next.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
@@ -113,7 +113,7 @@ export default function WhyNowPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Quilombos</strong> — communities of resistance and renewal</span>
+                    <span><strong className="text-foreground">Quilombos</strong> — cultivating resistance and renewal</span>
                   </li>
                 </ul>
 
@@ -122,7 +122,7 @@ export default function WhyNowPage() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>⁵
+                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>⁶
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
