@@ -12,56 +12,40 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      {/* 1. Ensure your Navigation component is either fixed or absolute with a transparent/semi-transparent background */}
       <Navigation />
-      {/* Reduced from pt-16 to pt-8 */}
-      <main className="pt-8">
-        {/* Hero with Quote */}
-        {/* ==========================================
-            VARIATION 3: THE SOFT PORTAL (Abstract Blend)
-            Uses a heavy blend mesh and radical rounded shapes to make 
-            the sunflower look like a natural lens or window into earth.
-           ========================================== */}
-        <section className="relative min-h-[60vh] flex items-center bg-cream overflow-visible pb-16 lg:pb-24">
+      
+      {/* 2. Removed the top padding entirely here so the section starts at the absolute top of the viewport */}
+      <main className="w-full">
+        {/* 3. Added pt-32 to this section instead, giving the text breathing room while letting the background image fill the top */}
+        <section className="relative min-h-[75vh] flex items-center bg-cream overflow-visible pt-32 pb-16 lg:pb-24">
+          
+          {/* Background Image Container - now stretching to the true top */}
           <div className="absolute right-0 top-0 w-full lg:w-2/3 h-full opacity-90 z-0 pointer-events-none">
             <Image 
               src="https://i.postimg.cc/tJQjdqYk/cosmos-956257560.jpg" 
               alt="Cosmos background" 
               fill 
-              className="object-cover"
+              className="object-cover object-top"
+              priority
             />
+            {/* Added a top fade to the gradient so it blends nicely if needed */}
             <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent" />
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              
-              {/* Left Side: Soft Portal Overlap */}
-              <div className="lg:col-span-4 relative h-[240px] lg:h-[450px] w-full transform lg:translate-y-28 lg:-translate-x-6 z-20">
-                <div className="relative w-full h-full rounded-[60%_40%_70%_30%_/_40%_50%_60%_50%] overflow-hidden mix-blend-multiply opacity-90 filter contrast-125">
-                  <Image 
-                    src="https://i.postimg.cc/Gt4CGXPk/sunflower-8.jpg"
-                    alt="Sunflower"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Right Side Quote */}
-              <div className="lg:col-span-8 text-center lg:text-left">
-                <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8">
-                  Why Metta Tropical Collective?
-                </h1>
-                <blockquote className="space-y-4 max-w-xl mx-auto lg:mx-0">
-                  <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
-                    "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
-                  </p>
-                  <figcaption className="text-olive font-semibold text-xs tracking-widest uppercase">
-                    — Ninawa Huni Kuin
-                  </figcaption>
-                </blockquote>
-              </div>
-
+            <div className="max-w-3xl text-center lg:text-left">
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8">
+                Why Metta Tropical Collective?
+              </h1>
+              <blockquote className="space-y-4 max-w-2xl mx-auto lg:mx-0">
+                <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
+                  "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
+                </p>
+                <figcaption className="text-olive font-semibold text-xs tracking-widest uppercase">
+                  — Ninawa Huni Kuin
+                </figcaption>
+              </blockquote>
             </div>
           </div>
         </section>
@@ -74,8 +58,8 @@ export default function AboutPage() {
               {/* Image */}
               <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ind%C3%ADgena%20statue-UEeF4odSMX5yLGlAC6txxib6JBR6dX.jpg"
-                  alt="Indigenous statue depicting a mother holding a child, representing loving-kindness and intergenerational care"
+                  src="https://i.postimg.cc/YC4mzsXH/Water-Lily-(1920)-a-woodblock-print-by-Japanese-artist-Ohara-Koson.jpg"
+                  alt="A lotus flower, symbolizing metta."
                   fill
                   className="object-cover"
                 />
@@ -103,7 +87,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="pl-6 border-l-2 border-cyan">
+                  <div className="pl-6 border-l-2 border-[#D9A01B]">
                     <h3 className="font-serif text-xl font-medium text-foreground">Meta-awareness</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       The capacity to step back, to sense into the deeper patterns shaping our world, systems and crises. Meta as within (interiority), meta as between (relationality), and meta as beyond (different ways of seeing and being).
