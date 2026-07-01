@@ -160,54 +160,62 @@ export default function AboutPage() {
         </section>
 
 {/* Why Collective? */}
-        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-            <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
-            <br />
-            <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
-              Why Collective?
-            </h2>
+<section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-background text-foreground">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch"> {/* added items-stretch */}
+      
+      {/* Left Column: Vertical/Cropped Image Container */}
+<div className="w-full aspect-[3/4] max-h-[600px] md:max-h-[650px] sticky top-8">
+        <img 
+          src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg" 
+          alt="Community gathering and dancing in circle"
+          className="w-full h-full object-cover object-top rounded-lg shadow-md"
+        />
+      </div>
 
-            <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              Because you cannot wake up alone.
-            </p>
+      {/* Right Column: Content */}
+      <div className="space-y-8 text-left flex flex-col justify-center">
+        <div>
+          <h2 className="mt-2 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+            Why Collective?
+          </h2>
+          <br />
+          <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
+        </div>
 
-            <p className="mt-6 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              Collective names the movement from separation to inter-being, from individualism to interdependence, from a gathering of individuals with shared values to a living field of relationships bound to each other and to something larger than ourselves.
-            </p>
+        <p className="text-foreground font-medium text-lg leading-relaxed">
+          Because you cannot wake up alone.
+        </p>
 
-            <div className="mt-12 p-8 bg-background/10 border border-background/20">
-              <p className="font-serif text-xl text-background italic leading-relaxed">
-                We are evoking the spirit of Sangha. Not a network, but a group of friends who practice together, grieve together, think together, listen together and find — in the space between us — the wisdom none of us carries alone.
-              </p>
-            </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Collective names the movement from separation to inter-being, from individualism to interdependence, from a gathering of individuals with shared values to a living field of relationships bound to each other and to something larger than ourselves.
+        </p>
 
-            <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              This is where we can be truly transformed. Where our ways of seeing, being, knowing and doing are cracked open and rebuilt in deeper alignment with life. Where we remember, slowly, imperfectly and together, how to care, love and support each other.
-            </p>
+        {/* Callout / Bordered Box */}
+          <p className="font-serif text-xl text-foreground italic leading-relaxed">
+            We are evoking the spirit of Sangha. Not a network, but a community of trust, a group of friends who practice together, grieve together, think together, listen together and find — in the space between us — the wisdom none of us carries alone.
+          </p>
 
-            <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              We are inviting the ones who feel the weight of this moment and have chosen to offer their lives in response to join us. And as we do so, we do the work of building trust, intimacy, shared language, shared vision, and shared understanding of who we are, where we are, and what is being asked of us.
-            </p>
+        <p className="text-muted-foreground leading-relaxed">
+          This is where we can be truly transformed. Where our ways of seeing, being, knowing and doing are cracked open and rebuilt in deeper alignment with life. Where we remember, slowly, imperfectly and together, how to care, love and support each other.
+        </p>
 
-            <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              So that when things get harder — and they will — we are not starting from scratch. We already know how to move as one body.
-            </p>
+        <p className="text-muted-foreground leading-relaxed">
+          We are inviting the ones who feel the weight of this moment and have chosen to offer their lives in response to join us. And as we do so, we do the work of building trust, intimacy, shared language, shared vision, and shared understanding of who we are, where we are, and what is being asked of us.
+        </p>
 
-            <p className="mt-8 text-background/80 leading-relaxed max-w-2xl mx-auto">
-              It is in times of collapse that small islands of coherence have the capacity to shift the entire system to a higher order.
-            </p>
-          </div>
+        <p className="text-muted-foreground leading-relaxed">
+          So that when things get harder — and they will — we are not starting from scratch. We already know how to move as one body.
+        </p>
 
-          {/* Centralized Bottom Image */}
-          <div className="mt-16 flex justify-center px-6 lg:px-8">
-            <img 
-              src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg" 
-              alt="Community gathering and dancing in circle"
-              className="w-full max-w-5xl h-auto object-cover rounded-lg shadow-lg"
-            />
-          </div>
-        </section>
+        <p className="text-foreground font-medium italic">
+          It is in times of collapse that small islands of coherence have the capacity to shift the entire system to a higher order.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         {/* CTA */}
         <section className="py-24 lg:py-32 bg-yellow">
