@@ -69,7 +69,7 @@ export function IntroductionSection() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                We come together not to optimize or fix a broken system in order for it to work for a greater number of humans and species, but to question and transform its foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
+                We come together not to optimize or fix a broken system, in order for it to work for a greater number of humans and species, but to question and transform its foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
               </p>
             </div>
 
@@ -85,15 +85,33 @@ export function IntroductionSection() {
         </div>
       </section>
 
-      {/* Transition Element */}
-      <div className="relative h-16 w-full bg-background">
-        <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
-          <path fill="#F5F5F0" d="M0 54L1440 0V54H0Z"></path>
-        </svg>
-      </div>
+<figure className="w-screen relative left-1/2 -translate-x-1/2 my-12 py-12 md:py-16 bg-[#111827] text-center px-4 overflow-hidden"> 
+  <div className="max-w-4xl mx-auto relative px-8 md:px-16">
+    {/* Left Background Quote */}
+    <span className="absolute left-0 top-[-20px] md:top-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
+      “
+    </span>
+
+    <blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
+      Education is the Metacrisis 
+      <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
+        It’s time to see planetary crises as a species-wide learning opportunity. 
+      </span> 
+    </blockquote> 
+
+    {/* Right Background Quote */}
+    <span className="absolute right-0 bottom-[-20px] md:bottom-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
+      ”
+    </span>
+
+    <figcaption className="mt-6 text-[#D9A01B] font-semibold text-sm tracking-wider uppercase z-10 relative"> 
+      — Zak Stein 
+    </figcaption> 
+  </div>
+</figure>
 
       {/* Educational Work */}
-      <section className="py-16 lg:py-20 bg-cream">
+      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20bg-cream">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div>
@@ -101,19 +119,6 @@ export function IntroductionSection() {
                 Our response is fundamentally educational.
               </h2>
             </div>
-
-            {/* --- QUOTE OPTION 3: Modern Serif (High Elegance) --- */}
-            <figure className="my-10 relative pl-8 border-l-2 border-[#D9A01B]">
-              <blockquote className="font-serif text-2xl md:text-3xl text-foreground/90 tracking-tight leading-tight">
-                Education is the Metacrisis
-                <span className="block text-lg md:text-xl font-sans mt-2 text-muted-foreground tracking-normal italic">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </span>
-              </blockquote>
-              <figcaption className="mt-4 text-[#D9A01B] font-semibold text-sm">
-                — Zak Stein
-              </figcaption>
-            </figure>
 
             <p className="text-muted-foreground leading-relaxed">
               We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
@@ -241,11 +246,11 @@ export function CTASection() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8 text-center">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">
-          Are you feeling the call?
+          Ready to go deeper?
         </h2>
         
         <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-          If something in you senses that most of our world and institutions are not responding adequately to our moment, we invite you to explore our fellowship and community.
+           If you want to discover our work in more depth, we invite you to explore our fellowship and theory of change.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
