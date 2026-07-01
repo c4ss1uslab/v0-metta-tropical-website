@@ -367,7 +367,7 @@ One of the deepest failures of modern education is that it has become extraordin
         <section className="py-24 lg:py-32 bg-foreground text-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">Our Hypothesis</span>
+              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Developmental Hypothesis</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
                 Educational Architecture
               </h2>
