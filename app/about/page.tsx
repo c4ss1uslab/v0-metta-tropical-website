@@ -202,8 +202,8 @@ export default function AboutPage() {
           {/* Centralized Bottom Image */}
           <div className="mt-16 flex justify-center px-6 lg:px-8">
             <img 
-              src="https://i.postimg.cc/hvN1tGPw/DSCF5618.jpg" 
-              alt="Collective Community" 
+              src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg" 
+              alt="Community gathering and dancing in circle"
               className="w-full max-w-5xl h-auto object-cover rounded-lg shadow-lg"
             />
           </div>

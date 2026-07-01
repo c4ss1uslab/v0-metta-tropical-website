@@ -133,7 +133,8 @@ export function IntroductionSection() {
             </p>           
 
             <p className="text-muted-foreground leading-relaxed">
-            In response, we are exploring how to build new forms of Educational/Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
+            In response, we are exploring how to build new forms of Educational-Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. 
+            Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
             </p>           
 
             <p className="text-muted-foreground leading-relaxed">
@@ -142,8 +143,8 @@ export function IntroductionSection() {
 
             <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
               <Image
-                src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg"
-                alt="Community gathering and dancing in circle"
+                src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+                alt="Gathering around the fire"
                 fill
                 className="object-cover"
               />
