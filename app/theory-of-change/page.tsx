@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   description: "Understanding the metacrisis and our approach to building the educational architectures needed for genuine transformation and cultural renewal.",
 }
 
+  const polycrisisItems = [
+    "Ecological Collapse",
+    "Climate Destabilization",
+    "Social Fragmentation",
+    "Geopolitical Friction",
+    "Meaning Crisis",
+    "Economic Inequality",
+    "Institutional Distrust",
+    "Mental Health Pandemic",
+  ];
+
 export default function TheoryOfChangePage() {
   return (
     <>
@@ -61,96 +72,201 @@ export default function TheoryOfChangePage() {
         </section>
 
         {/* The Predicament */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Predicament</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                The Metacrisis
-              </h2>
-              <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                The crises shaping our time are not isolated problems. They arise from deeper conditions and patterns.
+<section className="py-24 lg:py-32 bg-background">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Predicament</span>
+          <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+            The Metacrisis
+          </h2>
+          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            The crises shaping our time are not isolated problems. They arise from deeper conditions, structures, and existential layers.
+          </p>
+        </div>
+
+        {/* Diagram Wrapper */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          
+          {/* 1. THE SYMPTOMATIC LAYER */}
+          <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+            <div className="text-center mb-8 border-b border-border pb-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 1</span>
+              <h3 className="font-serif text-xl font-semibold text-foreground">The Symptomatic Layer</h3>
+              <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
+            </div>
+
+            {/* Polycrisis Items Container */}
+            <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
+              {/* Vertical line running exactly behind elements */}
+              <div className="absolute left-1/2 top-4 bottom-16 w-[1px] bg-crimson/20 -translate-x-1/2 z-0" />
+              
+              <div className="w-full flex flex-col gap-3 relative z-10">
+                {polycrisisItems.map((item, idx) => (
+                  <div 
+                    key={idx} 
+                    className="p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              {/* Etc Box sits completely below the vertical axis line */}
+              <div className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200 z-10 mt-4">
+                Etc.
+              </div>
+            </div>
+            
+            {/* Invisible spacer to match footers */}
+            <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
+          </div>
+
+
+          {/* 2. THE STRUCTURAL LAYER */}
+          <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+            {/* Left Relation Rails to Layer 1 (Perfect Height Matching) */}
+            <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+              <div className="absolute top-[24%] w-full border-t border-dashed border-crimson/20" />
+              <div className="absolute top-[44%] w-full border-t border-dashed border-crimson/20" />
+              <div className="absolute top-[64%] w-full border-t border-dashed border-crimson/20" />
+              <div className="absolute top-[84%] w-full border-t border-dashed border-crimson/20" />
+            </div>
+
+            {/* Left Arrow Badge */}
+            <div className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </div>
+
+            <div className="text-center mb-8 border-b border-border pb-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
+              <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
+              <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
+            </div>
+
+            {/* Structural Items Stack */}
+            <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+              {/* Vertical line passing directly behind the layout cards and running all the way down */}
+              <div className="absolute left-1/2 top-4 bottom-0 w-[1px] bg-crimson/20 -translate-x-1/2 z-0" />
+
+              <div className="w-full flex flex-col gap-4 relative z-10">
+                <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Power</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Captured actors and systems incapable of coordinating transformative change alone.
+                  </p>
+                </div>
+
+                <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Incentives</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Systems optimizing purely for short-term, rivalrous, and extractive behaviors.
+                  </p>
+                </div>
+
+                <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Trust</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Breakdown of shared sensemaking, truth verification, and institutional legitimacy.
+                  </p>
+                </div>
+
+                <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">
+                    Crisis of Complexity<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">5</sub>
+                  </h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Complicated structures fragilely layered over highly complex substrates.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Equation Formula with clean alignment line integration */}
+            <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+              <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+                Rivalrous dynamics + Exponential tech = <span className="text-red-400 font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+              </p>
+            </div>
+          </div>
+
+
+          {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
+          <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
+            {/* Left Relation Rails to Layer 2 (Perfect Height Matching) */}
+            <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+              <div className="absolute top-[24%] w-full border-t border-dashed border-olive/20" />
+              <div className="absolute top-[44%] w-full border-t border-dashed border-olive/20" />
+              <div className="absolute top-[64%] w-full border-t border-dashed border-olive/20" />
+              <div className="absolute top-[84%] w-full border-t border-dashed border-olive/20" />
+            </div>
+
+            {/* Left Arrow Badge */}
+            <div className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </div>
+
+            <div className="text-center mb-8 border-b border-border pb-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
+              <h3 className="font-serif text-xl font-semibold text-foreground">The Ontological-Cultural Layer</h3>
+              <p className="text-sm font-medium text-olive mt-2">
+                Foundational Dysfunctions<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">1</sub>
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Meta-Systemic Dysfunctions */}
-              <div className="space-y-6">
-                <h3 className="font-serif text-2xl font-medium text-foreground border-b border-border pb-4">
-                  Meta-Systemic Dysfunctions
-                </h3>
-                
-                <div className="space-y-6">
-                  <div className="p-6 bg-cream border-l-4 border-crimson">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Crisis of Incentives</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Systems optimizing for short-term, rivalrous, and extractive behavior.
-                    </p>
-                  </div>
+            {/* Ontological Items Stack */}
+            <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+              {/* Vertical line passing directly behind the layout cards and running all the way down */}
+              <div className="absolute left-1/2 top-4 bottom-0 w-[1px] bg-olive/20 -translate-x-1/2 z-0" />
 
-                  <div className="p-6 bg-cream border-l-4 border-crimson">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Crisis of Power</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      People and institutions with the most power, even with good intentions, feel captured and often incapable of affecting transformative change alone.
-                    </p>
-                  </div>
-
-                  <div className="p-6 bg-cream border-l-4 border-crimson">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Crisis of Trust</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Incapacity for sensemaking, truth, and legitimacy breaks down collaboration and coordination.
-                    </p>
-                  </div>
-
-                  <div className="p-6 bg-cream border-l-4 border-crimson">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Complicated Over Complex</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Complicated systems subsuming their complex substrate.
-                    </p>
-                  </div>
+              <div className="w-full flex flex-col gap-4 relative z-10">
+                <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Perception</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Persistent delusions of total separation, misapprehending nature and reality.
+                  </p>
                 </div>
 
-                <div className="p-4 bg-foreground text-background text-sm">
-                  <p className="font-medium">Rivalrous dynamics + Exponential tech = Death of humanity (self-terminates)</p>
-                </div>
-              </div>
-
-              {/* Cultural Foundation Dysfunctions */}
-              <div className="space-y-6">
-                <h3 className="font-serif text-2xl font-medium text-foreground border-b border-border pb-4">
-                  Cultural Foundation Dysfunctions
-                </h3>
-                
-                <div className="space-y-6">
-                  <div className="p-6 bg-cream border-l-4 border-olive">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Crisis of Perception</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Delusion of separation, persistent misvaluing, misunderstanding, and misapprehending of reality.
-                    </p>
-                  </div>
-
-                  <div className="p-6 bg-cream border-l-4 border-olive">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Crisis of Value</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Spiritual collapse and rupture with the sacred. Lost contact with and reverence for the sacred. Loss of meaning—inability to find our place in the universe.
-                    </p>
-                  </div>
-
-                  <div className="p-6 bg-cream border-l-4 border-olive">
-                    <h4 className="font-serif text-lg font-medium text-foreground">Capacity Crisis</h4>
-                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                      Unexamined human tendencies and unfulfilled potentials, exponentialized by systems of separation. We&apos;re creating a society with problems so complex we don&apos;t have the capacity to respond.
-                    </p>
-                  </div>
+                <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Relationship</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Alienation from self, other human life, and the non-human world.
+                  </p>
                 </div>
 
-                <div className="p-4 bg-foreground text-background text-sm">
-                  <p className="font-medium">Global Intimacy Disorder + Exponential tech = Death of our humanity</p>
+                <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">
+                    Crisis of Value<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">2</sub>
+                  </h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Spiritual crisis, loss of existential meaning, and broken ties to the sacred.
+                  </p>
+                </div>
+
+                <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
+                  <h4 className="font-serif font-medium text-foreground">Crisis of Capacity</h4>
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
+                    Unfulfilled potential scaled up by global systems, making problems outpace our capacity to process.
+                  </p>
                 </div>
               </div>
             </div>
+
+            {/* Bottom Equation Formula with clean alignment line integration */}
+            <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+              <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+                Global Intimacy Disorder + Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
+              </p>
+            </div>
           </div>
-        </section>
+
+        </div>
+      </div>
+    </section>
 
         {/* The Problem */}
         <section className="py-24 lg:py-32 bg-cream">
