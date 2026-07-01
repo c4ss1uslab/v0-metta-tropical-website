@@ -100,9 +100,22 @@ export default function TheoryOfChangePage() {
                       <p className="text-muted-foreground leading-relaxed">
             It is a crisis not only of systems, but of being.
                           </p>
+            </div>
+            <div className="space-y-1 py-6">
                       <p className="text-muted-foreground leading-relaxed">
-            It points to the crisis unfolding <em>within</em> ourselves, in our psyche, soul and spirit; <em>between</em> ourselves, in the ways we relate to one another and life itself; and <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+            It points to the crisis unfolding:
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+• <em>within</em> ourselves, in our psyche, soul and spirit;
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+             • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
                           </p>
+              </div>
+            <div className="space-y-8">
                       <p className="text-muted-foreground leading-relaxed">
             In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges. 
                           </p>
