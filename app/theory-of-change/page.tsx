@@ -322,28 +322,42 @@ It is to transform the very ways of seeing, being, knowing and acting that gave 
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Problem</span>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Problem We're Tackling</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                A Large-Scale Educational Crisis
+                A Crisis of Education, Formation, and Human Development
               </h2>
             </div>
 
-            <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                A society that is incapable of creating educational structures that can prepare individuals with the capacities required to handle the increasing complexity of our world, while serving the flourishing of all life. <strong className="text-foreground">The task demands of society outstrip the capabilities available to handle it.</strong>
-              </p>
-
-              <blockquote className="p-8 bg-background border-l-4 border-olive">
-                <p className="font-serif text-lg text-foreground italic leading-relaxed">
-                  &ldquo;The basic idea is that societies require each new generation to be in a position to inherit the requisite capabilities, legitimacy, and meaning-making to continue the project of cooperative social life. Failing this, the intergenerational fabric of the social world begins to fray. At some point inadequate education results in an inability to fill essential institutional roles, provide motivating meanings, and secure political legitimacy.&rdquo;
-                </p>
-                <cite className="mt-4 block text-muted-foreground text-sm not-italic">— Zak Stein</cite>
+              <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-olive pl-6">
+                &ldquo;If education is not the answer, you are asking the wrong question. It is time to see planetary crises as a species-wide learning opportunity.&rdquo;
               </blockquote>
+              <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Zak Stein</cite>
 
+            <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                Current educational systems are fragmented, developing fragmented individuals who create fragmented systems. Our educational system has been one of the main contributors to the metacrisis. The metacrisis is an opportunity for evolving our understanding of what education should be.
-              </p>
-            </div>
+               The three layers of the metacrisis outlined above illuminate a deeper educational and developmental crisis unfolding beneath our global challenges. If the metacrisis is simultaneously systemic, ontological, relational, developmental, and civilizational, then our educational responses must also be capable of engaging these multiple layers of reality.</p>
+              <p className="text-muted-foreground leading-relaxed">
+One of the deepest failures of modern education is that it has become extraordinarily effective at cultivating information, specialization, and technical capability, while remaining largely incapable of cultivating wisdom, relational maturity, and ethical depth.</p>
+              <p className="text-muted-foreground leading-relaxed">We believe this educational crisis exists across three interconnected dimensions:</p>
+              <p className="text-muted-foreground leading-relaxed">Conventional education often reproduces the fragmentation underlying the metacrisis.</p>
+              <p className="text-muted-foreground leading-relaxed">Alternative educational movements, while valuable, remain too fragmented to meet the scale and complexity of civilizational transition.</p>
+              <p className="text-muted-foreground leading-relaxed">Civilization itself functions as an educational environment, shaping desires, identities, perceptions, and behaviors that perpetuate the metacrisis.</p>
+              <p className="text-muted-foreground leading-relaxed">Much of today’s educational landscape — conventional, alternative, and civilizational — remains insufficient for the magnitude of the transition we are entering.</p>
+              <p className="text-muted-foreground leading-relaxed">At one level, conventional educational systems continue to shape millions of people through fragmented industrial-age models of learning centered around standardization, information transfer, testing, and economic productivity. While these systems generated extraordinary scientific, technological, and economic capacities, they often did so within cultural and economic paradigms, unable to adequately orient those powers toward the flourishing of life as a whole. In this sense, more education is not necessarily better. Forms of education that reinforce fragmentation, competition, extraction, hyper-individualism, and disconnection from life may deepen the very conditions generating the metacrisis itself.</p>
+              <p className="text-muted-foreground leading-relaxed">At the same time, many alternative educational approaches and transformational initiatives have emerged in response to the limitations of conventional education. Ecological education, holistic education, contemplative practice, systems thinking, developmental frameworks, community-based learning, and social impact movements have all contributed important insights toward reimagining human development and cultural renewal. Many of these efforts represent essential and beautiful responses to a world in crisis.</p>
+              <p className="text-muted-foreground leading-relaxed">Yet the depth and complexity of the metacrisis reveal that isolated approaches alone are not enough. Many remain fragmented, siloed, or structurally dependent upon the same civilizational logics they seek to transform. Few are capable of engaging the multiple layers of the metacrisis simultaneously: the systemic, relational, ontological, developmental, and civilizational dimensions of our predicament.</p>
+              <p className="text-muted-foreground leading-relaxed">At the deepest layer, however, we cannot respond to the metacrisis if education is reduced merely to schools, universities, or alternative institutions. Education, in its deepest sense, is the intergenerational process through which societies reproduce ways of perceiving, relating, knowing, valuing, and being across time.</p>
+              <p className="text-muted-foreground leading-relaxed">Human beings are always being educated through culture, media, technology, economics, architecture, religion, family systems, institutions, and the wider social worlds they inhabit. Civilization itself is an educational environment. Systems shape consciousness. Cultures shape perception. The media shapes desire. Institutions shape identity. Economies shape relationships. Technologies shape attention. Civilization shapes the kinds of human beings we become. The question is not whether civilization is educating us, but what kinds of human beings it is cultivating.</p>
+              <p className="text-muted-foreground leading-relaxed">We believe many of the dominant systems shaping modern life are reinforcing fragmentation, extraction, acceleration and disconnection from life. Consequently, fragmented systems cultivate fragmented human beings, who then recreate fragmented systems. This recursive cycle has become one of the central dynamics perpetuating the metacrisis itself.</p>
+              <p className="text-muted-foreground leading-relaxed">Therefore, the challenge before us is not merely educational reform, but a profound expansion of what education itself means.</p>
+              <p className="text-muted-foreground leading-relaxed">The task is not simply to create better schools, programs, or institutions — though this is indeed necessary — but to cultivate living developmental ecosystems: relational ecologies of communities, practices, workplaces, educational spaces, and cultures capable of supporting the long arc of human maturation required during a civilizational transition.</p>
+              <p className="text-muted-foreground leading-relaxed">Over time, such developmental ecosystems may help give rise to new civilizational infrastructures: new forms of institutions, businesses, cultural spaces, educational architectures, and public life capable of sustaining wiser forms of human participation across generations.</p>
+<p className="text-muted-foreground leading-relaxed">The question before us is no longer only:</p>
+<p className="text-muted-foreground leading-relaxed">How do we improve education?</p>
+              <p className="text-muted-foreground leading-relaxed">But more fundamentally:</p>
+              <p className="text-muted-foreground leading-relaxed">What kinds of educational architectures, developmental cultures, and civilizational infrastructures must now emerge to cultivate the forms of wisdom, maturity, and human participation required for humanity to navigate this time between worlds?</p>
+
+             </div>
           </div>
         </section>
 
