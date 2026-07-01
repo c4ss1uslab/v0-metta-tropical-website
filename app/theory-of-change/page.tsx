@@ -291,6 +291,17 @@ export default function TheoryOfChangePage() {
           </div>
 
         </div>
+            <div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+            At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+          </p>
+              <p className="text-muted-foreground leading-relaxed">
+If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient.
+          </p>
+              <p className="text-muted-foreground leading-relaxed">
+The challenge before us is not only to redesign systems and institutions, but to become more wise. To transform the very ways of seeing, being, knowing and acting that gave rise to those systems in the first place. To be capable of perceiving interdependence, holding complexity, relating responsibly, and participating in life without generating conditions that undermine the future. 
+          </p>
+        </div>
       </div>
     </section>
 
