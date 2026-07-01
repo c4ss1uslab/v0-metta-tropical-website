@@ -121,11 +121,11 @@ export function IntroductionSection() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
+              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: ways of perceiving, valuing, and participating in the world that are no longer serving life.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
+              <strong className="text-foreground">If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions.</strong> It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -189,7 +189,7 @@ export function FieldsOfWorkSection() {
             Our Work
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
+            <strong className="text-foreground text-lg">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
             <br />
             <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
             <span className="block mt-6 text-muted-foreground leading-relaxed">
