@@ -80,13 +80,39 @@ export default function TheoryOfChangePage() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             The Metacrisis
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            The crises shaping our time are not isolated problems. They arise from deeper conditions, structures, and existential layers.
+
+              <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-crimson pl-6">
+                &ldquo;The metacrisis is the historically specific threat to truth, beauty, and goodness caused by our persistent misunderstanding, misvaluing, and misappropriating of reality.&rdquo;
+              </blockquote>
+              <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Jonathan Rowson</cite>
+              </div>
+
+            <div className="space-y-8">
+          <p className="text-muted-foreground leading-relaxed">
+            Humanity is living through a time of profound civilizational rupture.
+              </p>
+          <p className="text-muted-foreground leading-relaxed">
+            In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded not only in our institutions and systems, but in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            It is a crisis not only of systems, but of being.
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            It points to the crisis unfolding <em>within</em> ourselves, in our psyche, soul and spirit; <em>between</em> ourselves, in the ways we relate to one another and life itself; and <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges. 
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            We understand the metacrisis as unfolding across three interconnected layers:
           </p>
         </div>
 
         {/* Diagram Wrapper */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           
           {/* 1. THE SYMPTOMATIC LAYER */}
           <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
