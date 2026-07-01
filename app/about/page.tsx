@@ -160,7 +160,7 @@ export default function AboutPage() {
         </section>
 
 {/* Why Collective? */}
-<section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-background text-foreground">
+<section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream text-foreground">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch"> {/* added items-stretch */}
       
@@ -180,10 +180,10 @@ export default function AboutPage() {
             Why Collective?
           </h2>
           <br />
-          <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Community</span>
+          <span className="text-olive font-medium text-sm tracking-wide uppercase">The Community</span>
         </div>
 
-        <p className="text-foreground font-medium text-lg leading-relaxed">
+        <p className="text-foreground font-medium leading-relaxed">
           Because you cannot wake up alone.
         </p>
 
@@ -218,7 +218,7 @@ export default function AboutPage() {
 </section>
 
         {/* CTA */}
-        <section className="py-24 lg:py-32 bg-yellow">
+        <section className="py-24 lg:py-32 bg-olive">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
               Through these explorations, we hope to continuously learn how to build educational spaces, sanctuaries of transformation and thriving communities.
@@ -232,7 +232,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/fellowship"
-                className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-foreground text-foreground font-medium text-sm tracking-wide hover:bg-foreground/10 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
               >
                 Explore the Fellowship
               </Link>

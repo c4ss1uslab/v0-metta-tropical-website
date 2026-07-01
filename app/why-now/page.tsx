@@ -13,20 +13,48 @@ export default function WhyNowPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        {/* Hero */}
-        <section className="relative py-16 lg:py-20 bg-foreground text-background overflow-hidden">
-          <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-yellow font-medium text-sm tracking-wide uppercase">Why Now</span>
-            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
-              A Time Between Worlds¹
-            </h1>
-            <blockquote className="mt-8 font-serif text-xl md:text-2xl text-background/80 italic leading-relaxed border-l-4 border-yellow pl-6">
-              &ldquo;During times between worlds there emerge ideas and thinkers that are, properly speaking, without a world. Their work is liminal — not within the old world or the world to come, but serving as the bridge between them. The focus of work in the liminal is on foundations: metaphysics, religion, and the deeper codes of culture — education in its broadest sense.&rdquo;
-            </blockquote>
-            <cite className="mt-4 block text-background/60 text-sm not-italic">— Zak Stein</cite>
-          </div>
-        </section>
+<main className="pt-16">
+  {/* Hero */}
+  <section className="relative py-16 lg:py-20 overflow-hidden text-background">
+    {/* Background image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://i.postimg.cc/LXQLBYcz/phase-space.jpg')",
+      }}
+    />
+
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-black/85" />
+
+    {/* Optional subtle gradient for better readability */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
+
+    {/* Content */}
+    <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
+      <span className="text-yellow font-medium text-sm tracking-wide uppercase">
+        Why Now
+      </span>
+
+      <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
+        A Time Between Worlds¹
+      </h1>
+
+      <blockquote className="mt-8 font-serif text-xl md:text-2xl text-background/80 italic leading-relaxed border-l-4 border-yellow pl-6">
+        &ldquo;During times between worlds there emerge ideas and thinkers that
+        are, properly speaking, without a world. Their work is liminal — not
+        within the old world or the world to come, but serving as the bridge
+        between them. The focus of work in the liminal is on foundations:
+        metaphysics, religion, and the deeper codes of culture — education in
+        its broadest sense.&rdquo;
+      </blockquote>
+
+      <cite className="mt-4 block text-background/60 text-sm not-italic">
+        — Zak Stein
+      </cite>
+    </div>
+  </section>
 
         {/* The Moment */}
         <section className="py-16 lg:py-20 bg-background">
@@ -69,8 +97,8 @@ export default function WhyNowPage() {
             {/* Adjusted: Moved inside the max-w-4xl wrapper to match text size and reduced margin */}
             <div className="relative aspect-[21/9] overflow-hidden mt-8">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/flower%20phase-Phoy1ja2ApHEVtJJLu5B2Ty3AnhO9E.jpeg"
-                alt="Mountains and moon - representing the darkness before dawn"
+                src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg" 
+                alt="Community gathering and dancing in circle"
                 fill
                 className="object-cover"
               />
@@ -118,15 +146,15 @@ export default function WhyNowPage() {
                 </ul>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Each built the structures, practices, relational life and rites of passage needed to orient human life toward what is most meaningful—and to develop the capacities required to face the challenges of their time.
+                  Each built the structures, practices, relational life and rites of passage needed to a) orient human life toward what is most meaningful, and b) to develop the capacities required to face the challenges of their time.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. <strong className="text-foreground">We believe this is what our time most urgently needs now.</strong>⁶
+                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. We believe this is what our time most urgently needs now.⁶
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Not simply new ideas, but new containers for human development and collective transformation. New educational architectures and communities capable of supporting individuals move through this threshold consciously, transforming societal rupture into initiation rather than collapse and despair alone.
+                  Not simply new ideas, but <strong className="text-foreground">new containers for human development and collective transformation.</strong> New educational architectures and communities capable of supporting individuals move through this threshold consciously—transforming societal rupture into initiation rather than collapse and despair alone.
                 </p>
               </div>
 
