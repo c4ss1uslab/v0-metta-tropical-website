@@ -38,7 +38,7 @@ export default function AboutPage() {
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8">
                 Why Metta Tropical Collective?
               </h1>
-              <blockquote className="space-y-4 max-w-2xl mx-auto lg:mx-0">
+              <blockquote className="translate-y-12 space-y-4 max-w-2xl mx-auto lg:mx-0">
                 <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
                   "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
                 </p>
