@@ -3,39 +3,40 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cream">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-cream">
+      {/* Absolute Full Background Image (Shifted Right on Desktop) */}
+      <div className="absolute inset-0 lg:left-1/3">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main%20image%20homepage-e4nkY3dhesHRgz8n24BoGOK9q8iwRw.png"
-          alt="A woman tending to flowers in a lush tropical landscape with mountains and golden sun"
+          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
+          alt="Metta Tropical Collective Hero Image"
           fill
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+        {/* Mobile Gradient (Top/Bottom) and Desktop Gradient (Left/Right Fade) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/40 to-transparent lg:bg-gradient-to-r lg:from-cream lg:via-cream/80 lg:to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-32 text-center">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight tracking-tight text-balance">
+      {/* Content Container Panel */}
+      <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/90 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
           Metta Tropical Collective
         </h1>
         
-        <p className="mt-8 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed text-pretty">
+        <p className="mt-8 text-lg text-foreground/90 max-w-xl leading-relaxed text-pretty">
           Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4">
           <Link
             href="/about"
-            className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
           >
             Discover Our Work
           </Link>
           <Link
             href="/fellowship"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
           >
             Join the Fellowship
           </Link>
