@@ -114,7 +114,7 @@ export default function TheoryOfChangePage() {
 
               {/* Etc Box sits completely below the vertical axis line */}
               <div className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200 z-10 mt-4">
-                Etc.
+                Etc...
               </div>
             </div>
             
