@@ -217,6 +217,98 @@ export default function AboutPage() {
   </div>
 </section>
 
+{/* Vision & Mission */}
+<section className="py-16 lg:py-20 bg-background">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="text-center mb-12">
+      <span className="text-cyan-800 font-medium text-sm tracking-wide uppercase">
+        Vision & Mission
+      </span>
+      <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+        Why We Exist
+      </h2>
+    </div>
+
+    {/* Content */}
+    <div className="space-y-8">
+      <p className="text-muted-foreground leading-relaxed">
+        Two questions orient our vision:
+      </p>
+
+<div className="space-y-4">
+  <div className="pl-6 border-l-2 border-cyan">
+    <p className="font-serif text-xl font-medium text-foreground italic leading-relaxed">
+      Who are we being called to become in a time between worlds, to help steward
+      civilization toward life-enhancing futures?
+    </p>
+  </div>
+
+  <div className="pl-6 border-l-2 border-cyan">
+    <p className="font-serif text-xl font-medium text-foreground italic leading-relaxed">
+      And what kinds of educational structures, communities, and developmental
+      containers must emerge to support such becoming?
+    </p>
+  </div>
+</div>
+
+      <p className="text-muted-foreground leading-relaxed">
+        We envision a world where human beings are supported in the lifelong unfolding
+        toward wisdom, relational maturity, and soulful participation in life—where
+        each person is able to manifest their unique soul calling in response to the
+        crisis of the world.
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        We believe the metacrisis is not only a civilizational breakdown, but also a
+        rite of passage: a threshold calling humanity to evolve beyond habits of
+        fragmentation, separation, and extraction toward more mature, integrated, and
+        life-affirming ways of being together.
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        Our mission is to help design wisdom-centered educational architectures capable
+        of supporting the depth of human transformation this moment requires.
+      </p>
+        
+              <p className="text-muted-foreground leading-relaxed">
+                We seek
+        to create structures that can hold the magnitude of devotion and responsibility
+        of those committed to offering their lives in response to this time between
+        worlds. We aim to support them as they move through this threshold and develop
+        the capacities, relationships, and ways of being needed to navigate collapse,
+        embody new cultural possibilities, and participate in the emergence of a
+        wisdom-centered civilization.
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        At the heart of our vision is the belief that humanity must radically transform
+        its ways of relating to all life—self, other, world, and the sacred—if we are
+        to move through this time of rupture with wisdom and discernment. This
+        transformation will require a long process of shedding ways of being that no
+        longer serve life while cultivating new forms of presence, relationships, and
+        participation in reality.
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        We believe such transformation cannot happen in isolation. It requires robust
+        communities and developmental spaces capable of weaving together practices,
+        rites of passage, rituals, training, and communion that can hold the long arc
+        of human becoming.
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        We hope to help cultivate a new generation of visionary leaders, artists,
+        educators, activists, thinkers, and community builders who can contribute to
+        the emergence of a living ecosystem of wisdom-centered educational spaces,
+        communities, and institutions—a new societal infrastructure and cultural fabric
+        capable of supporting profound individual and collective transformation in
+        service of the sacredness of all life.
+      </p>
+    </div>
+  </div>
+</section>
+
         {/* CTA */}
         <section className="py-24 lg:py-32 bg-olive">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">

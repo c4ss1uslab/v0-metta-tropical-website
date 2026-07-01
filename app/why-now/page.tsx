@@ -146,7 +146,7 @@ export default function WhyNowPage() {
                 </ul>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Each built the structures, practices, relational life and rites of passage needed to a) orient human life toward what is most meaningful, and b) to develop the capacities required to face the challenges of their time.
+                  Each built the structures, practices, relational life, pedagogies and rites of passage needed to orient human life toward what is most meaningful and to develop the capacities required to face the challenges of their time.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
