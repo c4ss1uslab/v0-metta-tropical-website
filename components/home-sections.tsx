@@ -3,39 +3,40 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cream">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-cream">
+      {/* Absolute Full Background Image (Shifted Right on Desktop) */}
+      <div className="absolute inset-0 lg:left-1/3">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main%20image%20homepage-e4nkY3dhesHRgz8n24BoGOK9q8iwRw.png"
-          alt="A woman tending to flowers in a lush tropical landscape with mountains and golden sun"
+          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
+          alt="Metta Tropical Collective Hero Image"
           fill
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+        {/* Mobile Gradient (Top/Bottom) and Desktop Gradient (Left/Right Fade) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/40 to-transparent lg:bg-gradient-to-r lg:from-cream lg:via-cream/80 lg:to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-32 text-center">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight tracking-tight text-balance">
+      {/* Content Container Panel */}
+      <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/90 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
           Metta Tropical Collective
         </h1>
         
-        <p className="mt-8 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed text-pretty">
+        <p className="mt-8 text-lg text-foreground/90 max-w-xl leading-relaxed text-pretty">
           Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4">
           <Link
             href="/about"
-            className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
           >
             Discover Our Work
           </Link>
           <Link
             href="/fellowship"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
           >
             Join the Fellowship
           </Link>
@@ -68,7 +69,7 @@ export function IntroductionSection() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                We come together not to optimize or fix a broken system in order for it to work for a greater number of humans and species, but to question and transform its foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
+                We come together not to optimize or fix a broken system, in order for it to work for a greater number of humans and species, but to question and transform its foundations. Through  transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore how to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
               </p>
             </div>
 
@@ -84,15 +85,33 @@ export function IntroductionSection() {
         </div>
       </section>
 
-      {/* Transition Element */}
-      <div className="relative h-16 w-full bg-background">
-        <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
-          <path fill="#F5F5F0" d="M0 54L1440 0V54H0Z"></path>
-        </svg>
-      </div>
+<figure className="w-screen relative left-1/2 -translate-x-1/2 my-12 py-12 md:py-16 bg-[#111827] text-center px-4 overflow-hidden"> 
+  <div className="max-w-4xl mx-auto relative px-8 md:px-16">
+    {/* Left Background Quote */}
+    <span className="absolute left-0 top-[-20px] md:top-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
+      “
+    </span>
+
+    <blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
+      Education is the Metacrisis 
+      <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
+        It’s time to see planetary crises as a species-wide learning opportunity. 
+      </span> 
+    </blockquote> 
+
+    {/* Right Background Quote */}
+    <span className="absolute right-0 bottom-[-20px] md:bottom-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
+      ”
+    </span>
+
+    <figcaption className="mt-6 text-[#D9A01B] font-semibold text-sm tracking-wider uppercase z-10 relative"> 
+      — Zak Stein 
+    </figcaption> 
+  </div>
+</figure>
 
       {/* Educational Work */}
-      <section className="py-16 lg:py-20 bg-cream">
+      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20bg-cream">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div>
@@ -101,21 +120,8 @@ export function IntroductionSection() {
               </h2>
             </div>
 
-            {/* --- QUOTE OPTION 3: Modern Serif (High Elegance) --- */}
-            <figure className="my-10 relative pl-8 border-l-2 border-[#D9A01B]">
-              <blockquote className="font-serif text-2xl md:text-3xl text-foreground/90 tracking-tight leading-tight">
-                Education is the Metacrisis
-                <span className="block text-lg md:text-xl font-sans mt-2 text-muted-foreground tracking-normal italic">
-                  It’s time to see planetary crises as a species-wide learning opportunity.
-                </span>
-              </blockquote>
-              <figcaption className="mt-4 text-[#D9A01B] font-semibold text-sm">
-                — Zak Stein
-              </figcaption>
-            </figure>
-
             <p className="text-muted-foreground leading-relaxed">
-              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as symptoms of deeper cultural patterns: <strong className="text-foreground">ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
+              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as <strong className="text-foreground">symptoms of deeper cultural patterns: ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -126,10 +132,19 @@ export function IntroductionSection() {
               This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
             </p>           
 
+            <p className="text-muted-foreground leading-relaxed">
+            In response, we are exploring how to build new forms of Educational-Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. 
+            Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
+            </p>           
+
+            <p className="text-muted-foreground leading-relaxed">
+            Our work is ultimately an inquiry into <strong className="text-foreground">who we must become - and what kind of containers must emerge in this time between worlds</strong>, in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility and service to the flourishing of all beings.
+            </p>           
+
             <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
               <Image
-                src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg"
-                alt="Community gathering and dancing in circle"
+                src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+                alt="Gathering around the fire"
                 fill
                 className="object-cover"
               />
@@ -183,7 +198,7 @@ export function FieldsOfWorkSection() {
             Our Work
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-foreground">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
+            <strong className="text-foreground text-lg">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
             <br />
             <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
             <span className="block mt-6 text-muted-foreground leading-relaxed">
@@ -240,11 +255,11 @@ export function CTASection() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8 text-center">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">
-          Are you feeling the call?
+          Ready to go deeper?
         </h2>
         
         <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-          If something in you senses that most of our world and institutions are not responding adequately to our moment, we invite you to explore our fellowship and community.
+           If you want to discover our work in more depth, we invite you to explore our fellowship and theory of change.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
