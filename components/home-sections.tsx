@@ -57,7 +57,7 @@ export function HeroSection() {
     <div className="mt-18 flex flex-col sm:flex-row items-center justify-start gap-4"> 
       <Link 
         href="/about" 
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors" 
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#111827] text-background font-medium text-sm tracking-wide hover:bg-[#111827]/90 transition-colors" 
       > 
         Discover Our Work 
       </Link> 
