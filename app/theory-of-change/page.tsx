@@ -329,7 +329,7 @@ It is to transform the very ways of seeing, being, knowing and acting that gave 
             </div>
 
               <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-olive pl-6">
-                &ldquo;If education is not the answer, you are asking the wrong question. It is time to see planetary crises as a species-wide learning opportunity.&rdquo;
+                &ldquo;If education is not the answer, you are asking the wrong question: why it's time to see planetary crises as a species-wide learning opportunity.&rdquo;
               </blockquote>
               <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Zak Stein</cite>
 

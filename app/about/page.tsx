@@ -29,8 +29,8 @@ export default function AboutPage() {
               className="object-cover object-top"
               priority
             />
-            {/* Added a top fade to the gradient so it blends nicely if needed */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent" />
+            {/* Made the light gradient overlay stronger on mobile viewports */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/85 to-transparent/30 lg:via-cream/50 lg:to-transparent" />
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
@@ -42,7 +42,8 @@ export default function AboutPage() {
                 <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
                   "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
                 </p>
-                <figcaption className="text-olive font-semibold text-xs tracking-widest uppercase">
+                {/* Changed text color to a readable brown on mobile, returning to olive on desktop */}
+                <figcaption className="text-[#5C4033] lg:text-olive font-semibold text-xs tracking-widest uppercase">
                   — Ninawa Huni Kuin
                 </figcaption>
               </blockquote>
@@ -164,11 +165,11 @@ export default function AboutPage() {
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch"> {/* added items-stretch */}
       
-      {/* Left Column: Vertical/Cropped Image Container */}
-<div className="w-full aspect-[3/4] max-h-[600px] md:max-h-[650px] sticky top-8">
+      {/* Left Column: Fixed sticky modifier here so it behaves normally on mobile */}
+      <div className="w-full aspect-[3/4] max-h-[600px] md:max-h-[650px] lg:sticky lg:top-8">
         <img 
-          src="https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg" 
-          alt="Community gathering and dancing in circle"
+          src="https://i.postimg.cc/vBF0FG5H/Young-women-dance-during-the-Ashenda-Festival-in-Lalibela-Ethiopia.jpg" 
+          alt="Two women dancing, ritualizing in a community gathering in a traditional village"
           className="w-full h-full object-cover object-top rounded-lg shadow-md"
         />
       </div>
