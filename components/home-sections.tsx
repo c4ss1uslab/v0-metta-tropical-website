@@ -14,38 +14,40 @@ export function HeroSection() {
       priority
     />
     
-    {/* Mobile: only fade the bottom half */}
-    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-cream to-transparent lg:hidden" />
+    {/* Mobile: Subtle bottom fade */}
+    <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-cream to-transparent lg:hidden" />
+    
     {/* Desktop: keep the left fade */}
     <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-cream via-cream/80 to-transparent" />
   </div>
 
-      {/* Content Container Panel */}
-      <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/90 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
-          Metta Tropical Collective
-        </h1>
-        
-        <p className="mt-8 text-lg text-foreground/90 max-w-xl leading-relaxed text-pretty">
-          Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
-        </p>
+  {/* Content Container Panel */}
+  {/* FIX: Changed bg-cream to bg-cream/70 (or bg-transparent if you want no overlay) */}
+  <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/70 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
+    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
+      Metta Tropical Collective
+    </h1>
+    
+    <p className="mt-8 text-lg text-foreground/90 max-w-xl leading-relaxed text-pretty">
+      Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
+    </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4">
-          <Link
-            href="/about"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-          >
-            Discover Our Work
-          </Link>
-          <Link
-            href="/fellowship"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
-          >
-            Join the Fellowship
-          </Link>
-        </div>
-      </div>
-    </section>
+    <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4">
+      <Link
+        href="/about"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
+      >
+        Discover Our Work
+      </Link>
+      <Link
+        href="/fellowship"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
+      >
+        Join the Fellowship
+      </Link>
+    </div>
+  </div>
+</section>
   )
 }
 
