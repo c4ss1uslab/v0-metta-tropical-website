@@ -50,7 +50,7 @@ export default function WhyNowPage() {
         its broadest sense.&rdquo;
       </blockquote>
 
-      <cite className="mt-8 md:mt-4 block text-background/60 text-sm not-italic">
+      <cite className="mt-8 md:mt-8 block text-background/60 text-sm not-italic">
         — Zak Stein
       </cite>
     </div>
