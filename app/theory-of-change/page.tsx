@@ -407,7 +407,7 @@ export default function TheoryOfChangePage() {
               </p>
 
               <p className="font-medium text-yellow">
-                [what is the question?]
+                [what is the question?] - my development question + "we have lots to learn with living systems, indigenous practices, wisdom traditions, etc."
               </p>
 
               <p>
