@@ -35,13 +35,13 @@ export default function AboutPage() {
 
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <div className="max-w-3xl text-center lg:text-left">
-              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8">
-                Why Metta Tropical Collective?
-              </h1>
+<h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8 [-webkit-text-stroke:_0.5px_rgba(0,0,0,0.2)] lg:[-webkit-text-stroke:none]">
+  Why Metta Tropical Collective?
+</h1>
               <blockquote className="translate-y-12 space-y-4 max-w-2xl mx-auto lg:mx-0">
-                <p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground italic">
-                  "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
-                </p>
+<p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground font-medium lg:font-normal tracking-wide lg:tracking-normal italic">
+  "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
+</p>
                 {/* Changed text color to a readable brown on mobile, returning to olive on desktop */}
                 <figcaption className="text-[#5C4033] lg:text-olive font-semibold text-xs tracking-widest uppercase">
                   — Ninawa Huni Kuin
@@ -151,7 +151,7 @@ export default function AboutPage() {
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden order-1 lg:order-2">
                 <Image
                   src="https://i.postimg.cc/dVg3NTN6/main-mulata.png"
-                  alt="Brown woman enlightened by surreal sun rays"
+                  alt="Tropical woman enlightened by surreal sun rays"
                   fill
                   className="object-cover"
                 />
