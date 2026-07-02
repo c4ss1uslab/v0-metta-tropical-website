@@ -3,50 +3,89 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (    
-    <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-cream">
-      {/* Content Container Panel */}
-      <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-12 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
-      <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4 block">
-        Welcome to the
-      </span>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
-          Metta Tropical Collective
-        </h1>
-        {/* A subtle geometric line */}
-        <div className="w-12 h-[1px] bg-foreground/30 mb-8" />
+<section className="relative min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-start overflow-hidden bg-cream"> 
+  
+  {/* =========================================================================
+      BACKGROUND & PATTERN LAYERS
+     ========================================================================= */}
 
-        <p className="mt-4 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic">
-          Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
-        </p>
+  {/* MOBILE PATTERN (From Code 2) - Hidden on Desktop */}
+  <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 opacity-[0.08] pointer-events-none overflow-hidden mask-gradient lg:hidden">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="woven-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M0 20 L20 40 L40 20 L20 0 Z" fill="none" stroke="currentColor" strokeWidth="2" className="text-foreground" />
+          <path d="M10 20 L20 30 L30 20 L20 10 Z" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground" />
+          <circle cx="20" cy="20" r="2" className="fill-foreground" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#woven-pattern)" />
+    </svg>
+    <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-cream/50 to-cream" />
+  </div>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4">
-          <Link
-            href="/about"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-          >
-            Discover Our Work
-          </Link>
-          <Link
-            href="/fellowship"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
-          >
-            Join the Fellowship
-          </Link>
-        </div>
-      </div>
+  {/* DESKTOP BACKGROUND IMAGE LAYER (From Code 1) - Hidden on Mobile */}
+  <div className="hidden lg:block absolute inset-0 lg:left-1/3"> 
+    <Image 
+      src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg" 
+      alt="Metta Tropical Collective Hero Image" 
+      fill 
+      className="object-cover object-center" 
+      priority 
+    /> 
+    {/* Desktop: keep the left fade */} 
+    <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/80 to-transparent" /> 
+  </div> 
 
-      {/* Crisp Image Section */}
-      {/* On mobile, it naturally flows right after the buttons. On desktop, it takes the right side. */}
-      <div className="relative w-full h-[60vh] lg:h-screen lg:w-1/2">
-        <Image
-          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
-          alt="Metta Tropical Collective Hero Image"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-      </div>
-    </section>
+  {/* =========================================================================
+      CONTENT PANEL
+     ========================================================================= */}
+  <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-12 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
+    
+    <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4">
+      Welcome to the
+    </span>
+
+    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance"> 
+      Metta Tropical Collective 
+    </h1> 
+     
+    <p className="mt-8 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic"> 
+      Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
+    </p> 
+
+    <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4"> 
+      <Link 
+        href="/about" 
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors" 
+      > 
+        Discover Our Work 
+      </Link> 
+      <Link 
+        href="/fellowship" 
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors" 
+      > 
+        Join the Fellowship 
+      </Link> 
+    </div> 
+  </div> 
+
+  {/* =========================================================================
+      MOBILE IMAGE LAYER
+     ========================================================================= */}
+
+  {/* MOBILE ONLY IMAGE (From Code 2) - Appears underneath content on mobile, hidden on desktop */}
+  <div className="relative w-full h-[60vh] lg:hidden">
+    <Image
+      src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
+      alt="Metta Tropical Collective Hero Image"
+      fill
+      className="object-cover object-center"
+      priority
+    />
+  </div>
+
+</section>
   )
 }
 
