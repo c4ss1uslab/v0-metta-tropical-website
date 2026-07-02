@@ -508,7 +508,7 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* 3. The Civilizational Horizon */}
+{/* 3. The Civilizational Horizon */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -535,9 +535,11 @@ export default function TheoryOfChangePage() {
                 Together, these emerging institutions can become the foundation of a new wisdom-centered civilizational infrastructure: a distributed ecology of people, communities, and institutions connected through enough ontological coherence, relational trust, and shared devotion to the flourishing of all life leading to deeper collective coordination in response to the biggest challenges of our times.
               </p>
             </div>
+          </div>
 
-            {/* Horizontal Stack: The Architecture of Becoming */}
-            <div className="mt-20 p-8 md:p-10 bg-cream rounded-xl border border-border">
+          {/* Full-Width Horizontal Framework: The Architecture of Becoming */}
+          <div className="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="p-6 md:p-10 bg-cream rounded-xl border border-border w-full">
               <div className="text-center mb-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground">The Architecture of Becoming</h3>
                 <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
@@ -545,8 +547,8 @@ export default function TheoryOfChangePage() {
                 </p>
               </div>
 
-              {/* Horizontal Row for Desktop, falling back to Stack on Mobile */}
-              <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-1 overflow-x-auto pb-2">
+              {/* Grid layout ensuring 6 items match perfectly on desktop without overflow */}
+              <div className="grid grid-cols-2 md:grid-cols-6 gap-2 items-center justify-center w-full">
                 {[
                   "Life-Affirming Futures",
                   "Wisdom-Centered Civilizational Infrastructures",
@@ -555,12 +557,12 @@ export default function TheoryOfChangePage() {
                   "Developmental Ecologies",
                   "Wisdom-Centered Educational Architectures"
                 ].map((title, index, array) => (
-                  <div key={index} className="w-full flex flex-col md:flex-row items-center flex-1 min-w-[140px]">
-                    <div className="w-full p-3 text-center bg-background border border-border rounded shadow-sm text-xs text-muted-foreground font-medium min-h-[64px] flex items-center justify-center">
+                  <div key={index} className="flex flex-col md:flex-row items-center w-full h-full">
+                    <div className="w-full p-3 text-center bg-background border border-border rounded shadow-sm text-xs text-muted-foreground font-medium min-h-[80px] md:min-h-[110px] flex items-center justify-center flex-grow">
                       {title}
                     </div>
                     {index < array.length - 1 && (
-                      <div className="text-muted-foreground/40 my-1 md:mx-1 font-mono text-xs font-bold transform rotate-90 md:rotate-0">
+                      <div className="text-muted-foreground/40 my-1 md:my-0 md:mx-1 font-mono text-xs font-bold transform rotate-90 md:rotate-0 flex-shrink-0">
                         ↔
                       </div>
                     )}
@@ -568,7 +570,6 @@ export default function TheoryOfChangePage() {
                 ))}
               </div>
             </div>
-
           </div>
         </section>
 
