@@ -93,7 +93,7 @@ export function IntroductionSection() {
   return (
     <>
       {/* Introduction */}
-      <section className="pt-24 pb-12 lg:pt-32 lg:pb-16 bg-background">
+      <section className="pt-18 pb-12 lg:pt-32 lg:pb-16 bg-background">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">

@@ -64,7 +64,7 @@ export default function AboutPage() {
 
 
         {/* Why Metta? */}
-        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-cream">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Image */}
@@ -123,7 +123,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Tropical? */}
-        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-background">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
