@@ -44,7 +44,7 @@ export default function AboutPage() {
     font-serif text-lg md:text-xl lg:text-2xl
     leading-relaxed text-foreground italic
     py-1 pl-3
-    bg-cream/20 lg:bg-transparent lg:p-0
+    bg-cream/30 lg:bg-transparent lg:p-0
     bg-[linear-gradient(to_bottom,theme(colors.olive)_0%,theme(colors.olive)_33.333%,#D9A01B_33.333%,#D9A01B_66.666%,theme(colors.crimson)_66.666%,theme(colors.crimson)_100%)]
     bg-[length:2px_100%]
     bg-no-repeat
@@ -54,7 +54,6 @@ export default function AboutPage() {
 >
   "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
 </p>
-                {/* Changed text color to a readable brown on mobile, returning to olive on desktop */}
                 <figcaption className="text-[#5C4033] lg:text-olive font-semibold text-xs tracking-widest uppercase">
                   — Ninawa Huni Kuin
                 </figcaption>
@@ -65,9 +64,9 @@ export default function AboutPage() {
 
 
         {/* Why Metta? */}
-        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-cream">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Image */}
               <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
                 <Image
@@ -124,9 +123,9 @@ export default function AboutPage() {
         </section>
 
         {/* Why Tropical? */}
-        <section className="py-24 pt-12 lg:py-32 lg:pt-16 bg-background">
+        <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div className="space-y-8 order-2 lg:order-1">
                 <div>
@@ -175,7 +174,7 @@ export default function AboutPage() {
 {/* Why Collective? */}
 <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream text-foreground">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch"> {/* added items-stretch */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-stretch"> {/* added items-stretch */}
       
       {/* Left Column: Fixed sticky modifier here so it behaves normally on mobile */}
       <div className="w-full aspect-[3/4] max-h-[600px] md:max-h-[650px] lg:sticky lg:top-8">

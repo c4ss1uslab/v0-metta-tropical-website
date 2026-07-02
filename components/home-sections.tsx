@@ -50,14 +50,14 @@ export function HeroSection() {
       Metta Tropical Collective 
     </h1> 
      
-    <p className="mt-8 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic"> 
+    <p className="mt-18 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic"> 
       Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
     </p> 
 
-    <div className="mt-12 flex flex-col sm:flex-row items-center justify-start gap-4"> 
+    <div className="mt-18 flex flex-col sm:flex-row items-center justify-start gap-4"> 
       <Link 
         href="/about" 
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors" 
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#111827] text-background font-medium text-sm tracking-wide hover:bg-[#111827]/90 transition-colors" 
       > 
         Discover Our Work 
       </Link> 
@@ -75,7 +75,7 @@ export function HeroSection() {
      ========================================================================= */}
 
   {/* MOBILE ONLY IMAGE (From Code 2) - Appears underneath content on mobile, hidden on desktop */}
-  <div className="relative w-full h-[60vh] lg:hidden">
+  <div className="mt-12 relative w-full h-[60vh] lg:hidden">
     <Image
       src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
       alt="Metta Tropical Collective Hero Image"
@@ -93,7 +93,7 @@ export function IntroductionSection() {
   return (
     <>
       {/* Introduction */}
-      <section className="pt-24 pb-12 lg:pt-32 lg:pb-16 bg-background">
+      <section className="pt-18 pb-12 lg:pt-32 lg:pb-16 bg-background">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
