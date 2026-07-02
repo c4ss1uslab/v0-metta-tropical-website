@@ -490,7 +490,7 @@ export default function TheoryOfChangePage() {
                 <p className="mb-8">
                     What we are attempting is difficult, necessary, and (we believe) genuinely new. We are not simply importing Global North frameworks southward, nor treating wisdom traditions as timeless solutions immune to their own historical limitations and cultural context, or romanticizing the wisdom of historically marginalized communities.
                 </p>
-                 <p className="mb-2">
+                 <p>
                  Instead, we are exploring what becomes possible when rigorous systems inquiry, contemplative wisdom, and the living ontological intelligence of this territory are brought into genuine relationship with one another. From this encounter, a new pedagogical and developmental culture can emerge, one that could only take root here, where these lineages have a reason to meet, and where the urgency of this moment makes their separation no longer affordable.
                 </p>
               </div>
@@ -563,69 +563,6 @@ export default function TheoryOfChangePage() {
                       <div className="text-muted-foreground/40 my-1 md:mx-1 font-mono text-xs font-bold transform rotate-90 md:rotate-0">
                         ↔
                       </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* 3. The Civilizational Horizon */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Civilizational Horizon</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Cultivating Wisdom in Service of All Life
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Our aspiration is not merely the development of wise individuals, but the emergence of <strong>wisdom-centered cultures</strong>: communities, educational spaces, organizations, practices, and institutions designed to cultivate the conditions for wisdom to emerge and be transmitted across generations. In such a future, wisdom cultivation becomes a shared cultural function rather than a marginal pursuit — held by a growing ecosystem of wisdom-centered institutions capable of nourishing the conditions for life-affirming civilizations to emerge.
-                </p>
-                <p>
-                  We believe wisdom-centered institutions represent a new paradigm for individual and collective development. Unlike many modern institutions designed primarily around efficiency, growth, and productivity, these institutions are organized around cultivating mature human beings, resilient communities, and wiser ways of participating in the web of life.
-                </p>
-              </div>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  They are not separate from society, but woven into the fabric of everyday life. They can take the form of businesses, schools, communities, cultural spaces, technologies, spiritual centers, social movements, and new organizational models that recognize that every environment shapes the kinds of human beings we become. Therefore, every institution carries a responsibility to consider what forms of consciousness, relationship, and culture it is helping cultivate.
-                </p>
-                <p>
-                  Over the coming decades, we hope to contribute to the emergence of an ecosystem of wisdom-centered institutions across Brazil and beyond: bioregional organizations, residential prototyping spaces, initiates supporting elderhood, adaptive philanthropic platforms, complex political systems, artistic movements restoring belonging, and technologies designed to deepen rather than diminish our humanity.
-                </p>
-              </div>
-            </div>
-
-            {/* Visual Stack: The Architecture of Becoming */}
-            <div className="mt-16 p-8 md:p-12 bg-cream rounded-xl border border-border max-w-3xl mx-auto">
-              <div className="text-center mb-10">
-                <h3 className="font-serif text-2xl font-semibold text-foreground">The Architecture of Becoming</h3>
-                <p className="text-sm text-muted-foreground mt-2 max-w-md mx-auto">
-                  Underneath our work lives a simple understanding that the future of civilization depends not only on what we create, but on who we become. And who we become depends on the worlds that shape us.
-                </p>
-              </div>
-
-              {/* Stack Framework UI */}
-              <div className="flex flex-col items-center gap-2">
-                {[
-                  { title: "Life-Affirming Futures", color: "border-crimson bg-background font-semibold" },
-                  { title: "Wisdom-Centered Civilizational Infrastructures", color: "border-border bg-background/60 text-sm" },
-                  { title: "Wisdom-Centered Cultures", color: "border-border bg-background/60 text-sm" },
-                  { title: "Wise, Mature & Responsible Human Beings and Communities", color: "border-olive bg-background text-sm font-medium" },
-                  { title: "Developmental Ecologies", color: "border-border bg-background/60 text-sm" },
-                  { title: "Wisdom-Centered Educational Architectures", color: "border-yellow bg-foreground text-background font-medium text-sm" }
-                ].map((layer, index, array) => (
-                  <div key={index} className="w-full flex flex-col items-center">
-                    <div className={`w-full max-w-xl p-4 text-center rounded-lg border shadow-sm ${layer.color}`}>
-                      {layer.title}
-                    </div>
-                    {index < array.length - 1 && (
-                      <div className="text-muted-foreground/60 my-1 font-mono text-xs font-bold">↕</div>
                     )}
                   </div>
                 ))}
