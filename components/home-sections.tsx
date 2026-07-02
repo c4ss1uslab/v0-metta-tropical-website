@@ -2,28 +2,20 @@ import Image from "next/image"
 import Link from "next/link"
 
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-cream">
-      {/* Absolute Full Background Image (Shifted Right on Desktop) */}
-      <div className="absolute inset-0 lg:left-1/3">
-        <Image
-          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
-          alt="Metta Tropical Collective Hero Image"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        {/* Mobile Gradient (Top/Bottom) and Desktop Gradient (Left/Right Fade) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/40 to-transparent lg:bg-gradient-to-r lg:from-cream lg:via-cream/80 lg:to-transparent" />
-      </div>
-
+  return (    
+    <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between overflow-hidden bg-cream">
       {/* Content Container Panel */}
-      <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/90 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
+      <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-12 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
+      <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4 block">
+        Welcome to the
+      </span>
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance">
           Metta Tropical Collective
         </h1>
-        
-        <p className="mt-8 text-lg text-foreground/90 max-w-xl leading-relaxed text-pretty">
+        {/* A subtle geometric line */}
+        <div className="w-12 h-[1px] bg-foreground/30 mb-8" />
+
+        <p className="mt-4 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic">
           Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life.
         </p>
 
@@ -41,6 +33,18 @@ export function HeroSection() {
             Join the Fellowship
           </Link>
         </div>
+      </div>
+
+      {/* Crisp Image Section */}
+      {/* On mobile, it naturally flows right after the buttons. On desktop, it takes the right side. */}
+      <div className="relative w-full h-[60vh] lg:h-screen lg:w-1/2">
+        <Image
+          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
+          alt="Metta Tropical Collective Hero Image"
+          fill
+          className="object-cover object-center"
+          priority
+        />
       </div>
     </section>
   )

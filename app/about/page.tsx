@@ -30,16 +30,28 @@ export default function AboutPage() {
               priority
             />
             {/* Made the light gradient overlay stronger on mobile viewports */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/85 to-transparent/30 lg:via-cream/50 lg:to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent/30 lg:via-cream/50 lg:to-transparent" />
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <div className="max-w-3xl text-center lg:text-left">
-<h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8 [-webkit-text-stroke:_0.5px_rgba(0,0,0,0.2)] lg:[-webkit-text-stroke:none]">
+<h1 className="font-serif text-4xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8 [-webkit-text-stroke:_0.5px_rgba(0,0,0,0.2)] lg:[-webkit-text-stroke:none]">
   Why Metta Tropical Collective?
 </h1>
               <blockquote className="translate-y-12 space-y-4 max-w-2xl mx-auto lg:mx-0">
-<p className="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground font-medium lg:font-normal tracking-wide lg:tracking-normal italic">
+<p
+  className="
+    font-serif text-lg md:text-xl lg:text-2xl
+    leading-relaxed text-foreground italic
+    py-1 pl-3
+    bg-cream/20 lg:bg-transparent lg:p-0
+    bg-[linear-gradient(to_bottom,theme(colors.olive)_0%,theme(colors.olive)_33.333%,#D9A01B_33.333%,#D9A01B_66.666%,theme(colors.crimson)_66.666%,theme(colors.crimson)_100%)]
+    bg-[length:2px_100%]
+    bg-no-repeat
+    bg-left
+    lg:bg-none
+  "
+>
   "A genuinely different future depends far less on the images we create in our minds than on our ability to repair and weave relationships in the present."
 </p>
                 {/* Changed text color to a readable brown on mobile, returning to olive on desktop */}
