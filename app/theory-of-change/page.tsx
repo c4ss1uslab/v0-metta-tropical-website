@@ -40,7 +40,7 @@ export default function TheoryOfChangePage() {
 
 
         {/* Symptoms */}
-        <section className="py-24 lg:py-32 bg-cream">
+        <section className="py-18 lg:py-18 bg-cream">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Symptoms</span>
@@ -72,7 +72,7 @@ export default function TheoryOfChangePage() {
         </section>
 
         {/* The Predicament */}
-<section className="py-24 lg:py-32 bg-background">
+<section className="py-18 lg:py-18 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
@@ -364,7 +364,7 @@ One of the deepest failures of modern education is that it has become extraordin
         </section>
 
         {/* Our Hypothesis */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
+        <section className="py-18 lg:py-18 bg-foreground text-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Developmental Hypothesis</span>
