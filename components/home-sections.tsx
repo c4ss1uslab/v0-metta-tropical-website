@@ -40,7 +40,7 @@ export function HeroSection() {
   {/* =========================================================================
       CONTENT PANEL
      ========================================================================= */}
-  <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-12 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
+  <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-18 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
     
     <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4">
       Welcome to the
@@ -54,7 +54,7 @@ export function HeroSection() {
       Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
     </p> 
 
-    <div className="mt-18 flex flex-col sm:flex-row items-center justify-start gap-4"> 
+    <div className="mt-22 flex flex-col sm:flex-row items-center justify-start gap-4"> 
       <Link 
         href="/about" 
         className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#111827] text-background font-medium text-sm tracking-wide hover:bg-[#111827]/90 transition-colors" 
@@ -75,7 +75,7 @@ export function HeroSection() {
      ========================================================================= */}
 
   {/* MOBILE ONLY IMAGE (From Code 2) - Appears underneath content on mobile, hidden on desktop */}
-  <div className="mt-12 relative w-full h-[60vh] lg:hidden">
+  <div className="mt-6 relative w-full h-[60vh] lg:hidden">
     <Image
       src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
       alt="Metta Tropical Collective Hero Image"
@@ -93,7 +93,7 @@ export function IntroductionSection() {
   return (
     <>
       {/* Introduction */}
-      <section className="pt-18 pb-12 lg:pt-32 lg:pb-16 bg-background">
+      <section className="pt-12 pb-12 lg:pt-32 lg:pb-16 bg-background">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
