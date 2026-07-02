@@ -41,7 +41,7 @@ export default function WhyNowPage() {
         A Time Between Worlds¹
       </h1>
 
-      <blockquote className="mt-8 font-serif text-xl md:text-2xl text-background/80 italic leading-relaxed border-l-4 border-yellow pl-6">
+      <blockquote className="mt-12 md:mt-8 font-serif text-xl md:text-2xl text-background/80 italic leading-relaxed border-l-4 border-yellow pl-6">
         &ldquo;During times between worlds there emerge ideas and thinkers that
         are, properly speaking, without a world. Their work is liminal — not
         within the old world or the world to come, but serving as the bridge
@@ -50,7 +50,7 @@ export default function WhyNowPage() {
         its broadest sense.&rdquo;
       </blockquote>
 
-      <cite className="mt-4 block text-background/60 text-sm not-italic">
+      <cite className="mt-8 md:mt-4 block text-background/60 text-sm not-italic">
         — Zak Stein
       </cite>
     </div>
