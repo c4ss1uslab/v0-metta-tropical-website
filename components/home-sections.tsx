@@ -42,8 +42,7 @@ export function HeroSection() {
      ========================================================================= */}
   <div className="relative z-10 w-full lg:w-1/2 max-w-3xl px-6 pt-12 pb-12 lg:py-32 lg:pl-16 lg:pr-12 flex flex-col justify-center">
     
-    {/* MOBILE ONLY TAG (From Code 2) */}
-    <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4 block lg:hidden">
+    <span className="text-xs font-semibold tracking-[0.2em] text-[#D9A01B] uppercase mb-4">
       Welcome to the
     </span>
 
