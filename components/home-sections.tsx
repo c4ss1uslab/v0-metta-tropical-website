@@ -3,19 +3,22 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-cream">
-      {/* Absolute Full Background Image (Shifted Right on Desktop) */}
-      <div className="absolute inset-0 lg:left-1/3">
-        <Image
-          src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
-          alt="Metta Tropical Collective Hero Image"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        {/* Mobile Gradient (Top/Bottom) and Desktop Gradient (Left/Right Fade) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/40 to-transparent lg:bg-gradient-to-r lg:from-cream lg:via-cream/80 lg:to-transparent" />
-      </div>
+<section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-cream">
+  {/* Background Image */}
+  <div className="absolute inset-0 lg:left-1/3">
+    <Image
+      src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
+      alt="Metta Tropical Collective Hero Image"
+      fill
+      className="object-cover object-center"
+      priority
+    />
+    
+    {/* Mobile: only fade the bottom half */}
+    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-cream to-transparent lg:hidden" />
+    {/* Desktop: keep the left fade */}
+    <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-cream via-cream/80 to-transparent" />
+  </div>
 
       {/* Content Container Panel */}
       <div className="relative z-10 w-full max-w-3xl px-6 py-32 lg:pl-16 lg:pr-12 bg-cream/90 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none min-h-screen lg:min-h-0 flex flex-col justify-center">
