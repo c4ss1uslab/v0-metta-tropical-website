@@ -80,13 +80,52 @@ export default function TheoryOfChangePage() {
           <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             The Metacrisis
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            The crises shaping our time are not isolated problems. They arise from deeper conditions, structures, and existential layers.
+
+              <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-crimson pl-6">
+                &ldquo;The metacrisis is the historically specific threat to truth, beauty, and goodness caused by our persistent misunderstanding, misvaluing, and misappropriating of reality.&rdquo;
+              </blockquote>
+              <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Jonathan Rowson</cite>
+              </div>
+
+            <div className="space-y-8">
+          <p className="text-muted-foreground leading-relaxed">
+            Humanity is living through a time of profound civilizational rupture.
+              </p>
+          <p className="text-muted-foreground leading-relaxed">
+            In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded not only in our institutions and systems, but in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            It is a crisis not only of systems, but of being.
+                          </p>
+            </div>
+            <div className="space-y-1 py-6">
+                      <p className="text-muted-foreground leading-relaxed">
+            It points to the crisis unfolding:
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+• <em>within</em> ourselves, in our psyche, soul and spirit;
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
+            </p>
+                      <p className="text-muted-foreground leading-relaxed">
+             • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+                          </p>
+              </div>
+            <div className="space-y-8">
+                      <p className="text-muted-foreground leading-relaxed">
+            In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges. 
+                          </p>
+                      <p className="text-muted-foreground leading-relaxed">
+            We understand the metacrisis as unfolding across three interconnected layers:
           </p>
         </div>
 
         {/* Diagram Wrapper */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           
           {/* 1. THE SYMPTOMATIC LAYER */}
           <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
@@ -114,7 +153,7 @@ export default function TheoryOfChangePage() {
 
               {/* Etc Box sits completely below the vertical axis line */}
               <div className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200 z-10 mt-4">
-                Etc.
+                Etc...
               </div>
             </div>
             
@@ -265,6 +304,17 @@ export default function TheoryOfChangePage() {
           </div>
 
         </div>
+            <div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+            At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+          </p>
+              <p className="text-muted-foreground leading-relaxed">
+If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
+          </p>
+              <p className="text-muted-foreground leading-relaxed">
+It is to transform the very ways of seeing, being, knowing and acting that gave rise to those systems in the first place. To be capable of perceiving interdependence, holding complexity, relating responsibly, and participating in life without generating conditions that undermine the future. 
+          </p>
+        </div>
       </div>
     </section>
 
@@ -272,28 +322,44 @@ export default function TheoryOfChangePage() {
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Problem</span>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Problem We're Tackling</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                A Large-Scale Educational Crisis
+                A Crisis of Education, Formation, and Human Development
               </h2>
             </div>
 
-            <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                A society that is incapable of creating educational structures that can prepare individuals with the capacities required to handle the increasing complexity of our world, while serving the flourishing of all life. <strong className="text-foreground">The task demands of society outstrip the capabilities available to handle it.</strong>
-              </p>
-
-              <blockquote className="p-8 bg-background border-l-4 border-olive">
-                <p className="font-serif text-lg text-foreground italic leading-relaxed">
-                  &ldquo;The basic idea is that societies require each new generation to be in a position to inherit the requisite capabilities, legitimacy, and meaning-making to continue the project of cooperative social life. Failing this, the intergenerational fabric of the social world begins to fray. At some point inadequate education results in an inability to fill essential institutional roles, provide motivating meanings, and secure political legitimacy.&rdquo;
-                </p>
-                <cite className="mt-4 block text-muted-foreground text-sm not-italic">— Zak Stein</cite>
+              <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-olive pl-6">
+                &ldquo;If education is not the answer, you are asking the wrong question. It is time to see planetary crises as a species-wide learning opportunity.&rdquo;
               </blockquote>
+              <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Zak Stein</cite>
 
+            <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                Current educational systems are fragmented, developing fragmented individuals who create fragmented systems. Our educational system has been one of the main contributors to the metacrisis. The metacrisis is an opportunity for evolving our understanding of what education should be.
-              </p>
-            </div>
+               The three layers of the metacrisis outlined above illuminate a deeper educational and developmental crisis unfolding beneath our global challenges. If the metacrisis is simultaneously systemic, ontological, relational, developmental, and civilizational, then our educational responses must also be capable of engaging these multiple layers of reality.</p>
+              <p className="text-muted-foreground leading-relaxed">
+One of the deepest failures of modern education is that it has become extraordinarily effective at cultivating information, specialization, and technical capability, while remaining largely incapable of cultivating wisdom, relational maturity, and ethical depth.</p>
+              <p className="text-muted-foreground leading-relaxed">We believe this educational crisis exists across three interconnected dimensions:</p>
+              </div>
+            <div className="space-y-1 py-6">
+              <p className="text-muted-foreground leading-relaxed">• <strong>Conventional education</strong> often reproduces the fragmentation underlying the metacrisis.</p>
+              <p className="text-muted-foreground leading-relaxed">• <strong>Alternative educational</strong> movements, while valuable, remain too fragmented to meet the scale and complexity of civilizational transition.</p>
+              <p className="text-muted-foreground leading-relaxed">• <strong>Civilization</strong> itself functions as an educational environment, shaping desires, identities, perceptions, and behaviors that perpetuate the metacrisis.</p>
+              </div>
+              <div className="space-y-8">
+              <p className="text-muted-foreground leading-relaxed">Much of today’s educational landscies of communities, practices, workplaces, educational spaces, and cultures capable of supporting the long arc of human maturation required during a civilizational transition.ape — conventional, alternative, and civilizational — remains insufficient for the magnitude of the transition we are entering.</p>
+              <p className="text-muted-foreground leading-relaxed">At one level, <strong>conventional educational</strong> systems continue to shape millions of people through fragmented industrial-age models of learning centered around standardization, information transfer, testing, and economic productivity. While these systems generated extraordinary scientific, technological, and economic capacities, they often did so within cultural and economic paradigms, unable to adequately orient those powers toward the flourishing of life as a whole. In this sense, more education is not necessarily better. Forms of education that reinforce fragmentation, competition, extraction, hyper-individualism, and disconnection from life may deepen the very conditions generating the metacrisis itself.</p>
+              <p className="text-muted-foreground leading-relaxed">At the same time, many <strong>alternative educational</strong> approaches and transformational initiatives have emerged in response to the limitations of conventional education. Ecological education, holistic education, contemplative practice, systems thinking, developmental frameworks, community-based learning, and social impact movements have all contributed important insights toward reimagining human development and cultural renewal. Many of these efforts represent essential and beautiful responses to a world in crisis.</p>
+              <p className="text-muted-foreground leading-relaxed">Yet the depth and complexity of the metacrisis reveal that isolated approaches alone are not enough. Many remain fragmented, siloed, or structurally dependent upon the same civilizational logics they seek to transform. Few are capable of engaging the multiple layers of the metacrisis simultaneously: the systemic, relational, ontological, developmental, and civilizational dimensions of our predicament.</p>
+              <p className="text-muted-foreground leading-relaxed">At the deepest layer, we cannot respond to the metacrisis if education is reduced merely to schools, universities, or alternative institutions. Education, in its deepest sense, is the intergenerational process through which societies reproduce ways of perceiving, relating, knowing, valuing, and being across time.</p>
+              <p className="text-muted-foreground leading-relaxed">Human beings are always being educated through culture, media, technology, economics, architecture, religion, family systems, institutions, and the wider social worlds they inhabit. Civilization itself is an educational environment. Systems shape consciousness. Cultures shape perception. The media shapes desire. Institutions shape identity. Economies shape relationships. Technologies shape attention. Civilization shapes the kinds of human beings we become. The question is not whether civilization is educating us, but what kinds of human beings it is cultivating.</p>
+              <p className="text-muted-foreground leading-relaxed">We believe many of the dominant systems shaping modern life are reinforcing fragmentation, extraction, acceleration and disconnection from life. Consequently, fragmented systems cultivate fragmented human beings, who then recreate fragmented systems. This recursive cycle has become one of the central dynamics perpetuating the metacrisis itself.</p>
+              <p className="text-muted-foreground leading-relaxed">Therefore, the challenge before us is not merely educational reform, but a profound expansion of what education itself means.</p>
+              <p className="text-muted-foreground leading-relaxed">The task is not simply to create better schools, programs, or institutions — though this is indeed necessary — but to cultivate living developmental ecosystems: relational ecologies of communities, practices, workplaces, educational spaces, and cultures capable of supporting the long arc of human maturation required during a civilizational transition.</p>
+              <p className="text-muted-foreground leading-relaxed">Over time, such developmental ecosystems may help give rise to new civilizational infrastructures: new forms of institutions, businesses, cultural spaces, educational architectures, and public life capable of sustaining wiser forms of human participation across generations.</p>
+<p className="text-muted-foreground leading-relaxed">The question before us is no longer only: <em>how do we improve education?</em></p>
+              <p className="text-muted-foreground leading-relaxed">But more fundamentally: <em>what kinds of educational architectures, developmental cultures, and civilizational infrastructures must now emerge to cultivate the forms of wisdom, maturity, and human participation required for humanity to navigate this time between worlds?</em></p>
+
+             </div>
           </div>
         </section>
 
@@ -301,7 +367,7 @@ export default function TheoryOfChangePage() {
         <section className="py-24 lg:py-32 bg-foreground text-background">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">Our Hypothesis</span>
+              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Developmental Hypothesis</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
                 Educational Architecture
               </h2>
