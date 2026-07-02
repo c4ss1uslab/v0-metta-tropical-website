@@ -15,7 +15,7 @@ export function HeroSection() {
     />
     
     {/* Mobile: only fade the bottom half */}
-    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-cream to-transparent lg:hidden" />
+    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-cream to-transparent lg:hidden" />
     {/* Desktop: keep the left fade */}
     <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-cream via-cream/80 to-transparent" />
   </div>
