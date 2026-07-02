@@ -168,7 +168,7 @@ export default function AboutPage() {
       {/* Left Column: Fixed sticky modifier here so it behaves normally on mobile */}
       <div className="w-full aspect-[3/4] max-h-[600px] md:max-h-[650px] lg:sticky lg:top-8">
         <img 
-          src="https://i.postimg.cc/vBF0FG5H/Young-women-dance-during-the-Ashenda-Festival-in-Lalibela-Ethiopia.jpg" 
+          src="https://i.postimg.cc/ZYDV4PPW/Young-women-dance-during-the-Ashenda-Festival-in-Lalibela-Ethiopia.jpg" 
           alt="Two women dancing, ritualizing in a community gathering in a traditional village"
           className="w-full h-full object-cover object-top rounded-lg shadow-md"
         />
