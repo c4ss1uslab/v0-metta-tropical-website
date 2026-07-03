@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import BuddhistDecorations from "@/components/buddhist-elements";
+import BuddhistDecorations from "@/components/buddhist-elements"
 import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from "next"
