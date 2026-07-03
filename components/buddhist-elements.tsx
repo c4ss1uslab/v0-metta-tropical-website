@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useEffect } from 'react';
 
 // --- Types ---
 interface ElementCardProps {
@@ -7,9 +9,66 @@ interface ElementCardProps {
   children: React.ReactNode;
 }
 
+// --- Inner Component ---
+// Added a clean fallback layout for your ElementCard container so it compiles successfully
+function ElementCard({ title, subtitle, children }: ElementCardProps) {
+  return (
+    <div className="bg-neutral-900/40 border border-neutral-800/60 rounded-2xl p-6 flex flex-col h-64 min-w-[280px] relative overflow-hidden backdrop-blur-sm">
+      <div className="mb-4">
+        <h3 className="text-sm font-medium text-stone-300 tracking-wide">{title}</h3>
+        <p className="text-xs text-neutral-500 italic mt-0.5">{subtitle}</p>
+      </div>
+      <div className="flex-1 w-full relative">
+        {children}
+      </div>
+    </div>
+  );
+}
+
 export default function ZenYogaElements() {
+  // Track the progress of the incense burning (100% full down to 0% finished)
+  const [burnProgress, setBurnProgress] = useState(100);
+
+  useEffect(() => {
+    // Every 3 seconds (matching the new slower breath cycle), the stick burns down slightly
+    const interval = setInterval(() => {
+      setBurnProgress((prev) => {
+        if (prev <= 15) return 100; // Reset loop when it burns completely down to the holder base
+        return prev - 0.75; // Adjust this number down to make it burn even slower
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Calculate dynamic heights and shifts based on the current burn progress
+  const currentStickHeight = (96 * burnProgress) / 100; // Max height is 24rem (96px)
+  const smokeTranslateY = 96 - currentStickHeight; // Keeps smoke relative to the moving tip
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-300 p-8 flex flex-col items-center justify-center font-sans selection:bg-neutral-900 selection:text-neutral-100">
+      {/* Dynamic Keyframes injected safely into the render tree */}
+      <style>{`
+        @keyframes smokeFade {
+          0%, 100% { opacity: 0.35; }
+          30% { opacity: 0.35; }
+          50% { opacity: 0; }
+          75% { opacity: 0; }
+        }
+        @keyframes emberBreath {
+          0%, 100% { 
+            transform: scale(1) translate(-1px, -2px);
+            background-color: #d97706; /* Deeper amber */
+            box-shadow: 0 0 4px #b45309;
+          }
+          50% { 
+            transform: scale(1.3) translate(-1px, -2px);
+            background-color: #f97316; /* Bright glowing orange */
+            box-shadow: 0 0 10px #f97316, 0 0 4px #facc15;
+          }
+        }
+      `}</style>
+
       <header className="mb-16 text-center max-w-md">
         <span className="text-xs uppercase tracking-[0.25em] text-neutral-500 font-medium">System Elements</span>
         <h1 className="text-2xl font-light tracking-wide text-stone-200 mt-1">Dimensional Yoga & Zen Icons</h1>
@@ -21,46 +80,61 @@ export default function ZenYogaElements() {
       {/* Grid Layout for Elements */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
         
-        {/* 1. ACTUAL BURNING INCENSE (SMOKE LAYER FIXED) */}
- <ElementCard title="Burning Incense" subtitle="Senkō">
-  <div className="relative w-full h-full flex flex-col items-center justify-center">
-    {/* The Incense Stick & Holder Group */}
-    <div className="relative flex flex-col items-center translate-y-8">
-      {/* Stick (Angled) */}
-      <div className="w-0.5 h-24 bg-stone-700 origin-bottom transform rotate-[12deg] relative">
-        {/* Glowing ember tip */}
-        <div className="absolute -top-0.5 -left-[1px] w-1 h-1 bg-amber-500 rounded-full shadow-[0_0_5px_#f59e0b] animate-[pulse_1.5s_infinite]" />
-      </div>
-      
-      {/* Minimal Thick Ceramic Bowl Holder */}
-      <div className="w-16 h-4 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-b-xl border-t border-neutral-700/30 shadow-lg mt-[-1px] relative z-10">
-        <div className="absolute top-0 inset-x-2 h-1 bg-neutral-950 rounded-b-sm" />
-      </div>
-    </div>
+        {/* 1. ACTUAL BURNING INCENSE (PROGRESSIVE BURN UPGRADE) */}
+        <ElementCard title="Burning Incense" subtitle="Senkō">
+          <div className="relative w-full h-full flex flex-col items-center justify-center">
+            
+            {/* The Incense Stick & Holder Group */}
+            <div className="relative flex flex-col items-center translate-y-8">
+              
+              {/* Stick (Angled) - Dynamic height applied inline */}
+              <div 
+                className="w-0.5 bg-stone-700 origin-bottom transform rotate-[12deg] relative transition-all duration-[3000ms] ease-linear"
+                style={{ height: `${currentStickHeight}px` }}
+              >
+                {/* Glowing ember tip - Custom smooth breathing animation */}
+                <div 
+                  className="absolute left-0 top-0 w-1.5 h-1.5 rounded-full"
+                  style={{ animation: 'emberBreath 3s ease-in-out infinite' }}
+                />
+              </div>
+              
+              {/* Minimal Thick Ceramic Bowl Holder */}
+              <div className="w-16 h-4 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-b-xl border-t border-neutral-700/30 shadow-lg mt-[-1px] relative z-10">
+                <div className="absolute top-0 inset-x-2 h-1 bg-neutral-950 rounded-b-sm" />
+              </div>
+            </div>
 
-    {/* Smoke Group (Controlled by custom fade keyframes) */}
-    {/* We use a 6-second total loop: 3s visible/fading, 1.5s completely gone, 1.5s fading back */}
-    <div className="absolute bottom-[134px] left-[52.5%] pointer-events-none mix-blend-screen animate-[smokeFade_6s_ease-in-out_infinite]">
-      <svg width="30" height="80" viewBox="0 0 30 80" fill="none">
-        <path 
-          d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0" 
-          stroke="url(#smokeGlow)" 
-          strokeWidth="1.2" 
-          strokeLinecap="round"
-          className="animate-[dash_5s_linear_infinite]"
-          strokeDasharray="140"
-        />
-        <defs>
-          <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
-            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
-            <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-  </div>
-</ElementCard>
+            {/* Smoke Group - Tracks downward along with the stick height */}
+            <div 
+              className="absolute left-[52.5%] pointer-events-none mix-blend-screen transition-all duration-[3000ms] ease-linear"
+              style={{ 
+                bottom: '134px',
+                transform: `translateY(${smokeTranslateY}px)`,
+                animation: 'smokeFade 6s ease-in-out infinite' 
+              }}
+            >
+              <svg width="30" height="80" viewBox="0 0 30 80" fill="none">
+                <path 
+                  d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0" 
+                  stroke="url(#smokeGlow)" 
+                  strokeWidth="1.2" 
+                  strokeLinecap="round"
+                  className="animate-[dash_5s_linear_infinite]"
+                  strokeDasharray="140"
+                />
+                <defs>
+                  <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
+                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
+                    <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
+                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+          </div>
+        </ElementCard>
 
        {/* 2. MINIMAL SINGING BOWL */}
         <ElementCard title="Singing Bowl" subtitle="Rin Gong">
