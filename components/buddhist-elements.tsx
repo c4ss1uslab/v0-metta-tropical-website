@@ -22,44 +22,45 @@ export default function ZenYogaElements() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
         
         {/* 1. ACTUAL BURNING INCENSE (SMOKE LAYER FIXED) */}
-        <ElementCard title="Burning Incense" subtitle="Senkō">
-          <div className="relative w-full h-full flex flex-col items-center justify-center">
-            {/* The Incense Stick & Holder Group */}
-            <div className="relative flex flex-col items-center translate-y-8">
-              {/* Stick (Angled) */}
-              <div className="w-0.5 h-24 bg-stone-700 origin-bottom transform rotate-[12deg] relative">
-                {/* Glowing ember tip */}
-                <div className="absolute -top-0.5 -left-[1px] w-1 h-1 bg-amber-500 rounded-full shadow-[0_0_5px_#f59e0b] animate-[pulse_1.5s_infinite]" />
-              </div>
-              
-              {/* Minimal Thick Ceramic Bowl Holder */}
-              <div className="w-16 h-4 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-b-xl border-t border-neutral-700/30 shadow-lg mt-[-1px] relative z-10">
-                <div className="absolute top-0 inset-x-2 h-1 bg-neutral-950 rounded-b-sm" />
-              </div>
-            </div>
+ <ElementCard title="Burning Incense" subtitle="Senkō">
+  <div className="relative w-full h-full flex flex-col items-center justify-center">
+    {/* The Incense Stick & Holder Group */}
+    <div className="relative flex flex-col items-center translate-y-8">
+      {/* Stick (Angled) */}
+      <div className="w-0.5 h-24 bg-stone-700 origin-bottom transform rotate-[12deg] relative">
+        {/* Glowing ember tip */}
+        <div className="absolute -top-0.5 -left-[1px] w-1 h-1 bg-amber-500 rounded-full shadow-[0_0_5px_#f59e0b] animate-[pulse_1.5s_infinite]" />
+      </div>
+      
+      {/* Minimal Thick Ceramic Bowl Holder */}
+      <div className="w-16 h-4 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-b-xl border-t border-neutral-700/30 shadow-lg mt-[-1px] relative z-10">
+        <div className="absolute top-0 inset-x-2 h-1 bg-neutral-950 rounded-b-sm" />
+      </div>
+    </div>
 
-            {/* Passive Ambient Smoke (Correctly positioned ABOVE the burning tip) */}
-            <div className="absolute bottom-[134px] left-[52.5%] opacity-25 pointer-events-none mix-blend-screen">
-              <svg width="30" height="80" viewBox="0 0 30 80" fill="none" className="animate-[pulse_3s_infinite_ease-in-out]">
-                <path 
-                  d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0" 
-                  stroke="url(#smokeGlow)" 
-                  strokeWidth="1.2" 
-                  strokeLinecap="round"
-                  className="animate-[dash_5s_linear_infinite]"
-                  strokeDasharray="140"
-                />
-                <defs>
-                  <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
-                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
-                    <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
-                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </ElementCard>
+    {/* Smoke Group (Controlled by custom fade keyframes) */}
+    {/* We use a 6-second total loop: 3s visible/fading, 1.5s completely gone, 1.5s fading back */}
+    <div className="absolute bottom-[134px] left-[52.5%] pointer-events-none mix-blend-screen animate-[smokeFade_6s_ease-in-out_infinite]">
+      <svg width="30" height="80" viewBox="0 0 30 80" fill="none">
+        <path 
+          d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0" 
+          stroke="url(#smokeGlow)" 
+          strokeWidth="1.2" 
+          strokeLinecap="round"
+          className="animate-[dash_5s_linear_infinite]"
+          strokeDasharray="140"
+        />
+        <defs>
+          <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
+            <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</ElementCard>
 
        {/* 2. MINIMAL SINGING BOWL */}
         <ElementCard title="Singing Bowl" subtitle="Rin Gong">
@@ -183,14 +184,104 @@ export default function ZenYogaElements() {
           </div>
         </ElementCard>
 
+<ElementCard title="Sacred Maraca" subtitle="Mbaracá Totem">
+          <div className="relative w-full h-full flex flex-col items-center justify-center">
+            
+            {/* Shaking Wrapper: Running half-scale methodical rhythmic translations */}
+            <div className="relative flex flex-col items-center animate-[shamanicShake_2.5s_infinite_ease-in-out]">
+              
+              {/* Top Feather Accent (Scales proportionally to half-size) */}
+              <div className="absolute top-[-8px] flex justify-center items-end w-6 h-3 pointer-events-none z-20">
+                <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-amber-300 rounded-t-full transform -rotate-[25deg] origin-bottom shadow-sm" />
+                <div className="w-1 h-3.5 bg-gradient-to-t from-red-600 to-orange-400 rounded-t-full transform -rotate-[5deg] origin-bottom shadow-sm" />
+                <div className="w-1 h-3.5 bg-gradient-to-t from-teal-600 to-cyan-400 rounded-t-full transform rotate-[10deg] origin-bottom shadow-sm" />
+                <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-yellow-300 rounded-t-full transform rotate-[28deg] origin-bottom shadow-sm" />
+              </div>
+
+              {/* Gourd Shaker Body: Reduced to exactly 50% footprint (w-9 h-11) */}
+              {/* All structural shadow segmenting cuts removed for an un-fragmented exterior finish */}
+              <div className="w-9 h-11 bg-gradient-to-b from-stone-850 via-stone-800 to-stone-900 rounded-full shadow-[0_6px_12px_rgba(0,0,0,0.6)] border border-neutral-700/30 relative z-10 flex flex-col items-center justify-center">
+                
+                {/* Upper Color Strip (Terracotta Clay Band) */}
+                <div className="absolute top-2 w-full h-1.5 bg-gradient-to-r from-red-800 via-red-700 to-red-900 border-y border-stone-950/20 opacity-90" />
+
+                {/* Central Clean Line-Art Focal Rings */}
+                <div className="w-5 h-5 rounded-full border border-amber-500/30 border-dashed flex items-center justify-center relative my-0.5">
+                  <div className="w-2 h-px bg-amber-500/20 absolute" />
+                  <div className="w-px h-2 bg-amber-500/20 absolute" />
+                </div>
+
+                {/* Lower Color Strip (Deep Earth Teal Band) */}
+                <div className="absolute bottom-2.5 w-full h-1.5 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 border-y border-stone-950/20 opacity-80" />
+              </div>
+              
+              {/* Central Wooden Handle Rod (Proportionally matched to new half-scale) */}
+              <div className="w-1.5 h-8 bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 rounded-b-sm -mt-1 z-0 shadow-sm" />
+            </div>
+
+            {/* Tracking Ground Shadow scaled to follow the new center anchor point smoothly */}
+            <div className="absolute bottom-[58px] w-8 h-1 bg-black/60 rounded-full blur-[2px] animate-[shadowTrack_2.5s_infinite_ease-in-out]" />
+          </div>
+        </ElementCard>
+
+        {/* 2. JAPAMALA WITH STEP-BY-STEP COUNTING ANIMATION */}
+        <ElementCard title="Japamala" subtitle="108 Prayer Beads">
+          <div className="relative w-full h-full flex flex-col items-center justify-center">
+            {/* Looping frame applying a crisp, incremental rotational tic to simulate manual counting */}
+            <div className="relative w-32 h-32 flex items-center justify-center animate-[malaCount_12s_infinite_steps(8)]">
+              
+              {/* Inner Silhouette String Guideline */}
+              <div className="absolute inset-2 rounded-full border border-neutral-950/40 p-1 flex items-center justify-center">
+                
+                {/* Simulated Segment of Beads along an elliptical path */}
+                <div className="w-full h-full rounded-full border-[6px] border-dotted border-stone-600 tracking-widest opacity-75 relative">
+                  {/* High-definition accent beads placed incrementally to anchor the geometry */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1.5 w-2 h-2 bg-gradient-to-br from-amber-600 to-stone-900 rounded-full shadow-sm" />
+                  <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1.5 w-2 h-2 bg-gradient-to-br from-amber-600 to-stone-900 rounded-full shadow-sm" />
+                  <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1.5 w-2 h-2 bg-gradient-to-br from-amber-600 to-stone-900 rounded-full shadow-sm" />
+                </div>
+              </div>
+              
+              {/* Guru Bead (The primary focus node where the finger meets the tassel) */}
+              <div className="absolute bottom-1 w-4.5 h-4.5 bg-gradient-to-br from-amber-600 via-amber-700 to-amber-950 rounded-full shadow-md z-20 border border-amber-500/20" />
+              
+              {/* Traditional Red Ritual Tassel */}
+              <div className="absolute bottom-[-20px] w-3 h-6 bg-gradient-to-b from-red-700 via-red-800 to-stone-950 rounded-b-sm shadow-md z-10" />
+            </div>
+
+            {/* Stationary Overlay: A subtle focal point highlight to indicate the "active" counting zone */}
+            <div className="absolute bottom-[66px] w-6 h-6 rounded-full bg-amber-500/5 border border-amber-500/20 pointer-events-none blur-[1px]" />
+          </div>
+        </ElementCard>
+
       </div>
 
-      {/* Embedded Global Styles for Infinite CSS Dash Animation */}
+     {/* Style Matrix injecting keyframe motion translations */}
       <style>{`
-        @keyframes dash {
-          to {
-            stroke-dashoffset: -280;
+        @keyframes shamanicShake {
+          0%, 100% {
+            transform: translate(0, 0) rotate(0deg);
           }
+          20% {
+            transform: translate(-3px, -1px) rotate(-4deg);
+          }
+          45% {
+            transform: translate(2.5px, 0.5px) rotate(3deg);
+          }
+          65% {
+            transform: translate(-2.5px, 0px) rotate(-3deg);
+          }
+          85% {
+            transform: translate(2px, -0.5px) rotate(2deg);
+          }
+        }
+
+        @keyframes shadowTrack {
+          0%, 100% { transform: translateX(0) scaleX(1); opacity: 0.6; }
+          20% { transform: translateX(-2px) scaleX(0.9); opacity: 0.5; }
+          45% { transform: translateX(1.5px) scaleX(1.1); opacity: 0.7; }
+          65% { transform: translateX(-1.5px) scaleX(0.95); opacity: 0.55; }
+          85% { transform: translateX(1px) scaleX(1.05); opacity: 0.65; }
         }
       `}</style>
     </div>
