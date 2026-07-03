@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from 'react';
 import { Sparkles, Play, Layers } from 'lucide-react';
