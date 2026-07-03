@@ -131,3 +131,4 @@
     50% { opacity: 0; }           /* Fades out entirely */
     75% { opacity: 0; }           /* Stays invisible for ~1.5 seconds */
   }
+}
