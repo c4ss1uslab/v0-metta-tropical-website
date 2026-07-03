@@ -105,6 +105,7 @@ export function HeroOptionWild() {
             <span className="relative z-10">Apply Now</span>
           </Link>
         </div>
+        <BuddhistDecorations />
       </div>
     </section>
   )
