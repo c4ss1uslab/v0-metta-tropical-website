@@ -9,32 +9,16 @@ interface ElementCardProps {
   children: React.ReactNode;
 }
 
-// --- Inner Component ---
-// Added a clean fallback layout for your ElementCard container so it compiles successfully
-function ElementCard({ title, subtitle, children }: ElementCardProps) {
-  return (
-    <div className="bg-neutral-900/40 border border-neutral-800/60 rounded-2xl p-6 flex flex-col h-64 min-w-[280px] relative overflow-hidden backdrop-blur-sm">
-      <div className="mb-4">
-        <h3 className="text-sm font-medium text-stone-300 tracking-wide">{title}</h3>
-        <p className="text-xs text-neutral-500 italic mt-0.5">{subtitle}</p>
-      </div>
-      <div className="flex-1 w-full relative">
-        {children}
-      </div>
-    </div>
-  );
-}
-
 export default function ZenYogaElements() {
   // Track the progress of the incense burning (100% full down to 0% finished)
   const [burnProgress, setBurnProgress] = useState(100);
 
   useEffect(() => {
-    // Every 3 seconds (matching the new slower breath cycle), the stick burns down slightly
+    // Every 3 seconds (matching the breath cycle), the stick burns down noticeably faster now
     const interval = setInterval(() => {
       setBurnProgress((prev) => {
         if (prev <= 15) return 100; // Reset loop when it burns completely down to the holder base
-        return prev - 0.75; // Adjust this number down to make it burn even slower
+        return prev - 4.0; // Increased from 0.75 to 4.0 so it burns much quicker with each glow
       });
     }, 3000);
 
@@ -42,8 +26,9 @@ export default function ZenYogaElements() {
   }, []);
 
   // Calculate dynamic heights and shifts based on the current burn progress
-  const currentStickHeight = (96 * burnProgress) / 100; // Max height is 24rem (96px)
-  const smokeTranslateY = 96 - currentStickHeight; // Keeps smoke relative to the moving tip
+  const maxStickHeight = 96; // 24rem boundary matching your original scale
+  const currentStickHeight = (maxStickHeight * burnProgress) / 100; 
+  const smokeTranslateY = maxStickHeight - currentStickHeight; // Keeps smoke tracking the moving tip
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-300 p-8 flex flex-col items-center justify-center font-sans selection:bg-neutral-900 selection:text-neutral-100">
@@ -87,19 +72,22 @@ export default function ZenYogaElements() {
             {/* The Incense Stick & Holder Group */}
             <div className="relative flex flex-col items-center translate-y-8">
               
-              {/* Stick (Angled) - Dynamic height applied inline */}
-              <div 
-                className="w-0.5 bg-stone-700 origin-bottom transform rotate-[12deg] relative transition-all duration-[3000ms] ease-linear"
-                style={{ height: `${currentStickHeight}px` }}
-              >
-                {/* Glowing ember tip - Custom smooth breathing animation */}
+              {/* Fixed Height Anchor Container: Prevents layout shifting below */}
+              <div className="w-10 h-24 relative flex justify-center origin-bottom transform rotate-[12deg]">
+                {/* Stick - Positioned absolutely at the bottom so it shrinks down clean */}
                 <div 
-                  className="absolute left-0 top-0 w-1.5 h-1.5 rounded-full"
-                  style={{ animation: 'emberBreath 3s ease-in-out infinite' }}
-                />
+                  className="w-0.5 bg-stone-700 absolute bottom-0 transition-all duration-[3000ms] ease-linear"
+                  style={{ height: `${currentStickHeight}px` }}
+                >
+                  {/* Glowing ember tip */}
+                  <div 
+                    className="absolute left-0 top-0 w-1.5 h-1.5 rounded-full"
+                    style={{ animation: 'emberBreath 3s ease-in-out infinite' }}
+                  />
+                </div>
               </div>
               
-              {/* Minimal Thick Ceramic Bowl Holder */}
+              {/* Minimal Thick Ceramic Bowl Holder - Now rock steady */}
               <div className="w-16 h-4 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-b-xl border-t border-neutral-700/30 shadow-lg mt-[-1px] relative z-10">
                 <div className="absolute top-0 inset-x-2 h-1 bg-neutral-950 rounded-b-sm" />
               </div>
@@ -258,7 +246,7 @@ export default function ZenYogaElements() {
           </div>
         </ElementCard>
 
-<ElementCard title="Sacred Maraca" subtitle="Mbaracá Totem">
+        <ElementCard title="Sacred Maraca" subtitle="Mbaracá Totem">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             
             {/* Shaking Wrapper: Running half-scale methodical rhythmic translations */}
@@ -273,8 +261,7 @@ export default function ZenYogaElements() {
               </div>
 
               {/* Gourd Shaker Body: Reduced to exactly 50% footprint (w-9 h-11) */}
-              {/* All structural shadow segmenting cuts removed for an un-fragmented exterior finish */}
-              <div className="w-9 h-11 bg-gradient-to-b from-stone-850 via-stone-800 to-stone-900 rounded-full shadow-[0_6px_12px_rgba(0,0,0,0.6)] border border-neutral-700/30 relative z-10 flex flex-col items-center justify-center">
+              <div className="w-9 h-11 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 rounded-full shadow-[0_6px_12px_rgba(0,0,0,0.6)] border border-neutral-700/30 relative z-10 flex flex-col items-center justify-center">
                 
                 {/* Upper Color Strip (Terracotta Clay Band) */}
                 <div className="absolute top-2 w-full h-1.5 bg-gradient-to-r from-red-800 via-red-700 to-red-900 border-y border-stone-950/20 opacity-90" />
