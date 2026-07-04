@@ -1,13 +1,10 @@
+"use client"
+
+import React, { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
-import { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Theory of Change | Metta Tropical Collective",
-  description: "Understanding the metacrisis and our approach to building the educational architectures needed for genuine transformation and cultural renewal.",
-}
 
 const polycrisisItems = [
   "Ecological Collapse",
@@ -21,8 +18,87 @@ const polycrisisItems = [
 ];
 
 export default function TheoryOfChangePage() {
+  const [animationState, setAnimationState] = useState<'idle' | 'looping' | 'shattering' | 'reconstructing'>('idle');
+  const [brokenItem, setBrokenItem] = useState<number | null>(null);
+
+  const startAnimation = () => {
+    if (animationState !== 'idle') return;
+    
+    setAnimationState('looping');
+
+    // 1. Loop for 12 seconds (Doubled timing)
+    setTimeout(() => {
+      setAnimationState('shattering');
+      // Pick a random Layer 1 item to shatter
+      setBrokenItem(Math.floor(Math.random() * polycrisisItems.length));
+
+      // 2. Stay shattered for 3 seconds
+      setTimeout(() => {
+        setAnimationState('reconstructing');
+
+        // 3. Reconstruct for 1.5 seconds, then reset
+        setTimeout(() => {
+          setAnimationState('idle');
+          setBrokenItem(null);
+        }, 1500);
+      }, 3000);
+    }, 12000);
+  };
+
   return (
     <>
+      <style>{`
+        /* Traveling Line Animations */
+        @keyframes slideRight {
+          0% { transform: translateX(-100%); opacity: 0; }
+          20% { opacity: 1; }
+          80% { opacity: 1; }
+          100% { transform: translateX(200%); opacity: 0; }
+        }
+        @keyframes slideDown {
+          0% { transform: translateY(-100%); opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { transform: translateY(600%); opacity: 0; }
+        }
+        
+        /* Card Glow Loop (Slower, softer crimson glow) */
+        @keyframes cardGlow {
+          0%, 100% { border-color: inherit; box-shadow: none; }
+          40%, 60% { border-color: rgba(220, 20, 60, 0.7); box-shadow: 0 0 15px rgba(220, 20, 60, 0.3); }
+        }
+
+        /* Pre-shatter intense glow */
+        @keyframes criticalGlow {
+          0% { background-color: inherit; transform: scale(1); }
+          100% { background-color: rgba(220, 20, 60, 1); color: white; border-color: rgba(220, 20, 60, 1); transform: scale(1.05) rotate(1deg); box-shadow: 0 0 20px rgba(220, 20, 60, 0.6); }
+        }
+
+        /* Glass Shards Flying */
+        @keyframes shatterPiece1 { to { transform: translate(-40px, -40px) rotate(-45deg) scale(0); opacity: 0; } }
+        @keyframes shatterPiece2 { to { transform: translate(40px, -20px) rotate(60deg) scale(0); opacity: 0; } }
+        @keyframes shatterPiece3 { to { transform: translate(-20px, 40px) rotate(-30deg) scale(0); opacity: 0; } }
+        @keyframes shatterPiece4 { to { transform: translate(40px, 40px) rotate(80deg) scale(0); opacity: 0; } }
+
+        /* Reconstruction */
+        @keyframes reconstruct {
+          0% { filter: blur(5px); opacity: 0; transform: scale(0.8); }
+          100% { filter: blur(0); opacity: 1; transform: scale(1); }
+        }
+
+        /* Utility Classes */
+        .travel-x { animation: slideRight 1.5s linear infinite; }
+        .travel-y { animation: slideDown 2.5s linear infinite; }
+        .is-glowing { animation: cardGlow 4s ease-in-out infinite; } /* Slower pulse */
+        .is-critical { animation: criticalGlow 0.3s forwards; }
+        .is-reconstructing { animation: reconstruct 1.5s forwards ease-out; }
+        
+        .shard-1 { animation: shatterPiece1 1s forwards ease-out; clip-path: polygon(0 0, 100% 0, 50% 100%); background-color: rgba(220, 20, 60, 1); }
+        .shard-2 { animation: shatterPiece2 1s forwards ease-out; clip-path: polygon(50% 0, 100% 100%, 0 100%); background-color: rgba(200, 10, 40, 1); }
+        .shard-3 { animation: shatterPiece3 1s forwards ease-out; clip-path: polygon(0 50%, 100% 0, 100% 100%); background-color: rgba(220, 20, 60, 1); }
+        .shard-4 { animation: shatterPiece4 1s forwards ease-out; clip-path: polygon(0 0, 100% 50%, 0 100%); background-color: rgba(180, 0, 20, 1); }
+      `}</style>
+
       <Navigation />
       <main className="pt-16">
         {/* Hero */}
@@ -86,6 +162,7 @@ export default function TheoryOfChangePage() {
               <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Jonathan Rowson</cite>
             </div>
 
+            {/* Introductory Text Blocks Omitted for Brevity in Display - Keeping original intact */}
             <div className="space-y-8">
               <p className="text-muted-foreground leading-relaxed">
                 Humanity is living through a time of profound civilizational rupture.
@@ -134,44 +211,78 @@ export default function TheoryOfChangePage() {
                   <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
                 </div>
 
-                {/* Polycrisis Items Container */}
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
-                  {/* Vertical line running exactly behind elements */}
-                  <div className="absolute left-1/2 top-4 bottom-16 w-[1px] bg-crimson/20 -translate-x-1/2 z-0" />
+                  {/* Vertical axis line with thicker traveling beam */}
+                  <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 overflow-hidden">
+                    {animationState === 'looping' && (
+                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" />
+                    )}
+                  </div>
 
                   <div className="w-full flex flex-col gap-3 relative z-10">
-                    {polycrisisItems.map((item, idx) => (
-                      <div
-                        key={idx}
-                        className="p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200"
-                      >
-                        {item}
-                      </div>
-                    ))}
-                  </div>
+                    {polycrisisItems.map((item, idx) => {
+                      const isBrokenTarget = brokenItem === idx;
+                      const isShattered = animationState === 'shattering' && isBrokenTarget;
+                      const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
 
-                  {/* Etc Box sits completely below the vertical axis line */}
-                  <div className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm hover:border-crimson transition-colors duration-200 z-10 mt-4">
-                    Etc...
+                      return (
+                        <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
+                          {/* The main card - Now with slower, softer crimson glow */}
+                          <div
+                            className={`p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm transition-all duration-500 hover:border-crimson hover:shadow-[0_0_12px_rgba(220,20,60,0.4)] 
+                              ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
+                              ${isReconstructing ? 'is-reconstructing' : ''}
+                              ${isShattered ? 'opacity-0' : 'opacity-100'}`}
+                          >
+                            {item}
+                          </div>
+
+                          {/* The Shards (Only visible when shattered) */}
+                          {isShattered && (
+                            <div className="absolute inset-0 z-20 pointer-events-none">
+                              <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
+                              <div className="absolute top-0 right-0 w-1/2 h-1/2 shard-2 border border-red-400/50"></div>
+                              <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 shard-3 border border-red-400/50"></div>
+                              <div className="absolute bottom-0 right-0 w-1/2 h-full shard-4 border border-red-400/50"></div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                    
+                    {/* "Etc..." Card incorporated back into the mapped structure flex gap so the line properly connects it */}
+                    <div 
+                      className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm transition-all duration-500 hover:border-crimson hover:shadow-[0_0_12px_rgba(220,20,60,0.4)] cursor-pointer"
+                      onClick={startAnimation}
+                    >
+                      Etc...
+                    </div>
                   </div>
                 </div>
-
-                {/* Invisible spacer to match footers */}
                 <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
               </div>
 
               {/* 2. THE STRUCTURAL LAYER */}
               <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
-                {/* Left Relation Rails to Layer 1 (Perfect Height Matching) */}
+                
+                {/* Rails with thicker, visible horizontal traveling beams */}
                 <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-                  <div className="absolute top-[24%] w-full border-t border-dashed border-crimson/20" />
-                  <div className="absolute top-[44%] w-full border-t border-dashed border-crimson/20" />
-                  <div className="absolute top-[64%] w-full border-t border-dashed border-crimson/20" />
-                  <div className="absolute top-[84%] w-full border-t border-dashed border-crimson/20" />
+                  {[24, 44, 64, 84].map((topPos, i) => (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-visible" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && (
+                        <div 
+                          className="absolute -top-[3px] left-0 h-[4px] w-[24px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full travel-x" 
+                          style={{ animationDelay: `${i * 0.3}s` }} 
+                        />
+                      )}
+                    </div>
+                  ))}
                 </div>
 
-                {/* Left Arrow Badge */}
-                <div className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm">
+                <div 
+                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
+                  onClick={startAnimation}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                   </svg>
@@ -183,64 +294,63 @@ export default function TheoryOfChangePage() {
                   <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
                 </div>
 
-                {/* Structural Items Stack */}
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Vertical line passing directly behind the layout cards and running all the way down */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[1px] bg-crimson/20 -translate-x-1/2 z-0" />
+                  {/* Vertical axis line with thicker traveling beam */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 overflow-hidden">
+                     {animationState === 'looping' && (
+                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" style={{ animationDelay: '0.5s' }} />
+                    )}
+                  </div>
 
                   <div className="w-full flex flex-col gap-4 relative z-10">
-                    <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Power</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Captured actors and systems incapable of coordinating transformative change alone.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Incentives</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Systems optimizing purely for short-term, rivalrous, and extractive behaviors.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Trust</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Breakdown of shared sensemaking, truth verification, and institutional legitimacy.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">
-                        Crisis of Complexity<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">5</sub>
-                      </h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Complicated structures fragilely layered over highly complex substrates.
-                      </p>
-                    </div>
+                    {[
+                      { title: 'Crisis of Power', desc: 'Captured actors and systems incapable of coordinating transformative change alone.' },
+                      { title: 'Crisis of Incentives', desc: 'Systems optimizing purely for short-term, rivalrous, and extractive behaviors.' },
+                      { title: 'Crisis of Trust', desc: 'Breakdown of shared sensemaking, truth verification, and institutional legitimacy.' },
+                      { title: 'Crisis of Complexity', desc: 'Complicated structures fragilely layered over highly complex substrates.', sup: '5' }
+                    ].map((item, i) => (
+                      <div 
+                        key={i} 
+                        className={`w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm transition-all duration-500 hover:shadow-[0_0_15px_rgba(220,20,60,0.2)] ${animationState === 'looping' ? 'is-glowing' : ''}`}
+                        style={{ animationDelay: `${i * 0.4}s` }}
+                      >
+                        <h4 className="font-serif font-medium text-foreground">
+                          {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                        </h4>
+                        <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
-
-                {/* Bottom Equation Formula with clean alignment line integration */}
+                
                 <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
                   <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-                    Rivalrous dynamics + Exponential tech = <span className="text-red-400 font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+                    Rivalrous dynamics + Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
                   </p>
                 </div>
               </div>
 
               {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
               <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
-                {/* Left Relation Rails to Layer 2 (Perfect Height Matching) */}
+                
+                {/* Rails with thicker, visible horizontal traveling beams */}
                 <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-                  <div className="absolute top-[24%] w-full border-t border-dashed border-olive/20" />
-                  <div className="absolute top-[44%] w-full border-t border-dashed border-olive/20" />
-                  <div className="absolute top-[64%] w-full border-t border-dashed border-olive/20" />
-                  <div className="absolute top-[84%] w-full border-t border-dashed border-olive/20" />
+                  {[24, 44, 64, 84].map((topPos, i) => (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-visible" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && (
+                        <div 
+                          className="absolute -top-[3px] left-0 h-[4px] w-[24px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full travel-x" 
+                          style={{ animationDelay: `${(i * 0.3) + 0.6}s` }} 
+                        />
+                      )}
+                    </div>
+                  ))}
                 </div>
 
-                {/* Left Arrow Badge */}
-                <div className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm">
+                <div 
+                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
+                  onClick={startAnimation}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                   </svg>
@@ -254,45 +364,35 @@ export default function TheoryOfChangePage() {
                   </p>
                 </div>
 
-                {/* Ontological Items Stack */}
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Vertical line passing directly behind the layout cards and running all the way down */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[1px] bg-olive/20 -translate-x-1/2 z-0" />
+                  {/* Vertical axis line with thicker traveling beam */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 overflow-hidden">
+                     {animationState === 'looping' && (
+                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" style={{ animationDelay: '1s' }} />
+                    )}
+                  </div>
 
                   <div className="w-full flex flex-col gap-4 relative z-10">
-                    <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Perception</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Persistent delusions of total separation, misapprehending nature and reality.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Relationship</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Alienation from self, other human life, and the non-human world.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">
-                        Crisis of Value<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">2</sub>
-                      </h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Spiritual crisis, loss of existential meaning, and broken ties to the sacred.
-                      </p>
-                    </div>
-
-                    <div className="w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm">
-                      <h4 className="font-serif font-medium text-foreground">Crisis of Capacity</h4>
-                      <p className="mt-1 text-muted-foreground text-xs leading-relaxed">
-                        Unfulfilled potential scaled up by global systems, making problems outpace our capacity to process.
-                      </p>
-                    </div>
+                    {[
+                      { title: 'Crisis of Perception', desc: 'Persistent delusions of total separation, misapprehending nature and reality.' },
+                      { title: 'Crisis of Relationship', desc: 'Alienation from self, other human life, and the non-human world.' },
+                      { title: 'Crisis of Value', desc: 'Spiritual crisis, loss of existential meaning, and broken ties to the sacred.', sup: '2' },
+                      { title: 'Crisis of Capacity', desc: 'Unfulfilled potential scaled up by global systems, making problems outpace our capacity to process.' }
+                    ].map((item, i) => (
+                      <div 
+                        key={i} 
+                        className={`w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm transition-all duration-500 hover:shadow-[0_0_15px_rgba(220,20,60,0.2)] ${animationState === 'looping' ? 'is-glowing' : ''}`}
+                        style={{ animationDelay: `${(i * 0.4) + 0.8}s` }}
+                      >
+                        <h4 className="font-serif font-medium text-foreground">
+                          {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                        </h4>
+                        <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                {/* Bottom Equation Formula with clean alignment line integration */}
                 <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
                   <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
                     Global Intimacy Disorder + Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
@@ -301,6 +401,7 @@ export default function TheoryOfChangePage() {
               </div>
 
             </div>
+
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
                 At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
@@ -315,6 +416,8 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
+        {/* ... The rest of the page (The Problem, The Developmental Hypothesis, Our Response, etc.) remains perfectly intact ... */}
+        
         {/* The Problem */}
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -429,7 +532,7 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-{/* 2. Our Response */}
+        {/* 2. Our Response */}
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -508,7 +611,7 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-{/* 3. The Civilizational Horizon */}
+        {/* 3. The Civilizational Horizon */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -547,7 +650,6 @@ export default function TheoryOfChangePage() {
                 </p>
               </div>
 
-              {/* Grid layout ensuring 6 items match perfectly on desktop without overflow */}
               <div className="grid grid-cols-2 md:grid-cols-6 gap-2 items-center justify-center w-full">
                 {[
                   "Life-Affirming Futures",
