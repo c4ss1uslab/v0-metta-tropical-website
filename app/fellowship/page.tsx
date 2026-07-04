@@ -26,6 +26,23 @@ function SoilTexture() {
   )
 }
 
+function IndigenousWeave({ className }: { className?: string }) {
+  return (
+    <div className={`w-full h-8 opacity-40 ${className}`}>
+      <svg width="100%" height="100%" preserveAspectRatio="none">
+        <defs>
+          <pattern id="weave-pattern" width="40" height="32" patternUnits="userSpaceOnUse">
+            <path d="M20 0 L40 16 L20 32 L0 16 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+            <path d="M20 8 L30 16 L20 24 L10 16 Z" fill="currentColor" />
+            <line x1="0" y1="16" x2="40" y2="16" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#weave-pattern)" />
+      </svg>
+    </div>
+  )
+}
+
 function IndigenousPattern() {
   return (
     <div className="w-full overflow-hidden opacity-30 my-8">
@@ -150,6 +167,7 @@ export function ContextSection() {
             <p>This fellowship is a seed of that response. A transformation container in which the full scope of what it means to be human is taken seriously.</p>
           </div>
         </div>
+        <IndigenousWeave />
 
         <IndigenousPattern />
 
