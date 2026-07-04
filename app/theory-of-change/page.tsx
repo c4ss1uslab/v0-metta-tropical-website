@@ -470,17 +470,17 @@ export default function TheoryOfChangePage() {
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                  <div className="p-5 bg-background border-t-2 border-olive shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">The Intellectual & Systemic</strong>
-                    <p className="text-xs">The intellectual, philosophical and systemic rigor of the metacrisis and metamodern conversation developed largely in the Global North.</p>
+                  <div className="p-5 bg-background border-t-2 border-[#D9A01B] shadow-sm">
+                    <strong className="text-foreground block font-serif text-base mb-2">I. Intellectual & Philosophical</strong>
+                    <p className="text-xs">The intellectual and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.</p>
+                  </div>
+                  <div className="p-5 bg-background border-t-2 border-cyan shadow-sm">
+                    <strong className="text-foreground block font-serif text-base mb-2">II. Contemplative Depth</strong>
+                    <p className="text-xs">The contemplative depth of wisdom traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.</p>
                   </div>
                   <div className="p-5 bg-background border-t-2 border-olive shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">Contemplative Depth</strong>
-                    <p className="text-xs">The contemplative depth of wisdom traditions — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc architecture.</p>
-                  </div>
-                  <div className="p-5 bg-background border-t-2 border-olive shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">Territorial Wisdom</strong>
-                    <p className="text-xs">The living relational wisdom carried by indigenous, quilombola, Afro-diasporic and marginalized communities who have protected ways of being through collapse.</p>
+                    <strong className="text-foreground block font-serif text-base mb-2">III. Living, Relational Wisdom</strong>
+                    <p className="text-xs">The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.</p>
                   </div>
                 </div>
 
