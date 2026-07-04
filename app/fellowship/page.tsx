@@ -95,7 +95,7 @@ export function HeroOptionWild() {
           <span className="text-[#4a5d3c] italic">Leadership</span>
         </h1>
         <p className="mt-6 text-xl text-[#b8860b] font-serif italic max-w-2xl">
-          "Who must we become to steward civilization towards culture renewal and the flourishing of all life in a time between worlds?"
+          "Who must we become to steward civilization towards culture renewal and the flourishing of all life?"
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-8 items-start">
           <p className="text-lg text-[#d4c3b3]/90 leading-relaxed max-w-xl font-light border-l-2 border-[#8b0000]/60 pl-6 bg-[#21160e]/40 p-4">
