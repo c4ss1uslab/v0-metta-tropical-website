@@ -10,11 +10,12 @@ const polycrisisItems = [
   "Ecological Collapse",
   "Climate Destabilization",
   "Social Fragmentation",
-  "Geopolitical Friction",
-  "Meaning Crisis",
+  "Geopolitical Conflicts",
+  "Forced Displacement",
   "Economic Inequality",
   "Institutional Distrust",
   "Mental Health Pandemic",
+  "Genocide/Ethnocide",
 ];
 
 export default function TheoryOfChangePage() {
