@@ -204,7 +204,7 @@ export function FieldsOfWorkSection() {
     {
       title: "1. Transformative Educational Lab",
       subtitle: "Education for the end of the world as we know it",
-      description: "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep experimenting with what it takes to build the foundations for a wisdom-centered education.",
+      description: "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep radically experimenting with what it takes to build the foundations for a wisdom-centered education.",
       color: "border-olive",
       textColor: "text-olive",
       image: "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
@@ -214,7 +214,7 @@ export function FieldsOfWorkSection() {
     {
       title: "2. Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
-      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
+      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
       color: "border-cyan",
       textColor: "text-cyan-800",
       image: "https://i.postimg.cc/63CqR1MW/cosmos-830055812.jpg",
@@ -224,7 +224,7 @@ export function FieldsOfWorkSection() {
     {
       title: "3. Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
-      description: "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
+      description: "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We help map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
       color: "border-[#D9A01B]", // Amber border
       textColor: "text-[#B88610]", // Readable Amber
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
@@ -302,7 +302,7 @@ export function CTASection() {
         </h2>
         
         <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-           If you want to discover our work in more depth, we invite you to explore our fellowship and theory of change.
+           If you want to discover our work in more depth, we invite you to explore our Fellowship and Theory of Change.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
