@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
@@ -21,13 +21,43 @@ const polycrisisItems = [
 export default function TheoryOfChangePage() {
   const [animationState, setAnimationState] = useState<'idle' | 'looping' | 'shattering' | 'reconstructing'>('idle');
   const [brokenItem, setBrokenItem] = useState<number | null>(null);
+  
+  // Single source of truth for the animation timeline (0 to 100)
+  const [sweep, setSweep] = useState(0);
+
+  // This effect orchestrates the synchronized back-and-forth ping-pong movement
+  useEffect(() => {
+    if (animationState !== 'looping') {
+      setSweep(0);
+      return;
+    }
+    
+    let currentSweep = 0;
+    let direction = 1;
+    
+    const interval = setInterval(() => {
+      currentSweep += direction * 0.65; 
+      
+      if (currentSweep >= 100) {
+        currentSweep = 100;
+        direction = -1; // Bounce back
+      } else if (currentSweep <= 0) {
+        currentSweep = 0;
+        direction = 1; // Bounce forward
+      }
+      
+      setSweep(currentSweep);
+    }, 30); // ~33fps
+    
+    return () => clearInterval(interval);
+  }, [animationState]);
 
   const startAnimation = () => {
     if (animationState !== 'idle') return;
     
     setAnimationState('looping');
 
-    // 1. Loop for 12 seconds (Doubled timing)
+    // 1. Loop for 9 seconds
     setTimeout(() => {
       setAnimationState('shattering');
       // Pick a random Layer 1 item to shatter
@@ -43,32 +73,19 @@ export default function TheoryOfChangePage() {
           setBrokenItem(null);
         }, 1500);
       }, 3000);
-    }, 12000);
+    }, 9000);
   };
+
+  // Define sequential phases for the sweep (0 to 100 scale moving Right to Left)
+  const inLayer3 = sweep >= 0 && sweep <= 22;
+  const inBridge32 = sweep > 22 && sweep <= 38;
+  const inLayer2 = sweep > 38 && sweep <= 62;
+  const inBridge21 = sweep > 62 && sweep <= 78;
+  const inLayer1 = sweep > 78 && sweep <= 100;
 
   return (
     <>
       <style>{`
-        /* Traveling Line Animations */
-        @keyframes slideRight {
-          0% { transform: translateX(-100%); opacity: 0; }
-          20% { opacity: 1; }
-          80% { opacity: 1; }
-          100% { transform: translateX(200%); opacity: 0; }
-        }
-        @keyframes slideDown {
-          0% { transform: translateY(-100%); opacity: 0; }
-          10% { opacity: 1; }
-          90% { opacity: 1; }
-          100% { transform: translateY(600%); opacity: 0; }
-        }
-        
-        /* Card Glow Loop (Slower, softer crimson glow) */
-        @keyframes cardGlow {
-          0%, 100% { border-color: inherit; box-shadow: none; }
-          40%, 60% { border-color: rgba(220, 20, 60, 0.7); box-shadow: 0 0 15px rgba(220, 20, 60, 0.3); }
-        }
-
         /* Pre-shatter intense glow */
         @keyframes criticalGlow {
           0% { background-color: inherit; transform: scale(1); }
@@ -88,9 +105,6 @@ export default function TheoryOfChangePage() {
         }
 
         /* Utility Classes */
-        .travel-x { animation: slideRight 1.5s linear infinite; }
-        .travel-y { animation: slideDown 2.5s linear infinite; }
-        .is-glowing { animation: cardGlow 4s ease-in-out infinite; } /* Slower pulse */
         .is-critical { animation: criticalGlow 0.3s forwards; }
         .is-reconstructing { animation: reconstruct 1.5s forwards ease-out; }
         
@@ -163,7 +177,6 @@ export default function TheoryOfChangePage() {
               <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Jonathan Rowson</cite>
             </div>
 
-            {/* Introductory Text Blocks Omitted for Brevity in Display - Keeping original intact */}
             <div className="space-y-8">
               <p className="text-muted-foreground leading-relaxed">
                 Humanity is living through a time of profound civilizational rupture.
@@ -213,10 +226,13 @@ export default function TheoryOfChangePage() {
                 </div>
 
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
-                  {/* Vertical axis line with thicker traveling beam */}
-                  <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 overflow-hidden">
-                    {animationState === 'looping' && (
-                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" />
+                  {/* Layer 1 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+                    {animationState === 'looping' && inLayer1 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 78) / 22 * 100}%` }} 
+                      />
                     )}
                   </div>
 
@@ -225,12 +241,16 @@ export default function TheoryOfChangePage() {
                       const isBrokenTarget = brokenItem === idx;
                       const isShattered = animationState === 'shattering' && isBrokenTarget;
                       const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
+                      
+                      const verticalPos = (sweep - 78) / 22 * 100;
+                      const targetY = (idx / 9) * 100;
+                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - targetY) < 15;
 
                       return (
                         <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
-                          {/* The main card - Now with slower, softer crimson glow */}
                           <div
-                            className={`p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm transition-all duration-500 hover:border-crimson hover:shadow-[0_0_12px_rgba(220,20,60,0.4)] 
+                            className={`p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300
+                              ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}
                               ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
                               ${isReconstructing ? 'is-reconstructing' : ''}
                               ${isShattered ? 'opacity-0' : 'opacity-100'}`}
@@ -238,7 +258,6 @@ export default function TheoryOfChangePage() {
                             {item}
                           </div>
 
-                          {/* The Shards (Only visible when shattered) */}
                           {isShattered && (
                             <div className="absolute inset-0 z-20 pointer-events-none">
                               <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
@@ -251,13 +270,20 @@ export default function TheoryOfChangePage() {
                       );
                     })}
                     
-                    {/* "Etc..." Card incorporated back into the mapped structure flex gap so the line properly connects it */}
-                    <div 
-                      className="w-full p-2.5 rounded-xl border border-crimson/30 bg-cream text-center text-xs font-medium text-foreground shadow-sm transition-all duration-500 hover:border-crimson hover:shadow-[0_0_12px_rgba(220,20,60,0.4)] cursor-pointer"
-                      onClick={startAnimation}
-                    >
-                      Etc...
-                    </div>
+                    {/* "Etc..." Card */}
+                    {(() => {
+                      const verticalPos = (sweep - 78) / 22 * 100;
+                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - 100) < 15;
+                      return (
+                        <div 
+                          className={`w-full p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300 cursor-pointer 
+                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}`}
+                          onClick={startAnimation}
+                        >
+                          Etc...
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
                 <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
@@ -266,14 +292,14 @@ export default function TheoryOfChangePage() {
               {/* 2. THE STRUCTURAL LAYER */}
               <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
                 
-                {/* Rails with thicker, visible horizontal traveling beams */}
+                {/* Horizontal Bridges: Layer 2 -> Layer 1 */}
                 <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
                   {[24, 44, 64, 84].map((topPos, i) => (
-                    <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-visible" style={{ top: `${topPos}%` }}>
-                      {animationState === 'looping' && (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && inBridge21 && (
                         <div 
-                          className="absolute -top-[3px] left-0 h-[4px] w-[24px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full travel-x" 
-                          style={{ animationDelay: `${i * 0.3}s` }} 
+                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+                          style={{ right: `${(sweep - 62) / 16 * 100}%` }} 
                         />
                       )}
                     </div>
@@ -289,17 +315,20 @@ export default function TheoryOfChangePage() {
                   </svg>
                 </div>
 
-                <div className="text-center mb-8 border-b border-border pb-4">
+                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
                   <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
                   <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
                   <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
                 </div>
 
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Vertical axis line with thicker traveling beam */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 overflow-hidden">
-                     {animationState === 'looping' && (
-                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" style={{ animationDelay: '0.5s' }} />
+                  {/* Layer 2 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+                     {animationState === 'looping' && inLayer2 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 38) / 24 * 100}%` }} 
+                      />
                     )}
                   </div>
 
@@ -309,18 +338,24 @@ export default function TheoryOfChangePage() {
                       { title: 'Crisis of Incentives', desc: 'Systems optimizing purely for short-term, rivalrous, and extractive behaviors.' },
                       { title: 'Crisis of Trust', desc: 'Breakdown of shared sensemaking, truth verification, and institutional legitimacy.' },
                       { title: 'Crisis of Complexity', desc: 'Complicated structures fragilely layered over highly complex substrates.', sup: '5' }
-                    ].map((item, i) => (
-                      <div 
-                        key={i} 
-                        className={`w-full p-4 rounded-xl border-l-4 border-crimson bg-cream shadow-sm transition-all duration-500 hover:shadow-[0_0_15px_rgba(220,20,60,0.2)] ${animationState === 'looping' ? 'is-glowing' : ''}`}
-                        style={{ animationDelay: `${i * 0.4}s` }}
-                      >
-                        <h4 className="font-serif font-medium text-foreground">
-                          {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
-                        </h4>
-                        <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                      </div>
-                    ))}
+                    ].map((item, i) => {
+                      const verticalPos = (sweep - 38) / 24 * 100;
+                      const targetY = [12, 37, 62, 87][i];
+                      const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
+
+                      return (
+                        <div 
+                          key={i} 
+                          className={`w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
+                            ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
+                        >
+                          <h4 className="font-serif font-medium text-foreground">
+                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                          </h4>
+                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
                 
@@ -334,14 +369,14 @@ export default function TheoryOfChangePage() {
               {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
               <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
                 
-                {/* Rails with thicker, visible horizontal traveling beams */}
+                {/* Horizontal Bridges: Layer 3 -> Layer 2 */}
                 <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
                   {[24, 44, 64, 84].map((topPos, i) => (
-                    <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-visible" style={{ top: `${topPos}%` }}>
-                      {animationState === 'looping' && (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && inBridge32 && (
                         <div 
-                          className="absolute -top-[3px] left-0 h-[4px] w-[24px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full travel-x" 
-                          style={{ animationDelay: `${(i * 0.3) + 0.6}s` }} 
+                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+                          style={{ right: `${(sweep - 22) / 16 * 100}%` }} 
                         />
                       )}
                     </div>
@@ -349,7 +384,7 @@ export default function TheoryOfChangePage() {
                 </div>
 
                 <div 
-                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
+                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-olive hover:text-olive transition-colors"
                   onClick={startAnimation}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
@@ -357,7 +392,7 @@ export default function TheoryOfChangePage() {
                   </svg>
                 </div>
 
-                <div className="text-center mb-8 border-b border-border pb-4">
+                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
                   <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
                   <h3 className="font-serif text-xl font-semibold text-foreground">The Ontological-Cultural Layer</h3>
                   <p className="text-sm font-medium text-olive mt-2">
@@ -366,10 +401,13 @@ export default function TheoryOfChangePage() {
                 </div>
 
                 <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Vertical axis line with thicker traveling beam */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 overflow-hidden">
-                     {animationState === 'looping' && (
-                      <div className="w-[4px] h-16 bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full absolute left-1/2 -translate-x-1/2 travel-y" style={{ animationDelay: '1s' }} />
+                  {/* Layer 3 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 rounded-full">
+                     {animationState === 'looping' && inLayer3 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 0) / 22 * 100}%` }} 
+                      />
                     )}
                   </div>
 
@@ -379,18 +417,24 @@ export default function TheoryOfChangePage() {
                       { title: 'Crisis of Relationship', desc: 'Alienation from self, other human life, and the non-human world.' },
                       { title: 'Crisis of Value', desc: 'Spiritual crisis, loss of existential meaning, and broken ties to the sacred.', sup: '2' },
                       { title: 'Crisis of Capacity', desc: 'Unfulfilled potential scaled up by global systems, making problems outpace our capacity to process.' }
-                    ].map((item, i) => (
-                      <div 
-                        key={i} 
-                        className={`w-full p-4 rounded-xl border-l-4 border-olive bg-cream shadow-sm transition-all duration-500 hover:shadow-[0_0_15px_rgba(220,20,60,0.2)] ${animationState === 'looping' ? 'is-glowing' : ''}`}
-                        style={{ animationDelay: `${(i * 0.4) + 0.8}s` }}
-                      >
-                        <h4 className="font-serif font-medium text-foreground">
-                          {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
-                        </h4>
-                        <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                      </div>
-                    ))}
+                    ].map((item, i) => {
+                      const verticalPos = (sweep - 0) / 22 * 100;
+                      const targetY = [12, 37, 62, 87][i];
+                      const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
+
+                      return (
+                        <div 
+                          key={i} 
+                          className={`w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
+                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
+                        >
+                          <h4 className="font-serif font-medium text-foreground">
+                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                          </h4>
+                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
 
@@ -417,8 +461,6 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* ... The rest of the page (The Problem, The Developmental Hypothesis, Our Response, etc.) remains perfectly intact ... */}
-        
         {/* The Problem */}
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
