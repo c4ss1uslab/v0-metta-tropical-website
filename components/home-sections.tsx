@@ -282,6 +282,42 @@ export function FieldsOfWorkSection() {
   )
 }
 
+export function BridgeSection() {
+  return (
+    <section className="pt-12 pb-16 lg:pt-16 lg:pb-20 bg-cream">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        <div className="space-y-8">
+          <div>
+            <h2 className="mt-2 font-serif text-2xl md:text-3xl font-bold text-[#D9A01B]">
+              We act as a bridge between ways of knowing
+            </h2>
+          </div>
+
+          <p className="text-muted-foreground leading-relaxed">
+            Embedded within all three pillars of our work is a commitment to bringing into relationship ways of knowing that modernity has often separated from one another. We seek to create spaces where different epistemologies, traditions, and forms of intelligence can meet in generative dialogue.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed">
+            Rooted in Brazil and Latin America, our work seeks to hold in relationship the gifts, wisdom, and insights emerging from both the Global South and Global North, while remaining attentive to the asymmetries of power, history, and visibility that have shaped whose knowledge has traditionally been legitimized and whose has been marginalized.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed">
+            We draw inspiration from the intellectual rigor of science, philosophy, systems thinking, and complexity studies alongside the relational wisdom of Indigenous cosmologies, contemplative traditions, ancestral knowledge systems, and communities that have preserved alternative ways of being with life.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed">
+            Within our spaces, Indigenous elders, artists, philosophers, systems thinkers, activists, and spiritual practitioners come together to share their wisdom in service of a deeper understanding of who we are, where we are, and what this moment is asking of us.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed">
+            We believe the wisdom required for this century will not emerge from any single discipline, culture, or worldview, but from learning how to hold them in relationship to each other.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function CTASection() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
