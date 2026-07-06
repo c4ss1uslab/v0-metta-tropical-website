@@ -24,7 +24,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="font-serif text-xl font-medium tracking-tight text-foreground">
-              Metta Tropical Collective
+              Meta Tropical Collective
             </span>
           </Link>
 
