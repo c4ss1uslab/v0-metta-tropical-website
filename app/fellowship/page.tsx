@@ -112,11 +112,11 @@ export function HeroOptionWild() {
           <span className="text-[#4a5d3c] italic">Leadership</span>
         </h1>
         <p className="mt-6 text-xl text-[#b8860b] font-serif italic max-w-2xl">
-          "Who must we become to steward civilization towards culture renewal and the flourishing of all life?"
+          "Who must we become, in this time between worlds, to steward civilization towards culture renewal and the flourishing of all life?"
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-8 items-start">
           <p className="text-lg text-[#d4c3b3]/90 leading-relaxed max-w-xl font-light border-l-2 border-[#8b0000]/60 pl-6 bg-[#21160e]/40 p-4">
-            An 8-month initiatory journey, rooted in Brazil, for emerging leaders*—postactivist thinkers, educators, artists, organizers, world-builders and change-makers longing to cultivate the ontologies, capacities and ways of relating to life that this moment is asking of us.
+            An 8-month initiatory journey, rooted in Brazil, for emerging leaders*—postactivist thinkers, educators, artists, organizers, world-builders and change-makers longing to cultivate the perspectives, capacities and ways of relating to life that this moment is asking of us.
           </p>
           <Link href="#apply" className="group relative inline-flex items-center justify-center px-10 py-4 bg-[#4a5d3c] text-[#1a110a] font-bold text-sm tracking-widest uppercase overflow-hidden shadow-[5px_5px_0px_0px_rgba(184,134,11,0.4)] hover:shadow-none hover:translate-x-[5px] hover:translate-y-[5px] transition-all">
             <span className="relative z-10">Apply Now</span>
