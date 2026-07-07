@@ -379,8 +379,6 @@ export function BridgeSection() {
     </section>
   );
 }
-  )
-}
 
 export function CTASection() {
   return (
