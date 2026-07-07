@@ -321,8 +321,8 @@ export default function AboutPage() {
   </div>
 </section>
 
-        {/* Our Vows */}
-        <section className="py-16 lg:py-20 bg-[#FBF3D5]">
+{/* Our Vows */}
+        <section className="py-16 lg:py-20 bg-[#FFFDF6]">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
             {/* Header */}
             <div className="text-center mb-12">
@@ -341,66 +341,66 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Vows — split into two columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+            {/* Vows — split into two parallel columns with a middle divider */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:divide-x lg:divide-gray-200">
               {/* Left: first four vows */}
               <div className="space-y-8">
                 <div className="pl-6 border-l-2 border-crimson">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     Living beings are numberless,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">I vow to serve them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">I vow to serve them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-crimson">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     Greed and hate without limit,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">I vow to welcome, love and transform them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">I vow to welcome, love and transform them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-crimson">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     Gates of truth without measure,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">I vow to know and embody them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">I vow to know and embody them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-crimson">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     The path of awakening and freedom is endless,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">I vow to offer my life to it</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">I vow to offer my life to it</span>
                   </p>
                 </div>
               </div>
 
               {/* Right: last four vows */}
-              <div className="space-y-8">
+              <div className="space-y-8 lg:pl-16">
                 <div className="pl-6 border-l-2 border-olive">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     The root causes of the metacrisis are deeply interconnected,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">We vow to understand and respond to them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">We vow to understand and respond to them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-olive">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     Delusions of separation from capitalist modernity are inexhaustible,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">We vow to recognize and transform them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">We vow to recognize and transform them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-olive">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     Alternatives for life-affirming futures are boundless,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">We vow to imagine, create and amplify them</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">We vow to imagine, create and amplify them</span>
                   </p>
                 </div>
 
                 <div className="pl-6 border-l-2 border-olive">
                   <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
                     The flourishing of all life is sacred, precious and not inevitable,<br />
-                    <span className="text-[#D9A01B] not-italic font-medium">We vow to offer our lives in service to it</span>
+                    <span className="text-[#D9A01B] not-italic font-medium text-lg md:text-xl block mt-1">We vow to offer our lives in service to it</span>
                   </p>
                 </div>
               </div>
