@@ -344,7 +344,7 @@ export default function AboutPage() {
             {/* Horizontal Banner Image */}
             <div className="w-full mb-16 overflow-hidden rounded-lg shadow-sm">
               <img 
-                src="https://i.postimg.cc/56ZdFPPg/image.jpg" 
+                src="https://postimg.cc/ft764DZq" 
                 alt="Vows horizontal banner" 
                 className="w-full h-48 sm:h-64 md:h-80 object-cover object-center"
               />
