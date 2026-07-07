@@ -287,15 +287,15 @@ export function BridgeSection() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
-        {/* Header - Unified Color, Font, and Size, Left-Aligned */}
-        <div className="text-left mb-16 max-w-4xl">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+        {/* Header - Left-Aligned and sized to comfortably fit a single line */}
+        <div className="text-left mb-16 max-w-5xl">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             Where We Are Rooted — A Confluence of Lineages
           </h2>
         </div>
 
-        {/* Intro Blocks - Entire text centered */}
-        <div className="max-w-3xl mx-auto mb-16 space-y-6 text-center">
+        {/* Intro Blocks - Aligned with the left margin */}
+        <div className="max-w-4xl mb-16 space-y-6 text-left">
           <p className="text-foreground font-medium text-lg leading-relaxed">
             We are rooted in Brazil and Latin America, shaped by this territory, this language, this soil. 
           </p>
@@ -304,22 +304,16 @@ export function BridgeSection() {
           </p>
         </div>
 
-        {/* The Four Lineages - Portrayed side-by-side with subtle thematic icons */}
+        {/* The Four Lineages - Side-by-side box layout without icons */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           
           {/* Box I - Systems & Philosophical */}
           <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
-              <div className="flex items-center gap-2 mb-4">
-                {/* Node Network Icon */}
-                <svg className="w-5 h-5 text-[#D9A01B] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94-3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                </svg>
-                <h3 className="font-serif text-xl font-bold text-foreground">
-                  Systems & Philosophical
-                </h3>
-              </div>
+              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                Systems & Philosophical
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 The intellectual and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
               </p>
@@ -330,15 +324,9 @@ export function BridgeSection() {
           <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
-              <div className="flex items-center gap-2 mb-4">
-                {/* Lotus / Contemplative Emblem */}
-                <svg className="w-5 h-5 text-[#D9A01B] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M12 3a9 9 0 009 9M12 3a9 9 0 01-9 9M12 21a9 9 0 009-9M12 21a9 9 0 01-9-9" />
-                </svg>
-                <h3 className="font-serif text-xl font-bold text-foreground">
-                  Wisdom Traditions
-                </h3>
-              </div>
+              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                Wisdom Traditions
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 The contemplative depth of wisdom traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
               </p>
@@ -349,15 +337,9 @@ export function BridgeSection() {
           <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">III.</span>
-              <div className="flex items-center gap-2 mb-4">
-                {/* Growing Spiral / Concentric Layers Icon */}
-                <svg className="w-5 h-5 text-[#D9A01B] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-3-3.75V18M9.75 14.25V18M21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.75 9.75 0 009.75 9.75c4.12 0 7.61-2.56 9-6.158" />
-                </svg>
-                <h3 className="font-serif text-xl font-bold text-foreground">
-                  Developmental Practice
-                </h3>
-              </div>
+              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                Developmental Practice
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 The fields of human development, depth psychology, relational practice, parts work, trauma integration, and transformational practices that help us understand how human beings actually change, mature, and embody responsible ways of relating to all life.
               </p>
@@ -368,15 +350,9 @@ export function BridgeSection() {
           <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">IV.</span>
-              <div className="flex items-center gap-2 mb-4">
-                {/* Organic Sprout / Interconnected Loop Icon */}
-                <svg className="w-5 h-5 text-[#D9A01B] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21V9.75M20.716 14.253a9.004 9.004 0 01-4.307-8.113M3.284 14.253a9.004 9.004 0 004.307-8.113M16.409 6.14a9.023 9.023 0 00-8.818 0M12 9.75c-.347 0-.687.04-1.014.115M12 9.75c.347 0 .687.04 1.014.115" />
-                </svg>
-                <h3 className="font-serif text-xl font-bold text-foreground">
-                  Living, Relational Wisdom
-                </h3>
-              </div>
+              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                Living, Relational Wisdom
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and historically marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.
               </p>
@@ -385,8 +361,8 @@ export function BridgeSection() {
 
         </div>
 
-        {/* Concluding Paragraphs - Entire text centered */}
-        <div className="max-w-3xl mx-auto space-y-6 text-center">
+        {/* Concluding Paragraphs - Aligned with the left margin */}
+        <div className="max-w-4xl space-y-6 text-left">
           <p className="text-muted-foreground leading-relaxed">
             We do not claim to live fully within all these traditions. We come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
           </p>
