@@ -332,22 +332,13 @@ export default function AboutPage() {
             </div>
 
             {/* Intro */}
-            <div className="max-w-3xl mx-auto space-y-6 mb-12 text-center sm:text-left">
+            <div className="max-w-3xl mx-auto space-y-6 mb-16 text-center sm:text-left">
               <p className="text-muted-foreground leading-relaxed">
                 The work before us is larger than any individual, institution, or generation can complete. The futures we long for will not emerge through intention or strategy alone. They ask for devotion, and a vow represents that by pointing to what we are willing to offer our lives to.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 These vows are a small, but essential part of this work. A way of orienting ourselves, again and again, toward the kinds of human beings this moment asks us to become.
               </p>
-            </div>
-
-            {/* Horizontal Banner Image */}
-            <div className="w-full mb-16 overflow-hidden rounded-lg shadow-sm">
-              <img 
-                src="https://i.postimg.cc/kXg22dF3/ft764-DZq.jpg" 
-                alt="Vows visual element" 
-                className="w-full h-48 sm:h-64 md:h-80 object-cover object-center"
-              />
             </div>
 
             {/* Vows — side-by-side layout across all screen breakpoints with a middle divider */}
