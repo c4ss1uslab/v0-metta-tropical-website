@@ -341,10 +341,10 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Vows — side-by-side layout across all screen breakpoints with a middle divider */}
-            <div className="grid grid-cols-2 gap-4 sm:gap-10 lg:gap-16 divide-x divide-gray-200">
+            {/* Vows — side-by-side layout brought closer together (~2cm gap) with no middle divider */}
+            <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
               {/* Left Column: first set of vows */}
-              <div className="space-y-8 pr-2 sm:pr-0">
+              <div className="space-y-8">
                 <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
                   <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
                     Living beings are numberless,<br />
@@ -375,7 +375,7 @@ export default function AboutPage() {
               </div>
 
               {/* Right Column: second set of vows */}
-              <div className="space-y-8 pl-4 sm:pl-10 lg:pl-16">
+              <div className="space-y-8 lg:pl-8">
                 <div className="pl-3 sm:pl-6 border-l-2 border-olive">
                   <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
                     The root causes of the metacrisis are deeply interconnected,<br />
