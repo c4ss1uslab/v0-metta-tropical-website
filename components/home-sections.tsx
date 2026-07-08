@@ -266,6 +266,12 @@ export function IntroductionSection() {
           </div>
         </div>
       </section>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 export function FieldsOfWorkSection() {
   const fields = [
