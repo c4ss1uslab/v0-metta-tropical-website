@@ -206,7 +206,7 @@ export function IntroductionSection() {
                 href="https://www.google.com/search?sca_esv=01006499c0c391e8&sxsrf=APpeQnse4l_bHHLaKWzKJ_H8Vq-lfRHuVQ:1783476959652&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKYr2wv-EHakX1SS4JF8fY1_A0DfPLoyd61yD2Gjy0hF5xCGdMIu1T4OpsNqfBilMEIr_6ObOOmXLqxwsb2wWJ6rZczNqhX_BT8mvsKr4cPXW3rK1rrDm6UKuIOysx0ndrWiDL523hQULdDGKbotErH2kmguX5En4hjb48Li6KlkQenOzA&q=narrow+boundary+to+wide+boundary+to+wisdom+framework&sa=X&ved=2ahUKEwiqnJS1gcKVAxWjBLkGHT73MbUQtKgLegQIGBAB&biw=1410&bih=678&dpr=2#sv=CAMSURoyKhBlLU04M1YxZFpiLWlMTFlNMg5NODNWMWRaYi1pTExZTToOQzVZTHljNGJpUGRIc00gBCoXCgFzEhBlLU04M1YxZFpiLWlMTFlNGAEwARgHINrK0t4CSggQARgBIAEoAQ" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-900 underline font-medium hover:opacity-80 transition-opacity"
+                className="text-blue-900 underline hover:opacity-80 transition-opacity"
               >
                 framework
               </a>{" "}
@@ -225,7 +225,7 @@ export function IntroductionSection() {
                 rel="noopener noreferrer"
                 className="text-blue-900 underline hover:opacity-80 transition-opacity"
               >
-                The Wisdom Gap
+                the wisdom gap
               </a>
               : the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
             </p>
