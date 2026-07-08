@@ -269,9 +269,6 @@ export function IntroductionSection() {
           </div>
         </div>
       </section>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
