@@ -204,10 +204,11 @@ export function IntroductionSection() {
               Within our work, we often draw from a framework developed by Daniel Schmachtenberger and Nate Hagens, and later evolved by Vanessa Andreotti that distinguishes between narrow boundary intelligence, wide boundary intelligence, and wisdom (sometimes called whole-shebang wisdom).
             </p>
 
+            {/* Updated Image Source Container */}
             <div className="relative aspect-[21/9] overflow-hidden my-8">
               <Image
-                src="https://i.postimg.cc/LnzmwLhD/image.png"
-                alt="Wisdom framework diagram"
+                src="https://i.postimg.cc/ZCp4P7GF/image.png"
+                alt="Wisdom boundary framework diagram"
                 fill
                 className="object-cover"
               />
