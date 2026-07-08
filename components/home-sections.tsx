@@ -289,14 +289,14 @@ export function BridgeSection() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         
-        {/* Header - Left-Aligned and pulled closer to content below */}
+        {/* Header - Left-Aligned */}
         <div className="text-left mb-6 max-w-5xl">
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             A Confluence of Lineages
           </h2>
         </div>
 
-        {/* Intro Blocks - Aligned with the left margin */}
+        {/* Intro Blocks */}
         <div className="max-w-4xl mb-16 space-y-6 text-left">
           <p className="text-[#D9A01B] font-medium text-lg leading-relaxed">
             We are rooted in Brazil and Latin America, shaped by this territory, this language, and this soil. 
@@ -306,8 +306,8 @@ export function BridgeSection() {
           </p>
         </div>
 
-        {/* The Four Lineages - Side-by-side minimalist text boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* The Four Lineages - Formatted into a balanced 2x2 quadrant layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-16">
           
           {/* Box I - Systemic & Philosophical */}
           <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6] flex flex-col justify-between">
@@ -363,7 +363,7 @@ export function BridgeSection() {
 
         </div>
 
-        {/* Concluding Paragraphs - Aligned with the left margin */}
+        {/* Concluding Paragraphs */}
         <div className="max-w-4xl space-y-6 text-left">
           <p className="text-muted-foreground leading-relaxed">
             We do not claim to live fully within all these traditions. We come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
