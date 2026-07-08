@@ -154,44 +154,47 @@ export function IntroductionSection() {
 </figure>
 
 {/* Educational Work */}
-      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-cream">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="space-y-8">
-            <div>
-              <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                Our response is fundamentally educational.
-              </h2>
-            </div>
+<section className="pt-0 pb-24 lg:pt-0 lg:pb-28 bg-cream">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      <div>
+        <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
+          Our response is fundamentally educational.
+        </h2>
+      </div>
 
-            <p className="text-muted-foreground leading-relaxed">
-              We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as <strong className="text-foreground">symptoms of deeper cultural patterns: ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
-            </p>
+      <p className="text-muted-foreground leading-relaxed">
+        We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as <strong className="text-foreground">symptoms of deeper cultural patterns: ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
+      </p>
 
-            <p className="text-muted-foreground leading-relaxed">
-              If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
-            </p>
+      <p className="text-muted-foreground leading-relaxed">
+        If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
+      </p>
 
-            <p className="text-muted-foreground leading-relaxed">
-              This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
-            </p>           
+      <p className="text-muted-foreground leading-relaxed">
+        This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
+      </p>           
 
-            <p className="text-muted-foreground leading-relaxed">
-            In response, we are exploring how to build new forms of Educational-Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. 
-            Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
-            </p>           
+      <p className="text-muted-foreground leading-relaxed">
+      In response, we are exploring how to build new forms of Educational-Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. 
+      Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
+      </p>           
 
-            <p className="text-muted-foreground leading-relaxed">
-            Our work is ultimately an inquiry into <strong className="text-foreground">who we must become - and what kind of containers must emerge in this time between worlds</strong>, in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility and service to the flourishing of all beings.
-            </p>           
+      <p className="text-muted-foreground leading-relaxed">
+      Our work is ultimately an inquiry into <strong className="text-foreground">who we must become - and what kind of containers must emerge in this time between worlds</strong>, in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility and service to the flourishing of all beings.
+      </p>           
 
-            <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
-              <Image
-                src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
-                alt="Gathering around the fire"
-                fill
-                className="object-cover"
-              />
-            </div>
+      <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
+        <Image
+          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+          alt="Gathering around the fire"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
 {/* Why Wisdom? Section Content */}
       <section className="w-full xl:w-screen left-1/2 right-1/2 -mx-[50vw] relative bg-white pt-0 pb-16 lg:pt-0 lg:pb-20">
