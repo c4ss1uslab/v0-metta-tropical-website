@@ -154,8 +154,7 @@ export function IntroductionSection() {
 </figure>
 
 {/* Educational Work */}
-{/* Added -mt-1 to explicitly overlap and kill the baseline white seam gap */}
-<section className="relative -mt-1 pt-12 pb-24 lg:pt-16 lg:pb-28 bg-cream border-t-0">
+<section className="relative pt-12 pb-24 lg:pt-16 lg:pb-28 bg-white">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       <div>
