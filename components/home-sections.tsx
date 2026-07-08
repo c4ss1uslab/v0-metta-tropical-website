@@ -323,7 +323,7 @@ export function BridgeSection() {
                 style={{ backgroundImage: `url('https://i.postimg.cc/PvGfB4j4/Systemic-Philosophical.jpg')` }}
               >
                 {/* Dark Tint / Brightness Dimmer Layer */}
-                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                <div className="absolute inset-0 bg-black/30 backdrop-brightness-35" />
                 
                 {/* Text Content */}
                 <div className="relative z-10 p-4 h-full flex items-start">
