@@ -193,7 +193,10 @@ export function IntroductionSection() {
               />
             </div>
 
-            {/* Why Wisdom? Section Content */}
+{/* Why Wisdom? Section Content */}
+      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="space-y-8">
             <div className="pt-4">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6 mt-12">
                 Why Wisdom?
