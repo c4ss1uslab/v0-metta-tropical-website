@@ -282,6 +282,8 @@ export function FieldsOfWorkSection() {
   )
 }
 
+import React from 'react';
+
 export function BridgeSection() {
   return (
     <section className="py-16 lg:py-24 bg-white">
@@ -304,58 +306,110 @@ export function BridgeSection() {
           </p>
         </div>
 
-        {/* The Four Lineages - Side-by-side box layout without icons */}
+        {/* The Four Lineages - Side-by-side box layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           
-          {/* Box I - Systems & Philosophical */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
-            <div>
+          {/* Box I - Systemic & Philosophical */}
+          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+            <div className="flex flex-col h-full">
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
                 Systemic & Philosophical
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The systemic and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
-              </p>
+              
+              {/* Image Container with Text Overlay */}
+              <div 
+                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                style={{ backgroundImage: `url('https://i.postimg.cc/PvGfB4j4/Systemic-Philosophical.jpg')` }}
+              >
+                {/* Dark Tint / Brightness Dimmer Layer */}
+                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                
+                {/* Text Content */}
+                <div className="relative z-10 p-4 h-full flex items-start">
+                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                    The systemic and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Box II - Wisdom Traditions */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
-            <div>
+          {/* Box II - Spiritual Traditions */}
+          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+            <div className="flex flex-col h-full">
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
                 Spiritual Traditions
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The wisdom of spiritual traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
-              </p>
+              
+              {/* Image Container with Text Overlay */}
+              <div 
+                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                style={{ backgroundImage: `url('https://i.postimg.cc/94MfT0by/Spiritual-Traditions.jpg')` }}
+              >
+                {/* Dark Tint / Brightness Dimmer Layer */}
+                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                
+                {/* Text Content */}
+                <div className="relative z-10 p-4 h-full flex items-start">
+                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                    The wisdom of spiritual traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Box III - Developmental Practice */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
-            <div>
+          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+            <div className="flex flex-col h-full">
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">III.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
                 Developmental Practice
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The fields of human development, depth psychology, relational practice, parts work, trauma integration, and transformational practices that help us understand how human beings actually change, mature, and embody responsible ways of relating to all life.
-              </p>
+              
+              {/* Image Container with Text Overlay */}
+              <div 
+                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                style={{ backgroundImage: `url('https://i.postimg.cc/HcFjTmQS/developmental-practice.jpg')` }}
+              >
+                {/* Dark Tint / Brightness Dimmer Layer */}
+                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                
+                {/* Text Content */}
+                <div className="relative z-10 p-4 h-full flex items-start">
+                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                    The fields of human development, depth psychology, relational practice, parts work, trauma integration, and transformational practices that help us understand how human beings actually change, mature, and embody responsible ways of relating to all life.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Box IV - Living, Relational Wisdom */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between">
-            <div>
+          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+            <div className="flex flex-col h-full">
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">IV.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
                 Living, Relational Wisdom
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and historically marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.
-              </p>
+              
+              {/* Image Container with Text Overlay */}
+              <div 
+                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                style={{ backgroundImage: `url('https://i.postimg.cc/ppby72Vd/Living-Relational-Wisdom.jpg')` }}
+              >
+                {/* Dark Tint / Brightness Dimmer Layer */}
+                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                
+                {/* Text Content */}
+                <div className="relative z-10 p-4 h-full flex items-start">
+                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                    The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and historically marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
