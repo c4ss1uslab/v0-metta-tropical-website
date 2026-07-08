@@ -153,8 +153,8 @@ export function IntroductionSection() {
   </div>
 </figure>
 
-      {/* Educational Work */}
-      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20bg-cream">
+{/* Educational Work */}
+      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div>
@@ -192,6 +192,66 @@ export function IntroductionSection() {
                 className="object-cover"
               />
             </div>
+
+            {/* Why Wisdom? Section Content */}
+            <div className="pt-4">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6 mt-12">
+                Why Wisdom?
+              </h2>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              Within our work, we often draw from a framework developed by Daniel Schmachtenberger and Nate Hagens, and later evolved by Vanessa Andreotti that distinguishes between narrow boundary intelligence, wide boundary intelligence, and wisdom (sometimes called whole-shebang wisdom).
+            </p>
+
+            <div className="relative aspect-[21/9] overflow-hidden my-8">
+              <Image
+                src="https://i.postimg.cc/LnzmwLhD/image.png"
+                alt="Wisdom framework diagram"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              We find this framework helpful not only for understanding how humans relate to complexity and systemic challenges, but for clarifying the direction our collective efforts must ultimately move toward: wisdom.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              The Center for Humane Technology describes one of the defining challenges of our time as <strong className="text-foreground"><em>The Wisdom Gap*</em></strong>: the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              We live in a world overflowing with information, intelligence, and technological power, yet increasingly unable to navigate wisely the complexity we have created.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              In this sense, the metacrisis is also a wisdom crisis.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              By wisdom, we do not mean expertise, intelligence, or the accumulation of knowledge. We mean the capacity to perceive reality accurately—deeply understanding the central existential issues of life—to discern what truly matters in context, and participate in life in ways that serve the flourishing of the larger whole.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              Wisdom emerges through the integration of multiple ways of knowing and depths of relationality — cognitive, emotional, embodied, spiritual, and transpersonal — that expand our capacity to sense what is needed in a given moment and respond accordingly.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              It allows us to hold complexity with humility and care, move beyond fragmented grasps for certainty or control, and shifts our relationship with the world from subject-object to subject-subject: from managing reality to participating within it. To speak of wisdom is ultimately to speak of integration. To reunite what modernity has fragmented.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              As we face the consequences of the metacrisis, the cost of continuing to incentivize narrow-boundary intelligence becomes increasingly catastrophic. What this moment requires is a movement from narrow boundary, to wide boundary, and eventually toward wisdom. Yet the infrastructures capable of cultivating such transition remain largely absent from modern society.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              Our work is an attempt to help create them:
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed font-medium text-foreground">
+              To build wisdom-centered educational architectures, developmental cultures, and civilizational infrastructures capable of supporting this movement toward wisdom cultures that can serve the flourishing of all life.
+            </p>
           </div>
         </div>
       </section>
