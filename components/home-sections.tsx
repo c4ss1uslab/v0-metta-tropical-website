@@ -135,7 +135,7 @@ export function IntroductionSection() {
       “
     </span>
 
-    <blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
+<blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
       Education is the Metacrisis 
       <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
         It’s time to see planetary crises as a species-wide learning opportunity. 
@@ -287,10 +287,10 @@ import React from 'react';
 export function BridgeSection() {
   return (
     <section className="py-16 lg:py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
         
-        {/* Header - Left-Aligned and sized to comfortably fit a single line */}
-        <div className="text-left mb-16 max-w-5xl">
+        {/* Header - Left-Aligned and pulled closer to content below */}
+        <div className="text-left mb-6 max-w-5xl">
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
             A Confluence of Lineages
           </h2>
@@ -298,7 +298,7 @@ export function BridgeSection() {
 
         {/* Intro Blocks - Aligned with the left margin */}
         <div className="max-w-4xl mb-16 space-y-6 text-left">
-          <p className="text-foreground font-medium text-lg leading-relaxed">
+          <p className="text-[#D9A01B] font-medium text-lg leading-relaxed">
             We are rooted in Brazil and Latin America, shaped by this territory, this language, and this soil. 
           </p>
           <p className="text-muted-foreground leading-relaxed">
