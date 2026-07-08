@@ -258,7 +258,7 @@ export function IntroductionSection() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              Our work is an attempt to help create them:
+              Our work is an attempt to help create them.
             </p>
           </div>
         </div>
