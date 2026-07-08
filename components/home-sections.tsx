@@ -154,7 +154,7 @@ export function IntroductionSection() {
 </figure>
 
 {/* Educational Work */}
-      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-white">
+      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-cream">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div>
