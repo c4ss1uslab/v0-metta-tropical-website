@@ -290,14 +290,14 @@ export function BridgeSection() {
         {/* Header - Left-Aligned and sized to comfortably fit a single line */}
         <div className="text-left mb-16 max-w-5xl">
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
-            Where We Are Rooted — A Confluence of Lineages
+            A Confluence of Lineages
           </h2>
         </div>
 
         {/* Intro Blocks - Aligned with the left margin */}
         <div className="max-w-4xl mb-16 space-y-6 text-left">
           <p className="text-foreground font-medium text-lg leading-relaxed">
-            We are rooted in Brazil and Latin America, shaped by this territory, this language, this soil. 
+            We are rooted in Brazil and Latin America, shaped by this territory, this language, and this soil. 
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Embedded within all three pillars of our work is a commitment to bringing into relationship ways of knowing that modernity has often separated from one another. We seek to create spaces where different epistemologies, traditions, and forms of intelligence can meet in generative dialogue. Our work emerges at the intersection of four lineages that rarely meet:
@@ -312,10 +312,10 @@ export function BridgeSection() {
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Systems & Philosophical
+                Systemic & Philosophical
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                The intellectual and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
+                The systemic and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
               </p>
             </div>
           </div>
@@ -325,10 +325,10 @@ export function BridgeSection() {
             <div>
               <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
               <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Wisdom Traditions
+                Spiritual Traditions
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                The contemplative depth of wisdom traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
+                The wisdom of spiritual traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
               </p>
             </div>
           </div>
