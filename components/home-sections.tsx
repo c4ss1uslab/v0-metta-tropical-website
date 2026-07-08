@@ -201,25 +201,33 @@ export function IntroductionSection() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              Within our work, we often draw from a framework developed by Daniel Schmachtenberger and Nate Hagens, and later evolved by Vanessa Andreotti that distinguishes between narrow boundary intelligence, wide boundary intelligence, and wisdom (sometimes called whole-shebang wisdom).
+              Within our work, we often draw from a{" "}
+              <a 
+                href="https://www.google.com/search?sca_esv=01006499c0c391e8&sxsrf=APpeQnse4l_bHHLaKWzKJ_H8Vq-lfRHuVQ:1783476959652&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKYr2wv-EHakX1SS4JF8fY1_A0DfPLoyd61yD2Gjy0hF5xCGdMIu1T4OpsNqfBilMEIr_6ObOOmXLqxwsb2wWJ6rZczNqhX_BT8mvsKr4cPXW3rK1rrDm6UKuIOysx0ndrWiDL523hQULdDGKbotErH2kmguX5En4hjb48Li6KlkQenOzA&q=narrow+boundary+to+wide+boundary+to+wisdom+framework&sa=X&ved=2ahUKEwiqnJS1gcKVAxWjBLkGHT73MbUQtKgLegQIGBAB&biw=1410&bih=678&dpr=2#sv=CAMSURoyKhBlLU04M1YxZFpiLWlMTFlNMg5NODNWMWRaYi1pTExZTToOQzVZTHljNGJpUGRIc00gBCoXCgFzEhBlLU04M1YxZFpiLWlMTFlNGAEwARgHINrK0t4CSggQARgBIAEoAQ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:opacity-80 transition-opacity"
+              >
+                framework
+              </a>{" "}
+              developed by Daniel Schmachtenberger and Nate Hagens, and later evolved by Vanessa Andreotti that distinguishes between narrow boundary intelligence, wide boundary intelligence, and wisdom (sometimes called whole-shebang wisdom).
             </p>
-
-            {/* Updated Image Source Container */}
-            <div className="relative aspect-[21/9] overflow-hidden my-8">
-              <Image
-                src="https://i.postimg.cc/ZCp4P7GF/image.png"
-                alt="Wisdom boundary framework diagram"
-                fill
-                className="object-cover"
-              />
-            </div>
 
             <p className="text-muted-foreground leading-relaxed">
               We find this framework helpful not only for understanding how humans relate to complexity and systemic challenges, but for clarifying the direction our collective efforts must ultimately move toward: wisdom.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              The Center for Humane Technology describes one of the defining challenges of our time as <strong className="text-foreground"><em>The Wisdom Gap*</em></strong>: the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
+              The Center for Humane Technology describes one of the defining challenges of our time as{" "}
+              <a 
+                href="https://secondrenaissance.net/glossary/Wisdom+Gap" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#D9A01B] underline font-bold italic hover:opacity-80 transition-opacity"
+              >
+                The Wisdom Gap*
+              </a>
+              : the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -248,10 +256,6 @@ export function IntroductionSection() {
 
             <p className="text-muted-foreground leading-relaxed">
               Our work is an attempt to help create them:
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed font-medium text-foreground">
-              To build wisdom-centered educational architectures, developmental cultures, and civilizational infrastructures capable of supporting this movement toward wisdom cultures that can serve the flourishing of all life.
             </p>
           </div>
         </div>
