@@ -310,24 +310,26 @@ export function BridgeSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           
           {/* Box I - Systemic & Philosophical */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+          <div className="border border-gray-200 rounded-xl pt-6 px-0 pb-0 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
             <div className="flex flex-col h-full">
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Systemic & Philosophical
-              </h3>
+              <div className="px-6">
+                <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
+                <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                  Systemic & Philosophical
+                </h3>
+              </div>
               
-              {/* Image Container with Text Overlay */}
+              {/* Image Container - Expanded to edge-to-edge width and increased height */}
               <div 
-                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                className="relative flex-grow min-h-[280px] bg-cover bg-center"
                 style={{ backgroundImage: `url('https://i.postimg.cc/PvGfB4j4/Systemic-Philosophical.jpg')` }}
               >
-                {/* Dark Tint / Brightness Dimmer Layer */}
-                <div className="absolute inset-0 bg-black/20 backdrop-brightness-25" />
+                {/* Balanced Light Overlay Layer for Image Clarity */}
+                <div className="absolute inset-0 bg-black/30" />
                 
-                {/* Text Content */}
-                <div className="relative z-10 p-4 h-full flex items-start">
-                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                {/* Text Content with Text Shadow for High Contrast Readability */}
+                <div className="relative z-10 p-5 h-full flex items-start">
+                  <p className="text-white text-sm leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                     The systemic and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
                   </p>
                 </div>
@@ -336,24 +338,26 @@ export function BridgeSection() {
           </div>
 
           {/* Box II - Spiritual Traditions */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+          <div className="border border-gray-200 rounded-xl pt-6 px-0 pb-0 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
             <div className="flex flex-col h-full">
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Spiritual Traditions
-              </h3>
+              <div className="px-6">
+                <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
+                <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                  Spiritual Traditions
+                </h3>
+              </div>
               
-              {/* Image Container with Text Overlay */}
+              {/* Image Container - Expanded to edge-to-edge width and increased height */}
               <div 
-                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                className="relative flex-grow min-h-[280px] bg-cover bg-center"
                 style={{ backgroundImage: `url('https://i.postimg.cc/94MfT0by/Spiritual-Traditions.jpg')` }}
               >
-                {/* Dark Tint / Brightness Dimmer Layer */}
-                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                {/* Balanced Light Overlay Layer for Image Clarity */}
+                <div className="absolute inset-0 bg-black/30" />
                 
-                {/* Text Content */}
-                <div className="relative z-10 p-4 h-full flex items-start">
-                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                {/* Text Content with Text Shadow for High Contrast Readability */}
+                <div className="relative z-10 p-5 h-full flex items-start">
+                  <p className="text-white text-sm leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                     The wisdom of spiritual traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
                   </p>
                 </div>
@@ -362,24 +366,26 @@ export function BridgeSection() {
           </div>
 
           {/* Box III - Developmental Practice */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+          <div className="border border-gray-200 rounded-xl pt-6 px-0 pb-0 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
             <div className="flex flex-col h-full">
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">III.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Developmental Practice
-              </h3>
+              <div className="px-6">
+                <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">III.</span>
+                <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                  Developmental Practice
+                </h3>
+              </div>
               
-              {/* Image Container with Text Overlay */}
+              {/* Image Container - Expanded to edge-to-edge width and increased height */}
               <div 
-                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                className="relative flex-grow min-h-[280px] bg-cover bg-center"
                 style={{ backgroundImage: `url('https://i.postimg.cc/HcFjTmQS/developmental-practice.jpg')` }}
               >
-                {/* Dark Tint / Brightness Dimmer Layer */}
-                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                {/* Balanced Light Overlay Layer for Image Clarity */}
+                <div className="absolute inset-0 bg-black/30" />
                 
-                {/* Text Content */}
-                <div className="relative z-10 p-4 h-full flex items-start">
-                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                {/* Text Content with Text Shadow for High Contrast Readability */}
+                <div className="relative z-10 p-5 h-full flex items-start">
+                  <p className="text-white text-sm leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                     The fields of human development, depth psychology, relational practice, parts work, trauma integration, and transformational practices that help us understand how human beings actually change, mature, and embody responsible ways of relating to all life.
                   </p>
                 </div>
@@ -388,24 +394,26 @@ export function BridgeSection() {
           </div>
 
           {/* Box IV - Living, Relational Wisdom */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
+          <div className="border border-gray-200 rounded-xl pt-6 px-0 pb-0 bg-[#FFFDF6]/40 flex flex-col justify-between overflow-hidden">
             <div className="flex flex-col h-full">
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">IV.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Living, Relational Wisdom
-              </h3>
+              <div className="px-6">
+                <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">IV.</span>
+                <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+                  Living, Relational Wisdom
+                </h3>
+              </div>
               
-              {/* Image Container with Text Overlay */}
+              {/* Image Container - Expanded to edge-to-edge width and increased height */}
               <div 
-                className="relative flex-grow rounded-lg overflow-hidden min-h-[220px] bg-cover bg-center"
+                className="relative flex-grow min-h-[280px] bg-cover bg-center"
                 style={{ backgroundImage: `url('https://i.postimg.cc/ppby72Vd/Living-Relational-Wisdom.jpg')` }}
               >
-                {/* Dark Tint / Brightness Dimmer Layer */}
-                <div className="absolute inset-0 bg-black/60 backdrop-brightness-75" />
+                {/* Balanced Light Overlay Layer for Image Clarity */}
+                <div className="absolute inset-0 bg-black/30" />
                 
-                {/* Text Content */}
-                <div className="relative z-10 p-4 h-full flex items-start">
-                  <p className="text-white/95 text-sm leading-relaxed font-medium">
+                {/* Text Content with Text Shadow for High Contrast Readability */}
+                <div className="relative z-10 p-5 h-full flex items-start">
+                  <p className="text-white text-sm leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                     The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and historically marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.
                   </p>
                 </div>
