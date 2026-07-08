@@ -206,7 +206,7 @@ export function IntroductionSection() {
                 href="https://www.google.com/search?sca_esv=01006499c0c391e8&sxsrf=APpeQnse4l_bHHLaKWzKJ_H8Vq-lfRHuVQ:1783476959652&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKYr2wv-EHakX1SS4JF8fY1_A0DfPLoyd61yD2Gjy0hF5xCGdMIu1T4OpsNqfBilMEIr_6ObOOmXLqxwsb2wWJ6rZczNqhX_BT8mvsKr4cPXW3rK1rrDm6UKuIOysx0ndrWiDL523hQULdDGKbotErH2kmguX5En4hjb48Li6KlkQenOzA&q=narrow+boundary+to+wide+boundary+to+wisdom+framework&sa=X&ved=2ahUKEwiqnJS1gcKVAxWjBLkGHT73MbUQtKgLegQIGBAB&biw=1410&bih=678&dpr=2#sv=CAMSURoyKhBlLU04M1YxZFpiLWlMTFlNMg5NODNWMWRaYi1pTExZTToOQzVZTHljNGJpUGRIc00gBCoXCgFzEhBlLU04M1YxZFpiLWlMTFlNGAEwARgHINrK0t4CSggQARgBIAEoAQ" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="underline hover:opacity-80 transition-opacity"
+                className="text-blue-900 underline font-medium hover:opacity-80 transition-opacity"
               >
                 framework
               </a>{" "}
@@ -223,9 +223,9 @@ export function IntroductionSection() {
                 href="https://secondrenaissance.net/glossary/Wisdom+Gap" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#D9A01B] underline font-bold italic hover:opacity-80 transition-opacity"
+                className="text-blue-900 underline hover:opacity-80 transition-opacity"
               >
-                The Wisdom Gap
+                The Wisdom Gap*
               </a>
               : the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
             </p>
@@ -238,9 +238,12 @@ export function IntroductionSection() {
               In this sense, the metacrisis is also a wisdom crisis.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed">
-              By wisdom, we do not mean expertise, intelligence, or the accumulation of knowledge. We mean the capacity to perceive reality accurately—deeply understanding the central existential issues of life—to discern what truly matters in context, and participate in life in ways that serve the flourishing of the larger whole.
-            </p>
+            {/* Elegant Wisdom Definition Callout */}
+            <div className="border-l-4 border-[#D9A01B] bg-[#FFFDF6] p-6 rounded-r-xl my-6">
+              <p className="text-foreground leading-relaxed font-serif text-lg md:text-xl italic">
+                By wisdom, we do not mean expertise, intelligence, or the accumulation of knowledge. We mean the capacity to perceive reality accurately—deeply understanding the central existential issues of life—to discern what truly matters in context, and participate in life in ways that serve the flourishing of the larger whole.
+              </p>
+            </div>
 
             <p className="text-muted-foreground leading-relaxed">
               Wisdom emerges through the integration of multiple ways of knowing and depths of relationality — cognitive, emotional, embodied, spiritual, and transpersonal — that expand our capacity to sense what is needed in a given moment and respond accordingly.
