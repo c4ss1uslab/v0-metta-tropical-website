@@ -225,7 +225,7 @@ export function IntroductionSection() {
                 rel="noopener noreferrer"
                 className="text-[#D9A01B] underline font-bold italic hover:opacity-80 transition-opacity"
               >
-                The Wisdom Gap*
+                The Wisdom Gap
               </a>
               : the growing divide between rising global complexity and humanity's capacity to respond with sufficient coherence, discernment, and care.
             </p>
