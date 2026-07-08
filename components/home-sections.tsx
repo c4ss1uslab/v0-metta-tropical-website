@@ -194,7 +194,7 @@ export function IntroductionSection() {
             </div>
 
 {/* Why Wisdom? Section Content */}
-      <section className="pt-0 pb-16 lg:pt-0 lg:pb-20 bg-white">
+      <section className="w-full xl:w-screen left-1/2 right-1/2 -mx-[50vw] relative bg-white pt-0 pb-16 lg:pt-0 lg:pb-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
             <div className="pt-4">
@@ -266,12 +266,6 @@ export function IntroductionSection() {
           </div>
         </div>
       </section>
-        </div>
-        </div>
-      </section>
-    </>
-  )
-}
 
 export function FieldsOfWorkSection() {
   const fields = [
