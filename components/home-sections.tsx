@@ -443,7 +443,7 @@ export function BridgeSection() {
             We do not claim to live fully within all these traditions. We have been informed and transformed by them—and continue to be—throughout the years. We come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            What we are attempting is neither the importation of Global North frameworks nor the romanticization of ancestral wisdom. It is something more demanding: cultivating genuine dialogue between these lineages while allowing each to challenge, deepen, and transform the others. Rather than privileging a single worldview, we are interested in what becomes possible when different traditions genuinely encounter one another.
+            What we are attempting is neither the importing of Global North frameworks nor the romanticization of ancestral wisdom. It is something more demanding: cultivating genuine dialogue between these lineages while allowing each to challenge, deepen, and transform the others. Rather than privileging a single worldview, we are interested in what becomes possible when different traditions genuinely encounter one another.
           </p>
           <p className="text-foreground font-medium leading-relaxed">
             We believe the wisdom required for this century will not emerge from any single discipline, culture, or worldview, but from learning how to hold them in relationship.
