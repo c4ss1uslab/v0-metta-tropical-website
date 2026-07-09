@@ -184,7 +184,7 @@ export function IntroductionSection() {
       Our work is ultimately an inquiry into <strong className="text-foreground">who we must become - and what kind of containers must emerge in this time between worlds</strong>, in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility and service to the flourishing of all beings.
       </p>           
 
-      <div className="relative aspect-[21/9] overflow-hidden mt-12 mb-0">
+      <div className="relative left-1/2 -translate-x-1/2 w-screen aspect-[21/9] overflow-hidden mt-12">
         <Image
           src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
           alt="Gathering around the fire"
@@ -200,10 +200,10 @@ export function IntroductionSection() {
       <section className="w-full xl:w-screen left-1/2 right-1/2 -mx-[50vw] relative bg-white pt-0 pb-16 lg:pt-0 lg:pb-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-8">
-            <div className="pt-4">
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6 mt-12">
-                Why Wisdom?
-              </h2>
+            <div className="text-center mb-16">
+          <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
+            Why Wisdom?
+          </h2>
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
