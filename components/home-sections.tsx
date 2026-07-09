@@ -440,7 +440,7 @@ export function BridgeSection() {
         {/* Concluding Paragraphs */}
         <div className="max-w-4xl space-y-6 text-left">
           <p className="text-muted-foreground leading-relaxed">
-            We do not claim to live fully within all these traditions. We come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
+            We do not claim to live fully within all these traditions. We have been informed and transformed by them—and continue to be—throughout the years. We come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             What we are attempting is neither the importation of Global North frameworks nor the romanticization of ancestral wisdom. It is something more demanding: cultivating genuine dialogue between these lineages while allowing each to challenge, deepen, and transform the others. Rather than privileging a single worldview, we are interested in what becomes possible when different traditions genuinely encounter one another.
