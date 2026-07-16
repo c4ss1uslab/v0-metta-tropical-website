@@ -54,23 +54,6 @@ function IndigenousPattern() {
   )
 }
 
-function MandalaFlower({ className = "" }: { className?: string }) {
-  return (
-    <svg className={`pointer-events-none ${className}`} viewBox="0 0 100 100" fill="none" stroke="currentColor">
-      <path d="M50,10 Q60,30 50,50 Q40,30 50,10 Z" fill="#b8860b" opacity="0.3" />
-      <path d="M90,50 Q70,60 50,50 Q70,40 90,50 Z" fill="#b8860b" opacity="0.3" />
-      <path d="M50,90 Q40,70 50,50 Q60,70 50,90 Z" fill="#b8860b" opacity="0.3" />
-      <path d="M10,50 Q30,40 50,50 Q30,60 10,50 Z" fill="#b8860b" opacity="0.3" />
-      <path d="M78,22 Q70,40 50,50 Q60,30 78,22 Z" fill="#4a5d3c" opacity="0.4" />
-      <path d="M22,78 Q30,60 50,50 Q40,70 22,78 Z" fill="#4a5d3c" opacity="0.4" />
-      <path d="M78,78 Q60,70 50,50 Q70,60 78,78 Z" fill="#4a5d3c" opacity="0.4" />
-      <path d="M22,22 Q40,30 50,50 Q30,40 22,22 Z" fill="#4a5d3c" opacity="0.4" />
-      <circle cx="50" cy="50" r="5" fill="#8b0000" />
-      <circle cx="50" cy="50" r="15" stroke="#b8860b" strokeWidth="0.5" strokeDasharray="2 2" />
-    </svg>
-  )
-}
-
 function TopographyLines() {
   return (
     <svg className="absolute -right-48 -bottom-48 w-[800px] h-[800px] opacity-10 text-[#4a5d3c] pointer-events-none" viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="0.5">
@@ -101,8 +84,6 @@ export function HeroOptionWild() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a110a] via-[#1a110a]/80 to-transparent" />
       </div>
       
-      <MandalaFlower className="absolute -left-32 top-10 w-96 h-96 opacity-10 animate-pulse" />
-
       <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-8 w-full">
         <div className="inline-block px-4 py-2 border border-[#b8860b]/30 bg-[#2c1d13]/50 backdrop-blur-md text-[#b8860b] text-xs tracking-[0.2em] uppercase mb-8 shadow-2xl rotate-[-1deg]">
           From January to August 2027

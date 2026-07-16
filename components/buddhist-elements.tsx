@@ -85,19 +85,11 @@ export default function ZenYogaElements() {
         }
       `}</style>
 
-      <header className="mb-16 text-center max-w-md">
-        <span className="text-xs uppercase tracking-[0.25em] text-neutral-500 font-medium">System Elements</span>
-        <h1 className="text-2xl font-light tracking-wide text-stone-200 mt-1">Dimensional Yoga & Zen Icons</h1>
-        <p className="text-xs text-neutral-500 mt-2 leading-relaxed">
-          Balanced 3D structures with passive, continuous ambient animations for deep, focused interfaces.
-        </p>
-      </header>
-
       {/* Grid Layout for Elements */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
         
         {/* 1. ACTUAL BURNING INCENSE */}
-        <ElementCard title="Burning Incense" subtitle="Senkō">
+        <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             <div className="relative flex flex-col items-center translate-y-8">
               <div className="w-10 h-24 relative flex justify-center origin-bottom transform rotate-[12deg]">
@@ -148,7 +140,7 @@ export default function ZenYogaElements() {
         </ElementCard>
 
         {/* 2. MINIMAL SINGING BOWL */}
-        <ElementCard title="Singing Bowl" subtitle="Rin Gong">
+        <ElementCard title="" subtitle="">
           <button 
             onClick={handleBowlClick}
             className="relative w-48 h-32 flex flex-col items-center justify-center focus:outline-none group cursor-pointer"
@@ -191,7 +183,7 @@ export default function ZenYogaElements() {
         </ElementCard>
 
         {/* 6. DIYA LAMP */}
-        <ElementCard title="Diya Lamp" subtitle="Clay Oil Lamp">
+        <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             <div className="absolute bottom-[66px] w-20 h-3 bg-black/60 rounded-full blur-[4px] mix-blend-multiply" />
             <div className="w-24 h-10 bg-gradient-to-b from-amber-800 via-amber-900 to-stone-900 rounded-b-full rounded-tl-3xl shadow-md relative flex items-center justify-center border-t border-amber-700/30 z-10">
@@ -205,7 +197,7 @@ export default function ZenYogaElements() {
         </ElementCard>
 
         {/* 7. SACRED MARACA */}
-        <ElementCard title="Sacred Maraca" subtitle="Mbaracá Totem">
+        <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             <div className="relative flex flex-col items-center animate-[shamanicShake_2.5s_infinite_ease-in-out]">
               <div className="absolute top-[-8px] flex justify-center items-end w-6 h-3 pointer-events-none z-20">
