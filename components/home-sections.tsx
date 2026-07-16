@@ -209,7 +209,7 @@ export function IntroductionSection() {
             <p className="text-muted-foreground leading-relaxed">
               Within our work, we often draw from a{" "}
               <a 
-                href="https://www.google.com/search?sca_esv=01006499c0c391e8&sxsrf=APpeQnse4l_bHHLaKWzKJ_H8Vq-lfRHuVQ:1783476959652&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKYr2wv-EHakX1SS4JF8fY1_A0DfPLoyd61yD2Gjy0hF5xCGdMIu1T4OpsNqfBilMEIr_6ObOOmXLqxwsb2wWJ6rZczNqhX_BT8mvsKr4cPXW3rK1rrDm6UKuIOysx0ndrWiDL523hQULdDGKbotErH2kmguX5En4hjb48Li6KlkQenOzA&q=narrow+boundary+to+wide+boundary+to+wisdom+framework&sa=X&ved=2ahUKEwiqnJS1gcKVAxWjBLkGHT73MbUQtKgLegQIGBAB&biw=1410&bih=678&dpr=2#sv=CAMSURoyKhBlLU04M1YxZFpiLWlMTFlNMg5NODNWMWRaYi1pTExZTToOQzVZTHljNGJpUGRIc00gBCoXCgFzEhBlLU04M1YxZFpiLWlMTFlNGAEwARgHINrK0t4CSggQARgBIAEoAQ" 
+                href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-900 underline hover:opacity-80 transition-opacity"
