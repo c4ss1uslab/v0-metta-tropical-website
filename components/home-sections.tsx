@@ -51,7 +51,7 @@ export function HeroSection() {
     </h1> 
      
     <p className="mt-18 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic"> 
-      Nurturing the emergence of a new generation of wisdom-centered leaders wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
+      Nurturing the emergence of a new generation of <strong>wisdom-centered leaders</strong> wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
     </p> 
 
     <div className="mt-22 flex flex-col sm:flex-row items-center justify-start gap-4"> 
@@ -136,9 +136,9 @@ export function IntroductionSection() {
     </span>
 
 <blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
-      Education is the Metacrisis 
+      Education is the Metacrisis:
       <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
-        It’s time to see planetary crises as a species-wide learning opportunity. 
+        It’s time to see our planetary crises as a species-wide learning opportunity. 
       </span> 
     </blockquote> 
 
