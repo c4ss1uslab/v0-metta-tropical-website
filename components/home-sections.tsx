@@ -136,7 +136,7 @@ export function IntroductionSection() {
     </span>
 
 <blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
-      Education is the Metacrisis 
+      Education is the Metacrisis:
       <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
         It’s time to see our planetary crises as a species-wide learning opportunity. 
       </span> 
