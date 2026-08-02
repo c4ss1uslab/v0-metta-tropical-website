@@ -89,63 +89,6 @@ export function HeroSection() {
   )
 }
 
-export function IntroductionSection() {
-  return (
-    <>
-      {/* Introduction */}
-      <section className="bg-background pt-12 pb-12 lg:pt-32 lg:pb-16">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
-            <div className="space-y-8">
-              <div>
-                <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                  We are living through the unraveling of a world that can no
-                  longer sustain its own promises.
-                </h2>
-              </div>
-
-              <p className="leading-relaxed text-muted-foreground">
-                And many of our attempts to respond have only been deepening the
-                crisis—reproducing the very logic of separation, extraction and
-                control that created it.
-              </p>
-
-              <p className="leading-relaxed text-muted-foreground">
-                Metta Tropical Collective is an experimental, place-based
-                community of transformation, inquiry and practice, calling
-                together postactivist educators, thinkers, artists, leaders and
-                change-makers who refuse to look away from the crisis of our
-                times. Those convinced that any meaningful response to this
-                moment must be rooted in a fundamentally different relationship
-                with all life —{" "}
-                <strong className="text-foreground">
-                  self, other, world, and the sacred.
-                </strong>
-              </p>
-
-              <p className="leading-relaxed text-muted-foreground">
-                We come together not to optimize or fix a broken system, in
-                order for it to work for a greater number of humans and species,
-                but to question and transform its own foundations. Through
-                transformative developmental spaces, intimate community,
-                radical inquiry and collective practices, we explore the
-                conditions required to shift the ways we see, know, relate, and
-                respond to the challenges of the metacrisis.
-              </p>
-            </div>
-
-            <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos_1234029733-WbYYUpcs7i7gZeQt8QQtmpceC9jLXP.jpeg"
-                alt="Tropical Collage"
-                fill
-                className="bg-foreground object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
 const lineages = [
   {
     numeral: "I.",
@@ -261,8 +204,65 @@ const lineages = [
   },
 ]
 
-{/* Confluence of Lineages */}
-<section className="bg-white py-16 lg:py-24">
+export function IntroductionSection() {
+  return (
+    <>
+      {/* Introduction */}
+      <section className="bg-background pt-12 pb-12 lg:pt-32 lg:pb-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
+            <div className="space-y-8">
+              <div>
+                <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                  We are living through the unraveling of a world that can no
+                  longer sustain its own promises.
+                </h2>
+              </div>
+
+              <p className="leading-relaxed text-muted-foreground">
+                And many of our attempts to respond have only been deepening the
+                crisis—reproducing the very logic of separation, extraction and
+                control that created it.
+              </p>
+
+              <p className="leading-relaxed text-muted-foreground">
+                Metta Tropical Collective is an experimental, place-based
+                community of transformation, inquiry and practice, calling
+                together postactivist educators, thinkers, artists, leaders and
+                change-makers who refuse to look away from the crisis of our
+                times. Those convinced that any meaningful response to this
+                moment must be rooted in a fundamentally different relationship
+                with all life —{" "}
+                <strong className="text-foreground">
+                  self, other, world, and the sacred.
+                </strong>
+              </p>
+
+              <p className="leading-relaxed text-muted-foreground">
+                We come together not to optimize or fix a broken system, in
+                order for it to work for a greater number of humans and species,
+                but to question and transform its own foundations. Through
+                transformative developmental spaces, intimate community,
+                radical inquiry and collective practices, we explore the
+                conditions required to shift the ways we see, know, relate, and
+                respond to the challenges of the metacrisis.
+              </p>
+            </div>
+
+            <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos_1234029733-WbYYUpcs7i7gZeQt8QQtmpceC9jLXP.jpeg"
+                alt="Tropical Collage"
+                fill
+                className="bg-foreground object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Confluence of Lineages */}
+      <section className="bg-white py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-6 max-w-5xl text-left">
