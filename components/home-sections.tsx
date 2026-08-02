@@ -807,10 +807,10 @@ export function CTASection() {
           </Link>
 
           <Link
-            href="/why-now"
+            href="/theory-of-change"
             className="inline-flex items-center justify-center border border-background bg-transparent px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-background/10"
           >
-            Why Now?
+            Theory of Change
           </Link>
         </div>
       </div>
