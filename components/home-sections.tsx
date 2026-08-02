@@ -564,7 +564,7 @@ export function IntroductionSection() {
           framework
         </a>{" "}
         developed by Daniel Schmachtenberger and Nate Hagens, and later evolved
-        by Vanessa Andreotti that distinguishes between narrow boundary
+        by Vanessa Machado de Oliveira that distinguishes between narrow boundary
         intelligence, wide boundary intelligence, and wisdom—sometimes called
         whole-shebang wisdom.
       </p>
