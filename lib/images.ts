@@ -50,13 +50,36 @@ export const images = {
 
   // === COMMUNITY & COLLECTIVE ===
   childrenCircles: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Enfants%2C%20a%201930s%20photograph%20by%20Andr%C3%A8%20Kert%C3%A8sz-V6EI2vvR62GjAJ9EngLwInOfHDJ5nO.jpeg",
-  coloredCommunityCircle: "https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg"
+  coloredCommunityCircle: "https://i.postimg.cc/XYvW3DFW/cosmos-1656632365.jpg",
+
+  // === LOGOS ===
+  aletheia: "https://i.postimg.cc/dLjS6LJh/aletheia.jpg",
+  animas: "https://i.postimg.cc/ykyrjk77/animas.jpg",
+  animasvalley: "https://i.postimg.cc/TpJH0pTR/animas-valley.jpg",
+  animas2: "https://i.postimg.cc/2V7XGVCr/animas2.jpg",
+  ART: "https://i.postimg.cc/w7Qb279q/ART.jpg",
+  ARTauthenticrelating: "https://i.postimg.cc/fJfgCJMT/ART-authentic-relating.png",
+  civilizationresearchinstitute: "https://i.postimg.cc/ZCxDHCJv/CRI.jpg",
+  faveladapaz: "https://i.postimg.cc/ykyrjk74/favela-da-paz.png",
+  greatvow: "https://i.postimg.cc/3dFb1d3v/great-vow.jpg",
+  gtdf: "https://i.postimg.cc/fJfgCJMd/gtdf.webp",
+  selvagem: "https://i.postimg.cc/jL4kcLRT/ICONE-SELVAGEM-2026-1-1536x1536.webp",
+  internalfamilysystems: "https://i.postimg.cc/9rYNbrcz/IFS.png",
+  kilombotenonde: "https://i.postimg.cc/6yf1cyBw/kilombo-tenonde.jpg",
+  tenondepora: "https://i.postimg.cc/sv40mv3r/Logo-Tenonde-Pora-Reduct.png",
+  perspectiva: "https://i.postimg.cc/dLjS6LJT/perspectiva.jpg",
+  plumvillage: "https://i.postimg.cc/nXVSPpLz/plum-village.jpg",
+  schumacher: "https://i.postimg.cc/tYNmkY91/schumacher.jpg",
+  teiadospovos: "https://i.postimg.cc/Ln30DnmM/teia-dos-povos.webp",
+  transformationalconnection: "https://i.postimg.cc/Whwf8hsz/transformational-connection.png",
+  vipassana: "https://i.postimg.cc/mty6jtTM/vipassana-logo.webp",
+  warmdata: "https://i.postimg.cc/Whwf8hsF/warm-data.jpg",
 
   // === REFERENCE SCREENSHOTS (not for display) ===
   reference: {
     bodhiSangha: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/reference%20-%20bodhi%20sangha%20homepage%20screenshot.png-QgU9iK0UhTOy2Hk2uxyoloEIbgynwI.jpeg",
     tenHomepage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/reference%20-%20ten%20homepage%20screenshot.png-K71SYLSmy2tv4P2PQMKMf8i6UpBMwo.jpeg",
-    twoRHomepage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/reference%20-%202R%20homepage%20screenshot.png-U0abZ8YEQHCiTso1MMRBKdYH8eSrzH.jpeg",
+    twoRHomepage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/reference%20-%202R%20homepage%20screenshot.png-U0abZ8YEQHCiTso1MMRBKdYH8eSrzH.jpeg"
   },
 } as const
 
