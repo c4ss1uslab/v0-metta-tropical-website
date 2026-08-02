@@ -93,108 +93,332 @@ export function IntroductionSection() {
   return (
     <>
       {/* Introduction */}
-      <section className="pt-12 pb-12 lg:pt-32 lg:pb-16 bg-background">
+      <section className="bg-background pt-12 pb-12 lg:pt-32 lg:pb-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
             <div className="space-y-8">
               <div>
-                <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                  We are living through the unraveling of a world that can no longer sustain its own promises.
+                <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                  We are living through the unraveling of a world that can no
+                  longer sustain its own promises.
                 </h2>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed">
-                And many of our attempts to respond have only been deepening the crisis—reproducing the very logic of separation, extraction and control that created it.
+              <p className="leading-relaxed text-muted-foreground">
+                And many of our attempts to respond have only been deepening the
+                crisis—reproducing the very logic of separation, extraction and
+                control that created it.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
-                Metta Tropical Collective is an experimental, place-based community of transformation, inquiry and practice, calling together postactivist educators, thinkers, artists, leaders and change-makers who refuse to look away away from the crisis of our times. Those convinced that any meaningful response to this moment must be rooted in a fundamentally different relationship with all life — <strong className="text-foreground">self, other, world, and the sacred.</strong>
+              <p className="leading-relaxed text-muted-foreground">
+                Metta Tropical Collective is an experimental, place-based
+                community of transformation, inquiry and practice, calling
+                together postactivist educators, thinkers, artists, leaders and
+                change-makers who refuse to look away from the crisis of our
+                times. Those convinced that any meaningful response to this
+                moment must be rooted in a fundamentally different relationship
+                with all life —{" "}
+                <strong className="text-foreground">
+                  self, other, world, and the sacred.
+                </strong>
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
-                We come together not to optimize or fix a broken system, in order for it to work for a greater number of humans and species, but to question and transform its own foundations. Through transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore the conditions required to shift the ways we see, know, relate, and respond to the challenges of the metacrisis.
+              <p className="leading-relaxed text-muted-foreground">
+                We come together not to optimize or fix a broken system, in
+                order for it to work for a greater number of humans and species,
+                but to question and transform its own foundations. Through
+                transformative developmental spaces, intimate community,
+                radical inquiry and collective practices, we explore the
+                conditions required to shift the ways we see, know, relate, and
+                respond to the challenges of the metacrisis.
               </p>
             </div>
 
-            <div className="relative aspect-[4/5] rounded-sm overflow-hidden lg:sticky lg:top-24">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos_1234029733-WbYYUpcs7i7gZeQt8QQtmpceC9jLXP.jpeg"
                 alt="Tropical Collage"
                 fill
-                className="object-contain bg-foreground"
+                className="bg-foreground object-contain"
               />
             </div>
           </div>
         </div>
       </section>
 
-<figure className="w-screen relative left-1/2 -translate-x-1/2 my-12 py-12 md:py-16 bg-[#111827] text-center px-4 overflow-hidden"> 
-  <div className="max-w-4xl mx-auto relative px-8 md:px-16">
-    {/* Left Background Quote */}
-    <span className="absolute left-0 top-[-20px] md:top-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
-      “
-    </span>
+      {/* Confluence of Lineages */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          {/* Header */}
+          <div className="mb-6 max-w-5xl text-left">
+            <h2 className="font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
+              A Confluence of Lineages
+            </h2>
+          </div>
 
-<blockquote className="font-serif text-3xl md:text-4xl text-gray-100 tracking-tight leading-tight z-10 relative"> 
-      Education is the Metacrisis:
-      <span className="block text-base md:text-lg font-sans mt-3 text-gray-400 tracking-normal italic"> 
-        It’s time to see our planetary crises as a species-wide learning opportunity. 
-      </span> 
-    </blockquote> 
+          {/* Introduction */}
+          <div className="mb-8 max-w-4xl space-y-6 text-left">
+            <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
+              We are rooted in Brazil and Latin America — shaped by this
+              territory, this language, this soil, and its histories.
+            </p>
 
-    {/* Right Background Quote */}
-    <span className="absolute right-0 bottom-[-20px] md:bottom-[-40px] font-serif text-7xl md:text-9xl text-gray-800 pointer-events-none select-none">
-      ”
-    </span>
+            <p className="leading-relaxed text-muted-foreground">
+              Our collective is committed to bringing back into relationship
+              ways of knowing that modernity has often separated from one
+              another. We create spaces where a wide range of epistemologies,
+              traditions, and forms of intelligence can meet in generative
+              dialogue, offering the conditions for the depth of understanding,
+              practice, and transformation this moment requires.
+            </p>
 
-    <figcaption className="mt-6 text-[#D9A01B] font-semibold text-sm tracking-wider uppercase z-10 relative"> 
-      — Zak Stein 
-    </figcaption> 
-  </div>
-</figure>
+            <p className="leading-relaxed text-muted-foreground">
+              At the heart of our work is the creation of what we call a{" "}
+              <strong className="font-bold text-foreground">
+                Wisdom-Centered Educational Architecture
+              </strong>
+              : a long-term developmental ecology of practices, inquiries,
+              trainings, and relationships designed to hold the long arc of
+              human formation needed for wiser collective sensemaking, communal
+              life, and forms of participation in the web of life. It is within
+              this architecture that multiple lineages come together to evolve
+              one another and transform ourselves into the kinds of beings
+              capable of serving the flourishing of all life in a time of
+              metacrisis.
+            </p>
 
-{/* Educational Work */}
-<section className="relative pt-12 pb-24 lg:pt-16 lg:pb-28 bg-white">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <div className="space-y-8">
-      <div>
-        <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-          Our response is fundamentally educational.
-        </h2>
-      </div>
+            <p className="font-medium leading-relaxed text-foreground">
+              Our work emerges at the intersection of four main lineages:
+            </p>
+          </div>
 
-      <p className="text-muted-foreground leading-relaxed">
-        We recognize the escalating nature of the complex and entangled challenges of the moment we’re living in—social, ecological, political, and spiritual breakdowns—not as isolated problems, but as <strong className="text-foreground">symptoms of deeper cultural patterns: ways of perceiving, valuing, and participating in the world that are no longer serving life.</strong>
-      </p>
+          {/* Four Lineages */}
+          <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {/* I. Contemplative Traditions */}
+            <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
+              <div>
+                <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                  I.
+                </span>
 
-      <p className="text-muted-foreground leading-relaxed">
-        If the crises of our time are rooted in the ways we have learned to see, relate, and participate in the world, then responding to them requires more than new solutions. It requires new forms of being — and becoming — human in this world. We are living through a moment that asks something profound of us. Not only technological or political change, but a deeper transformation in human consciousness and the ways we relate to life.
-      </p>
+                <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                  Contemplative Traditions
+                </h3>
 
-      <p className="text-muted-foreground leading-relaxed">
-        This moment could become a rite of passage for our species — an opening toward greater wisdom, maturity, and reverence for life. But there is no guarantee it will. Without spaces capable of holding grief, uncertainty, conflict, and transformation, crisis can just as easily intensify polarization, nihilism, tribalism, and collapse into simplistic answers.
-      </p>           
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  The spiritual traditions of the world — especially the
+                  Buddhist lineage — which have shaped our understanding of
+                  reality and who we are within it, and which uniquely offer
+                  teachings and practices for grounding a life in the spiritual
+                  dimension and aligning action with love, compassion, and
+                  truth.
+                </p>
+              </div>
+            </div>
 
-      <p className="text-muted-foreground leading-relaxed">
-      In response, we are exploring how to build new forms of Educational-Relational Architecture: structures for learning, transformation, practice, and relationships designed to support deeper human transformation, collective sensemaking, community building and wiser forms of participation in the web of life. 
-      Structures capable of holding the magnitude of the vow, devotion and surrender of those who feel the depth of our crisis and are committed to reclaiming leadership as a sacred responsibility towards the flourishing of all life.
-      </p>           
+            {/* II. Systemic Inquiry */}
+            <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
+              <div>
+                <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                  II.
+                </span>
 
-      <p className="text-muted-foreground leading-relaxed">
-      Our work is ultimately an inquiry into <strong className="text-foreground">who we must become - and what kind of containers must emerge in this time between worlds</strong>, in order for us to develop the capacities to imagine, embody and steward a new cultural paradigm rooted in wisdom, relational sensibility and service to the flourishing of all beings.
-      </p>           
+                <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                  Systemic Inquiry
+                </h3>
 
-      <div className="relative left-1/2 -translate-x-1/2 w-screen aspect-[21/9] overflow-hidden mt-12">
-        <Image
-          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
-          alt="Gathering around the fire"
-          fill
-          className="object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  The rigor of systems and complexity science, the regenerative
+                  movement, decolonial thought, metamodernism, and the
+                  metacrisis conversation — which have helped us perceive the
+                  historical, ecological, and civilizational patterns producing
+                  this moment, rather than reacting to its symptoms.
+                </p>
+              </div>
+            </div>
+
+            {/* III. Developmental Practice */}
+            <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
+              <div>
+                <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                  III.
+                </span>
+
+                <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                  Developmental Practice
+                </h3>
+
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  The fields of human development, depth psychology, parts work,
+                  trauma integration, emotional regulation, and relational
+                  practice — which help us understand how human beings actually
+                  grow up, mature, and come to embody responsible ways of
+                  relating to all life.
+                </p>
+              </div>
+            </div>
+
+            {/* IV. Ancestral Ways of Being */}
+            <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
+              <div>
+                <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                  IV.
+                </span>
+
+                <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                  Ancestral Ways of Being
+                </h3>
+
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  The embodied, ecological, and land-based wisdom carried by
+                  Indigenous, quilombola, and Afro-diasporic communities, who,
+                  despite centuries of erasure and forced collapse, have
+                  nurtured, carried, and protected ways of seeing, being, and
+                  relating that the rest of the world is only now beginning to
+                  value.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="max-w-4xl space-y-6 text-left">
+            <p className="leading-relaxed text-muted-foreground">
+              We have been informed and transformed by these lineages over many
+              years, and we come to them with humility, curiosity, and
+              gratitude, not claiming to live fully within any of them and
+              recognizing that each carries both profound gifts and real
+              limitations.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              What we are attempting is neither the importing of Global North
+              frameworks nor the romanticization of ancestral wisdom. It is
+              something more demanding: cultivating genuine dialogue between
+              them and letting each challenge, deepen, and transform the others
+              — and us. We are interested in what becomes possible when
+              systemic rigor, contemplative depth, developmental practice, and
+              the living intelligence of this territory are brought into real
+              relationship, and in how such a convergence can transform the
+              ways we see, relate, and act in the world.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              From this encounter, we believe that the new forms of pedagogy,
+              community, and culture required in this century can emerge —
+              forms that could only take root here, where these lineages have a
+              reason to meet and where the urgency of this moment makes their
+              separation no longer affordable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Zak Stein Quote */}
+      <figure className="relative left-1/2 my-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
+        <div className="relative mx-auto max-w-4xl px-8 md:px-16">
+          {/* Left Background Quote */}
+          <span className="pointer-events-none absolute left-0 top-[-20px] select-none font-serif text-7xl text-gray-800 md:top-[-40px] md:text-9xl">
+            “
+          </span>
+
+          <blockquote className="relative z-10 font-serif text-3xl leading-tight tracking-tight text-gray-100 md:text-4xl">
+            Education is the Metacrisis:
+            <span className="mt-3 block font-sans text-base font-normal tracking-normal text-gray-400 italic md:text-lg">
+              It’s time to see our planetary crises as a species-wide learning
+              opportunity.
+            </span>
+          </blockquote>
+
+          {/* Right Background Quote */}
+          <span className="pointer-events-none absolute right-0 bottom-[-20px] select-none font-serif text-7xl text-gray-800 md:bottom-[-40px] md:text-9xl">
+            ”
+          </span>
+
+          <figcaption className="relative z-10 mt-6 text-sm font-semibold tracking-wider text-[#D9A01B] uppercase">
+            — Zak Stein
+          </figcaption>
+        </div>
+      </figure>
+
+      {/* Educational Work */}
+      <section className="relative bg-white pt-12 pb-24 lg:pt-16 lg:pb-28">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="space-y-8">
+            <div>
+              <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                Our response is fundamentally educational.
+              </h2>
+            </div>
+
+            <p className="leading-relaxed text-muted-foreground">
+              We recognize the escalating nature of the complex and entangled
+              challenges of the moment we’re living in—social, ecological,
+              political, and spiritual breakdowns—not as isolated problems, but
+              as{" "}
+              <strong className="text-foreground">
+                symptoms of deeper cultural patterns: ways of perceiving,
+                valuing, and participating in the world that are no longer
+                serving life.
+              </strong>
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              If the crises of our time are rooted in the ways we have learned
+              to see, relate, and participate in the world, then responding to
+              them requires more than new solutions. It requires new forms of
+              being — and becoming — human in this world. We are living through
+              a moment that asks something profound of us. Not only
+              technological or political change, but a deeper transformation in
+              human consciousness and the ways we relate to life.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              This moment could become a rite of passage for our species — an
+              opening toward greater wisdom, maturity, and reverence for life.
+              But there is no guarantee it will. Without spaces capable of
+              holding grief, uncertainty, conflict, and transformation, crisis
+              can just as easily intensify polarization, nihilism, tribalism,
+              and collapse into simplistic answers.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              In response, we are exploring how to build new forms of
+              Educational-Relational Architecture: structures for learning,
+              transformation, practice, and relationships designed to support
+              deeper human transformation, collective sensemaking, community
+              building and wiser forms of participation in the web of life.
+              Structures capable of holding the magnitude of the vow, devotion
+              and surrender of those who feel the depth of our crisis and are
+              committed to reclaiming leadership as a sacred responsibility
+              towards the flourishing of all life.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Our work is ultimately an inquiry into{" "}
+              <strong className="text-foreground">
+                who we must become — and what kind of containers must emerge in
+                this time between worlds
+              </strong>
+              , in order for us to develop the capacities to imagine, embody and
+              steward a new cultural paradigm rooted in wisdom, relational
+              sensibility and service to the flourishing of all beings.
+            </p>
+
+            <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
+              <Image
+                src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+                alt="Gathering around the fire"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
 
 {/* Why Wisdom? Section Content */}
       <section className="w-full xl:w-screen left-1/2 right-1/2 -mx-[50vw] relative bg-white pt-0 pb-16 lg:pt-0 lg:pb-20">
