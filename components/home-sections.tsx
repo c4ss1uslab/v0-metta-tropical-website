@@ -360,96 +360,170 @@ import React from 'react';
 
 export function BridgeSection() {
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        
-        {/* Header - Left-Aligned */}
-        <div className="text-left mb-6 max-w-5xl">
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+        {/* Header */}
+        <div className="mb-6 max-w-5xl text-left">
+          <h2 className="font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
             A Confluence of Lineages
           </h2>
         </div>
 
-        {/* Intro Blocks */}
-        <div className="max-w-4xl mb-16 space-y-6 text-left">
-          <p className="text-[#D9A01B] font-medium text-lg leading-relaxed">
-            We are rooted in Brazil and Latin America, shaped by this territory, this language, and this soil. 
+        {/* Introduction */}
+        <div className="mb-16 max-w-4xl space-y-6 text-left">
+          <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
+            We are rooted in Brazil and Latin America — shaped by this
+            territory, this language, its histories, and the particular ways
+            life grows here. From this ground, we enter into dialogue with a
+            global constellation of thinkers, communities, and lineages,
+            allowing distant currents of seeing, being, and knowing to meet,
+            take root, and become something new here.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Embedded within all three pillars of our work is a commitment to bringing into relationship ways of knowing that modernity has often separated from one another. We seek to create spaces where different epistemologies, traditions, and forms of intelligence can meet in generative dialogue. Our work emerges at the intersection of four lineages that rarely meet:
+
+          <p className="leading-relaxed text-muted-foreground">
+            As a transformational community, we are committed to bringing back
+            into relationship ways of knowing that modernity has often
+            separated from one another. We create spaces where a wide range of
+            epistemologies, traditions, and forms of intelligence can meet in
+            generative dialogue, offering the conditions for the depth of
+            understanding, practice, and transformation this moment requires.
+          </p>
+
+          <p className="leading-relaxed text-muted-foreground">
+            At the heart of our work is the creation of what we call a
+            Wisdom-Centered Educational Architecture: a long-term developmental
+            ecology of practices, inquiries, trainings, and relationships
+            designed to hold the long arc of human formation needed for wiser
+            collective sensemaking, communal life, and forms of participation
+            in the web of life. It is within this architecture that these
+            lineages come together to evolve one another and transform
+            ourselves into the kinds of beings capable of serving the
+            flourishing of all life in a time of metacrisis.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            Our work emerges at the intersection of four lineages that
+            modernity has kept apart:
           </p>
         </div>
 
-        {/* The Four Lineages - Formatted into a balanced 2x2 quadrant layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-16">
-          
-          {/* Box I - Systemic & Philosophical */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6] flex flex-col justify-between">
+        {/* Four Lineages */}
+        <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* I. Contemplative Traditions */}
+          <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
             <div>
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">I.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Systemic & Philosophical
+              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                I.
+              </span>
+
+              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                Contemplative Traditions
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The systemic and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.
+
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The spiritual traditions of the world — especially the Buddhist
+                lineage — which have shaped our understanding of reality and who
+                we are within it, and which uniquely offer teachings and
+                practices for grounding a life in the spiritual dimension and
+                aligning action with love, compassion, and truth.
               </p>
             </div>
           </div>
 
-          {/* Box II - Spiritual Traditions */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6] flex flex-col justify-between">
+          {/* II. Systemic Inquiry */}
+          <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
             <div>
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">II.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Spiritual Traditions
+              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                II.
+              </span>
+
+              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                Systemic Inquiry
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The wisdom of spiritual traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.
+
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The rigor of systems and complexity science, the regenerative
+                movement, decolonial thought, metamodernism, and the metacrisis
+                conversation — which have helped us perceive the historical,
+                ecological, and civilizational patterns producing this moment,
+                rather than reacting to its symptoms.
               </p>
             </div>
           </div>
 
-          {/* Box III - Developmental Practice */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6] flex flex-col justify-between">
+          {/* III. Developmental Practice */}
+          <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
             <div>
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">III.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                III.
+              </span>
+
+              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
                 Developmental Practice
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The fields of human development, depth psychology, relational practice, parts work, trauma integration, and transformational practices that help us understand how human beings actually change, mature, and embody responsible ways of relating to all life.
+
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The fields of human development, depth psychology, parts work,
+                trauma integration, emotional regulation, and relational
+                practice — which help us understand how human beings actually
+                grow up, mature, and come to embody responsible ways of relating
+                to all life.
               </p>
             </div>
           </div>
 
-          {/* Box IV - Living, Relational Wisdom */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-[#FFFDF6] flex flex-col justify-between">
+          {/* IV. Ancestral Ways of Being */}
+          <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
             <div>
-              <span className="text-[#D9A01B] font-mono text-sm font-bold block mb-2">IV.</span>
-              <h3 className="font-serif text-xl font-bold text-foreground mb-4">
-                Living, Relational Wisdom
+              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                IV.
+              </span>
+
+              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                Ancestral Ways of Being
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and historically marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.
+
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The embodied, ecological, and land-based wisdom carried by
+                Indigenous, quilombola, and Afro-diasporic communities, who,
+                despite centuries of erasure and forced collapse, have
+                nurtured, carried, and protected ways of seeing, being, and
+                relating that the rest of the world is only now beginning to
+                value.
               </p>
             </div>
           </div>
-
         </div>
 
-        {/* Concluding Paragraphs */}
+        {/* Conclusion */}
         <div className="max-w-4xl space-y-6 text-left">
-          <p className="text-muted-foreground leading-relaxed">
-            We do not claim to live fully within all these traditions. We have been continuously informed and transformed by them throughout the years, and so we come to them with humility, curiosity, and gratitude, recognizing that each carries both profound gifts and limitations.
+          <p className="leading-relaxed text-muted-foreground">
+            We have been informed and transformed by these lineages over many
+            years, and we come to them with humility, curiosity, and gratitude,
+            not claiming to live fully within any of them and recognizing that
+            each carries both profound gifts and real limitations.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            What we are attempting is neither the importing of Global North frameworks nor the romanticization of ancestral wisdom. It is something more demanding: cultivating genuine dialogue between these lineages while allowing each to challenge, deepen, and transform the others. Rather than privileging a single worldview, we are interested in what becomes possible when different traditions genuinely encounter one another.
+
+          <p className="leading-relaxed text-muted-foreground">
+            What we are attempting is neither the importing of Global North
+            frameworks nor the romanticization of ancestral wisdom. It is
+            something more demanding: cultivating genuine dialogue between them
+            and letting each challenge, deepen, and transform the others — and
+            us. We are interested in what becomes possible when systemic rigor,
+            contemplative depth, developmental practice, and the living
+            intelligence of this territory are brought into real relationship,
+            and in how such a convergence can transform the ways we see, relate,
+            and act in the world.
           </p>
-          <p className="text-foreground font-medium leading-relaxed">
-            We believe the wisdom required for this century will not emerge from any single discipline, culture, or worldview, but from learning how to hold them in relationship.
+
+          <p className="font-medium leading-relaxed text-foreground">
+            From this encounter, we believe that the new forms of pedagogy,
+            community, and culture required in this century can emerge — forms
+            that could only take root here, where these lineages have a reason
+            to meet and where the urgency of this moment makes their separation
+            no longer affordable.
           </p>
         </div>
-
       </div>
     </section>
   );
