@@ -304,11 +304,7 @@ export function IntroductionSection() {
             </p>
 
             <p className="font-medium leading-relaxed text-foreground">
-              From this encounter, we believe that the new forms of pedagogy,
-              community, and culture required in this century can emerge —
-              forms that could only take root here, where these lineages have a
-              reason to meet and where the urgency of this moment makes their
-              separation no longer affordable.
+              From this encounter, we believe new forms of pedagogy, community, and culture can emerge — forms this century requires, and that could only take root here, where these lineages have a reason to meet, and where the urgency of this moment makes their separation no longer affordable.
             </p>
           </div>
         </div>
