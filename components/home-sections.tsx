@@ -343,33 +343,6 @@ export function IntroductionSection() {
 
 {/* Educational Work */}
 <section className="relative bg-white pt-12 pb-24 lg:pt-16 lg:pb-28">
-  {/* Zak Stein Quote */}
-  <figure className="relative left-1/2 mb-16 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16 lg:mb-20">
-    <div className="relative mx-auto max-w-5xl px-8 md:px-16">
-      {/* Left Background Quote */}
-      <span className="pointer-events-none absolute left-0 top-[-20px] select-none font-serif text-7xl text-gray-800 md:top-[-40px] md:text-9xl">
-        “
-      </span>
-
-      <blockquote className="relative z-10 font-serif text-2xl leading-tight tracking-tight text-gray-100 md:text-3xl lg:text-4xl">
-        If education is not the answer, you are asking the wrong question:{" "}
-        <strong className="font-bold">
-          why it&apos;s time to see planetary crises as a species-wide learning
-          opportunity.
-        </strong>
-      </blockquote>
-
-      {/* Right Background Quote */}
-      <span className="pointer-events-none absolute right-0 bottom-[-20px] select-none font-serif text-7xl text-gray-800 md:bottom-[-40px] md:text-9xl">
-        ”
-      </span>
-
-      <figcaption className="relative z-10 mt-6 text-sm font-semibold uppercase tracking-wider text-[#D9A01B]">
-        — Zak Stein
-      </figcaption>
-    </div>
-  </figure>
-
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       <div>
@@ -417,10 +390,10 @@ export function IntroductionSection() {
       </p>
 
       {/* Highlighted Architecture Statement */}
-      <div className="relative overflow-hidden border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
-        <p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">
+      <div className="border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8">
+        <p className="leading-relaxed text-muted-foreground">
           Aware of this, we are exploring how to build new forms of{" "}
-          <strong className="font-bold">
+          <strong className="font-bold text-foreground">
             Wisdom-Centered Educational Architecture:
           </strong>{" "}
           transformational structures capable of welcoming those who feel the
@@ -429,85 +402,6 @@ export function IntroductionSection() {
           reclaiming leadership as sacred responsibility toward the flourishing
           of all life.
         </p>
-      </div>
-
-      {/* Questions Guiding Our Inquiry */}
-      <div className="mt-12 rounded-xl border border-slate-200 bg-slate-100 px-6 py-8 md:px-10 md:py-10">
-        <h3 className="mb-7 font-serif text-2xl font-bold text-foreground md:text-3xl">
-          Questions Guiding Our Inquiry
-        </h3>
-
-        <ol className="space-y-5">
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              01
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              Who must we become to embody and steward a culture rooted in
-              wisdom, relational maturity, and reverence for all life?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              02
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              What kinds of educational spaces, communities, and containers can
-              actually cultivate such becoming?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              03
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              How might we reclaim the sacred in the heart of education and
-              culture in a post-secular world?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              04
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              What becomes available — to perception, relationship, and action
-              — when we participate in life from greater relational depths?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              05
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              What is required for us to develop, perceive, and act as a
-              collective body rather than as separate individuals?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              06
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              What conditions support the move from ontological understanding
-              toward embodied living?
-            </p>
-          </li>
-
-          <li className="flex gap-4">
-            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
-              07
-            </span>
-            <p className="leading-relaxed text-muted-foreground">
-              How might we restore intergenerational transmission in a world
-              where elders have not lived the future the young must face?
-            </p>
-          </li>
-        </ol>
       </div>
 
       <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
