@@ -529,114 +529,157 @@ export function FieldsOfWorkSection() {
     {
       title: "1. Transformative Educational Lab",
       subtitle: "Education for the end of the world as we know it",
-      description: "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep radically experimenting with what it takes to build the foundations for a wisdom-centered education.",
+      description:
+        "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep radically experimenting with what it takes to build the foundations for a wisdom-centered education.",
       color: "border-olive",
       textColor: "text-olive",
-      image: "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
+      image:
+        "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
       link: "/about#educational-lab",
-      stroke: "#3d4a3e" // Dark Olive
+      stroke: "#3d4a3e", // Dark Olive
     },
     {
       title: "2. Research & Inquiry",
       subtitle: "Investigating the most pressing questions shaping our world",
-      description: "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
+      description:
+        "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
       color: "border-cyan",
       textColor: "text-cyan-800",
       image: "https://i.postimg.cc/63CqR1MW/cosmos-830055812.jpg",
       link: "/about#research",
-      stroke: "#155e75" // Dark Cyan
+      stroke: "#155e75", // Dark Cyan
     },
     {
       title: "3. Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
-      description: "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We help map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
-      color: "border-[#D9A01B]", // Amber border
-      textColor: "text-[#B88610]", // Readable Amber
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
+      description:
+        "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We help map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
+      color: "border-[#D9A01B]",
+      textColor: "text-[#B88610]",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
       link: "/about#ecosystem",
-      stroke: "#D9A01B"
+      stroke: "#D9A01B",
     },
   ]
 
   return (
-    <section className="py-12 lg:py-20 bg-cream">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-            Our Work
-          </h2>
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-foreground text-lg">Building Wisdom-Centered Educational Architectures in a Time Between Worlds</strong>
-            <br />
-            <em className="italic block mt-2">Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wholesome and life-affirming civilization.</em>
-            <span className="block mt-6 text-muted-foreground leading-relaxed">
-              The 3 main pillars of our work are:
-            </span>
-          </p>
-        </div>
+    <>
+      {/* Our Work */}
+      <section className="bg-cream py-12 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mb-16 text-center">
+            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+              Our Work
+            </h2>
 
-        {/* Pillars Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {fields.map((field) => (
-            <div key={field.title} className={`bg-background p-8 border-t-4 ${field.color} flex flex-col`}>
-              <div className="relative h-48 mb-6 overflow-hidden">
-                <Image
-                  src={field.image}
-                  alt={field.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-serif text-2xl font-medium text-foreground">{field.title}</h3>
-              <p className={`mt-2 ${field.textColor} text-sm font-medium`}>{field.subtitle}</p>
-              <p className="mt-4 text-muted-foreground text-sm leading-relaxed flex-1">{field.description}</p>
-              <Link
-                href={field.link}
-                className="mt-6 inline-flex items-center text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
+              <strong className="text-lg text-foreground">
+                Building Wisdom-Centered Educational Architectures in a Time
+                Between Worlds
+              </strong>
+
+              <br />
+
+              <em className="mt-2 block italic">
+                Supporting individual and collective transformation in response
+                to systemic collapse and in service of a mature, wholesome and
+                life-affirming civilization.
+              </em>
+
+              <span className="mt-6 block leading-relaxed text-muted-foreground">
+                The 3 main pillars of our work are:
+              </span>
+            </p>
+          </div>
+
+          {/* Pillars Grid Layout */}
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {fields.map((field) => (
+              <div
+                key={field.title}
+                className={`flex flex-col border-t-4 bg-background p-8 ${field.color}`}
               >
-                Learn More
-                <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke={field.stroke}>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          ))}
+                <div className="relative mb-6 h-48 overflow-hidden">
+                  <Image
+                    src={field.image}
+                    alt={field.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                <h3 className="font-serif text-2xl font-medium text-foreground">
+                  {field.title}
+                </h3>
+
+                <p className={`mt-2 text-sm font-medium ${field.textColor}`}>
+                  {field.subtitle}
+                </p>
+
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {field.description}
+                </p>
+
+                <Link
+                  href={field.link}
+                  className="mt-6 inline-flex items-center text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+                >
+                  Learn More
+
+                  <svg
+                    className="ml-2 h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke={field.stroke}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Wisdom-Centered Civilizational Architectures */}
+      <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F2C94C] px-6 py-16 text-[#1F2937] md:py-20 lg:py-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight md:text-4xl lg:text-5xl">
+            We are creating the conditions for the emergence of future
+            wisdom-centered civilizational architectures
+          </h2>
+
+          <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed md:text-lg">
+            Beneath everything we build lies a longer horizon and orientation:
+            the emergence of wisdom-centered civilizational architectures — the
+            systems, institutions, shared meanings, and values through which a
+            society can cultivate the capacity for wisdom, relational maturity,
+            and responsibility toward life.
+          </p>
+
+          <div className="mt-10">
+            <Link
+              href="/wisdom-centered-civilizational-architectures"
+              className="inline-flex items-center justify-center rounded-md bg-[#111827] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#263244] focus:outline-none focus:ring-2 focus:ring-[#111827] focus:ring-offset-2 focus:ring-offset-[#F2C94C]"
+            >
+              Learn more
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
-{/* Wisdom-Centered Civilizational Architectures */}
-<section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F2C94C] px-6 py-16 text-[#1F2937] md:py-20 lg:py-24">
-  <div className="mx-auto max-w-4xl text-center">
-    <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight md:text-4xl lg:text-5xl">
-      We are creating the conditions for the emergence of future
-      wisdom-centered civilizational architectures
-    </h2>
-
-    <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed md:text-lg">
-      Beneath everything we build lies a longer horizon and orientation: the
-      emergence of wisdom-centered civilizational architectures — the systems,
-      institutions, shared meanings, and values through which a society can
-      cultivate the capacity for wisdom, relational maturity, and responsibility
-      toward life.
-    </p>
-
-    <div className="mt-10">
-      <a
-        href="/wisdom-centered-civilizational-architectures"
-        className="inline-flex items-center justify-center rounded-md bg-[#111827] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#263244] focus:outline-none focus:ring-2 focus:ring-[#111827] focus:ring-offset-2 focus:ring-offset-[#F2C94C]"
-      >
-        Learn more
-      </a>
-    </div>
-  </div>
-</section>
-
 export function CTASection() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden">
+    <section className="relative overflow-hidden py-24 lg:py-32">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -645,28 +688,31 @@ export function CTASection() {
           fill
           className="object-cover"
         />
+
         <div className="absolute inset-0 bg-foreground/80" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8 text-center">
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background leading-tight">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center lg:px-8">
+        <h2 className="font-serif text-3xl font-medium leading-tight text-background md:text-4xl lg:text-5xl">
           Ready to go deeper?
         </h2>
-        
-        <p className="mt-8 text-background/80 max-w-2xl mx-auto leading-relaxed">
-           If you want to discover our work in more depth, we invite you to explore our Fellowship and Theory of Change.
+
+        <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-background/80">
+          If you want to discover our work in more depth, we invite you to
+          explore our Fellowship and Theory of Change.
         </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/fellowship"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
+            className="inline-flex items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610]"
           >
             Explore the Fellowship
           </Link>
+
           <Link
             href="/learn-more"
-            className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-background text-background font-medium text-sm tracking-wide hover:bg-background/10 transition-colors"
+            className="inline-flex items-center justify-center border border-background bg-transparent px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-background/10"
           >
             Learn More
           </Link>
