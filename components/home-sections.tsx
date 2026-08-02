@@ -373,9 +373,7 @@ export function BridgeSection() {
         <div className="mb-16 max-w-4xl space-y-6 text-left">
           <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
             We are rooted in Brazil and Latin America — shaped by this
-            territory, this language, this soil, and its histories. From this ground, we enter into dialogue with a
-            global constellation of thinkers, communities, and lineages,
-            allowing other currents of seeing, being, and knowing to meet, and influence each other.
+            territory, this language, this soil, and its histories. 
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
@@ -393,15 +391,14 @@ export function BridgeSection() {
             ecology of practices, inquiries, trainings, and relationships
             designed to hold the long arc of human formation needed for wiser
             collective sensemaking, communal life, and forms of participation
-            in the web of life. It is within this architecture that these
+            in the web of life. It is within this architecture that multiple
             lineages come together to evolve one another and transform
             ourselves into the kinds of beings capable of serving the
             flourishing of all life in a time of metacrisis.
           </p>
 
           <p className="font-medium leading-relaxed text-foreground">
-            Our work emerges at the intersection of four lineages that
-            modernity has kept apart:
+            Our work emerges at the intersection of four main lineages:
           </p>
         </div>
 
