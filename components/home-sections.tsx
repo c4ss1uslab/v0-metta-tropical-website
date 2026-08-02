@@ -341,81 +341,186 @@ export function IntroductionSection() {
         </div>
       </figure>
 
-      {/* Educational Work */}
-      <section className="relative bg-white pt-12 pb-24 lg:pt-16 lg:pb-28">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="space-y-8">
-            <div>
-              <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                Our response is fundamentally educational.
-              </h2>
-            </div>
+{/* Educational Work */}
+<section className="relative bg-white pt-12 pb-24 lg:pt-16 lg:pb-28">
+  {/* Zak Stein Quote */}
+  <figure className="relative left-1/2 mb-16 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16 lg:mb-20">
+    <div className="relative mx-auto max-w-5xl px-8 md:px-16">
+      {/* Left Background Quote */}
+      <span className="pointer-events-none absolute left-0 top-[-20px] select-none font-serif text-7xl text-gray-800 md:top-[-40px] md:text-9xl">
+        “
+      </span>
 
+      <blockquote className="relative z-10 font-serif text-2xl leading-tight tracking-tight text-gray-100 md:text-3xl lg:text-4xl">
+        If education is not the answer, you are asking the wrong question:{" "}
+        <strong className="font-bold">
+          why it&apos;s time to see planetary crises as a species-wide learning
+          opportunity.
+        </strong>
+      </blockquote>
+
+      {/* Right Background Quote */}
+      <span className="pointer-events-none absolute right-0 bottom-[-20px] select-none font-serif text-7xl text-gray-800 md:bottom-[-40px] md:text-9xl">
+        ”
+      </span>
+
+      <figcaption className="relative z-10 mt-6 text-sm font-semibold uppercase tracking-wider text-[#D9A01B]">
+        — Zak Stein
+      </figcaption>
+    </div>
+  </figure>
+
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      <div>
+        <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
+          Our response is fundamentally educational.
+        </h2>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We recognize the escalating nature of the complex and entangled
+        challenges of this moment—social, ecological, political, and spiritual
+        breakdowns—not as isolated problems, but as{" "}
+        <strong className="font-medium text-foreground">
+          symptoms of deeper cultural patterns: ways of perceiving, valuing, and
+          participating in the world that are no longer serving life.
+        </strong>
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        If the crises of our time are rooted in the ways we have learned to see,
+        relate, and participate in the world, then responding to them requires
+        more than new technological or political solutions. It requires new
+        forms of being human in this world, a deeper transformation in human
+        consciousness and the ways we relate to life.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Education is where that becomes possible, because this is where a
+        civilization transmits what it believes a human being is, the values we
+        stand for, and what is worth offering our lives to. But not the
+        education that prepares people to succeed within the promises of the
+        current system. We mean education that forms people capable of
+        questioning modernity&apos;s foundations and beginning to build what
+        comes next.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        This time between worlds we are in could become a rite of passage for
+        our species — an opening toward greater wisdom, maturity, and reverence
+        for life. But there is actually no guarantee it will. Crisis does not
+        mature us automatically. Without spaces capable of holding the grief,
+        uncertainty, conflict, questioning, imagination, and possibility this
+        moment demands, crisis can just as easily intensify polarization,
+        nihilism, and collapse into simplistic answers.
+      </p>
+
+      {/* Highlighted Architecture Statement */}
+      <div className="relative overflow-hidden border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
+        <p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">
+          Aware of this, we are exploring how to build new forms of{" "}
+          <strong className="font-bold">
+            Wisdom-Centered Educational Architecture:
+          </strong>{" "}
+          transformational structures capable of welcoming those who feel the
+          depth of this crisis in their bones, of holding the magnitude of the
+          devotion they carry, and of forming them into human beings capable of
+          reclaiming leadership as sacred responsibility toward the flourishing
+          of all life.
+        </p>
+      </div>
+
+      {/* Questions Guiding Our Inquiry */}
+      <div className="mt-12 rounded-xl border border-slate-200 bg-slate-100 px-6 py-8 md:px-10 md:py-10">
+        <h3 className="mb-7 font-serif text-2xl font-bold text-foreground md:text-3xl">
+          Questions Guiding Our Inquiry
+        </h3>
+
+        <ol className="space-y-5">
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              01
+            </span>
             <p className="leading-relaxed text-muted-foreground">
-              We recognize the escalating nature of the complex and entangled
-              challenges of the moment we’re living in—social, ecological,
-              political, and spiritual breakdowns—not as isolated problems, but
-              as{" "}
-              <strong className="text-foreground">
-                symptoms of deeper cultural patterns: ways of perceiving,
-                valuing, and participating in the world that are no longer
-                serving life.
-              </strong>
+              Who must we become to embody and steward a culture rooted in
+              wisdom, relational maturity, and reverence for all life?
             </p>
+          </li>
 
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              02
+            </span>
             <p className="leading-relaxed text-muted-foreground">
-              If the crises of our time are rooted in the ways we have learned
-              to see, relate, and participate in the world, then responding to
-              them requires more than new solutions. It requires new forms of
-              being — and becoming — human in this world. We are living through
-              a moment that asks something profound of us. Not only
-              technological or political change, but a deeper transformation in
-              human consciousness and the ways we relate to life.
+              What kinds of educational spaces, communities, and containers can
+              actually cultivate such becoming?
             </p>
+          </li>
 
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              03
+            </span>
             <p className="leading-relaxed text-muted-foreground">
-              This moment could become a rite of passage for our species — an
-              opening toward greater wisdom, maturity, and reverence for life.
-              But there is no guarantee it will. Without spaces capable of
-              holding grief, uncertainty, conflict, and transformation, crisis
-              can just as easily intensify polarization, nihilism, tribalism,
-              and collapse into simplistic answers.
+              How might we reclaim the sacred in the heart of education and
+              culture in a post-secular world?
             </p>
+          </li>
 
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              04
+            </span>
             <p className="leading-relaxed text-muted-foreground">
-              In response, we are exploring how to build new forms of
-              Educational-Relational Architecture: structures for learning,
-              transformation, practice, and relationships designed to support
-              deeper human transformation, collective sensemaking, community
-              building and wiser forms of participation in the web of life.
-              Structures capable of holding the magnitude of the vow, devotion
-              and surrender of those who feel the depth of our crisis and are
-              committed to reclaiming leadership as a sacred responsibility
-              towards the flourishing of all life.
+              What becomes available — to perception, relationship, and action
+              — when we participate in life from greater relational depths?
             </p>
+          </li>
 
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              05
+            </span>
             <p className="leading-relaxed text-muted-foreground">
-              Our work is ultimately an inquiry into{" "}
-              <strong className="text-foreground">
-                who we must become — and what kind of containers must emerge in
-                this time between worlds
-              </strong>
-              , in order for us to develop the capacities to imagine, embody and
-              steward a new cultural paradigm rooted in wisdom, relational
-              sensibility and service to the flourishing of all beings.
+              What is required for us to develop, perceive, and act as a
+              collective body rather than as separate individuals?
             </p>
+          </li>
 
-            <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
-              <Image
-                src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
-                alt="Gathering around the fire"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              06
+            </span>
+            <p className="leading-relaxed text-muted-foreground">
+              What conditions support the move from ontological understanding
+              toward embodied living?
+            </p>
+          </li>
+
+          <li className="flex gap-4">
+            <span className="shrink-0 font-mono text-sm font-bold text-[#D9A01B]">
+              07
+            </span>
+            <p className="leading-relaxed text-muted-foreground">
+              How might we restore intergenerational transmission in a world
+              where elders have not lived the future the young must face?
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
+        <Image
+          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+          alt="Gathering around the fire"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Why Wisdom? Section Content */}
       <section className="w-full xl:w-screen left-1/2 right-1/2 -mx-[50vw] relative bg-white pt-0 pb-16 lg:pt-0 lg:pb-20">
