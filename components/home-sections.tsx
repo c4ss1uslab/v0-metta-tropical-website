@@ -291,24 +291,34 @@ export function IntroductionSection() {
               limitations.
             </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              What we are attempting is neither the importing of Global North
-              frameworks nor the romanticization of ancestral wisdom. It is
-              something more demanding: cultivating genuine dialogue between
-              them and letting each challenge, deepen, and transform the others
-              — and us. We are interested in what becomes possible when
-              systemic understanding, contemplative depth, developmental practice, and
-              the living intelligence of this territory are brought into real
-              relationship, and in how such a convergence can transform the
-              ways we see, relate, and act in the world.
-            </p>
+<div className="max-w-4xl space-y-6 text-left">
+  <p className="leading-relaxed text-muted-foreground">
+    What we are attempting is neither the importing of Global North frameworks
+    nor the romanticization of ancestral wisdom. It is something more
+    demanding: cultivating genuine relationship between them, and letting each
+    challenge, deepen, and transform the others — and us. We are interested in
+    what becomes possible when systemic rigor, contemplative depth,
+    developmental practice, and the living intelligence of this territory are
+    brought into real relationship, and in how such a convergence can transform
+    the ways we see, relate, and act in the world.
+  </p>
 
-            <p className="font-medium leading-relaxed text-foreground">
-              From this encounter, we believe new forms of pedagogy, community, and culture can emerge — forms this century requires, and that could only take root here, where these lineages have a reason to meet, and where the urgency of this moment makes their separation no longer affordable.
-            </p>
-          </div>
-        </div>
-      </section>
+  <p className="leading-relaxed text-muted-foreground">
+    Much of what is most relevant and alive in education today exists in
+    fragments — extraordinary practices, communities, and programs working in
+    isolation from one another. What we sense is missing is a home: an
+    architecture where they can meet with shared purpose, genuine trust, and in
+    service of forming the ones capable of responding to the complex challenges
+    of the metacrisis.
+  </p>
+
+  <p className="font-medium leading-relaxed text-foreground">
+    From this encounter, we believe new forms of pedagogy, community, and
+    culture can emerge — forms this century requires, and that could only take
+    root here, where these lineages have a reason to meet, and where the urgency
+    of this moment makes their separation no longer affordable.
+  </p>
+</div>
 
       {/* Zak Stein Quote */}
       <figure className="relative left-1/2 my-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
