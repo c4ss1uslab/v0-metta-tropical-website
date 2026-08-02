@@ -554,8 +554,8 @@ export function FieldsOfWorkSection() {
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
       description:
         "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We help map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
-      color: "border-[#D9A01B]",
-      textColor: "text-[#B88610]",
+      color: "border-[#D9A01B]", // Amber border
+      textColor: "text-[#B88610]", // Readable Amber
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
       link: "/about#ecosystem",
@@ -564,116 +564,86 @@ export function FieldsOfWorkSection() {
   ]
 
   return (
-    <>
-      {/* Our Work */}
-      <section className="bg-cream py-12 lg:py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-              Our Work
-            </h2>
-
-            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
-              <strong className="text-lg text-foreground">
-                Building Wisdom-Centered Educational Architectures in a Time
-                Between Worlds
-              </strong>
-
-              <br />
-
-              <em className="mt-2 block italic">
-                Supporting individual and collective transformation in response
-                to systemic collapse and in service of a mature, wholesome and
-                life-affirming civilization.
-              </em>
-
-              <span className="mt-6 block leading-relaxed text-muted-foreground">
-                The 3 main pillars of our work are:
-              </span>
-            </p>
-          </div>
-
-          {/* Pillars Grid Layout */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {fields.map((field) => (
-              <div
-                key={field.title}
-                className={`flex flex-col border-t-4 bg-background p-8 ${field.color}`}
-              >
-                <div className="relative mb-6 h-48 overflow-hidden">
-                  <Image
-                    src={field.image}
-                    alt={field.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                <h3 className="font-serif text-2xl font-medium text-foreground">
-                  {field.title}
-                </h3>
-
-                <p className={`mt-2 text-sm font-medium ${field.textColor}`}>
-                  {field.subtitle}
-                </p>
-
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {field.description}
-                </p>
-
-                <Link
-                  href={field.link}
-                  className="mt-6 inline-flex items-center text-sm font-medium text-foreground transition-opacity hover:opacity-70"
-                >
-                  Learn More
-
-                  <svg
-                    className="ml-2 h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke={field.stroke}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Wisdom-Centered Civilizational Architectures */}
-      <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F2C94C] px-6 py-16 text-[#1F2937] md:py-20 lg:py-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight md:text-4xl lg:text-5xl">
-            We are creating the conditions for the emergence of future
-            wisdom-centered civilizational architectures
+    <section className="bg-cream py-12 lg:py-20">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="mb-16 text-center">
+          <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+            Our Work
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed md:text-lg">
-            Beneath everything we build lies a longer horizon and orientation:
-            the emergence of wisdom-centered civilizational architectures — the
-            systems, institutions, shared meanings, and values through which a
-            society can cultivate the capacity for wisdom, relational maturity,
-            and responsibility toward life.
-          </p>
+          <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
+            <strong className="text-lg text-foreground">
+              Building Wisdom-Centered Educational Architectures in a Time
+              Between Worlds
+            </strong>
 
-          <div className="mt-10">
-            <Link
-              href="/wisdom-centered-civilizational-architectures"
-              className="inline-flex items-center justify-center rounded-md bg-[#111827] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#263244] focus:outline-none focus:ring-2 focus:ring-[#111827] focus:ring-offset-2 focus:ring-offset-[#F2C94C]"
-            >
-              Learn more
-            </Link>
-          </div>
+            <br />
+
+            <em className="mt-2 block italic">
+              Supporting individual and collective transformation in response
+              to systemic collapse and in service of a mature, wholesome and
+              life-affirming civilization.
+            </em>
+
+            <span className="mt-6 block leading-relaxed text-muted-foreground">
+              The 3 main pillars of our work are:
+            </span>
+          </p>
         </div>
-      </section>
-    </>
+
+        {/* Pillars Grid Layout */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {fields.map((field) => (
+            <div
+              key={field.title}
+              className={`flex flex-col border-t-4 bg-background p-8 ${field.color}`}
+            >
+              <div className="relative mb-6 h-48 overflow-hidden">
+                <Image
+                  src={field.image}
+                  alt={field.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <h3 className="font-serif text-2xl font-medium text-foreground">
+                {field.title}
+              </h3>
+
+              <p className={`mt-2 text-sm font-medium ${field.textColor}`}>
+                {field.subtitle}
+              </p>
+
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {field.description}
+              </p>
+
+              <Link
+                href={field.link}
+                className="mt-6 inline-flex items-center text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+              >
+                Learn More
+
+                <svg
+                  className="ml-2 h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke={field.stroke}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
