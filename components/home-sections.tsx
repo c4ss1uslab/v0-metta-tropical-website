@@ -96,7 +96,7 @@ const lineages = [
     numeral: "I.",
     title: "Contemplative Traditions",
     description:
-      "The spiritual traditions of the world — especially the Buddhist lineage — which have shaped our understanding of reality and who we are within it, and which uniquely offer teachings and practices for grounding a life in the spiritual dimension and aligning action with love, compassion, and truth.",
+      "The spiritual traditions of the world — especially the Buddhist lineage — which have shaped our understanding of reality and who we are within it, each offering unique teachings and practices for grounding a life in the spiritual dimension and aligning action with love, compassion, and truth.",
     inspirations: [
       {
         name: "Plum Village",
