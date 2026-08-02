@@ -50,8 +50,10 @@ export function HeroSection() {
       Metta Tropical Collective 
     </h1> 
      
-    <p className="mt-18 text-base text-foreground/90 max-w-xl leading-relaxed text-pretty italic"> 
-      Nurturing the emergence of a new generation of <strong>wisdom-centered leaders</strong> wrestling with the world's biggest challenges and committed to cultural regeneration and the flourishing of all life. 
+    <p className="mt-18 max-w-xl text-pretty text-base leading-relaxed text-foreground/90 italic">
+    Cultivating the conditions for wisdom-centered{" "}
+    <strong>leadership</strong>, <strong>communities</strong>, and{" "}
+    <strong>cultures</strong> to emerge and take root in service of the flourishing of all life.
     </p> 
 
     <div className="mt-22 flex flex-col sm:flex-row items-center justify-start gap-4"> 
