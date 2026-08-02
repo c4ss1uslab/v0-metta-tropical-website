@@ -607,6 +607,33 @@ export function FieldsOfWorkSection() {
   )
 }
 
+{/* Wisdom-Centered Civilizational Architectures */}
+<section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F2C94C] px-6 py-16 text-[#1F2937] md:py-20 lg:py-24">
+  <div className="mx-auto max-w-4xl text-center">
+    <h2 className="font-serif text-3xl font-medium leading-tight tracking-tight md:text-4xl lg:text-5xl">
+      We are creating the conditions for the emergence of future
+      wisdom-centered civilizational architectures
+    </h2>
+
+    <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed md:text-lg">
+      Beneath everything we build lies a longer horizon and orientation: the
+      emergence of wisdom-centered civilizational architectures — the systems,
+      institutions, shared meanings, and values through which a society can
+      cultivate the capacity for wisdom, relational maturity, and responsibility
+      toward life.
+    </p>
+
+    <div className="mt-10">
+      <a
+        href="/wisdom-centered-civilizational-architectures"
+        className="inline-flex items-center justify-center rounded-md bg-[#111827] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#263244] focus:outline-none focus:ring-2 focus:ring-[#111827] focus:ring-offset-2 focus:ring-offset-[#F2C94C]"
+      >
+        Learn more
+      </a>
+    </div>
+  </div>
+</section>
+
 export function CTASection() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
