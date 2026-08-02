@@ -147,7 +147,7 @@ export function IntroductionSection() {
       </section>
 
       {/* Confluence of Lineages */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-[#F5F4EE] py-16 lg:py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           {/* Header */}
           <div className="mb-6 max-w-5xl text-left">
