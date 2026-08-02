@@ -381,7 +381,7 @@ export function BridgeSection() {
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
-            As a transformational community, we are committed to bringing back
+            Our collective is committed to bringing back
             into relationship ways of knowing that modernity has often
             separated from one another. We create spaces where a wide range of
             epistemologies, traditions, and forms of intelligence can meet in
