@@ -297,7 +297,7 @@ export function IntroductionSection() {
               something more demanding: cultivating genuine dialogue between
               them and letting each challenge, deepen, and transform the others
               — and us. We are interested in what becomes possible when
-              systemic rigor, contemplative depth, developmental practice, and
+              systemic understanding, contemplative depth, developmental practice, and
               the living intelligence of this territory are brought into real
               relationship, and in how such a convergence can transform the
               ways we see, relate, and act in the world.
