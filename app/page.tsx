@@ -4,7 +4,6 @@ import {
   HeroSection,
   IntroductionSection,
   FieldsOfWorkSection,
-  BridgeSection,
   CTASection,
 } from "@/components/home-sections"
 
@@ -16,7 +15,6 @@ export default function HomePage() {
         <HeroSection />
         <IntroductionSection />
         <FieldsOfWorkSection />
-        <BridgeSection />
         <CTASection />
       </main>
       <Footer />
