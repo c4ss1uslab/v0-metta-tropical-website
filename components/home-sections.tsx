@@ -373,11 +373,9 @@ export function BridgeSection() {
         <div className="mb-16 max-w-4xl space-y-6 text-left">
           <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
             We are rooted in Brazil and Latin America — shaped by this
-            territory, this language, its histories, and the particular ways
-            life grows here. From this ground, we enter into dialogue with a
+            territory, this language, this soil, and its histories. From this ground, we enter into dialogue with a
             global constellation of thinkers, communities, and lineages,
-            allowing distant currents of seeing, being, and knowing to meet,
-            take root, and become something new here.
+            allowing other currents of seeing, being, and knowing to meet, and influence each other.
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
