@@ -789,16 +789,23 @@ export function CTASection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center lg:px-8">
-        <h2 className="font-serif text-3xl font-medium leading-tight text-background md:text-4xl lg:text-5xl">
+        <p className="mx-auto max-w-3xl text-base leading-relaxed text-background/80 md:text-lg">
+          Our aspiration is to help prefigure something that does not yet exist:
+          the next generation of educational and transformational communities
+          built not to sustain modernity, but to help tend its ending and
+          midwife what might come after. What comes next will not arrive fully
+          formed. It will be emergent, experimental, complex, and unfinished.
+          But we have to begin somewhere — experimenting in public and
+          imperfectly, learning from its possibilities and limitations, and
+          contributing to the wider evolution of the educational architectures
+          our time requires.
+        </p>
+
+        <h2 className="mt-14 font-serif text-3xl font-medium leading-tight text-background md:text-4xl lg:text-5xl">
           Ready to go deeper?
         </h2>
 
-        <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-background/80">
-          If you want to discover our work in more depth, we invite you to
-          explore our Fellowship and Theory of Change.
-        </p>
-
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/fellowship"
             className="inline-flex items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610]"
@@ -807,10 +814,10 @@ export function CTASection() {
           </Link>
 
           <Link
-            href="/learn-more"
+            href="/why-now"
             className="inline-flex items-center justify-center border border-background bg-transparent px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-background/10"
           >
-            Learn More
+            Why Now?
           </Link>
         </div>
       </div>
