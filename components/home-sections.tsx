@@ -370,31 +370,33 @@ export function BridgeSection() {
         </div>
 
         {/* Introduction */}
-        <div className="mb-16 max-w-4xl space-y-6 text-left">
+        <div className="mb-8 max-w-4xl space-y-6 text-left">
           <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
             We are rooted in Brazil and Latin America — shaped by this
-            territory, this language, this soil, and its histories. 
+            territory, this language, this soil, and its histories.
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
-            Our collective is committed to bringing back
-            into relationship ways of knowing that modernity has often
-            separated from one another. We create spaces where a wide range of
-            epistemologies, traditions, and forms of intelligence can meet in
-            generative dialogue, offering the conditions for the depth of
-            understanding, practice, and transformation this moment requires.
+            Our collective is committed to bringing back into relationship ways
+            of knowing that modernity has often separated from one another. We
+            create spaces where a wide range of epistemologies, traditions, and
+            forms of intelligence can meet in generative dialogue, offering the
+            conditions for the depth of understanding, practice, and
+            transformation this moment requires.
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
-            At the heart of our work is the creation of what we call a
-            Wisdom-Centered Educational Architecture: a long-term developmental
-            ecology of practices, inquiries, trainings, and relationships
-            designed to hold the long arc of human formation needed for wiser
-            collective sensemaking, communal life, and forms of participation
-            in the web of life. It is within this architecture that multiple
-            lineages come together to evolve one another and transform
-            ourselves into the kinds of beings capable of serving the
-            flourishing of all life in a time of metacrisis.
+            At the heart of our work is the creation of what we call a{" "}
+            <strong className="font-bold text-foreground">
+              Wisdom-Centered Educational Architecture
+            </strong>
+            : a long-term developmental ecology of practices, inquiries,
+            trainings, and relationships designed to hold the long arc of human
+            formation needed for wiser collective sensemaking, communal life,
+            and forms of participation in the web of life. It is within this
+            architecture that multiple lineages come together to evolve one
+            another and transform ourselves into the kinds of beings capable of
+            serving the flourishing of all life in a time of metacrisis.
           </p>
 
           <p className="font-medium leading-relaxed text-foreground">
@@ -403,7 +405,7 @@ export function BridgeSection() {
         </div>
 
         {/* Four Lineages */}
-        <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* I. Contemplative Traditions */}
           <div className="flex flex-col justify-between rounded-xl border border-gray-200 bg-[#FFFDF6] p-6">
             <div>
