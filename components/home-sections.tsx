@@ -379,20 +379,25 @@ export function IntroductionSection() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        Education is where that becomes possible, because this is where a
-        civilization transmits what it believes a human being is, the values we
-        stand for, and what is worth offering our lives to. But not the
-        education that prepares people to succeed within the promises of the
-        current system. We mean education that forms people capable of
-        questioning modernity&apos;s foundations and beginning to build what
+        Education is where that becomes possible, because education is where the
+        intergenerational transmission of a culture takes place — and where the
+        sense of what we are responsible to is either widened or narrowed. It is
+        where one generation passes to the next what it believes a human being
+        is, what is worth living for, and whose lives count. Modern education
+        has largely failed us in this sense. What this moment asks is an
+        education that forms intergenerational and interspecies responsibility:
+        accountability to those who came before us, those who will come after
+        us, and all the beings with whom we share this world. An education that
+        invites us to question modernity&apos;s foundations, to meet the
+        metacrisis with the capacities it demands, and to begin building what
         comes next.
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        This time between worlds we are in could become a rite of passage for
-        our species — an opening toward greater wisdom, maturity, and reverence
-        for life. But there is actually no guarantee it will. Crisis does not
-        mature us automatically. Without spaces capable of holding the grief,
+        This time between worlds could become a rite of passage for our species
+        — an opening toward greater wisdom, maturity, and reverence for life.
+        But there is actually no guarantee it will. Crisis does not mature us
+        automatically. Without spaces capable of holding the grief,
         uncertainty, conflict, questioning, imagination, and possibility this
         moment demands, crisis can just as easily intensify polarization,
         nihilism, and collapse into simplistic answers.
@@ -401,7 +406,7 @@ export function IntroductionSection() {
       {/* Highlighted Architecture Statement */}
       <div className="border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8">
         <p className="leading-relaxed text-muted-foreground">
-          Aware of this, we are exploring how to build new forms of{" "}
+          This is why we are exploring how to build new forms of{" "}
           <strong className="font-bold text-foreground">
             Wisdom-Centered Educational Architecture:
           </strong>{" "}
