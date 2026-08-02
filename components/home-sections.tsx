@@ -319,6 +319,9 @@ export function IntroductionSection() {
     of this moment makes their separation no longer affordable.
   </p>
 </div>
+          </div>
+        </div>
+      </section>
 
       {/* Zak Stein Quote */}
       <figure className="relative left-1/2 my-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
