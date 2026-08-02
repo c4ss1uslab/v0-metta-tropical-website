@@ -46,11 +46,11 @@ export function HeroSection() {
       Welcome to the
     </span>
 
-    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight tracking-tight text-balance"> 
-      Metta Tropical Collective 
-    </h1> 
-     
-    <p className="mt-18 max-w-xl text-pretty text-base leading-relaxed text-foreground/90 italic">
+    <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-balance text-foreground md:text-5xl lg:text-6xl">
+    Metta Tropical Collective
+    </h1>
+
+    <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-foreground/90 italic">
     Cultivating the conditions for wisdom-centered{" "}
     <strong>leadership</strong>, <strong>communities</strong>, and{" "}
     <strong>cultures</strong> to emerge and take root in service of the flourishing of all life.
