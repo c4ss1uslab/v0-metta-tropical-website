@@ -494,8 +494,6 @@ export function IntroductionSection() {
         </div>
       </section>
     </>
-  )
-}
 
 export function FieldsOfWorkSection() {
   const fields = [
