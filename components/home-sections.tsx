@@ -179,8 +179,8 @@ export function IntroductionSection() {
               </strong>
               : a long-term developmental ecology of practices, inquiries,
               trainings, and relationships designed to hold the long arc of
-              human formation needed for wiser collective sensemaking, communal
-              life, and forms of participation in the web of life. It is within
+              human formation needed for wiser forms of collective sensemaking, communal
+              life, and participation in the web of life. It is within
               this architecture that multiple lineages come together to evolve
               one another and transform ourselves into the kinds of beings
               capable of serving the flourishing of all life in a time of
