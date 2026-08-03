@@ -242,9 +242,7 @@ export function IntroductionSection() {
               </p>
 
               <p className="leading-relaxed text-muted-foreground">
-                We come together not to optimize or fix a broken system, in
-                order for it to work for a greater number of humans and species,
-                but to question and transform its own foundations. Through
+                We come together not to optimize a broken system or try to make it work for a greater number of humans and species but to question and transform its foundations. Through
                 transformative developmental spaces, intimate community,
                 radical inquiry and collective practices, we explore the
                 conditions required to shift the ways we see, know, relate, and
