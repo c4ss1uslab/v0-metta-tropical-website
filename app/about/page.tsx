@@ -62,10 +62,16 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Architectures of Transformation */}
+{/* Architectures of Transformation */}
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
+      <div>
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Why We Exist
+        </h2>
+      </div>
+
       <p className="leading-relaxed text-muted-foreground">
         Throughout history, in times of societal collapse, oppression, and
         rupture, the failures and contradictions of our dominant ways of seeing,
@@ -79,7 +85,7 @@ export default function AboutPage() {
         lost.
       </p>
 
-      <div className="space-y-4 border-y border-border py-8">
+      <div className="space-y-4">
         <p className="leading-relaxed text-muted-foreground">
           <strong className="font-semibold text-foreground">
             Mystery Schools
@@ -120,11 +126,12 @@ export default function AboutPage() {
         Each created the structures, practices, relational life, pedagogies,
         and rites of passage needed to orient human beings toward what is most
         meaningful, and to develop the capacities their moment required. They
-        were not schools in the modern sense.{" "}
+        were not schools in the modern sense. They were{" "}
         <strong className="font-semibold text-foreground">
-          They were architectures of transformation — places where new ways of
-          being could be practiced until they became real.
-        </strong>
+          architectures of transformation
+        </strong>{" "}
+        — places where new ways of being could be practiced until they became
+        real.
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
@@ -133,8 +140,9 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        Our mission is to build the architectures of transformation this time
-        requires. We call them{" "}
+        <strong className="font-semibold text-foreground">Our mission</strong>{" "}
+        is to build the architectures of transformation this time requires. We
+        call them{" "}
         <strong className="font-semibold text-foreground">
           wisdom-centered educational architectures
         </strong>
