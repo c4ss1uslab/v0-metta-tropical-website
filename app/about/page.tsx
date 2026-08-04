@@ -396,7 +396,7 @@ export default function AboutPage() {
 
         <div className="border-l-2 border-crimson pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Gates of goodness, truth, and beauty are immeasurable,
+            Gates of love and truth are immeasurable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to enter them.
