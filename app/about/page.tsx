@@ -75,14 +75,10 @@ export default function AboutPage() {
       <p className="leading-relaxed text-muted-foreground">
         Throughout history, in times of societal collapse, oppression, and
         rupture, the failures and contradictions of our dominant ways of seeing,
-        being, and relating in the world become impossible to ignore.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        It is during these moments that new forms of education and community
-        have always emerged to take on the responsibility of envisioning a
-        radically different future and carrying forward what would otherwise be
-        lost.
+        being, and relating in the world become impossible to ignore. It is
+        during these moments that new forms of education and community have
+        always emerged to take on the responsibility of envisioning a radically
+        different future and carrying forward what would otherwise be lost.
       </p>
 
       <div className="space-y-4">
@@ -139,19 +135,24 @@ export default function AboutPage() {
         inherited were built for a world that is ending.
       </p>
 
-      <p className="leading-relaxed text-muted-foreground">
-        <strong className="font-semibold text-foreground">Our mission</strong>{" "}
-        is to build the architectures of transformation this time requires. We
-        call them{" "}
-        <strong className="font-semibold text-foreground">
-          wisdom-centered educational architectures
-        </strong>
-        : long-term developmental ecologies of practice, ritual, inquiry, and
-        relationship, where those who feel the weight of this moment can find
-        the community and formation to become the kinds of humans capable of
-        tending the ending of one world, and of building what will come after
-        it.
-      </p>
+      {/* Mission Highlight */}
+      <div className="rounded-r-xl border-l-4 border-olive bg-[#EEF2E8] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Our mission
+          </strong>{" "}
+          is to build the architectures of transformation this time requires.
+          We call them{" "}
+          <strong className="font-semibold text-foreground">
+            wisdom-centered educational architectures
+          </strong>
+          : long-term developmental ecologies of practice, ritual, inquiry, and
+          relationship, where those who feel the weight of this moment can find
+          the community and formation to become the kinds of humans capable of
+          tending the ending of one world, and of building what will come after
+          it.
+        </p>
+      </div>
     </div>
   </div>
 </section>
