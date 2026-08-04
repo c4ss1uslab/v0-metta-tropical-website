@@ -162,7 +162,7 @@ export default function AboutPage() {
           <strong className="font-semibold text-foreground">
             wisdom-centered educational architectures
           </strong>
-          : long-term developmental ecologies of practice, ritual, inquiry, and
+          : long-term developmental ecologies of practice, tarining, ritual, inquiry, and
           relationship, where those who feel the weight of this moment can find
           the community and formation to become the kinds of humans capable of
           tending the ending of one world, and of building what will come after
