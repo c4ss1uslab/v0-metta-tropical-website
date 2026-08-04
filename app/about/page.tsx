@@ -350,24 +350,28 @@ export default function AboutPage() {
       </h2>
     </div>
 
-    {/* Intro */}
+    {/* Introduction */}
     <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
       <p className="leading-relaxed text-muted-foreground">
-        The work before us is larger than any individual, institution, or
-        generation can complete. The futures we long for will not emerge through
-        intention or strategy alone. They ask for devotion, and a vow represents
-        that by pointing to what we are willing to offer our lives to.
+        We see vows not as promises, nor as rules. They serve as an orientation.
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        These vows are a small, but essential part of this work. A way of
-        orienting ourselves, again and again, toward the kinds of human beings
-        this moment asks us to become.
+        The work before us is larger than any person, institution, or generation
+        can complete. What we long for will not arrive through strategy or good
+        intentions alone. It asks for devotion — for something we are willing
+        to give our lives to, knowing we will not see it finished.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        These vows cannot be kept perfectly, and they cannot be broken. They can
+        only be renewed. We return to them, again and again, to remember what we
+        are for.
       </p>
     </div>
 
     {/* Vows */}
-    <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8">
+    <div className="mx-auto grid max-w-3xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
       {/* Left Column: The Soul Vows */}
       <div className="space-y-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
@@ -396,7 +400,7 @@ export default function AboutPage() {
 
         <div className="border-l-2 border-crimson pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Gates of love and truth are immeasurable,
+            Gates of goodness, truth, and beauty are immeasurable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to enter them.
@@ -416,9 +420,9 @@ export default function AboutPage() {
       </div>
 
       {/* Right Column: The Systemic Vows */}
-      <div className="space-y-8 lg:pl-8">
+      <div className="space-y-8 md:pl-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
-          The Earth Vows
+          The Systemic Vows
         </h3>
 
         <div className="border-l-2 border-olive pl-3 sm:pl-6">
@@ -446,14 +450,14 @@ export default function AboutPage() {
             Life-affirming futures are boundless,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
-              I vow to perceive, create and amplify them.
+              I vow to perceive and create them.
             </span>
           </p>
         </div>
 
         <div className="border-l-2 border-olive pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Planetary flourishing is not inevitable,
+            The flourishing of all life is not inevitable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to offer my life to it.
@@ -461,6 +465,16 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+    </div>
+
+    {/* Sources and Acknowledgment */}
+    <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-8">
+      <p className="text-sm leading-relaxed text-muted-foreground italic md:text-base">
+        These vows are inspired by the four great bodhisattva vows of the
+        Buddhist traditions, and by the post-capitalist vows articulated by
+        Alnoor Ladha and Lynn Murphy. We offer ours as part of our own surrender
+        to what this moment is asking of us.
+      </p>
     </div>
   </div>
 </section>
