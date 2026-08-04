@@ -66,54 +66,78 @@ export default function AboutPage() {
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
+      {/* Heading */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
           Why We Exist
         </h2>
       </div>
 
-      <p className="leading-relaxed text-muted-foreground">
-        Throughout history, in times of societal collapse, oppression, and
-        rupture, the failures and contradictions of our dominant ways of seeing,
-        being, and relating in the world become impossible to ignore. It is
-        during these moments that new forms of education and community have
-        always emerged to take on the responsibility of envisioning a radically
-        different future and carrying forward what would otherwise be lost.
-      </p>
+      {/* Opening Text, Lineages List, and Image */}
+      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
+        {/* Left: Opening Paragraph and List */}
+        <div className="space-y-8">
+          <p className="leading-relaxed text-muted-foreground">
+            Throughout history, in times of societal collapse, oppression, and
+            rupture, the failures and contradictions of our dominant ways of
+            seeing, being, and relating in the world become impossible to
+            ignore. It is during these moments that new forms of education and
+            community have always emerged to take on the responsibility of
+            envisioning a radically different future and carrying forward what
+            would otherwise be lost.
+          </p>
 
-      <div className="space-y-4">
-        <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Mystery Schools
-          </strong>{" "}
-          — initiating seekers into hidden wisdom
-        </p>
+          <div className="space-y-4">
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Mystery Schools
+              </strong>{" "}
+              — initiating seekers into hidden wisdom
+            </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Monasteries
-          </strong>{" "}
-          — sustaining contemplative life and learning across centuries
-        </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Monasteries
+              </strong>{" "}
+              — sustaining contemplative life and learning across centuries
+            </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">Terreiros</strong>{" "}
-          — carrying cosmology and initiation through centuries of erasure
-        </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Terreiros
+              </strong>{" "}
+              — carrying cosmology and initiation through centuries of erasure
+            </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Folk Schools
-          </strong>{" "}
-          — educating for life rather than for credentials
-        </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Folk Schools
+              </strong>{" "}
+              — educating for life rather than for credentials
+            </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">Quilombos</strong>{" "}
-          — building free life outside a system designed to deny it
-        </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Quilombos
+              </strong>{" "}
+              — building free life outside a system designed to deny it
+            </p>
+          </div>
+        </div>
+
+        {/* Right: Image */}
+        <div className="relative min-h-[420px] self-stretch overflow-hidden">
+          <Image
+            src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
+            alt="Black-and-white illustration representing ancestral and initiatory traditions"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-contain"
+          />
+        </div>
       </div>
 
+      {/* Full-Width Text */}
       <p className="leading-relaxed text-muted-foreground">
         Each created the structures, practices, relational life, pedagogies,
         and rites of passage needed to orient human beings toward what is most
@@ -127,7 +151,8 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again, and we are committed to building the architectures of tranformation this time requires.
+        We are living through such a moment again, and we are committed to
+        building the architectures of transformation this time requires.
       </p>
 
       {/* Educational Architecture Highlight */}
