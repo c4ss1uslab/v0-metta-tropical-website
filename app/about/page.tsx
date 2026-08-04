@@ -402,30 +402,34 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-24 lg:py-32 bg-olive">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-              Through these explorations, we hope to continuously learn how to build educational spaces, sanctuaries of transformation and thriving communities.
-            </h2>
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/why-now"
-                className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-              >
-                Understand What's At Stake Now
-              </Link>
-              <Link
-                href="/fellowship"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
-              >
-                Explore the Fellowship
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
+{/* CTA */}
+<section className="bg-olive py-24 lg:py-32">
+  <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+    <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
+      If you want to discover our work in more depth, we invite you to explore
+      our Fellowship and Theory of Change.
+    </h2>
+
+    <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <Link
+        href="/fellowship"
+        className="inline-flex items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610]"
+      >
+        Fellowship
+      </Link>
+
+      <Link
+        href="/theory-of-change"
+        className="inline-flex items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90"
+      >
+        Theory of Change
+      </Link>
+    </div>
+  </div>
+</section>
+</main>
+
+<Footer />
+</>
+)
 }
