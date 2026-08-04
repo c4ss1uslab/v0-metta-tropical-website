@@ -392,7 +392,7 @@ export default function AboutPage() {
             Greed and hate without limit,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
-              I vow to end them.
+              I vow to transform them.
             </span>
           </p>
         </div>
@@ -409,10 +409,10 @@ export default function AboutPage() {
 
         <div className="border-l-2 border-crimson pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            The path of awakening and healing is endless,
+            The path of awakening and healing is unsurpassable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
-              I vow to offer my life to it.
+              I vow to embody it.
             </span>
           </p>
         </div>
