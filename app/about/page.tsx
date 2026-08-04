@@ -403,24 +403,24 @@ export default function AboutPage() {
         </section>
 
 {/* CTA */}
-<section className="bg-olive py-24 lg:py-32">
+<section className="bg-olive py-14 lg:py-16">
   <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
+    <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground">
       If you want to discover our work in more depth, we invite you to explore
       our Fellowship and Theory of Change.
-    </h2>
+    </p>
 
-    <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+    <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
       <Link
         href="/fellowship"
-        className="inline-flex items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610]"
+        className="inline-flex w-full items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610] sm:w-56"
       >
-        Fellowship
+        Explore the Fellowship
       </Link>
 
       <Link
         href="/theory-of-change"
-        className="inline-flex items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90"
+        className="inline-flex w-full items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90 sm:w-56"
       >
         Theory of Change
       </Link>
