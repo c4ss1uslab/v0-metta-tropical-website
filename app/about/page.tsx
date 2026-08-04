@@ -364,9 +364,8 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        These vows cannot be kept perfectly, and they cannot be broken. They can
-        only be renewed. We return to them, again and again, to remember what we
-        are for.
+        These vows are a small, but essential part of this work. A way of
+        reminding ourselves, again and again, what we are here for.
       </p>
     </div>
 
