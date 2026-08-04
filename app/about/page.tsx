@@ -131,8 +131,7 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again, and the institutions we have
-        inherited were built for a world that is ending.
+        We are living through such a moment again, and we are committed to building the architectures of transformation this time requires.
       </p>
 
       {/* Mission Highlight */}
