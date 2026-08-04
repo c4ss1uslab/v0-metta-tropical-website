@@ -418,7 +418,7 @@ export default function AboutPage() {
       {/* Right Column: The Systemic Vows */}
       <div className="space-y-8 lg:pl-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
-          The Systemic Vows
+          The Earth Vows
         </h3>
 
         <div className="border-l-2 border-olive pl-3 sm:pl-6">
