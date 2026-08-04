@@ -370,15 +370,15 @@ export default function AboutPage() {
     </div>
 
     {/* Vows */}
-    <div className="mx-auto grid max-w-3xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
+    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
       {/* Left Column: The Soul Vows */}
       <div className="space-y-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
           The Soul Vows
         </h3>
 
-        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
             Living beings are numberless,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
@@ -387,9 +387,9 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Greed and hate without limit,
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Delusions of separation without limit,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to transform them.
@@ -397,9 +397,9 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Gates truth and love are immeasurable,
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Gates of truth and love are immeasurable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to enter them.
@@ -407,8 +407,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
             The path of awakening and healing is unsurpassable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
@@ -418,14 +418,14 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Right Column: The Systemic Vows */}
-      <div className="space-y-8 md:pl-8">
+      {/* Right Column: The Earth Vows */}
+      <div className="space-y-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
           The Earth Vows
         </h3>
 
-        <div className="border-l-2 border-olive pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
             The roots of the metacrisis are interconnected,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
@@ -434,9 +434,9 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-olive pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Delusions of separation are inexhaustible,
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Delusions of capitalist modernity are inexhaustible,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to transform them.
@@ -444,8 +444,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-olive pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
             Life-affirming futures are boundless,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
@@ -454,8 +454,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-l-2 border-olive pl-3 sm:pl-6">
-          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
             Planetary flourishing is not inevitable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
