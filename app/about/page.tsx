@@ -62,6 +62,92 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Architectures of Transformation */}
+<section className="bg-background py-16 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      <p className="leading-relaxed text-muted-foreground">
+        Throughout history, in times of societal collapse, oppression, and
+        rupture, the failures and contradictions of our dominant ways of seeing,
+        being, and relating in the world become impossible to ignore.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        It is during these moments that new forms of education and community
+        have always emerged to take on the responsibility of envisioning a
+        radically different future and carrying forward what would otherwise be
+        lost.
+      </p>
+
+      <div className="space-y-4 border-y border-border py-8">
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Mystery Schools
+          </strong>{" "}
+          — initiating seekers into hidden wisdom
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Monasteries
+          </strong>{" "}
+          — sustaining contemplative life and learning across centuries
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Terreiros
+          </strong>{" "}
+          — carrying cosmology and initiation through centuries of erasure
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Folk Schools
+          </strong>{" "}
+          — educating for life rather than for credentials
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-semibold text-foreground">
+            Quilombos
+          </strong>{" "}
+          — building free life outside a system designed to deny it
+        </p>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Each created the structures, practices, relational life, pedagogies,
+        and rites of passage needed to orient human beings toward what is most
+        meaningful, and to develop the capacities their moment required. They
+        were not schools in the modern sense.{" "}
+        <strong className="font-semibold text-foreground">
+          They were architectures of transformation — places where new ways of
+          being could be practiced until they became real.
+        </strong>
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We are living through such a moment again, and the institutions we have
+        inherited were built for a world that is ending.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Our mission is to build the architectures of transformation this time
+        requires. We call them{" "}
+        <strong className="font-semibold text-foreground">
+          wisdom-centered educational architectures
+        </strong>
+        : long-term developmental ecologies of practice, ritual, inquiry, and
+        relationship, where those who feel the weight of this moment can find
+        the community and formation to become the kinds of humans capable of
+        tending the ending of one world, and of building what will come after
+        it.
+      </p>
+    </div>
+  </div>
+</section>
+
 
         {/* Why Metta? */}
         <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream">
