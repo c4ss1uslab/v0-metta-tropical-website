@@ -97,9 +97,7 @@ export default function AboutPage() {
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Terreiros
-          </strong>{" "}
+          <strong className="font-semibold text-foreground">Terreiros</strong>{" "}
           — carrying cosmology and initiation through centuries of erasure
         </p>
 
@@ -111,9 +109,7 @@ export default function AboutPage() {
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Quilombos
-          </strong>{" "}
+          <strong className="font-semibold text-foreground">Quilombos</strong>{" "}
           — building free life outside a system designed to deny it
         </p>
       </div>
@@ -131,16 +127,13 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again, and we are committed to building the architectures of transformation this time requires.
+        We are living through such a moment again, and the institutions we have
+        inherited were built for a world that is ending.
       </p>
 
-      {/* Mission Highlight */}
-      <div className="rounded-r-xl border-l-4 border-olive bg-[#EEF2E8] px-6 py-6 md:px-8 md:py-7">
+      {/* Educational Architecture Highlight */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
         <p className="leading-relaxed text-muted-foreground">
-          <strong className="font-semibold text-foreground">
-            Our mission
-          </strong>{" "}
-          is to build the architectures of transformation this time requires.
           We call them{" "}
           <strong className="font-semibold text-foreground">
             wisdom-centered educational architectures
