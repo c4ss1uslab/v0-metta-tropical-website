@@ -399,7 +399,7 @@ export default function AboutPage() {
 
         <div className="border-l-2 border-crimson pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            Gates of goodness, truth, and beauty are immeasurable,
+            Gates truth and love are immeasurable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to enter them.
@@ -421,7 +421,7 @@ export default function AboutPage() {
       {/* Right Column: The Systemic Vows */}
       <div className="space-y-8 md:pl-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
-          The Systemic Vows
+          The Earth Vows
         </h3>
 
         <div className="border-l-2 border-olive pl-3 sm:pl-6">
@@ -449,14 +449,14 @@ export default function AboutPage() {
             Life-affirming futures are boundless,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
-              I vow to perceive and create them.
+              I vow to perceive, create and amplify them.
             </span>
           </p>
         </div>
 
         <div className="border-l-2 border-olive pl-3 sm:pl-6">
           <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
-            The flourishing of all life is not inevitable,
+            Planetary flourishing is not inevitable,
             <br />
             <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
               I vow to offer my life to it.
