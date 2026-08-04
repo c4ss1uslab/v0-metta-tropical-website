@@ -151,8 +151,8 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again, and we are committed to
-        building the architectures of transformation this time requires.
+        We are living through such a moment again, and our commitment is to
+        build the architectures of transformation this time requires.
       </p>
 
       {/* Educational Architecture Highlight */}
@@ -381,7 +381,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Living beings are numberless,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to free them.
             </span>
           </p>
@@ -391,7 +391,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Delusions of separation without limit,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to transform them.
             </span>
           </p>
@@ -401,7 +401,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Gates of truth and love are immeasurable,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to enter them.
             </span>
           </p>
@@ -411,7 +411,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             The path of awakening and healing is unsurpassable,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to embody it.
             </span>
           </p>
@@ -428,7 +428,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             The roots of the metacrisis are interconnected,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to understand them.
             </span>
           </p>
@@ -438,7 +438,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Delusions of capitalist modernity are inexhaustible,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to transform them.
             </span>
           </p>
@@ -448,7 +448,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Life-affirming futures are boundless,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to perceive, create and amplify them.
             </span>
           </p>
@@ -458,7 +458,7 @@ export default function AboutPage() {
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Planetary flourishing is not inevitable,
             <br />
-            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
               I vow to offer my life to it.
             </span>
           </p>
