@@ -341,91 +341,129 @@ export default function AboutPage() {
 </section>
 
 {/* Our Vows */}
-        <section className="py-16 lg:py-20 bg-[#FFFDF6]">
-          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Our Vows
-              </h2>
-            </div>
+<section className="bg-[#FFFDF6] py-16 lg:py-20">
+  <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+        Our Vows
+      </h2>
+    </div>
 
-            {/* Intro */}
-            <div className="max-w-3xl mx-auto space-y-6 mb-16 text-center sm:text-left">
-              <p className="text-muted-foreground leading-relaxed">
-                The work before us is larger than any individual, institution, or generation can complete. The futures we long for will not emerge through intention or strategy alone. They ask for devotion, and a vow represents that by pointing to what we are willing to offer our lives to.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                These vows are a small, but essential part of this work. A way of orienting ourselves, again and again, toward the kinds of human beings this moment asks us to become.
-              </p>
-            </div>
+    {/* Intro */}
+    <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
+      <p className="leading-relaxed text-muted-foreground">
+        The work before us is larger than any individual, institution, or
+        generation can complete. The futures we long for will not emerge through
+        intention or strategy alone. They ask for devotion, and a vow represents
+        that by pointing to what we are willing to offer our lives to.
+      </p>
 
-            {/* Vows — side-by-side layout brought closer together (~2cm gap) with no middle divider */}
-            <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
-              {/* Left Column: first set of vows */}
-              <div className="space-y-8">
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Living beings are numberless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to serve them</span>
-                  </p>
-                </div>
+      <p className="leading-relaxed text-muted-foreground">
+        These vows are a small, but essential part of this work. A way of
+        orienting ourselves, again and again, toward the kinds of human beings
+        this moment asks us to become.
+      </p>
+    </div>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Greed and hate without limit,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to welcome, love and transform them</span>
-                  </p>
-                </div>
+    {/* Vows */}
+    <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8">
+      {/* Left Column: The Soul Vows */}
+      <div className="space-y-8">
+        <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
+          The Soul Vows
+        </h3>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Gates of truth without measure,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to know and embody them</span>
-                  </p>
-                </div>
+        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            Living beings are numberless,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to free them.
+            </span>
+          </p>
+        </div>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The path of awakening and freedom is endless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to offer my life to it</span>
-                  </p>
-                </div>
-              </div>
+        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            Greed and hate without limit,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to end them.
+            </span>
+          </p>
+        </div>
 
-              {/* Right Column: second set of vows */}
-              <div className="space-y-8 lg:pl-8">
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The root causes of the metacrisis are deeply interconnected,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to understand and respond to them</span>
-                  </p>
-                </div>
+        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            Gates of goodness, truth, and beauty are immeasurable,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to enter them.
+            </span>
+          </p>
+        </div>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Delusions of separation from capitalist modernity are inexhaustible,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to recognize and transform them</span>
-                  </p>
-                </div>
+        <div className="border-l-2 border-crimson pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            The path of awakening and healing is endless,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to offer my life to it.
+            </span>
+          </p>
+        </div>
+      </div>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Alternatives for life-affirming futures are boundless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to imagine, create and amplify them</span>
-                  </p>
-                </div>
+      {/* Right Column: The Systemic Vows */}
+      <div className="space-y-8 lg:pl-8">
+        <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
+          The Systemic Vows
+        </h3>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The flourishing of all life is sacred, precious and not inevitable,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to offer our lives in service to it</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="border-l-2 border-olive pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            The roots of the metacrisis are interconnected,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to understand them.
+            </span>
+          </p>
+        </div>
+
+        <div className="border-l-2 border-olive pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            Delusions of separation are inexhaustible,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to transform them.
+            </span>
+          </p>
+        </div>
+
+        <div className="border-l-2 border-olive pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            Life-affirming futures are boundless,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to perceive and create them.
+            </span>
+          </p>
+        </div>
+
+        <div className="border-l-2 border-olive pl-3 sm:pl-6">
+          <p className="font-serif text-base leading-relaxed text-foreground italic md:text-lg">
+            The flourishing of all life is not inevitable,
+            <br />
+            <span className="mt-1 block text-sm font-normal text-[#D9A01B] not-italic md:text-base">
+              I vow to offer my life to it.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {/* CTA */}
 <section className="bg-olive py-14 lg:py-16">
