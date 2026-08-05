@@ -263,7 +263,7 @@ export function IntroductionSection() {
       </section>
 
 {/* Why We Exist */}
-<section className="isolate bg-[#F3F0E7] py-16 lg:py-24">
+<section className="isolate bg-[#F8F6F1] py-16 lg:py-24">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-10">
@@ -326,7 +326,7 @@ export function IntroductionSection() {
       </div>
 
       {/* Right Column: Image */}
-      <div className="relative min-h-[460px] overflow-hidden bg-[#F3F0E7] lg:min-h-0">
+      <div className="relative min-h-[460px] overflow-hidden bg-[#F8F6F1] lg:min-h-0">
         <Image
           src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
           alt="Historical illustration representing ancestral, contemplative, and initiatory traditions"
