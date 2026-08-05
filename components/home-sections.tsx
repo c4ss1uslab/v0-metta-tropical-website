@@ -387,8 +387,8 @@ export function IntroductionSection() {
   </div>
 </section>
 
-      {/* Confluence of Lineages */}
-      <section className="bg-white py-16 lg:py-24">
+{/* Confluence of Lineages */}
+<section className="bg-white py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-6 max-w-5xl text-left">
@@ -401,34 +401,36 @@ export function IntroductionSection() {
     <div className="mb-8 max-w-4xl space-y-6 text-left">
       <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
         We are rooted in Brazil and Latin America — shaped by this territory,
-        this language, this soil, and its histories.
+        this language, and its histories.
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        Our collective is committed to bringing back into relationship ways of
-        knowing that modernity has often separated from one another. We create
-        spaces where a wide range of epistemologies, traditions, and forms of
-        intelligence can meet in generative dialogue, offering the conditions
-        for the depth of understanding, practice, and transformation this
-        moment requires.
+        Across the world, remarkable individuals, communities, and initiatives
+        are already carrying the seeds of a new cultural paradigm. Spiritual
+        practitioners, educators, artists, systems thinkers, regenerative
+        projects, and Indigenous communities have been creating and protecting
+        essential cosmologies, practices, ideas, and forms of wisdom for
+        navigating the metacrisis.
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        At the heart of our work is the creation of what we call a{" "}
-        <strong className="font-bold text-foreground">
-          Wisdom-Centered Educational Architecture
-        </strong>
-        : a long-term developmental ecology of practices, inquiries, trainings,
-        and relationships designed to hold the long arc of human formation
-        needed for wiser forms of collective sensemaking, communal life, and
-        participation in the web of life. It is within this architecture that
-        multiple lineages come together to evolve one another and transform
-        ourselves into the kinds of beings capable of serving the flourishing
-        of all life in a time of metacrisis.
+        Yet most remain at the edges of our culture, isolated within their own
+        communities, languages, geographies, or fields of practice. They rarely
+        meet each other, and almost never within a container that could hold
+        them over time, around a shared purpose, in service of forming a
+        different kind of leadership. Without that, each remains an offering
+        someone might encounter, rather than a path someone could walk.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        This is what our educational architecture is for: to offer a home where
+        these ways of seeing, being, and knowing can come back into relationship
+        — and where the depth of understanding, practice, and transformation
+        this moment asks of us becomes possible.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        Our work emerges at the intersection of four main lineages:
+        Our work emerges from the confluence of four main lineages:
       </p>
     </div>
 
@@ -532,28 +534,19 @@ export function IntroductionSection() {
       <p className="leading-relaxed text-muted-foreground">
         What we are attempting is neither the importing of Global North
         frameworks nor the romanticization of ancestral wisdom. It is something
-        more demanding: cultivating genuine relationship between them, and
-        letting each challenge, deepen, and transform the others — and us. We
-        are interested in what becomes possible when systemic rigor,
-        contemplative depth, developmental practice, and the living intelligence
-        of this territory are brought into real relationship, and in how such a
-        convergence can transform the ways we see, relate, and act in the world.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        Much of what is most relevant and alive in education today exists in
-        fragments — extraordinary practices, communities, and programs working
-        in isolation from one another. What we sense is missing is a home: an
-        architecture where they can meet with shared purpose, genuine trust, and
-        in service of forming the ones capable of responding to the complex
-        challenges of the metacrisis.
+        more demanding: holding them in genuine relationship, and letting each
+        challenge, deepen, and transform the others — and us. We are interested
+        in what becomes possible when systemic rigor, contemplative depth,
+        developmental practice, and the living intelligence of this territory
+        meet, and in how such a convergence can transform the ways we see,
+        relate, and act in the world.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        From this encounter, we believe new forms of pedagogy, community, and
-        culture can emerge — forms this century requires, and that could only
-        take root here, where these lineages have a reason to meet, and where
-        the urgency of this moment makes their separation no longer affordable.
+        From this encounter, new forms of pedagogy, community, and culture can
+        emerge — forms this century requires, and that could only take root
+        here, where these lineages have a reason to meet, and where the urgency
+        of this moment makes their separation no longer affordable.
       </p>
     </div>
   </div>
