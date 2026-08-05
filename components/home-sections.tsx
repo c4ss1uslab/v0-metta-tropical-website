@@ -262,6 +262,135 @@ export function IntroductionSection() {
         </div>
       </section>
 
+      {/* Why We Exist */}
+      <section className="bg-[#F3F0E7] py-16 lg:py-24">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          {/* Header */}
+          <div className="mb-10">
+            <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+              Why We Exist
+            </h2>
+          </div>
+
+        {/* Opening Text, Historical Examples, and Image */}
+          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-2 lg:gap-14">
+            {/* Left Column */}
+            <div className="space-y-8">
+              <p className="leading-relaxed text-muted-foreground">
+                Throughout history, in times of societal collapse, oppression,
+                and rupture, the failures and contradictions of our dominant
+                ways of seeing, being, and relating in the world become
+                impossible to ignore. It is during these moments that new forms
+                of education and community have always emerged to take on the
+                responsibility of envisioning a radically different future and
+                carrying forward what would otherwise be lost.
+              </p>
+
+              {/* Historical Examples */}
+              <div className="space-y-4">
+                <p className="leading-relaxed text-muted-foreground">
+                  <strong className="font-semibold text-foreground">
+                    Mystery Schools
+                  </strong>{" "}
+                  — initiating seekers into hidden wisdom
+                </p>
+
+                <p className="leading-relaxed text-muted-foreground">
+                  <strong className="font-semibold text-foreground">
+                    Monasteries
+                  </strong>{" "}
+                  — sustaining contemplative life and learning across centuries
+                </p>
+
+                <p className="leading-relaxed text-muted-foreground">
+                  <strong className="font-semibold text-foreground">
+                    Terreiros
+                  </strong>{" "}
+                  — carrying cosmology and initiation through centuries of
+                  erasure
+                </p>
+
+                <p className="leading-relaxed text-muted-foreground">
+                  <strong className="font-semibold text-foreground">
+                    Folk Schools
+                  </strong>{" "}
+                  — educating for life rather than for credentials
+                </p>
+
+                <p className="leading-relaxed text-muted-foreground">
+                  <strong className="font-semibold text-foreground">
+                    Quilombos
+                  </strong>{" "}
+                  — building free life outside a system designed to deny it
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: Image */}
+            <div className="relative min-h-[460px] overflow-hidden lg:min-h-0">
+              <Image
+                src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
+                alt="Historical illustration representing ancestral, contemplative, and initiatory traditions"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-contain object-center"
+              />
+            </div>
+          </div>
+
+          {/* Full-Width Continuation */}
+          <div className="mt-10 space-y-8">
+            <p className="leading-relaxed text-muted-foreground">
+              Each created the structures, practices, relational life,
+              pedagogies, and rites of passage needed to orient human beings
+              toward what is most meaningful, and to develop the capacities
+              their moment required. They were not schools in the modern sense.
+              They were{" "}
+              <strong className="font-semibold text-foreground">
+                architectures of transformation
+              </strong>{" "}
+              — places where new ways of being could be practiced until they
+              became real.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              We are living through such a moment again. Our commitment is to
+              build the architectures of transformation this time requires.
+            </p>
+
+            {/* Wisdom-Centered Educational Architecture Highlight */}
+            <div className="space-y-6 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
+              <p className="leading-relaxed text-muted-foreground">
+                We call them{" "}
+                <strong className="font-semibold text-foreground">
+                  wisdom-centered educational architectures
+                </strong>
+                : developmental ecologies of practice, training, ritual,
+                inquiry, and relationship, built to hold the long arc of human
+                formation this moment demands — not preparing people to succeed
+                in the world as it is, but supporting them to question its
+                foundations and develop the spiritual depth, relational
+                maturity, systemic understanding, and reverence for life
+                required to hospice what is ending while cultivating the
+                foundations of what comes next.
+              </p>
+
+              <p className="leading-relaxed text-muted-foreground">
+                These architectures exist to hold the magnitude of aspiration
+                and devotion of those who feel the depth of our crisis in their
+                bones, long to give their lives to something worthy of this
+                moment, yet struggle to find communities capable of
+                recognizing, accompanying, and nurturing such commitment.
+              </p>
+
+              <p className="font-medium leading-relaxed text-foreground">
+                This is what we are building.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Confluence of Lineages */}
       <section className="bg-white py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
