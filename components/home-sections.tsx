@@ -223,8 +223,7 @@ export function IntroductionSection() {
               </div>
 
               <p className="leading-relaxed text-muted-foreground">
-                And many of our attempts to respond have only been deepening the
-                crisis—reproducing the very logic of separation, extraction and
+                And many of our attempts to respond to our crisis have only deepen it—reproducing the very logic of separation, extraction and
                 control that created it.
               </p>
 
