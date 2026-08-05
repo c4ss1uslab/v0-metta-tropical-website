@@ -352,8 +352,8 @@ export function IntroductionSection() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again. Our commitment is to build
-        the architectures of transformation this time requires.
+        We are living through such a moment again, and our commitment is to build
+        the architectures of transformation this time is asking for.
       </p>
 
       {/* Wisdom-Centered Educational Architecture Highlight */}
@@ -368,7 +368,7 @@ export function IntroductionSection() {
           moment demands — not preparing people to succeed in the world as it
           is, but supporting them to question its foundations and develop the
           spiritual depth, relational maturity, systemic understanding, and
-          reverence for life required to hospice what is ending while
+          reverence for life required to hospice a world that is ending while
           cultivating the foundations of what comes next.
         </p>
 
