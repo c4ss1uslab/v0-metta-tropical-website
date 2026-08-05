@@ -97,114 +97,115 @@ const lineages = [
     numeral: "I.",
     title: "Contemplative Traditions",
     description:
-      "The spiritual traditions of the world — especially the Buddhist lineage — which have shaped our understanding of reality and who we are within it, each one offering unique teachings and practices for grounding a life in the spiritual dimension and aligning action with love, compassion, and truth.",
-inspirations: [
-  {
-    name: "Plum Village",
-    logo: images.plumvillage,
+      "The spiritual traditions of the world — especially the Buddhist lineage — which have shaped our understanding of reality and who we are within it. Each offers distinct teachings and practices for grounding a life in the spiritual dimension and aligning action with love, compassion, and truth.",
+    inspirations: [
+      {
+        name: "Plum Village",
+        logo: "/logos/plum-village.png",
+      },
+      {
+        name: "CCARE — Center for Compassion and Altruism Research and Education",
+        logo: "/logos/ccare.png",
+      },
+      {
+        name: "Vipassana — Goenka Tradition",
+        logo: "/logos/vipassana-goenka.png",
+      },
+      {
+        name: "The Center for World Philosophy & Religion",
+        logo: "/logos/center-world-philosophy-religion.png",
+      },
+      {
+        name: "Great Vow Zen Monastery",
+        logo: "/logos/great-vow-zen-monastery.png",
+      },
+    ],
   },
   {
-    name: "CCARE — Center for Compassion and Altruism Research and Education",
-    logo: "/logos/ccare.png",
+    numeral: "II.",
+    title: "Systemic Inquiry",
+    description:
+      "The rigor of systems and complexity science, the regenerative movement, decolonial thought, metamodernism, and the metacrisis conversation — which have helped us perceive the historical, ecological, and civilizational patterns producing this moment, rather than reacting to its symptoms.",
+    inspirations: [
+      {
+        name: "Schumacher College",
+        logo: "/logos/schumacher-college.png",
+      },
+      {
+        name: "Warm Data Lab",
+        logo: "/logos/warm-data-lab.png",
+      },
+      {
+        name: "The Civilization Research Institute",
+        logo: "/logos/civilization-research-institute.png",
+      },
+      {
+        name: "Gesturing Towards Decolonial Futures",
+        logo: "/logos/gtdf.png",
+      },
+      {
+        name: "Perspectiva",
+        logo: "/logos/perspectiva.png",
+      },
+    ],
   },
   {
-    name: "Vipassana — Goenka Tradition",
-    logo: images.vipassana,
+    numeral: "III.",
+    title: "Developmental Practice",
+    description:
+      "The fields of human development, depth psychology, parts work, trauma integration, emotional regulation, and relational practice — which help us understand how human beings actually grow up, mature, and come to embody responsible ways of relating to all life.",
+    inspirations: [
+      {
+        name: "Aletheia Coaching",
+        logo: "/logos/aletheia-coaching.png",
+      },
+      {
+        name: "Internal Family Systems",
+        logo: "/logos/internal-family-systems.png",
+      },
+      {
+        name: "Transformational Connection",
+        logo: "/logos/transformational-connection.png",
+      },
+      {
+        name: "ART International — Authentic Relating Training",
+        logo: "/logos/art-international.png",
+      },
+      {
+        name: "Animas Valley Institute",
+        logo: "/logos/animas-valley-institute.png",
+      },
+    ],
   },
   {
-    name: "The Center for World Philosophy & Religion",
-    logo: "/logos/center-world-philosophy-religion.png",
+    numeral: "IV.",
+    title: "Ancestral Ways of Being",
+    description:
+      "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
+    icon: "https://i.postimg.cc/rFFDN4hp/Cocar-INdigena.jpg",
+    inspirations: [
+      {
+        name: "Kilombo Tenondé",
+        logo: "/logos/kilombo-tenonde.png",
+      },
+      {
+        name: "Tenondé Porã",
+        logo: "/logos/tenonde-pora.png",
+      },
+      {
+        name: "Ciclo Selvagem",
+        logo: "/logos/ciclo-selvagem.png",
+      },
+      {
+        name: "Teia dos Povos",
+        logo: "/logos/teia-dos-povos.png",
+      },
+      {
+        name: "Instituto Favela da Paz",
+        logo: "/logos/instituto-favela-da-paz.png",
+      },
+    ],
   },
-  {
-    name: "Great Vow Zen Monastery",
-    logo: images.greatvow,
-  },
-],
-},
-{
-  numeral: "II.",
-  title: "Systemic Inquiry",
-  description:
-    "The rigor of systems and complexity science, the regenerative movement, decolonial thought, metamodernism, and the metacrisis conversation — which have helped us perceive the historical, ecological, and civilizational patterns producing this moment, rather than reacting to its symptoms.",
-  inspirations: [
-    {
-      name: "Schumacher College",
-      logo: images.schumacher,
-    },
-    {
-      name: "Warm Data Lab",
-      logo: images.warmdata,
-    },
-    {
-      name: "The Civilization Research Institute",
-      logo: images.civilizationresearchinstitute,
-    },
-    {
-      name: "Gesturing Towards Decolonial Futures",
-      logo: images.gtdf,
-    },
-    {
-      name: "Perspectiva",
-      logo: images.perspectiva,
-    },
-  ],
-},
-{
-  numeral: "III.",
-  title: "Developmental Practice",
-  description:
-    "The fields of human development, depth psychology, parts work, trauma integration, emotional regulation, and relational practice — which help us understand how human beings actually grow up, mature, and come to embody responsible ways of relating to all life.",
-  inspirations: [
-    {
-      name: "Aletheia Coaching",
-      logo: images.aletheia,
-    },
-    {
-      name: "Internal Family Systems",
-      logo: images.internalfamilysystems,
-    },
-    {
-      name: "Transformational Connection",
-      logo: images.transformationalconnection,
-    },
-    {
-      name: "ART International — Authentic Relating Training",
-      logo: images.ARTauthenticrelating,
-    },
-    {
-      name: "Animas Valley Institute",
-      logo: images.animasvalley,
-    },
-  ],
-},
-{
-  numeral: "IV.",
-  title: "Ancestral Ways of Being",
-  description:
-    "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to value.",
-  inspirations: [
-    {
-      name: "Kilombo Tenondé",
-      logo: images.kilombotenonde,
-    },
-    {
-      name: "Tenondé Porã",
-      logo: images.tenondepora,
-    },
-    {
-      name: "Ciclo Selvagem",
-      logo: images.selvagem,
-    },
-    {
-      name: "Teia dos Povos",
-      logo: images.teiadospovos,
-    },
-    {
-      name: "Instituto Favela da Paz",
-      logo: images.faveladapaz,
-    },
-  ],
-},
 ]
 
 export function IntroductionSection() {
@@ -439,16 +440,31 @@ export function IntroductionSection() {
       {lineages.map((lineage) => (
         <article
           key={lineage.title}
-          className="group flex h-full flex-col rounded-xl border border-gray-200 bg-[#FFFDF6] p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#D9A01B]/50 hover:shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
+          className="group relative flex h-full flex-col rounded-xl border border-gray-200 bg-[#FFFDF6] p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#D9A01B]/50 hover:shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
         >
           <div>
-            <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
-              {lineage.numeral}
-            </span>
+            {/* Optional lineage icon */}
+            {lineage.icon && (
+              <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
+                <Image
+                  src={lineage.icon}
+                  alt={`${lineage.title} lineage symbol`}
+                  fill
+                  sizes="56px"
+                  className="object-cover"
+                />
+              </div>
+            )}
 
-            <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
-              {lineage.title}
-            </h3>
+            <div className={lineage.icon ? "pr-16" : ""}>
+              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                {lineage.numeral}
+              </span>
+
+              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                {lineage.title}
+              </h3>
+            </div>
 
             <p className="text-sm leading-relaxed text-muted-foreground">
               {lineage.description}
