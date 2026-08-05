@@ -263,7 +263,7 @@ export function IntroductionSection() {
       </section>
 
 {/* Why We Exist */}
-<section className="bg-[#F3F0E7] py-16 lg:py-24">
+<section className="isolate bg-[#F3F0E7] py-16 lg:py-24">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-10">
@@ -332,7 +332,7 @@ export function IntroductionSection() {
           alt="Historical illustration representing ancestral, contemplative, and initiatory traditions"
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-contain object-center mix-blend-multiply"
+          className="object-contain object-center mix-blend-darken"
         />
       </div>
     </div>
