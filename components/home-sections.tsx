@@ -875,32 +875,32 @@ export function FieldsOfWorkSection() {
       title: "1. Transformative Educational Lab",
       subtitle: "Education for the end of the world as we know it",
       description:
-        "The living laboratory where our Educational Architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs—developed in-house and in collaboration with fellow educators—we keep radically experimenting with what it takes to build the foundations for a wisdom-centered education.",
+        "The living laboratory where our educational architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs — developed in-house and in collaboration with fellow educators — we keep experimenting with what it actually takes to form human beings prepared for this moment.",
       color: "border-olive",
       textColor: "text-olive",
       image:
         "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
       link: "/about#educational-lab",
-      stroke: "#3d4a3e", // Dark Olive
+      stroke: "#3d4a3e",
     },
     {
       title: "2. Research & Inquiry",
-      subtitle: "Investigating the most pressing questions shaping our world",
+      subtitle: "Investigating the questions shaping our world",
       description:
-        "The space of deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies and curated collections, we contribute to the kind of narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
+        "Deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies, and curated collections, we contribute to the narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
       color: "border-cyan",
       textColor: "text-cyan-800",
       image: "https://i.postimg.cc/63CqR1MW/cosmos-830055812.jpg",
       link: "/about#research",
-      stroke: "#155e75", // Dark Cyan
+      stroke: "#155e75",
     },
     {
       title: "3. Ecosystem Integration",
       subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
       description:
-        "Across the world, countless individuals, initiatives and communities are already shaping more life affirming futures. We help map, connect, and weave these fragmented efforts into a more coherent ecosystem of cultural transformation, cultivating the relationships, developmental pathways, and collective intelligence needed for a time between worlds.",
-      color: "border-[#D9A01B]", // Amber border
-      textColor: "text-[#B88610]", // Readable Amber
+        "Mapping, connecting, and weaving the scattered efforts already underway — cultivating the relationships, developmental pathways, and collective intelligence that a fragmented field cannot generate on its own.",
+      color: "border-[#D9A01B]",
+      textColor: "text-[#B88610]",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
       link: "/about#ecosystem",
@@ -911,35 +911,37 @@ export function FieldsOfWorkSection() {
   return (
     <section className="bg-cream py-12 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        {/* Header and Introduction */}
+        <div className="mx-auto mb-16 max-w-4xl text-center">
+          <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
             Our Work
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
-            <strong className="text-lg text-foreground">
-              Building Wisdom-Centered Educational Architectures in a Time
-              Between Worlds
-            </strong>
+          <p className="mx-auto mt-6 max-w-3xl font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+            Building wisdom-centered educational architectures in a time
+            between worlds
+          </p>
 
-            <br />
+          <p className="mx-auto mt-8 max-w-3xl leading-relaxed text-muted-foreground">
+            No one yet knows how to build these architectures. There is no
+            established field, no proven blueprint or model to rely on. What
+            exists are fragments of an answer — scattered across traditions,
+            communities, and experiments. Which is precisely why the work is
+            focusing on three things at once: experimental, prototyping the
+            containers this moment needs; investigative, reflecting in public
+            about what we are learning; and connective, weaving a trustworthy
+            ecosystem to help us build this.
+          </p>
 
-            <em className="mt-2 block italic">
-              Supporting individual and collective transformation in response
-              to systemic collapse and in service of a mature, wholesome and
-              life-affirming civilization.
-            </em>
-
-            <span className="mt-6 block leading-relaxed text-muted-foreground">
-              The 3 main pillars of our work are:
-            </span>
+          <p className="mt-8 font-medium leading-relaxed text-foreground">
+            Our work focuses on three main pillars:
           </p>
         </div>
 
         {/* Pillars Grid Layout */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {fields.map((field) => (
-            <div
+            <article
               key={field.title}
               className={`flex flex-col border-t-4 bg-background p-8 ${field.color}`}
             >
@@ -948,6 +950,7 @@ export function FieldsOfWorkSection() {
                   src={field.image}
                   alt={field.title}
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -975,6 +978,7 @@ export function FieldsOfWorkSection() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke={field.stroke}
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -984,7 +988,7 @@ export function FieldsOfWorkSection() {
                   />
                 </svg>
               </Link>
-            </div>
+            </article>
           ))}
         </div>
       </div>
