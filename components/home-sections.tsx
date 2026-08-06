@@ -811,6 +811,117 @@ export function FieldsOfWorkSection() {
   )
 }
 
+export function WhyWisdomSection() {
+  return (
+    <section className="bg-white py-16 lg:py-24">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        {/* Header */}
+        <div className="mb-10">
+          <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+            Why Wisdom?
+          </h2>
+        </div>
+
+        {/* Main Content */}
+        <div className="space-y-6">
+          <p className="leading-relaxed text-muted-foreground">
+            Within our work, we often draw from a{" "}
+            <a
+              href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+            >
+              framework
+            </a>{" "}
+            developed by Daniel Schmachtenberger and Nate Hagens, and later
+            evolved by Vanessa Machado de Oliveira, that distinguishes between
+            narrow boundary intelligence, wide boundary intelligence, and
+            wisdom—sometimes called whole-shebang wisdom.
+          </p>
+
+          <p className="leading-relaxed text-muted-foreground">
+            We find this framework helpful not only for understanding how humans
+            relate to complexity and systemic challenges, but for clarifying
+            the direction our collective efforts must ultimately move toward:
+            wisdom.
+          </p>
+
+          <p className="leading-relaxed text-muted-foreground">
+            The Center for Humane Technology describes one of the defining
+            challenges of our time as{" "}
+            <a
+              href="https://secondrenaissance.net/glossary/Wisdom+Gap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+            >
+              the wisdom gap
+            </a>
+            : the growing divide between rising global complexity and
+            humanity&apos;s capacity to respond with sufficient coherence,
+            discernment, and care. We live in a world overflowing with
+            information, intelligence, and technological power, yet increasingly
+            unable to navigate wisely the complexity we have created.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            In this sense, the metacrisis is fundamentally a wisdom crisis.
+          </p>
+
+          {/* Wisdom Definition Highlight */}
+          <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+            <p className="leading-relaxed text-muted-foreground">
+              By wisdom, we do not mean expertise, intelligence, or the
+              accumulation of knowledge. We mean the capacity to perceive
+              reality accurately, to discern what truly matters in a given
+              context, and to participate in life in ways that serve the
+              flourishing of the larger whole — a capacity grounded in a deep
+              engagement with the central existential questions of life.
+            </p>
+          </div>
+
+          <p className="leading-relaxed text-muted-foreground">
+            Wisdom is deepened by engaging with reality and the world through{" "}
+            <a
+              href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+            >
+              multiple ways of knowing
+            </a>{" "}
+            and depths of relationality, expanding our capacity to sense what
+            is needed in a given moment and respond accordingly.
+          </p>
+
+          <p className="leading-relaxed text-muted-foreground">
+            It allows us to hold complexity with humility and care, and to move
+            beyond fragmented grasps for certainty or control. It shifts our
+            relationship with the world from subject-object to subject-subject:
+            from managing reality to participating within it. To speak of
+            wisdom, ultimately, is to speak of integration — reuniting what
+            modernity has fragmented.
+          </p>
+
+          <p className="leading-relaxed text-muted-foreground">
+            As we face the consequences of the metacrisis, the cost of
+            continuing to incentivize narrow-boundary intelligence becomes
+            increasingly catastrophic. What this moment requires is a societal
+            movement from narrow boundary, to wide boundary, and eventually
+            toward wisdom. Yet the infrastructures capable of cultivating such
+            transition remain largely absent from modern society.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            Our work is an attempt to help create them.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function CTASection() {
   return (
     <section className="relative overflow-hidden py-24 lg:py-32">
