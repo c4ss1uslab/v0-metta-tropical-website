@@ -408,7 +408,7 @@ export function IntroductionSection() {
         are already carrying the seeds of a new cultural paradigm. Spiritual
         practitioners, educators, artists, systems thinkers, regenerative
         projects, and Indigenous communities have been creating and protecting
-        essential cosmologies, practices, ideas, and forms of wisdom for
+        essential cosmologies, practices, ideas, wisdom and forms of social organization for
         navigating the metacrisis.
       </p>
 
