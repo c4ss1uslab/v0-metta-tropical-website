@@ -395,157 +395,237 @@ export function IntroductionSection() {
 </section>
 
 {/* Confluence of Lineages */}
-<section className="bg-white py-16 lg:py-24">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    {/* Header */}
-    <div className="mb-6 max-w-5xl text-left">
-      <h2 className="font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
-        A Confluence of Lineages
-      </h2>
+<section className="relative overflow-hidden bg-white py-16 lg:py-24">
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    {/* Header and Introduction */}
+    <div className="mx-auto max-w-4xl">
+      {/* Header */}
+      <div className="mb-6 text-left">
+        <h2 className="font-serif text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
+          A Confluence of Lineages
+        </h2>
+      </div>
+
+      {/* Introduction */}
+      <div className="mb-8 space-y-6 text-left">
+        <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
+          We are rooted in Brazil and Latin America — shaped by this territory,
+          this language, and its histories.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Across the world, remarkable individuals, communities, and initiatives
+          are already carrying the seeds of a new cultural paradigm. Spiritual
+          practitioners, educators, artists, systems thinkers, regenerative
+          projects, and Indigenous communities have been creating and protecting
+          essential cosmologies, practices, ideas, wisdom, and forms of social
+          organization for navigating the metacrisis.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Yet most remain at the edges of our culture, isolated within their own
+          communities, languages, geographies, or fields of practice. They rarely
+          meet each other, and almost never within a container that could hold
+          them over time, around a shared purpose, in service of forming a
+          different kind of leadership. Without that, each remains an offering
+          someone might encounter, rather than a path someone could walk.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          This is what our educational architecture is for: to offer a home where
+          these ways of seeing, being, and knowing can come back into relationship
+          — and where the depth of understanding, practice, and transformation
+          this moment asks of us becomes possible.
+        </p>
+
+        <p className="font-medium leading-relaxed text-foreground">
+          Our work emerges from the confluence of four main lineages:
+        </p>
+      </div>
     </div>
 
-    {/* Introduction */}
-    <div className="mb-8 max-w-4xl space-y-6 text-left">
-      <p className="text-lg font-medium leading-relaxed text-[#D9A01B]">
-        We are rooted in Brazil and Latin America — shaped by this territory,
-        this language, and its histories.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        Across the world, remarkable individuals, communities, and initiatives
-        are already carrying the seeds of a new cultural paradigm. Spiritual
-        practitioners, educators, artists, systems thinkers, regenerative
-        projects, and Indigenous communities have been creating and protecting
-        essential cosmologies, practices, ideas, wisdom and forms of social organization for
-        navigating the metacrisis.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        Yet most remain at the edges of our culture, isolated within their own
-        communities, languages, geographies, or fields of practice. They rarely
-        meet each other, and almost never within a container that could hold
-        them over time, around a shared purpose, in service of forming a
-        different kind of leadership. Without that, each remains an offering
-        someone might encounter, rather than a path someone could walk.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        This is what our educational architecture is for: to offer a home where
-        these ways of seeing, being, and knowing can come back into relationship
-        — and where the depth of understanding, practice, and transformation
-        this moment asks of us becomes possible.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        Our work emerges from the confluence of four main lineages:
-      </p>
-    </div>
-
-    {/* Interactive Lineages */}
-    <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-      {lineages.map((lineage) => (
-        <article
-          key={lineage.title}
-          className="group relative flex h-full flex-col rounded-xl border border-gray-200 bg-[#FFFDF6] p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#D9A01B]/50 hover:shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
+    {/* Lineages and Decorative Forms */}
+    <div className="relative mx-auto max-w-4xl">
+      {/* Upper-left decorative form */}
+      <div
+        className="pointer-events-none absolute -left-44 top-4 hidden h-48 w-48 xl:block"
+        aria-hidden="true"
+      >
+        <svg
+          viewBox="0 0 240 240"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-full w-full"
         >
-          <div>
-            {/* Optional lineage icon */}
-            {lineage.icon && (
-              <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
-                <Image
-                  src={lineage.icon}
-                  alt={`${lineage.title} lineage symbol`}
-                  fill
-                  sizes="56px"
-                  className="object-cover"
-                />
+          <path
+            d="M120 13C157 13 190 34 210 65C230 96 235 137 216 169C197 201 155 222 118 225C81 228 42 211 23 180C4 149 6 104 25 72C44 40 83 13 120 13Z"
+            fill="#DDE8C7"
+            fillOpacity="0.5"
+          />
+
+          <path
+            d="M120 39C150 39 177 55 192 80C207 105 209 137 194 162C179 187 149 202 119 202C89 202 58 188 43 163C28 138 30 104 46 79C62 54 90 39 120 39Z"
+            fill="#F2D989"
+            fillOpacity="0.55"
+          />
+
+          <path
+            d="M119 67C141 67 161 78 172 96C183 114 183 137 172 155C161 173 141 184 119 184C97 184 77 173 66 155C55 137 55 114 66 96C77 78 97 67 119 67Z"
+            fill="#BFD7A7"
+            fillOpacity="0.65"
+          />
+
+          <path
+            d="M120 94C135 94 148 102 155 114C162 126 162 141 155 153C148 165 135 172 120 172C105 172 92 165 85 153C78 141 78 126 85 114C92 102 105 94 120 94Z"
+            fill="#E5B93F"
+            fillOpacity="0.65"
+          />
+        </svg>
+      </div>
+
+      {/* Lower-right decorative form */}
+      <div
+        className="pointer-events-none absolute -right-48 bottom-0 hidden h-56 w-56 xl:block"
+        aria-hidden="true"
+      >
+        <svg
+          viewBox="0 0 260 260"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-full w-full"
+        >
+          <path
+            d="M130 12C169 12 207 33 228 67C249 101 249 145 229 180C209 215 169 241 128 244C87 247 47 228 24 194C1 160 3 113 25 78C47 43 91 12 130 12Z"
+            fill="#E4EDCF"
+            fillOpacity="0.55"
+          />
+
+          <path
+            d="M130 42C161 42 191 59 207 85C223 111 223 144 207 170C191 196 161 216 129 216C97 216 67 198 51 172C35 146 35 111 52 85C69 59 99 42 130 42Z"
+            fill="#EBCB64"
+            fillOpacity="0.5"
+          />
+
+          <path
+            d="M130 72C154 72 176 85 188 105C200 125 200 149 188 169C176 189 154 202 130 202C106 202 84 189 72 169C60 149 60 125 72 105C84 85 106 72 130 72Z"
+            fill="#BCD39C"
+            fillOpacity="0.68"
+          />
+
+          <path
+            d="M130 103C146 103 160 111 168 124C176 137 176 153 168 166C160 179 146 187 130 187C114 187 100 179 92 166C84 153 84 137 92 124C100 111 114 103 130 103Z"
+            fill="#F2D989"
+            fillOpacity="0.75"
+          />
+        </svg>
+      </div>
+
+      {/* Interactive Lineages */}
+      <div className="relative z-10 mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+        {lineages.map((lineage) => (
+          <article
+            key={lineage.title}
+            className="group relative flex h-full flex-col rounded-xl border border-gray-200 bg-[#FFFDF6] p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#D9A01B]/50 hover:shadow-[0_18px_45px_rgba(17,24,39,0.08)]"
+          >
+            <div>
+              {/* Optional lineage icon */}
+              {lineage.icon && (
+                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
+                  <Image
+                    src={lineage.icon}
+                    alt={`${lineage.title} lineage symbol`}
+                    fill
+                    sizes="56px"
+                    className="object-cover"
+                  />
+                </div>
+              )}
+
+              <div className={lineage.icon ? "pr-16" : ""}>
+                <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
+                  {lineage.numeral}
+                </span>
+
+                <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+                  {lineage.title}
+                </h3>
               </div>
-            )}
 
-            <div className={lineage.icon ? "pr-16" : ""}>
-              <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
-                {lineage.numeral}
-              </span>
-
-              <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
-                {lineage.title}
-              </h3>
-            </div>
-
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              {lineage.description}
-            </p>
-          </div>
-
-          {/* Expandable Sources of Inspiration */}
-          <details className="group/details mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/20 pt-4 text-left text-sm font-medium text-foreground opacity-100 outline-none transition-all duration-300 hover:text-[#B88610] focus-visible:ring-2 focus-visible:ring-[#D9A01B] focus-visible:ring-offset-4 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100 group-open/details:translate-y-0 group-open/details:opacity-100 [&::-webkit-details-marker]:hidden">
-              <span>
-                <span className="group-open/details:hidden">
-                  Explore sources of inspiration
-                </span>
-
-                <span className="hidden group-open/details:inline">
-                  Close sources of inspiration
-                </span>
-              </span>
-
-              <svg
-                className="h-4 w-4 shrink-0 text-[#D9A01B] transition-transform duration-300 group-open/details:rotate-180"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
-            </summary>
-
-            <div className="pt-5">
-              <p className="mb-4 text-xs font-medium uppercase tracking-[0.14em] text-[#B88610]">
-                Selected sources of inspiration
-              </p>
-
-              <ul className="space-y-3">
-                {lineage.inspirations.map((institution) => (
-                  <li
-                    key={institution.name}
-                    className="group/institution flex items-center gap-4 rounded-lg border border-gray-200/80 bg-white/80 p-3 transition-all duration-200 hover:border-[#D9A01B]/40 hover:bg-white"
-                  >
-                    <div className="relative flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white">
-                      <Image
-                        src={institution.logo}
-                        alt={`${institution.name} logo`}
-                        fill
-                        sizes="64px"
-                        className="object-contain p-1.5 opacity-80 grayscale transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
-                      />
-                    </div>
-
-                    <span className="text-sm font-medium leading-snug text-foreground">
-                      {institution.name}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="mt-4 text-xs leading-relaxed text-muted-foreground/80">
-                These references indicate sources of learning and inspiration,
-                not necessarily formal partnerships or affiliations.
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {lineage.description}
               </p>
             </div>
-          </details>
-        </article>
-      ))}
+
+            {/* Expandable Sources of Inspiration */}
+            <details className="group/details mt-auto pt-6">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/20 pt-4 text-left text-sm font-medium text-foreground opacity-100 outline-none transition-all duration-300 hover:text-[#B88610] focus-visible:ring-2 focus-visible:ring-[#D9A01B] focus-visible:ring-offset-4 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100 group-open/details:translate-y-0 group-open/details:opacity-100 [&::-webkit-details-marker]:hidden">
+                <span>
+                  <span className="group-open/details:hidden">
+                    Explore sources of inspiration
+                  </span>
+
+                  <span className="hidden group-open/details:inline">
+                    Close sources of inspiration
+                  </span>
+                </span>
+
+                <svg
+                  className="h-4 w-4 shrink-0 text-[#D9A01B] transition-transform duration-300 group-open/details:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </summary>
+
+              <div className="pt-5">
+                <p className="mb-4 text-xs font-medium uppercase tracking-[0.14em] text-[#B88610]">
+                  Selected sources of inspiration
+                </p>
+
+                <ul className="space-y-3">
+                  {lineage.inspirations.map((institution) => (
+                    <li
+                      key={institution.name}
+                      className="group/institution flex items-center gap-4 rounded-lg border border-gray-200/80 bg-white/80 p-3 transition-all duration-200 hover:border-[#D9A01B]/40 hover:bg-white"
+                    >
+                      <div className="relative flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white">
+                        <Image
+                          src={institution.logo}
+                          alt={`${institution.name} logo`}
+                          fill
+                          sizes="64px"
+                          className="object-contain p-1.5 opacity-80 grayscale transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
+                        />
+                      </div>
+
+                      <span className="text-sm font-medium leading-snug text-foreground">
+                        {institution.name}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-xs leading-relaxed text-muted-foreground/80">
+                  These references indicate sources of learning and inspiration,
+                  not necessarily formal partnerships or affiliations.
+                </p>
+              </div>
+            </details>
+          </article>
+        ))}
+      </div>
     </div>
 
     {/* Conclusion */}
-    <div className="max-w-4xl space-y-6 text-left">
+    <div className="mx-auto max-w-4xl space-y-6 text-left">
       <p className="leading-relaxed text-muted-foreground">
         We have been informed and transformed by these lineages over many years,
         and we come to them with humility, curiosity, and gratitude, not
