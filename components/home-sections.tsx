@@ -218,14 +218,12 @@ export function IntroductionSection() {
             <div className="space-y-8">
               <div>
                 <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                  We are living through the unraveling of a world that can no
-                  longer sustain its own promises.
+                  We are living through the unraveling of a world whose stories of success are starting to collapse.
                 </h2>
               </div>
 
               <p className="leading-relaxed text-muted-foreground">
-                And many of our attempts to respond to our crisis have only deepen it—reproducing the very logic of separation, extraction and
-                control that created it.
+                And many of our attempts to respond to our predicament have only deepened it—reproducing the very logic of separation, extraction and control that created it.
               </p>
 
               <p className="leading-relaxed text-muted-foreground">
