@@ -390,6 +390,7 @@ export function IntroductionSection() {
     </Link>
   </div>
 </div>
+</section>
 
 {/* Confluence of Lineages */}
 <section className="bg-white py-16 lg:py-24">
