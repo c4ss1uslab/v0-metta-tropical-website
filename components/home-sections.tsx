@@ -52,8 +52,8 @@ export function HeroSection() {
     </h1>
 
     <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-foreground/90 italic">
-    Cultivating the leadership, community, and cultural foundations required for{" "}
-    <strong>wisdom-centered civilizations</strong> to emerge and take root in
+    Cultivating the leadership, community, and cultural foundations required for a{" "}
+    <strong>radically wiser civilizations</strong> to emerge and take root in
     service of the flourishing of all life.
     </p>
 
