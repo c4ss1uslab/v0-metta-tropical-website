@@ -390,6 +390,8 @@ export function IntroductionSection() {
     </Link>
   </div>
 </div>
+    </div>
+  </div>
 </section>
 
 {/* Confluence of Lineages */}
