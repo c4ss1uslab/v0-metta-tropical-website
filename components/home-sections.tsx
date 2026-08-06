@@ -680,6 +680,9 @@ export function IntroductionSection() {
           </figcaption>
         </div>
       </figure>
+    </>
+  )
+}
 
 export function FieldsOfWorkSection() {
   const fields = [
