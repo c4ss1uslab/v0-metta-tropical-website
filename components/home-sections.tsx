@@ -681,85 +681,132 @@ export function IntroductionSection() {
         </div>
       </figure>
 
-{/* Educational Work */}
-<section className="relative bg-white pt-12 pb-24 lg:pt-16 lg:pb-28">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <div className="space-y-8">
-      <div>
-        <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
-          Our response is fundamentally educational.
-        </h2>
+export function FieldsOfWorkSection() {
+  const fields = [
+    {
+      title: "1. Transformative Educational Lab",
+      subtitle: "Education for the end of the world as we know it",
+      description:
+        "The living laboratory where our educational architecture is continuously tested, refined, and deepened. Through retreats, residencies, courses, and immersive programs — developed in-house and in collaboration with fellow educators — we keep experimenting with what it actually takes to form human beings prepared for this moment.",
+      color: "border-olive",
+      textColor: "text-olive",
+      image:
+        "https://images.squarespace-cdn.com/content/v1/58b0f6a89f7456906a310ee2/1587855330806-W292FV9W3Q7YLABBVW2A/CeremonyOne.jpg",
+      link: "/about#educational-lab",
+      stroke: "#3d4a3e",
+    },
+    {
+      title: "2. Research & Inquiry",
+      subtitle: "Investigating the questions shaping our world",
+      description:
+        "Deep investigation into what has brought us here, what is happening now, and what is trying to emerge. Through transdisciplinary research, original essays, collaborative thinking, social cartographies, and curated collections, we contribute to the narrative-building and cultural sensemaking that can orient wise action in a time of uncertainty.",
+      color: "border-cyan",
+      textColor: "text-cyan-800",
+      image: "https://i.postimg.cc/63CqR1MW/cosmos-830055812.jpg",
+      link: "/about#research",
+      stroke: "#155e75",
+    },
+    {
+      title: "3. Ecosystem Integration",
+      subtitle: "Tending to the emerging fabric of a wisdom-centered culture",
+      description:
+        "Mapping, connecting, and weaving the scattered efforts already underway — cultivating the relationships, developmental pathways, and collective intelligence that a fragmented field cannot generate on its own.",
+      color: "border-[#D9A01B]",
+      textColor: "text-[#B88610]",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/floral%20pattern%20-%20Jung%20Suk%20hyun-czCaN7g7GO3CRtehxfEpBhtmMcYqnh.jpeg",
+      link: "/about#ecosystem",
+      stroke: "#D9A01B",
+    },
+  ]
+
+  return (
+    <section className="bg-cream py-12 lg:py-20">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        {/* Header and Introduction */}
+        <div className="mx-auto mb-16 max-w-4xl text-center">
+          <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+            Our Work
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-3xl font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+            Building wisdom-centered educational architectures in a time
+            between worlds
+          </p>
+
+          <p className="mx-auto mt-8 max-w-3xl leading-relaxed text-muted-foreground">
+            No one yet knows how to build these architectures. There is no
+            established field, no proven blueprint or model to rely on. What
+            exists are fragments of an answer — scattered across traditions,
+            communities, and experiments. Which is precisely why the work is
+            focusing on three things at once: experimental, prototyping the
+            containers this moment needs; investigative, reflecting in public
+            about what we are learning; and connective, weaving a trustworthy
+            ecosystem to help us build this.
+          </p>
+
+          <p className="mt-8 font-medium leading-relaxed text-foreground">
+            Our work focuses on three main pillars:
+          </p>
+        </div>
+
+        {/* Pillars Grid Layout */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {fields.map((field) => (
+            <article
+              key={field.title}
+              className={`flex flex-col border-t-4 bg-background p-8 ${field.color}`}
+            >
+              <div className="relative mb-6 h-48 overflow-hidden">
+                <Image
+                  src={field.image}
+                  alt={field.title}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+
+              <h3 className="font-serif text-2xl font-medium text-foreground">
+                {field.title}
+              </h3>
+
+              <p className={`mt-2 text-sm font-medium ${field.textColor}`}>
+                {field.subtitle}
+              </p>
+
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {field.description}
+              </p>
+
+              <Link
+                href={field.link}
+                className="mt-6 inline-flex items-center text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+              >
+                Learn More
+
+                <svg
+                  className="ml-2 h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke={field.stroke}
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
-
-      <p className="leading-relaxed text-muted-foreground">
-        We recognize the escalating nature of the complex and entangled
-        challenges of this moment—social, ecological, political, and spiritual
-        breakdowns—not as isolated problems, but as{" "}
-        <strong className="font-medium text-foreground">
-          symptoms of deeper cultural patterns: ways of perceiving, valuing, and
-          participating in the world that are no longer serving life.
-        </strong>
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        If the crises of our time are rooted in the ways we have learned to see,
-        relate, and participate in the world, then responding to them requires
-        more than new technological or political solutions. It requires new
-        forms of being human in this world, a deeper transformation in human
-        consciousness and the ways we relate to life.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        Education is where that becomes possible, because education is where the
-        intergenerational transmission of a culture takes place — and where the
-        sense of what we are responsible to is either widened or narrowed. It is
-        where one generation passes to the next what it believes a human being
-        is, what is worth living for, and whose lives count. Modern education
-        has largely failed us in this sense. What this moment asks is an
-        education that forms intergenerational and interspecies responsibility:
-        accountability to those who came before us, those who will come after
-        us, and all the beings with whom we share this world. An education that
-        invites us to question modernity&apos;s foundations, to meet the
-        metacrisis with the capacities it demands, and to begin building what
-        comes next.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        This time between worlds could become a rite of passage for our species
-        — an opening toward greater wisdom, maturity, and reverence for life.
-        But there is actually no guarantee it will. Crisis does not mature us
-        automatically. Without spaces capable of holding the grief,
-        uncertainty, conflict, questioning, imagination, and possibility this
-        moment demands, crisis can just as easily intensify polarization,
-        nihilism, and collapse into simplistic answers.
-      </p>
-
-      {/* Highlighted Architecture Statement */}
-      <div className="border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8">
-        <p className="leading-relaxed text-muted-foreground">
-          This is why we are exploring how to build new forms of{" "}
-          <strong className="font-bold text-foreground">
-            Wisdom-Centered Educational Architecture:
-          </strong>{" "}
-          transformational structures capable of welcoming those who feel the
-          depth of this crisis in their bones, of holding the magnitude of the
-          devotion they carry, and of forming them into human beings capable of
-          reclaiming leadership as sacred responsibility toward the flourishing
-          of all life.
-        </p>
-      </div>
-
-      <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
-        <Image
-          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
-          alt="Gathering around the fire"
-          fill
-          className="object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  )
+}
 
 {/* Why Wisdom? Section Content */}
 <section className="relative left-1/2 right-1/2 -mx-[50vw] w-full bg-white pt-0 pb-16 lg:pt-0 lg:pb-20 xl:w-screen">
