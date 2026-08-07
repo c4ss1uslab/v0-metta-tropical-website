@@ -52,7 +52,7 @@ export function HeroSection() {
     </h1>
 
     <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-foreground/90 italic">
-    Cultivating the soul of leadership, community, and culture from which a{" "}
+    Cultivating the soul of leadership, community, and culture from which {" "}
     <strong>radically wiser civilizations</strong> can emerge and take root in
     service of the flourishing of all life.
     </p>
