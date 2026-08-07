@@ -622,11 +622,11 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* 3. The Civilizational Horizon */}
+        {/* 5. The Civilizational Horizon */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Civilizational Horizon</span>
+              <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">5. The Civilizational Horizon</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 Cultivating Wisdom in Service of All Life
               </h2>
