@@ -125,7 +125,7 @@ const lineages = [
     numeral: "II.",
     title: "Systemic Inquiry",
     description:
-      "The rigor of systems and complexity science, the regenerative movement, decolonial thought, metamodernism, and the metacrisis conversation — which have helped us perceive the historical, ecological, and civilizational patterns producing this moment, rather than reacting to its symptoms.",
+      "The rigor of the systems and complexity sciences, the regenerative movement, decolonial thought, metamodernism, and the metacrisis conversation — which have helped us perceive the historical, ecological, and civilizational patterns producing this moment, rather than reacting to its symptoms.",
     inspirations: [
       {
         name: "Schumacher College",
@@ -735,7 +735,7 @@ export function FieldsOfWorkSection() {
             established field, no proven blueprint or model to rely on. What
             exists are fragments of an answer — scattered across traditions,
             communities, and experiments. Which is precisely why the work is
-            focusing on three things at once: <strong>experimental</strong>, prototyping the
+            focusing on three things at once:            <strong>experimental</strong>, prototyping the
             containers this moment needs; <strong>investigative</strong>, reflecting in public
             about what we are learning; and <strong>connective</strong>, weaving a trustworthy
             ecosystem to help us build this.
