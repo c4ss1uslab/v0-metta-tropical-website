@@ -233,7 +233,7 @@ export function IntroductionSection() {
                 change-makers who refuse to look away from the crises of our
                 times. Those convinced that any meaningful response to this
                 moment must be rooted in a fundamentally different relationship
-                with all life —
+                with all life — 
                   <em>self, other, world, and the sacred.</em>
               </p>
 
