@@ -240,7 +240,7 @@ export function IntroductionSection() {
               </p>
 
               <p className="leading-relaxed text-muted-foreground">
-                We come together not to optimize a broken system or try to make it work for a greater number of humans and species, but to question and transform its foundations. Through transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore the conditions required to awaken our souls, reinhabit our bodies, decolonize our desires, and reforest our imagination to become trustworthy instruments for planetary healing.
+                We come together not to optimize a broken system or try to make it work for a greater number of humans and species, but to question and transform its foundations. Through transformative developmental spaces, intimate community, radical inquiry and collective practices, we explore the conditions required to awaken our souls, reinhabit our bodies, decolonize our desires, and reforest our imagination to become trustworthy instruments for planetary flourishing.
               </p>
             </div>
 
