@@ -296,7 +296,7 @@ export function IntroductionSection() {
             <strong className="font-semibold text-foreground">
               Terreiros
             </strong>{" "}
-            — carrying cosmology and initiation through centuries of erasure
+            — evolving cosmology and initiation through centuries of erasure
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
