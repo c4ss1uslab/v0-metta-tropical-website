@@ -227,11 +227,11 @@ export function IntroductionSection() {
               </p>
 
               <p className="leading-relaxed text-muted-foreground">
-                Metta Tropical Collective is an experimental, place-based
-                community of <strong>transformation</strong>, <strong>inquiry</strong> and <strong>practice</strong>, calling
+                Metta Tropical Collective is an experimental, place-based 
+                <strong>community of transformation, inquiry and practice</strong>, calling
                 together postactivist educators, thinkers, artists, leaders and
                 change-makers who refuse to look away from the crises of our
-                times.Those convinced that any meaningful response to this
+                times. Those convinced that any meaningful response to this
                 moment must be rooted in a fundamentally different relationship
                 with all life —
                   <em>self, other, world, and the sacred.</em>
