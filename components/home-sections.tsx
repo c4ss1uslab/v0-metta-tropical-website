@@ -218,7 +218,7 @@ export function IntroductionSection() {
             <div className="space-y-8">
               <div>
                 <h2 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                  We are living through the unraveling of a world whose stories of success are starting to collapse.
+                  We are living through the unraveling of a world whose success stories are starting to collapse.
                 </h2>
               </div>
 
@@ -228,15 +228,13 @@ export function IntroductionSection() {
 
               <p className="leading-relaxed text-muted-foreground">
                 Metta Tropical Collective is an experimental, place-based
-                community of transformation, inquiry and practice, calling
+                community of <strong>transformation</strong>, <strong>inquiry</strong> and <strong>practice</strong>, calling
                 together postactivist educators, thinkers, artists, leaders and
-                change-makers who refuse to look away from the crisis of our
-                times. Those convinced that any meaningful response to this
+                change-makers who refuse to look away from the crises of our
+                times.Those convinced that any meaningful response to this
                 moment must be rooted in a fundamentally different relationship
-                with all life —{" "}
-                <strong className="text-foreground">
-                  self, other, world, and the sacred.
-                </strong>
+                with all life —
+                  <em>self, other, world, and the sacred.</em>
               </p>
 
               <p className="leading-relaxed text-muted-foreground">
@@ -739,9 +737,9 @@ export function FieldsOfWorkSection() {
             established field, no proven blueprint or model to rely on. What
             exists are fragments of an answer — scattered across traditions,
             communities, and experiments. Which is precisely why the work is
-            focusing on three things at once: experimental, prototyping the
-            containers this moment needs; investigative, reflecting in public
-            about what we are learning; and connective, weaving a trustworthy
+            focusing on three things at once: <strong>experimental</strong>, prototyping the
+            containers this moment needs; <strong>investigative</strong>, reflecting in public
+            about what we are learning; and <strong>connective</strong>, weaving a trustworthy
             ecosystem to help us build this.
           </p>
 
