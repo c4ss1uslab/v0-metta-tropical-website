@@ -69,7 +69,7 @@ export default function AboutPage() {
       {/* Heading */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-          About Us
+          About Us - an invitation into the spirit of our work
         </h2>
       </div>
 
