@@ -95,10 +95,6 @@ export default function AboutPage() {
           </p>
 
           <p className="leading-relaxed text-muted-foreground">
-            To recover the soulfulness of our participation in reality.
-          </p>
-
-          <p className="leading-relaxed text-muted-foreground">
             To deepen our attunement to life&apos;s beauty, mystery, suffering,
             and truth.
           </p>
