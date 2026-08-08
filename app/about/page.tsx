@@ -62,14 +62,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-{/* Why We Exist */}
+{/* About Us */}
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       {/* Heading */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-          Why We Exist
+          About Us
         </h2>
       </div>
 
