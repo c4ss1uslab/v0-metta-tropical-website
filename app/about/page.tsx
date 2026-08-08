@@ -85,7 +85,7 @@ export default function AboutPage() {
         </p>
 
         {/* Longings */}
-        <div className="space-y-4">
+        <div className="space-y-2">
           <p className="leading-relaxed text-muted-foreground">
             To restore our intimacy with all life.
           </p>
