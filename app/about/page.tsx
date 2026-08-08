@@ -73,57 +73,43 @@ export default function AboutPage() {
         </h2>
       </div>
 
-      {/* Opening, Longings, and Image */}
-      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
-        {/* Left: Opening and Longings */}
-        <div className="space-y-8">
-          <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-            Metta Tropical begins with a longing to reawaken the soul of our
-            collective life.
+      {/* Opening */}
+      <div className="space-y-8">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Metta Tropical begins with a longing to reawaken the soul of our
+          collective life.
+        </p>
+
+        {/* Longings */}
+        <div className="space-y-4">
+          <p className="leading-relaxed text-muted-foreground">
+            To restore our intimacy with all life.
           </p>
 
-          <div className="space-y-4">
-            <p className="leading-relaxed text-muted-foreground">
-              To restore our intimacy with all life.
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To fall deeply in love with the living world.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              To fall deeply in love with the living world.
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To expand our capacity to experience the sacred.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              To expand our capacity to experience the sacred.
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To recover the soulfulness of our participation in reality.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              To recover the soulfulness of our participation in reality.
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To deepen our attunement to life&apos;s beauty, mystery, suffering,
+            and truth.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              To deepen our attunement to life&apos;s beauty, mystery,
-              suffering, and truth.
-            </p>
-
-            <p className="leading-relaxed text-muted-foreground">
-              To follow the Eros that draws us towards what life is asking of
-              us.
-            </p>
-          </div>
-        </div>
-
-        {/* Right: Image */}
-        <div className="relative min-h-[420px] self-stretch overflow-hidden">
-          <Image
-            src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
-            alt="Black-and-white illustration representing ancestral and initiatory traditions"
-            fill
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-contain"
-          />
+          <p className="leading-relaxed text-muted-foreground">
+            To follow the Eros that draws us towards what life is asking of us.
+          </p>
         </div>
       </div>
 
-      {/* Full-Width Text */}
+      {/* Main Text */}
       <div className="space-y-6">
         <p className="leading-relaxed text-muted-foreground">
           The dominant paradigm of modernity has given parts of humanity
