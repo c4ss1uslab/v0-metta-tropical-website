@@ -62,6 +62,117 @@ export default function AboutPage() {
           </div>
         </section>
 
+{/* Architectures of Transformation */}
+<section className="bg-background py-16 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      {/* Heading */}
+      <div>
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Why We Exist
+        </h2>
+      </div>
+
+      {/* Opening Text, Lineages List, and Image */}
+      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
+        {/* Left: Opening Paragraph and List */}
+        <div className="space-y-8">
+          <p className="leading-relaxed text-muted-foreground">
+            Throughout history, in times of societal collapse, oppression, and
+            rupture, the failures and contradictions of our dominant ways of
+            seeing, being, and relating in the world become impossible to
+            ignore. It is during these moments that new forms of education and
+            community have always emerged to take on the responsibility of
+            envisioning a radically different future and carrying forward what
+            would otherwise be lost.
+          </p>
+
+          <div className="space-y-4">
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Mystery Schools
+              </strong>{" "}
+              — initiating seekers into hidden wisdom
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Monasteries
+              </strong>{" "}
+              — sustaining contemplative life and learning across centuries
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Terreiros
+              </strong>{" "}
+              — carrying cosmology and initiation through centuries of erasure
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Folk Schools
+              </strong>{" "}
+              — educating for life rather than for credentials
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Quilombos
+              </strong>{" "}
+              — building free life outside a system designed to deny it
+            </p>
+          </div>
+        </div>
+
+        {/* Right: Image */}
+        <div className="relative min-h-[420px] self-stretch overflow-hidden">
+          <Image
+            src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
+            alt="Black-and-white illustration representing ancestral and initiatory traditions"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Full-Width Text */}
+      <p className="leading-relaxed text-muted-foreground">
+        Each created the structures, practices, relational life, pedagogies,
+        and rites of passage needed to orient human beings toward what is most
+        meaningful, and to develop the capacities their moment required. They
+        were not schools in the modern sense. They were{" "}
+        <strong className="font-semibold text-foreground">
+          architectures of transformation
+        </strong>{" "}
+        — places where new ways of being could be practiced until they became
+        real.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We are living through such a moment again, and our commitment is to
+        build the architectures of transformation this time requires.
+      </p>
+
+      {/* Educational Architecture Highlight */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          We call them{" "}
+          <strong className="font-semibold text-foreground">
+            wisdom-centered educational architectures
+          </strong>
+          : long-term developmental ecologies of practice, tarining, ritual, inquiry, and
+          relationship, where those who feel the weight of this moment can find
+          the community and formation to become the kinds of humans capable of
+          tending the ending of one world, and of building what will come after
+          it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Why Metta? */}
         <section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream">
@@ -229,209 +340,172 @@ export default function AboutPage() {
   </div>
 </section>
 
-{/* Vision & Mission */}
-<section className="py-16 lg:py-20 bg-background">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+{/* Our Vows */}
+<section className="bg-[#FFFDF6] py-16 lg:py-20">
+  <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
-    <div className="text-center mb-12">
-      <span className="text-cyan-800 font-medium text-sm tracking-wide uppercase">
-        Vision & Mission
-      </span>
-      <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-        Why We Exist
+    <div className="mb-12 text-center">
+      <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+        Our Vows
       </h2>
     </div>
 
-    {/* Content */}
-    <div className="space-y-8">
-      <p className="text-muted-foreground leading-relaxed">
-        Two questions orient our vision:
+    {/* Introduction */}
+    <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
+      <p className="leading-relaxed text-muted-foreground">
+        We see vows not as promises, nor as rules. They serve as an orientation.
       </p>
 
-<div className="space-y-4">
-  <div className="pl-6 border-l-2 border-cyan">
-    <p className="font-serif text-xl font-medium text-foreground italic leading-relaxed">
-      Who are we being called to become in a time between worlds, to help steward
-      civilization toward life-enhancing futures?
-    </p>
-  </div>
-
-  <div className="pl-6 border-l-2 border-cyan">
-    <p className="font-serif text-xl font-medium text-foreground italic leading-relaxed">
-      And what kinds of educational structures, communities, and developmental
-      containers must emerge to support such becoming?
-    </p>
-  </div>
-</div>
-
-      <p className="text-muted-foreground leading-relaxed">
-        We envision a world where human beings are supported in the lifelong unfolding
-        toward wisdom, relational maturity, and soulful participation in life—where
-        each person is able to manifest their unique soul calling in response to the
-        crisis of the world.
+      <p className="leading-relaxed text-muted-foreground">
+        The work before us is larger than any person, institution, or generation
+        can complete. What we long for will not arrive through strategy or good
+        intentions alone. It asks for devotion — for something we are willing
+        to give our lives to, knowing we will not see it finished.
       </p>
 
-      <p className="text-muted-foreground leading-relaxed">
-        We believe the metacrisis is not only a civilizational breakdown, but also a
-        rite of passage: a threshold calling humanity to evolve beyond habits of
-        fragmentation, separation, and extraction toward more mature, integrated, and
-        life-affirming ways of being together.
+      <p className="leading-relaxed text-muted-foreground">
+        These vows are a small, but essential part of this work. A way of
+        reminding ourselves, again and again, what we are here for.
       </p>
+    </div>
 
-      <p className="text-muted-foreground leading-relaxed">
-        Our mission is to help design wisdom-centered educational architectures capable
-        of supporting the depth of human transformation this moment requires.
-      </p>
-        
-              <p className="text-muted-foreground leading-relaxed">
-                We seek
-        to create structures that can hold the magnitude of devotion and responsibility
-        of those committed to offering their lives in response to this time between
-        worlds. We aim to support them as they move through this threshold and develop
-        the capacities, relationships, and ways of being needed to navigate collapse,
-        embody new cultural possibilities, and participate in the emergence of a
-        wisdom-centered civilization.
-      </p>
+    {/* Vows */}
+    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
+      {/* Left Column: The Soul Vows */}
+      <div className="space-y-8">
+        <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
+          The Soul Vows
+        </h3>
 
-      <p className="text-muted-foreground leading-relaxed">
-        At the heart of our vision is the belief that humanity must radically transform
-        its ways of relating to all life—self, other, world, and the sacred—if we are
-        to move through this time of rupture with wisdom and discernment. This
-        transformation will require a long process of shedding ways of being that no
-        longer serve life while cultivating new forms of presence, relationships, and
-        participation in reality.
-      </p>
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Living beings are numberless,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to free them.
+            </span>
+          </p>
+        </div>
 
-      <p className="text-muted-foreground leading-relaxed">
-        We believe such transformation cannot happen in isolation. It requires robust
-        communities and developmental spaces capable of weaving together practices,
-        rites of passage, rituals, training, and communion that can hold the long arc
-        of human becoming.
-      </p>
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Delusions of separation without limit,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to transform them.
+            </span>
+          </p>
+        </div>
 
-      <p className="text-muted-foreground leading-relaxed">
-        We hope to help cultivate a new generation of visionary leaders, artists,
-        educators, activists, thinkers, and community builders who can contribute to
-        the emergence of a living ecosystem of wisdom-centered educational spaces,
-        communities, and institutions—a new societal infrastructure and cultural fabric
-        capable of supporting profound individual and collective transformation in
-        service of the sacredness of all life.
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Gates of truth and love are immeasurable,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to enter them.
+            </span>
+          </p>
+        </div>
+
+        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            The path of awakening and healing is unsurpassable,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to embody it.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      {/* Right Column: The Earth Vows */}
+      <div className="space-y-8">
+        <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
+          The Earth Vows
+        </h3>
+
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            The roots of the metacrisis are interconnected,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to understand them.
+            </span>
+          </p>
+        </div>
+
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Delusions of capitalist modernity are inexhaustible,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to transform them.
+            </span>
+          </p>
+        </div>
+
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Life-affirming futures are boundless,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to perceive, create and amplify them.
+            </span>
+          </p>
+        </div>
+
+        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+          <p className="font-serif text-base leading-relaxed text-foreground italic">
+            Planetary flourishing is not inevitable,
+            <br />
+            <span className="mt-1 block text-base font-normal text-[#D9A01B] not-italic">
+              I vow to offer my life to it.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Sources and Acknowledgment */}
+    <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-8">
+      <p className="text-sm leading-relaxed text-muted-foreground italic md:text-base">
+        These vows are inspired by the four great bodhisattva vows of the
+        Buddhist traditions, and by the post-capitalist vows articulated by
+        Alnoor Ladha and Lynn Murphy. We offer ours as part of our own surrender
+        to what this moment is asking of us.
       </p>
     </div>
   </div>
 </section>
 
-{/* Our Vows */}
-        <section className="py-16 lg:py-20 bg-[#FFFDF6]">
-          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Our Vows
-              </h2>
-            </div>
+{/* CTA */}
+<section className="bg-olive py-14 lg:py-16">
+  <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+    <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground">
+      If you want to discover our work in more depth, we invite you to explore
+      our Fellowship and Theory of Change.
+    </p>
 
-            {/* Intro */}
-            <div className="max-w-3xl mx-auto space-y-6 mb-16 text-center sm:text-left">
-              <p className="text-muted-foreground leading-relaxed">
-                The work before us is larger than any individual, institution, or generation can complete. The futures we long for will not emerge through intention or strategy alone. They ask for devotion, and a vow represents that by pointing to what we are willing to offer our lives to.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                These vows are a small, but essential part of this work. A way of orienting ourselves, again and again, toward the kinds of human beings this moment asks us to become.
-              </p>
-            </div>
+    <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <Link
+        href="/fellowship"
+        className="inline-flex w-full items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610] sm:w-56"
+      >
+        Explore the Fellowship
+      </Link>
 
-            {/* Vows — side-by-side layout brought closer together (~2cm gap) with no middle divider */}
-            <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
-              {/* Left Column: first set of vows */}
-              <div className="space-y-8">
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Living beings are numberless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to serve them</span>
-                  </p>
-                </div>
+      <Link
+        href="/theory-of-change"
+        className="inline-flex w-full items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90 sm:w-56"
+      >
+        Theory of Change
+      </Link>
+    </div>
+  </div>
+</section>
+</main>
 
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Greed and hate without limit,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to welcome, love and transform them</span>
-                  </p>
-                </div>
-
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Gates of truth without measure,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to know and embody them</span>
-                  </p>
-                </div>
-
-                <div className="pl-3 sm:pl-6 border-l-2 border-crimson">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The path of awakening and freedom is endless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">I vow to offer my life to it</span>
-                  </p>
-                </div>
-              </div>
-
-              {/* Right Column: second set of vows */}
-              <div className="space-y-8 lg:pl-8">
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The root causes of the metacrisis are deeply interconnected,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to understand and respond to them</span>
-                  </p>
-                </div>
-
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Delusions of separation from capitalist modernity are inexhaustible,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to recognize and transform them</span>
-                  </p>
-                </div>
-
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    Alternatives for life-affirming futures are boundless,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to imagine, create and amplify them</span>
-                  </p>
-                </div>
-
-                <div className="pl-3 sm:pl-6 border-l-2 border-olive">
-                  <p className="font-serif text-base md:text-lg text-foreground italic leading-relaxed">
-                    The flourishing of all life is sacred, precious and not inevitable,<br />
-                    <span className="text-[#D9A01B] not-italic font-normal text-sm md:text-base block mt-1">We vow to offer our lives in service to it</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-24 lg:py-32 bg-olive">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-              Through these explorations, we hope to continuously learn how to build educational spaces, sanctuaries of transformation and thriving communities.
-            </h2>
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/why-now"
-                className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-              >
-                Understand What's At Stake Now
-              </Link>
-              <Link
-                href="/fellowship"
-            className="inline-flex items-center justify-center px-8 py-3 bg-[#D9A01B] text-background font-medium text-sm tracking-wide hover:bg-[#B88610] transition-colors"
-              >
-                Explore the Fellowship
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
+<Footer />
+</>
+)
 }
