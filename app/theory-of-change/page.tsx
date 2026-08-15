@@ -121,7 +121,7 @@ export default function TheoryOfChangePage() {
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Theory of Change</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
-              Articulating the Metacrisis
+              Sanctuaries of Coherence in a Time Between Worlds
             </h1>
             <p className="mt-8 text-xl text-background/80 leading-relaxed">
               Understanding the deep roots of our predicament and the educational response it requires.
@@ -134,9 +134,9 @@ export default function TheoryOfChangePage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             {/* Header */}
             <div className="text-center mb-20">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Predicament</span>
+              <span className="text-crimson font-medium text-sm tracking-wide uppercase">1. The Predicament</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                The Metacrisis
+                Seeing The Metacrisis
               </h2>
 
               <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-crimson pl-6">
@@ -362,7 +362,7 @@ export default function TheoryOfChangePage() {
 
                 <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
                   <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
-                  <h3 className="font-serif text-xl font-semibold text-foreground">The Ontological-Cultural Layer</h3>
+                  <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
                   <p className="text-sm font-medium text-olive mt-2">
                     Foundational Dysfunctions<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">1</sub>
                   </p>
@@ -433,7 +433,7 @@ export default function TheoryOfChangePage() {
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Problem We're Tackling</span>
+              <span className="text-olive font-medium text-sm tracking-wide uppercase">2. The Problem We're Tackling</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 A Crisis of Education, Formation, and Human Development
               </h2>
@@ -495,11 +495,11 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* 1. The Developmental Hypothesis */}
+        {/* 3. The Developmental Hypothesis */}
         <section className="py-24 lg:py-32 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">The Developmental Hypothesis</span>
+              <span className="text-yellow font-medium text-sm tracking-wide uppercase">3. The Developmental Hypothesis</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
                 What This Moment Requires
               </h2>
@@ -543,11 +543,11 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* 2. Our Response */}
+        {/* 4. The Response */}
         <section className="py-24 lg:py-32 bg-cream">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-olive font-medium text-sm tracking-wide uppercase">The Response</span>
+              <span className="text-cyan-800 font-medium text-sm tracking-wide uppercase">4. The Response</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 Building Wisdom-Centered Educational Architectures
               </h2>
@@ -622,11 +622,11 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* 3. The Civilizational Horizon */}
+        {/* 5. The Civilizational Horizon */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Civilizational Horizon</span>
+              <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">5. The Civilizational Horizon</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
                 Cultivating Wisdom in Service of All Life
               </h2>
