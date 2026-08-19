@@ -347,6 +347,112 @@ export default function AboutPage() {
   </div>
 </section>
 
+{/* The Bodhisattva Aspiration */}
+<section className="bg-background py-16 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      {/* Header */}
+      <div>
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          The Bodhisattva Aspiration
+        </h2>
+      </div>
+
+      {/* Opening */}
+      <div className="space-y-6">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Every culture needs images of the human being worth becoming.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Yet at a time asking so much of us, the images we have inherited feel
+          too small for the depth of transformation required.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Our culture can describe the metacrisis in detail, and has no shortage
+          of frameworks and capacities for what this moment requires, but we
+          don&apos;t yet have an image of who we must become. The closest we
+          know comes from the Buddhist tradition: the bodhisattva — the one who
+          awakens the heart of compassion to the interdependence and suffering
+          of the world, and commits their life to the liberation of all living
+          beings.
+        </p>
+      </div>
+
+      {/* Bodhisattva Highlight */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          The Bodhisattva&apos;s aspiration is impossible to achieve, and yet
+          their commitment to it is unshakable. They live as though the
+          flourishing of all life depended on it. They train the heart to
+          become boundless, to meet each being with the tenderness a mother
+          offers her only child, to recognize the irreducible worth of every
+          life, and to move toward suffering rather than away from it. Again
+          and again, they enter the places of pain, confusion, and separation —
+          not to be consumed by them, but to understand more deeply, relieve
+          suffering where they can, and offer their life toward the liberation
+          and flourishing of the whole.
+        </p>
+      </div>
+
+      {/* Main Reflection */}
+      <div className="space-y-6">
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-medium text-foreground">
+            Why does such an aspiration matter?
+          </strong>{" "}
+          Because we grow to the height of what we can imagine becoming.
+          Humanity is nowhere near the fullness of what it could be —
+          individually or collectively — and without an image that reaches that
+          far, we not only forsake our most sacred capacity of becoming, but of
+          the more beautiful world wanting to be born.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          We are not claiming the image of the Bodhisattva, though it has shaped
+          everything we are attempting. We are saying that our culture offers
+          nothing of that height to grow toward. And a culture that cannot
+          imagine such a being will rarely “produce” one, nor build the
+          containers and infrastructures that could form one.
+        </p>
+
+        <p className="font-medium leading-relaxed text-foreground">
+          This is not a small thing missing from our times. It is close to the
+          heart of what has gone wrong — and it is part of what our work exists
+          to restore.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          If we make it through this time of metacrisis, we believe that a new
+          form of contemporary expression of the aspiration and training
+          pathway of a Bodhisattva for our era will be required. Spaces where
+          we can recognize the sacred and unique potential of each human, and
+          offer the conditions for that quality of heart, mind, and being to be
+          expressed at its fullest in service of the whole.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          We are not alone in this. Others have also sensed the urgency for the
+          emergence of a{" "}
+          <span className="font-medium text-foreground">
+            “new human”
+          </span>{" "}
+          — whether they call it Bodhisattva, EcoSattva, the New Saints,
+          Spiritual Warriors, or Homo Amor. What they share is an aspiration
+          grounded in spiritual depth, relational attunement, soulful
+          perception, systemic understanding, and a refusal to look away from
+          the suffering of the world.
+        </p>
+
+        <p className="font-serif text-xl font-medium italic leading-relaxed text-foreground md:text-2xl">
+          We walk in their footsteps.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 {/* Our Vows */}
 <section className="bg-[#FFFDF6] py-16 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
