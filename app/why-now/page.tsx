@@ -106,69 +106,125 @@ export default function WhyNowPage() {
           </div>
         </section>
 
-        {/* Historical Response */}
-        <section className="py-16 lg:py-20 bg-cream">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-8">
-                <div>
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">Historical Precedent</span>
-                  <h2 className="mt-2 font-serif text-3xl md:text-4xl font-medium text-foreground">
-                    Containers for Transformation
-                  </h2>
-                </div>
+{/* A Generation Between Worlds */}
+<section className="bg-cream py-16 lg:py-20">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      {/* Header */}
+      <div>
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          A Generation Between Worlds
+        </h2>
+      </div>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Historically, at moments of systemic collapse, new forms of education and community have emerged to carry culture through challenging times and reconnect them with what truly matters:
-                </p>
+      {/* Opening */}
+      <div className="space-y-6">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Many young people today are coming of age with the strange experience
+          of living without a world they can fully belong to.
+        </p>
 
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Mystery Schools</strong> — initiating seekers into hidden wisdom</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Monasteries</strong> — preserving knowledge through dark ages</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Wisdom Traditions</strong> — transmitting perennial truths</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Folk Schools</strong> — educating for life, not credentials</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 mt-2 bg-olive rounded-full shrink-0" />
-                    <span><strong className="text-foreground">Quilombos</strong> — cultivating resistance and renewal</span>
-                  </li>
-                </ul>
+        <p className="leading-relaxed text-muted-foreground">
+          The inherited promises of modern life — success, stability, endless
+          progress, upward mobility — are losing their credibility at the same
+          time that the worlds capable of replacing them have not yet fully
+          taken form. The youth is being asked to individuate within a culture
+          whose foundations they increasingly question, while somehow having to
+          imagine and create forms of life they have never been shown how to
+          inhabit.
+        </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Each built the structures, practices, relational life, pedagogies and rites of passage needed to orient human life toward what is most meaningful and to develop the capacities required to face the challenges of their time.
-                </p>
+        <p className="leading-relaxed text-muted-foreground">
+          To come of age during a civilizational threshold can be profoundly
+          meaningful. It is to live close to enormous possibilities, creativity,
+          and transformation, but it can also be deeply disorienting.
+        </p>
+      </div>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  These architectures of transformation were embodying a new paradigm of seeing, being, and acting for their time. The ones required to steward civilization towards its evolution. We believe this is what our time most urgently needs now.⁶
-                </p>
+      {/* Central Questions */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          What happens when you can clearly sense that the world you inherited
+          is failing, yet cannot see a viable path toward the one you long to
+          live in? When conventional definitions of success no longer feel
+          meaningful, but no legitimate alternatives have been built? When your
+          grief, imagination, and desire to contribute are real, but there are
+          few spaces capable of recognizing them or helping them mature into a
+          life of responsibility and service?
+        </p>
+      </div>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Not simply new ideas, but <strong className="text-foreground">new containers for human development and collective transformation.</strong> New educational architectures and communities capable of supporting individuals move through this threshold consciously—transforming societal rupture into initiation rather than collapse and despair alone.
-                </p>
-              </div>
+      {/* Pathways */}
+      <div className="space-y-6">
+        <p className="font-medium leading-relaxed text-foreground">
+          The task, then, is not simply to celebrate young people or offer them
+          hope. It is to build credible pathways through which their deepest
+          longings can meaningfully find a place to take root and be nourished
+          to fully come to life.
+        </p>
 
-              <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
-                <Image
-                  src="https://i.postimg.cc/bw8XLYpx/Mandala-of-Jnanadakini-Tibet.jpg"
-                  alt="Mandala of Jnanadakini, Tibet, representing ancestral wisdom and containers for transformation"
-                  fill
-                  className="object-contain bg-cream"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <p className="leading-relaxed text-muted-foreground">
+          Pathways that allow them to develop the spiritual depth, relational
+          maturity, systemic understanding, practical capacities, and
+          communities of belonging required to participate fully in what comes
+          next. Pathways where their soul, intelligence and ambition do not
+          have to be absorbed entirely into systems organized around
+          accumulation, status, and extraction, but can be directed toward
+          societal healing, systemic work, community-building, and artistic
+          forms of expression serving cultural renewal and the flourishing of
+          all life.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          If we fail to create such pathways, we risk losing another generation
+          to our modern dominant paradigm, because the pathways and structure
+          available to them will continually pull most of them back toward the
+          logic of the world they are trying to outgrow.
+        </p>
+
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          This is why the work feels urgent!
+        </p>
+      </div>
+
+      {/* Intergenerational Transition */}
+      <div className="space-y-6">
+        <p className="font-medium leading-relaxed text-foreground">
+          And it cannot be carried by the young alone.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Times between worlds require generations and species to find one
+          another. Older generations carry hard-won experience, resources,
+          institutional knowledge, and lessons from lives already lived within
+          the systems now revealing their limits. Younger generations carry a
+          sensitivity to what no longer works, a refusal of inherited
+          assumptions, and an imagination increasingly shaped by the futures
+          they know they will have to inhabit. And the more-than-human world
+          carries forms of intelligence and ecological memory that human
+          civilization has too often forgotten how to listen to.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Our task, then, is both{" "}
+          <strong className="font-medium text-foreground">
+            intergenerational and interspecies
+          </strong>
+          : to restore forms of responsibility that extend beyond our own
+          lifetimes and beyond the human. To steward this passage wisely means
+          learning to act in relationship with those who came before us, those
+          who will come after us, and the living world whose flourishing is
+          inseparable from our own.
+        </p>
+
+        <p className="font-medium leading-relaxed text-foreground">
+          The young should not have to inherit this moment alone. And the future
+          should not be shaped by any one generation or species alone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 {/* What This Moment Requires */}
         <section className="py-16 lg:py-20 bg-background">
