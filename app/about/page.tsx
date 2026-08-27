@@ -358,8 +358,8 @@ export default function AboutPage() {
         </h2>
 
         <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
-        The Bodhisattva Aspiration
-       </p>
+          The Bodhisattva Aspiration
+        </p>
       </div>
 
       {/* Opening */}
@@ -455,6 +455,19 @@ export default function AboutPage() {
           helping us respond to these times with greater wisdom, love, courage
           and responsibility.
         </p>
+      </div>
+
+      {/* Buddha Image */}
+      <div className="flex justify-end pt-2">
+        <div className="relative h-44 w-44 overflow-hidden sm:h-52 sm:w-52 md:h-60 md:w-60">
+          <Image
+            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
+            alt="Buddha"
+            fill
+            sizes="(min-width: 768px) 240px, (min-width: 640px) 208px, 176px"
+            className="object-contain object-bottom"
+          />
+        </div>
       </div>
     </div>
   </div>
