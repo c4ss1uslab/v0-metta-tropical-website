@@ -486,10 +486,6 @@ export default function AboutPage() {
     {/* Introduction */}
     <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
       <p className="leading-relaxed text-muted-foreground">
-        We see vows not as promises, nor as rules. They serve as an orientation.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
         The work before us is larger than any person, institution, or generation
         can complete. What we long for will not arrive through strategy or good
         intentions alone. It asks for devotion — for something we are willing
@@ -497,6 +493,7 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
+        We see vows not as promises, nor as rules. They serve as an orientation.
         These vows are a small, but essential part of this work. A way of
         reminding ourselves, again and again, what we are here for.
       </p>
@@ -602,10 +599,26 @@ export default function AboutPage() {
     {/* Sources and Acknowledgment */}
     <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-8">
       <p className="text-sm leading-relaxed text-muted-foreground italic md:text-base">
-        These vows are inspired by the four great bodhisattva vows of the
-        Buddhist traditions, and by the post-capitalist vows articulated by
-        Alnoor Ladha and Lynn Murphy. We offer ours as part of our own surrender
-        to what this moment is asking of us.
+        These vows are inspired by the four great{" "}
+        <a
+          href="https://zmm.org/four-bodhisattva-vows/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          bodhisattva vows
+        </a>{" "}
+        of the Buddhist traditions, and by the{" "}
+        <a
+          href="https://www.postcapitalistphilanthropy.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          post-capitalist vows
+        </a>{" "}
+        articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
+        our own surrender to what this moment is asking of us.
       </p>
     </div>
   </div>
