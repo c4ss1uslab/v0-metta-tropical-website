@@ -347,15 +347,19 @@ export default function AboutPage() {
   </div>
 </section>
 
-{/* The Bodhisattva Aspiration */}
+{/* Who We Must Become — The Bodhisattva Aspiration */}
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       {/* Header */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-          The Bodhisattva Aspiration
+          Who We Must Become
         </h2>
+
+        <p className="mt-2 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+          The Bodhisattva Aspiration
+        </p>
       </div>
 
       {/* Opening */}
@@ -370,51 +374,58 @@ export default function AboutPage() {
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          Our culture can describe the metacrisis in detail, and has no shortage
-          of frameworks and capacities for what this moment requires, but we
-          don&apos;t yet have an image of who we must become. The closest we
-          know comes from the Buddhist tradition: the bodhisattva — the one who
-          awakens the heart of compassion to the interdependence and suffering
-          of the world, and commits their life to the liberation of all living
-          beings.
+          Our culture can describe the metacrisis in extraordinary detail, and
+          has no shortage of frameworks and list of capacities for what this
+          moment demands of us. What feels far less available is an image of who
+          we must become. One of the most powerful images we know comes from the
+          Buddhist tradition: the bodhisattva — one who awakens to the
+          interdependence and suffering of the world, opens the heart to
+          boundless compassion, and commits their life to the liberation of all
+          living beings.
         </p>
       </div>
 
       {/* Bodhisattva Highlight */}
       <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
         <p className="leading-relaxed text-muted-foreground">
-          The Bodhisattva&apos;s aspiration is impossible to achieve, and yet
-          their commitment to it is unshakable. They live as though the
-          flourishing of all life depended on it. They train the heart to
-          become boundless, to meet each being with the tenderness a mother
-          offers her only child, to recognize the irreducible worth of every
-          life, and to move toward suffering rather than away from it. Again
-          and again, they enter the places of pain, confusion, and separation —
-          not to be consumed by them, but to understand more deeply, relieve
-          suffering where they can, and offer their life toward the liberation
-          and flourishing of the whole.
+          For the bodhisattva, awakening and service to the world become
+          inseparable. To awaken is to see through the illusion of being a
+          separate self. The suffering of other people, other species, and the
+          living Earth can no longer be treated as something happening
+          somewhere “outside” of us. Spiritual, systemic and social
+          transformation become intertwined, all part of a single response to
+          the suffering of the world.
         </p>
       </div>
 
       {/* Main Reflection */}
       <div className="space-y-6">
         <p className="leading-relaxed text-muted-foreground">
+          The bodhisattva trains the heart to become boundless: to meet each
+          being with the tenderness a mother offers her only child, to recognize
+          the irreducible worth of every life, and to expand their love and
+          compassion to ever wider circles of living beings. Again and again,
+          they enter the places of pain, confusion, and separation to understand
+          it more deeply, and find ways to wisely respond to it.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
           <strong className="font-medium text-foreground">
             Why does such an aspiration matter?
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
-          Humanity is nowhere near the fullness of what it could be —
-          individually or collectively — and without an image that reaches that
-          far, we not only forsake our most sacred capacity of becoming, but of
-          the more beautiful world wanting to be born.
+          Humanity is nowhere near the fullness of its individual and collective
+          potential. And without an image that reaches that far, we not only
+          forsake our most sacred capacity of becoming, but of the more beautiful
+          world wanting to be born.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
           We are not claiming the image of the Bodhisattva, though it has shaped
           everything we are attempting. We are saying that our culture offers
           nothing of that height to grow toward. And a culture that cannot
-          imagine such a being will rarely “produce” one, nor build the
-          containers and infrastructures that could form one.
+          imagine such a being will rarely build the containers, practices,
+          communities and developmental pathways capable of cultivating them.
         </p>
 
         <p className="font-medium leading-relaxed text-foreground">
@@ -424,29 +435,25 @@ export default function AboutPage() {
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          If we make it through this time of metacrisis, we believe that a new
-          form of contemporary expression of the aspiration and training
-          pathway of a Bodhisattva for our era will be required. Spaces where
-          we can recognize the sacred and unique potential of each human, and
-          offer the conditions for that quality of heart, mind, and being to be
-          expressed at its fullest in service of the whole.
+          If we are to participate meaningfully in a deeper civilizational
+          transition, we believe our time will require contemporary expressions
+          of the Bodhisattva aspiration — and new pathways of formation capable
+          of supporting people to grow toward them. Spaces where the sacred
+          potential of each human being can be recognized and cultivated, and
+          where the qualities of heart, mind, and soul this moment asks of us
+          can mature through practice, relationship, responsibility, and service
+          to the whole.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          We are not alone in this. Others have also sensed the urgency for the
-          emergence of a{" "}
-          <span className="font-medium text-foreground">
-            “new human”
-          </span>{" "}
-          — whether they call it Bodhisattva, EcoSattva, the New Saints,
-          Spiritual Warriors, or Homo Amor. What they share is an aspiration
-          grounded in spiritual depth, relational attunement, soulful
-          perception, systemic understanding, and a refusal to look away from
-          the suffering of the world.
-        </p>
-
-        <p className="font-serif text-xl font-medium italic leading-relaxed text-foreground md:text-2xl">
-          We walk in their footsteps.
+          We walk on the footsteps of others who have also sensed the need for
+          images of human possibility adequate to the demands of their time —
+          whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
+          Warriors or Homo Amor. What they share is an intuition that the crises
+          before us cannot be met with systemic change alone. They also ask for
+          deeper forms of human aspiration, formation and maturation, capable of
+          helping us respond to these times with greater wisdom, love, courage
+          and responsibility.
         </p>
       </div>
     </div>
