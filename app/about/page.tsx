@@ -357,9 +357,9 @@ export default function AboutPage() {
           Who We Must Become
         </h2>
 
-        <p className="mt-2 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
-          The Bodhisattva Aspiration
-        </p>
+        <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+        The Bodhisattva Aspiration
+       </p>
       </div>
 
       {/* Opening */}
