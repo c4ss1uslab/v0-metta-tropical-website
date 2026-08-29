@@ -347,6 +347,132 @@ export default function AboutPage() {
   </div>
 </section>
 
+{/* Who We Must Become — The Bodhisattva Aspiration */}
+<section className="bg-background py-16 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      {/* Header */}
+      <div>
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Who We Must Become
+        </h2>
+
+        <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+          The Bodhisattva Aspiration
+        </p>
+      </div>
+
+      {/* Opening */}
+      <div className="space-y-6">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Every culture needs images of the human being worth becoming.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Yet at a time asking so much of us, the images we have inherited feel
+          too small for the depth of transformation required.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Our culture can describe the metacrisis in extraordinary detail, and
+          has no shortage of frameworks and list of capacities for what this
+          moment demands of us. What feels far less available is an image of who
+          we must become. One of the most powerful images we know comes from the
+          Buddhist tradition: the bodhisattva — one who awakens to the
+          interdependence and suffering of the world, opens the heart to
+          boundless compassion, and commits their life to the liberation of all
+          living beings.
+        </p>
+      </div>
+
+      {/* Bodhisattva Highlight */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          For the bodhisattva, awakening and service to the world become
+          inseparable. To awaken is to see through the illusion of being a
+          separate self. The suffering of other people, other species, and the
+          living Earth can no longer be treated as something happening
+          somewhere “outside” of us. Spiritual, systemic and social
+          transformation become intertwined, all part of a single response to
+          the suffering of the world.
+        </p>
+      </div>
+
+      {/* Main Reflection */}
+      <div className="space-y-6">
+        <p className="leading-relaxed text-muted-foreground">
+          The bodhisattva trains the heart to become boundless: to meet each
+          being with the tenderness a mother offers her only child, to recognize
+          the irreducible worth of every life, and to expand their love and
+          compassion to ever wider circles of living beings. Again and again,
+          they enter the places of pain, confusion, and separation to understand
+          it more deeply, and find ways to wisely respond to it.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <strong className="font-medium text-foreground">
+            Why does such an aspiration matter?
+          </strong>{" "}
+          Because we grow to the height of what we can imagine becoming.
+          Humanity is nowhere near the fullness of its individual and collective
+          potential. And without an image that reaches that far, we not only
+          forsake our most sacred capacity of becoming, but of the more beautiful
+          world wanting to be born.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          We are not claiming the image of the Bodhisattva, though it has shaped
+          everything we are attempting. We are saying that our culture offers
+          nothing of that height to grow toward. And a culture that cannot
+          imagine such a being will rarely build the containers, practices,
+          communities and developmental pathways capable of cultivating them.
+        </p>
+
+        <p className="font-medium leading-relaxed text-foreground">
+          This is not a small thing missing from our times. It is close to the
+          heart of what has gone wrong — and it is part of what our work exists
+          to restore.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          If we are to participate meaningfully in a deeper civilizational
+          transition, we believe our time will require contemporary expressions
+          of the Bodhisattva aspiration — and new pathways of formation capable
+          of supporting people to grow toward them. Spaces where the sacred
+          potential of each human being can be recognized and cultivated, and
+          where the qualities of heart, mind, and soul this moment asks of us
+          can mature through practice, relationship, responsibility, and service
+          to the whole.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          We walk on the footsteps of others who have also sensed the need for
+          images of human possibility adequate to the demands of their time —
+          whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
+          Warriors or Homo Amor. What they share is an intuition that the crises
+          before us cannot be met with systemic change alone. They also ask for
+          deeper forms of human aspiration, formation and maturation, capable of
+          helping us respond to these times with greater wisdom, love, courage
+          and responsibility.
+        </p>
+      </div>
+
+      {/* Buddha Image */}
+      <div className="flex justify-end pt-2">
+        <div className="relative h-44 w-44 overflow-hidden sm:h-52 sm:w-52 md:h-60 md:w-60">
+          <Image
+            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
+            alt="Buddha"
+            fill
+            sizes="(min-width: 768px) 240px, (min-width: 640px) 208px, 176px"
+            className="object-contain object-bottom"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {/* Our Vows */}
 <section className="bg-[#FFFDF6] py-16 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -360,10 +486,6 @@ export default function AboutPage() {
     {/* Introduction */}
     <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
       <p className="leading-relaxed text-muted-foreground">
-        We see vows not as promises, nor as rules. They serve as an orientation.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
         The work before us is larger than any person, institution, or generation
         can complete. What we long for will not arrive through strategy or good
         intentions alone. It asks for devotion — for something we are willing
@@ -371,6 +493,7 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
+        We see vows not as promises, nor as rules. They serve as an orientation.
         These vows are a small, but essential part of this work. A way of
         reminding ourselves, again and again, what we are here for.
       </p>
@@ -476,10 +599,26 @@ export default function AboutPage() {
     {/* Sources and Acknowledgment */}
     <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-8">
       <p className="text-sm leading-relaxed text-muted-foreground italic md:text-base">
-        These vows are inspired by the four great bodhisattva vows of the
-        Buddhist traditions, and by the post-capitalist vows articulated by
-        Alnoor Ladha and Lynn Murphy. We offer ours as part of our own surrender
-        to what this moment is asking of us.
+        These vows are inspired by the four great{" "}
+        <a
+          href="https://zmm.org/four-bodhisattva-vows/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          bodhisattva vows
+        </a>{" "}
+        of the Buddhist traditions, and by the{" "}
+        <a
+          href="https://www.postcapitalistphilanthropy.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          post-capitalist vows
+        </a>{" "}
+        articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
+        our own surrender to what this moment is asking of us.
       </p>
     </div>
   </div>
