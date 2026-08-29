@@ -302,10 +302,10 @@ export default function TheoryOfChangePage() {
 
                   <div className="w-full flex flex-col gap-4 relative z-10">
                     {[
-                      { title: 'Crisis of Power', desc: 'Captured actors and systems incapable of coordinating transformative change alone.' },
-                      { title: 'Crisis of Incentives', desc: 'Systems optimizing purely for short-term, rivalrous, and extractive behaviors.' },
-                      { title: 'Crisis of Trust', desc: 'Breakdown of shared sensemaking, truth verification, and institutional legitimacy.' },
-                      { title: 'Crisis of Complexity', desc: 'Complicated structures fragilely layered over highly complex substrates.', sup: '5' }
+                      { title: 'Crisis of Power', desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.' },
+                      { title: 'Crisis of Incentives', desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.' },
+                      { title: 'Crisis of Trust', desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.' },
+                      { title: 'Crisis of Complexity', desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', sup: '5' }
                     ].map((item, i) => {
                       const verticalPos = (sweep - 38) / 24 * 100;
                       const targetY = [12, 37, 62, 87][i];
@@ -381,10 +381,10 @@ export default function TheoryOfChangePage() {
 
                   <div className="w-full flex flex-col gap-4 relative z-10">
                     {[
-                      { title: 'Crisis of Perception', desc: 'Persistent delusions of total separation, misapprehending nature and reality.' },
-                      { title: 'Crisis of Relationship', desc: 'Alienation from self, other human life, and the non-human world.' },
-                      { title: 'Crisis of Value', desc: 'Spiritual crisis, loss of existential meaning, and broken ties to the sacred.', sup: '2' },
-                      { title: 'Crisis of Capacity', desc: 'Unfulfilled potential scaled up by global systems, making problems outpace our capacity to process.' }
+                      { title: 'Crisis of Perception', desc: 'Persistent delusions of separation, misapprehending nature and reality.' },
+                      { title: 'Crisis of Relationship', desc: 'The loss of our intimate relationships with all life: ourselves, others, the world and the sacred. ' },
+                      { title: 'Crisis of Value', desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', sup: '2' },
+                      { title: 'Crisis of Capacity', desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.' }
                     ].map((item, i) => {
                       const verticalPos = (sweep - 0) / 22 * 100;
                       const targetY = [12, 37, 62, 87][i];
