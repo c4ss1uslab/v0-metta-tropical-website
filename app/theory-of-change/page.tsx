@@ -1097,53 +1097,150 @@ export default function TheoryOfChangePage() {
   </div>
 </section>
 
-        {/* 3. The Developmental Hypothesis */}
-        <section className="py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-yellow font-medium text-sm tracking-wide uppercase">3. The Developmental Hypothesis</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-background">
-                What This Moment Requires
-              </h2>
-              <blockquote className="mt-8 font-serif text-xl text-background/80 italic border-l-4 border-yellow pl-6 text-left">
-                &ldquo;The way we respond to the crisis is part of the crisis.&rdquo;
-              </blockquote>
-              <cite className="mt-2 block text-background/60 text-sm not-italic font-medium text-left">— Bayo Akomolafe</cite>
-            </div>
+{/* 3. The Developmental Hypothesis */}
+<section className="bg-foreground py-24 text-background lg:py-32">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-yellow">
+        3. The Developmental Hypothesis
+      </span>
 
-            <div className="space-y-8 text-background/90 leading-relaxed">
-              <p className="text-lg font-serif text-yellow">
-                We believe the metacrisis cannot be resolved through new technologies, policies, or institutions alone. The same ways of seeing, being, knowing, and relating that contributed to the metacrisis cannot generate the conditions required for a life-enhancing civilization to emerge.
-              </p>
-              <p>
-                This moment therefore calls for profound human and civilizational transformation in how we understand ourselves, reality, and our relationship with all life. Most modern civilizational structures — educational systems, media environments, economic systems, technologies, and cultural norms — continuously shape human desires, identities, ambitions, and behaviors in ways that reinforce fragmentation, extraction, hyper-individualism, disconnection from life, and the inability to perceive our deep interdependence with living systems.
-              </p>
-              <p className="font-medium text-yellow">
-                At the heart of both our challenge and our work is a developmental question.
-              </p>
+      <h2 className="mt-4 font-serif text-3xl font-medium text-background md:text-4xl lg:text-5xl">
+        What This Moment Requires
+      </h2>
+    </div>
 
-              <p className="font-medium text-yellow">
-                [what is the question?] - my development question + "we have lots to learn with living systems, indigenous practices, wisdom traditions, etc."
-              </p>
+    {/* Quote */}
+    <blockquote className="mt-8 border-l-4 border-yellow pl-6 text-left font-serif text-xl italic leading-relaxed text-background/80 md:text-2xl">
+      &ldquo;The way we respond to the crisis is part of the crisis.&rdquo;
+    </blockquote>
 
-              <p>
-                We understand this moment as a civilizational rite of passage: a threshold demanding that humanity evolve beyond many of the ways of being modernity has normalized. Responding to the metacrisis requires transformation at the level of perception, relationship, identity, values, and participation in life itself.
-              </p>
-              <p>
-                This means cultivating forms of wisdom, relational maturity, ethical depth, ecological awareness, ontological grounding, and developmental capacity capable of disclosing different ways of being human and participating in the world.
-              </p>
-              <p>
-                Yet we currently possess very few structures capable of supporting such becoming. Most educational and developmental systems continue reproducing the same patterns of consciousness and culture that generated the crisis in the first place. While many important alternative initiatives have emerged over recent decades, most remain fragmented, isolated, difficult to access, or unable to sustain the long arc of transformation required during a civilizational transition.
-              </p>
-              <p>
-                Human transformation of this depth cannot emerge through isolated workshops, short-term interventions, or information transfer alone. It requires <strong>new developmental ecologies</strong>: interconnected systems of practices, spaces, relationships, communities, and educational processes capable of seeping into existing systems, transforming them, creating new ones and supporting deep personal and collective transformation across time.
-              </p>
-              <p>
-                These developmental ecologies become the seeds of new developmental cultures which, over time, can evolve into civilizational infrastructures capable of supporting wiser forms of human participation at scale. The task before us is not simply to create isolated transformational spaces, but collective coordination to help cultivate the conditions for new worlds, developmental cultures, and life-enhancing civilizations to emerge.
-              </p>
-            </div>
-          </div>
-        </section>
+    <cite className="mt-4 block text-left text-sm font-medium not-italic text-background/60">
+      — Bayo Akomolafe
+    </cite>
+
+    {/* Main Content */}
+    <div className="mt-10 space-y-8 leading-relaxed text-background/90">
+      <p>
+        We believe the metacrisis cannot be adequately responded to with new
+        technologies, policies, or institutions alone. The underlying ways of
+        seeing, being, knowing, and relating that continue to generate and
+        reproduce the metacrisis cannot, by themselves, create the conditions
+        for a life-enhancing civilization to emerge.
+      </p>
+
+      <p>
+        This moment calls for profound human and civilizational transformation
+        in how we understand ourselves, reality, and our relationship with all
+        life. Many of the dominant structures of modern civilization —
+        educational systems, media environments, economies, technologies, and
+        cultural norms — continually shape our desires, identities, ambitions,
+        and behaviors in ways that reinforce fragmentation, extraction,
+        hyper-individualism, disconnection from life, and an inability to fully
+        perceive our interdependence with living systems.
+      </p>
+
+      {/* Civilizational Rite of Passage */}
+      <div className="border-l-4 border-yellow bg-background/5 px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-background/90">
+          We understand this moment as a{" "}
+          <strong className="font-medium text-yellow">
+            civilizational rite of passage
+          </strong>
+          : a threshold asking humanity to mature beyond many of the ways of
+          being that modernity has normalized. This means cultivating forms of
+          wisdom, relational maturity, ethical depth, strategic capacity,
+          ontological grounding, and collective coordination capable of opening
+          new possibilities for how we live, relate, and act together —
+          reducing the existential risks before us while helping create the
+          conditions for a more life-affirming civilization to emerge.
+        </p>
+      </div>
+
+      <p>
+        This level of civilizational maturity may be something unprecedented
+        for us — not because these capacities themselves are new, but because
+        of how broadly they are now needed, how deeply they must be integrated,
+        and the scale of complexity and power they are being asked to hold.
+      </p>
+
+      <p>
+        Wisdom traditions have cultivated compassion, ethical discernment,
+        spiritual depth, and relational maturity for millennia, often through
+        long-term pathways of practice, community, discipline, and devotion.
+        Our time asks that such capacities are now brought into relationship
+        with other forms of intelligence needed to navigate planetary
+        complexity: systemic intelligence alongside spiritual depth;
+        technological capability alongside ethical discernment; individual
+        agency alongside relational maturity; strategic thinking alongside
+        ecological belonging; and human flourishing understood as inseparable
+        from the flourishing of the wider living world.
+      </p>
+
+      {/* Developmental Hypothesis */}
+      <div className="rounded-r-xl border-l-4 border-yellow bg-background/5 px-6 py-7 md:px-8 md:py-8">
+        <p className="leading-relaxed text-background/90">
+          Our{" "}
+          <strong className="font-medium text-yellow">
+            developmental hypothesis
+          </strong>{" "}
+          is that capacities of this depth cannot be cultivated through
+          information transfer, isolated workshops, or short-term
+          transformative experiences alone. They require long-term formation:
+          sustained practice and training, mentorship, relationship, community,
+          meaningful responsibility, reflection, and opportunities to
+          participate directly in the challenges of our time. Over years, these
+          conditions can help cultivate the kinds of human beings and
+          communities capable of navigating this moment with greater wisdom,
+          maturity, and responsibility.
+        </p>
+      </div>
+
+      <p>
+        And this formation cannot remain individual. Our current challenges are
+        too complex for a single person to make sense of it. We need to gain the
+        capacity for collective discernment, shared attention, trust,
+        distributed intelligence, and coordinated action that only emerge
+        between people and through communities. Our developmental environments
+        must be capable of cultivating not only wiser individuals, but
+        communities that can learn, mature, discern, and act together in
+        service of something larger than themselves.
+      </p>
+
+      <p>
+        We call these environments{" "}
+        <strong className="font-medium text-yellow">
+          developmental ecologies
+        </strong>
+        : interconnected constellations of practices, relationships, training,
+        communities, mentors, experiences, rituals, forms of inquiry, and
+        pathways of responsibility capable of supporting the long arc of human
+        and communal maturation.
+      </p>
+
+      <p>
+        Over time, developmental ecologies can become{" "}
+        <strong className="font-medium text-yellow">
+          developmental cultures
+        </strong>{" "}
+        — ways of living in which wisdom, responsibility, relationship, and
+        maturation become embedded in the norms and practices of collective
+        life.
+      </p>
+
+      <p>
+        We call this a developmental hypothesis because it remains an inquiry
+        to be tested, challenged, and refined through practice. We do not
+        presume to know exactly what forms of human and collective development
+        will be adequate to the transformations ahead. But we see growing
+        evidence that better solutions alone are insufficient when the people,
+        relationships, and environments implementing them continue to reproduce
+        the patterns they seek to transform.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* 4. The Response */}
         <section className="py-24 lg:py-32 bg-cream">
