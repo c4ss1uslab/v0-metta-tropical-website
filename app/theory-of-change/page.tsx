@@ -486,11 +486,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 1. The Orientation Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 What is worth offering our lives to?
               </p>
             </div>
@@ -573,11 +573,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 2. The Aspiration Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 Who must we become?
               </p>
             </div>
@@ -658,11 +658,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 3. The Formation Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 How do we become such humans?
               </p>
             </div>
@@ -778,11 +778,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 4. The Integration Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 What containers sustain such becoming across time?
               </p>
             </div>
@@ -871,11 +871,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 5. The Communal Development Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 How do we mature together?
               </p>
             </div>
@@ -966,11 +966,11 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 6. The Civilizational Gap
-              </h3>
+              </span>
 
-              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 What kinds of worlds cultivate rather than undermine our
                 becoming?
               </p>
