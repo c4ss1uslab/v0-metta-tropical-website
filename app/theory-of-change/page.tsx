@@ -439,7 +439,7 @@ export default function TheoryOfChangePage() {
       </span>
 
       <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-        A Crisis of Education, Formation, and Human Development
+        A Crisis of Education, Formation, and Communal Development
       </h2>
     </div>
 
