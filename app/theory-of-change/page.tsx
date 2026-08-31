@@ -429,71 +429,673 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* The Problem */}
-        <section className="py-24 lg:py-32 bg-cream">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <span className="text-olive font-medium text-sm tracking-wide uppercase">2. The Problem We're Tackling</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                A Crisis of Education, Formation, and Human Development
-              </h2>
+{/* The Problem */}
+<section className="bg-cream py-24 lg:py-32">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-olive">
+        2. The Problem We&apos;re Tackling
+      </span>
+
+      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        A Crisis of Education, Formation, and Human Development
+      </h2>
+    </div>
+
+    {/* Quote */}
+    <blockquote className="mt-8 border-l-4 border-olive pl-6 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+      &ldquo;If education is not the answer, you are asking the wrong question:
+      why it&apos;s time to see planetary crises as a species-wide learning
+      opportunity.&rdquo;
+    </blockquote>
+
+    <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
+      — Zak Stein
+    </cite>
+
+    {/* Introduction */}
+    <div className="mt-10 space-y-6">
+      <p className="leading-relaxed text-muted-foreground">
+        The three layers of the metacrisis outlined above reveal a deeper
+        educational and developmental crisis unfolding beneath our global
+        challenges. The metacrisis is not only a crisis of systems,
+        institutions, and planetary conditions, but also of how human beings
+        are being formed within them, how we learn to perceive, relate, desire,
+        make meaning, exercise power, and understand what our lives are
+        ultimately in service of.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        If the metacrisis is simultaneously systemic, ontological, relational,
+        developmental, and civilizational, then our educational responses must
+        be capable of engaging these multiple layers of reality as well.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        We understand this crisis of education and human formation through six
+        interconnected gaps that together define the central problems our work
+        seeks to respond to.
+      </p>
+    </div>
+
+    {/* Six Gaps */}
+    <div className="mt-12 space-y-5">
+      {/* 1. Orientation Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                1. The Orientation Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                What is worth offering our lives to?
+              </h3>
             </div>
 
-            <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-olive pl-6">
-              &ldquo;If education is not the answer, you are asking the wrong question: why it's time to see planetary crises as a species-wide learning opportunity.&rdquo;
-            </blockquote>
-            <cite className="mt-4 block text-muted-foreground/70 text-sm not-italic font-medium">— Zak Stein</cite>
-
-            <div className="mt-8 space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                The three layers of the metacrisis outlined above illuminate a deeper educational and developmental crisis unfolding beneath our global challenges. If the metacrisis is simultaneously systemic, ontological, relational, developmental, and civilizational, then our educational responses must also be capable of engaging these multiple layers of reality.</p>
-              <p className="text-muted-foreground leading-relaxed">
-                One of the deepest failures of modern education is that it has become extraordinarily effective at cultivating information, specialization, and technical capability, while remaining largely incapable of cultivating wisdom, relational maturity, and ethical depth.</p>
-              <p className="text-muted-foreground leading-relaxed">We believe this educational crisis exists across three interconnected dimensions:</p>
-            </div>
-            <div className="space-y-1 py-6">
-              <p className="text-muted-foreground leading-relaxed">• <strong>Conventional education</strong> often reproduces the fragmentation underlying the metacrisis.</p>
-              <p className="text-muted-foreground leading-relaxed">• <strong>Alternative educational</strong> movements, while valuable, remain too fragmented to meet the scale and complexity of civilizational transition.</p>
-              <p className="text-muted-foreground leading-relaxed">• <strong>Civilization</strong> itself functions as an educational environment, shaping desires, identities, perceptions, and behaviors that perpetuate the metacrisis.</p>
-            </div>
-            <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">Much of today’s educational landscape — conventional, alternative, and civilizational — remains insufficient for the magnitude of the transition we are entering.</p>
-              <p className="text-muted-foreground leading-relaxed">At one level, <strong>conventional educational</strong> systems continue to shape millions of people through fragmented industrial-age models of learning centered around standardization, information transfer, testing, and economic productivity. While these systems generated extraordinary scientific, technological, and economic capacities, they often did so within cultural and economic paradigms, unable to adequately orient those powers toward the flourishing of life as a whole. In this sense, more education is not necessarily better. Forms of education that reinforce fragmentation, competition, extraction, hyper-individualism, and disconnection from life may deepen the very conditions generating the metacrisis itself.</p>
-              <p className="text-muted-foreground leading-relaxed">At the same time, many <strong>alternative educational</strong> approaches and transformational initiatives have emerged in response to the limitations of conventional education. Ecological education, holistic education, contemplative practice, systems thinking, developmental frameworks, community-based learning, and social impact movements have all contributed important insights toward reimagining human development and cultural renewal. Many of these efforts represent essential and beautiful responses to a world in crisis.</p>
-              <p className="text-muted-foreground leading-relaxed">Yet the depth and complexity of the metacrisis reveal that isolated approaches alone are not enough. Many remain fragmented, siloed, or structurally dependent upon the same civilizational logics they seek to transform. Few are capable of engaging the multiple layers of the metacrisis simultaneously: the systemic, relational, ontological, developmental, and civilizational dimensions of our predicament.</p>
-              <p className="text-muted-foreground leading-relaxed">At the deepest layer, we cannot respond to the metacrisis if education is reduced merely to schools, universities, or alternative institutions. Education, in its deepest sense, is the intergenerational process through which societies reproduce ways of perceiving, relating, knowing, valuing, and being across time.</p>
-             <p className="text-muted-foreground leading-relaxed">  Human beings are always being educated through culture, media,
-    technology, economics, architecture, religion, family systems,
-    institutions, and the wider social worlds they inhabit.
-  </p>
-
-  <div>
-    <p className="text-muted-foreground leading-relaxed">
-      Civilization itself is an educational environment:
-    </p>
-    <ul className="mt-2 text-muted-foreground leading-relaxed list-disc pl-6 space-y-1">
-      <li>Systems shape consciousness.</li>
-      <li>Cultures shape perception.</li>
-      <li>The media shapes desire.</li>
-      <li>Institutions shape identity.</li>
-      <li>Economies shape relationships.</li>
-      <li>Technologies shape attention.</li>
-    </ul>
-  </div>
-
-<p className="text-muted-foreground leading-relaxed">
-    Civilization shapes the kinds of human beings we become. The question is not whether civilization is educating us, but what
-    kinds of human beings it is cultivating.
-  </p>
-              <p className="text-muted-foreground leading-relaxed">We believe many of the dominant systems shaping modern life are reinforcing fragmentation, extraction, acceleration and disconnection from life. Consequently, fragmented systems cultivate fragmented human beings, who then recreate fragmented systems. This recursive cycle has become one of the central dynamics perpetuating the metacrisis itself.</p>
-              <p className="text-muted-foreground leading-relaxed">Therefore, the challenge before us is not merely educational reform, but a profound expansion of what education itself means.</p>
-              <p className="text-muted-foreground leading-relaxed">The task is not simply to create better schools, programs, or institutions — though this is indeed necessary — but to cultivate living developmental ecosystems: relational ecologies of communities, practices, workplaces, educational spaces, and cultures capable of supporting the long arc of human maturation required during a civilizational transition.</p>
-              <p className="text-muted-foreground leading-relaxed">Over time, such developmental ecosystems may help give rise to new civilizational infrastructures: new forms of institutions, businesses, cultural spaces, educational architectures, and public life capable of sustaining wiser forms of human participation across generations.</p>
-              <p className="text-muted-foreground leading-relaxed">The question before us is no longer only: <em>how do we improve education?</em></p>
-              <p className="text-muted-foreground leading-relaxed">But more fundamentally: <em>what kinds of educational architectures, developmental cultures, and civilizational infrastructures must now emerge to cultivate the forms of wisdom, maturity, and human participation required for humanity to navigate this time between worlds?</em></p>
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
             </div>
           </div>
-        </section>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Education rarely helps people engage seriously with the
+            existential, ethical, spiritual, and ontological questions that
+            orient a life. It develops intelligence and capability without
+            sufficient clarity about what those capacities are ultimately in
+            service of.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              Modern education has largely withdrawn from the existential,
+              spiritual, ethical, and ontological questions that belong at the
+              heart of human formation:{" "}
+              <em>
+                What is a human life for? What is the nature of reality? What is
+                worthy of our devotion? What does it mean to live a meaningful
+                life? How should we relate to suffering? What is ultimately
+                worth serving?
+              </em>
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              These questions have often been relegated to religious
+              institutions or the private sphere, leaving few serious
+              educational spaces in which they can be encountered, practiced,
+              and lived into. Yet education is never truly neutral. Every
+              educational system carries implicit assumptions about what a human
+              being is, what constitutes a good life, what is worthy of
+              devotion, and what the world is for.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              When these assumptions remain unconscious and unquestioned, the
+              intelligence, capacities, and power cultivated through education
+              can just as easily deepen fragmentation, alienation, and the
+              destruction of life instead of contributing to its flourishing.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              The problem is not only how human beings develop, but what their
+              development is ultimately oriented toward.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 2. Aspiration Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                2. The Aspiration Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                Who must we become?
+              </h3>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Human beings grow toward the horizons they can imagine. The images
+            our culture offers — the achiever, the founder, even the changemaker
+            — are too small for the depth of transformation this moment
+            requires, and we have almost nothing higher to grow toward.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              Human beings grow toward the horizons of possibility they are
+              able to imagine. We are formed not only by what we are taught,
+              but by the images of human possibility our cultures teach us to
+              admire and aspire toward.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Many of the dominant aspirations of modern life remain organized
+              around individual achievement, status, accumulation,
+              productivity, recognition, and success. Even the figure of the
+              “changemaker” can leave unquestioned the deeper existential
+              questions and forms of maturation, responsibility, and
+              transformation demanded by a civilizational crisis.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              At a moment asking so much of humanity, the images of human
+              possibility available to us feel too small for the depth of
+              transformation required. We lack widely shared images of mature,
+              wise, and responsible human beings capable of awakening deeper
+              aspiration toward wisdom, courage, compassion, ethical
+              discernment, and a life of devotion towards the flourishing of
+              all living beings.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              Without compelling images of who we must become, sacred dimensions
+              of human potential can remain dormant, and with them, the more
+              beautiful possibilities for the kinds of worlds those human
+              beings might help bring into being.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 3. Formation Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                3. The Formation Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                How do we become such humans?
+              </h3>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Education has become highly effective at expanding what people know,
+            while neglecting the deeper formation of who they are becoming. We
+            can accumulate knowledge without allowing it to transform our
+            character, relationships, actions, or ways of life. Wisdom,
+            responsibility, ethical discernment, relational maturity, and
+            spiritual depth still remain largely peripheral to most educational
+            projects.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              Education has increasingly been reduced to learning, while
+              neglecting the deeper work of human formation.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Much of conventional education continues to shape millions of
+              people through models centered on standardization, information
+              transfer, specialization, testing, credentials, and preparation
+              for participation in the dominant economic and social systems.
+              These forms of education have contributed to great scientific,
+              technological, and material achievements — though their benefits
+              have been unevenly shared, and they emerged within civilizational
+              paradigms that have also generated profound costs for human
+              communities and the more-than-human world.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              These forms of learning matter. But{" "}
+              <strong className="font-medium text-foreground">
+                learning is not the same as development, and development is not
+                the same as formation.
+              </strong>{" "}
+              Learning expands what we know and can do. Development expands the
+              capacities through which we perceive, make meaning, relate, and
+              respond. Formation shapes who we are becoming, what we come to
+              love, value, attend to, serve, and ultimately organize our lives
+              around.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Modern education has been far less intentional about this deeper
+              work. And the reason is that we are formed by how we engage with
+              and meet reality, and education has taught us to meet it almost
+              entirely through abstraction and analysis. It rarely engages the
+              interior life, the relational field between people, the felt
+              sense of belonging to a place, or the dimensions of existence
+              that exceed explanation altogether.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              This is why education can inform people well and form them hardly
+              at all, because conceptual understanding alone can&apos;t fully
+              transform a person. It is possible to understand interdependence
+              completely and live extractively. It is possible to know the
+              science of collapse and feel nothing. This is what happens when
+              reality is only ever met from one depth.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              In this sense, more education is not necessarily better. Forms of
+              education that reproduce narrow-boundary thinking, competition,
+              fragmentation, extraction, hyper-individualism, and disconnection
+              from life may continue to strengthen the very patterns generating
+              the metacrisis.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              And as our technological and institutional power expands, the
+              imbalance grows more consequential. We are rapidly increasing
+              what human beings know and can do without cultivating, at anything
+              like the same pace, the maturity to discern what is worth doing at
+              all.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 4. Communal Development Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                4. The Communal Development Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                How do we mature together?
+              </h3>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Human development is still treated primarily as an individual
+            endeavor, even though many capacities required by the metacrisis can
+            only be cultivated together. Communities themselves must become the
+            unit of development, not support structures for individual growth,
+            but bodies capable of perceiving, sensing and acting as one.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              We have treated human development primarily as an individual
+              endeavor. Much of modern education — including many transformative
+              and alternative approaches — continues to take the individual as
+              its primary unit of change. We design curricula for individual
+              learning, measure individual outcomes, cultivate individual
+              capacities, and imagine transformation largely as something that
+              happens within a person.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Yet many of the capacities required to respond to the metacrisis
+              cannot exist within an individual alone. They can only be
+              developed together. The challenge before us is not only to
+              cultivate wiser, more courageous, and responsible individuals,
+              but to learn how communities themselves can become subjects of
+              development — collective bodies capable of deepening their shared
+              attention, relational maturity, collective intelligence, capacity
+              for sensemaking, and ability to act coherently in service of
+              something larger than themselves.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              This resonates deeply with Thich Nhat Hanh&apos;s vision that{" "}
+              <em>“the next Buddha will be a sangha.”</em> The wisdom required
+              to navigate planetary challenges cannot depend upon isolated
+              individuals becoming exceptional enough to carry this
+              responsibility alone. We need educational cultures in which the
+              locus of development expands from the individual to the relational
+              and communal.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              And perhaps this widening must go further still. The communities
+              within which we learn and develop are not exclusively human. A
+              truly planetary education must restore our capacity to learn with
+              and from the more-than-human world, recognizing land, ecosystems,
+              other species, and living systems not merely as objects of
+              knowledge, but as participants in the larger web of relationships
+              through which human formation becomes possible.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 5. Integration Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                5. The Integration Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                What containers sustain such becoming across time?
+              </h3>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Many pieces of transformative education already exist —
+            contemplative, ecological, systemic, relational, ancestral — but
+            they remain fragmented, short-term, and disconnected from one
+            another. We lack coherent pathways that hold them together across
+            years, through practice, training and accompaniment, until
+            transformation becomes a way of life.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              We currently possess many pieces of alternative and transformative
+              education offering the capacities and formation needed at this
+              moment, but rarely the long-term container capable of bringing
+              them together across time.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              In response to the limitations of conventional education, powerful
+              alternatives have emerged: ecological education, holistic
+              education, contemplative practice, systems thinking,
+              developmental frameworks, relational practice, community-based
+              learning, ancestral and Indigenous ways of knowing, and new
+              approaches to leadership and social transformation. Together, they
+              offer essential contributions toward reimagining human formation
+              for our time.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Yet they often remain fragmented from one another, delivered
+              through short-term programs, disconnected from the wider
+              structures through which people actually organize their lives,
+              and structurally dependent upon the same civilizational logics
+              they seek to transform. Few educational environments are capable
+              of engaging the systemic, relational, ontological, developmental,
+              ecological, and civilizational dimensions of our predicament in
+              an integrated way.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              The problem is not simply a lack of transformative experiences,
+              but the absence of coherent pathways of formation capable of
+              bringing these experiences into relationships across time.
+              Profound transformation requires developmental ecologies in which
+              different dimensions of growth can deepen, inform one another,
+              become embodied through sustained practice and community, and
+              eventually take root as a way of life.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 6. Civilizational Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+                6. The Civilizational Gap
+              </span>
+
+              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                What kinds of worlds cultivate rather than undermine our
+                becoming?
+              </h3>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Education does not end in schools: cultures, economies,
+            technologies, institutions, and social environments continually
+            shape who we become. Without transforming these wider societal
+            infrastructures, people are repeatedly pulled back into the very
+            patterns they are trying to outgrow.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read deeper</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              At the deepest layer, we cannot respond to the metacrisis if
+              education is reduced merely to schools, universities, or
+              alternative institutions. Education, in its deepest sense, is the
+              intergenerational process through which societies reproduce ways
+              of perceiving, relating, knowing, valuing, and being across time.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Human beings are always being formed through culture, media,
+              technology, economics, architecture, religion, family systems,
+              institutions, and the wider social worlds they inhabit.
+            </p>
+
+            <div className="rounded-r-lg border-l-2 border-[#D9A01B] bg-[#FFF9E9]/70 px-5 py-5 md:px-6">
+              <p className="font-medium leading-relaxed text-foreground">
+                Civilization is always educating us and shaping the kind of
+                humans we become:
+              </p>
+
+              <ul className="mt-4 space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>Systems shape behavior.</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>Cultures shape perception.</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>The media shapes desire.</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>Institutions shape identity.</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>Economies shape relationships.</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                  <span>Technologies shape attention.</span>
+                </li>
+              </ul>
+            </div>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Many of the dominant systems of modern life reinforce
+              acceleration, competition, extraction, fragmentation,
+              hyper-individualism, and disconnection from the living world.
+              Even people who sincerely long to live differently are
+              continually returned to environments whose incentives, rhythms,
+              and assumptions pull them back toward the patterns they are trying
+              to transform.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              Therefore, fragmented systems cultivate fragmented human beings,
+              who then recreate fragmented systems. This recursive cycle has
+              become one of the central dynamics perpetuating the metacrisis
+              itself.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              The task is not only to create better schools, programs, or
+              institutions, though this is indeed necessary. We cannot expect
+              that individuals will heroically resist the environments around
+              them. Eventually, the communities, institutions, economies,
+              technologies, and cultures themselves must begin to support
+              different ways of being human.
+            </p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
 
         {/* 3. The Developmental Hypothesis */}
         <section className="py-24 lg:py-32 bg-foreground text-background">
