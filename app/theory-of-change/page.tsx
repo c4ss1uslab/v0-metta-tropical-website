@@ -486,13 +486,13 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
                 1. The Orientation Gap
-              </span>
-
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                What is worth offering our lives to?
               </h3>
+
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                What is worth offering our lives to?
+              </p>
             </div>
 
             <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
@@ -509,7 +509,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
+            <span className="group-open:hidden">Read more</span>
             <span className="hidden group-open:inline">Close</span>
 
             <svg
@@ -573,13 +573,13 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
                 2. The Aspiration Gap
-              </span>
-
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                Who must we become?
               </h3>
+
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                Who must we become?
+              </p>
             </div>
 
             <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
@@ -595,7 +595,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
+            <span className="group-open:hidden">Read more</span>
             <span className="hidden group-open:inline">Close</span>
 
             <svg
@@ -658,13 +658,13 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
                 3. The Formation Gap
-              </span>
-
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                How do we become such humans?
               </h3>
+
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                How do we become such humans?
+              </p>
             </div>
 
             <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
@@ -683,7 +683,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
+            <span className="group-open:hidden">Read more</span>
             <span className="hidden group-open:inline">Close</span>
 
             <svg
@@ -773,18 +773,111 @@ export default function TheoryOfChangePage() {
         </div>
       </details>
 
-      {/* 4. Communal Development Gap */}
+      {/* 4. Integration Gap */}
       <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
-                4. The Communal Development Gap
-              </span>
-
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                How do we mature together?
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+                4. The Integration Gap
               </h3>
+
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                What containers sustain such becoming across time?
+              </p>
+            </div>
+
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
+              <span className="text-xl font-light leading-none">+</span>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            Many pieces of transformative education already exist —
+            contemplative, ecological, systemic, relational, ancestral — but
+            they remain fragmented, short-term, and disconnected from one
+            another. We lack coherent pathways that hold them together across
+            years, through practice, training and accompaniment, until
+            transformation becomes a way of life.
+          </p>
+
+          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
+            <span className="group-open:hidden">Read more</span>
+            <span className="hidden group-open:inline">Close</span>
+
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </summary>
+
+        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
+          <div className="space-y-6">
+            <p className="leading-relaxed text-muted-foreground">
+              We currently possess many pieces of alternative and transformative
+              education offering the capacities and formation needed at this
+              moment, but rarely the long-term container capable of bringing
+              them together across time.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              In response to the limitations of conventional education,
+              powerful alternatives have emerged: ecological education,
+              holistic education, contemplative practice, systems thinking,
+              developmental frameworks, relational practice, community-based
+              learning, ancestral and Indigenous ways of knowing, and new
+              approaches to leadership and social transformation. Together,
+              they offer essential contributions toward reimagining human
+              formation for our time.
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              Yet they often remain fragmented from one another, delivered
+              through short-term programs, disconnected from the wider
+              structures through which people actually organize their lives,
+              and structurally dependent upon the same civilizational logics
+              they seek to transform. Few educational environments are capable
+              of engaging the systemic, relational, ontological, developmental,
+              ecological, and civilizational dimensions of our predicament in
+              an integrated way.
+            </p>
+
+            <p className="font-medium leading-relaxed text-foreground">
+              The problem is not simply a lack of transformative experiences,
+              but the absence of coherent pathways of formation capable of
+              bringing these experiences into relationships across time.
+              Profound transformation requires developmental ecologies in which
+              different dimensions of growth can deepen, inform one another,
+              become embodied through sustained practice and community, and
+              eventually take root as a way of life.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      {/* 5. Communal Development Gap */}
+      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
+        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+                5. The Communal Development Gap
+              </h3>
+
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                How do we mature together?
+              </p>
             </div>
 
             <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
@@ -801,7 +894,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
+            <span className="group-open:hidden">Read more</span>
             <span className="hidden group-open:inline">Close</span>
 
             <svg
@@ -868,112 +961,19 @@ export default function TheoryOfChangePage() {
         </div>
       </details>
 
-      {/* 5. Integration Gap */}
-      <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
-        <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
-          <div className="flex items-start justify-between gap-6">
-            <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
-                5. The Integration Gap
-              </span>
-
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                What containers sustain such becoming across time?
-              </h3>
-            </div>
-
-            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
-              <span className="text-xl font-light leading-none">+</span>
-            </div>
-          </div>
-
-          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
-            Many pieces of transformative education already exist —
-            contemplative, ecological, systemic, relational, ancestral — but
-            they remain fragmented, short-term, and disconnected from one
-            another. We lack coherent pathways that hold them together across
-            years, through practice, training and accompaniment, until
-            transformation becomes a way of life.
-          </p>
-
-          <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
-            <span className="hidden group-open:inline">Close</span>
-
-            <svg
-              className="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="m6 9 6 6 6-6"
-              />
-            </svg>
-          </div>
-        </summary>
-
-        <div className="border-t border-olive/15 bg-[#FFFDF6] px-6 py-7 md:px-8 md:py-8">
-          <div className="space-y-6">
-            <p className="leading-relaxed text-muted-foreground">
-              We currently possess many pieces of alternative and transformative
-              education offering the capacities and formation needed at this
-              moment, but rarely the long-term container capable of bringing
-              them together across time.
-            </p>
-
-            <p className="leading-relaxed text-muted-foreground">
-              In response to the limitations of conventional education, powerful
-              alternatives have emerged: ecological education, holistic
-              education, contemplative practice, systems thinking,
-              developmental frameworks, relational practice, community-based
-              learning, ancestral and Indigenous ways of knowing, and new
-              approaches to leadership and social transformation. Together, they
-              offer essential contributions toward reimagining human formation
-              for our time.
-            </p>
-
-            <p className="leading-relaxed text-muted-foreground">
-              Yet they often remain fragmented from one another, delivered
-              through short-term programs, disconnected from the wider
-              structures through which people actually organize their lives,
-              and structurally dependent upon the same civilizational logics
-              they seek to transform. Few educational environments are capable
-              of engaging the systemic, relational, ontological, developmental,
-              ecological, and civilizational dimensions of our predicament in
-              an integrated way.
-            </p>
-
-            <p className="font-medium leading-relaxed text-foreground">
-              The problem is not simply a lack of transformative experiences,
-              but the absence of coherent pathways of formation capable of
-              bringing these experiences into relationships across time.
-              Profound transformation requires developmental ecologies in which
-              different dimensions of growth can deepen, inform one another,
-              become embodied through sustained practice and community, and
-              eventually take root as a way of life.
-            </p>
-          </div>
-        </div>
-      </details>
-
       {/* 6. Civilizational Gap */}
       <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-olive">
+              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
                 6. The Civilizational Gap
-              </span>
+              </h3>
 
-              <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
                 What kinds of worlds cultivate rather than undermine our
                 becoming?
-              </h3>
+              </p>
             </div>
 
             <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-olive/30 text-olive transition-transform duration-300 group-open:rotate-45">
@@ -990,7 +990,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
-            <span className="group-open:hidden">Read deeper</span>
+            <span className="group-open:hidden">Read more</span>
             <span className="hidden group-open:inline">Close</span>
 
             <svg
