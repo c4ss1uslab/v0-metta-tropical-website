@@ -1551,7 +1551,7 @@ export default function TheoryOfChangePage() {
 <section className="bg-background py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
-    <div className="mb-16 text-center">
+    <div className="mb-12 text-center">
       <span className="text-sm font-medium uppercase tracking-wide text-[#D9A01B]">
         5. A Civilizational Horizon
       </span>
@@ -1561,8 +1561,19 @@ export default function TheoryOfChangePage() {
       </h2>
     </div>
 
+    {/* Buckminster Fuller Quote */}
+    <blockquote className="mt-8 border-l-4 border-[#D9A01B] pl-6 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+      &ldquo;You never change things by fighting the existing reality. To change
+      something, build a new model that makes the existing model
+      obsolete.&rdquo;
+    </blockquote>
+
+    <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
+      — Buckminster Fuller
+    </cite>
+
     {/* Opening */}
-    <div className="space-y-6 text-muted-foreground">
+    <div className="mt-12 space-y-6 text-muted-foreground">
       <p className="leading-relaxed">
         Our larger aspiration extends beyond the formation of wiser individuals
         and communities. We are interested in what might become possible if
@@ -1573,22 +1584,19 @@ export default function TheoryOfChangePage() {
         species.
       </p>
 
-      {/* Wisdom-Centered Civilization */}
-      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-        <p className="leading-relaxed text-muted-foreground">
-          We use the language{" "}
-          <strong className="font-medium text-foreground">
-            wisdom-centered civilization
-          </strong>{" "}
-          not as a blueprint for what the future should become, nor as a single
-          worldview to be imposed upon it, but as a horizon we are orienting
-          toward. Forms of collective life in which growing human power is
-          accompanied by growing wisdom; human flourishing is understood as
-          inseparable from the flourishing of all life; and institutions take
-          seriously their responsibility in shaping the desires, aspirations,
-          attention, relationships, and ways of living of our culture.
-        </p>
-      </div>
+      <p className="leading-relaxed">
+        We use the language{" "}
+        <strong className="font-medium text-foreground">
+          wisdom-centered civilization
+        </strong>{" "}
+        not as a blueprint for what the future should become, nor as a single
+        worldview to be imposed upon it, but as a horizon we are orienting
+        toward. Forms of collective life in which growing human power is
+        accompanied by growing wisdom; human flourishing is understood as
+        inseparable from the flourishing of all life; and institutions take
+        seriously their responsibility in shaping the desires, aspirations,
+        attention, relationships, and ways of living of our culture.
+      </p>
 
       <p className="leading-relaxed">
         Over time, we hope to contribute to the emergence of a wisdom-centered
@@ -1599,102 +1607,93 @@ export default function TheoryOfChangePage() {
     </div>
 
     {/* Civilizational Ecology */}
-    <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
-      {/* Modern Monasteries */}
-      <article className="border-t-4 border-olive bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Modern Monasteries &amp; Wisdom Schools
-        </h3>
+    <div className="mt-8 rounded-xl bg-cream px-6 py-7 md:px-8 md:py-8">
+      <ul className="space-y-5 text-muted-foreground">
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Modern monasteries, wisdom schools, and intentional communities
+            </strong>{" "}
+            devoted to long-term human formation, rites of passage,
+            intergenerational learning, and service to life.
+          </p>
+        </li>
 
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Modern monasteries, wisdom schools, and intentional communities
-          devoted to long-term human formation, rites of passage,
-          intergenerational learning, and service to life.
-        </p>
-      </article>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Autonomous and bioregional communities
+            </strong>{" "}
+            preserving ancestral ways of being while experimenting with
+            collective ownership, commons, ecological stewardship, and new
+            forms of governance.
+          </p>
+        </li>
 
-      {/* Autonomous Communities */}
-      <article className="border-t-4 border-[#D9A01B] bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Autonomous &amp; Bioregional Communities
-        </h3>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Transformational and developmental institutions
+            </strong>{" "}
+            cultivating new practices for shifts in consciousness, desire,
+            relationship, and capacity in service of building different
+            systems, not merely adapting people to the existing one.
+          </p>
+        </li>
 
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Autonomous and bioregional communities preserving ancestral ways of
-          being while experimenting with collective ownership, commons,
-          ecological stewardship, and new forms of governance.
-        </p>
-      </article>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Research institutes, cultural laboratories, and artistic movements
+            </strong>{" "}
+            generating paradigm-shifting ideas, narratives, and imaginaries
+            capable of expanding what societies perceive as possible.
+          </p>
+        </li>
 
-      {/* Transformational Institutions */}
-      <article className="border-t-4 border-cyan-800 bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Transformational &amp; Developmental Institutions
-        </h3>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Post-capitalist economic experiments
+            </strong>{" "}
+            organized around sufficiency, reciprocity, gifting, regeneration,
+            and shared flourishing rather than accumulation and shareholder
+            return.
+          </p>
+        </li>
 
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Transformational and developmental institutions cultivating new
-          practices for shifts in consciousness, desire, relationship, and
-          capacity in service of building different systems, not merely
-          adapting people to the existing one.
-        </p>
-      </article>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              New forms of governance and justice
+            </strong>{" "}
+            designed to distribute power, repair harm, and include future
+            generations and the more-than-human world in collective
+            decision-making.
+          </p>
+        </li>
 
-      {/* Research & Culture */}
-      <article className="border-t-4 border-crimson bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Research, Culture &amp; Artistic Movements
-        </h3>
-
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Research institutes, cultural laboratories, and artistic movements
-          generating paradigm-shifting ideas, narratives, and imaginaries
-          capable of expanding what societies perceive as possible.
-        </p>
-      </article>
-
-      {/* Economic Experiments */}
-      <article className="border-t-4 border-[#D9A01B] bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Post-Capitalist Economic Experiments
-        </h3>
-
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Post-capitalist economic experiments organized around sufficiency,
-          reciprocity, gifting, regeneration, and shared flourishing rather
-          than accumulation and shareholder return.
-        </p>
-      </article>
-
-      {/* Governance & Justice */}
-      <article className="border-t-4 border-olive bg-cream p-6 shadow-sm">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          New Forms of Governance &amp; Justice
-        </h3>
-
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          New forms of governance and justice designed to distribute power,
-          repair harm, and include future generations and the more-than-human
-          world in collective decision-making.
-        </p>
-      </article>
-
-      {/* Technology */}
-      <article className="border-t-4 border-cyan-800 bg-cream p-6 shadow-sm md:col-span-2">
-        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
-          Life-Affirming Technologies &amp; Infrastructures
-        </h3>
-
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Life-affirming technologies and infrastructures designed to deepen
-          attention, relationship, collective agency, and human flourishing
-          rather than extraction, addiction, and control.
-        </p>
-      </article>
+        <li className="flex items-start gap-4">
+          <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#D9A01B]" />
+          <p className="leading-relaxed">
+            <strong className="font-medium text-foreground">
+              Life-affirming technologies and infrastructures
+            </strong>{" "}
+            designed to deepen attention, relationship, collective agency, and
+            human flourishing rather than extraction, addiction, and control.
+          </p>
+        </li>
+      </ul>
     </div>
 
     {/* Shared Orientation */}
-    <div className="mt-14 space-y-6 text-muted-foreground">
+    <div className="mt-12 space-y-6 text-muted-foreground">
       <p className="leading-relaxed">
         What connects these initiatives and communities is a different
         civilizational orientation, where they place the deepest questions of
@@ -1716,11 +1715,8 @@ export default function TheoryOfChangePage() {
         for how we organize power, resources, relationships, technology, and
         our participation in the living world.
       </p>
-    </div>
 
-    {/* Closing */}
-    <div className="mt-14 border-t border-border pt-10">
-      <p className="font-medium leading-relaxed text-foreground">
+      <p className="leading-relaxed">
         We do not know what future civilization will look like, nor do we
         believe any single organization, tradition, or culture has the answer
         for our predicament. What we hope to help cultivate are the human,
