@@ -1731,7 +1731,7 @@ export default function TheoryOfChangePage() {
 <section className="py-24 lg:py-32 bg-yellow">
   <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
     <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-      Moving Towards Collective Coordination in Service of the Flourishing of All Life
+      Towards Collective Coordination in Service of the Flourishing of All Life
     </h2>
 
     <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
