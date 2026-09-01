@@ -1242,7 +1242,7 @@ export default function TheoryOfChangePage() {
   </div>
 </section>
 
- {/* 4. The Response */}
+{/* 4. The Response */}
 <section className="bg-cream py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
@@ -1254,16 +1254,10 @@ export default function TheoryOfChangePage() {
       <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
         Building Wisdom-Centered Educational Architectures
       </h2>
-
-      <p className="mx-auto mt-5 max-w-3xl text-lg italic leading-relaxed text-muted-foreground">
-        Supporting individual and collective transformation in response to
-        systemic collapse and in service of a mature, wise and life-affirming
-        civilization.
-      </p>
     </div>
 
     {/* Daniel Schmachtenberger Quote */}
-    <blockquote className="mt-8 border-l-4 border-cyan-800 pl-6 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+    <blockquote className="mt-8 border-l-4 border-cyan-800 pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
       &ldquo;That&apos;s what being an imaginal cell in the transition from
       caterpillar to butterfly really means. It means taking some empowered
       responsibility for being someone who recognizes that you can&apos;t just
@@ -1317,7 +1311,8 @@ export default function TheoryOfChangePage() {
             <p className="font-serif text-lg font-medium leading-relaxed text-foreground md:text-xl">
               A wisdom-centered educational architecture and developmental
               ecosystem, rooted in the Global South, capable of supporting the
-              long arc of human and communal transformation required to respond to systemic collapse and serve the emergence of a mature, wise and life-affirming civilization.
+              long arc of human and communal transformation required during a
+              time between worlds.
             </p>
           </div>
 
@@ -1480,8 +1475,8 @@ export default function TheoryOfChangePage() {
         </article>
       </div>
 
-      {/* Ecology */}
-      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
+      {/* Four Dimensions as a Single Ecology */}
+      <div className="space-y-5">
         <p className="leading-relaxed text-muted-foreground">
           We see these four dimensions as mutually reinforcing parts of a
           single ecology. Research and inquiry deepen the hypothesis and ideas
@@ -1492,7 +1487,7 @@ export default function TheoryOfChangePage() {
           emerging ideas and imaginaries into the wider culture.
         </p>
 
-        <p className="mt-5 font-medium leading-relaxed text-foreground">
+        <p className="font-medium leading-relaxed text-foreground">
           Together, they form the foundation for an ongoing experiment in what
           wisdom-centered education and human formation might become.
         </p>
