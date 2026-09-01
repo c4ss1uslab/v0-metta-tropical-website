@@ -1547,69 +1547,189 @@ export default function TheoryOfChangePage() {
   </div>
 </section>
 
-        {/* 5. The Civilizational Horizon */}
-        <section className="py-24 lg:py-32 bg-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">5. The Civilizational Horizon</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Cultivating Wisdom in Service of All Life
-              </h2>
-            </div>
+{/* 5. The Civilizational Horizon */}
+<section className="bg-background py-24 lg:py-32">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-16 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#D9A01B]">
+        5. A Civilizational Horizon
+      </span>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
-              <p>
-                Our aspiration is not merely the development of wise individuals, but the emergence of wisdom-centered cultures: communities, educational spaces, organizations, practices, and institutions designed to cultivate the conditions for wisdom to emerge and be transmitted across generations. In such a future, wisdom cultivation becomes a shared cultural function rather than a marginal pursuit — held by a growing ecosystem of wisdom-centered institutions capable of nourishing the conditions for life-affirming civilizations to emerge.
-              </p>
-              <p>
-                We believe wisdom-centered institutions represent a new paradigm for individual and collective development. Unlike many modern institutions designed primarily around efficiency, growth, and productivity, these institutions are organized around cultivating mature human beings, resilient communities, and wiser ways of participating in the web of life.
-              </p>
-              <p>
-                They are not separate from society, but woven into the fabric of everyday life. They can take the form of businesses, schools, communities, cultural spaces, technologies, spiritual centers, social movements, and new organizational models that recognize that every environment shapes the kinds of human beings we become. Therefore, every institution carries a responsibility to consider what forms of consciousness, relationship, and culture it is helping cultivate.
-              </p>
-              <p>
-                Over the coming decades, we hope to contribute to the emergence of an ecosystem of wisdom-centered institutions across Brazil and beyond: bioregional organizations strengthening local communities and ecological resilience; residential communities prototyping new ways of being, relating, and organizing together; educational spaces integrating wisdom traditions and contemporary knowledge; communities supporting initiation, rites of passage, and elderhood; philanthropic institutions redistributing resources toward cultural renewal; political movements capable of holding complexity beyond polarization; artistic movements restoring our sense of belonging with life; and technologies designed to deepen rather than diminish our humanity.
-              </p>
-              <p>
-                Together, these emerging institutions can become the foundation of a new wisdom-centered civilizational infrastructure: a distributed ecology of people, communities, and institutions connected through enough ontological coherence, relational trust, and shared devotion to the flourishing of all life leading to deeper collective coordination in response to the biggest challenges of our times.
-              </p>
-            </div>
-          </div>
+      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        Cultivating Wisdom-Centered Civilizations in Service of Life
+      </h2>
+    </div>
 
-          {/* Full-Width Horizontal Framework: The Architecture of Becoming */}
-          <div className="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="p-6 md:p-10 bg-cream rounded-xl border border-border w-full">
-              <div className="text-center mb-8">
-                <h3 className="font-serif text-2xl font-semibold text-foreground">The Architecture of Becoming</h3>
-                <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
-                  Underneath our work lives a simple understanding that the future of civilization depends not only on what we create, but on who we become. And who we become depends on the worlds that shape us.
-                </p>
-              </div>
+    {/* Opening */}
+    <div className="space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        Our larger aspiration extends beyond the formation of wiser individuals
+        and communities. We are interested in what might become possible if
+        wisdom cultivation itself became a more central function of culture,
+        supported not only by spiritual, religious or educational spaces, but
+        by a growing ecology of institutions capable of cultivating relational
+        maturity, responsibility, and care for life across generations and
+        species.
+      </p>
 
-              <div className="grid grid-cols-2 md:grid-cols-6 gap-2 items-center justify-center w-full">
-                {[
-                  "Life-Affirming Futures",
-                  "Wisdom-Centered Civilizational Infrastructures",
-                  "Wisdom-Centered Cultures",
-                  "Wise, Mature & Responsible Human Beings and Communities",
-                  "Developmental Ecologies",
-                  "Wisdom-Centered Educational Architectures"
-                ].map((title, index, array) => (
-                  <div key={index} className="flex flex-col md:flex-row items-center w-full h-full">
-                    <div className="w-full p-3 text-center bg-background border border-border rounded shadow-sm text-xs text-muted-foreground font-medium min-h-[80px] md:min-h-[110px] flex items-center justify-center flex-grow">
-                      {title}
-                    </div>
-                    {index < array.length - 1 && (
-                      <div className="text-muted-foreground/40 my-1 md:my-0 md:mx-1 font-mono text-xs font-bold transform rotate-90 md:rotate-0 flex-shrink-0">
-                        ↔
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* Wisdom-Centered Civilization */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
+          We use the language{" "}
+          <strong className="font-medium text-foreground">
+            wisdom-centered civilization
+          </strong>{" "}
+          not as a blueprint for what the future should become, nor as a single
+          worldview to be imposed upon it, but as a horizon we are orienting
+          toward. Forms of collective life in which growing human power is
+          accompanied by growing wisdom; human flourishing is understood as
+          inseparable from the flourishing of all life; and institutions take
+          seriously their responsibility in shaping the desires, aspirations,
+          attention, relationships, and ways of living of our culture.
+        </p>
+      </div>
+
+      <p className="leading-relaxed">
+        Over time, we hope to contribute to the emergence of a wisdom-centered
+        civilizational ecology of initiatives and communities across Brazil and
+        beyond, experimenting with radically different ways of organizing
+        collective life, including:
+      </p>
+    </div>
+
+    {/* Civilizational Ecology */}
+    <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+      {/* Modern Monasteries */}
+      <article className="border-t-4 border-olive bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Modern Monasteries &amp; Wisdom Schools
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Modern monasteries, wisdom schools, and intentional communities
+          devoted to long-term human formation, rites of passage,
+          intergenerational learning, and service to life.
+        </p>
+      </article>
+
+      {/* Autonomous Communities */}
+      <article className="border-t-4 border-[#D9A01B] bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Autonomous &amp; Bioregional Communities
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Autonomous and bioregional communities preserving ancestral ways of
+          being while experimenting with collective ownership, commons,
+          ecological stewardship, and new forms of governance.
+        </p>
+      </article>
+
+      {/* Transformational Institutions */}
+      <article className="border-t-4 border-cyan-800 bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Transformational &amp; Developmental Institutions
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Transformational and developmental institutions cultivating new
+          practices for shifts in consciousness, desire, relationship, and
+          capacity in service of building different systems, not merely
+          adapting people to the existing one.
+        </p>
+      </article>
+
+      {/* Research & Culture */}
+      <article className="border-t-4 border-crimson bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Research, Culture &amp; Artistic Movements
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Research institutes, cultural laboratories, and artistic movements
+          generating paradigm-shifting ideas, narratives, and imaginaries
+          capable of expanding what societies perceive as possible.
+        </p>
+      </article>
+
+      {/* Economic Experiments */}
+      <article className="border-t-4 border-[#D9A01B] bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Post-Capitalist Economic Experiments
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Post-capitalist economic experiments organized around sufficiency,
+          reciprocity, gifting, regeneration, and shared flourishing rather
+          than accumulation and shareholder return.
+        </p>
+      </article>
+
+      {/* Governance & Justice */}
+      <article className="border-t-4 border-olive bg-cream p-6 shadow-sm">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          New Forms of Governance &amp; Justice
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          New forms of governance and justice designed to distribute power,
+          repair harm, and include future generations and the more-than-human
+          world in collective decision-making.
+        </p>
+      </article>
+
+      {/* Technology */}
+      <article className="border-t-4 border-cyan-800 bg-cream p-6 shadow-sm md:col-span-2">
+        <h3 className="font-serif text-lg font-medium text-foreground md:text-xl">
+          Life-Affirming Technologies &amp; Infrastructures
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Life-affirming technologies and infrastructures designed to deepen
+          attention, relationship, collective agency, and human flourishing
+          rather than extraction, addiction, and control.
+        </p>
+      </article>
+    </div>
+
+    {/* Shared Orientation */}
+    <div className="mt-14 space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        What connects these initiatives and communities is a different
+        civilizational orientation, where they place the deepest questions of
+        existence related to meaning, value, reality, and ultimate concern back
+        at the heart of collective life.
+      </p>
+
+      {/* Existential Questions */}
+      <div className="border-l-4 border-[#D9A01B] pl-6">
+        <p className="font-serif text-lg italic leading-relaxed text-foreground md:text-xl">
+          What is a human life for? What is worth committing a life to? What
+          should we protect? What does it mean to live a meaningful life? What
+          is the nature of reality we participate in? What does it mean to love?
+        </p>
+      </div>
+
+      <p className="leading-relaxed">
+        These questions are not left as optional concerns, but become central
+        for how we organize power, resources, relationships, technology, and
+        our participation in the living world.
+      </p>
+    </div>
+
+    {/* Closing */}
+    <div className="mt-14 border-t border-border pt-10">
+      <p className="font-medium leading-relaxed text-foreground">
+        We do not know what future civilization will look like, nor do we
+        believe any single organization, tradition, or culture has the answer
+        for our predicament. What we hope to help cultivate are the human,
+        communal, cultural, and institutional conditions from which a mature,
+        wise, and life-affirming form of civilization becomes possible.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* CTA */}
         <section className="py-24 lg:py-32 bg-yellow">
