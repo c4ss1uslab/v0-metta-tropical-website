@@ -129,6 +129,184 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
+        {/* Theory of Change — At a Glance */}
+<section className="bg-cream py-20 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-olive">
+        Theory of Change
+      </span>
+
+      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        At a Glance
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+        Our theory of change unfolds through five interconnected movements —
+        from understanding the predicament we are in to the larger
+        civilizational horizon we hope to serve.
+      </p>
+    </div>
+
+    {/* Five-Part Theory of Change */}
+    <div className="space-y-4">
+      {/* 1. The Predicament */}
+      <a
+        href="#predicament"
+        className="group block rounded-xl border border-border border-l-4 border-l-crimson bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+      >
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+              1. The Predicament
+            </span>
+
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              Where are we?
+            </h3>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              The metacrisis is not a collection of isolated problems, but a
+              deeper civilizational predicament rooted in the systems,
+              relationships, and ways of understanding reality that shape
+              modern life.
+            </p>
+          </div>
+
+          <span className="mt-1 shrink-0 text-xl text-crimson transition-transform duration-300 group-hover:translate-y-1">
+            ↓
+          </span>
+        </div>
+      </a>
+
+      {/* 2. The Problem */}
+      <a
+        href="#problem"
+        className="group block rounded-xl border border-border border-l-4 border-l-olive bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+      >
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <span className="text-sm font-medium uppercase tracking-wide text-olive">
+              2. The Problem
+            </span>
+
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What are we responding to?
+            </h3>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Beneath it lies a crisis of human formation: we lack the
+              orientation, aspiration, developmental pathways, communal
+              capacities, and formative environments capable of preparing us
+              to appropriately navigate and respond to these times.
+            </p>
+          </div>
+
+          <span className="mt-1 shrink-0 text-xl text-olive transition-transform duration-300 group-hover:translate-y-1">
+            ↓
+          </span>
+        </div>
+      </a>
+
+      {/* 3. The Developmental Hypothesis */}
+      <a
+        href="#developmental-hypothesis"
+        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+      >
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              3. The Developmental Hypothesis
+            </span>
+
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What does this moment require?
+            </h3>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Transformation of this depth requires long-term human and communal
+              formation, bringing spiritual depth, relational maturity,
+              systemic intelligence, developmental practice, decolonial
+              thought, and ecological belonging into a coherent developmental
+              path.
+            </p>
+          </div>
+
+          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
+            ↓
+          </span>
+        </div>
+      </a>
+
+      {/* 4. The Response */}
+      <a
+        href="#response"
+        className="group block rounded-xl border border-border border-l-4 border-l-cyan-800 bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+      >
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+              4. The Response
+            </span>
+
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What are we building?
+            </h3>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              A wisdom-centered educational architecture, rooted in the Global
+              South, bringing transformative education, transdisciplinary
+              research, ecosystem weaving, and cultural imagination into a
+              coherent developmental ecology serving a new generation of
+              post-activist leaders and world-builders seeking to organize
+              their lives toward meaningful participation in what comes next.
+            </p>
+          </div>
+
+          <span className="mt-1 shrink-0 text-xl text-cyan-800 transition-transform duration-300 group-hover:translate-y-1">
+            ↓
+          </span>
+        </div>
+      </a>
+
+      {/* 5. A Civilizational Horizon */}
+      <a
+        href="#civilizational-horizon"
+        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+      >
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              5. A Civilizational Horizon
+            </span>
+
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What larger possibility are we serving?
+            </h3>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              We hope to contribute to the emergence of cultures, institutions
+              and communities where wisdom becomes a central organizing
+              function and collective life is increasingly oriented toward the
+              flourishing of all life.
+            </p>
+          </div>
+
+          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
+            ↓
+          </span>
+        </div>
+      </a>
+    </div>
+
+    {/* Navigation Hint */}
+    <p className="mt-8 text-center text-sm italic text-muted-foreground/70">
+      Select any section to explore it in greater depth.
+    </p>
+  </div>
+</section>
+
         {/* The Predicament */}
         <section className="py-18 lg:py-18 bg-background">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
