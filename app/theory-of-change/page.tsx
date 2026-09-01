@@ -136,7 +136,7 @@ export default function TheoryOfChangePage() {
             <div className="text-center mb-20">
               <span className="text-crimson font-medium text-sm tracking-wide uppercase">1. The Predicament</span>
               <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Seeing The Metacrisis
+                Understanding The Metacrisis
               </h2>
 
               <blockquote className="mt-8 font-serif text-xl md:text-2xl text-muted-foreground italic leading-relaxed border-l-4 border-crimson pl-6">
