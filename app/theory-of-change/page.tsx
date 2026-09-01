@@ -1727,33 +1727,32 @@ export default function TheoryOfChangePage() {
   </div>
 </section>
 
-        {/* CTA */}
-        <section className="py-24 lg:py-32 bg-yellow">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-              Towards Collective Coordination in Service of Life
-            </h2>
-            <p className="mt-6 text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-              All of this is in service of a single horizon: nurturing the transformation of individuals and community towards a genuinely different kind of collective response to the crises of our time.
-            </p>
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/fellowship"
-                className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
-              >
-                Join the Fellowship
-              </Link>
-              <Link
-                href="/learn-more"
-                className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-foreground text-foreground font-medium text-sm tracking-wide hover:bg-foreground/10 transition-colors"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
+ {/* CTA */}
+<section className="py-24 lg:py-32 bg-yellow">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+    <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
+      Moving Towards Collective Coordination in Service of the Flourishing of All Life
+    </h2>
+
+    <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <Link
+        href="/fellowship"
+        className="inline-flex items-center justify-center px-8 py-3 bg-foreground text-background font-medium text-sm tracking-wide hover:bg-foreground/90 transition-colors"
+      >
+        Join the Fellowship
+      </Link>
+
+      <Link
+        href="/learn-more"
+        className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-foreground text-foreground font-medium text-sm tracking-wide hover:bg-foreground/10 transition-colors"
+      >
+        Learn More
+      </Link>
+    </div>
+  </div>
+</section>
+</main>
+<Footer />
+</>
+)
 }
