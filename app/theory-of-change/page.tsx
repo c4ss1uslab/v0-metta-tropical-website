@@ -1242,84 +1242,316 @@ export default function TheoryOfChangePage() {
   </div>
 </section>
 
-        {/* 4. The Response */}
-        <section className="py-24 lg:py-32 bg-cream">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-cyan-800 font-medium text-sm tracking-wide uppercase">4. The Response</span>
-              <h2 className="mt-4 font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
-                Building Wisdom-Centered Educational Architectures
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto italic">
-                Supporting individual and collective transformation in response to systemic collapse and in service of a mature, wise and life-affirming civilization.
-              </p>
-            </div>
+ {/* 4. The Response */}
+<section className="bg-cream py-24 lg:py-32">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+        4. The Response
+      </span>
 
-            <div className="space-y-12 text-muted-foreground leading-relaxed">
-              <div>
-                <h3 className="font-serif text-2xl font-medium text-foreground mb-4">A Lineage</h3>
-                <p>
-                  Historically, at moments of civilizational rupture, new educational and relational architectures have historically emerged at the edges of society to help individuals navigate transition. Monasteries, wisdom traditions, folk schools, mystery schools, and quilombos created developmental environments capable of cultivating the ontologies, capacities, relationships, and cultural coherence required for their time. We are drawing from these lineages to build something our moment requires and largely lacks.
-                </p>
-              </div>
+      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        Building Wisdom-Centered Educational Architectures
+      </h2>
 
-              <div>
-                <h3 className="font-serif text-2xl font-medium text-foreground mb-4">What We Are Building</h3>
-                <p>
-                  A wisdom-centered educational architecture and developmental ecosystem, rooted in the Global South, capable of supporting the long arc of human transformation required during a time between worlds. We are particularly focused on serving a new generation of emerging leaders — post-activists artists, educators, thinkers, organizers, change-makers and world-builders — who feel called to participate in the civilizational challenges of this moment.
-                </p>
-                <p className="mt-4">
-                  Our work begins at the root. The metacrisis is fundamentally a crisis of how human beings perceive, understand, relate to, and act within reality. Which means our response begins at the level of ontology: how reality becomes intelligible, relational, and livable. At the center of our work is a relational-ontological pedagogy, an approach to education focused not only on what people know, but on transforming the ways they see, relate to, and participate in life. This transformation unfolds through embodied practice, experiential training, communal formation, rites of passage, rituals and long-term relational culture. These dimensions are mutually reinforcing aspects of a living developmental ecology.
-                </p>
-                <p className="mt-4">
-                  A central aspect of our work is mapping and weaving together the fragmented ecosystem of initiatives, practices, frameworks, and communities already responding to the metacrisis across the Global South and the world. We believe many essential developmental initiatives for this moment already exist across fields such as contemplative practice, systems thinking, regenerative culture, complexity, trauma healing, metamodern thought, relational work, ecological learning, and wisdom traditions. Yet these efforts often remain isolated, inaccessible, or disconnected from coherent developmental pathways. Our aim is not simply to create another isolated initiative, but to help integrate them into our wisdom-centered educational architecture capable of supporting deeper individual and collective transformation within five streams: The Sacred, Soul, Systems, Soil and Society.
-                </p>
-              </div>
+      <p className="mx-auto mt-5 max-w-3xl text-lg italic leading-relaxed text-muted-foreground">
+        Supporting individual and collective transformation in response to
+        systemic collapse and in service of a mature, wise and life-affirming
+        civilization.
+      </p>
+    </div>
 
-              <div>
-                <h3 className="font-serif text-2xl font-medium text-foreground mb-4">Where We Are Rooted - A Confluence of Lineages</h3>
-                <p className="mb-8">
-                  We are rooted in Brazil and Latin America, shaped by this territory, this language, this soil. Our work emerges at the intersection of three lineages that rarely meet:
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                  <div className="p-5 bg-background border-t-2 border-[#D9A01B] shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">I. Intellectual & Philosophical</strong>
-                    <p className="text-xs">The intellectual and philosophical rigor of the scientific community, especially from the systems and complexity sciences, the regenerative movement, and the metacrisis and metamodern conversation, developed largely in the Global North.</p>
-                  </div>
-                  <div className="p-5 bg-background border-t-2 border-cyan shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">II. Contemplative Depth</strong>
-                    <p className="text-xs">The contemplative depth of wisdom traditions from around the world — especially the Buddhist lineage — which has shaped our ontologies, practices, and understanding of long-arc educational architecture for the cultivation of wisdom, compassion and ethical life.</p>
-                  </div>
-                  <div className="p-5 bg-background border-t-2 border-olive shadow-sm">
-                    <strong className="text-foreground block font-serif text-base mb-2">III. Living, Relational Wisdom</strong>
-                    <p className="text-xs">The embodied, relational wisdom carried by indigenous, quilombola, Afro-diasporic and marginalized communities, that despite centuries of erasure and forced collapse, have carried and protected ways of seeing, being and relating that the rest of the world is only now beginning to value.</p>
-                  </div>
-                </div>
+    {/* Daniel Schmachtenberger Quote */}
+    <blockquote className="mt-8 border-l-4 border-cyan-800 pl-6 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+      &ldquo;That&apos;s what being an imaginal cell in the transition from
+      caterpillar to butterfly really means. It means taking some empowered
+      responsibility for being someone who recognizes that you can&apos;t just
+      run the instruction manual that was given historically, and the new
+      instruction manual doesn&apos;t exist yet. It&apos;s actually the time of
+      people in that liminal phase to work on developing what are these new
+      structures.&rdquo;
+    </blockquote>
 
-                <p className="mb-8">
-                  We do not claim to live inside all these traditions. We come to them with respect, curiosity, and the recognition that what they carry is not background context for our work, but the core medicine at the center of it.
-                  </p>
-                <p className="mb-8">
-                    What we are attempting is difficult, necessary, and (we believe) genuinely new. We are not simply importing Global North frameworks southward, nor treating wisdom traditions as timeless solutions immune to their own historical limitations and cultural context, or romanticizing the wisdom of historically marginalized communities.
-                </p>
-                 <p>
-                 Instead, we are exploring what becomes possible when rigorous systems inquiry, contemplative wisdom, and the living ontological intelligence of this territory are brought into genuine relationship with one another. From this encounter, a new pedagogical and developmental culture can emerge, one that could only take root here, where these lineages have a reason to meet, and where the urgency of this moment makes their separation no longer affordable.
-                </p>
-              </div>
-            </div>
+    <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
+      — Daniel Schmachtenberger
+    </cite>
 
-            <div className="mt-16 pt-12 border-t border-border max-w-4xl mx-auto text-center">
-              <h4 className="font-serif text-2xl font-medium text-foreground mb-6">Our Aspiration</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                With humility, we see this work as an early experiment in what new forms of education and culture might become during a time between worlds. Not educational systems adapted to the logic of modernity, but developmental architectures attempting to respond to the full depth of the metacrisis: its ontological roots, relational wounds and civilizational demands. We don't fully know how to do all of this. But we believe there is a real need to start somewhere, to begin radical and honest experiments with the evolution of educational forms, trusting that what we tend carefully to now will matter to those who come after us. This is what we are trying to build. With everything we have.
-              </p>
-              <p className="mt-6 text-muted-foreground font-medium font-serif italic text-foreground">
-                In Portuguese, rooted in this soil, e com a alegria que só essa terra conhece.
-              </p>
-            </div>
+    {/* Main Content */}
+    <div className="mt-16 space-y-16">
+      {/* A Lineage */}
+      <div>
+        <h3 className="mb-6 font-serif text-2xl font-medium text-foreground md:text-3xl">
+          A Lineage
+        </h3>
+
+        <div className="space-y-6 text-muted-foreground">
+          <p className="leading-relaxed">
+            Historically, at moments of civilizational rupture, oppression and
+            cultural transition, new forms of education and communities have
+            emerged at the edges of society to help individuals navigate
+            transition, protect different ways of being, and envision radically
+            different futures. Monasteries, folk schools, mystery schools,
+            Terreiros, quilombos and the Zapatistas created developmental
+            environments capable of cultivating the ontologies, capacities,
+            relationships, and cultural coherence required for their time, and
+            not fully supported by the dominant world around them.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            We understand our work as part of this longer lineage of
+            experimentation, and we are drawing inspiration from them to build
+            something our moment highly needs and largely lacks.
+          </p>
+        </div>
+      </div>
+
+      {/* What We Are Building */}
+      <div>
+        <h3 className="mb-6 font-serif text-2xl font-medium text-foreground md:text-3xl">
+          What We Are Building
+        </h3>
+
+        <div className="space-y-6 text-muted-foreground">
+          <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+            <p className="font-serif text-lg font-medium leading-relaxed text-foreground md:text-xl">
+              A wisdom-centered educational architecture and developmental
+              ecosystem, rooted in the Global South, capable of supporting the
+              long arc of human and communal transformation required during a
+              time between worlds.
+            </p>
           </div>
-        </section>
+
+          <p className="leading-relaxed">
+            We are initially focused on serving a new generation of emerging
+            leaders — post-activists artists, educators, thinkers, organizers,
+            researchers, change-makers and world-builders — who feel the crises
+            of our time deeply in their souls, long to organize their lives
+            around meaningful participation in what comes next, yet struggle to
+            find communities and developmental pathways capable of holding the
+            magnitude of their aspiration, grief, and devotion.
+          </p>
+
+          <p className="leading-relaxed">
+            In this sense, our work is not only a response to the metacrisis,
+            but also to the many young people who experience themselves as
+            living without a world at this moment. Not fully belonging to the
+            world that is ending, while not completely inhabiting the one trying
+            to be born.
+          </p>
+
+          <p className="leading-relaxed">
+            Rather than creating another isolated program, we are experimenting
+            with a multi-decade developmental pathway capable of meeting the
+            depth of transformation this moment requires. We are bringing
+            together spiritual practice, systems understanding, relational
+            formation, ecological belonging, decolonial thought, mentorship,
+            community, and meaningful opportunities to contribute to
+            life-enhancing futures into a coherent ecology of becoming.
+          </p>
+
+          <p className="leading-relaxed">
+            In doing so, we seek to address deeper crises of perception,
+            relationship, value, and capacity while bringing metacrisis
+            awareness into generative relationships with wisdom traditions,
+            contemporary developmental approaches, and the lived knowledge of
+            historically marginalized communities in the Global South.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            Our work supports the construction of wisdom-centered educational
+            architectures capable of shifting our ways of perceiving, being,
+            knowing and doing, through four mutually reinforcing dimensions:
+          </p>
+        </div>
+      </div>
+
+      {/* Four Dimensions */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        {/* Transformative Educational Lab */}
+        <article className="flex h-full flex-col border-t-4 border-olive bg-background p-7 shadow-sm">
+          <h4 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+            Transformative Educational Lab
+          </h4>
+
+          <p className="mt-2 text-sm font-medium italic text-olive">
+            Education for the end of the world as we know it
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            The living laboratory where our educational architecture is tested,
+            refined, and deepened. Through retreats, residencies, courses,
+            immersive programs, rituals and transformational practice —
+            developed in-house and with fellow educators — we prototype the
+            containers, cultures, and pedagogies capable of forming people and
+            communities with the ontologies, aspirations, and capacities this
+            moment asks for.
+          </p>
+        </article>
+
+        {/* Research & Inquiry */}
+        <article className="flex h-full flex-col border-t-4 border-cyan-800 bg-background p-7 shadow-sm">
+          <h4 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+            Research &amp; Inquiry
+          </h4>
+
+          <p className="mt-2 text-sm font-medium italic text-cyan-800">
+            Investigating the questions shaping our world
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            Through transdisciplinary research, original essays, collaborative
+            thinking, social cartographies, and curated collections, we
+            investigate civilizational questions shaping our time: what brought
+            us here, what is happening now, who we must become, and what is
+            trying to emerge.
+          </p>
+
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            These inquiries not only contribute to the wider cultural narrative
+            building, sensemaking and collective coherence that can better
+            orient wiser action in a time of uncertainty, but they directly
+            inform the ideas, curriculum, and practices of our own educational
+            architecture.
+          </p>
+        </article>
+
+        {/* Ecosystem Integration */}
+        <article className="flex h-full flex-col border-t-4 border-[#D9A01B] bg-background p-7 shadow-sm">
+          <h4 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+            Ecosystem Integration
+          </h4>
+
+          <p className="mt-2 text-sm font-medium italic text-[#B88610]">
+            Tending to the emerging fabric of a wisdom-centered culture
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            We map, integrate and connect initiatives, practices, communities,
+            and institutions responding to different dimensions of the
+            metacrisis. By making this ecosystem more visible, comprehensive
+            and relational:
+          </p>
+
+          <ol className="mt-4 space-y-3 pl-5 text-sm leading-relaxed text-muted-foreground">
+            <li>
+              <span className="font-medium text-foreground">1.</span> We help
+              isolated communities, initiatives and institutions to find one
+              another.
+            </li>
+
+            <li>
+              <span className="font-medium text-foreground">2.</span> We connect
+              members of our community with new pathways for their life and
+              organizations doing meaningful work in the world.
+            </li>
+
+            <li>
+              <span className="font-medium text-foreground">3.</span> We
+              integrate multiple educational initiatives, practices and forms
+              of formation into our educational architecture, supporting more
+              robust and coherent developmental journeys.
+            </li>
+          </ol>
+        </article>
+
+        {/* Artistic Interventions */}
+        <article className="flex h-full flex-col border-t-4 border-crimson bg-background p-7 shadow-sm">
+          <h4 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+            Artistic Interventions
+          </h4>
+
+          <p className="mt-2 text-sm font-medium italic text-crimson">
+            Expanding what our culture can perceive and imagine
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            We collaborate with artists and cultural practitioners to give form
+            to emerging ways of seeing, being, and imagining life beyond the
+            dominant paradigm. Through stories, images, music, rituals, and
+            cultural artifacts, we seek to convey the depth of this crisis, the
+            transformation it asks of us, and the horizons worth orienting
+            towards, in ways that touch the heart and soul of our culture.
+          </p>
+
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            Making life-enhancing futures not only intellectually
+            understandable, but emotionally and imaginatively available.
+          </p>
+        </article>
+      </div>
+
+      {/* Ecology */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
+        <p className="leading-relaxed text-muted-foreground">
+          We see these four dimensions as mutually reinforcing parts of a
+          single ecology. Research and inquiry deepen the hypothesis and ideas
+          of our educational architecture and pedagogy; educational
+          experimentation generates new insights, questions and practices;
+          ecosystem relationships expand the teachers, mentors, training and
+          pathways available to our community; and artistic work carries
+          emerging ideas and imaginaries into the wider culture.
+        </p>
+
+        <p className="mt-5 font-medium leading-relaxed text-foreground">
+          Together, they form the foundation for an ongoing experiment in what
+          wisdom-centered education and human formation might become.
+        </p>
+      </div>
+
+      {/* Experimental by Design */}
+      <div className="border-t border-border pt-12">
+        <h3 className="mb-6 font-serif text-2xl font-medium text-foreground md:text-3xl">
+          Experimental by Design
+        </h3>
+
+        <div className="space-y-6 text-muted-foreground">
+          <p className="leading-relaxed">
+            While our work emerges in response to a global metacrisis, it is
+            intentionally contextual and place-based — rooted in Brazil and the
+            Global South, and initially focused on the formation of younger
+            generations in the region. Over time, we hope to deepen the
+            intergenerational dimension of this work, bringing younger and older
+            generations into closer relationships and restoring forms of
+            intergenerational responsibility, mentorship, and care that our
+            culture has forgotten.
+          </p>
+
+          <p className="leading-relaxed">
+            We are fundamentally trying to cultivate some of the conditions from
+            which a wiser civilization might emerge: developmental
+            environments, pedagogies, relationships, communities, resources,
+            and pathways of responsibility capable of forming people and
+            communities who can perceive more deeply, make sense of complexity,
+            coordinate across difference, and act together with greater wisdom.
+          </p>
+
+          <p className="leading-relaxed">
+            People committed to helping reduce the existential risks before us,
+            hospice what can no longer serve life, and participate in building
+            the institutions, cultures, and infrastructures from which more
+            life-affirming futures might take root.
+          </p>
+
+          <p className="leading-relaxed">
+            Our work is therefore experimental by design, and we understand
+            ourselves as one node within a much larger constellation of
+            communities around the world engaged in related inquiries. We do
+            not presume to know what forms of education will be adequate for
+            the century ahead, nor what the future itself will demand of us.
+          </p>
+
+          <p className="font-medium leading-relaxed text-foreground">
+            But this moment is calling for bold experimentation in education,
+            community, governance, economics, and collective action —
+            experiments that can help us learn our way toward what comes next.
+            And this is our attempt to contribute to that.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* 5. The Civilizational Horizon */}
         <section className="py-24 lg:py-32 bg-background">
