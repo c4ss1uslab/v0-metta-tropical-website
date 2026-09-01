@@ -1317,8 +1317,7 @@ export default function TheoryOfChangePage() {
             <p className="font-serif text-lg font-medium leading-relaxed text-foreground md:text-xl">
               A wisdom-centered educational architecture and developmental
               ecosystem, rooted in the Global South, capable of supporting the
-              long arc of human and communal transformation required during a
-              time between worlds.
+              long arc of human and communal transformation required to respond to systemic collapse and serve the emergence of a mature, wise and life-affirming civilization.
             </p>
           </div>
 
