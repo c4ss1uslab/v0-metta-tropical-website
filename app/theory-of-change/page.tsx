@@ -123,7 +123,6 @@ export default function TheoryOfChangePage() {
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
               Sanctuaries of Coherence in a Time Between Worlds
             </h1>
-            </p>
           </div>
         </section>
 
