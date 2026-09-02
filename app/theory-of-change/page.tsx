@@ -383,7 +383,7 @@ export default function TheoryOfChangePage() {
                 • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.⁴
               </p>
             </div>
             <div className="space-y-8">
@@ -627,7 +627,7 @@ export default function TheoryOfChangePage() {
     
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
       <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Rivalrous dynamics + Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+        Rivalrous dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
       </p>
     </div>
   </div>
@@ -689,7 +689,7 @@ export default function TheoryOfChangePage() {
           },
           { 
             title: 'Crisis of Relationship', 
-            desc: 'The loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
+            desc: 'The prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
               { name: 'Deep Ecology Institute', logo: '/logos/deepecology.png' }
             ]
@@ -791,7 +791,7 @@ export default function TheoryOfChangePage() {
 
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
       <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Global Intimacy Disorder + Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
+        Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
       </p>
     </div>
   </div>
