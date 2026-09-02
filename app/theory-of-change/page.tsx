@@ -308,7 +308,10 @@ export default function TheoryOfChangePage() {
 </section>
 
         {/* The Predicament */}
-        <section className="py-18 lg:py-18 bg-background">
+        <section
+  id="predicament"
+  className="scroll-mt-24 py-18 lg:py-18 bg-background"
+>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             {/* Header */}
             <div className="text-center mb-20">
