@@ -366,7 +366,7 @@ export default function TheoryOfChangePage() {
                 In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded not only in our institutions and systems, but in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded in our institutions and systems - creating self-destructive feedback loops driving a set of new, unique and escalating existential and catastrophic risks³ - and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 It is a crisis not only of systems, but of being.
@@ -388,7 +388,7 @@ export default function TheoryOfChangePage() {
             </div>
             <div className="space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges.
+                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 We understand the metacrisis as unfolding across three interconnected layers:
@@ -1576,7 +1576,7 @@ export default function TheoryOfChangePage() {
     {/* Main Content */}
     <div className="mt-10 space-y-8 leading-relaxed text-background/90">
       <p>
-        We believe the metacrisis cannot be adequately responded to with new
+        The metacrisis cannot be adequately responded to with new
         technologies, policies, or institutions alone. The underlying ways of
         seeing, being, knowing, and relating that continue to generate and
         reproduce the metacrisis cannot, by themselves, create the conditions
@@ -1584,9 +1584,11 @@ export default function TheoryOfChangePage() {
       </p>
 
       <p>
-        This moment calls for profound human and civilizational transformation
+        Every crisis holds the potential to become a chrysalis. A fertile environment that holds the nutrients required for a process of deep transfiguration. We believe this moment calls for profound human and civilizational transformation
         in how we understand ourselves, reality, and our relationship with all
-        life. Many of the dominant structures of modern civilization —
+        life. </p>
+
+        <p> Many of the dominant structures of modern civilization —
         educational systems, media environments, economies, technologies, and
         cultural norms — continually shape our desires, identities, ambitions,
         and behaviors in ways that reinforce fragmentation, extraction,
@@ -1607,7 +1609,7 @@ export default function TheoryOfChangePage() {
           ontological grounding, and collective coordination capable of opening
           new possibilities for how we live, relate, and act together —
           reducing the existential risks before us while helping create the
-          conditions for a more life-affirming civilization to emerge.
+          conditions for a radically more life-affirming civilization to emerge.
         </p>
       </div>
 
