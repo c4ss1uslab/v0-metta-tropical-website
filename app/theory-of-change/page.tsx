@@ -114,19 +114,36 @@ export default function TheoryOfChangePage() {
         .shard-4 { animation: shatterPiece4 1s forwards ease-out; clip-path: polygon(0 0, 100% 50%, 0 100%); background-color: rgba(180, 0, 20, 1); }
       `}</style>
 
-      <Navigation />
-      <main className="pt-16">
-        {/* Hero */}
-        <section className="relative py-24 lg:py-32 bg-foreground text-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-yellow font-medium text-sm tracking-wide uppercase">Theory of Change</span>
-            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
-              Making Sanctuaries in a 
-              <br />
-              Time Between Worlds
-            </h1>
-          </div>
-        </section>
+<Navigation />
+<main className="pt-16">
+  {/* Hero */}
+  <section className="relative overflow-hidden py-24 text-background lg:py-32">
+    {/* Background Image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://i.postimg.cc/C5m58hp3/cosmos-505503782.jpg')",
+      }}
+    />
+
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-foreground/75" />
+
+    {/* Content */}
+    <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
+      <span className="text-sm font-medium uppercase tracking-wide text-yellow">
+        Theory of Change
+      </span>
+
+      <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-background md:text-5xl lg:text-6xl">
+        Making Sanctuaries in a
+        <br />
+        Time Between Worlds
+      </h1>
+    </div>
+  </section>
+</main>
 
 {/* Theory of Change — At a Glance */}
 <section className="bg-cream py-14 lg:py-16">
