@@ -123,8 +123,6 @@ export default function TheoryOfChangePage() {
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
               Sanctuaries of Coherence in a Time Between Worlds
             </h1>
-            <p className="mt-8 text-xl text-background/80 leading-relaxed">
-              Understanding the deep roots of our predicament and the educational response it requires.
             </p>
           </div>
         </section>
@@ -140,7 +138,7 @@ export default function TheoryOfChangePage() {
 
       <p className="mt-3 max-w-3xl leading-relaxed text-muted-foreground">
         Our theory of change unfolds through five interconnected movements —
-        from understanding the predicament we are in to the larger
+        from understanding the predicament we are in, to the educational response it requires, and the larger
         civilizational horizon we hope to serve.
       </p>
     </div>
