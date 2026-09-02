@@ -1428,7 +1428,10 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 4. The Response */}
-<section className="bg-cream py-24 lg:py-32">
+{/* 4. The Response */}
+<section
+  id="response"
+  className="scroll-mt-24 bg-cream py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
