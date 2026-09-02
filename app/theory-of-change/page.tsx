@@ -1281,7 +1281,9 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 3. The Developmental Hypothesis */}
-<section className="bg-foreground py-24 text-background lg:py-32">
+<section
+  id="developmental-hypothesis"
+  className="scroll-mt-24 bg-foreground py-24 text-background lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
