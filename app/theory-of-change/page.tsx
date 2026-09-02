@@ -541,7 +541,6 @@ export default function TheoryOfChangePage() {
           { 
             title: 'Crisis of Complexity', 
             desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', 
-            sup: '5',
             references: [
               { name: 'Santa Fe Institute', logo: '/logos/sfi.png' },
               { name: 'Stockholm Resilience Centre', logo: '/logos/stockholm.png' }
@@ -563,7 +562,7 @@ export default function TheoryOfChangePage() {
                 <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
                   <div className="flex items-start justify-between gap-2">
                     <h4 className="font-serif font-medium text-foreground">
-                      {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
                     </h4>
 
                     {/* Inline Expand Arrow */}
@@ -587,7 +586,7 @@ export default function TheoryOfChangePage() {
                 {hasReferences && (
                   <div className="mt-3 border-t border-crimson/20 pt-3">
                     <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson/80">
-                      Selected references
+                      Suggested resources
                     </p>
 
                     <ul className="space-y-2">
@@ -697,7 +696,6 @@ export default function TheoryOfChangePage() {
           { 
             title: 'Crisis of Value', 
             desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', 
-            sup: '2',
             references: [
               { name: 'Perspectiva', logo: '/logos/perspectiva.png' },
               { name: 'The Meta-Crisis Institute', logo: '/logos/metacrisis.png' }
@@ -727,7 +725,7 @@ export default function TheoryOfChangePage() {
                 <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
                   <div className="flex items-start justify-between gap-2">
                     <h4 className="font-serif font-medium text-foreground">
-                      {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
                     </h4>
 
                     {/* Inline Expand Arrow */}
@@ -751,7 +749,7 @@ export default function TheoryOfChangePage() {
                 {hasReferences && (
                   <div className="mt-3 border-t border-olive/20 pt-3">
                     <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
-                      Selected references
+                      Suggested resources
                     </p>
 
                     <ul className="space-y-2">
