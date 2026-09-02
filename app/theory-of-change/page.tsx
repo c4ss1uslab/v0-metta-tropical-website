@@ -391,7 +391,7 @@ export default function TheoryOfChangePage() {
                 In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We understand the metacrisis as unfolding across three interconnected layers:
+                We understand the metacrisis as unfolding across three interconnected layers₅:
               </p>
             </div>
 
@@ -796,6 +796,86 @@ export default function TheoryOfChangePage() {
     </div>
   </div>
 
+</div>
+
+            <div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+                So, if one were to summarize the dynamics underlying the metacrisis, as articulated by Stephen Reid and adapted by us, we could say:
+              </p>
+            </div>
+
+<div className="relative my-8 w-full p-6 rounded-xl border border-border bg-card/30">
+  {/* Horizontal Connecting Solid Line (Desktop) */}
+  <div className="hidden md:block absolute top-1/2 left-8 right-8 h-[2px] -translate-y-1/2 bg-crimson/30 z-0 rounded-full" />
+
+  <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+    {/* Box 1 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        Rivalrous dynamics x Exponential technology
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 1 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+    </div>
+
+    {/* Box 2 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with X */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        Systems that reward externalizing harm onto the commons and the future
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 2 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with X */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        A collapse in our shared capacity to make sense of the world well enough to choose well within it
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 3 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          =
+        </span>
+      </div>
+    </div>
+
+    {/* 4th Box - Result (White Background with Black Border) */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with = */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          =
+        </span>
+      </div>
+      <div className="w-full py-3 px-4 rounded-lg bg-white text-foreground text-l font-serif font-bold shadow-md border-2 border-black">
+        The Metacrisis
+      </div>
+    </div>
+  </div>
 </div>
 
             <div className="mt-8 space-y-8">
