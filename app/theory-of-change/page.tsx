@@ -701,8 +701,38 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 1. The Orientation Gap
+                <svg
+  className="h-4 w-4 shrink-0 opacity-75 text-olive"
+  viewBox="-3 -3 26 26"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.5"
+  strokeLinecap="round"
+>
+  <g transform="rotate(22.5 10 10)">
+    {/* Semi-transparent filled water channel */}
+    <path
+      d="M11 2C8 2 5.5 5.5 5.5 10C5.5 14.5 3 18 1 18 L9 18 C12 18 14.5 14.5 14.5 10 C14.5 5.5 17 2 19 2 Z"
+      fill="currentColor"
+      fillOpacity="0.12"
+      stroke="none"
+    />
+
+    {/* Outer banks */}
+    <path d="M11 2C8 2 5.5 5.5 5.5 10C5.5 14.5 3 18 1 18" />
+    <path d="M19 2C17 2 14.5 5.5 14.5 10C14.5 14.5 12 18 9 18" />
+
+    {/* Inner current dash */}
+    <path
+      d="M14 6C12.5 7.5 11 9 10 12"
+      strokeWidth="1"
+      strokeDasharray="1.5 2.5"
+      opacity="0.8"
+    />
+  </g>
+</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -788,8 +818,12 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 2. The Aspiration Gap
+                <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
+                <circle cx="12" cy="12" r="4" fill="currentColor" fillOpacity="0.2" />
+                <path d="M12 3V5M12 19V21M3 12H5M19 12H21M5.64 5.64L7.05 7.05M16.95 16.95L18.36 18.36M5.64 18.36L7.05 16.95M16.95 7.05L18.36 5.64" />
+                </svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -872,10 +906,20 @@ export default function TheoryOfChangePage() {
       <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
-            <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
-                3. The Formation Gap
-              </span>
+  <div>
+    <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+      <span>3. The Formation Gap</span>
+
+      <svg
+        className="h-3.5 w-3.5 shrink-0 text-olive opacity-70"
+        viewBox="0 0 32 32"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path d="M16 2 L30 16 L16 30 L2 16 Z" strokeWidth="2.5" />
+        <path d="M16 8 L24 16 L16 24 L8 16 Z" fill="currentColor" />
+      </svg>
+    </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 How do we become such humans?
@@ -993,8 +1037,18 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 4. The Integration Gap
+                <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  {/* Layered Outer Vault */}
+  <path d="M2 18C2 9 6 3 10 2C14 3 18 9 18 18" />
+  {/* Second Tier Arch */}
+  <path d="M5 18C5 11 7.5 6 10 5C12.5 6 15 11 15 18" strokeWidth="1.25" fill="currentColor" fillOpacity="0.1" />
+  {/* Third Tier Arch */}
+  <path d="M8 18C8 13 9 9 10 8C11 9 12 13 12 18" strokeWidth="1" fill="currentColor" fillOpacity="0.2" />
+  {/* Base Tie-Beam Line */}
+  <line x1="2" y1="18" x2="18" y2="18" strokeWidth="1" opacity="0.5" />
+</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -1086,8 +1140,14 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 5. The Communal Development Gap
+                <svg className="h-3.5 w-7 shrink-0 opacity-75 text-olive" viewBox="0 0 16 12" fill="none" stroke="currentColor">
+  <path d="M8 1 L14.5 6 L8 11 L1.5 6 Z" strokeWidth="1" /> 
+  <path d="M8 3.5 L11.5 6 L8 8.5 L4.5 6 Z" strokeWidth="0.8" fill="currentColor" fillOpacity="0.15" />
+  <circle cx="1.5" cy="6" r="0.75" fill="currentColor" />  
+  <circle cx="14.5" cy="6" r="0.75" fill="currentColor" />
+</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -1181,8 +1241,14 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 6. The Civilizational Gap
+                <svg className="h-4 w-5 shrink-0 opacity-75 text-olive" viewBox="0 0 24 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <path d="M12 2C10 6 9 10 12 14C15 10 14 6 12 2Z" fill="currentColor" fillOpacity="0.2" />
+  <path d="M12 14C8 13 4 9 3 6C6 6 10 8 12 14Z" fill="currentColor" fillOpacity="0.15" />
+  <path d="M12 14C16 13 20 9 21 6C18 6 14 8 12 14Z" fill="currentColor" fillOpacity="0.15" />
+  <path d="M2 14C6 14 9 12.5 12 14C15 12.5 18 14 22 14" strokeWidth="1" />
+</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
