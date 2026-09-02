@@ -1736,7 +1736,9 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 5. The Civilizational Horizon */}
-<section className="bg-background py-24 lg:py-32">
+<section
+  id="civilizational-horizon"
+  className="scroll-mt-24 bg-background py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
