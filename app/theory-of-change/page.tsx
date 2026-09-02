@@ -662,7 +662,7 @@ export default function TheoryOfChangePage() {
       <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
       <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
       <p className="text-sm font-medium text-olive mt-2">
-        Foundational Dysfunctions<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">1</sub>
+        Foundational Dysfunctions<sub className="text-[9px] font-sans font-bold opacity-80 ml-0.5">1</sub>
       </p>
     </div>
 
