@@ -391,7 +391,7 @@ export default function TheoryOfChangePage() {
                 In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We understand the metacrisis as unfolding across three interconnected layers₅:
+                We understand the metacrisis as unfolding across three interconnected layers⁵:
               </p>
             </div>
 
