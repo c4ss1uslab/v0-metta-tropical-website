@@ -143,7 +143,6 @@ export default function TheoryOfChangePage() {
       </h1>
     </div>
   </section>
-</main>
 
 {/* Theory of Change — At a Glance */}
 <section className="bg-cream py-14 lg:py-16">
