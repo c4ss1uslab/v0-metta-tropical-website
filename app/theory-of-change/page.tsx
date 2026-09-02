@@ -366,7 +366,7 @@ export default function TheoryOfChangePage() {
                 In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded not only in our institutions and systems, but in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded in our institutions and systems - creating self-destructive feedback loops driving a set of new, unique and escalating existential and catastrophic risks³ - and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 It is a crisis not only of systems, but of being.
@@ -383,250 +383,498 @@ export default function TheoryOfChangePage() {
                 • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.⁴
               </p>
             </div>
             <div className="space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges.
+                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We understand the metacrisis as unfolding across three interconnected layers:
+                We understand the metacrisis as unfolding across three interconnected layers⁵:
               </p>
             </div>
 
-            {/* Diagram Wrapper */}
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+{/* Diagram Wrapper */}
+<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
-              {/* 1. THE SYMPTOMATIC LAYER */}
-              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
-                <div className="text-center mb-8 border-b border-border pb-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 1</span>
-                  <h3 className="font-serif text-xl font-semibold text-foreground">The Symptomatic Layer</h3>
-                  <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
+  {/* 1. THE SYMPTOMATIC LAYER */}
+  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+    <div className="text-center mb-8 border-b border-border pb-4">
+      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 1</span>
+      <h3 className="font-serif text-xl font-semibold text-foreground">The Symptomatic Layer</h3>
+      <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
+    </div>
+
+    <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
+      {/* Layer 1 Vertical Axis */}
+      <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+        {animationState === 'looping' && inLayer1 && (
+          <div 
+            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+            style={{ top: `${(sweep - 78) / 22 * 100}%` }} 
+          />
+        )}
+      </div>
+
+      <div className="w-full flex flex-col gap-3 relative z-10">
+        {polycrisisItems.map((item, idx) => {
+          const isBrokenTarget = brokenItem === idx;
+          const isShattered = animationState === 'shattering' && isBrokenTarget;
+          const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
+          
+          const verticalPos = (sweep - 78) / 22 * 100;
+          const targetY = (idx / 9) * 100;
+          const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - targetY) < 15;
+
+          return (
+            <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
+              <div
+                className={`p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300
+                  ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}
+                  ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
+                  ${isReconstructing ? 'is-reconstructing' : ''}
+                  ${isShattered ? 'opacity-0' : 'opacity-100'}`}
+              >
+                {item}
+              </div>
+
+              {isShattered && (
+                <div className="absolute inset-0 z-20 pointer-events-none">
+                  <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
+                  <div className="absolute top-0 right-0 w-1/2 h-1/2 shard-2 border border-red-400/50"></div>
+                  <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 shard-3 border border-red-400/50"></div>
+                  <div className="absolute bottom-0 right-0 w-1/2 h-full shard-4 border border-red-400/50"></div>
                 </div>
+              )}
+            </div>
+          );
+        })}
+        
+        {/* "Etc..." Card */}
+        {(() => {
+          const verticalPos = (sweep - 78) / 22 * 100;
+          const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - 100) < 15;
+          return (
+            <div 
+              className={`w-full p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300 cursor-pointer 
+                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}`}
+              onClick={startAnimation}
+            >
+              Etc...
+            </div>
+          );
+        })()}
+      </div>
+    </div>
+    <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
+  </div>
 
-                <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
-                  {/* Layer 1 Vertical Axis */}
-                  <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
-                    {animationState === 'looping' && inLayer1 && (
-                      <div 
-                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-                        style={{ top: `${(sweep - 78) / 22 * 100}%` }} 
-                      />
+  {/* 2. THE STRUCTURAL LAYER */}
+  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+    
+    {/* Horizontal Bridges: Layer 2 -> Layer 1 */}
+    <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+      {[24, 44, 64, 84].map((topPos, i) => (
+        <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+          {animationState === 'looping' && inBridge21 && (
+            <div 
+              className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+              style={{ right: `${(sweep - 62) / 16 * 100}%` }} 
+            />
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div 
+      className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
+      onClick={startAnimation}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </div>
+
+    <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
+      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
+      <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
+      <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
+    </div>
+
+    <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+      {/* Layer 2 Vertical Axis */}
+      <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+         {animationState === 'looping' && inLayer2 && (
+          <div 
+            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+            style={{ top: `${(sweep - 38) / 24 * 100}%` }} 
+          />
+        )}
+      </div>
+
+      <div className="w-full flex flex-col gap-4 relative z-10">
+        {[
+          { 
+            title: 'Crisis of Power', 
+            desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.',
+            references: [
+              { name: 'Open Society Foundations', logo: '/logos/opensociety.png' },
+              { name: 'Institute for Local Self-Reliance', logo: '/logos/ilsr.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Incentives', 
+            desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.',
+            references: [
+              { name: 'Center for Humane Technology', logo: '/logos/cht.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Trust', 
+            desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.',
+            references: [
+              { name: 'Sensemaking Networks', logo: '/logos/sensemaking.png' },
+              { name: 'Wikidata Foundation', logo: '/logos/wikidata.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Complexity', 
+            desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', 
+            references: [
+              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' },
+              { name: 'Stockholm Resilience Centre', logo: '/logos/stockholm.png' }
+            ]
+          }
+        ].map((item, i) => {
+          const verticalPos = (sweep - 38) / 24 * 100;
+          const targetY = [12, 37, 62, 87][i];
+          const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
+          const hasReferences = item.references && item.references.length > 0;
+
+          return (
+            <div 
+              key={i} 
+              className={`group w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
+                ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
+            >
+              <details className="group/details w-full">
+                <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
+                  <div className="flex items-start justify-between gap-2">
+                    <h4 className="font-serif font-medium text-foreground">
+                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
+                    </h4>
+
+                    {/* Inline Expand Arrow */}
+                    {hasReferences && (
+                      <svg
+                        className="mt-1 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson/80"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+                      </svg>
                     )}
                   </div>
 
-                  <div className="w-full flex flex-col gap-3 relative z-10">
-                    {polycrisisItems.map((item, idx) => {
-                      const isBrokenTarget = brokenItem === idx;
-                      const isShattered = animationState === 'shattering' && isBrokenTarget;
-                      const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
-                      
-                      const verticalPos = (sweep - 78) / 22 * 100;
-                      const targetY = (idx / 9) * 100;
-                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - targetY) < 15;
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                </summary>
 
-                      return (
-                        <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
-                          <div
-                            className={`p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300
-                              ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}
-                              ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
-                              ${isReconstructing ? 'is-reconstructing' : ''}
-                              ${isShattered ? 'opacity-0' : 'opacity-100'}`}
-                          >
-                            {item}
+                {/* Hidden references block - expands downward when opened */}
+                {hasReferences && (
+                  <div className="mt-3 border-t border-crimson/20 pt-3">
+                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson/80">
+                      Suggested resources
+                    </p>
+
+                    <ul className="space-y-2">
+                      {item.references.map((ref) => (
+                        <li
+                          key={ref.name}
+                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-white"
+                        >
+                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                            <Image
+                              src={ref.logo}
+                              alt={`${ref.name} logo`}
+                              fill
+                              sizes="40px"
+                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                            />
                           </div>
 
-                          {isShattered && (
-                            <div className="absolute inset-0 z-20 pointer-events-none">
-                              <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
-                              <div className="absolute top-0 right-0 w-1/2 h-1/2 shard-2 border border-red-400/50"></div>
-                              <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 shard-3 border border-red-400/50"></div>
-                              <div className="absolute bottom-0 right-0 w-1/2 h-full shard-4 border border-red-400/50"></div>
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                    
-                    {/* "Etc..." Card */}
-                    {(() => {
-                      const verticalPos = (sweep - 78) / 22 * 100;
-                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - 100) < 15;
-                      return (
-                        <div 
-                          className={`w-full p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300 cursor-pointer 
-                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}`}
-                          onClick={startAnimation}
-                        >
-                          Etc...
-                        </div>
-                      );
-                    })()}
+                          <span className="text-xs font-medium leading-snug text-foreground">
+                            {ref.name}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+                      These references indicate sources of learning and inspiration.
+                    </p>
                   </div>
-                </div>
-                <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
-              </div>
-
-              {/* 2. THE STRUCTURAL LAYER */}
-              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
-                
-                {/* Horizontal Bridges: Layer 2 -> Layer 1 */}
-                <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-                  {[24, 44, 64, 84].map((topPos, i) => (
-                    <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-hidden" style={{ top: `${topPos}%` }}>
-                      {animationState === 'looping' && inBridge21 && (
-                        <div 
-                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
-                          style={{ right: `${(sweep - 62) / 16 * 100}%` }} 
-                        />
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                <div 
-                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
-                  onClick={startAnimation}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                  </svg>
-                </div>
-
-                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
-                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
-                  <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
-                  <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
-                </div>
-
-                <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Layer 2 Vertical Axis */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
-                     {animationState === 'looping' && inLayer2 && (
-                      <div 
-                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-                        style={{ top: `${(sweep - 38) / 24 * 100}%` }} 
-                      />
-                    )}
-                  </div>
-
-                  <div className="w-full flex flex-col gap-4 relative z-10">
-                    {[
-                      { title: 'Crisis of Power', desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.' },
-                      { title: 'Crisis of Incentives', desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.' },
-                      { title: 'Crisis of Trust', desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.' },
-                      { title: 'Crisis of Complexity', desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', sup: '5' }
-                    ].map((item, i) => {
-                      const verticalPos = (sweep - 38) / 24 * 100;
-                      const targetY = [12, 37, 62, 87][i];
-                      const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
-
-                      return (
-                        <div 
-                          key={i} 
-                          className={`w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
-                            ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
-                        >
-                          <h4 className="font-serif font-medium text-foreground">
-                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
-                          </h4>
-                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-                
-                <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-                  <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-                    Rivalrous dynamics + Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
-                  </p>
-                </div>
-              </div>
-
-              {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
-              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
-                
-                {/* Horizontal Bridges: Layer 3 -> Layer 2 */}
-                <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-                  {[24, 44, 64, 84].map((topPos, i) => (
-                    <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-hidden" style={{ top: `${topPos}%` }}>
-                      {animationState === 'looping' && inBridge32 && (
-                        <div 
-                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
-                          style={{ right: `${(sweep - 22) / 16 * 100}%` }} 
-                        />
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                <div 
-                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-olive hover:text-olive transition-colors"
-                  onClick={startAnimation}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                  </svg>
-                </div>
-
-                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
-                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
-                  <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
-                  <p className="text-sm font-medium text-olive mt-2">
-                    Foundational Dysfunctions<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">1</sub>
-                  </p>
-                </div>
-
-                <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-                  {/* Layer 3 Vertical Axis */}
-                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 rounded-full">
-                     {animationState === 'looping' && inLayer3 && (
-                      <div 
-                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-                        style={{ top: `${(sweep - 0) / 22 * 100}%` }} 
-                      />
-                    )}
-                  </div>
-
-                  <div className="w-full flex flex-col gap-4 relative z-10">
-                    {[
-                      { title: 'Crisis of Perception', desc: 'Persistent delusions of separation, misapprehending nature and reality.' },
-                      { title: 'Crisis of Relationship', desc: 'The loss of our intimate relationships with all life: ourselves, others, the world and the sacred. ' },
-                      { title: 'Crisis of Value', desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', sup: '2' },
-                      { title: 'Crisis of Capacity', desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.' }
-                    ].map((item, i) => {
-                      const verticalPos = (sweep - 0) / 22 * 100;
-                      const targetY = [12, 37, 62, 87][i];
-                      const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
-
-                      return (
-                        <div 
-                          key={i} 
-                          className={`w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
-                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
-                        >
-                          <h4 className="font-serif font-medium text-foreground">
-                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
-                          </h4>
-                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-
-                <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-                  <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-                    Global Intimacy Disorder + Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
-                  </p>
-                </div>
-              </div>
-
+                )}
+              </details>
             </div>
+          )
+        })}
+      </div>
+    </div>
+    
+    <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+      <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+        Rivalrous dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+      </p>
+    </div>
+  </div>
+
+  {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
+  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
+    
+    {/* Horizontal Bridges: Layer 3 -> Layer 2 */}
+    <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+      {[24, 44, 64, 84].map((topPos, i) => (
+        <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+          {animationState === 'looping' && inBridge32 && (
+            <div 
+              className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+              style={{ right: `${(sweep - 22) / 16 * 100}%` }} 
+            />
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div 
+      className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-olive hover:text-olive transition-colors"
+      onClick={startAnimation}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </div>
+
+    <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
+      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
+      <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
+      <p className="text-sm font-medium text-olive mt-2">
+        Foundational Dysfunctions<sub className="text-[9px] font-sans font-bold opacity-80 ml-0.5">6</sub>
+      </p>
+    </div>
+
+    <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+      {/* Layer 3 Vertical Axis */}
+      <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 rounded-full">
+         {animationState === 'looping' && inLayer3 && (
+          <div 
+            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+            style={{ top: `${(sweep - 0) / 22 * 100}%` }} 
+          />
+        )}
+      </div>
+
+      <div className="w-full flex flex-col gap-4 relative z-10">
+        {[
+          { 
+            title: 'Crisis of Perception', 
+            desc: 'Persistent delusions of separation, misapprehending nature and reality.',
+            references: [
+              { name: 'Schumacher College', logo: '/logos/schumacher.png' },
+              { name: 'Center for Ecoliteracy', logo: '/logos/ecoliteracy.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Relationship', 
+            desc: 'The prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
+            references: [
+              { name: 'Deep Ecology Institute', logo: '/logos/deepecology.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Value', 
+            desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', 
+            references: [
+              { name: 'Perspectiva', logo: '/logos/perspectiva.png' },
+              { name: 'The Meta-Crisis Institute', logo: '/logos/metacrisis.png' }
+            ]
+          },
+          { 
+            title: 'Crisis of Capacity', 
+            desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.',
+            references: [
+              { name: 'Consilience Project', logo: '/logos/consilience.png' },
+              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' }
+            ]
+          }
+        ].map((item, i) => {
+          const verticalPos = (sweep - 0) / 22 * 100;
+          const targetY = [12, 37, 62, 87][i];
+          const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
+          const hasReferences = item.references && item.references.length > 0;
+
+          return (
+            <div 
+              key={i} 
+              className={`group w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
+                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
+            >
+              <details className="group/details w-full">
+                <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
+                  <div className="flex items-start justify-between gap-2">
+                    <h4 className="font-serif font-medium text-foreground">
+                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
+                    </h4>
+
+                    {/* Inline Expand Arrow */}
+                    {hasReferences && (
+                      <svg
+                        className="mt-1 h-3.5 w-3.5 shrink-0 text-olive transition-transform duration-300 group-open/details:rotate-180 hover:text-olive/80"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+                      </svg>
+                    )}
+                  </div>
+
+                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                </summary>
+
+                {/* Hidden references block - expands downward when opened */}
+                {hasReferences && (
+                  <div className="mt-3 border-t border-olive/20 pt-3">
+                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
+                      Suggested resources
+                    </p>
+
+                    <ul className="space-y-2">
+                      {item.references.map((ref) => (
+                        <li
+                          key={ref.name}
+                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white"
+                        >
+                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                            <Image
+                              src={ref.logo}
+                              alt={`${ref.name} logo`}
+                              fill
+                              sizes="40px"
+                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                            />
+                          </div>
+
+                          <span className="text-xs font-medium leading-snug text-foreground">
+                            {ref.name}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+                      These references indicate sources of learning and inspiration.
+                    </p>
+                  </div>
+                )}
+              </details>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+
+    <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+      <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+        Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+            <div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+                So, if one were to summarize the dynamics underlying the metacrisis, as articulated by Stephen Reid and adapted by us, we could say:
+              </p>
+            </div>
+
+<div className="relative my-8 w-full p-6 rounded-xl border border-border bg-card/30">
+  {/* Horizontal Connecting Solid Line (Desktop) */}
+  <div className="hidden md:block absolute top-1/2 left-8 right-8 h-[2px] -translate-y-1/2 bg-crimson/30 z-0 rounded-full" />
+
+  <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+    {/* Box 1 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        Rivalrous dynamics x Exponential technology
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 1 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+    </div>
+
+    {/* Box 2 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with X */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        Systems that reward externalizing harm onto the commons and the future
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 2 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with X */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          ×
+        </span>
+      </div>
+      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
+        A collapse in our shared capacity to make sense of the world well enough to choose well within it
+      </div>
+      {/* Desktop Operator Badge centered in the gap after Box 3 */}
+      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
+          =
+        </span>
+      </div>
+    </div>
+
+    {/* 4th Box - Result (White Background with Black Border) */}
+    <div className="relative flex flex-col items-center justify-center text-center">
+      {/* Mobile Vertical Connector with = */}
+      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
+        <div className="h-full w-[2px] bg-crimson/30" />
+        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
+          =
+        </span>
+      </div>
+      <div className="w-full py-3 px-4 rounded-lg bg-white text-foreground text-l font-serif font-bold shadow-md border-2 border-black">
+        The Metacrisis
+      </div>
+    </div>
+  </div>
+</div>
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
@@ -701,7 +949,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 1. The Orientation Gap
                 <svg
   className="h-4 w-4 shrink-0 opacity-75 text-olive"
@@ -818,7 +1066,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 2. The Aspiration Gap
                 <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
                 <circle cx="12" cy="12" r="4" fill="currentColor" fillOpacity="0.2" />
@@ -907,7 +1155,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
   <div>
-    <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+    <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
       <span>3. The Formation Gap</span>
 
       <svg
@@ -1165,7 +1413,7 @@ export default function TheoryOfChangePage() {
             endeavor, even though many capacities required by the metacrisis can
             only be cultivated together. Communities themselves must become the
             unit of development, not support structures for individual growth,
-            but bodies capable of perceiving, sensing and acting as one.
+            but bodies capable of perceiving, sensing and acting as one - without suppressing individuality, difference and uniqueness.
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
@@ -1406,7 +1654,7 @@ export default function TheoryOfChangePage() {
     {/* Main Content */}
     <div className="mt-10 space-y-8 leading-relaxed text-background/90">
       <p>
-        We believe the metacrisis cannot be adequately responded to with new
+        The metacrisis cannot be adequately responded to with new
         technologies, policies, or institutions alone. The underlying ways of
         seeing, being, knowing, and relating that continue to generate and
         reproduce the metacrisis cannot, by themselves, create the conditions
@@ -1414,9 +1662,11 @@ export default function TheoryOfChangePage() {
       </p>
 
       <p>
-        This moment calls for profound human and civilizational transformation
+        Every crisis holds the potential to become a chrysalis. A fertile environment that holds the nutrients required for a process of deep transfiguration. We believe this moment calls for profound human and civilizational transformation
         in how we understand ourselves, reality, and our relationship with all
-        life. Many of the dominant structures of modern civilization —
+        life. </p>
+
+        <p> Many of the dominant structures of modern civilization —
         educational systems, media environments, economies, technologies, and
         cultural norms — continually shape our desires, identities, ambitions,
         and behaviors in ways that reinforce fragmentation, extraction,
@@ -1437,7 +1687,7 @@ export default function TheoryOfChangePage() {
           ontological grounding, and collective coordination capable of opening
           new possibilities for how we live, relate, and act together —
           reducing the existential risks before us while helping create the
-          conditions for a more life-affirming civilization to emerge.
+          conditions for a radically more life-affirming civilization to emerge.
         </p>
       </div>
 
