@@ -1335,7 +1335,7 @@ export default function TheoryOfChangePage() {
             endeavor, even though many capacities required by the metacrisis can
             only be cultivated together. Communities themselves must become the
             unit of development, not support structures for individual growth,
-            but bodies capable of perceiving, sensing and acting as one.
+            but bodies capable of perceiving, sensing and acting as one - without suppressing individuality, difference and uniqueness.
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
