@@ -137,8 +137,9 @@ export default function TheoryOfChangePage() {
 
       <p className="mt-3 max-w-3xl leading-relaxed text-muted-foreground">
         Our theory of change unfolds through five interconnected movements —
-        from understanding the predicament we are in, to the educational response it requires, and the larger
-        civilizational horizon we hope to serve.
+        from understanding the predicament we are in, to the educational
+        response it requires, and the larger civilizational horizon we hope to
+        serve.
       </p>
     </div>
 
@@ -155,6 +156,8 @@ export default function TheoryOfChangePage() {
               <span className="text-sm font-medium uppercase tracking-wide text-crimson">
                 1. The Predicament
               </span>
+
+              <span className="text-sm text-muted-foreground">—</span>
 
               <span className="text-sm italic text-muted-foreground">
                 Where are we?
@@ -187,6 +190,8 @@ export default function TheoryOfChangePage() {
                 2. The Problem
               </span>
 
+              <span className="text-sm text-muted-foreground">—</span>
+
               <span className="text-sm italic text-muted-foreground">
                 What are we responding to?
               </span>
@@ -217,6 +222,8 @@ export default function TheoryOfChangePage() {
               <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
                 3. The Developmental Hypothesis
               </span>
+
+              <span className="text-sm text-muted-foreground">—</span>
 
               <span className="text-sm italic text-muted-foreground">
                 What does this moment require?
@@ -250,6 +257,8 @@ export default function TheoryOfChangePage() {
                 4. The Response
               </span>
 
+              <span className="text-sm text-muted-foreground">—</span>
+
               <span className="text-sm italic text-muted-foreground">
                 What are we building?
               </span>
@@ -282,6 +291,8 @@ export default function TheoryOfChangePage() {
               <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
                 5. A Civilizational Horizon
               </span>
+
+              <span className="text-sm text-muted-foreground">—</span>
 
               <span className="text-sm italic text-muted-foreground">
                 What larger possibility are we serving?
