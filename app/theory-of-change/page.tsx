@@ -701,7 +701,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 1. The Orientation Gap
                 <svg
   className="h-4 w-4 shrink-0 opacity-75 text-olive"
@@ -818,7 +818,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 2. The Aspiration Gap
                 <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
                 <circle cx="12" cy="12" r="4" fill="currentColor" fillOpacity="0.2" />
@@ -907,7 +907,7 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
   <div>
-    <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+    <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
       <span>3. The Formation Gap</span>
 
       <svg
