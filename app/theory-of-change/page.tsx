@@ -129,20 +129,16 @@ export default function TheoryOfChangePage() {
           </div>
         </section>
 
-        {/* Theory of Change — At a Glance */}
-<section className="bg-cream py-20 lg:py-24">
+{/* Theory of Change — At a Glance */}
+<section className="bg-cream py-14 lg:py-16">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
-    <div className="mb-12 text-center">
-      <span className="text-sm font-medium uppercase tracking-wide text-olive">
-        Theory of Change
-      </span>
-
-      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-        At a Glance
+    <div className="mb-8">
+      <h2 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+        Theory of Change — At a Glance
       </h2>
 
-      <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+      <p className="mt-3 max-w-3xl leading-relaxed text-muted-foreground">
         Our theory of change unfolds through five interconnected movements —
         from understanding the predicament we are in to the larger
         civilizational horizon we hope to serve.
@@ -150,23 +146,25 @@ export default function TheoryOfChangePage() {
     </div>
 
     {/* Five-Part Theory of Change */}
-    <div className="space-y-4">
+    <div className="border-t border-border">
       {/* 1. The Predicament */}
       <a
         href="#predicament"
-        className="group block rounded-xl border border-border border-l-4 border-l-crimson bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
       >
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-start justify-between gap-5">
           <div className="flex-1">
-            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-              1. The Predicament
-            </span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+                1. The Predicament
+              </span>
 
-            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
-              Where are we?
-            </h3>
+              <span className="text-sm italic text-muted-foreground">
+                Where are we?
+              </span>
+            </div>
 
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               The metacrisis is not a collection of isolated problems, but a
               deeper civilizational predicament rooted in the systems,
               relationships, and ways of understanding reality that shape
@@ -174,7 +172,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-1 shrink-0 text-xl text-crimson transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -183,19 +181,21 @@ export default function TheoryOfChangePage() {
       {/* 2. The Problem */}
       <a
         href="#problem"
-        className="group block rounded-xl border border-border border-l-4 border-l-olive bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
       >
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-start justify-between gap-5">
           <div className="flex-1">
-            <span className="text-sm font-medium uppercase tracking-wide text-olive">
-              2. The Problem
-            </span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-medium uppercase tracking-wide text-olive">
+                2. The Problem
+              </span>
 
-            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
-              What are we responding to?
-            </h3>
+              <span className="text-sm italic text-muted-foreground">
+                What are we responding to?
+              </span>
+            </div>
 
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               Beneath it lies a crisis of human formation: we lack the
               orientation, aspiration, developmental pathways, communal
               capacities, and formative environments capable of preparing us
@@ -203,7 +203,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-1 shrink-0 text-xl text-olive transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -212,19 +212,21 @@ export default function TheoryOfChangePage() {
       {/* 3. The Developmental Hypothesis */}
       <a
         href="#developmental-hypothesis"
-        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
       >
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-start justify-between gap-5">
           <div className="flex-1">
-            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-              3. The Developmental Hypothesis
-            </span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                3. The Developmental Hypothesis
+              </span>
 
-            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
-              What does this moment require?
-            </h3>
+              <span className="text-sm italic text-muted-foreground">
+                What does this moment require?
+              </span>
+            </div>
 
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               Transformation of this depth requires long-term human and communal
               formation, bringing spiritual depth, relational maturity,
               systemic intelligence, developmental practice, decolonial
@@ -233,7 +235,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -242,19 +244,21 @@ export default function TheoryOfChangePage() {
       {/* 4. The Response */}
       <a
         href="#response"
-        className="group block rounded-xl border border-border border-l-4 border-l-cyan-800 bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
       >
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-start justify-between gap-5">
           <div className="flex-1">
-            <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-              4. The Response
-            </span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+                4. The Response
+              </span>
 
-            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
-              What are we building?
-            </h3>
+              <span className="text-sm italic text-muted-foreground">
+                What are we building?
+              </span>
+            </div>
 
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               A wisdom-centered educational architecture, rooted in the Global
               South, bringing transformative education, transdisciplinary
               research, ecosystem weaving, and cultural imagination into a
@@ -264,7 +268,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-1 shrink-0 text-xl text-cyan-800 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -273,19 +277,21 @@ export default function TheoryOfChangePage() {
       {/* 5. A Civilizational Horizon */}
       <a
         href="#civilizational-horizon"
-        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
+        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
       >
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-start justify-between gap-5">
           <div className="flex-1">
-            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-              5. A Civilizational Horizon
-            </span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                5. A Civilizational Horizon
+              </span>
 
-            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
-              What larger possibility are we serving?
-            </h3>
+              <span className="text-sm italic text-muted-foreground">
+                What larger possibility are we serving?
+              </span>
+            </div>
 
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
               We hope to contribute to the emergence of cultures, institutions
               and communities where wisdom becomes a central organizing
               function and collective life is increasingly oriented toward the
@@ -293,7 +299,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -301,7 +307,7 @@ export default function TheoryOfChangePage() {
     </div>
 
     {/* Navigation Hint */}
-    <p className="mt-8 text-center text-sm italic text-muted-foreground/70">
+    <p className="mt-6 text-sm italic text-muted-foreground/60">
       Select any section to explore it in greater depth.
     </p>
   </div>
