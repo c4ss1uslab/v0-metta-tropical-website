@@ -122,6 +122,7 @@ export default function TheoryOfChangePage() {
             <span className="text-yellow font-medium text-sm tracking-wide uppercase">Theory of Change</span>
             <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
               Making Sanctuaries in a 
+              <br />
               Time Between Worlds
             </h1>
           </div>
