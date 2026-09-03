@@ -748,7 +748,7 @@ export default function TheoryOfChangePage() {
     
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
       <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Rivalrous dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+        Rivalrous dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span>
       </p>
     </div>
   </div>
@@ -911,7 +911,7 @@ export default function TheoryOfChangePage() {
 
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
       <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
+        Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span>
       </p>
     </div>
   </div>
@@ -921,7 +921,7 @@ export default function TheoryOfChangePage() {
 {/* FOOTER SECTION */}
       <footer className="mt-12 relative rounded-xl border border-amber-200/70 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
   {/* Paper Top Accent Strip */}
-  <div className="absolute top-0 left-6 right-6 h-[2px] bg-amber-300/40 dark:bg-stone-700/40 rounded-full" />
+  <div className="absolute top-0 left-6 right-6 h-[2px] dark:bg-stone-700/40 rounded-full" />
 
   {/* Footnote Narrative */}
   <div className="space-y-4 leading-relaxed font-serif">
@@ -1181,7 +1181,33 @@ export default function TheoryOfChangePage() {
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.6 We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.<span className="group relative inline-block cursor-help">
+      <span className="font-semibold text-crimson text-sm">
+        <sup><em>6</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 z-50 mb-2 w-100 -translate-x-1/2 rounded-lg bg-[#fdfbf7] p-3 text-center text-sm text-foreground shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+      <div>
+      <img
+        src="https://cdn.prod.website-files.com/5f0e1294f002b1bb26e1f304/6273d53d162e559ba47d5d65_Wisdom%20Gap%20GIF%202.0.gif"
+        alt="Wisdom Gap"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      />
+    </div>
+    <br />
+        Introduced by Tristan Harris from the Center for Humane Technology {" "}
+  <a
+    href="https://www.youtube.com/watch?v=CIkcsf-JR1Q"
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >in this short video.</a>
+        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+      </span>
+    </span>
+    {" "} We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
               </p>  
               <p className="text-muted-foreground leading-relaxed">
                 If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
