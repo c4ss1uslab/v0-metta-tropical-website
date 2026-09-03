@@ -429,7 +429,7 @@ export default function TheoryOfChangePage() {
 </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                It is a crisis not only of systems, but of being.
+                It is, therefore, a crisis not only of systems, but of being.
               </p>
             </div>
             <div className="space-y-1 py-6">
