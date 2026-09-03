@@ -783,7 +783,7 @@ export default function TheoryOfChangePage() {
       <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
       <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
       <p className="text-sm font-medium text-olive mt-2">
-        Foundational Dysfunctions<sub className="text-[9px] font-sans font-bold opacity-80 ml-0.5">5</sub>
+        Foundational Dysfunctions<sub className="text-[9px] font-sans font-extrabold opacity-80 ml-0.5">5</sub>
       </p>
     </div>
 
@@ -917,6 +917,16 @@ export default function TheoryOfChangePage() {
   </div>
 
 </div>
+
+<div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+5. Each of the "Foundational' and "Meta-Systemic" dysfunctions that we highlighted can be - and in fact are, for many practitioners - fields of lifelong research, practice and transformation. This is why we chose to list a few resources and institutions doing work on these areas. This list we've arrived at is not exhaustive, and we hope to keep evolving it as we continue learning, expanding and deepening our research.
+
+This conceptualization of the metacrisis is heavily informed by our own explorations as well as multiple references on the generator functions of existential risk (1) https://testing.civilizationemerging.com/solving-generator-function/, https://maxramsahoye.github.io/themetacrisismap/ (2) and root causes of our predicament. https://metacrisis.info/ (3), https://worldphilosophyreligion.substack.com/p/love-or-die (4), https://decolonialfutures.net/house-of-modernity-zine/ + https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf (5) (5), https://www.youtube.com/watch?v=Mgy9Awoql1s (6), https://perspecteeva.substack.com/p/prefixing-the-world / https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/ (7), https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf (8), https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH (9)
+
+Each of these crises and dynamics require a deep dive, and we hope to so through our upcoming Research and Ecosystem Map, so as to better understand the different perspectives and approaches to response. We believe the constant engagement with these different analyses can help us hold multiple perspectives and learn to hold them in relationship, towards more omni-considerate outlooks.
+              </p>
+            </div>
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
