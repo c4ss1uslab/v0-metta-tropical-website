@@ -366,8 +366,68 @@ export default function TheoryOfChangePage() {
                 In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded in our institutions and systems - creating self-destructive feedback loops driving a set of new, unique and escalating existential and catastrophic risks³ - and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
-              </p>
+  The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become profoundly embedded in our institutions and systems, creating self-destructive feedback loops driving a set of new, unique and escalating anthropocentric existential and catastrophic risks
+  <span className="group relative inline-block cursor-help">
+    <span className="font-semibold text-crimson text-sm">
+      <sup><em>3</em></sup>
+    </span>
+    <span className="invisible absolute bottom-full left-1/2 mb-2 w-80 -translate-x-1/2 rounded-lg bg-foreground p-3 text-left text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+      <div className="space-y-2">
+        <div>
+          Schmachtenberger, Daniel. <em>“Catastrophic and Existential Risk,”</em> 2017.{" "}
+          <a
+            href="https://civilizationemerging.com/catastrophic-and-existential-risk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            Civilization Emerging.
+          </a>
+        </div>
+
+        <div>
+          The Consilience Project. <em>“Challenges to Making Sense of the 21st Century,”</em> 2021. {" "}
+          <a
+            href="https://consilienceproject.org/challenges-to-making-sense-of-the-21st-century"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            The Consilience Project.
+          </a>
+        </div>
+
+        <div>
+          Morton, Timothy. <em>Hyperobjects: Philosophy and Ecology after the End of the World.</em> 2013.{" "}
+          <a
+            href="https://www.upress.umn.edu/9780816689231/hyperobjects/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            University of Minnesota Press.
+          </a>
+        </div>
+
+        <div>
+          Bostrom, Nick, and Milan M. Ćirković, eds. <em>Global Catastrophic Risks.</em> 2008.{" "}
+          <a
+            href="https://academic.oup.com/book/40615"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            Oxford University Press.
+          </a>
+        </div>
+      </div>
+
+      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+    </span>
+  </span>
+   , and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+</p>
+
               <p className="text-muted-foreground leading-relaxed">
                 It is a crisis not only of systems, but of being.
               </p>
@@ -385,7 +445,7 @@ export default function TheoryOfChangePage() {
                 <p className="text-muted-foreground leading-relaxed">
     • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.
     <span className="group relative inline-block cursor-help">
-      <span className="border-b-2 font-semibold text-crimson text-sm">
+      <span className="font-semibold text-crimson text-sm">
         <sup><em>4</em></sup>
       </span>
       <span className="invisible absolute bottom-full left-1/2 mb-2 w-74 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
@@ -410,7 +470,7 @@ export default function TheoryOfChangePage() {
   <p className="text-muted-foreground leading-relaxed">
     We understand the metacrisis as unfolding across three interconnected layers:
     <span className="group relative inline-block cursor-help">
-      <span className="border-b-2 font-semibold text-crimson text-sm">
+      <span className="font-semibold text-crimson text-sm">
         <sup><em>5</em></sup>
       </span>
       <span className="invisible absolute bottom-full left-1/2 mb-2 w-100 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
