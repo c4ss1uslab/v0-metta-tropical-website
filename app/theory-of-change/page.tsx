@@ -382,18 +382,50 @@ export default function TheoryOfChangePage() {
               <p className="text-muted-foreground leading-relaxed">
                 • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.⁴
-              </p>
-            </div>
+                <p className="text-muted-foreground leading-relaxed">
+    • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.
+    <span className="group relative inline-block cursor-help">
+      <span className="border-b-2 font-semibold text-crimson text-sm">
+        <sup><em>4</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 mb-2 w-74 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+  This formulation is drawn from Jonathan Rowson, as proposed in his article:{" "}
+  <a
+    href="https://perspecteeva.substack.com/p/prefixing-the-world"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >
+    “Prefixing the World,” Perspectiva, 2023.
+  </a>
+  <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+</span>
+</span>
+  </p>
+</div>
             <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                We understand the metacrisis as unfolding across three interconnected layers⁵:
-              </p>
-            </div>
+  <p className="text-muted-foreground leading-relaxed">
+    In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
+  </p>
+  <p className="text-muted-foreground leading-relaxed">
+    We understand the metacrisis as unfolding across three interconnected layers:
+    <span className="group relative inline-block cursor-help">
+      <span className="border-b-2 font-semibold text-crimson text-sm">
+        <sup><em>5</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 mb-2 w-100 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+        This 3-layered breakdown of the metacrisis is heavily inspired by Life Itself's paper,{" "}
+  <a
+    href="https://metacrisis.info/paper"
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >&ldquo;From Polycrisis to Metacrisis: A Short Introduction&rdquo;, August 2025.</a>
+        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+      </span>
+    </span>
+  </p>
+</div>
 
 {/* Diagram Wrapper */}
 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
@@ -879,7 +911,7 @@ export default function TheoryOfChangePage() {
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
                 At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
-              </p>
+              </p>  
               <p className="text-muted-foreground leading-relaxed">
                 If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
               </p>
