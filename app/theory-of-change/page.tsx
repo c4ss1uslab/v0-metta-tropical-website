@@ -54,10 +54,13 @@ export default function TheoryOfChangePage() {
 
   const startAnimation = () => {
     if (animationState !== 'idle') return;
-    
+
     setAnimationState('looping');
 
-    // 1. Loop for 9 seconds
+    // Generate a random duration between 6000ms (6s) and 10000ms (10s)
+    const randomLoopDuration = 6000 + Math.random() * 4000;
+
+    // 1. Loop for the randomized duration
     setTimeout(() => {
       setAnimationState('shattering');
       // Pick a random Layer 1 item to shatter
@@ -73,7 +76,7 @@ export default function TheoryOfChangePage() {
           setBrokenItem(null);
         }, 1500);
       }, 3000);
-    }, 9000);
+    }, randomLoopDuration);
   };
 
   // Define sequential phases for the sweep (0 to 100 scale moving Right to Left)
@@ -518,7 +521,7 @@ export default function TheoryOfChangePage() {
 </div>
 
 {/* Diagram Wrapper */}
-<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
   {/* 1. THE SYMPTOMATIC LAYER */}
   <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
@@ -747,73 +750,73 @@ export default function TheoryOfChangePage() {
     </div>
     
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <details className="group/details w-full relative">
-        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
-          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
-            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-              Rivalrous Dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span>
-            </p>
+  <details className="group/details w-full">
+    <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
+      <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
+        <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+          Rivalrous Dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span>
+        </p>
 
-            {/* Toggle icon positioned in the bottom-right corner */}
-            <svg
-              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-            </svg>
+        {/* Toggle icon positioned in the bottom-right corner */}
+        <svg
+          className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+    </summary>
+
+    {/* Expanded suggested resources section matching Layer 3 olive styling */}
+    <div className="mt-3 border-t border-olive/20 pt-3 text-left">
+      <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
+        Suggested resources
+      </p>
+
+      <ul className="space-y-2">
+        <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white">
+          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+            <Image
+              src="/logos/consilience.png"
+              alt="The Consilience Project logo"
+              fill
+              sizes="40px"
+              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+            />
           </div>
-        </summary>
 
-        {/* Floating absolute dropdown popover to prevent shifting layout */}
-        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson">
-            Suggested resources
-          </p>
+          <span className="text-xs font-medium leading-snug text-foreground">
+            The Consilience Project
+          </span>
+        </li>
 
-          <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/consilience.png"
-                  alt="The Consilience Project logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
+        <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white">
+          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+            <Image
+              src="/logos/metacrisis.png"
+              alt="The Meta-Crisis Institute logo"
+              fill
+              sizes="40px"
+              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+            />
+          </div>
 
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
-              </span>
-            </li>
+          <span className="text-xs font-medium leading-snug text-foreground">
+            The Meta-Crisis Institute
+          </span>
+        </li>
+      </ul>
 
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/metacrisis.png"
-                  alt="The Meta-Crisis Institute logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
-              </span>
-            </li>
-          </ul>
-
-          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-            These references explore the intersection of relational capacity and technological acceleration.
-          </p>
-        </div>
-      </details>
+      <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+        These references explore the intersection of relational capacity and technological acceleration.
+      </p>
     </div>
-  </div>
+  </details>
+</div>
+</div>
 
   {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
   <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
@@ -971,74 +974,74 @@ export default function TheoryOfChangePage() {
       </div>
     </div>
 
-    <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <details className="group/details w-full relative">
-        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
-          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
-            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-              Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span>
-            </p>
+<div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+  <details className="group/details w-full">
+    <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
+      <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
+        <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+          Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span>
+        </p>
 
-            {/* Toggle icon positioned in the bottom-right corner */}
-            <svg
-              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-orange-400 transition-transform duration-300 group-open/details:rotate-180 hover:text-orange-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-            </svg>
+        {/* Toggle icon positioned in the bottom-right corner */}
+        <svg
+          className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-orange-400 transition-transform duration-300 group-open/details:rotate-180 hover:text-orange-300"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+    </summary>
+
+    {/* Expanded suggested resources section matching Layer 3 olive styling */}
+    <div className="mt-3 border-t border-olive/20 pt-3 text-left">
+      <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
+        Suggested resources
+      </p>
+
+      <ul className="space-y-2">
+        <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white">
+          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+            <Image
+              src="/logos/consilience.png"
+              alt="The Consilience Project logo"
+              fill
+              sizes="40px"
+              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+            />
           </div>
-        </summary>
 
-        {/* Floating absolute dropdown popover to prevent shifting layout */}
-        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive">
-            Suggested resources
-          </p>
+          <span className="text-xs font-medium leading-snug text-foreground">
+            The Consilience Project
+          </span>
+        </li>
 
-          <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/consilience.png"
-                  alt="The Consilience Project logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
+        <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white">
+          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+            <Image
+              src="/logos/metacrisis.png"
+              alt="The Meta-Crisis Institute logo"
+              fill
+              sizes="40px"
+              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+            />
+          </div>
 
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
-              </span>
-            </li>
+          <span className="text-xs font-medium leading-snug text-foreground">
+            The Meta-Crisis Institute
+          </span>
+        </li>
+      </ul>
 
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/metacrisis.png"
-                  alt="The Meta-Crisis Institute logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
-              </span>
-            </li>
-          </ul>
-
-          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-            These references explore the intersection of relational capacity and technological acceleration.
-          </p>
-        </div>
-      </details>
+      <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+        These references explore the intersection of relational capacity and technological acceleration.
+      </p>
     </div>
-  </div>
+  </details>
+</div>
+</div>
 </div>
 
 {/* FOOTER SECTION */}
