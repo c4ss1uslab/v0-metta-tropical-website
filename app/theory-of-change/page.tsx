@@ -54,10 +54,13 @@ export default function TheoryOfChangePage() {
 
   const startAnimation = () => {
     if (animationState !== 'idle') return;
-    
+
     setAnimationState('looping');
 
-    // 1. Loop for 9 seconds
+    // Generate a random duration between 6000ms (6s) and 10000ms (10s)
+    const randomLoopDuration = 6000 + Math.random() * 4000;
+
+    // 1. Loop for the randomized duration
     setTimeout(() => {
       setAnimationState('shattering');
       // Pick a random Layer 1 item to shatter
@@ -73,7 +76,7 @@ export default function TheoryOfChangePage() {
           setBrokenItem(null);
         }, 1500);
       }, 3000);
-    }, 9000);
+    }, randomLoopDuration);
   };
 
   // Define sequential phases for the sweep (0 to 100 scale moving Right to Left)
@@ -518,7 +521,7 @@ export default function TheoryOfChangePage() {
 </div>
 
 {/* Diagram Wrapper */}
-<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
   {/* 1. THE SYMPTOMATIC LAYER */}
   <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
@@ -747,9 +750,71 @@ export default function TheoryOfChangePage() {
     </div>
     
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Rivalrous dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
-      </p>
+      <details className="group/details w-full relative">
+        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
+          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
+            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+              Rivalrous Dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span>
+            </p>
+
+            {/* Toggle icon positioned in the bottom-right corner */}
+            <svg
+              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+        </summary>
+
+        {/* Floating absolute dropdown popover to prevent shifting layout */}
+        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
+          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson">
+            Suggested resources
+          </p>
+
+          <ul className="space-y-2">
+            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
+              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                <Image
+                  src="/logos/consilience.png"
+                  alt="The Consilience Project logo"
+                  fill
+                  sizes="40px"
+                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                />
+              </div>
+
+              <span className="text-xs font-medium leading-snug text-foreground">
+                The Consilience Project
+              </span>
+            </li>
+
+            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
+              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                <Image
+                  src="/logos/metacrisis.png"
+                  alt="The Meta-Crisis Institute logo"
+                  fill
+                  sizes="40px"
+                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                />
+              </div>
+
+              <span className="text-xs font-medium leading-snug text-foreground">
+                The Meta-Crisis Institute
+              </span>
+            </li>
+          </ul>
+
+          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+            These references explore the intersection of relational capacity and technological acceleration.
+          </p>
+        </div>
+      </details>
     </div>
   </div>
 
@@ -810,7 +875,7 @@ export default function TheoryOfChangePage() {
           },
           { 
             title: 'Crisis of Relationship', 
-            desc: 'The prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
+            desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
               { name: 'Deep Ecology Institute', logo: '/logos/deepecology.png' }
             ]
@@ -910,193 +975,455 @@ export default function TheoryOfChangePage() {
     </div>
 
     <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-        Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
-      </p>
+      <details className="group/details w-full relative">
+        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
+          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
+            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+              Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span>
+            </p>
+
+            {/* Toggle icon positioned in the bottom-right corner */}
+            <svg
+              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-orange-400 transition-transform duration-300 group-open/details:rotate-180 hover:text-orange-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+        </summary>
+
+        {/* Floating absolute dropdown popover to prevent shifting layout */}
+        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
+          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive">
+            Suggested resources
+          </p>
+
+          <ul className="space-y-2">
+            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
+              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                <Image
+                  src="/logos/consilience.png"
+                  alt="The Consilience Project logo"
+                  fill
+                  sizes="40px"
+                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                />
+              </div>
+
+              <span className="text-xs font-medium leading-snug text-foreground">
+                The Consilience Project
+              </span>
+            </li>
+
+            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
+              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                <Image
+                  src="/logos/metacrisis.png"
+                  alt="The Meta-Crisis Institute logo"
+                  fill
+                  sizes="40px"
+                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                />
+              </div>
+
+              <span className="text-xs font-medium leading-snug text-foreground">
+                The Meta-Crisis Institute
+              </span>
+            </li>
+          </ul>
+
+          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
+            These references explore the intersection of relational capacity and technological acceleration.
+          </p>
+        </div>
+      </details>
     </div>
   </div>
-
 </div>
 
 {/* FOOTER SECTION */}
-      <footer className="mt-12 relative rounded-xl border border-amber-200/70 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
+<footer className="mt-12 relative rounded-xl border border-amber-200/70 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
+
   {/* Paper Top Accent Strip */}
-  <div className="absolute top-0 left-6 right-6 h-[2px] bg-amber-300/40 dark:bg-stone-700/40 rounded-full" />
+  <div className="absolute top-0 left-6 right-6 h-[2px] dark:bg-stone-700/40 rounded-full" />
 
-  {/* Footnote Narrative */}
-  <div className="space-y-4 leading-relaxed font-serif">
-    <p className="text-muted-foreground leading-relaxed">
-      <span className="font-semibold text-stone-900 dark:text-stone-100">5. </span> 
-      Each of the &quot;Foundational&quot; and &quot;Meta-Systemic&quot; dysfunctions that we highlighted above can be — and in fact are, for many practitioners — fields of lifelong research, practice, and transformation. This is why we chose to list a few resources and institutions doing work on these areas. This list we&apos;ve arrived at is not exhaustive, and we hope to keep evolving it as we continue learning, expanding, and deepening our research.
-    </p>
+  {/* MAIN COLLAPSIBLE */}
+  <details className="group">
 
-    <p className="text-stone-600 dark:text-stone-400 font-sans">
-      This conceptualization of the metacrisis is heavily informed by our own explorations as well as multiple references on the generator functions of existential risk
-      <a href="#fn-1" className="text-primary hover:underline font-medium"><sup>[1]</sup></a>
-      <a href="#fn-2" className="text-primary hover:underline font-medium"><sup>[2]</sup></a>,{' '}
-      and root causes of our predicament
-      <a href="#fn-3" className="text-primary hover:underline font-medium"><sup>[3]</sup></a>–
-      <a href="#fn-9" className="text-primary hover:underline font-medium"><sup>[9]</sup></a>, linked below.
-    </p>
-
-    <p className="text-stone-600 dark:text-stone-400 font-sans">
-      Each of these crises and dynamics require a deep dive, and we aim to do so throughout our work, from our upcoming Research and Ecosystem Map to the educational experiments we&apos;re running, so as to better understand the wide range of perspectives and approaches to respond. We believe the constant engagement with these different kinds of analyses can help us embody multiple perspectives at once and learn to hold them in relationship, towards more omni-considerate outlooks.
-    </p>
-  </div>
-
-  {/* Collapsible References */}
-  <details className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-800 text-xs group">
-    <summary className="font-medium text-stone-900 dark:text-stone-100 cursor-pointer hover:text-primary list-none flex justify-between items-center select-none py-1">
-      <span className="font-sans text-sm tracking-wide">Main References &amp; Further Reading (9)</span>
-      <span className="text-stone-500 group-open:rotate-180 transition-transform duration-200">▼</span>
+    <summary className="cursor-pointer list-none font-serif font-medium text-stone-900 dark:text-stone-100">
+      <span className="inline-flex items-center gap-2">
+        <span className="transition-transform duration-200 group-open:rotate-90">
+          ›
+        </span>
+        About This Table
+      </span>
     </summary>
 
-    <ol className="mt-4 space-y-3 list-none pl-0 border-l-2 border-stone-200 dark:border-stone-800 pl-4 font-sans">
-      <li id="fn-1" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[1]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://testing.civilizationemerging.com/solving-generator-function/](https://testing.civilizationemerging.com/solving-generator-function/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Daniel Schmachtenberger - Solving the Generator Functions of Existential Risk
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-            📖 Article • 5 min read & 10 min digestion
-          </span>
-        </div>
-      </li>
+    {/* ABOUT THIS TABLE CONTENT */}
+    <div className="mt-4 space-y-4 leading-relaxed font-serif">
 
-      <li id="fn-2" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[2]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://maxramsahoye.github.io/themetacrisismap/](https://maxramsahoye.github.io/themetacrisismap/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Max Ramsahoye - The Metacrisis Map
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-emerald-100/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-300/40 dark:border-emerald-800/40">
-            🗺️ Interactive Map • 15 min explore
-          </span>
-        </div>
-      </li>
+      <p className="text-muted-foreground leading-relaxed">
+        Each of the &quot;Foundational&quot; and &quot;Meta-Systemic&quot; dysfunctions
+        that we listed above can be — and in fact are, for many practitioners — 
+        <strong> fields of lifelong research, practice, and transformation</strong>, which is why we
+        chose to highlight a few introductory resources and institutions doing work on
+        these areas. This list we&apos;ve arrived at is not exhaustive, and we hope
+        to keep evolving it as we continue learning, expanding, and deepening our
+        research.
+      </p>
 
-      <li id="fn-3" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[3]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://metacrisis.info/](https://metacrisis.info/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Life Itself - metacrisis.info
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-cyan-100/60 dark:bg-cyan-950/40 text-cyan-800 dark:text-cyan-300 border border-cyan-300/40 dark:border-cyan-800/40">
-            🌐 Introductory Resource + Paper • 10 min - 1h read
-          </span>
-        </div>
-      </li>
+      <p className="text-stone-600 dark:text-stone-400 font-sans">
+        This conceptualization of the metacrisis is heavily informed by our own
+        explorations as well as multiple references on the generator functions of
+        existential risk
+        <a
+          href="#fn-1"
+          className="text-primary hover:underline font-medium"
+        >
+          <sup>[1]</sup>
+        </a>
+        <a
+          href="#fn-2"
+          className="text-primary hover:underline font-medium"
+        >
+          <sup>[2]</sup>
+        </a>
+        , and root causes of our predicament
+        <a
+          href="#fn-3"
+          className="text-primary hover:underline font-medium"
+        >
+          <sup>[3]</sup>
+        </a>
+        –
+        <a
+          href="#fn-9"
+          className="text-primary hover:underline font-medium"
+        >
+          <sup>[9]</sup>
+        </a>
+        , linked below.
+      </p>
 
-      <li id="fn-4" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[4]</span>
-        <div className="flex-1 leading-normal space-y-1">
-          <div>
-            <span className="text-stone-600 dark:text-stone-400">Center for World Philosophy &amp; Religion - </span>
-            <a href="[https://worldphilosophyreligion.substack.com/p/love-or-die](https://worldphilosophyreligion.substack.com/p/love-or-die)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              Love or Die
+      <p className="text-stone-600 dark:text-stone-400 font-sans">
+        Each of these crises and dynamics require a deep dive, and we aim to do so
+        throughout our work, from our upcoming Research and Ecosystem Map to the
+        educational experiments we&apos;re running, so as to better understand the
+        wide range of perspectives, diagnoses and approaches to respond. We believe the constant
+        engagement with these different kinds of analyses can help us embody multiple
+        perspectives at once and learn to hold them in relationship, towards more
+        omni-considerate outlooks.
+      </p>
+
+    </div>
+
+    {/* COLLAPSIBLE REFERENCES */}
+    <details className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-800 text-xs group">
+
+      <summary className="font-medium text-stone-900 dark:text-stone-100 cursor-pointer hover:text-primary list-none flex justify-between items-center select-none py-1">
+        <span className="font-sans text-sm tracking-wide">
+          Main References &amp; Further Reading (9)
+        </span>
+
+        <span className="text-stone-500 group-open:rotate-180 transition-transform duration-200">
+          ▼
+        </span>
+      </summary>
+
+      {/* REFERENCES */}
+      <ol className="mt-4 space-y-3 list-none pl-0 border-l-2 border-stone-200 dark:border-stone-800 pl-4 font-sans">
+
+        {/* [1] */}
+        <li id="fn-1" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [1]
+          </span>
+
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://testing.civilizationemerging.com/solving-generator-function/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Daniel Schmachtenberger - Solving the Generator Functions of
+              Existential Risk
             </a>
+
             <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              📰 Substack • 15 min read
+              📖 Article • 5 min read &amp; 10 min digestion
             </span>
           </div>
-          <div className="text-stone-400 dark:text-stone-600 pl-2">│</div>
-          <div>
-            <a href="[https://integral-publishers.com/portfolio-items/first-principles-and-first-values-david-j-temple/](https://integral-publishers.com/portfolio-items/first-principles-and-first-values-david-j-temple/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              David J. Temple - First Principles &amp; First Values
-            </a>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-amber-100/60 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border border-amber-300/40 dark:border-amber-800/40">
-              📚 Monograph • 247 pages
-            </span>
-          </div>
-        </div>
-      </li>
+        </li>
 
-      <li id="fn-5" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[5]</span>
-        <div className="flex-1 leading-normal space-y-1">
-          <div>
-            <span className="text-stone-600 dark:text-stone-400">Gesturing Towards Decolonial Futures - </span>
-            <a href="[https://decolonialfutures.net/house-of-modernity-zine/](https://decolonialfutures.net/house-of-modernity-zine/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              House of Modernity Zine
+        {/* [2] */}
+        <li id="fn-2" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [2]
+          </span>
+
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://maxramsahoye.github.io/themetacrisismap/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Max Ramsahoye - The Metacrisis Map
             </a>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              🎨 Zine • 15 min read + 15 min digestion
+
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-emerald-100/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-300/40 dark:border-emerald-800/40">
+              🗺️ Interactive Map • 15 min explore
             </span>
           </div>
-          <div className="text-stone-400 dark:text-stone-600 pl-2">│</div>
-          <div>
-            <a href="[https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf](https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              Theories of Change Table
+        </li>
+
+        {/* [3] */}
+        <li id="fn-3" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [3]
+          </span>
+
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://metacrisis.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Life Itself - metacrisis.info
             </a>
+
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-cyan-100/60 dark:bg-cyan-950/40 text-cyan-800 dark:text-cyan-300 border border-cyan-300/40 dark:border-cyan-800/40">
+              🌐 Introductory Resource + Paper • 10 min - 1h read
+            </span>
+          </div>
+        </li>
+
+        {/* [4] */}
+        <li id="fn-4" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [4]
+          </span>
+
+          <div className="flex-1 leading-normal space-y-1">
+
+            <div>
+              <span className="text-stone-600 dark:text-stone-400">
+                Center for World Philosophy &amp; Religion -{' '}
+              </span>
+
+              <a
+                href="https://worldphilosophyreligion.substack.com/p/love-or-die"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                Love or Die
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
+                📰 Substack • 15 min read
+              </span>
+            </div>
+
+            <div className="text-stone-400 dark:text-stone-600 pl-2">
+              │
+            </div>
+
+            <div>
+              <a
+                href="https://integral-publishers.com/portfolio-items/first-principles-and-first-values-david-j-temple/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                David J. Temple - First Principles &amp; First Values
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-amber-100/60 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border border-amber-300/40 dark:border-amber-800/40">
+                📚 Monograph • 247 pages
+              </span>
+            </div>
+
+          </div>
+        </li>
+
+        {/* [5] */}
+        <li id="fn-5" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [5]
+          </span>
+
+          <div className="flex-1 leading-normal space-y-1">
+
+            <div>
+              <span className="text-stone-600 dark:text-stone-400">
+                Gesturing Towards Decolonial Futures -{' '}
+              </span>
+
+              <a
+                href="https://decolonialfutures.net/house-of-modernity-zine/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                House of Modernity Zine
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
+                🎨 Zine • 15 min read + 15 min digestion
+              </span>
+            </div>
+
+            <div className="text-stone-400 dark:text-stone-600 pl-2">
+              │
+            </div>
+
+            <div>
+              <a
+                href="https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                Theories of Change Table
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-blue-100/60 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800/40">
+                📄 PDF • 5 min read
+              </span>
+            </div>
+
+          </div>
+        </li>
+
+        {/* [6] */}
+        <li id="fn-6" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [6]
+          </span>
+
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://www.youtube.com/watch?v=Mgy9Awoql1s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Center for Contemplative Research - A Future For Humanity Beyond
+              the Current Metacrisis
+            </a>
+
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-red-100/60 dark:bg-red-950/40 text-red-800 dark:text-red-300 border border-red-300/40 dark:border-red-800/40">
+              🎬 Video • 2h 30m watch
+            </span>
+          </div>
+        </li>
+
+        {/* [7] */}
+        <li id="fn-7" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [7]
+          </span>
+
+          <div className="flex-1 leading-normal space-y-1">
+
+            <div>
+              <span className="text-stone-600 dark:text-stone-400">
+                Jonathan Rowson (Perspectiva) -{' '}
+              </span>
+
+              <a
+                href="https://perspecteeva.substack.com/p/prefixing-the-world"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                Prefixing the World
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
+                📖 Article • 15 min read + 5 min digestion
+              </span>
+            </div>
+
+            <div className="text-stone-400 dark:text-stone-600 pl-2">
+              │
+            </div>
+
+            <div>
+              <a
+                href="https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-primary font-medium"
+              >
+                Tasting the Pickle
+              </a>
+
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
+                📖 Article • 45 min read
+              </span>
+            </div>
+
+          </div>
+        </li>
+
+        {/* [8] */}
+        <li id="fn-8" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [8]
+          </span>
+
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Institute of Applied Meta-Theory - Mapping an Ecology of
+              Integrative Approaches to Addressing the Metacrisis
+            </a>
+
             <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-blue-100/60 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800/40">
-              📄 PDF • 5 min read
+              📄 PDF • 1h read
             </span>
           </div>
-        </div>
-      </li>
+        </li>
 
-      <li id="fn-6" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[6]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://www.youtube.com/watch?v=Mgy9Awoql1s](https://www.youtube.com/watch?v=Mgy9Awoql1s)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Center for Contemplative Research - A Future For Humanity Beyond the Current Metacrisis
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-red-100/60 dark:bg-red-950/40 text-red-800 dark:text-red-300 border border-red-300/40 dark:border-red-800/40">
-            🎬 Video • 2h 30m watch
+        {/* [9] */}
+        <li id="fn-9" className="flex items-start gap-2.5">
+          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
+            [9]
           </span>
-        </div>
-      </li>
 
-      <li id="fn-7" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[7]</span>
-        <div className="flex-1 leading-normal space-y-1">
-          <div>
-            <span className="text-stone-600 dark:text-stone-400">Jonathan Rowson (Perspectiva) - </span>
-            <a href="[https://perspecteeva.substack.com/p/prefixing-the-world](https://perspecteeva.substack.com/p/prefixing-the-world)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              Prefixing the World
+          <div className="flex-1 leading-normal">
+            <a
+              href="https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-primary font-medium"
+            >
+              Sahana Chattopadhyay - Deconstructing the Hegemony
             </a>
+
             <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              📖 Article • 15 min read + 5 min digestion
+              📖 Article • 7 min read
             </span>
           </div>
-          <div className="text-stone-400 dark:text-stone-600 pl-2">│</div>
-          <div>
-            <a href="[https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/](https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-              Tasting the Pickle
-            </a>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              📖 Article • 45 min read
-            </span>
-          </div>
-        </div>
-      </li>
+        </li>
 
-      <li id="fn-8" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[8]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf](https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Institute of Applied Meta-Theory - Mapping an Ecology of Integrative Approaches to Addressing the Metacrisis
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-blue-100/60 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800/40">
-            📄 PDF • 1h read
-          </span>
-        </div>
-      </li>
+      </ol>
 
-      <li id="fn-9" className="flex items-start gap-2.5">
-        <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">[9]</span>
-        <div className="flex-1 leading-normal">
-          <a href="[https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH](https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH)" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary font-medium">
-            Sahana Chattopadhyay - Deconstructing the Hegemony
-          </a>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-            📖 Article • 7 min read
-          </span>
-        </div>
-      </li>
-    </ol>
+    </details>
+
   </details>
+
 </footer>
 
             <div className="mt-8 space-y-8">
@@ -1181,7 +1508,33 @@ export default function TheoryOfChangePage() {
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.6 We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.<span className="group relative inline-block cursor-help">
+      <span className="font-semibold text-crimson text-sm">
+        <sup><em>6</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 z-50 mb-2 w-100 -translate-x-1/2 rounded-lg bg-[#fdfbf7] p-3 text-center text-sm text-foreground shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+      <div>
+      <img
+        src="https://cdn.prod.website-files.com/5f0e1294f002b1bb26e1f304/6273d53d162e559ba47d5d65_Wisdom%20Gap%20GIF%202.0.gif"
+        alt="Wisdom Gap"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      />
+    </div>
+    <br />
+        Introduced by Tristan Harris from the Center for Humane Technology {" "}
+  <a
+    href="https://www.youtube.com/watch?v=CIkcsf-JR1Q"
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >in this short video.</a>
+        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+      </span>
+    </span>
+    {" "} We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
               </p>  
               <p className="text-muted-foreground leading-relaxed">
                 If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
