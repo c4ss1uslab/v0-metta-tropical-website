@@ -363,13 +363,103 @@ export default function TheoryOfChangePage() {
                 Humanity is living through a time of profound civilizational rupture.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
-              </p>
+  In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>
+  <span className="group relative inline-block cursor-help">
+    <span className="font-semibold text-crimson text-sm">
+      <sup><em>1</em></sup>
+    </span>
+    <span className="invisible absolute bottom-full left-1/2 mb-2 w-80 -translate-x-1/2 rounded-lg bg-foreground p-3 text-left text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+      <div className="space-y-2">
+        <div>
+          For a good technical introduction to the polycrisis, see:
+          <br />
+          <br />
+          <p>Lawrence, M., Homer-Dixon, T., Janzwood, S., Rockström, J., Renn, O., & Donges, J. F.{" "}</p>
+          <a
+            href="https://cascadeinstitute.org/technical-paper/global-polycrisis-the-causal-mechanisms-of-crisis-entanglement/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+             “Global Polycrisis: The Causal Mechanisms of Crisis Entanglement.”, Cascade Institute, 2024.
+          </a>
+          
+        </div>
+      </div>
+      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+    </span>
+  </span>
+  , describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.
+</p>
+
               <p className="text-muted-foreground leading-relaxed">
-                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded in our institutions and systems - creating self-destructive feedback loops driving a set of new, unique and escalating existential and catastrophic risks³ - and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
-              </p>
+  The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become profoundly embedded in our institutions and systems, creating self-destructive feedback loops driving a set of new, unique and escalating anthropocentric existential and catastrophic risks
+  <span className="group relative inline-block cursor-help">
+    <span className="font-semibold text-crimson text-sm">
+      <sup><em>2</em></sup>
+    </span>
+    <span className="invisible absolute bottom-full left-1/2 mb-2 w-80 -translate-x-1/2 rounded-lg bg-foreground p-3 text-left text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+      <div className="space-y-2">
+        <div>
+          For more, see:
+          <br />
+          <br />
+          Schmachtenberger, Daniel. <em>“Catastrophic and Existential Risk,”</em> 2017.{" "}
+          <a
+            href="https://civilizationemerging.com/catastrophic-and-existential-risk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            Civilization Emerging.
+          </a>
+        </div>
+
+        <div>
+          The Consilience Project. <em>“Challenges to Making Sense of the 21st Century,”</em> 2021. {" "}
+          <a
+            href="https://consilienceproject.org/challenges-to-making-sense-of-the-21st-century"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            The Consilience Project.
+          </a>
+        </div>
+
+        <div>
+          Morton, Timothy. <em>Hyperobjects: Philosophy and Ecology after the End of the World.</em> 2013.{" "}
+          <a
+            href="https://www.upress.umn.edu/9780816689231/hyperobjects/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            University of Minnesota Press.
+          </a>
+        </div>
+
+        <div>
+          Bostrom, Nick, and Milan M. Ćirković, eds. <em>Global Catastrophic Risks.</em> 2008.{" "}
+          <a
+            href="https://academic.oup.com/book/40615"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-60"
+          >
+            Oxford University Press.
+          </a>
+        </div>
+      </div>
+
+      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+    </span>
+  </span>
+   , and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+</p>
+
               <p className="text-muted-foreground leading-relaxed">
-                It is a crisis not only of systems, but of being.
+                It is, therefore, a crisis not only of systems, but of being.
               </p>
             </div>
             <div className="space-y-1 py-6">
@@ -382,18 +472,50 @@ export default function TheoryOfChangePage() {
               <p className="text-muted-foreground leading-relaxed">
                 • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.⁴
-              </p>
-            </div>
+                <p className="text-muted-foreground leading-relaxed">
+    • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.
+    <span className="group relative inline-block cursor-help">
+      <span className="font-semibold text-crimson text-sm">
+        <sup><em>3</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 mb-2 w-74 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+  This formulation is drawn from Jonathan Rowson, as proposed in his article:{" "}
+  <a
+    href="https://perspecteeva.substack.com/p/prefixing-the-world"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >
+    “Prefixing the World,” Perspectiva, 2023.
+  </a>
+  <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+</span>
+</span>
+  </p>
+</div>
             <div className="space-y-8">
-              <p className="text-muted-foreground leading-relaxed">
-                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                We understand the metacrisis as unfolding across three interconnected layers⁵:
-              </p>
-            </div>
+  <p className="text-muted-foreground leading-relaxed">
+    In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
+  </p>
+  <p className="text-muted-foreground leading-relaxed">
+    We understand the metacrisis as unfolding across three interconnected layers:
+    <span className="group relative inline-block cursor-help">
+      <span className="font-semibold text-crimson text-sm">
+        <sup><em>4</em></sup>
+      </span>
+      <span className="invisible absolute bottom-full left-1/2 mb-2 w-100 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+        This 3-layered breakdown of the metacrisis is heavily inspired by Life Itself's paper,{" "}
+  <a
+    href="https://metacrisis.info/paper"
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:opacity-60"
+  >&ldquo;From Polycrisis to Metacrisis: A Short Introduction&rdquo;, August 2025.</a>
+        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
+      </span>
+    </span>
+  </p>
+</div>
 
 {/* Diagram Wrapper */}
 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
@@ -661,7 +783,7 @@ export default function TheoryOfChangePage() {
       <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
       <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
       <p className="text-sm font-medium text-olive mt-2">
-        Foundational Dysfunctions<sub className="text-[9px] font-sans font-bold opacity-80 ml-0.5">6</sub>
+        Foundational Dysfunctions<sub className="text-[9px] font-sans font-extrabold opacity-80 ml-0.5">5</sub>
       </p>
     </div>
 
@@ -796,6 +918,16 @@ export default function TheoryOfChangePage() {
 
 </div>
 
+<div className="mt-8 space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+5. Each of the "Foundational' and "Meta-Systemic" dysfunctions that we highlighted can be - and in fact are, for many practitioners - fields of lifelong research, practice and transformation. This is why we chose to list a few resources and institutions doing work on these areas. This list we've arrived at is not exhaustive, and we hope to keep evolving it as we continue learning, expanding and deepening our research.
+
+This conceptualization of the metacrisis is heavily informed by our own explorations as well as multiple references on the generator functions of existential risk (1) https://testing.civilizationemerging.com/solving-generator-function/, https://maxramsahoye.github.io/themetacrisismap/ (2) and root causes of our predicament. https://metacrisis.info/ (3), https://worldphilosophyreligion.substack.com/p/love-or-die (4), https://decolonialfutures.net/house-of-modernity-zine/ + https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf (5) (5), https://www.youtube.com/watch?v=Mgy9Awoql1s (6), https://perspecteeva.substack.com/p/prefixing-the-world / https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/ (7), https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf (8), https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH (9)
+
+Each of these crises and dynamics require a deep dive, and we hope to so through our upcoming Research and Ecosystem Map, so as to better understand the different perspectives and approaches to response. We believe the constant engagement with these different analyses can help us hold multiple perspectives and learn to hold them in relationship, towards more omni-considerate outlooks.
+              </p>
+            </div>
+
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
                 So, if one were to summarize the dynamics underlying the metacrisis, as articulated by Stephen Reid and adapted by us, we could say:
@@ -878,8 +1010,8 @@ export default function TheoryOfChangePage() {
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
-              </p>
+                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.6 We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+              </p>  
               <p className="text-muted-foreground leading-relaxed">
                 If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
               </p>
