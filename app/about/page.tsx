@@ -167,9 +167,11 @@ export default function AboutPage() {
           we can play in the service of life.
         </p>
 
-        <p className="font-medium leading-relaxed text-foreground">
-          It is from this ground of sacredness, soulfulness, and intimacy with
-          life that our work begins. This is the ground that helps us hold the
+        <p className="leading-relaxed text-muted-foreground">
+          <span className="font-medium text-foreground">
+            It is from this ground of sacredness, soulfulness, and intimacy with
+          life that our work begins.
+          </span> This is the ground that helps us hold the
           grief and rupture of the metacrisis without turning away — allowing
           what might otherwise become numbness or despair to be metabolized
           into deeper responsibility, devotion, and service to the world trying
@@ -415,9 +417,9 @@ export default function AboutPage() {
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
           Humanity is nowhere near the fullness of its individual and collective
-          potential. And without an image that reaches that far, we not only
+          potential. And <i> without an image that reaches that far, we not only
           forsake our most sacred capacity of becoming, but of the more beautiful
-          world wanting to be born.
+          world wanting to be born.</i>
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
