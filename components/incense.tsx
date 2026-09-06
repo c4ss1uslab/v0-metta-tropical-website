@@ -20,31 +20,46 @@ export default function ParallaxIncenseSection({
 
       const rect = sectionRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const scrollableDistance = rect.height - windowHeight;
-
-      if (scrollableDistance <= 0) {
-        targetProgress = 0;
-        return;
-      }
 
       /*
-       * START THRESHOLD
-       * 0 = Starts downward movement when the top of the section touches the top of the viewport.
-       * At this moment, the incense stick sits near the top of the screen at `startY` (180px).
-       *
-       * Positive values (e.g., 100) start downward movement earlier (lower on screen).
-       * Negative values (e.g., -100) start downward movement later (higher on screen).
+       * 1. FIND THE INCENSE ON THE SCREEN
+       * The track wrapper is 64px from the section top (top-16 class).
+       * The incense starts 180px down that track (startY).
+       * Therefore, its natural position is 244px below the top of the section.
        */
-      const startThreshold = 0;
+      const incenseStaticY = rect.top + 244;
 
-      const scrolledPastStart = -rect.top + startThreshold;
+      /*
+       * 2. DEFINE THE TRIGGER LINE
+       * We place an invisible line on the screen. 
+       * 0.3 = 30% from the top of the screen ("somewhat in the middle, going near the top").
+       * Increase to 0.4 or 0.5 if you want it to trigger lower on the screen.
+       */
+      const triggerY = windowHeight * 0.3;
 
-      if (scrolledPastStart <= 0) {
-        // Section is entering view: incense moves UP naturally with page scroll
+      if (incenseStaticY > triggerY) {
+        /*
+         * 3A. BEFORE TRIGGER
+         * The incense is currently below the trigger line.
+         * Keep progress at 0. As you scroll down, the section moves up,
+         * so the incense moves UP the screen naturally.
+         */
         targetProgress = 0;
       } else {
-        // Section is scrolled past start point: incense glides DOWN relative to section
-        targetProgress = Math.min(1, scrolledPastStart / scrollableDistance);
+        /*
+         * 3B. AFTER TRIGGER
+         * The incense has hit the trigger line.
+         * We calculate how far past the line it has scrolled, and map that 
+         * to a 0-1 progress value based on the remaining height of the section.
+         */
+        const maxScroll = rect.height - windowHeight;
+        const scrolledPast = triggerY - incenseStaticY;
+
+        if (maxScroll <= 0) {
+          targetProgress = 0;
+        } else {
+          targetProgress = Math.max(0, Math.min(1, scrolledPast / maxScroll));
+        }
       }
     };
 
@@ -74,6 +89,7 @@ export default function ParallaxIncenseSection({
       passive: true,
     });
 
+    // Run once on mount to set initial position
     handleScroll();
 
     animationFrame = requestAnimationFrame(animate);
@@ -91,31 +107,15 @@ export default function ParallaxIncenseSection({
     >
       <style>{`
         @keyframes burnDown {
-          0% {
-            height: 96px;
-          }
-
-          100% {
-            height: 14.4px;
-          }
+          0% { height: 96px; }
+          100% { height: 14.4px; }
         }
 
         @keyframes smokeFade {
-          0%, 100% {
-            opacity: 0.35;
-          }
-
-          30% {
-            opacity: 0.35;
-          }
-
-          50% {
-            opacity: 0;
-          }
-
-          75% {
-            opacity: 0;
-          }
+          0%, 100% { opacity: 0.35; }
+          30% { opacity: 0.35; }
+          50% { opacity: 0; }
+          75% { opacity: 0; }
         }
 
         @keyframes emberBreath {
@@ -124,13 +124,10 @@ export default function ParallaxIncenseSection({
             background-color: #9a3412;
             box-shadow: 0 0 3px #7c2d12;
           }
-
           50% {
             transform: scale(1.1) translate(-1px, -2px);
             background-color: #ea580c;
-            box-shadow:
-              0 0 5px #ea580c,
-              0 0 2px #f97316;
+            box-shadow: 0 0 5px #ea580c, 0 0 2px #f97316;
           }
         }
       `}</style>
@@ -205,32 +202,11 @@ export default function ParallaxIncenseSection({
                                     strokeLinecap="round"
                                     strokeDasharray="140"
                                   />
-
                                   <defs>
-                                    <linearGradient
-                                      id="smokeGlow"
-                                      x1="0"
-                                      y1="1"
-                                      x2="0"
-                                      y2="0"
-                                    >
-                                      <stop
-                                        offset="0%"
-                                        stopColor="#ffffff"
-                                        stopOpacity="0.2"
-                                      />
-
-                                      <stop
-                                        offset="50%"
-                                        stopColor="#ffffff"
-                                        stopOpacity="0.7"
-                                      />
-
-                                      <stop
-                                        offset="100%"
-                                        stopColor="#ffffff"
-                                        stopOpacity="0"
-                                      />
+                                    <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
+                                      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
+                                      <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
+                                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
                                     </linearGradient>
                                   </defs>
                                 </svg>
@@ -240,9 +216,7 @@ export default function ParallaxIncenseSection({
 
                           {/* Incense base */}
                           <div className="relative h-4 w-16 rounded-b-xl border-t border-neutral-700/30 bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
-
                             <div className="absolute inset-x-2 top-0 h-1 rounded-b-sm bg-neutral-950" />
-
                           </div>
 
                         </div>
@@ -253,11 +227,8 @@ export default function ParallaxIncenseSection({
 
                 {/* Bottom trim */}
                 <div className="relative z-20 -mt-1 -ml-4 w-[calc(100%+2rem)]">
-
                   <div className="h-2 w-full rounded-t-[2px] bg-gradient-to-b from-[#4a1b0e] to-[#2b0e07] border-t border-[#5a2110]" />
-
                   <div className="h-3 w-full rounded-b-md bg-gradient-to-b from-[#241007] to-[#100401] border-b border-[#070201] shadow-[0_8px_15px_rgba(0,0,0,0.7)]" />
-
                 </div>
 
               </div>
