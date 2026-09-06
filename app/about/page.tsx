@@ -404,14 +404,13 @@ export default function AboutPage() {
   `}</style>
 
 {/* Top Left Incense Wrapped in a Material Wooden Shrine */}
-<div className="absolute top-6 -left-2 z-10 scale-75 sm:left-0 sm:scale-90 md:top-12 md:left-2 lg:left-6 xl:left-8 xl:scale-100">
+<div className="absolute top-6 mt-10 -left-2 z-10 scale-75 sm:left-0 sm:scale-90 md:top-12 md:left-2 lg:left-6 xl:left-8 xl:scale-100">
 
   {/* Outermost Drop Shadow & Structure */}
   <div className="relative drop-shadow-[0_10px_20px_rgba(0,0,0,0.55)]">
 
     {/* Main Wooden Arch Frame — darker, matte, less glowing */}
-<div className="relative rounded-t-[3rem] rounded-b-sm p-2.5 bg-gradient-to-br from-[#492015] via-[#2d1109] to-[#1b0703] shadow-[inset_0_0_14px_rgba(0,0,0,0.8)] border border-[#241008]">
-
+    <div className="relative rounded-t-[3rem] rounded-b-sm p-2.5 bg-gradient-to-br from-[#492015] via-[#2d1109] to-[#1b0703] shadow-[inset_0_0_14px_rgba(0,0,0,0.8)] border border-[#241008]">
 
       {/* Inner Recessed Bevel */}
       <div className="relative rounded-t-[2.25rem] rounded-b-sm p-[1px] bg-[#0f0502] border-t border-[#160702] shadow-[inset_0_4px_15px_rgba(0,0,0,0.95)]">
@@ -434,7 +433,7 @@ export default function AboutPage() {
                   style={{ animation: "burnDown 300s linear infinite" }}
                 >
 
-                  {/* Ember — restored to original position */}
+                  {/* Ember */}
                   <div
                     className="absolute left-0 top-0 h-1.5 w-1.5 rounded-full"
                     style={{
@@ -496,7 +495,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Incense holder/base — restored */}
+              {/* Incense holder/base */}
               <div className="relative z-10 -mt-[1px] h-4 w-16 rounded-b-xl border-t border-neutral-700/30 bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-lg">
                 <div className="absolute inset-x-2 top-0 h-1 rounded-b-sm bg-neutral-950" />
               </div>
