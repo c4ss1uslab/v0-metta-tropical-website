@@ -74,7 +74,7 @@ export default function ParallaxIncenseSection({
 
       if (incenseRef.current) {
         const startY = 140;
-        const travelDistance = 960;
+        const travelDistance = 860;
 
         const y = startY + travelDistance * currentProgress;
 
@@ -123,7 +123,7 @@ export default function ParallaxIncenseSection({
             transform: scale(0.9) translate(-1px, -2px);
             background-color: #9a3412;
             box-shadow: 0 0 3px #7c2d12;
-          }
+          }, it is much more reliable to change the initial placement using CSS and the final placement by adjusting the section's scroll height. Here is exactly how to do both:
           50% {
             transform: scale(1.1) translate(-1px, -2px);
             background-color: #ea580c;
@@ -133,7 +133,7 @@ export default function ParallaxIncenseSection({
       `}</style>
 
       {/* Absolute Track */}
-      <div className="absolute top-1 bottom-48 left-0 w-full pointer-events-none">
+      <div className="absolute top-1 bottom-24 left-0 w-full pointer-events-none">
 
         {/* Incense movement wrapper */}
         <div
