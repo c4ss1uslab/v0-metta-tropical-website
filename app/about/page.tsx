@@ -404,84 +404,120 @@ export default function AboutPage() {
   `}</style>
 
 {/* Top Left Incense Wrapped in a Material Wooden Shrine */}
-  <div className="absolute top-6 -left-2 z-10 scale-75 sm:left-0 sm:scale-90 md:top-12 md:left-2 lg:left-6 xl:left-8 xl:scale-100">
-    
-    {/* Outermost Drop Shadow & Structure */}
-    <div className="relative drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
-      
-      {/* Main Wooden Arch Frame (Flatter, more opaque cherry/mahogany wood) */}
-      <div className="relative rounded-t-[3rem] rounded-b-sm p-2.5 bg-gradient-to-br from-[#5c2411] via-[#3a1509] to-[#240b03] shadow-[inset_0_0_12px_rgba(0,0,0,0.7)] border border-[#301106]">
-        
-        {/* Inner Recessed Bevel (Darkened depth without harsh highlights) */}
-        <div className="relative rounded-t-[2.25rem] rounded-b-sm p-[1px] bg-[#140602] border-t border-[#1a0802] shadow-[inset_0_4px_15px_rgba(0,0,0,0.9)]">
-          
-          {/* The Soft Halo Background (Reduced height to h-56) */}
-          <div className="relative h-56 w-32 overflow-hidden rounded-t-[2rem] rounded-b-sm bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-950/70 via-neutral-950/40 to-transparent">
-            
-            {/* --- BEGIN ORIGINAL INCENSE CODE --- */}
-            <div className="relative flex h-full w-full flex-col items-center justify-center">
-              {/* Pushed slightly lower to balance the reduced height */}
-              <div className="relative flex translate-y-6 flex-col items-center">
-                <div className="relative flex h-24 w-10 origin-bottom transform justify-center rotate-[12deg]">
+<div className="absolute top-6 -left-2 z-10 scale-75 sm:left-0 sm:scale-90 md:top-12 md:left-2 lg:left-6 xl:left-8 xl:scale-100">
+
+  {/* Outermost Drop Shadow & Structure */}
+  <div className="relative drop-shadow-[0_10px_20px_rgba(0,0,0,0.55)]">
+
+    {/* Main Wooden Arch Frame — darker, matte, less glowing */}
+<div className="relative rounded-t-[3rem] rounded-b-sm p-2.5 bg-gradient-to-br from-[#492015] via-[#2d1109] to-[#1b0703] shadow-[inset_0_0_14px_rgba(0,0,0,0.8)] border border-[#241008]">
+
+
+      {/* Inner Recessed Bevel */}
+      <div className="relative rounded-t-[2.25rem] rounded-b-sm p-[1px] bg-[#0f0502] border-t border-[#160702] shadow-[inset_0_4px_15px_rgba(0,0,0,0.95)]">
+
+        {/* Soft Halo Background */}
+        <div className="relative h-56 w-32 overflow-hidden rounded-t-[2rem] rounded-b-sm bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-950/80 via-neutral-950/50 to-neutral-950/20">
+
+          {/* Incense */}
+          <div className="relative flex h-full w-full flex-col items-center justify-center">
+
+            {/* Pushed slightly lower to balance the reduced height */}
+            <div className="relative flex translate-y-6 flex-col items-center">
+
+              {/* Incense stick */}
+              <div className="relative flex h-24 w-10 origin-bottom transform justify-center rotate-[12deg]">
+
+                {/* Burning incense */}
+                <div
+                  className="absolute bottom-0 w-0.5 bg-stone-700"
+                  style={{ animation: "burnDown 300s linear infinite" }}
+                >
+
+                  {/* Ember — restored to original position */}
                   <div
-                    className="absolute bottom-0 w-0.5 bg-stone-700"
-                    style={{ animation: "burnDown 300s linear infinite" }}
+                    className="absolute left-0 top-0 h-1.5 w-1.5 rounded-full"
+                    style={{
+                      animation: "emberBreath 12s ease-in-out infinite",
+                    }}
+                  />
+
+                  {/* Smoke — attached to tip, but with a small gap */}
+                  <div
+                    className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-2 mix-blend-screen"
+                    style={{
+                      animation:
+                        "smokeFade 6s ease-in-out infinite",
+                    }}
                   >
-                    <div
-                      className="absolute left-0 top-0 h-1.5 w-1.5 rounded-full"
-                      style={{ animation: "emberBreath 12s ease-in-out infinite" }}
-                    />
+                    <svg
+                      width="30"
+                      height="80"
+                      viewBox="0 0 30 80"
+                      fill="none"
+                      className="overflow-visible"
+                    >
+                      <path
+                        d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0"
+                        stroke="url(#smokeGlow)"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeDasharray="140"
+                        className="animate-[dash_5s_linear_infinite]"
+                      />
+
+                      <defs>
+                        <linearGradient
+                          id="smokeGlow"
+                          x1="0"
+                          y1="1"
+                          x2="0"
+                          y2="0"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#ffffff"
+                            stopOpacity="0.2"
+                          />
+                          <stop
+                            offset="50%"
+                            stopColor="#ffffff"
+                            stopOpacity="0.7"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#ffffff"
+                            stopOpacity="0"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </div>
                 </div>
-                <div className="relative z-10 -mt-[1px] h-4 w-16 rounded-b-xl border-t border-neutral-700/30 bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-lg">
-                  <div className="absolute inset-x-2 top-0 h-1 rounded-b-sm bg-neutral-950" />
-                </div>
               </div>
 
-              <div
-                className="pointer-events-none absolute left-[52.5%] mix-blend-screen"
-                style={{
-                  /* Adjusted bottom position to fit the shorter h-56 height perfectly */
-                  bottom: "120px", 
-                  animation:
-                    "smokeFollow 300s linear infinite, smokeFade 6s ease-in-out infinite",
-                }}
-              >
-                <svg width="30" height="80" viewBox="0 0 30 80" fill="none">
-                  <path
-                    d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0"
-                    stroke="url(#smokeGlow)"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    className="animate-[dash_5s_linear_infinite]"
-                    strokeDasharray="140"
-                  />
-                  <defs>
-                    <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
-                      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
-                      <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
-                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+              {/* Incense holder/base — restored */}
+              <div className="relative z-10 -mt-[1px] h-4 w-16 rounded-b-xl border-t border-neutral-700/30 bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-lg">
+                <div className="absolute inset-x-2 top-0 h-1 rounded-b-sm bg-neutral-950" />
               </div>
             </div>
-            {/* --- END ORIGINAL INCENSE CODE --- */}
-
           </div>
         </div>
       </div>
-
-      {/* Wooden Window Sill / Base Shelf (Warmer reds, softer shadows) */}
-      <div className="relative z-20 -mt-1 -ml-4 w-[calc(100%+2rem)]">
-        {/* Top flat part of the sill with a subtle wood-tone highlight */}
-        <div className="h-2 w-full rounded-t-[2px] bg-gradient-to-b from-[#6e2b14] to-[#421809] border-t border-[#8c381b]" />
-        {/* Front facing lip of the sill dropping into shadow */}
-        <div className="h-3 w-full rounded-b-md bg-gradient-to-b from-[#2e1005] to-[#170702] border-b border-[#0a0301] shadow-[0_8px_15px_rgba(0,0,0,0.6)]" />
-      </div>
-    
     </div>
+
+    {/* Wooden Window Sill / Base Shelf */}
+    <div className="relative z-20 -mt-1 -ml-4 w-[calc(100%+2rem)]">
+
+      {/* Top flat part */}
+      <div className="h-2 w-full rounded-t-[2px] bg-gradient-to-b from-[#4a1b0e] to-[#2b0e07] border-t border-[#5a2110]" />
+
+      {/* Front facing lip */}
+      <div className="h-3 w-full rounded-b-md bg-gradient-to-b from-[#241007] to-[#100401] border-b border-[#070201] shadow-[0_8px_15px_rgba(0,0,0,0.7)]" />
+    </div>
+
   </div>
+</div>
 
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div>
