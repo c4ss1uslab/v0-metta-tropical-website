@@ -350,11 +350,143 @@ export default function AboutPage() {
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-<section className="bg-background py-16 lg:py-24">
+<section className="relative overflow-x-clip bg-background py-16 lg:py-24">
+  {/* Dynamic Keyframes injected safely into the render tree */}
+  <style>{`
+    /* Pure CSS Incense Burning (Slowed down to 5 minutes / 300 seconds total) */
+    @keyframes burnDown {
+      0% { height: 96px; }
+      100% { height: 14.4px; }
+    }
+
+    /* Syncs the smoke to smoothly drop downward at the exact same 5-minute rate */
+    @keyframes smokeFollow {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(81.6px); }
+    }
+
+    @keyframes smokeFade {
+      0%, 100% { opacity: 0.35; }
+      30% { opacity: 0.35; }
+      50% { opacity: 0; }
+      75% { opacity: 0; }
+    }
+
+    /* Dimmed Ember: Shifted to deep blood-oranges and reduced box-shadow spreads */
+    @keyframes emberBreath {
+      0%, 100% { 
+        transform: scale(0.9) translate(-1px, -2px);
+        background-color: #9a3412; /* Deeper burnt orange */
+        box-shadow: 0 0 3px #7c2d12;
+      }
+      50% { 
+        transform: scale(1.1) translate(-1px, -2px);
+        background-color: #ea580c; /* Controlled orange flare */
+        box-shadow: 0 0 5px #ea580c, 0 0 2px #f97316;
+      }
+    }
+
+    /* Inverted 3D Mallet Strike Mechanics */
+    @keyframes striker3DHit {
+      0% { transform: translateY(0) translateX(0) scale(1) rotate(0deg); }
+      35% { transform: translateY(-8px) translateX(12px) scale(1.35) rotate(-14deg); }
+      42% { transform: translateY(-10px) translateX(-30px) scale(1.1) rotate(16deg); }
+      50% { transform: translateY(-12px) translateX(-8px) scale(1.25) rotate(-6deg); }
+      70% { transform: translateY(-4px) translateX(-2px) scale(1.15) rotate(0deg); }
+      100% { transform: translateY(0) translateX(0) scale(1) rotate(0deg); }
+    }
+
+    /* Expanding, fading echo ripples */
+    @keyframes rippleOut {
+      0% { transform: scale(0.5); opacity: 0.9; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+  `}</style>
+
+{/* Top Left Incense Wrapped in a Material Wooden Shrine */}
+  <div className="absolute top-6 -left-2 z-10 scale-75 sm:left-0 sm:scale-90 md:top-12 md:left-2 lg:left-6 xl:left-8 xl:scale-100">
+    
+    {/* Outermost Drop Shadow & Structure */}
+    <div className="relative drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]">
+      
+      {/* Main Wooden Arch Frame (Flatter, more opaque cherry/mahogany wood) */}
+      <div className="relative rounded-t-[3rem] rounded-b-sm p-2.5 bg-gradient-to-br from-[#5c2411] via-[#3a1509] to-[#240b03] shadow-[inset_0_0_12px_rgba(0,0,0,0.7)] border border-[#301106]">
+        
+        {/* Inner Recessed Bevel (Darkened depth without harsh highlights) */}
+        <div className="relative rounded-t-[2.25rem] rounded-b-sm p-[1px] bg-[#140602] border-t border-[#1a0802] shadow-[inset_0_4px_15px_rgba(0,0,0,0.9)]">
+          
+          {/* The Soft Halo Background (Reduced height to h-56) */}
+          <div className="relative h-56 w-32 overflow-hidden rounded-t-[2rem] rounded-b-sm bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-950/70 via-neutral-950/40 to-transparent">
+            
+            {/* --- BEGIN ORIGINAL INCENSE CODE --- */}
+            <div className="relative flex h-full w-full flex-col items-center justify-center">
+              {/* Pushed slightly lower to balance the reduced height */}
+              <div className="relative flex translate-y-6 flex-col items-center">
+                <div className="relative flex h-24 w-10 origin-bottom transform justify-center rotate-[12deg]">
+                  <div
+                    className="absolute bottom-0 w-0.5 bg-stone-700"
+                    style={{ animation: "burnDown 300s linear infinite" }}
+                  >
+                    <div
+                      className="absolute left-0 top-0 h-1.5 w-1.5 rounded-full"
+                      style={{ animation: "emberBreath 12s ease-in-out infinite" }}
+                    />
+                  </div>
+                </div>
+                <div className="relative z-10 -mt-[1px] h-4 w-16 rounded-b-xl border-t border-neutral-700/30 bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-lg">
+                  <div className="absolute inset-x-2 top-0 h-1 rounded-b-sm bg-neutral-950" />
+                </div>
+              </div>
+
+              <div
+                className="pointer-events-none absolute left-[52.5%] mix-blend-screen"
+                style={{
+                  /* Adjusted bottom position to fit the shorter h-56 height perfectly */
+                  bottom: "120px", 
+                  animation:
+                    "smokeFollow 300s linear infinite, smokeFade 6s ease-in-out infinite",
+                }}
+              >
+                <svg width="30" height="80" viewBox="0 0 30 80" fill="none">
+                  <path
+                    d="M15 80 C 25 60, 5 40, 15 20 C 22 8, 10 2, 15 0"
+                    stroke="url(#smokeGlow)"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                    className="animate-[dash_5s_linear_infinite]"
+                    strokeDasharray="140"
+                  />
+                  <defs>
+                    <linearGradient id="smokeGlow" x1="0" y1="1" x2="0" y2="0">
+                      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.2" />
+                      <stop offset="50%" stopColor="#ffffff" stopOpacity="0.7" />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            {/* --- END ORIGINAL INCENSE CODE --- */}
+
+          </div>
+        </div>
+      </div>
+
+      {/* Wooden Window Sill / Base Shelf (Warmer reds, softer shadows) */}
+      <div className="relative z-20 -mt-1 -ml-4 w-[calc(100%+2rem)]">
+        {/* Top flat part of the sill with a subtle wood-tone highlight */}
+        <div className="h-2 w-full rounded-t-[2px] bg-gradient-to-b from-[#6e2b14] to-[#421809] border-t border-[#8c381b]" />
+        {/* Front facing lip of the sill dropping into shadow */}
+        <div className="h-3 w-full rounded-b-md bg-gradient-to-b from-[#2e1005] to-[#170702] border-b border-[#0a0301] shadow-[0_8px_15px_rgba(0,0,0,0.6)]" />
+      </div>
+    
+    </div>
+  </div>
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <div className="space-y-8">
+    <div>
       {/* Header */}
-      <div>
+      <div className="mb-8 pl-12 pt-16 sm:pl-16 md:pl-0 md:pt-0">
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
           Who We Must Become
         </h2>
@@ -365,14 +497,14 @@ export default function AboutPage() {
       </div>
 
       {/* Opening */}
-      <div className="space-y-6">
+      <div className="mb-6 space-y-6">
         <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
           Every culture needs images of the human being worth becoming.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          Yet at a time asking so much of us, the images we have inherited feel
-          too small for the depth of transformation required.
+          Yet at a time asking so much of us, the images we have inherited
+          feel too small for the depth of transformation required.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
@@ -388,8 +520,8 @@ export default function AboutPage() {
       </div>
 
       {/* Bodhisattva Highlight */}
-      <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
-  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+      <div className="mb-6 border-l-2 border-[#D9A01B] py-1 pl-6 md:pl-8">
+        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           For the bodhisattva, awakening and service to the world become
           inseparable. To awaken is to see through the illusion of being a
           separate self. The suffering of other people, other species, and the
@@ -400,9 +532,9 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* Main Reflection */}
-      <div className="space-y-6">
-        <p className="leading-relaxed text-muted-foreground">
+      {/* Main Reflection (Block display for the float-right Buddha) */}
+      <div className="block">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           The bodhisattva trains the heart to become boundless: to meet each
           being with the tenderness a mother offers her only child, to recognize
           the irreducible worth of every life, and to expand their love and
@@ -411,18 +543,21 @@ export default function AboutPage() {
           it more deeply, and find ways to wisely respond to it.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           <strong className="font-medium text-foreground">
             Why does such an aspiration matter?
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
           Humanity is nowhere near the fullness of its individual and collective
-          potential. And <i> without an image that reaches that far, we not only
-          forsake our most sacred capacity of becoming, but of the more beautiful
-          world wanting to be born.</i>
+          potential. And{" "}
+          <i>
+            without an image that reaches that far, we not only forsake our
+            most sacred capacity of becoming, but of the more beautiful
+            world wanting to be born.
+          </i>
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           We are not claiming the image of the Bodhisattva, though it has shaped
           everything we are attempting. We are saying that our culture offers
           nothing of that height to grow toward. And a culture that cannot
@@ -430,13 +565,24 @@ export default function AboutPage() {
           communities and developmental pathways capable of cultivating them.
         </p>
 
-        <p className="font-medium leading-relaxed text-foreground">
+        {/* Floated Buddha Image - allows text to wrap beautifully beside it */}
+        <div className="relative z-0 float-right mb-4 ml-6 mt-18 h-48 w-48 -mr-6 sm:h-56 sm:w-56 sm:-mr-10 md:h-64 md:w-64 md:-mr-16 lg:h-72 lg:w-72 lg:-mr-24 xl:-mr-32">
+          <Image
+            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
+            alt="Buddha"
+            fill
+            sizes="(min-width: 1024px) 288px, (min-width: 768px) 256px, 224px"
+            className="object-contain object-bottom"
+          />
+        </div>
+
+        <p className="mb-6 font-medium leading-relaxed text-foreground">
           This is not a small thing missing from our times. It is close to the
           heart of what has gone wrong — and it is part of what our work exists
           to restore.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           If we are to participate meaningfully in a deeper civilizational
           transition, we believe our time will require contemporary expressions
           of the Bodhisattva aspiration — and new pathways of formation capable
@@ -447,7 +593,7 @@ export default function AboutPage() {
           to the whole.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           We walk on the footsteps of others who have also sensed the need for
           images of human possibility adequate to the demands of their time —
           whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
@@ -457,19 +603,9 @@ export default function AboutPage() {
           helping us respond to these times with greater wisdom, love, courage
           and responsibility.
         </p>
-      </div>
 
-      {/* Buddha Image */}
-      <div className="flex justify-end pt-2">
-        <div className="relative h-44 w-44 overflow-hidden sm:h-52 sm:w-52 md:h-60 md:w-60">
-          <Image
-            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
-            alt="Buddha"
-            fill
-            sizes="(min-width: 768px) 240px, (min-width: 640px) 208px, 176px"
-            className="object-contain object-bottom"
-          />
-        </div>
+        {/* Clears the float at the end of the section so subsequent content doesn't wrap around the Buddha */}
+        <div className="clear-both"></div>
       </div>
     </div>
   </div>
