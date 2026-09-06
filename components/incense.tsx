@@ -34,7 +34,7 @@ export default function ParallaxIncenseSection({
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-x-clip bg-background py-16 lg:py-24 min-h-[200vh]">
+    <section ref={sectionRef} className="relative overflow-x-clip pb-16 bg-cream min-h-[200vh]">
       <style>{`
         @keyframes burnDown { 0% { height: 96px; } 100% { height: 14.4px; } }
         @keyframes smokeFollow { 0% { transform: translateY(0px); } 100% { transform: translateY(81.6px); } }
