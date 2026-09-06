@@ -1,8 +1,14 @@
 "use client";
+
 import React, { useRef, useEffect, useState } from "react";
 
-export default function ParallaxIncenseSection({ children }) {
-  const sectionRef = useRef(null);
+// NOTICE: Added the TypeScript definition for { children } right here!
+export default function ParallaxIncenseSection({ 
+  children 
+}: { 
+  children: React.ReactNode 
+}) {
+  const sectionRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
