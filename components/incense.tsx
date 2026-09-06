@@ -74,7 +74,7 @@ export default function ParallaxIncenseSection({
 
       if (incenseRef.current) {
         const startY = 140;
-        const travelDistance = 950;
+        const travelDistance = 970;
 
         const y = startY + travelDistance * currentProgress;
 
