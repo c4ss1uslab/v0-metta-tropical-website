@@ -2,6 +2,108 @@ import Image from "next/image"
 import Link from "next/link"
 import { images } from "@/lib/images"
 
+const SacredMaraca = () => (
+  <div className="relative w-full h-full flex flex-col items-center justify-center">
+    <div className="relative flex flex-col items-center animate-[shamanicShake_3s_infinite_ease-in-out]">
+      <div className="absolute top-[-8px] flex justify-center items-end w-6 h-3 pointer-events-none z-20">
+        <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-amber-300 rounded-t-full transform -rotate-[25deg] origin-bottom shadow-sm" />
+        <div className="w-1 h-3.5 bg-gradient-to-t from-red-600 to-orange-400 rounded-t-full transform -rotate-[5deg] origin-bottom shadow-sm" />
+        <div className="w-1 h-3.5 bg-gradient-to-t from-teal-600 to-cyan-400 rounded-t-full transform rotate-[10deg] origin-bottom shadow-sm" />
+        <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-yellow-300 rounded-t-full transform rotate-[28deg] origin-bottom shadow-sm" />
+      </div>
+
+      <div className="w-9 h-11 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 rounded-full shadow-[0_6px_12px_rgba(0,0,0,0.6)] border border-neutral-700/30 relative z-10 flex flex-col items-center justify-center">
+        <div className="absolute top-2 w-full h-1.5 bg-gradient-to-r from-red-800 via-red-700 to-red-900 border-y border-stone-950/20 opacity-90" />
+
+        <div className="w-5 h-5 rounded-full border border-amber-500/30 border-dashed flex items-center justify-center relative my-0.5">
+          <div className="w-2 h-px bg-amber-500/20 absolute" />
+          <div className="w-px h-2 bg-amber-500/20 absolute" />
+        </div>
+
+        <div className="absolute bottom-2.5 w-full h-1.5 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 border-y border-stone-950/20 opacity-80" />
+      </div>
+
+      <div className="w-1.5 h-8 bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 rounded-b-sm -mt-1 z-0 shadow-sm" />
+    </div>
+
+    <div className="absolute bottom-[58px] w-8 h-1 bg-black/60 rounded-full blur-[2px] animate-[shadowTrack_3s_infinite_ease-in-out]" />
+  </div>
+);
+
+ <style>{`@keyframes shamanicShake {
+  /* Still */
+  0%, 72%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  /* Shake begins */
+  74% {
+    transform: translate(-2px, -1px) rotate(-4deg);
+  }
+
+  77% {
+    transform: translate(2.5px, 0.5px) rotate(4deg);
+  }
+
+  80% {
+    transform: translate(-3px, 0px) rotate(-5deg);
+  }
+
+  83% {
+    transform: translate(2.5px, -0.5px) rotate(4deg);
+  }
+
+  86% {
+    transform: translate(-1.5px, 0px) rotate(-2.5deg);
+  }
+
+  /* Settle */
+  89% {
+    transform: translate(1px, 0px) rotate(1.5deg);
+  }
+
+  92% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+  @keyframes shadowTrack {
+  0%, 72%, 100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.6;
+  }
+
+  74% {
+    transform: translateX(-2px) scaleX(0.9);
+    opacity: 0.5;
+  }
+
+  77% {
+    transform: translateX(2px) scaleX(1.1);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translateX(-2px) scaleX(0.9);
+    opacity: 0.5;
+  }
+
+  83% {
+    transform: translateX(1.5px) scaleX(1.05);
+    opacity: 0.65;
+  }
+
+  86% {
+    transform: translateX(-1px) scaleX(0.95);
+    opacity: 0.55;
+  }
+
+  92% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.6;
+  }
+}
+  `}</style>
+
 export function HeroSection() {
   return (    
 <section className="relative min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-start overflow-hidden bg-cream"> 
@@ -182,7 +284,7 @@ const lineages = [
     title: "Ancestral Ways of Being",
     description:
       "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
-    icon: "https://i.postimg.cc/rFFDN4hp/Cocar-INdigena.jpg",
+    icon: <SacredMaraca />,
     inspirations: [
       {
         name: "Kilombo Tenondé",
@@ -523,14 +625,22 @@ export function IntroductionSection() {
             <div>
               {/* Optional lineage icon */}
               {lineage.icon && (
-                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
-                  <Image
-                    src={lineage.icon}
-                    alt={`${lineage.title} lineage symbol`}
-                    fill
-                    sizes="56px"
-                    className="object-cover"
-                  />
+                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden">
+                  {typeof lineage.icon === 'string' ? (
+                    // If it's a URL string, render as image
+                    <Image
+                      src={lineage.icon as string}
+                      alt={`${lineage.title} lineage symbol`}
+                      fill
+                      sizes="56px"
+                      className="object-cover"
+                    />
+                  ) : (
+                    // If it's a React component, render it directly
+                    <div className="flex h-full w-full items-center justify-center">
+                      {lineage.icon}
+                    </div>
+                  )}
                 </div>
               )}
 
