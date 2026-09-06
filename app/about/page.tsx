@@ -139,14 +139,14 @@ export default function AboutPage() {
         </p>
 
         {/* Sacred Highlight */}
-        <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-          <p className="leading-relaxed text-muted-foreground">
-            The sacred, then, is not another realm we must escape into. It is
-            the ground and depth of life itself — always here, yet becoming more
-            available to us as we learn to perceive, sense, feel, and
-            participate in reality more deeply.
-          </p>
-        </div>
+        <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+    The sacred, then, is not another realm we must escape into. It is
+    the ground and depth of life itself — always here, yet becoming more
+    available to us as we learn to perceive, sense, feel, and
+    participate in reality more deeply.
+  </p>
+</div>
 
         <p className="leading-relaxed text-muted-foreground">
           In times of profound rupture, these ways of being in relationship
@@ -386,8 +386,8 @@ export default function AboutPage() {
       </div>
 
       {/* Bodhisattva Highlight */}
-      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-        <p className="leading-relaxed text-muted-foreground">
+      <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           For the bodhisattva, awakening and service to the world become
           inseparable. To awaken is to see through the illusion of being a
           separate self. The suffering of other people, other species, and the
