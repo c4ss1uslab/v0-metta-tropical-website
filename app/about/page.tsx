@@ -202,7 +202,7 @@ export default function AboutPage() {
                     Why Metta?
                   </h2>
                   <br />
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
+                  <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Orientation</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -217,7 +217,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="pl-6 border-l-2 border-[#D9A01B]">
+                  <div className="pl-6 border-l-2 border-cyan">
                     <h3 className="font-serif text-xl font-medium text-foreground">Meta-awareness</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       The capacity to step back, to sense into the deeper patterns shaping our world, systems and crises. Meta as within (interiority), meta as between (relationality), and meta as beyond (different ways of seeing and being).
@@ -251,7 +251,7 @@ export default function AboutPage() {
                     Why Tropical?
                   </h2>
                   <br />
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
+                  <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">The Territory</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
