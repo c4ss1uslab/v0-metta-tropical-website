@@ -61,7 +61,7 @@ export default function WhyNowPage() {
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="space-y-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-foreground">
-                We are living through such a threshold.
+                We are living through a maturity threshold.
               </h2>
 
               <p className="text-muted-foreground leading-relaxed">
@@ -119,7 +119,7 @@ export default function WhyNowPage() {
 
       {/* Opening */}
       <div className="space-y-6">
-        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-xl">
           Many young people today are coming of age with the strange experience
           of living without a world they can fully belong to.
         </p>
@@ -142,12 +142,12 @@ export default function WhyNowPage() {
       </div>
 
       {/* Central Questions */}
-      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-        <p className="leading-relaxed text-muted-foreground">
+      <div className="border-l-2 border-crimson pl-6 py-1 md:pl-8">
+  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           What happens when you can clearly sense that the world you inherited
           is failing, yet cannot see a viable path toward the one you long to
-          live in? When conventional definitions of success no longer feel
-          meaningful, but no legitimate alternatives have been built? When your
+          live in? <br />When conventional definitions of success no longer feel
+          meaningful, but no legitimate alternatives have been built? <br />When your
           grief, imagination, and desire to contribute are real, but there are
           few spaces capable of recognizing them or helping them mature into a
           life of responsibility and service?
@@ -182,15 +182,12 @@ export default function WhyNowPage() {
           logic of the world they are trying to outgrow.
         </p>
 
-        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-          This is why the work feels urgent!
-        </p>
       </div>
 
       {/* Intergenerational Transition */}
       <div className="space-y-6">
         <p className="font-medium leading-relaxed text-foreground">
-          And it cannot be carried by the young alone.
+          This is why the work feels urgent! And it cannot be carried by the young alone.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">

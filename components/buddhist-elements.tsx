@@ -87,8 +87,8 @@ export default function ZenYogaElements() {
 
       {/* Grid Layout for Elements */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
-        
-        {/* 1. ACTUAL BURNING INCENSE */}
+
+        {/* 1. BURNING INCENSE */}
         <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             <div className="relative flex flex-col items-center translate-y-8">
