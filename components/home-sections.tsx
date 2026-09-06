@@ -3,106 +3,123 @@ import Link from "next/link"
 import { images } from "@/lib/images"
 
 const SacredMaraca = () => (
-  <div className="relative w-full h-full flex flex-col items-center justify-center">
-    <div className="relative flex flex-col items-center animate-[shamanicShake_3s_infinite_ease-in-out]">
-      <div className="absolute top-[-8px] flex justify-center items-end w-6 h-3 pointer-events-none z-20">
-        <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-amber-300 rounded-t-full transform -rotate-[25deg] origin-bottom shadow-sm" />
-        <div className="w-1 h-3.5 bg-gradient-to-t from-red-600 to-orange-400 rounded-t-full transform -rotate-[5deg] origin-bottom shadow-sm" />
-        <div className="w-1 h-3.5 bg-gradient-to-t from-teal-600 to-cyan-400 rounded-t-full transform rotate-[10deg] origin-bottom shadow-sm" />
-        <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-yellow-300 rounded-t-full transform rotate-[28deg] origin-bottom shadow-sm" />
+  <div className="relative flex h-full w-full items-center justify-center">
+    <div
+      className="relative flex flex-col items-center"
+      style={{
+        animation: "shamanicShake 3s infinite ease-in-out",
+        transformOrigin: "50% 75%",
+      }}
+    >
+      {/* Feathers */}
+      <div className="absolute -top-2 flex h-3 w-6 items-end justify-center pointer-events-none z-20">
+        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-amber-300 shadow-sm -rotate-[25deg] origin-bottom" />
+        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-red-600 to-orange-400 shadow-sm -rotate-[5deg] origin-bottom" />
+        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-teal-600 to-cyan-400 shadow-sm rotate-[10deg] origin-bottom" />
+        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-yellow-300 shadow-sm rotate-[28deg] origin-bottom" />
       </div>
 
-      <div className="w-9 h-11 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 rounded-full shadow-[0_6px_12px_rgba(0,0,0,0.6)] border border-neutral-700/30 relative z-10 flex flex-col items-center justify-center">
-        <div className="absolute top-2 w-full h-1.5 bg-gradient-to-r from-red-800 via-red-700 to-red-900 border-y border-stone-950/20 opacity-90" />
+      {/* Maraca body */}
+      <div className="relative z-10 flex h-11 w-9 flex-col items-center justify-center rounded-full border border-neutral-700/30 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
+        {/* Red band */}
+        <div className="absolute top-2 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-red-800 via-red-700 to-red-900 opacity-90" />
 
-        <div className="w-5 h-5 rounded-full border border-amber-500/30 border-dashed flex items-center justify-center relative my-0.5">
-          <div className="w-2 h-px bg-amber-500/20 absolute" />
-          <div className="w-px h-2 bg-amber-500/20 absolute" />
+        {/* Symbol */}
+        <div className="relative my-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-dashed border-amber-500/30">
+          <div className="absolute h-px w-2 bg-amber-500/20" />
+          <div className="absolute h-2 w-px bg-amber-500/20" />
         </div>
 
-        <div className="absolute bottom-2.5 w-full h-1.5 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 border-y border-stone-950/20 opacity-80" />
+        {/* Green/teal band */}
+        <div className="absolute bottom-2.5 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 opacity-80" />
       </div>
 
-      <div className="w-1.5 h-8 bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 rounded-b-sm -mt-1 z-0 shadow-sm" />
+      {/* Handle */}
+      <div className="z-0 -mt-1 h-8 w-1.5 rounded-b-sm bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 shadow-sm" />
     </div>
 
-    <div className="absolute bottom-[58px] w-8 h-1 bg-black/60 rounded-full blur-[2px] animate-[shadowTrack_3s_infinite_ease-in-out]" />
+    {/* Ground shadow */}
+    <div
+      className="absolute bottom-3 h-1 w-8 rounded-full bg-black/60 blur-[2px]"
+      style={{
+        animation: "shadowTrack 3s infinite ease-in-out",
+      }}
+    />
   </div>
 );
 
- <style>{`@keyframes shamanicShake {
-  /* Still */
-  0%, 72%, 100% {
-    transform: translate(0, 0) rotate(0deg);
+<style>{`
+  @keyframes shamanicShake {
+    0%, 72%, 100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    74% {
+      transform: translate3d(-2px, -1px, 0) rotate(-4deg);
+    }
+
+    77% {
+      transform: translate3d(2.5px, 0.5px, 0) rotate(4deg);
+    }
+
+    80% {
+      transform: translate3d(-3px, 0, 0) rotate(-5deg);
+    }
+
+    83% {
+      transform: translate3d(2.5px, -0.5px, 0) rotate(4deg);
+    }
+
+    86% {
+      transform: translate3d(-1.5px, 0, 0) rotate(-2.5deg);
+    }
+
+    89% {
+      transform: translate3d(1px, 0, 0) rotate(1.5deg);
+    }
+
+    92% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
   }
 
-  /* Shake begins */
-  74% {
-    transform: translate(-2px, -1px) rotate(-4deg);
-  }
-
-  77% {
-    transform: translate(2.5px, 0.5px) rotate(4deg);
-  }
-
-  80% {
-    transform: translate(-3px, 0px) rotate(-5deg);
-  }
-
-  83% {
-    transform: translate(2.5px, -0.5px) rotate(4deg);
-  }
-
-  86% {
-    transform: translate(-1.5px, 0px) rotate(-2.5deg);
-  }
-
-  /* Settle */
-  89% {
-    transform: translate(1px, 0px) rotate(1.5deg);
-  }
-
-  92% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
   @keyframes shadowTrack {
-  0%, 72%, 100% {
-    transform: translateX(0) scaleX(1);
-    opacity: 0.6;
-  }
+    0%, 72%, 100% {
+      transform: translateX(0) scaleX(1);
+      opacity: 0.6;
+    }
 
-  74% {
-    transform: translateX(-2px) scaleX(0.9);
-    opacity: 0.5;
-  }
+    74% {
+      transform: translateX(-2px) scaleX(0.9);
+      opacity: 0.5;
+    }
 
-  77% {
-    transform: translateX(2px) scaleX(1.1);
-    opacity: 0.7;
-  }
+    77% {
+      transform: translateX(2px) scaleX(1.1);
+      opacity: 0.7;
+    }
 
-  80% {
-    transform: translateX(-2px) scaleX(0.9);
-    opacity: 0.5;
-  }
+    80% {
+      transform: translateX(-2px) scaleX(0.9);
+      opacity: 0.5;
+    }
 
-  83% {
-    transform: translateX(1.5px) scaleX(1.05);
-    opacity: 0.65;
-  }
+    83% {
+      transform: translateX(1.5px) scaleX(1.05);
+      opacity: 0.65;
+    }
 
-  86% {
-    transform: translateX(-1px) scaleX(0.95);
-    opacity: 0.55;
-  }
+    86% {
+      transform: translateX(-1px) scaleX(0.95);
+      opacity: 0.55;
+    }
 
-  92% {
-    transform: translateX(0) scaleX(1);
-    opacity: 0.6;
+    92% {
+      transform: translateX(0) scaleX(1);
+      opacity: 0.6;
+    }
   }
-}
-  `}</style>
+`}</style>
 
 export function HeroSection() {
   return (    
@@ -624,25 +641,23 @@ export function IntroductionSection() {
           >
             <div>
               {/* Optional lineage icon */}
-              {lineage.icon && (
-                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden">
-                  {typeof lineage.icon === 'string' ? (
-                    // If it's a URL string, render as image
-                    <Image
-                      src={lineage.icon as string}
-                      alt={`${lineage.title} lineage symbol`}
-                      fill
-                      sizes="56px"
-                      className="object-cover"
-                    />
-                  ) : (
-                    // If it's a React component, render it directly
-                    <div className="flex h-full w-full items-center justify-center">
-                      {lineage.icon}
-                    </div>
-                  )}
-                </div>
-              )}
+{lineage.icon && (
+  <div className="absolute right-4 top-4 h-20 w-20">
+    {typeof lineage.icon === 'string' ? (
+      <Image
+        src={lineage.icon}
+        alt={`${lineage.title} lineage symbol`}
+        fill
+        sizes="80px"
+        className="object-cover"
+      />
+    ) : (
+      <div className="flex h-full w-full items-center justify-center">
+        {lineage.icon}
+      </div>
+    )}
+  </div>
+)}
 
               <div className={lineage.icon ? "pr-16" : ""}>
                 <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
