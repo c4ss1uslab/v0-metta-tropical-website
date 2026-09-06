@@ -27,7 +27,7 @@ export default function ParallaxIncenseSection({
        * The incense starts 180px down that track (startY).
        * Therefore, its natural position is 244px below the top of the section.
        */
-      const incenseStaticY = rect.top + 244;
+      const incenseStaticY = rect.top;
 
       /*
        * 2. DEFINE THE TRIGGER LINE
@@ -73,7 +73,7 @@ export default function ParallaxIncenseSection({
         (targetProgress - currentProgress) * smoothing;
 
       if (incenseRef.current) {
-        const startY = 180;
+        const startY = 0;
         const travelDistance = 760;
 
         const y = startY + travelDistance * currentProgress;
