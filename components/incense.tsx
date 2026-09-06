@@ -73,8 +73,8 @@ export default function ParallaxIncenseSection({
         (targetProgress - currentProgress) * smoothing;
 
       if (incenseRef.current) {
-        const startY = 0;
-        const travelDistance = 760;
+        const startY = -100;
+        const travelDistance = 860;
 
         const y = startY + travelDistance * currentProgress;
 
@@ -133,7 +133,7 @@ export default function ParallaxIncenseSection({
       `}</style>
 
       {/* Absolute Track */}
-      <div className="absolute top-16 bottom-16 left-0 w-full pointer-events-none">
+      <div className="absolute left-0 w-full pointer-events-none">
 
         {/* Incense movement wrapper */}
         <div
