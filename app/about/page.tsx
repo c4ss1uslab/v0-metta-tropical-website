@@ -359,7 +359,7 @@ export default function AboutPage() {
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-<section className="relative overflow-x-clip bg-cream min-h-[200vh]">
+<section className="relative overflow-x-clip -mt-6 bg-cream min-h-[200vh]">
   {/* Dynamic Keyframes injected safely into the render tree */}
     <ParallaxIncenseSection>
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
