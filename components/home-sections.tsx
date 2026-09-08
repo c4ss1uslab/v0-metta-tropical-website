@@ -366,43 +366,51 @@ export function IntroductionSection() {
       </p>
 
       {/* Wisdom-Centered Educational Architecture Highlight */}
-      <div className="space-y-6 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
-        <p className="leading-relaxed text-muted-foreground">
-          We call them{" "}
-          <strong className="font-semibold text-foreground">
-            wisdom-centered educational architectures
-          </strong>
-          : developmental ecologies of practice, training, ritual, inquiry, and
-          relationship, built to hold the long arc of human formation this
-          moment demands — not preparing people to succeed in the world as it
-          is, but supporting them to question its foundations and develop the
-          spiritual depth, relational maturity, systemic understanding, and
-          reverence for life required to hospice a world that is ending while
-          cultivating the foundations of what comes next.
-        </p>
+<div className="border-l-2 border-cyan-800 pl-6 py-1 md:pl-8">
+  <div className="space-y-6">
+    <p className="leading-relaxed text-muted-foreground">
+      We call them{" "}
+      <strong className="font-semibold text-foreground">
+        wisdom-centered educational architectures
+      </strong>
+      : developmental ecologies of practice, training, ritual, inquiry, and
+      relationship, built to hold the long arc of human formation this moment
+      demands. Not preparing people to succeed in the world as it is, but
+      supporting them to question its foundations and develop the spiritual
+      depth, relational maturity, systemic understanding, and reverence for
+      life required to hospice a world that is ending, while cultivating the
+      foundations of what comes next.
+    </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          These architectures exist to hold the magnitude of aspiration and
-          devotion of those who feel the depth of our crisis in their bones,
-          long to give their lives to something worthy of this moment, yet
-          struggle to find communities capable of recognizing, accompanying,
-          and nurturing such commitment.
-        </p>
+    <p className="leading-relaxed text-muted-foreground">
+      These architectures exist to hold the magnitude of aspiration and
+      devotion of those who feel the depth of our crisis in their bones, long
+      to give their lives to something worthy of this moment, yet struggle to
+      find communities capable of recognizing, accompanying, and nurturing
+      such commitment.
+    </p>
 
-        <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-medium leading-relaxed text-foreground">
-            This is what we are building.
-          </p>
+    <div className="pt-2">
+      <p className="leading-relaxed text-muted-foreground">
+        This is what we are building.
+      </p>
 
-          <Link
-            href="/educational-architecture"
-            className="inline-flex shrink-0 items-center justify-center rounded-md bg-[#D9A01B] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#B88610]"
-          >
-            Learn about our Educational Architecture
-          </Link>
-        </div>
-      </div>
+      <Link
+  href="/educational-architecture"
+  className="group mt-8 inline-flex items-center rounded-md border border-[#111827]/15 bg-[#111827]/[0.04] px-5 py-3 text-sm font-medium text-[#111827] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#111827]/25 hover:bg-[#111827]/[0.08] hover:shadow-md"
+>
+  Learn about our Educational Architecture
+  <span
+    aria-hidden="true"
+    className="ml-2 transition-transform duration-200 group-hover:translate-x-0.5"
+  >
+    →
+  </span>
+</Link>
     </div>
+  </div>
+</div>
+</div>
   </div>
 </section>
 
