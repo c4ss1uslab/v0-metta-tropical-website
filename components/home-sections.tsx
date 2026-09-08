@@ -59,7 +59,7 @@ export function HeroSection() {
 
     <div className="mt-22 flex flex-col sm:flex-row items-center justify-start gap-4"> 
       <Link 
-        href="/about" 
+        href="#fields-of-work" 
         className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#111827] text-background font-medium text-sm tracking-wide hover:bg-[#111827]/90 transition-colors" 
       > 
         Discover Our Work 
@@ -857,7 +857,7 @@ export function FieldsOfWorkSection() {
   ]
 
   return (
-    <section className="bg-cream py-12 lg:py-16">
+    <section id="fields-of-work" className="bg-cream py-12 lg:py-16">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Header and Introduction */}
         <div className="mx-auto mb-16 max-w-4xl text-center">
