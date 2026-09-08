@@ -138,14 +138,14 @@ const lineages = [
       url: "https://www.schumachercollege.org/home",
     },
     {
-      name: "The Civilization Research Institute",
-      logo: images.civilizationresearchinstitute,
-      url: "https://civilizationresearchinstitute.org/",
-    },
-    {
       name: "Gesturing Towards Decolonial Futures",
       logo: images.gtdf,
       url: "https://decolonialfutures.net/",
+    },
+    {
+      name: "Civilization Research Institute",
+      logo: images.civilizationresearchinstitute,
+      url: "https://civilizationresearchinstitute.org/",
     },
     {
       name: "Warm Data Lab",
@@ -706,7 +706,7 @@ export function IntroductionSection() {
           href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-900 underline transition-opacity hover:opacity-80"
+          className="text-cyan-900 underline transition-opacity hover:opacity-80"
         >
           framework
         </a>{" "}
@@ -729,7 +729,7 @@ export function IntroductionSection() {
           href="https://secondrenaissance.net/glossary/Wisdom+Gap"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-900 underline transition-opacity hover:opacity-80"
+          className="text-cyan-900 underline transition-opacity hover:opacity-80"
         >
           the wisdom gap
         </a>
@@ -745,7 +745,7 @@ export function IntroductionSection() {
       </p>
 
       {/* Wisdom Definition Callout */}
-      <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+      <div className="border-l-2 border-cyan-800 pl-6 py-1 md:pl-8">
         <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           By wisdom, we do not mean expertise, intelligence, or the accumulation
                 of knowledge. We mean the capacity to perceive reality accurately, to
@@ -762,7 +762,7 @@ export function IntroductionSection() {
           href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-900 underline transition-opacity hover:opacity-80"
+          className="text-cyan-900 underline transition-opacity hover:opacity-80"
         >
           multiple ways of knowing
         </a>{" "}
