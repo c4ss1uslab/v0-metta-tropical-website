@@ -1,8 +1,10 @@
+import React from "react";
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from "next"
+import ParallaxIncenseSection from "@/components/incense";
 
 export const metadata: Metadata = {
   title: "About | Metta Tropical Collective",
@@ -62,111 +64,120 @@ export default function AboutPage() {
           </div>
         </section>
 
-{/* Architectures of Transformation */}
+{/* About Us */}
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       {/* Heading */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-          Why We Exist
+          About Us
         </h2>
+
+        <p className="mt-2 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+          An invitation into the spirit of our work
+        </p>
       </div>
 
-      {/* Opening Text, Lineages List, and Image */}
-      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
-        {/* Left: Opening Paragraph and List */}
-        <div className="space-y-8">
+      {/* Opening */}
+      <div className="space-y-8">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Metta Tropical begins with a longing to reawaken the soul of our
+          collective life.
+        </p>
+
+        {/* Longings */}
+        <div className="space-y-2">
           <p className="leading-relaxed text-muted-foreground">
-            Throughout history, in times of societal collapse, oppression, and
-            rupture, the failures and contradictions of our dominant ways of
-            seeing, being, and relating in the world become impossible to
-            ignore. It is during these moments that new forms of education and
-            community have always emerged to take on the responsibility of
-            envisioning a radically different future and carrying forward what
-            would otherwise be lost.
+            To restore our intimacy with all life.
           </p>
 
-          <div className="space-y-4">
-            <p className="leading-relaxed text-muted-foreground">
-              <strong className="font-semibold text-foreground">
-                Mystery Schools
-              </strong>{" "}
-              — initiating seekers into hidden wisdom
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To fall deeply in love with the living world.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              <strong className="font-semibold text-foreground">
-                Monasteries
-              </strong>{" "}
-              — sustaining contemplative life and learning across centuries
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To expand our capacity to experience the sacred.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              <strong className="font-semibold text-foreground">
-                Terreiros
-              </strong>{" "}
-              — carrying cosmology and initiation through centuries of erasure
-            </p>
+          <p className="leading-relaxed text-muted-foreground">
+            To deepen our attunement to life&apos;s beauty, mystery, suffering,
+            and truth.
+          </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              <strong className="font-semibold text-foreground">
-                Folk Schools
-              </strong>{" "}
-              — educating for life rather than for credentials
-            </p>
-
-            <p className="leading-relaxed text-muted-foreground">
-              <strong className="font-semibold text-foreground">
-                Quilombos
-              </strong>{" "}
-              — building free life outside a system designed to deny it
-            </p>
-          </div>
-        </div>
-
-        {/* Right: Image */}
-        <div className="relative min-h-[420px] self-stretch overflow-hidden">
-          <Image
-            src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
-            alt="Black-and-white illustration representing ancestral and initiatory traditions"
-            fill
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-contain"
-          />
+          <p className="leading-relaxed text-muted-foreground">
+            To follow the Eros that draws us towards what life is asking of us.
+          </p>
         </div>
       </div>
 
-      {/* Full-Width Text */}
-      <p className="leading-relaxed text-muted-foreground">
-        Each created the structures, practices, relational life, pedagogies,
-        and rites of passage needed to orient human beings toward what is most
-        meaningful, and to develop the capacities their moment required. They
-        were not schools in the modern sense. They were{" "}
-        <strong className="font-semibold text-foreground">
-          architectures of transformation
-        </strong>{" "}
-        — places where new ways of being could be practiced until they became
-        real.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
-        We are living through such a moment again, and our commitment is to
-        build the architectures of transformation this time requires.
-      </p>
-
-      {/* Educational Architecture Highlight */}
-      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+      {/* Main Text */}
+      <div className="space-y-6">
         <p className="leading-relaxed text-muted-foreground">
-          We call them{" "}
-          <strong className="font-semibold text-foreground">
-            wisdom-centered educational architectures
-          </strong>
-          : long-term developmental ecologies of practice, tarining, ritual, inquiry, and
-          relationship, where those who feel the weight of this moment can find
-          the community and formation to become the kinds of humans capable of
-          tending the ending of one world, and of building what will come after
-          it.
+          The dominant paradigm of modernity has given parts of humanity
+          extraordinary knowledge, material prosperity, and technological
+          capacity. Yet it has also contributed to the disenchantment and
+          desacralization of life, making dimensions of meaning, belonging, and
+          aliveness increasingly difficult to touch. Our connection to the
+          living world has grown more distant. Our inner lives have become
+          harder to inhabit amid the constant pull of outward distraction. Our
+          relationships are more instrumental. And the spiritual dimension of
+          existence is not only more difficult to access, but has become
+          something we are almost embarrassed to name.
+        </p>
+
+        <p className="font-medium leading-relaxed text-foreground">
+          This is precisely the dimension of life we are committed to reclaiming
+          — to name it without hesitation, to inhabit more fully, to meet with
+          reverence, and to keep being guided by it.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          For us, the spiritual begins in our capacity to become deeply present
+          and attuned to existence — to experience our interbeing with all
+          life, to encounter life as intrinsically valuable, to recover a sense
+          of belonging to this earth, to meet suffering with compassion, and to
+          allow this intimacy with reality to transform how we live.
+        </p>
+
+        {/* Sacred Highlight */}
+        <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+    The sacred, then, is not another realm we must escape into. It is
+    the ground and depth of life itself — always here, yet becoming more
+    available to us as we learn to perceive, sense, feel, and
+    participate in reality more deeply.
+  </p>
+</div>
+
+        <p className="leading-relaxed text-muted-foreground">
+          In times of profound rupture, these ways of being in relationship
+          with life become especially important. When inherited stories can no
+          longer orient us, and the structures upon which we have built our
+          lives begin to reveal their limits, deeper existential questions rise
+          to the surface:{" "}
+          <span className="font-medium text-foreground">
+            What is truly worth living for? What does this moment ask of me?
+            What am I willing to give my life to? Where does meaning come from?
+          </span>
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Such moments can awaken dimensions of soul and spirit that ordinary
+          life often keeps quiet. Our deeper longings can become more clear —
+          revealing not only who we are, but the deep callings, and unique part
+          we can play in the service of life.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          <span className="font-medium text-foreground">
+            It is from this ground of sacredness, soulfulness, and intimacy with
+          life that our work begins.
+          </span> This is the ground that helps us hold the
+          grief and rupture of the metacrisis without turning away — allowing
+          what might otherwise become numbness or despair to be metabolized
+          into deeper responsibility, devotion, and service to the world trying
+          to be born.
         </p>
       </div>
     </div>
@@ -195,7 +206,7 @@ export default function AboutPage() {
                     Why Metta?
                   </h2>
                   <br />
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
+                  <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Orientation</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -210,7 +221,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="pl-6 border-l-2 border-[#D9A01B]">
+                  <div className="pl-6 border-l-2 border-cyan">
                     <h3 className="font-serif text-xl font-medium text-foreground">Meta-awareness</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       The capacity to step back, to sense into the deeper patterns shaping our world, systems and crises. Meta as within (interiority), meta as between (relationality), and meta as beyond (different ways of seeing and being).
@@ -244,7 +255,7 @@ export default function AboutPage() {
                     Why Tropical?
                   </h2>
                   <br />
-                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
+                  <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">The Territory</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -338,6 +349,146 @@ export default function AboutPage() {
 
     </div>
   </div>
+
+  <div className="w-full mt-20 overflow-hidden opacity-30">
+      <svg className="w-full h-8 text-[#8b0000]" preserveAspectRatio="none" viewBox="0 0 100 20">
+        <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
+        <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
+      </svg>
+    </div>
+</section>
+
+{/* Who We Must Become — The Bodhisattva Aspiration */}
+<section className="relative overflow-x-clip -mt-6 bg-cream min-h-[200vh]">
+  {/* Dynamic Keyframes injected safely into the render tree */}
+    <ParallaxIncenseSection>
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div>
+      {/* Header */}
+      <div className="mb-8 pl-12 pt-16 sm:pl-16 md:pl-0 md:pt-0">
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Who We Must Become
+        </h2>
+
+        <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+          The Bodhisattva Aspiration
+        </p>
+      </div>
+
+      {/* Opening */}
+      <div className="mb-6 space-y-6">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+          Every culture needs images of the human being worth becoming.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Yet at a time asking so much of us, the images we have inherited
+          feel too small for the depth of transformation required.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Our culture can describe the metacrisis in extraordinary detail, and
+          has no shortage of frameworks and list of capacities for what this
+          moment demands of us. What feels far less available is an image of who
+          we must become. One of the most powerful images we know comes from the
+          Buddhist tradition: the bodhisattva — one who awakens to the
+          interdependence and suffering of the world, opens the heart to
+          boundless compassion, and commits their life to the liberation of all
+          living beings.
+        </p>
+      </div>
+
+      {/* Bodhisattva Highlight */}
+      <div className="mb-6 border-l-2 border-[#D9A01B] py-1 pl-6 md:pl-8">
+        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+          For the bodhisattva, awakening and service to the world become
+          inseparable. To awaken is to see through the illusion of being a
+          separate self. The suffering of other people, other species, and the
+          living Earth can no longer be treated as something happening
+          somewhere “outside” of us. Spiritual, systemic and social
+          transformation become intertwined, all part of a single response to
+          the suffering of the world.
+        </p>
+      </div>
+
+      {/* Main Reflection (Block display for the float-right Buddha) */}
+      <div className="block">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          The bodhisattva trains the heart to become boundless: to meet each
+          being with the tenderness a mother offers her only child, to recognize
+          the irreducible worth of every life, and to expand their love and
+          compassion to ever wider circles of living beings. Again and again,
+          they enter the places of pain, confusion, and separation to understand
+          it more deeply, and find ways to wisely respond to it.
+        </p>
+
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          <strong className="font-medium text-foreground">
+            Why does such an aspiration matter?
+          </strong>{" "}
+          Because we grow to the height of what we can imagine becoming.
+          Humanity is nowhere near the fullness of its individual and collective
+          potential. And{" "}
+          <i>
+            without an image that reaches that far, we not only forsake our
+            most sacred capacity of becoming, but of the more beautiful
+            world wanting to be born.
+          </i>
+        </p>
+
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          We are not claiming the image of the Bodhisattva, though it has shaped
+          everything we are attempting. We are saying that our culture offers
+          nothing of that height to grow toward. And a culture that cannot
+          imagine such a being will rarely build the containers, practices,
+          communities and developmental pathways capable of cultivating them.
+        </p>
+
+        {/* Floated Buddha Image - allows text to wrap beautifully beside it */}
+        <div className="relative z-0 float-right mb-4 ml-6 mt-18 h-48 w-48 -mr-6 sm:h-56 sm:w-56 sm:-mr-10 md:h-64 md:w-64 md:-mr-16 lg:h-72 lg:w-72 lg:-mr-24 xl:-mr-32">
+          <Image
+            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
+            alt="Buddha"
+            fill
+            sizes="(min-width: 1024px) 288px, (min-width: 768px) 256px, 224px"
+            className="object-contain object-bottom"
+          />
+        </div>
+
+        <p className="mb-6 font-medium leading-relaxed text-foreground">
+          This is not a small thing missing from our times. It is close to the
+          heart of what has gone wrong — and it is part of what our work exists
+          to restore.
+        </p>
+
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          If we are to participate meaningfully in a deeper civilizational
+          transition, we believe our time will require contemporary expressions
+          of the Bodhisattva aspiration — and new pathways of formation capable
+          of supporting people to grow toward them. Spaces where the sacred
+          potential of each human being can be recognized and cultivated, and
+          where the qualities of heart, mind, and soul this moment asks of us
+          can mature through practice, relationship, responsibility, and service
+          to the whole.
+        </p>
+
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          We walk on the footsteps of others who have also sensed the need for
+          images of human possibility adequate to the demands of their time —
+          whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
+          Warriors or Homo Amor. What they share is an intuition that the crises
+          before us cannot be met with systemic change alone. They also ask for
+          deeper forms of human aspiration, formation and maturation, capable of
+          helping us respond to these times with greater wisdom, love, courage
+          and responsibility.
+        </p>
+
+        {/* Clears the float at the end of the section so subsequent content doesn't wrap around the Buddha */}
+        <div className="clear-both"></div>
+      </div>
+    </div>
+  </div>
+  </ParallaxIncenseSection>
 </section>
 
 {/* Our Vows */}
@@ -353,10 +504,6 @@ export default function AboutPage() {
     {/* Introduction */}
     <div className="mx-auto mb-16 max-w-3xl space-y-6 text-center sm:text-left">
       <p className="leading-relaxed text-muted-foreground">
-        We see vows not as promises, nor as rules. They serve as an orientation.
-      </p>
-
-      <p className="leading-relaxed text-muted-foreground">
         The work before us is larger than any person, institution, or generation
         can complete. What we long for will not arrive through strategy or good
         intentions alone. It asks for devotion — for something we are willing
@@ -364,6 +511,7 @@ export default function AboutPage() {
       </p>
 
       <p className="leading-relaxed text-muted-foreground">
+        We see vows not as promises, nor as rules. They serve as an orientation.
         These vows are a small, but essential part of this work. A way of
         reminding ourselves, again and again, what we are here for.
       </p>
@@ -469,10 +617,26 @@ export default function AboutPage() {
     {/* Sources and Acknowledgment */}
     <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-8">
       <p className="text-sm leading-relaxed text-muted-foreground italic md:text-base">
-        These vows are inspired by the four great bodhisattva vows of the
-        Buddhist traditions, and by the post-capitalist vows articulated by
-        Alnoor Ladha and Lynn Murphy. We offer ours as part of our own surrender
-        to what this moment is asking of us.
+        These vows are inspired by the four great{" "}
+        <a
+          href="https://zmm.org/four-bodhisattva-vows/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          bodhisattva vows
+        </a>{" "}
+        of the Buddhist traditions, and by the{" "}
+        <a
+          href="https://www.postcapitalistphilanthropy.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+        >
+          post-capitalist vows
+        </a>{" "}
+        articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
+        our own surrender to what this moment is asking of us.
       </p>
     </div>
   </div>

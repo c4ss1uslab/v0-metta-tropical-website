@@ -87,8 +87,8 @@ export default function ZenYogaElements() {
 
       {/* Grid Layout for Elements */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
-        
-        {/* 1. ACTUAL BURNING INCENSE */}
+
+        {/* 1. BURNING INCENSE */}
         <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             <div className="relative flex flex-col items-center translate-y-8">
@@ -199,7 +199,7 @@ export default function ZenYogaElements() {
         {/* 7. SACRED MARACA */}
         <ElementCard title="" subtitle="">
           <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <div className="relative flex flex-col items-center animate-[shamanicShake_2.5s_infinite_ease-in-out]">
+            <div className="relative flex flex-col items-center animate-[shamanicShake_3s_infinite_ease-in-out]">
               <div className="absolute top-[-8px] flex justify-center items-end w-6 h-3 pointer-events-none z-20">
                 <div className="w-0.5 h-3 bg-gradient-to-t from-amber-500 to-amber-300 rounded-t-full transform -rotate-[25deg] origin-bottom shadow-sm" />
                 <div className="w-1 h-3.5 bg-gradient-to-t from-red-600 to-orange-400 rounded-t-full transform -rotate-[5deg] origin-bottom shadow-sm" />
@@ -216,7 +216,7 @@ export default function ZenYogaElements() {
               </div>
               <div className="w-1.5 h-8 bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 rounded-b-sm -mt-1 z-0 shadow-sm" />
             </div>
-            <div className="absolute bottom-[58px] w-8 h-1 bg-black/60 rounded-full blur-[2px] animate-[shadowTrack_2.5s_infinite_rose-in-out]" />
+            <div className="absolute bottom-[58px] w-8 h-1 bg-black/60 rounded-full blur-[2px] animate-[shadowTrack_3s_infinite_rose-in-out]" />
           </div>
         </ElementCard>
 
@@ -224,20 +224,78 @@ export default function ZenYogaElements() {
 
       <style>{`
         @keyframes shamanicShake {
-          0%, 100% { transform: translate(0, 0) rotate(0deg); }
-          20% { transform: translate(-3px, -1px) rotate(-4deg); }
-          45% { transform: translate(2.5px, 0.5px) rotate(3deg); }
-          65% { transform: translate(-2.5px, 0px) rotate(-3deg); }
-          85% { transform: translate(2px, -0.5px) rotate(2deg); }
-        }
+  /* Still */
+  0%, 72%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  /* Shake begins */
+  74% {
+    transform: translate(-2px, -1px) rotate(-4deg);
+  }
+
+  77% {
+    transform: translate(2.5px, 0.5px) rotate(4deg);
+  }
+
+  80% {
+    transform: translate(-3px, 0px) rotate(-5deg);
+  }
+
+  83% {
+    transform: translate(2.5px, -0.5px) rotate(4deg);
+  }
+
+  86% {
+    transform: translate(-1.5px, 0px) rotate(-2.5deg);
+  }
+
+  /* Settle */
+  89% {
+    transform: translate(1px, 0px) rotate(1.5deg);
+  }
+
+  92% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
 
         @keyframes shadowTrack {
-          0%, 100% { transform: translateX(0) scaleX(1); opacity: 0.6; }
-          20% { transform: translateX(-2px) scaleX(0.9); opacity: 0.5; }
-          45% { transform: translateX(1.5px) scaleX(1.1); opacity: 0.7; }
-          65% { transform: translateX(-1.5px) scaleX(0.95); opacity: 0.55; }
-          85% { transform: translateX(1px) scaleX(1.05); opacity: 0.65; }
-        }
+  0%, 72%, 100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.6;
+  }
+
+  74% {
+    transform: translateX(-2px) scaleX(0.9);
+    opacity: 0.5;
+  }
+
+  77% {
+    transform: translateX(2px) scaleX(1.1);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translateX(-2px) scaleX(0.9);
+    opacity: 0.5;
+  }
+
+  83% {
+    transform: translateX(1.5px) scaleX(1.05);
+    opacity: 0.65;
+  }
+
+  86% {
+    transform: translateX(-1px) scaleX(0.95);
+    opacity: 0.55;
+  }
+
+  92% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.6;
+  }
+}
       `}</style>
     </div>
   );
