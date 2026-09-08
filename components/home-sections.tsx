@@ -670,11 +670,125 @@ export function IntroductionSection() {
         of this moment makes their separation no longer affordable.
       </p>
     </div>
+
+          <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
+        <Image
+          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+          alt="Gathering around the fire"
+          fill
+          className="object-cover"
+        />
+      </div>
+  </div>
+</section>
+
+{/* Why Wisdom? Section Content */}
+<section className="relative left-1/2 right-1/2 -mx-[50vw] w-full bg-white pt-0 pb-4 lg:pt-0 lg:pb-4 xl:w-screen">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      <div className="mb-16 text-center">
+        <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Why Wisdom?
+        </h2>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Within our work, we often draw from a{" "}
+        <a
+          href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          framework
+        </a>{" "}
+        developed by Daniel Schmachtenberger and Nate Hagens, and later evolved
+        by Vanessa Machado de Oliveira that distinguishes between narrow boundary
+        intelligence, wide boundary intelligence, and wisdom—sometimes called
+        whole-shebang wisdom.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We find this framework helpful not only for understanding how humans
+        relate to complexity and systemic challenges, but for clarifying the
+        direction our collective efforts must ultimately move toward: wisdom.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        The Center for Humane Technology describes one of the defining
+        challenges of our time as{" "}
+        <a
+          href="https://secondrenaissance.net/glossary/Wisdom+Gap"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          the wisdom gap
+        </a>
+        : the growing divide between rising global complexity and
+        humanity&apos;s capacity to respond with sufficient coherence,
+        discernment, and care. We live in a world overflowing with information,
+        intelligence, and technological power, yet increasingly unable to
+        navigate wisely the complexity we have created.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        In this sense, the metacrisis is fundamentally a wisdom crisis.
+      </p>
+
+      {/* Wisdom Definition Callout */}
+      <div className="my-6 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFFDF6] p-6">
+        <p className="font-serif text-lg leading-relaxed text-foreground italic md:text-xl">
+          By wisdom, we do not mean expertise, intelligence, or the accumulation
+          of knowledge. We mean the capacity to perceive reality accurately, to
+          discern what truly matters in a given context, and to participate in
+          life in ways that serve the flourishing of the larger whole — a
+          capacity grounded in a deep understanding of the central existential
+          questions of life.
+        </p>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Wisdom is deepened by engaging with reality and the world through{" "}
+        <a
+          href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          multiple ways of knowing
+        </a>{" "}
+        and depths of relationality, expanding our capacity to sense what is
+        needed in a given moment and respond accordingly.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        It allows us to hold complexity with humility and care, and to move
+        beyond fragmented grasps for certainty or control. It shifts our
+        relationship with the world from subject-object to subject-subject: from
+        managing reality to participating within it. To speak of wisdom,
+        ultimately, is to speak of integration — reuniting what modernity has
+        fragmented.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        As we face the consequences of the metacrisis, the cost of continuing to
+        incentivize narrow-boundary intelligence becomes increasingly
+        catastrophic. What this moment requires is a societal movement from
+        narrow boundary, to wide boundary, and eventually toward wisdom. Yet the
+        infrastructures capable of cultivating such transition remain largely
+        absent from modern society.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        Our work is an attempt to help create them.
+      </p>
+    </div>
   </div>
 </section>
 
       {/* Zak Stein Quote */}
-      <figure className="relative left-1/2 my-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
+      <figure className="relative left-1/2 mt-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
         <div className="relative mx-auto max-w-4xl px-8 md:px-16">
           {/* Left Background Quote */}
           <span className="pointer-events-none absolute left-0 top-[-20px] select-none font-serif text-7xl text-gray-800 md:top-[-40px] md:text-9xl">
@@ -743,7 +857,7 @@ export function FieldsOfWorkSection() {
   ]
 
   return (
-    <section className="bg-cream py-12 lg:py-20">
+    <section className="bg-cream py-12 lg:py-16">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Header and Introduction */}
         <div className="mx-auto mb-16 max-w-4xl text-center">
@@ -832,10 +946,10 @@ export function FieldsOfWorkSection() {
 
 export function WhyWisdomSection() {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-1 lg:py-1">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-10">
+        <div className="mb-2">
           <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
             Why Wisdom?
           </h2>
