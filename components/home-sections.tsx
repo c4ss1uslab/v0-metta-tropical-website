@@ -102,22 +102,27 @@ const lineages = [
       {
         name: "Plum Village",
     logo: images.plumvillage,
-  },
-  {
-    name: "CCARE — Center for Compassion and Altruism Research and Education",
-    logo: images.ccare,
-  },
-  {
-    name: "Vipassana — Goenka Tradition",
-    logo: images.vipassana,
+    url: "https://plumvillage.org/",
   },
   {
     name: "The Center for World Philosophy & Religion",
     logo: images.cwpr,
+    url: "https://worldphilosophyandreligion.org/",
+  },
+  {
+    name: "CCARE — Center for Compassion and Altruism Research and Education",
+    logo: images.ccare,
+    url: "https://ccare.stanford.edu/",
+  },
+  {
+    name: "Vipassana — Goenka Tradition",
+    logo: images.vipassana,
+    url: "https://www.dhamma.org/",
   },
   {
     name: "Great Vow Zen Monastery",
     logo: images.greatvow,
+    url: "https://zendust.org/great-vow-zen-monastery/",
       },
     ],
   },
@@ -130,22 +135,27 @@ const lineages = [
       {
         name: "Schumacher College",
       logo: images.schumacher,
-    },
-    {
-      name: "Warm Data Lab",
-      logo: images.warmdata,
+      url: "https://www.schumachercollege.org/home",
     },
     {
       name: "The Civilization Research Institute",
       logo: images.civilizationresearchinstitute,
+      url: "https://civilizationresearchinstitute.org/",
     },
     {
       name: "Gesturing Towards Decolonial Futures",
       logo: images.gtdf,
+      url: "https://decolonialfutures.net/",
+    },
+    {
+      name: "Warm Data Lab",
+      logo: images.warmdata,
+      url: "https://www.warmdata.life/",
     },
     {
       name: "Perspectiva",
       logo: images.perspectiva,
+      url: "https://systems-souls-society.com/",
       },
     ],
   },
@@ -158,22 +168,27 @@ const lineages = [
       {
       name: "Aletheia Coaching",
       logo: images.aletheia,
+      url: "https://integralunfoldment.com/",
     },
     {
       name: "Internal Family Systems",
       logo: images.internalfamilysystems,
+      url: "https://ifs-institute.com/",
     },
     {
       name: "Transformational Connection",
       logo: images.transformationalconnection,
+      url: "https://www.transformationalconnection.com/",
     },
     {
       name: "ART International — Authentic Relating Training",
       logo: images.ARTauthenticrelating,
+      url: "https://authenticrelating.co/",
     },
     {
       name: "Animas Valley Institute",
       logo: images.animasvalley,
+      url: "https://www.animas.org/",
       },
     ],
   },
@@ -184,24 +199,29 @@ const lineages = [
       "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
     inspirations: [
       {
-              name: "Kilombo Tenondé",
+      name: "Kilombo Tenondé",
       logo: images.kilombotenonde,
+      url: "https://kilombotenonde.net",
     },
     {
       name: "Tenondé Porã",
       logo: images.tenondepora,
+      url: "https://tenondepora.org.br/",
     },
     {
       name: "Ciclo Selvagem",
       logo: images.selvagem,
+      url: "https://selvagemciclo.org.br/",
     },
     {
       name: "Teia dos Povos",
       logo: images.teiadospovos,
+      url: "https://teiadospovos.org/",
     },
     {
       name: "Instituto Favela da Paz",
       logo: images.faveladapaz,
+      url: "https://www.institutofaveladapaz.org/",
       },
     ],
   },
@@ -590,8 +610,9 @@ export function IntroductionSection() {
 
                 <ul className="space-y-3">
                   {lineage.inspirations.map((institution) => (
-                    <li
+                    <a
                       key={institution.name}
+                      href={institution.url}
                       className="group/institution flex items-center gap-4 rounded-lg border border-gray-200/80 bg-white/80 p-3 transition-all duration-200 hover:border-[#D9A01B]/40 hover:bg-white"
                     >
                       <div className="relative flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white">
@@ -607,7 +628,7 @@ export function IntroductionSection() {
                       <span className="text-sm font-medium leading-snug text-foreground">
                         {institution.name}
                       </span>
-                    </li>
+                    </a>
                   ))}
                 </ul>
 
