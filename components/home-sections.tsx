@@ -1011,7 +1011,7 @@ export function WhyWisdomSection() {
           </p>
 
           {/* Wisdom Definition Highlight */}
-          <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+          <div className="rounded-r-xl border-l-4 border-cyan-800 bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
             <p className="leading-relaxed text-muted-foreground">
               By wisdom, we do not mean expertise, intelligence, or the
               accumulation of knowledge. We mean the capacity to perceive
