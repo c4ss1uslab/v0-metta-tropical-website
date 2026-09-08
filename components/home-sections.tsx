@@ -138,14 +138,14 @@ const lineages = [
       url: "https://www.schumachercollege.org/home",
     },
     {
-      name: "The Civilization Research Institute",
-      logo: images.civilizationresearchinstitute,
-      url: "https://civilizationresearchinstitute.org/",
-    },
-    {
       name: "Gesturing Towards Decolonial Futures",
       logo: images.gtdf,
       url: "https://decolonialfutures.net/",
+    },
+    {
+      name: "The Civilization Research Institute",
+      logo: images.civilizationresearchinstitute,
+      url: "https://civilizationresearchinstitute.org/",
     },
     {
       name: "Warm Data Lab",
