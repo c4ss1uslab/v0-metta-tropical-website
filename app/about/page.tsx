@@ -62,118 +62,111 @@ export default function AboutPage() {
           </div>
         </section>
 
-{/* About Us */}
+{/* Architectures of Transformation */}
 <section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div className="space-y-8">
       {/* Heading */}
       <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-          About Us
+          Why We Exist
         </h2>
-
-        <p className="mt-2 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
-          An invitation into the spirit of our work
-        </p>
       </div>
 
-      {/* Opening */}
-      <div className="space-y-8">
-        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-          Metta Tropical begins with a longing to reawaken the soul of our
-          collective life.
-        </p>
-
-        {/* Longings */}
-        <div className="space-y-4">
+      {/* Opening Text, Lineages List, and Image */}
+      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
+        {/* Left: Opening Paragraph and List */}
+        <div className="space-y-8">
           <p className="leading-relaxed text-muted-foreground">
-            To restore our intimacy with all life.
+            Throughout history, in times of societal collapse, oppression, and
+            rupture, the failures and contradictions of our dominant ways of
+            seeing, being, and relating in the world become impossible to
+            ignore. It is during these moments that new forms of education and
+            community have always emerged to take on the responsibility of
+            envisioning a radically different future and carrying forward what
+            would otherwise be lost.
           </p>
 
-          <p className="leading-relaxed text-muted-foreground">
-            To fall deeply in love with the living world.
-          </p>
+          <div className="space-y-4">
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Mystery Schools
+              </strong>{" "}
+              — initiating seekers into hidden wisdom
+            </p>
 
-          <p className="leading-relaxed text-muted-foreground">
-            To expand our capacity to experience the sacred.
-          </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Monasteries
+              </strong>{" "}
+              — sustaining contemplative life and learning across centuries
+            </p>
 
-          <p className="leading-relaxed text-muted-foreground">
-            To deepen our attunement to life&apos;s beauty, mystery, suffering,
-            and truth.
-          </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Terreiros
+              </strong>{" "}
+              — carrying cosmology and initiation through centuries of erasure
+            </p>
 
-          <p className="leading-relaxed text-muted-foreground">
-            To follow the Eros that draws us towards what life is asking of us.
-          </p>
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Folk Schools
+              </strong>{" "}
+              — educating for life rather than for credentials
+            </p>
+
+            <p className="leading-relaxed text-muted-foreground">
+              <strong className="font-semibold text-foreground">
+                Quilombos
+              </strong>{" "}
+              — building free life outside a system designed to deny it
+            </p>
+          </div>
+        </div>
+
+        {/* Right: Image */}
+        <div className="relative min-h-[420px] self-stretch overflow-hidden">
+          <Image
+            src="https://i.postimg.cc/598p7R5B/image-from-rawpixel-id-6605610-jpeg-(1).jpg"
+            alt="Black-and-white illustration representing ancestral and initiatory traditions"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-contain"
+          />
         </div>
       </div>
 
-      {/* Main Text */}
-      <div className="space-y-6">
+      {/* Full-Width Text */}
+      <p className="leading-relaxed text-muted-foreground">
+        Each created the structures, practices, relational life, pedagogies,
+        and rites of passage needed to orient human beings toward what is most
+        meaningful, and to develop the capacities their moment required. They
+        were not schools in the modern sense. They were{" "}
+        <strong className="font-semibold text-foreground">
+          architectures of transformation
+        </strong>{" "}
+        — places where new ways of being could be practiced until they became
+        real.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We are living through such a moment again, and our commitment is to
+        build the architectures of transformation this time requires.
+      </p>
+
+      {/* Educational Architecture Highlight */}
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
         <p className="leading-relaxed text-muted-foreground">
-          The dominant paradigm of modernity has given parts of humanity
-          extraordinary knowledge, material prosperity, and technological
-          capacity. Yet it has also contributed to the disenchantment and
-          desacralization of life, making dimensions of meaning, belonging, and
-          aliveness increasingly difficult to touch. Our connection to the
-          living world has grown more distant. Our inner lives have become
-          harder to inhabit amid the constant pull of outward distraction. Our
-          relationships are more instrumental. And the spiritual dimension of
-          existence is not only more difficult to access, but has become
-          something we are almost embarrassed to name.
-        </p>
-
-        <p className="font-medium leading-relaxed text-foreground">
-          This is precisely the dimension of life we are committed to reclaiming
-          — to name it without hesitation, to inhabit more fully, to meet with
-          reverence, and to keep being guided by it.
-        </p>
-
-        <p className="leading-relaxed text-muted-foreground">
-          For us, the spiritual begins in our capacity to become deeply present
-          and attuned to existence — to experience our interbeing with all
-          life, to encounter life as intrinsically valuable, to recover a sense
-          of belonging to this earth, to meet suffering with compassion, and to
-          allow this intimacy with reality to transform how we live.
-        </p>
-
-        {/* Sacred Highlight */}
-        <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-          <p className="leading-relaxed text-muted-foreground">
-            The sacred, then, is not another realm we must escape into. It is
-            the ground and depth of life itself — always here, yet becoming more
-            available to us as we learn to perceive, sense, feel, and
-            participate in reality more deeply.
-          </p>
-        </div>
-
-        <p className="leading-relaxed text-muted-foreground">
-          In times of profound rupture, these ways of being in relationship
-          with life become especially important. When inherited stories can no
-          longer orient us, and the structures upon which we have built our
-          lives begin to reveal their limits, deeper existential questions rise
-          to the surface:{" "}
-          <span className="font-medium text-foreground">
-            What is truly worth living for? What does this moment ask of me?
-            What am I willing to give my life to? Where does meaning come from?
-          </span>
-        </p>
-
-        <p className="leading-relaxed text-muted-foreground">
-          Such moments can awaken dimensions of soul and spirit that ordinary
-          life often keeps quiet. Our deeper longings can become more clear —
-          revealing not only who we are, but the deep callings, and unique part
-          we can play in the service of life.
-        </p>
-
-        <p className="font-medium leading-relaxed text-foreground">
-          It is from this ground of sacredness, soulfulness, and intimacy with
-          life that our work begins. This is the ground that helps us hold the
-          grief and rupture of the metacrisis without turning away — allowing
-          what might otherwise become numbness or despair to be metabolized
-          into deeper responsibility, devotion, and service to the world trying
-          to be born.
+          We call them{" "}
+          <strong className="font-semibold text-foreground">
+            wisdom-centered educational architectures
+          </strong>
+          : long-term developmental ecologies of practice, tarining, ritual, inquiry, and
+          relationship, where those who feel the weight of this moment can find
+          the community and formation to become the kinds of humans capable of
+          tending the ending of one world, and of building what will come after
+          it.
         </p>
       </div>
     </div>
