@@ -407,7 +407,7 @@ export function IntroductionSection() {
 </section>
 
 {/* Confluence of Lineages */}
-<section className="relative overflow-hidden bg-white py-16 lg:py-24">
+<section className="relative overflow-hidden bg-white py-16 lg:py-16">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
     {/* Header and Introduction */}
     <div className="mx-auto max-w-4xl">
@@ -737,14 +737,14 @@ export function IntroductionSection() {
       </p>
 
       {/* Wisdom Definition Callout */}
-      <div className="my-6 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFFDF6] p-6">
-        <p className="font-serif text-lg leading-relaxed text-foreground italic md:text-xl">
+      <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           By wisdom, we do not mean expertise, intelligence, or the accumulation
-          of knowledge. We mean the capacity to perceive reality accurately, to
-          discern what truly matters in a given context, and to participate in
-          life in ways that serve the flourishing of the larger whole — a
-          capacity grounded in a deep understanding of the central existential
-          questions of life.
+                of knowledge. We mean the capacity to perceive reality accurately, to
+                discern what truly matters in a given context, and to participate in
+                life in ways that serve the flourishing of the larger whole — a
+                capacity grounded in a deep understanding of the central existential
+                questions of life.
         </p>
       </div>
 
