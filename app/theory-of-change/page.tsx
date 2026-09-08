@@ -54,13 +54,10 @@ export default function TheoryOfChangePage() {
 
   const startAnimation = () => {
     if (animationState !== 'idle') return;
-
+    
     setAnimationState('looping');
 
-    // Generate a random duration between 6000ms (6s) and 10000ms (10s)
-    const randomLoopDuration = 6000 + Math.random() * 4000;
-
-    // 1. Loop for the randomized duration
+    // 1. Loop for 9 seconds
     setTimeout(() => {
       setAnimationState('shattering');
       // Pick a random Layer 1 item to shatter
@@ -76,7 +73,7 @@ export default function TheoryOfChangePage() {
           setBrokenItem(null);
         }, 1500);
       }, 3000);
-    }, randomLoopDuration);
+    }, 9000);
   };
 
   // Define sequential phases for the sweep (0 to 100 scale moving Right to Left)
@@ -117,75 +114,59 @@ export default function TheoryOfChangePage() {
         .shard-4 { animation: shatterPiece4 1s forwards ease-out; clip-path: polygon(0 0, 100% 50%, 0 100%); background-color: rgba(180, 0, 20, 1); }
       `}</style>
 
-<Navigation />
-<main className="pt-16">
-  {/* Hero */}
-  <section className="relative overflow-hidden py-24 text-background lg:py-32">
-    {/* Background Image */}
-    <div
-      className="absolute inset-0 bg-cover bg-center"
-      style={{
-        backgroundImage:
-          "url('https://i.postimg.cc/C5m58hp3/cosmos-505503782.jpg')",
-      }}
-    />
+      <Navigation />
+      <main className="pt-16">
+        {/* Hero */}
+        <section className="relative py-24 lg:py-32 bg-foreground text-background">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <span className="text-yellow font-medium text-sm tracking-wide uppercase">Theory of Change</span>
+            <h1 className="mt-4 font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-background leading-tight">
+              Sanctuaries of Coherence in a Time Between Worlds
+            </h1>
+            <p className="mt-8 text-xl text-background/80 leading-relaxed">
+              Understanding the deep roots of our predicament and the educational response it requires.
+            </p>
+          </div>
+        </section>
 
-    {/* Dark Overlay */}
-    <div className="absolute inset-0 bg-foreground/75" />
-
-    {/* Content */}
-    <div className="relative z-10 mx-auto max-w-4xl px-6 lg:px-8">
-      <span className="text-sm font-medium uppercase tracking-wide text-yellow">
+        {/* Theory of Change — At a Glance */}
+<section className="bg-cream py-20 lg:py-24">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    {/* Header */}
+    <div className="mb-12 text-center">
+      <span className="text-sm font-medium uppercase tracking-wide text-olive">
         Theory of Change
       </span>
 
-      <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-background md:text-5xl lg:text-6xl">
-        Making Sanctuaries in a
-        <br />
-        Time Between Worlds
-      </h1>
-    </div>
-  </section>
-
-{/* Theory of Change — At a Glance */}
-<section className="bg-cream py-14 lg:py-16">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    {/* Header */}
-    <div className="mb-8">
-      <h2 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-        Theory of Change — At a Glance
+      <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        At a Glance
       </h2>
 
-      <p className="mt-3 max-w-3xl leading-relaxed text-muted-foreground">
+      <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-muted-foreground">
         Our theory of change unfolds through five interconnected movements —
-        from understanding the predicament we are in, to the educational
-        response it requires, and the larger civilizational horizon we hope to
-        serve.
+        from understanding the predicament we are in to the larger
+        civilizational horizon we hope to serve.
       </p>
     </div>
 
     {/* Five-Part Theory of Change */}
-    <div className="border-t border-border">
+    <div className="space-y-4">
       {/* 1. The Predicament */}
       <a
         href="#predicament"
-        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
+        className="group block rounded-xl border border-border border-l-4 border-l-crimson bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
       >
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-                1. The Predicament
-              </span>
+            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+              1. The Predicament
+            </span>
 
-              <span className="text-sm text-muted-foreground">—</span>
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              Where are we?
+            </h3>
 
-              <span className="text-sm italic text-muted-foreground">
-                Where are we?
-              </span>
-            </div>
-
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               The metacrisis is not a collection of isolated problems, but a
               deeper civilizational predicament rooted in the systems,
               relationships, and ways of understanding reality that shape
@@ -193,7 +174,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-1 shrink-0 text-xl text-crimson transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -202,23 +183,19 @@ export default function TheoryOfChangePage() {
       {/* 2. The Problem */}
       <a
         href="#problem"
-        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
+        className="group block rounded-xl border border-border border-l-4 border-l-olive bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
       >
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                2. The Problem
-              </span>
+            <span className="text-sm font-medium uppercase tracking-wide text-olive">
+              2. The Problem
+            </span>
 
-              <span className="text-sm text-muted-foreground">—</span>
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What are we responding to?
+            </h3>
 
-              <span className="text-sm italic text-muted-foreground">
-                What are we responding to?
-              </span>
-            </div>
-
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               Beneath it lies a crisis of human formation: we lack the
               orientation, aspiration, developmental pathways, communal
               capacities, and formative environments capable of preparing us
@@ -226,7 +203,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-1 shrink-0 text-xl text-olive transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -235,23 +212,19 @@ export default function TheoryOfChangePage() {
       {/* 3. The Developmental Hypothesis */}
       <a
         href="#developmental-hypothesis"
-        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
+        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
       >
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-                3. The Developmental Hypothesis
-              </span>
+            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              3. The Developmental Hypothesis
+            </span>
 
-              <span className="text-sm text-muted-foreground">—</span>
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What does this moment require?
+            </h3>
 
-              <span className="text-sm italic text-muted-foreground">
-                What does this moment require?
-              </span>
-            </div>
-
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               Transformation of this depth requires long-term human and communal
               formation, bringing spiritual depth, relational maturity,
               systemic intelligence, developmental practice, decolonial
@@ -260,7 +233,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -269,23 +242,19 @@ export default function TheoryOfChangePage() {
       {/* 4. The Response */}
       <a
         href="#response"
-        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
+        className="group block rounded-xl border border-border border-l-4 border-l-cyan-800 bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
       >
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-                4. The Response
-              </span>
+            <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+              4. The Response
+            </span>
 
-              <span className="text-sm text-muted-foreground">—</span>
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What are we building?
+            </h3>
 
-              <span className="text-sm italic text-muted-foreground">
-                What are we building?
-              </span>
-            </div>
-
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               A wisdom-centered educational architecture, rooted in the Global
               South, bringing transformative education, transdisciplinary
               research, ecosystem weaving, and cultural imagination into a
@@ -295,7 +264,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-1 shrink-0 text-xl text-cyan-800 transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -304,23 +273,19 @@ export default function TheoryOfChangePage() {
       {/* 5. A Civilizational Horizon */}
       <a
         href="#civilizational-horizon"
-        className="group block border-b border-border py-5 transition-opacity hover:opacity-70"
+        className="group block rounded-xl border border-border border-l-4 border-l-[#D9A01B] bg-background px-6 py-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:px-8"
       >
-        <div className="flex items-start justify-between gap-5">
+        <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-                5. A Civilizational Horizon
-              </span>
+            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              5. A Civilizational Horizon
+            </span>
 
-              <span className="text-sm text-muted-foreground">—</span>
+            <h3 className="mt-2 font-serif text-xl italic text-foreground md:text-2xl">
+              What larger possibility are we serving?
+            </h3>
 
-              <span className="text-sm italic text-muted-foreground">
-                What larger possibility are we serving?
-              </span>
-            </div>
-
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               We hope to contribute to the emergence of cultures, institutions
               and communities where wisdom becomes a central organizing
               function and collective life is increasingly oriented toward the
@@ -328,7 +293,7 @@ export default function TheoryOfChangePage() {
             </p>
           </div>
 
-          <span className="mt-0.5 shrink-0 text-base text-muted-foreground/50 transition-transform duration-300 group-hover:translate-y-1">
+          <span className="mt-1 shrink-0 text-xl text-[#B88610] transition-transform duration-300 group-hover:translate-y-1">
             ↓
           </span>
         </div>
@@ -336,7 +301,7 @@ export default function TheoryOfChangePage() {
     </div>
 
     {/* Navigation Hint */}
-    <p className="mt-6 text-sm italic text-muted-foreground/60">
+    <p className="mt-8 text-center text-sm italic text-muted-foreground/70">
       Select any section to explore it in greater depth.
     </p>
   </div>
@@ -366,103 +331,13 @@ export default function TheoryOfChangePage() {
                 Humanity is living through a time of profound civilizational rupture.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-  In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>
-  <span className="group relative inline-block cursor-help">
-    <span className="font-semibold text-crimson text-sm">
-      <sup><em>1</em></sup>
-    </span>
-    <span className="invisible absolute bottom-full left-1/2 mb-2 w-80 -translate-x-1/2 rounded-lg bg-foreground p-3 text-left text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-      <div className="space-y-2">
-        <div>
-          For a good technical introduction to the polycrisis, see:
-          <br />
-          <br />
-          <p>Lawrence, M., Homer-Dixon, T., Janzwood, S., Rockström, J., Renn, O., & Donges, J. F.{" "}</p>
-          <a
-            href="https://cascadeinstitute.org/technical-paper/global-polycrisis-the-causal-mechanisms-of-crisis-entanglement/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-60"
-          >
-             “Global Polycrisis: The Causal Mechanisms of Crisis Entanglement.”, Cascade Institute, 2024.
-          </a>
-          
-        </div>
-      </div>
-      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
-    </span>
-  </span>
-  , describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.
-</p>
-
+                In 1993 Edgar Morin and Anne Brigitte Kern introduced the term <strong><em>polycrisis</em></strong>¹, describing the complex entanglement of interwoven crises facing humanity, arguing that the true vital problem was not one single issue, but the interconnected mesh of all crises on Earth. More recently, during the 2023 World Economic Forum's annual gathering in Davos, the concept has entered mainstream discourse as institutions and communities struggle to make sense of an increasingly unstable world. While the reality of the polycrisis has been more widely acknowledged and has helped illuminate the interconnected nature of our challenges, we believe it does not fully explain the deeper roots generating them. Beneath the interconnected visible crises of our time lies what some have called the <strong><em>metacrisis</em></strong>.²
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-  The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become profoundly embedded in our institutions and systems, creating self-destructive feedback loops driving a set of new, unique and escalating anthropocentric existential and catastrophic risks
-  <span className="group relative inline-block cursor-help">
-    <span className="font-semibold text-crimson text-sm">
-      <sup><em>2</em></sup>
-    </span>
-    <span className="invisible absolute bottom-full left-1/2 mb-2 w-80 -translate-x-1/2 rounded-lg bg-foreground p-3 text-left text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-      <div className="space-y-2">
-        <div>
-          For more, see:
-          <br />
-          <br />
-          Schmachtenberger, Daniel. <em>“Catastrophic and Existential Risk,”</em> 2017.{" "}
-          <a
-            href="https://civilizationemerging.com/catastrophic-and-existential-risk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-60"
-          >
-            Civilization Emerging.
-          </a>
-        </div>
-
-        <div>
-          The Consilience Project. <em>“Challenges to Making Sense of the 21st Century,”</em> 2021. {" "}
-          <a
-            href="https://consilienceproject.org/challenges-to-making-sense-of-the-21st-century"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-60"
-          >
-            The Consilience Project.
-          </a>
-        </div>
-
-        <div>
-          Morton, Timothy. <em>Hyperobjects: Philosophy and Ecology after the End of the World.</em> 2013.{" "}
-          <a
-            href="https://www.upress.umn.edu/9780816689231/hyperobjects/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-60"
-          >
-            University of Minnesota Press.
-          </a>
-        </div>
-
-        <div>
-          Bostrom, Nick, and Milan M. Ćirković, eds. <em>Global Catastrophic Risks.</em> 2008.{" "}
-          <a
-            href="https://academic.oup.com/book/40615"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-60"
-          >
-            Oxford University Press.
-          </a>
-        </div>
-      </div>
-
-      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
-    </span>
-  </span>
-   , and also in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
-</p>
-
+                The <strong>metacrisis</strong> understands the interconnectedness of our global collective crises—ecological collapse, social fragmentation, institutional breakdown, technological risk, and meaning crisis—as symptoms of deeper, underlying conditions and patterns generating them. The metacrisis is a crisis at the “meta” layers of civilization, it's a dysfunction in the underlying ways of perceiving, relating, and understanding reality that modern civilization has been built upon. These patterns have become embedded not only in our institutions and systems, but in our perception, shaping how reality becomes intelligible to us: what we value, how we relate, and what kinds of futures we are capable of imagining.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                It is, therefore, a crisis not only of systems, but of being.
+                It is a crisis not only of systems, but of being.
               </p>
             </div>
             <div className="space-y-1 py-6">
@@ -475,1067 +350,256 @@ export default function TheoryOfChangePage() {
               <p className="text-muted-foreground leading-relaxed">
                 • <em>between</em> ourselves, in the ways we relate to one another and life itself; and
               </p>
-                <p className="text-muted-foreground leading-relaxed">
-    • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.
-    <span className="group relative inline-block cursor-help">
-      <span className="font-semibold text-crimson text-sm">
-        <sup><em>3</em></sup>
-      </span>
-      <span className="invisible absolute bottom-full left-1/2 mb-2 w-74 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-  This formulation is drawn from Jonathan Rowson, as proposed in his article:{" "}
-  <a
-    href="https://perspecteeva.substack.com/p/prefixing-the-world"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline hover:opacity-60"
-  >
-    “Prefixing the World,” Perspectiva, 2023.
-  </a>
-  <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
-</span>
-</span>
-  </p>
-</div>
-            <div className="space-y-8">
-  <p className="text-muted-foreground leading-relaxed">
-    In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
-  </p>
-  <p className="text-muted-foreground leading-relaxed">
-    We understand the metacrisis as unfolding across three interconnected layers:
-    <span className="group relative inline-block cursor-help">
-      <span className="font-semibold text-crimson text-sm">
-        <sup><em>4</em></sup>
-      </span>
-      <span className="invisible absolute bottom-full left-1/2 mb-2 w-100 -translate-x-1/2 rounded-lg bg-foreground p-3 text-center text-sm text-background shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-        This 3-layered breakdown of the metacrisis is heavily inspired by Life Itself's paper,{" "}
-  <a
-    href="https://metacrisis.info/paper"
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="underline hover:opacity-60"
-  >&ldquo;From Polycrisis to Metacrisis: A Short Introduction&rdquo;, August 2025.</a>
-        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
-      </span>
-    </span>
-  </p>
-</div>
-
-{/* Diagram Wrapper */}
-<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-
-  {/* 1. THE SYMPTOMATIC LAYER */}
-  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
-    <div className="text-center mb-8 border-b border-border pb-4">
-      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 1</span>
-      <h3 className="font-serif text-xl font-semibold text-foreground">The Symptomatic Layer</h3>
-      <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
-    </div>
-
-    <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
-      {/* Layer 1 Vertical Axis */}
-      <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
-        {animationState === 'looping' && inLayer1 && (
-          <div 
-            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-            style={{ top: `${(sweep - 78) / 22 * 100}%` }} 
-          />
-        )}
-      </div>
-
-      <div className="w-full flex flex-col gap-3 relative z-10">
-        {polycrisisItems.map((item, idx) => {
-          const isBrokenTarget = brokenItem === idx;
-          const isShattered = animationState === 'shattering' && isBrokenTarget;
-          const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
-          
-          const verticalPos = (sweep - 78) / 22 * 100;
-          const targetY = (idx / 9) * 100;
-          const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - targetY) < 15;
-
-          return (
-            <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
-              <div
-                className={`p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300
-                  ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}
-                  ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
-                  ${isReconstructing ? 'is-reconstructing' : ''}
-                  ${isShattered ? 'opacity-0' : 'opacity-100'}`}
-              >
-                {item}
-              </div>
-
-              {isShattered && (
-                <div className="absolute inset-0 z-20 pointer-events-none">
-                  <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
-                  <div className="absolute top-0 right-0 w-1/2 h-1/2 shard-2 border border-red-400/50"></div>
-                  <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 shard-3 border border-red-400/50"></div>
-                  <div className="absolute bottom-0 right-0 w-1/2 h-full shard-4 border border-red-400/50"></div>
-                </div>
-              )}
-            </div>
-          );
-        })}
-        
-        {/* "Etc..." Card */}
-        {(() => {
-          const verticalPos = (sweep - 78) / 22 * 100;
-          const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - 100) < 15;
-          return (
-            <div 
-              className={`w-full p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300 cursor-pointer 
-                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}`}
-              onClick={startAnimation}
-            >
-              Etc...
-            </div>
-          );
-        })()}
-      </div>
-    </div>
-    <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
-  </div>
-
-  {/* 2. THE STRUCTURAL LAYER */}
-  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
-    
-    {/* Horizontal Bridges: Layer 2 -> Layer 1 */}
-    <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-      {[24, 44, 64, 84].map((topPos, i) => (
-        <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-hidden" style={{ top: `${topPos}%` }}>
-          {animationState === 'looping' && inBridge21 && (
-            <div 
-              className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
-              style={{ right: `${(sweep - 62) / 16 * 100}%` }} 
-            />
-          )}
-        </div>
-      ))}
-    </div>
-
-    <div 
-      className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
-      onClick={startAnimation}
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
-    </div>
-
-    <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
-      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
-      <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
-      <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
-    </div>
-
-    <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-      {/* Layer 2 Vertical Axis */}
-      <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
-         {animationState === 'looping' && inLayer2 && (
-          <div 
-            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-            style={{ top: `${(sweep - 38) / 24 * 100}%` }} 
-          />
-        )}
-      </div>
-
-      <div className="w-full flex flex-col gap-4 relative z-10">
-        {[
-          { 
-            title: 'Crisis of Power', 
-            desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.',
-            references: [
-              { name: 'Open Society Foundations', logo: '/logos/opensociety.png' },
-              { name: 'Institute for Local Self-Reliance', logo: '/logos/ilsr.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Incentives', 
-            desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.',
-            references: [
-              { name: 'Center for Humane Technology', logo: '/logos/cht.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Trust', 
-            desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.',
-            references: [
-              { name: 'Sensemaking Networks', logo: '/logos/sensemaking.png' },
-              { name: 'Wikidata Foundation', logo: '/logos/wikidata.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Complexity', 
-            desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', 
-            references: [
-              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' },
-              { name: 'Stockholm Resilience Centre', logo: '/logos/stockholm.png' }
-            ]
-          }
-        ].map((item, i) => {
-          const verticalPos = (sweep - 38) / 24 * 100;
-          const targetY = [12, 37, 62, 87][i];
-          const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
-          const hasReferences = item.references && item.references.length > 0;
-
-          return (
-            <div 
-              key={i} 
-              className={`group w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
-                ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
-            >
-              <details className="group/details w-full">
-                <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
-                  <div className="flex items-start justify-between gap-2">
-                    <h4 className="font-serif font-medium text-foreground">
-                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
-                    </h4>
-
-                    {/* Inline Expand Arrow */}
-                    {hasReferences && (
-                      <svg
-                        className="mt-1 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson/80"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-                      </svg>
-                    )}
-                  </div>
-
-                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                </summary>
-
-                {/* Hidden references block - expands downward when opened */}
-                {hasReferences && (
-                  <div className="mt-3 border-t border-crimson/20 pt-3">
-                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson/80">
-                      Suggested resources
-                    </p>
-
-                    <ul className="space-y-2">
-                      {item.references.map((ref) => (
-                        <li
-                          key={ref.name}
-                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-white"
-                        >
-                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                            <Image
-                              src={ref.logo}
-                              alt={`${ref.name} logo`}
-                              fill
-                              sizes="40px"
-                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                            />
-                          </div>
-
-                          <span className="text-xs font-medium leading-snug text-foreground">
-                            {ref.name}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-                      These references indicate sources of learning and inspiration.
-                    </p>
-                  </div>
-                )}
-              </details>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-    
-    <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <details className="group/details w-full relative">
-        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
-          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
-            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-              Rivalrous Dynamics x Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span>
-            </p>
-
-            {/* Toggle icon positioned in the bottom-right corner */}
-            <svg
-              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-            </svg>
-          </div>
-        </summary>
-
-        {/* Floating absolute dropdown popover to prevent shifting layout */}
-        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson">
-            Suggested resources
-          </p>
-
-          <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/consilience.png"
-                  alt="The Consilience Project logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
-              </span>
-            </li>
-
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/metacrisis.png"
-                  alt="The Meta-Crisis Institute logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
-              </span>
-            </li>
-          </ul>
-
-          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-            These references explore the intersection of relational capacity and technological acceleration.
-          </p>
-        </div>
-      </details>
-    </div>
-  </div>
-
-  {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
-  <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
-    
-    {/* Horizontal Bridges: Layer 3 -> Layer 2 */}
-    <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
-      {[24, 44, 64, 84].map((topPos, i) => (
-        <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-hidden" style={{ top: `${topPos}%` }}>
-          {animationState === 'looping' && inBridge32 && (
-            <div 
-              className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
-              style={{ right: `${(sweep - 22) / 16 * 100}%` }} 
-            />
-          )}
-        </div>
-      ))}
-    </div>
-
-    <div 
-      className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-olive hover:text-olive transition-colors"
-      onClick={startAnimation}
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
-    </div>
-
-    <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
-      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
-      <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
-      <p className="text-sm font-medium text-olive mt-2">
-        Foundational Dysfunctions<sub className="text-[9px] font-sans font-extrabold opacity-80 ml-0.5">5</sub>
-      </p>
-    </div>
-
-    <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
-      {/* Layer 3 Vertical Axis */}
-      <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 rounded-full">
-         {animationState === 'looping' && inLayer3 && (
-          <div 
-            className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
-            style={{ top: `${(sweep - 0) / 22 * 100}%` }} 
-          />
-        )}
-      </div>
-
-      <div className="w-full flex flex-col gap-4 relative z-10">
-        {[
-          { 
-            title: 'Crisis of Perception', 
-            desc: 'Persistent delusions of separation, misapprehending nature and reality.',
-            references: [
-              { name: 'Schumacher College', logo: '/logos/schumacher.png' },
-              { name: 'Center for Ecoliteracy', logo: '/logos/ecoliteracy.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Relationship', 
-            desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
-            references: [
-              { name: 'Deep Ecology Institute', logo: '/logos/deepecology.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Value', 
-            desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', 
-            references: [
-              { name: 'Perspectiva', logo: '/logos/perspectiva.png' },
-              { name: 'The Meta-Crisis Institute', logo: '/logos/metacrisis.png' }
-            ]
-          },
-          { 
-            title: 'Crisis of Capacity', 
-            desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.',
-            references: [
-              { name: 'Consilience Project', logo: '/logos/consilience.png' },
-              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' }
-            ]
-          }
-        ].map((item, i) => {
-          const verticalPos = (sweep - 0) / 22 * 100;
-          const targetY = [12, 37, 62, 87][i];
-          const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
-          const hasReferences = item.references && item.references.length > 0;
-
-          return (
-            <div 
-              key={i} 
-              className={`group w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
-                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
-            >
-              <details className="group/details w-full">
-                <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
-                  <div className="flex items-start justify-between gap-2">
-                    <h4 className="font-serif font-medium text-foreground">
-                      {item.title}{<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5"></sub>}
-                    </h4>
-
-                    {/* Inline Expand Arrow */}
-                    {hasReferences && (
-                      <svg
-                        className="mt-1 h-3.5 w-3.5 shrink-0 text-olive transition-transform duration-300 group-open/details:rotate-180 hover:text-olive/80"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-                      </svg>
-                    )}
-                  </div>
-
-                  <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                </summary>
-
-                {/* Hidden references block - expands downward when opened */}
-                {hasReferences && (
-                  <div className="mt-3 border-t border-olive/20 pt-3">
-                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
-                      Suggested resources
-                    </p>
-
-                    <ul className="space-y-2">
-                      {item.references.map((ref) => (
-                        <li
-                          key={ref.name}
-                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white"
-                        >
-                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                            <Image
-                              src={ref.logo}
-                              alt={`${ref.name} logo`}
-                              fill
-                              sizes="40px"
-                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                            />
-                          </div>
-
-                          <span className="text-xs font-medium leading-snug text-foreground">
-                            {ref.name}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-                      These references indicate sources of learning and inspiration.
-                    </p>
-                  </div>
-                )}
-              </details>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-
-    <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
-      <details className="group/details w-full relative">
-        <summary className="list-none outline-none [&::-webkit-details-marker]:hidden cursor-pointer">
-          <div className="relative text-xs font-mono bg-foreground text-background py-1 pl-3 pr-8 rounded shadow-inner text-center">
-            <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
-              Global Intimacy Disorder x Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span>
-            </p>
-
-            {/* Toggle icon positioned in the bottom-right corner */}
-            <svg
-              className="absolute bottom-2 right-2.5 h-3.5 w-3.5 shrink-0 text-orange-400 transition-transform duration-300 group-open/details:rotate-180 hover:text-orange-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m6 9 6 6 6-6" />
-            </svg>
-          </div>
-        </summary>
-
-        {/* Floating absolute dropdown popover to prevent shifting layout */}
-        <div className="absolute left-0 right-0 top-full mt-2 z-30 rounded-xl border border-border bg-card p-4 shadow-xl text-left">
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive">
-            Suggested resources
-          </p>
-
-          <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/consilience.png"
-                  alt="The Consilience Project logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
-              </span>
-            </li>
-
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
-              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                <Image
-                  src="/logos/metacrisis.png"
-                  alt="The Meta-Crisis Institute logo"
-                  fill
-                  sizes="40px"
-                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                />
-              </div>
-
-              <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
-              </span>
-            </li>
-          </ul>
-
-          <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
-            These references explore the intersection of relational capacity and technological acceleration.
-          </p>
-        </div>
-      </details>
-    </div>
-  </div>
-</div>
-
-{/* FOOTER SECTION */}
-<footer className="mt-12 relative rounded-xl border border-amber-200/70 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
-
-  {/* Paper Top Accent Strip */}
-  <div className="absolute top-0 left-6 right-6 h-[2px] dark:bg-stone-700/40 rounded-full" />
-
-  {/* MAIN COLLAPSIBLE */}
-  <details className="group">
-
-    <summary className="cursor-pointer list-none font-serif font-medium text-stone-900 dark:text-stone-100">
-      <span className="inline-flex items-center gap-2">
-        <span className="transition-transform duration-200 group-open:rotate-90">
-          ›
-        </span>
-        About This Table
-      </span>
-    </summary>
-
-    {/* ABOUT THIS TABLE CONTENT */}
-    <div className="mt-4 space-y-4 leading-relaxed font-serif">
-
-      <p className="text-muted-foreground leading-relaxed">
-        Each of the &quot;Foundational&quot; and &quot;Meta-Systemic&quot; dysfunctions
-        that we listed above can be — and in fact are, for many practitioners — 
-        <strong> fields of lifelong research, practice, and transformation</strong>, which is why we
-        chose to highlight a few introductory resources and institutions doing work on
-        these areas. This list we&apos;ve arrived at is not exhaustive, and we hope
-        to keep evolving it as we continue learning, expanding, and deepening our
-        research.
-      </p>
-
-      <p className="text-stone-600 dark:text-stone-400 font-sans">
-        This conceptualization of the metacrisis is heavily informed by our own
-        explorations as well as multiple references on the generator functions of
-        existential risk
-        <a
-          href="#fn-1"
-          className="text-primary hover:underline font-medium"
-        >
-          <sup>[1]</sup>
-        </a>
-        <a
-          href="#fn-2"
-          className="text-primary hover:underline font-medium"
-        >
-          <sup>[2]</sup>
-        </a>
-        , and root causes of our predicament
-        <a
-          href="#fn-3"
-          className="text-primary hover:underline font-medium"
-        >
-          <sup>[3]</sup>
-        </a>
-        –
-        <a
-          href="#fn-9"
-          className="text-primary hover:underline font-medium"
-        >
-          <sup>[9]</sup>
-        </a>
-        , linked below.
-      </p>
-
-      <p className="text-stone-600 dark:text-stone-400 font-sans">
-        Each of these crises and dynamics require a deep dive, and we aim to do so
-        throughout our work, from our upcoming Research and Ecosystem Map to the
-        educational experiments we&apos;re running, so as to better understand the
-        wide range of perspectives, diagnoses and approaches to respond. We believe the constant
-        engagement with these different kinds of analyses can help us embody multiple
-        perspectives at once and learn to hold them in relationship, towards more
-        omni-considerate outlooks.
-      </p>
-
-    </div>
-
-    {/* COLLAPSIBLE REFERENCES */}
-    <details className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-800 text-xs group">
-
-      <summary className="font-medium text-stone-900 dark:text-stone-100 cursor-pointer hover:text-primary list-none flex justify-between items-center select-none py-1">
-        <span className="font-sans text-sm tracking-wide">
-          Main References &amp; Further Reading (9)
-        </span>
-
-        <span className="text-stone-500 group-open:rotate-180 transition-transform duration-200">
-          ▼
-        </span>
-      </summary>
-
-      {/* REFERENCES */}
-      <ol className="mt-4 space-y-3 list-none pl-0 border-l-2 border-stone-200 dark:border-stone-800 pl-4 font-sans">
-
-        {/* [1] */}
-        <li id="fn-1" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [1]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://testing.civilizationemerging.com/solving-generator-function/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Daniel Schmachtenberger - Solving the Generator Functions of
-              Existential Risk
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              📖 Article • 5 min read &amp; 10 min digestion
-            </span>
-          </div>
-        </li>
-
-        {/* [2] */}
-        <li id="fn-2" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [2]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://maxramsahoye.github.io/themetacrisismap/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Max Ramsahoye - The Metacrisis Map
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-emerald-100/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-300/40 dark:border-emerald-800/40">
-              🗺️ Interactive Map • 15 min explore
-            </span>
-          </div>
-        </li>
-
-        {/* [3] */}
-        <li id="fn-3" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [3]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://metacrisis.info/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Life Itself - metacrisis.info
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-cyan-100/60 dark:bg-cyan-950/40 text-cyan-800 dark:text-cyan-300 border border-cyan-300/40 dark:border-cyan-800/40">
-              🌐 Introductory Resource + Paper • 10 min - 1h read
-            </span>
-          </div>
-        </li>
-
-        {/* [4] */}
-        <li id="fn-4" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [4]
-          </span>
-
-          <div className="flex-1 leading-normal space-y-1">
-
-            <div>
-              <span className="text-stone-600 dark:text-stone-400">
-                Center for World Philosophy &amp; Religion -{' '}
-              </span>
-
-              <a
-                href="https://worldphilosophyreligion.substack.com/p/love-or-die"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                Love or Die
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-                📰 Substack • 15 min read
-              </span>
-            </div>
-
-            <div className="text-stone-400 dark:text-stone-600 pl-2">
-              │
-            </div>
-
-            <div>
-              <a
-                href="https://integral-publishers.com/portfolio-items/first-principles-and-first-values-david-j-temple/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                David J. Temple - First Principles &amp; First Values
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-amber-100/60 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border border-amber-300/40 dark:border-amber-800/40">
-                📚 Monograph • 247 pages
-              </span>
-            </div>
-
-          </div>
-        </li>
-
-        {/* [5] */}
-        <li id="fn-5" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [5]
-          </span>
-
-          <div className="flex-1 leading-normal space-y-1">
-
-            <div>
-              <span className="text-stone-600 dark:text-stone-400">
-                Gesturing Towards Decolonial Futures -{' '}
-              </span>
-
-              <a
-                href="https://decolonialfutures.net/house-of-modernity-zine/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                House of Modernity Zine
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-                🎨 Zine • 15 min read + 15 min digestion
-              </span>
-            </div>
-
-            <div className="text-stone-400 dark:text-stone-600 pl-2">
-              │
-            </div>
-
-            <div>
-              <a
-                href="https://decolonialfutures.net/wp-content/uploads/2019/05/theories-of-change-table.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                Theories of Change Table
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-blue-100/60 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800/40">
-                📄 PDF • 5 min read
-              </span>
-            </div>
-
-          </div>
-        </li>
-
-        {/* [6] */}
-        <li id="fn-6" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [6]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://www.youtube.com/watch?v=Mgy9Awoql1s"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Center for Contemplative Research - A Future For Humanity Beyond
-              the Current Metacrisis
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-red-100/60 dark:bg-red-950/40 text-red-800 dark:text-red-300 border border-red-300/40 dark:border-red-800/40">
-              🎬 Video • 2h 30m watch
-            </span>
-          </div>
-        </li>
-
-        {/* [7] */}
-        <li id="fn-7" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [7]
-          </span>
-
-          <div className="flex-1 leading-normal space-y-1">
-
-            <div>
-              <span className="text-stone-600 dark:text-stone-400">
-                Jonathan Rowson (Perspectiva) -{' '}
-              </span>
-
-              <a
-                href="https://perspecteeva.substack.com/p/prefixing-the-world"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                Prefixing the World
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-                📖 Article • 15 min read + 5 min digestion
-              </span>
-            </div>
-
-            <div className="text-stone-400 dark:text-stone-600 pl-2">
-              │
-            </div>
-
-            <div>
-              <a
-                href="https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-primary font-medium"
-              >
-                Tasting the Pickle
-              </a>
-
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-                📖 Article • 45 min read
-              </span>
-            </div>
-
-          </div>
-        </li>
-
-        {/* [8] */}
-        <li id="fn-8" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [8]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://appliedmetatheory.org/wp-content/uploads/2025/07/Mapping-an-Ecology-of-Integrative-Approaches-to-Addressing-the-Metacrisis.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Institute of Applied Meta-Theory - Mapping an Ecology of
-              Integrative Approaches to Addressing the Metacrisis
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-blue-100/60 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border border-blue-300/40 dark:border-blue-800/40">
-              📄 PDF • 1h read
-            </span>
-          </div>
-        </li>
-
-        {/* [9] */}
-        <li id="fn-9" className="flex items-start gap-2.5">
-          <span className="font-mono text-stone-400 dark:text-stone-500 select-none pt-0.5">
-            [9]
-          </span>
-
-          <div className="flex-1 leading-normal">
-            <a
-              href="https://www.linkedin.com/posts/sahana2802_hegemonic-separation-supremacy-activity-7168134153668882432-0igH"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-primary font-medium"
-            >
-              Sahana Chattopadhyay - Deconstructing the Hegemony
-            </a>
-
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 ml-2 rounded-md text-[11px] font-medium bg-stone-200/60 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-stone-300/50 dark:border-stone-700/50">
-              📖 Article • 7 min read
-            </span>
-          </div>
-        </li>
-
-      </ol>
-
-    </details>
-
-  </details>
-
-</footer>
-
-            <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                So, if one were to summarize the dynamics underlying the metacrisis, as articulated by Stephen Reid and adapted by us, we could say:
+                • <em>beyond</em> ourselves, in the worldviews, ontologies and civilizational narratives that shape how reality becomes meaningful and intelligible to us.³
+              </p>
+            </div>
+            <div className="space-y-8">
+              <p className="text-muted-foreground leading-relaxed">
+                In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns influencing our global challenges.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                We understand the metacrisis as unfolding across three interconnected layers:
               </p>
             </div>
 
-<div className="relative my-8 w-full p-6 rounded-xl border border-border bg-card/30">
-  {/* Horizontal Connecting Solid Line (Desktop) */}
-  <div className="hidden md:block absolute top-1/2 left-8 right-8 h-[2px] -translate-y-1/2 bg-crimson/30 z-0 rounded-full" />
+            {/* Diagram Wrapper */}
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
-  <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
-    {/* Box 1 */}
-    <div className="relative flex flex-col items-center justify-center text-center">
-      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        Rivalrous dynamics x Exponential technology
-      </div>
-      {/* Desktop Operator Badge centered in the gap after Box 1 */}
-      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
-          ×
-        </span>
-      </div>
-    </div>
+              {/* 1. THE SYMPTOMATIC LAYER */}
+              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+                <div className="text-center mb-8 border-b border-border pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 1</span>
+                  <h3 className="font-serif text-xl font-semibold text-foreground">The Symptomatic Layer</h3>
+                  <p className="text-sm font-medium text-crimson mt-2">The Polycrisis</p>
+                </div>
 
-    {/* Box 2 */}
-    <div className="relative flex flex-col items-center justify-center text-center">
-      {/* Mobile Vertical Connector with X */}
-      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
-        <div className="h-full w-[2px] bg-crimson/30" />
-        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
-          ×
-        </span>
-      </div>
-      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        Systems that reward externalizing harm onto the commons and the future
-      </div>
-      {/* Desktop Operator Badge centered in the gap after Box 2 */}
-      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
-          ×
-        </span>
-      </div>
-    </div>
+                <div className="flex-grow flex flex-col items-center justify-center my-auto relative">
+                  {/* Layer 1 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-2 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+                    {animationState === 'looping' && inLayer1 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 78) / 22 * 100}%` }} 
+                      />
+                    )}
+                  </div>
 
-    {/* Box 3 */}
-    <div className="relative flex flex-col items-center justify-center text-center">
-      {/* Mobile Vertical Connector with X */}
-      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
-        <div className="h-full w-[2px] bg-crimson/30" />
-        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
-          ×
-        </span>
-      </div>
-      <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        A collapse in our shared capacity to make sense of the world well enough to choose well within it
-      </div>
-      {/* Desktop Operator Badge centered in the gap after Box 3 */}
-      <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background font-mono text-xs font-bold text-foreground shadow-sm">
-          =
-        </span>
-      </div>
-    </div>
+                  <div className="w-full flex flex-col gap-3 relative z-10">
+                    {polycrisisItems.map((item, idx) => {
+                      const isBrokenTarget = brokenItem === idx;
+                      const isShattered = animationState === 'shattering' && isBrokenTarget;
+                      const isReconstructing = animationState === 'reconstructing' && isBrokenTarget;
+                      
+                      const verticalPos = (sweep - 78) / 22 * 100;
+                      const targetY = (idx / 9) * 100;
+                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - targetY) < 15;
 
-    {/* 4th Box - Result (White Background with Black Border) */}
-    <div className="relative flex flex-col items-center justify-center text-center">
-      {/* Mobile Vertical Connector with = */}
-      <div className="relative my-2 flex h-8 w-full items-center justify-center md:hidden">
-        <div className="h-full w-[2px] bg-crimson/30" />
-        <span className="absolute flex h-5 w-5 items-center justify-center rounded-full border border-border bg-background font-mono text-[10px] font-bold text-foreground shadow-sm">
-          =
-        </span>
-      </div>
-      <div className="w-full py-3 px-4 rounded-lg bg-white text-foreground text-l font-serif font-bold shadow-md border-2 border-black">
-        The Metacrisis
-      </div>
-    </div>
-  </div>
-</div>
+                      return (
+                        <div key={idx} className="relative w-full cursor-pointer" onClick={startAnimation}>
+                          <div
+                            className={`p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300
+                              ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}
+                              ${isBrokenTarget && animationState === 'looping' ? 'is-critical' : ''}
+                              ${isReconstructing ? 'is-reconstructing' : ''}
+                              ${isShattered ? 'opacity-0' : 'opacity-100'}`}
+                          >
+                            {item}
+                          </div>
+
+                          {isShattered && (
+                            <div className="absolute inset-0 z-20 pointer-events-none">
+                              <div className="absolute top-0 left-0 w-1/2 h-full shard-1 border border-red-400/50"></div>
+                              <div className="absolute top-0 right-0 w-1/2 h-1/2 shard-2 border border-red-400/50"></div>
+                              <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 shard-3 border border-red-400/50"></div>
+                              <div className="absolute bottom-0 right-0 w-1/2 h-full shard-4 border border-red-400/50"></div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                    
+                    {/* "Etc..." Card */}
+                    {(() => {
+                      const verticalPos = (sweep - 78) / 22 * 100;
+                      const isGlowing = animationState === 'looping' && inLayer1 && Math.abs(verticalPos - 100) < 15;
+                      return (
+                        <div 
+                          className={`w-full p-2.5 rounded-xl border bg-cream text-center text-xs font-medium text-foreground transition-all duration-300 cursor-pointer 
+                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson/30 shadow-sm hover:border-crimson'}`}
+                          onClick={startAnimation}
+                        >
+                          Etc...
+                        </div>
+                      );
+                    })()}
+                  </div>
+                </div>
+                <div className="pt-6 mt-8 invisible text-xs">Spacer</div>
+              </div>
+
+              {/* 2. THE STRUCTURAL LAYER */}
+              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative">
+                
+                {/* Horizontal Bridges: Layer 2 -> Layer 1 */}
+                <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+                  {[24, 44, 64, 84].map((topPos, i) => (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-crimson/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && inBridge21 && (
+                        <div 
+                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+                          style={{ right: `${(sweep - 62) / 16 * 100}%` }} 
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                <div 
+                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-crimson hover:text-crimson transition-colors"
+                  onClick={startAnimation}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                </div>
+
+                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
+                  <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
+                  <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
+                </div>
+
+                <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+                  {/* Layer 2 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-crimson/20 -translate-x-1/2 z-0 rounded-full">
+                     {animationState === 'looping' && inLayer2 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 38) / 24 * 100}%` }} 
+                      />
+                    )}
+                  </div>
+
+                  <div className="w-full flex flex-col gap-4 relative z-10">
+                    {[
+                      { title: 'Crisis of Power', desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.' },
+                      { title: 'Crisis of Incentives', desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.' },
+                      { title: 'Crisis of Trust', desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.' },
+                      { title: 'Crisis of Complexity', desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', sup: '5' }
+                    ].map((item, i) => {
+                      const verticalPos = (sweep - 38) / 24 * 100;
+                      const targetY = [12, 37, 62, 87][i];
+                      const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
+
+                      return (
+                        <div 
+                          key={i} 
+                          className={`w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
+                            ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
+                        >
+                          <h4 className="font-serif font-medium text-foreground">
+                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                          </h4>
+                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+                
+                <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+                  <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+                    Rivalrous dynamics + Exponential tech = <span className="text-crimson font-semibold">Death of humanity</span><sub className="text-[8px] opacity-60 ml-0.5">4</sub>
+                  </p>
+                </div>
+              </div>
+
+              {/* 3. THE ONTOLOGICAL-CULTURAL LAYER */}
+              <div className="flex flex-col h-full border border-dashed border-border p-6 rounded-xl bg-card/30 relative md:col-span-2 lg:col-span-1">
+                
+                {/* Horizontal Bridges: Layer 3 -> Layer 2 */}
+                <div className="hidden lg:block absolute -left-8 top-0 bottom-[96px] w-8 z-0">
+                  {[24, 44, 64, 84].map((topPos, i) => (
+                    <div key={i} className="absolute w-full border-t-2 border-dashed border-olive/30 overflow-hidden" style={{ top: `${topPos}%` }}>
+                      {animationState === 'looping' && inBridge32 && (
+                        <div 
+                          className="absolute -top-[1px] h-[4px] w-[16px] bg-crimson shadow-[0_0_10px_rgba(220,20,60,0.8)] rounded-full -translate-y-1/2" 
+                          style={{ right: `${(sweep - 22) / 16 * 100}%` }} 
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                <div 
+                  className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-background border border-border rounded-full p-1 text-muted-foreground shadow-sm cursor-pointer hover:border-olive hover:text-olive transition-colors"
+                  onClick={startAnimation}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                </div>
+
+                <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
+                  <h3 className="font-serif text-xl font-semibold text-foreground">The Cultural-Ontological Layer</h3>
+                  <p className="text-sm font-medium text-olive mt-2">
+                    Foundational Dysfunctions<sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">1</sub>
+                  </p>
+                </div>
+
+                <div className="flex-grow flex flex-col items-center justify-center my-auto relative w-full pb-6">
+                  {/* Layer 3 Vertical Axis */}
+                  <div className="absolute left-1/2 top-4 bottom-0 w-[2px] bg-olive/20 -translate-x-1/2 z-0 rounded-full">
+                     {animationState === 'looping' && inLayer3 && (
+                      <div 
+                        className="absolute left-1/2 w-[4px] h-12 bg-crimson shadow-[0_0_12px_rgba(220,20,60,0.8)] rounded-full -translate-x-1/2 -translate-y-1/2"
+                        style={{ top: `${(sweep - 0) / 22 * 100}%` }} 
+                      />
+                    )}
+                  </div>
+
+                  <div className="w-full flex flex-col gap-4 relative z-10">
+                    {[
+                      { title: 'Crisis of Perception', desc: 'Persistent delusions of separation, misapprehending nature and reality.' },
+                      { title: 'Crisis of Relationship', desc: 'The loss of our intimate relationships with all life: ourselves, others, the world and the sacred. ' },
+                      { title: 'Crisis of Value', desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', sup: '2' },
+                      { title: 'Crisis of Capacity', desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.' }
+                    ].map((item, i) => {
+                      const verticalPos = (sweep - 0) / 22 * 100;
+                      const targetY = [12, 37, 62, 87][i];
+                      const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
+
+                      return (
+                        <div 
+                          key={i} 
+                          className={`w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
+                            ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
+                        >
+                          <h4 className="font-serif font-medium text-foreground">
+                            {item.title}{item.sup && <sub className="text-[9px] font-sans font-normal opacity-60 ml-0.5">{item.sup}</sub>}
+                          </h4>
+                          <p className="mt-1 text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-border text-center relative z-10 -mt-6">
+                  <p className="text-xs font-mono bg-foreground text-background py-2 px-3 rounded shadow-inner relative z-20">
+                    Global Intimacy Disorder + Exponential tech = <span className="text-orange-400 font-semibold">Death of our humanity</span><sub className="text-[8px] opacity-60 ml-0.5">3</sub>
+                  </p>
+                </div>
+              </div>
+
+            </div>
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.<span className="group relative inline-block cursor-help">
-      <span className="font-semibold text-crimson text-sm">
-        <sup><em>6</em></sup>
-      </span>
-      <span className="invisible absolute bottom-full left-1/2 z-50 mb-2 w-100 -translate-x-1/2 rounded-lg bg-[#fdfbf7] p-3 text-center text-sm text-foreground shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-      <div>
-      <img
-        src="https://cdn.prod.website-files.com/5f0e1294f002b1bb26e1f304/6273d53d162e559ba47d5d65_Wisdom%20Gap%20GIF%202.0.gif"
-        alt="Wisdom Gap"
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-      />
-    </div>
-    <br />
-        Introduced by Tristan Harris from the Center for Humane Technology {" "}
-  <a
-    href="https://www.youtube.com/watch?v=CIkcsf-JR1Q"
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="underline hover:opacity-60"
-  >in this short video.</a>
-        <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
-      </span>
-    </span>
-    {" "} We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
-              </p>  
+                At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.⁵ We believe understanding these metacrisis dynamics is essential because the depth of our response must correspond to the depth of the predicament itself.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
                 If the roots of the crisis are ontological, relational, developmental and spiritual, then responses focused solely at the level of symptoms or systems will remain insufficient. The challenge before us, therefore, is not only to redesign systems and institutions, but to become more wise.
               </p>
@@ -1605,38 +669,8 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 1. The Orientation Gap
-                <svg
-  className="h-4 w-4 shrink-0 opacity-75 text-olive"
-  viewBox="-3 -3 26 26"
-  fill="none"
-  stroke="currentColor"
-  strokeWidth="1.5"
-  strokeLinecap="round"
->
-  <g transform="rotate(22.5 10 10)">
-    {/* Semi-transparent filled water channel */}
-    <path
-      d="M11 2C8 2 5.5 5.5 5.5 10C5.5 14.5 3 18 1 18 L9 18 C12 18 14.5 14.5 14.5 10 C14.5 5.5 17 2 19 2 Z"
-      fill="currentColor"
-      fillOpacity="0.12"
-      stroke="none"
-    />
-
-    {/* Outer banks */}
-    <path d="M11 2C8 2 5.5 5.5 5.5 10C5.5 14.5 3 18 1 18" />
-    <path d="M19 2C17 2 14.5 5.5 14.5 10C14.5 14.5 12 18 9 18" />
-
-    {/* Inner current dash */}
-    <path
-      d="M14 6C12.5 7.5 11 9 10 12"
-      strokeWidth="1"
-      strokeDasharray="1.5 2.5"
-      opacity="0.8"
-    />
-  </g>
-</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -1722,12 +756,8 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 2. The Aspiration Gap
-                <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
-                <circle cx="12" cy="12" r="4" fill="currentColor" fillOpacity="0.2" />
-                <path d="M12 3V5M12 19V21M3 12H5M19 12H21M5.64 5.64L7.05 7.05M16.95 16.95L18.36 18.36M5.64 18.36L7.05 16.95M16.95 7.05L18.36 5.64" />
-                </svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -1810,20 +840,10 @@ export default function TheoryOfChangePage() {
       <details className="group overflow-hidden rounded-xl border border-olive/20 bg-background transition-all duration-300 open:border-olive/40 open:shadow-[0_16px_40px_rgba(17,24,39,0.05)]">
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
-  <div>
-    <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
-      <span>3. The Formation Gap</span>
-
-      <svg
-        className="h-3.5 w-3.5 shrink-0 text-olive opacity-70"
-        viewBox="0 0 32 32"
-        fill="none"
-        stroke="currentColor"
-      >
-        <path d="M16 2 L30 16 L16 30 L2 16 Z" strokeWidth="2.5" />
-        <path d="M16 8 L24 16 L16 24 L8 16 Z" fill="currentColor" />
-      </svg>
-    </span>
+            <div>
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
+                3. The Formation Gap
+              </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
                 How do we become such humans?
@@ -1941,18 +961,8 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 4. The Integration Gap
-                <svg className="h-4 w-4 shrink-0 opacity-75 text-olive" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-  {/* Layered Outer Vault */}
-  <path d="M2 18C2 9 6 3 10 2C14 3 18 9 18 18" />
-  {/* Second Tier Arch */}
-  <path d="M5 18C5 11 7.5 6 10 5C12.5 6 15 11 15 18" strokeWidth="1.25" fill="currentColor" fillOpacity="0.1" />
-  {/* Third Tier Arch */}
-  <path d="M8 18C8 13 9 9 10 8C11 9 12 13 12 18" strokeWidth="1" fill="currentColor" fillOpacity="0.2" />
-  {/* Base Tie-Beam Line */}
-  <line x1="2" y1="18" x2="18" y2="18" strokeWidth="1" opacity="0.5" />
-</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -2044,14 +1054,8 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 5. The Communal Development Gap
-                <svg className="h-3.5 w-7 shrink-0 opacity-75 text-olive" viewBox="0 0 16 12" fill="none" stroke="currentColor">
-  <path d="M8 1 L14.5 6 L8 11 L1.5 6 Z" strokeWidth="1" /> 
-  <path d="M8 3.5 L11.5 6 L8 8.5 L4.5 6 Z" strokeWidth="0.8" fill="currentColor" fillOpacity="0.15" />
-  <circle cx="1.5" cy="6" r="0.75" fill="currentColor" />  
-  <circle cx="14.5" cy="6" r="0.75" fill="currentColor" />
-</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -2069,7 +1073,7 @@ export default function TheoryOfChangePage() {
             endeavor, even though many capacities required by the metacrisis can
             only be cultivated together. Communities themselves must become the
             unit of development, not support structures for individual growth,
-            but bodies capable of perceiving, sensing and acting as one - without suppressing individuality, difference and uniqueness.
+            but bodies capable of perceiving, sensing and acting as one.
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm font-medium text-olive">
@@ -2145,14 +1149,8 @@ export default function TheoryOfChangePage() {
         <summary className="cursor-pointer list-none px-6 py-6 outline-none md:px-8 md:py-7 [&::-webkit-details-marker]:hidden">
           <div className="flex items-start justify-between gap-6">
             <div>
-              <span className="inline-flex items-center gap-3 whitespace-nowrap text-sm font-medium uppercase tracking-[0.12em] text-olive">
+              <span className="block text-sm font-medium uppercase tracking-[0.12em] text-olive">
                 6. The Civilizational Gap
-                <svg className="h-4 w-5 shrink-0 opacity-75 text-olive" viewBox="0 0 24 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-  <path d="M12 2C10 6 9 10 12 14C15 10 14 6 12 2Z" fill="currentColor" fillOpacity="0.2" />
-  <path d="M12 14C8 13 4 9 3 6C6 6 10 8 12 14Z" fill="currentColor" fillOpacity="0.15" />
-  <path d="M12 14C16 13 20 9 21 6C18 6 14 8 12 14Z" fill="currentColor" fillOpacity="0.15" />
-  <path d="M2 14C6 14 9 12.5 12 14C15 12.5 18 14 22 14" strokeWidth="1" />
-</svg>
               </span>
 
               <p className="mt-2 font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
@@ -2283,9 +1281,7 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 3. The Developmental Hypothesis */}
-<section
-  id="developmental-hypothesis"
-  className="scroll-mt-24 bg-foreground py-24 text-background lg:py-32">
+<section className="bg-foreground py-24 text-background lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
@@ -2310,7 +1306,7 @@ export default function TheoryOfChangePage() {
     {/* Main Content */}
     <div className="mt-10 space-y-8 leading-relaxed text-background/90">
       <p>
-        The metacrisis cannot be adequately responded to with new
+        We believe the metacrisis cannot be adequately responded to with new
         technologies, policies, or institutions alone. The underlying ways of
         seeing, being, knowing, and relating that continue to generate and
         reproduce the metacrisis cannot, by themselves, create the conditions
@@ -2318,11 +1314,9 @@ export default function TheoryOfChangePage() {
       </p>
 
       <p>
-        Every crisis holds the potential to become a chrysalis. A fertile environment that holds the nutrients required for a process of deep transfiguration. We believe this moment calls for profound human and civilizational transformation
+        This moment calls for profound human and civilizational transformation
         in how we understand ourselves, reality, and our relationship with all
-        life. </p>
-
-        <p> Many of the dominant structures of modern civilization —
+        life. Many of the dominant structures of modern civilization —
         educational systems, media environments, economies, technologies, and
         cultural norms — continually shape our desires, identities, ambitions,
         and behaviors in ways that reinforce fragmentation, extraction,
@@ -2343,7 +1337,7 @@ export default function TheoryOfChangePage() {
           ontological grounding, and collective coordination capable of opening
           new possibilities for how we live, relate, and act together —
           reducing the existential risks before us while helping create the
-          conditions for a radically more life-affirming civilization to emerge.
+          conditions for a more life-affirming civilization to emerge.
         </p>
       </div>
 
@@ -2432,10 +1426,7 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 4. The Response */}
-{/* 4. The Response */}
-<section
-  id="response"
-  className="scroll-mt-24 bg-cream py-24 lg:py-32">
+<section className="bg-cream py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
@@ -2740,9 +1731,7 @@ export default function TheoryOfChangePage() {
 </section>
 
 {/* 5. The Civilizational Horizon */}
-<section
-  id="civilizational-horizon"
-  className="scroll-mt-24 bg-background py-24 lg:py-32">
+<section className="bg-background py-24 lg:py-32">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">

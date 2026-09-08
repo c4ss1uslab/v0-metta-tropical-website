@@ -1,10 +1,8 @@
-import React from "react";
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from "next"
-import ParallaxIncenseSection from "@/components/incense";
 
 export const metadata: Metadata = {
   title: "About | Metta Tropical Collective",
@@ -141,14 +139,14 @@ export default function AboutPage() {
         </p>
 
         {/* Sacred Highlight */}
-        <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
-  <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
-    The sacred, then, is not another realm we must escape into. It is
-    the ground and depth of life itself — always here, yet becoming more
-    available to us as we learn to perceive, sense, feel, and
-    participate in reality more deeply.
-  </p>
-</div>
+        <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+          <p className="leading-relaxed text-muted-foreground">
+            The sacred, then, is not another realm we must escape into. It is
+            the ground and depth of life itself — always here, yet becoming more
+            available to us as we learn to perceive, sense, feel, and
+            participate in reality more deeply.
+          </p>
+        </div>
 
         <p className="leading-relaxed text-muted-foreground">
           In times of profound rupture, these ways of being in relationship
@@ -169,11 +167,9 @@ export default function AboutPage() {
           we can play in the service of life.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          <span className="font-medium text-foreground">
-            It is from this ground of sacredness, soulfulness, and intimacy with
-          life that our work begins.
-          </span> This is the ground that helps us hold the
+        <p className="font-medium leading-relaxed text-foreground">
+          It is from this ground of sacredness, soulfulness, and intimacy with
+          life that our work begins. This is the ground that helps us hold the
           grief and rupture of the metacrisis without turning away — allowing
           what might otherwise become numbness or despair to be metabolized
           into deeper responsibility, devotion, and service to the world trying
@@ -206,7 +202,7 @@ export default function AboutPage() {
                     Why Metta?
                   </h2>
                   <br />
-                  <span className="text-crimson font-medium text-sm tracking-wide uppercase">The Orientation</span>
+                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Orientation</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -221,7 +217,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <div className="pl-6 border-l-2 border-cyan">
+                  <div className="pl-6 border-l-2 border-[#D9A01B]">
                     <h3 className="font-serif text-xl font-medium text-foreground">Meta-awareness</h3>
                     <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
                       The capacity to step back, to sense into the deeper patterns shaping our world, systems and crises. Meta as within (interiority), meta as between (relationality), and meta as beyond (different ways of seeing and being).
@@ -255,7 +251,7 @@ export default function AboutPage() {
                     Why Tropical?
                   </h2>
                   <br />
-                  <span className="text-[#D9A01B] font-medium text-sm tracking-wide uppercase">The Territory</span>
+                  <span className="text-olive font-medium text-sm tracking-wide uppercase">The Territory</span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -349,23 +345,14 @@ export default function AboutPage() {
 
     </div>
   </div>
-
-  <div className="w-full mt-20 overflow-hidden opacity-30">
-      <svg className="w-full h-8 text-[#8b0000]" preserveAspectRatio="none" viewBox="0 0 100 20">
-        <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-        <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
-      </svg>
-    </div>
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-<section className="relative overflow-x-clip -mt-6 bg-cream min-h-[200vh]">
-  {/* Dynamic Keyframes injected safely into the render tree */}
-    <ParallaxIncenseSection>
+<section className="bg-background py-16 lg:py-24">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <div>
+    <div className="space-y-8">
       {/* Header */}
-      <div className="mb-8 pl-12 pt-16 sm:pl-16 md:pl-0 md:pt-0">
+      <div>
         <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
           Who We Must Become
         </h2>
@@ -376,14 +363,14 @@ export default function AboutPage() {
       </div>
 
       {/* Opening */}
-      <div className="mb-6 space-y-6">
+      <div className="space-y-6">
         <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
           Every culture needs images of the human being worth becoming.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
-          Yet at a time asking so much of us, the images we have inherited
-          feel too small for the depth of transformation required.
+          Yet at a time asking so much of us, the images we have inherited feel
+          too small for the depth of transformation required.
         </p>
 
         <p className="leading-relaxed text-muted-foreground">
@@ -399,8 +386,8 @@ export default function AboutPage() {
       </div>
 
       {/* Bodhisattva Highlight */}
-      <div className="mb-6 border-l-2 border-[#D9A01B] py-1 pl-6 md:pl-8">
-        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+      <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+        <p className="leading-relaxed text-muted-foreground">
           For the bodhisattva, awakening and service to the world become
           inseparable. To awaken is to see through the illusion of being a
           separate self. The suffering of other people, other species, and the
@@ -411,9 +398,9 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* Main Reflection (Block display for the float-right Buddha) */}
-      <div className="block">
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+      {/* Main Reflection */}
+      <div className="space-y-6">
+        <p className="leading-relaxed text-muted-foreground">
           The bodhisattva trains the heart to become boundless: to meet each
           being with the tenderness a mother offers her only child, to recognize
           the irreducible worth of every life, and to expand their love and
@@ -422,21 +409,18 @@ export default function AboutPage() {
           it more deeply, and find ways to wisely respond to it.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="leading-relaxed text-muted-foreground">
           <strong className="font-medium text-foreground">
             Why does such an aspiration matter?
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
           Humanity is nowhere near the fullness of its individual and collective
-          potential. And{" "}
-          <i>
-            without an image that reaches that far, we not only forsake our
-            most sacred capacity of becoming, but of the more beautiful
-            world wanting to be born.
-          </i>
+          potential. And without an image that reaches that far, we not only
+          forsake our most sacred capacity of becoming, but of the more beautiful
+          world wanting to be born.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="leading-relaxed text-muted-foreground">
           We are not claiming the image of the Bodhisattva, though it has shaped
           everything we are attempting. We are saying that our culture offers
           nothing of that height to grow toward. And a culture that cannot
@@ -444,24 +428,13 @@ export default function AboutPage() {
           communities and developmental pathways capable of cultivating them.
         </p>
 
-        {/* Floated Buddha Image - allows text to wrap beautifully beside it */}
-        <div className="relative z-0 float-right mb-4 ml-6 mt-18 h-48 w-48 -mr-6 sm:h-56 sm:w-56 sm:-mr-10 md:h-64 md:w-64 md:-mr-16 lg:h-72 lg:w-72 lg:-mr-24 xl:-mr-32">
-          <Image
-            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
-            alt="Buddha"
-            fill
-            sizes="(min-width: 1024px) 288px, (min-width: 768px) 256px, 224px"
-            className="object-contain object-bottom"
-          />
-        </div>
-
-        <p className="mb-6 font-medium leading-relaxed text-foreground">
+        <p className="font-medium leading-relaxed text-foreground">
           This is not a small thing missing from our times. It is close to the
           heart of what has gone wrong — and it is part of what our work exists
           to restore.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="leading-relaxed text-muted-foreground">
           If we are to participate meaningfully in a deeper civilizational
           transition, we believe our time will require contemporary expressions
           of the Bodhisattva aspiration — and new pathways of formation capable
@@ -472,7 +445,7 @@ export default function AboutPage() {
           to the whole.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="leading-relaxed text-muted-foreground">
           We walk on the footsteps of others who have also sensed the need for
           images of human possibility adequate to the demands of their time —
           whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
@@ -482,13 +455,22 @@ export default function AboutPage() {
           helping us respond to these times with greater wisdom, love, courage
           and responsibility.
         </p>
+      </div>
 
-        {/* Clears the float at the end of the section so subsequent content doesn't wrap around the Buddha */}
-        <div className="clear-both"></div>
+      {/* Buddha Image */}
+      <div className="flex justify-end pt-2">
+        <div className="relative h-44 w-44 overflow-hidden sm:h-52 sm:w-52 md:h-60 md:w-60">
+          <Image
+            src="https://i.postimg.cc/J0k3gmMf/Buddha.webp"
+            alt="Buddha"
+            fill
+            sizes="(min-width: 768px) 240px, (min-width: 640px) 208px, 176px"
+            className="object-contain object-bottom"
+          />
+        </div>
       </div>
     </div>
   </div>
-  </ParallaxIncenseSection>
 </section>
 
 {/* Our Vows */}

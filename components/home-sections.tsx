@@ -2,125 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { images } from "@/lib/images"
 
-const SacredMaraca = () => (
-  <div className="relative flex h-full w-full items-center justify-center">
-    <div
-      className="relative flex flex-col items-center"
-      style={{
-        animation: "shamanicShake 3s infinite ease-in-out",
-        transformOrigin: "50% 75%",
-      }}
-    >
-      {/* Feathers */}
-      <div className="absolute -top-2 flex h-3 w-6 items-end justify-center pointer-events-none z-20">
-        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-amber-300 shadow-sm -rotate-[25deg] origin-bottom" />
-        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-red-600 to-orange-400 shadow-sm -rotate-[5deg] origin-bottom" />
-        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-teal-600 to-cyan-400 shadow-sm rotate-[10deg] origin-bottom" />
-        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-yellow-300 shadow-sm rotate-[28deg] origin-bottom" />
-      </div>
-
-      {/* Maraca body */}
-      <div className="relative z-10 flex h-11 w-9 flex-col items-center justify-center rounded-full border border-neutral-700/30 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
-        {/* Red band */}
-        <div className="absolute top-2 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-red-800 via-red-700 to-red-900 opacity-90" />
-
-        {/* Symbol */}
-        <div className="relative my-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-dashed border-amber-500/30">
-          <div className="absolute h-px w-2 bg-amber-500/20" />
-          <div className="absolute h-2 w-px bg-amber-500/20" />
-        </div>
-
-        {/* Green/teal band */}
-        <div className="absolute bottom-2.5 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 opacity-80" />
-      </div>
-
-      {/* Handle */}
-      <div className="z-0 -mt-1 h-8 w-1.5 rounded-b-sm bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 shadow-sm" />
-    </div>
-
-    {/* Ground shadow */}
-    <div
-      className="absolute bottom-3 h-1 w-8 rounded-full bg-black/60 blur-[2px]"
-      style={{
-        animation: "shadowTrack 3s infinite ease-in-out",
-      }}
-    />
-  </div>
-);
-
-<style>{`
-  @keyframes shamanicShake {
-    0%, 72%, 100% {
-      transform: translate3d(0, 0, 0) rotate(0deg);
-    }
-
-    74% {
-      transform: translate3d(-2px, -1px, 0) rotate(-4deg);
-    }
-
-    77% {
-      transform: translate3d(2.5px, 0.5px, 0) rotate(4deg);
-    }
-
-    80% {
-      transform: translate3d(-3px, 0, 0) rotate(-5deg);
-    }
-
-    83% {
-      transform: translate3d(2.5px, -0.5px, 0) rotate(4deg);
-    }
-
-    86% {
-      transform: translate3d(-1.5px, 0, 0) rotate(-2.5deg);
-    }
-
-    89% {
-      transform: translate3d(1px, 0, 0) rotate(1.5deg);
-    }
-
-    92% {
-      transform: translate3d(0, 0, 0) rotate(0deg);
-    }
-  }
-
-  @keyframes shadowTrack {
-    0%, 72%, 100% {
-      transform: translateX(0) scaleX(1);
-      opacity: 0.6;
-    }
-
-    74% {
-      transform: translateX(-2px) scaleX(0.9);
-      opacity: 0.5;
-    }
-
-    77% {
-      transform: translateX(2px) scaleX(1.1);
-      opacity: 0.7;
-    }
-
-    80% {
-      transform: translateX(-2px) scaleX(0.9);
-      opacity: 0.5;
-    }
-
-    83% {
-      transform: translateX(1.5px) scaleX(1.05);
-      opacity: 0.65;
-    }
-
-    86% {
-      transform: translateX(-1px) scaleX(0.95);
-      opacity: 0.55;
-    }
-
-    92% {
-      transform: translateX(0) scaleX(1);
-      opacity: 0.6;
-    }
-  }
-`}</style>
-
 export function HeroSection() {
   return (    
 <section className="relative min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-start overflow-hidden bg-cream"> 
@@ -301,7 +182,7 @@ const lineages = [
     title: "Ancestral Ways of Being",
     description:
       "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
-    icon: <SacredMaraca />,
+    icon: "https://i.postimg.cc/rFFDN4hp/Cocar-INdigena.jpg",
     inspirations: [
       {
         name: "Kilombo Tenondé",
@@ -641,23 +522,17 @@ export function IntroductionSection() {
           >
             <div>
               {/* Optional lineage icon */}
-{lineage.icon && (
-  <div className="absolute right-4 top-4 h-20 w-20">
-    {typeof lineage.icon === 'string' ? (
-      <Image
-        src={lineage.icon}
-        alt={`${lineage.title} lineage symbol`}
-        fill
-        sizes="80px"
-        className="object-cover"
-      />
-    ) : (
-      <div className="flex h-full w-full items-center justify-center">
-        {lineage.icon}
-      </div>
-    )}
-  </div>
-)}
+              {lineage.icon && (
+                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
+                  <Image
+                    src={lineage.icon}
+                    alt={`${lineage.title} lineage symbol`}
+                    fill
+                    sizes="56px"
+                    className="object-cover"
+                  />
+                </div>
+              )}
 
               <div className={lineage.icon ? "pr-16" : ""}>
                 <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
