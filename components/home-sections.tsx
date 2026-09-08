@@ -2,125 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { images } from "@/lib/images"
 
-const SacredMaraca = () => (
-  <div className="relative flex h-full w-full items-center justify-center">
-    <div
-      className="relative flex flex-col items-center"
-      style={{
-        animation: "shamanicShake 3s infinite ease-in-out",
-        transformOrigin: "50% 75%",
-      }}
-    >
-      {/* Feathers */}
-      <div className="absolute -top-2 flex h-3 w-6 items-end justify-center pointer-events-none z-20">
-        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-amber-300 shadow-sm -rotate-[25deg] origin-bottom" />
-        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-red-600 to-orange-400 shadow-sm -rotate-[5deg] origin-bottom" />
-        <div className="h-3.5 w-1 rounded-t-full bg-gradient-to-t from-teal-600 to-cyan-400 shadow-sm rotate-[10deg] origin-bottom" />
-        <div className="h-3 w-0.5 rounded-t-full bg-gradient-to-t from-amber-500 to-yellow-300 shadow-sm rotate-[28deg] origin-bottom" />
-      </div>
-
-      {/* Maraca body */}
-      <div className="relative z-10 flex h-11 w-9 flex-col items-center justify-center rounded-full border border-neutral-700/30 bg-gradient-to-b from-stone-800 via-stone-700 to-stone-900 shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
-        {/* Red band */}
-        <div className="absolute top-2 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-red-800 via-red-700 to-red-900 opacity-90" />
-
-        {/* Symbol */}
-        <div className="relative my-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-dashed border-amber-500/30">
-          <div className="absolute h-px w-2 bg-amber-500/20" />
-          <div className="absolute h-2 w-px bg-amber-500/20" />
-        </div>
-
-        {/* Green/teal band */}
-        <div className="absolute bottom-2.5 h-1.5 w-full border-y border-stone-950/20 bg-gradient-to-r from-teal-800 via-emerald-700 to-teal-900 opacity-80" />
-      </div>
-
-      {/* Handle */}
-      <div className="z-0 -mt-1 h-8 w-1.5 rounded-b-sm bg-gradient-to-b from-amber-900 via-amber-950 to-stone-950 shadow-sm" />
-    </div>
-
-    {/* Ground shadow */}
-    <div
-      className="absolute bottom-3 h-1 w-8 rounded-full bg-black/60 blur-[2px]"
-      style={{
-        animation: "shadowTrack 3s infinite ease-in-out",
-      }}
-    />
-  </div>
-);
-
-<style>{`
-  @keyframes shamanicShake {
-    0%, 72%, 100% {
-      transform: translate3d(0, 0, 0) rotate(0deg);
-    }
-
-    74% {
-      transform: translate3d(-2px, -1px, 0) rotate(-4deg);
-    }
-
-    77% {
-      transform: translate3d(2.5px, 0.5px, 0) rotate(4deg);
-    }
-
-    80% {
-      transform: translate3d(-3px, 0, 0) rotate(-5deg);
-    }
-
-    83% {
-      transform: translate3d(2.5px, -0.5px, 0) rotate(4deg);
-    }
-
-    86% {
-      transform: translate3d(-1.5px, 0, 0) rotate(-2.5deg);
-    }
-
-    89% {
-      transform: translate3d(1px, 0, 0) rotate(1.5deg);
-    }
-
-    92% {
-      transform: translate3d(0, 0, 0) rotate(0deg);
-    }
-  }
-
-  @keyframes shadowTrack {
-    0%, 72%, 100% {
-      transform: translateX(0) scaleX(1);
-      opacity: 0.6;
-    }
-
-    74% {
-      transform: translateX(-2px) scaleX(0.9);
-      opacity: 0.5;
-    }
-
-    77% {
-      transform: translateX(2px) scaleX(1.1);
-      opacity: 0.7;
-    }
-
-    80% {
-      transform: translateX(-2px) scaleX(0.9);
-      opacity: 0.5;
-    }
-
-    83% {
-      transform: translateX(1.5px) scaleX(1.05);
-      opacity: 0.65;
-    }
-
-    86% {
-      transform: translateX(-1px) scaleX(0.95);
-      opacity: 0.55;
-    }
-
-    92% {
-      transform: translateX(0) scaleX(1);
-      opacity: 0.6;
-    }
-  }
-`}</style>
-
 export function HeroSection() {
   return (    
 <section className="relative min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-start overflow-hidden bg-cream"> 
@@ -220,23 +101,23 @@ const lineages = [
     inspirations: [
       {
         name: "Plum Village",
-        logo: "/logos/plum-village.png",
-      },
-      {
-        name: "CCARE — Center for Compassion and Altruism Research and Education",
-        logo: "/logos/ccare.png",
-      },
-      {
-        name: "Vipassana — Goenka Tradition",
-        logo: "/logos/vipassana-goenka.png",
-      },
-      {
-        name: "The Center for World Philosophy & Religion",
-        logo: "/logos/center-world-philosophy-religion.png",
-      },
-      {
-        name: "Great Vow Zen Monastery",
-        logo: "/logos/great-vow-zen-monastery.png",
+    logo: images.plumvillage,
+  },
+  {
+    name: "CCARE — Center for Compassion and Altruism Research and Education",
+    logo: images.ccare,
+  },
+  {
+    name: "Vipassana — Goenka Tradition",
+    logo: images.vipassana,
+  },
+  {
+    name: "The Center for World Philosophy & Religion",
+    logo: images.cwpr,
+  },
+  {
+    name: "Great Vow Zen Monastery",
+    logo: images.greatvow,
       },
     ],
   },
@@ -248,23 +129,23 @@ const lineages = [
     inspirations: [
       {
         name: "Schumacher College",
-        logo: "/logos/schumacher-college.png",
-      },
-      {
-        name: "Warm Data Lab",
-        logo: "/logos/warm-data-lab.png",
-      },
-      {
-        name: "The Civilization Research Institute",
-        logo: "/logos/civilization-research-institute.png",
-      },
-      {
-        name: "Gesturing Towards Decolonial Futures",
-        logo: "/logos/gtdf.png",
-      },
-      {
-        name: "Perspectiva",
-        logo: "/logos/perspectiva.png",
+      logo: images.schumacher,
+    },
+    {
+      name: "Warm Data Lab",
+      logo: images.warmdata,
+    },
+    {
+      name: "The Civilization Research Institute",
+      logo: images.civilizationresearchinstitute,
+    },
+    {
+      name: "Gesturing Towards Decolonial Futures",
+      logo: images.gtdf,
+    },
+    {
+      name: "Perspectiva",
+      logo: images.perspectiva,
       },
     ],
   },
@@ -275,24 +156,24 @@ const lineages = [
       "The fields of human development, depth psychology, parts work, trauma integration, emotional regulation, and relational practice — which help us understand how human beings actually grow up, mature, and come to embody responsible ways of relating to all life.",
     inspirations: [
       {
-        name: "Aletheia Coaching",
-        logo: "/logos/aletheia-coaching.png",
-      },
-      {
-        name: "Internal Family Systems",
-        logo: "/logos/internal-family-systems.png",
-      },
-      {
-        name: "Transformational Connection",
-        logo: "/logos/transformational-connection.png",
-      },
-      {
-        name: "ART International — Authentic Relating Training",
-        logo: "/logos/art-international.png",
-      },
-      {
-        name: "Animas Valley Institute",
-        logo: "/logos/animas-valley-institute.png",
+      name: "Aletheia Coaching",
+      logo: images.aletheia,
+    },
+    {
+      name: "Internal Family Systems",
+      logo: images.internalfamilysystems,
+    },
+    {
+      name: "Transformational Connection",
+      logo: images.transformationalconnection,
+    },
+    {
+      name: "ART International — Authentic Relating Training",
+      logo: images.ARTauthenticrelating,
+    },
+    {
+      name: "Animas Valley Institute",
+      logo: images.animasvalley,
       },
     ],
   },
@@ -301,27 +182,26 @@ const lineages = [
     title: "Ancestral Ways of Being",
     description:
       "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
-    icon: <SacredMaraca />,
     inspirations: [
       {
-        name: "Kilombo Tenondé",
-        logo: "/logos/kilombo-tenonde.png",
-      },
-      {
-        name: "Tenondé Porã",
-        logo: "/logos/tenonde-pora.png",
-      },
-      {
-        name: "Ciclo Selvagem",
-        logo: "/logos/ciclo-selvagem.png",
-      },
-      {
-        name: "Teia dos Povos",
-        logo: "/logos/teia-dos-povos.png",
-      },
-      {
-        name: "Instituto Favela da Paz",
-        logo: "/logos/instituto-favela-da-paz.png",
+              name: "Kilombo Tenondé",
+      logo: images.kilombotenonde,
+    },
+    {
+      name: "Tenondé Porã",
+      logo: images.tenondepora,
+    },
+    {
+      name: "Ciclo Selvagem",
+      logo: images.selvagem,
+    },
+    {
+      name: "Teia dos Povos",
+      logo: images.teiadospovos,
+    },
+    {
+      name: "Instituto Favela da Paz",
+      logo: images.faveladapaz,
       },
     ],
   },
@@ -720,7 +600,7 @@ export function IntroductionSection() {
                           alt={`${institution.name} logo`}
                           fill
                           sizes="64px"
-                          className="object-contain p-1.5 opacity-80 grayscale transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
+                          className="object-contain p-1.5 opacity-80 transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
                         />
                       </div>
 
