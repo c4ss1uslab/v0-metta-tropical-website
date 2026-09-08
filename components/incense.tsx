@@ -58,7 +58,11 @@ export default function ParallaxIncenseSection({
         if (maxScroll <= 0) {
           targetProgress = 0;
         } else {
-          targetProgress = Math.max(0, Math.min(1, scrolledPast / maxScroll));
+          const movementMultiplier = 2;
+          targetProgress = Math.max(
+            0,
+            Math.min(1, scrolledPast / (maxScroll * movementMultiplier))
+          );
         }
       }
     };
@@ -67,7 +71,7 @@ export default function ParallaxIncenseSection({
      * SMOOTH ANIMATION LOOP
      */
     const animate = () => {
-      const smoothing = 0.07;
+      const smoothing = 0.001;
 
       currentProgress +=
         (targetProgress - currentProgress) * smoothing;
