@@ -971,7 +971,7 @@ export function WhyWisdomSection() {
               href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              className="text-cyan-800 font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
             >
               framework
             </a>{" "}
@@ -995,7 +995,7 @@ export function WhyWisdomSection() {
               href="https://secondrenaissance.net/glossary/Wisdom+Gap"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              className="text-cyan-800 font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
             >
               the wisdom gap
             </a>
@@ -1025,13 +1025,14 @@ export function WhyWisdomSection() {
           <p className="leading-relaxed text-muted-foreground">
             Wisdom is deepened by engaging with reality and the world through{" "}
             <a
-              href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
-            >
-              multiple ways of knowing
-            </a>{" "}
+            href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-800 font-semibold decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+          >
+            multiple ways of knowing
+          </a>
+          {" "}
             and depths of relationality, expanding our capacity to sense what
             is needed in a given moment and respond accordingly.
           </p>
