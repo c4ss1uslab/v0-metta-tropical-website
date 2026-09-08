@@ -71,7 +71,7 @@ export default function ParallaxIncenseSection({
      * SMOOTH ANIMATION LOOP
      */
     const animate = () => {
-      const smoothing = 0.001;
+      const smoothing = 0.035;
 
       currentProgress +=
         (targetProgress - currentProgress) * smoothing;
