@@ -337,8 +337,8 @@ export function IntroductionSection() {
       {/* Right Column: Image */}
       <div className="relative min-h-[460px] overflow-hidden bg-[#F8F6F1] lg:min-h-0">
         <Image
-          src="https://i.postimg.cc/525YdJ6P/Captura-de-Tela-2026-08-06-a-s-18-02-57.png"
-          alt="Illustration representing ancestral, contemplative, and transformative educational traditions"
+          src="https://i.postimg.cc/sfvKVqGs/image-from-rawpixel-id-6605610-jpeg.jpg"
+          alt="Aboriginal art piece"
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-contain object-center mix-blend-darken"
