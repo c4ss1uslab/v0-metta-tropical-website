@@ -59,7 +59,7 @@ export function HeroSection() {
 
     <div className="mt-22 flex flex-col sm:flex-row items-center justify-start gap-4"> 
       <Link 
-        href="/about" 
+        href="#fields-of-work" 
         className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-[#111827] text-background font-medium text-sm tracking-wide hover:bg-[#111827]/90 transition-colors" 
       > 
         Discover Our Work 
@@ -101,23 +101,28 @@ const lineages = [
     inspirations: [
       {
         name: "Plum Village",
-        logo: "/logos/plum-village.png",
-      },
-      {
-        name: "CCARE — Center for Compassion and Altruism Research and Education",
-        logo: "/logos/ccare.png",
-      },
-      {
-        name: "Vipassana — Goenka Tradition",
-        logo: "/logos/vipassana-goenka.png",
-      },
-      {
-        name: "The Center for World Philosophy & Religion",
-        logo: "/logos/center-world-philosophy-religion.png",
-      },
-      {
-        name: "Great Vow Zen Monastery",
-        logo: "/logos/great-vow-zen-monastery.png",
+    logo: images.plumvillage,
+    url: "https://plumvillage.org/",
+  },
+  {
+    name: "The Center for World Philosophy & Religion",
+    logo: images.cwpr,
+    url: "https://worldphilosophyandreligion.org/",
+  },
+  {
+    name: "CCARE — Center for Compassion and Altruism Research and Education",
+    logo: images.ccare,
+    url: "https://ccare.stanford.edu/",
+  },
+  {
+    name: "Vipassana — Goenka Tradition",
+    logo: images.vipassana,
+    url: "https://www.dhamma.org/",
+  },
+  {
+    name: "Great Vow Zen Monastery",
+    logo: images.greatvow,
+    url: "https://zendust.org/great-vow-zen-monastery/",
       },
     ],
   },
@@ -129,23 +134,28 @@ const lineages = [
     inspirations: [
       {
         name: "Schumacher College",
-        logo: "/logos/schumacher-college.png",
-      },
-      {
-        name: "Warm Data Lab",
-        logo: "/logos/warm-data-lab.png",
-      },
-      {
-        name: "The Civilization Research Institute",
-        logo: "/logos/civilization-research-institute.png",
-      },
-      {
-        name: "Gesturing Towards Decolonial Futures",
-        logo: "/logos/gtdf.png",
-      },
-      {
-        name: "Perspectiva",
-        logo: "/logos/perspectiva.png",
+      logo: images.schumacher,
+      url: "https://www.schumachercollege.org/home",
+    },
+    {
+      name: "The Civilization Research Institute",
+      logo: images.civilizationresearchinstitute,
+      url: "https://civilizationresearchinstitute.org/",
+    },
+    {
+      name: "Gesturing Towards Decolonial Futures",
+      logo: images.gtdf,
+      url: "https://decolonialfutures.net/",
+    },
+    {
+      name: "Warm Data Lab",
+      logo: images.warmdata,
+      url: "https://www.warmdata.life/",
+    },
+    {
+      name: "Perspectiva",
+      logo: images.perspectiva,
+      url: "https://systems-souls-society.com/",
       },
     ],
   },
@@ -156,24 +166,29 @@ const lineages = [
       "The fields of human development, depth psychology, parts work, trauma integration, emotional regulation, and relational practice — which help us understand how human beings actually grow up, mature, and come to embody responsible ways of relating to all life.",
     inspirations: [
       {
-        name: "Aletheia Coaching",
-        logo: "/logos/aletheia-coaching.png",
-      },
-      {
-        name: "Internal Family Systems",
-        logo: "/logos/internal-family-systems.png",
-      },
-      {
-        name: "Transformational Connection",
-        logo: "/logos/transformational-connection.png",
-      },
-      {
-        name: "ART International — Authentic Relating Training",
-        logo: "/logos/art-international.png",
-      },
-      {
-        name: "Animas Valley Institute",
-        logo: "/logos/animas-valley-institute.png",
+      name: "Aletheia Coaching",
+      logo: images.aletheia,
+      url: "https://integralunfoldment.com/",
+    },
+    {
+      name: "Internal Family Systems",
+      logo: images.internalfamilysystems,
+      url: "https://ifs-institute.com/",
+    },
+    {
+      name: "Transformational Connection",
+      logo: images.transformationalconnection,
+      url: "https://www.transformationalconnection.com/",
+    },
+    {
+      name: "ART International — Authentic Relating Training",
+      logo: images.ARTauthenticrelating,
+      url: "https://authenticrelating.co/",
+    },
+    {
+      name: "Animas Valley Institute",
+      logo: images.animasvalley,
+      url: "https://www.animas.org/",
       },
     ],
   },
@@ -182,27 +197,31 @@ const lineages = [
     title: "Ancestral Ways of Being",
     description:
       "The embodied, ecological, and land-based wisdom carried by Indigenous, quilombola, and Afro-diasporic communities, who, despite centuries of erasure and forced collapse, have nurtured, carried, and protected ways of seeing, being, and relating that the rest of the world is only now beginning to understand it needs.",
-    icon: "https://i.postimg.cc/rFFDN4hp/Cocar-INdigena.jpg",
     inspirations: [
       {
-        name: "Kilombo Tenondé",
-        logo: "/logos/kilombo-tenonde.png",
-      },
-      {
-        name: "Tenondé Porã",
-        logo: "/logos/tenonde-pora.png",
-      },
-      {
-        name: "Ciclo Selvagem",
-        logo: "/logos/ciclo-selvagem.png",
-      },
-      {
-        name: "Teia dos Povos",
-        logo: "/logos/teia-dos-povos.png",
-      },
-      {
-        name: "Instituto Favela da Paz",
-        logo: "/logos/instituto-favela-da-paz.png",
+      name: "Kilombo Tenondé",
+      logo: images.kilombotenonde,
+      url: "https://kilombotenonde.net",
+    },
+    {
+      name: "Tenondé Porã",
+      logo: images.tenondepora,
+      url: "https://tenondepora.org.br/",
+    },
+    {
+      name: "Ciclo Selvagem",
+      logo: images.selvagem,
+      url: "https://selvagemciclo.org.br/",
+    },
+    {
+      name: "Teia dos Povos",
+      logo: images.teiadospovos,
+      url: "https://teiadospovos.org/",
+    },
+    {
+      name: "Instituto Favela da Paz",
+      logo: images.faveladapaz,
+      url: "https://www.institutofaveladapaz.org/",
       },
     ],
   },
@@ -318,8 +337,8 @@ export function IntroductionSection() {
       {/* Right Column: Image */}
       <div className="relative min-h-[460px] overflow-hidden bg-[#F8F6F1] lg:min-h-0">
         <Image
-          src="https://i.postimg.cc/525YdJ6P/Captura-de-Tela-2026-08-06-a-s-18-02-57.png"
-          alt="Illustration representing ancestral, contemplative, and transformative educational traditions"
+          src="https://i.postimg.cc/sfvKVqGs/image-from-rawpixel-id-6605610-jpeg.jpg"
+          alt="Aboriginal art piece"
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-contain object-center mix-blend-darken"
@@ -347,48 +366,56 @@ export function IntroductionSection() {
       </p>
 
       {/* Wisdom-Centered Educational Architecture Highlight */}
-      <div className="space-y-6 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8 md:py-8">
-        <p className="leading-relaxed text-muted-foreground">
-          We call them{" "}
-          <strong className="font-semibold text-foreground">
-            wisdom-centered educational architectures
-          </strong>
-          : developmental ecologies of practice, training, ritual, inquiry, and
-          relationship, built to hold the long arc of human formation this
-          moment demands — not preparing people to succeed in the world as it
-          is, but supporting them to question its foundations and develop the
-          spiritual depth, relational maturity, systemic understanding, and
-          reverence for life required to hospice a world that is ending while
-          cultivating the foundations of what comes next.
-        </p>
+<div className="border-l-2 border-cyan-800 pl-6 py-1 md:pl-8">
+  <div className="space-y-6">
+    <p className="leading-relaxed text-muted-foreground">
+      We call them{" "}
+      <strong className="font-semibold text-foreground">
+        wisdom-centered educational architectures
+      </strong>
+      : developmental ecologies of practice, training, ritual, inquiry, and
+      relationship, built to hold the long arc of human formation this moment
+      demands. Not preparing people to succeed in the world as it is, but
+      supporting them to question its foundations and develop the spiritual
+      depth, relational maturity, systemic understanding, and reverence for
+      life required to hospice a world that is ending, while cultivating the
+      foundations of what comes next.
+    </p>
 
-        <p className="leading-relaxed text-muted-foreground">
-          These architectures exist to hold the magnitude of aspiration and
-          devotion of those who feel the depth of our crisis in their bones,
-          long to give their lives to something worthy of this moment, yet
-          struggle to find communities capable of recognizing, accompanying,
-          and nurturing such commitment.
-        </p>
+    <p className="leading-relaxed text-muted-foreground">
+      These architectures exist to hold the magnitude of aspiration and
+      devotion of those who feel the depth of our crisis in their bones, long
+      to give their lives to something worthy of this moment, yet struggle to
+      find communities capable of recognizing, accompanying, and nurturing
+      such commitment.
+    </p>
 
-        <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-medium leading-relaxed text-foreground">
-            This is what we are building.
-          </p>
+    <div className="pt-2">
+      <p className="leading-relaxed text-muted-foreground">
+        This is what we are building.
+      </p>
 
-          <Link
-            href="/educational-architecture"
-            className="inline-flex shrink-0 items-center justify-center rounded-md bg-[#D9A01B] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#B88610]"
-          >
-            Learn about our Educational Architecture
-          </Link>
-        </div>
-      </div>
+      <Link
+  href="/educational-architecture"
+  className="group mt-8 inline-flex items-center rounded-md border border-[#111827]/15 bg-[#111827]/[0.04] px-5 py-3 text-sm font-medium text-[#111827] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#111827]/25 hover:bg-[#111827]/[0.08] hover:shadow-md"
+>
+  Learn about our Educational Architecture
+  <span
+    aria-hidden="true"
+    className="ml-2 transition-transform duration-200 group-hover:translate-x-0.5"
+  >
+    →
+  </span>
+</Link>
     </div>
+  </div>
+</div>
+</div>
   </div>
 </section>
 
 {/* Confluence of Lineages */}
-<section className="relative overflow-hidden bg-white py-16 lg:py-24">
+<section className="relative overflow-hidden bg-white py-16 lg:py-16">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
     {/* Header and Introduction */}
     <div className="mx-auto max-w-4xl">
@@ -522,17 +549,23 @@ export function IntroductionSection() {
           >
             <div>
               {/* Optional lineage icon */}
-              {lineage.icon && (
-                <div className="absolute right-5 top-5 h-14 w-14 overflow-hidden rounded-full border border-[#D9A01B]/30 bg-white shadow-sm">
-                  <Image
-                    src={lineage.icon}
-                    alt={`${lineage.title} lineage symbol`}
-                    fill
-                    sizes="56px"
-                    className="object-cover"
-                  />
-                </div>
-              )}
+{lineage.icon && (
+  <div className="absolute right-4 top-4 h-20 w-20">
+    {typeof lineage.icon === 'string' ? (
+      <Image
+        src={lineage.icon}
+        alt={`${lineage.title} lineage symbol`}
+        fill
+        sizes="80px"
+        className="object-cover"
+      />
+    ) : (
+      <div className="flex h-full w-full items-center justify-center">
+        {lineage.icon}
+      </div>
+    )}
+  </div>
+)}
 
               <div className={lineage.icon ? "pr-16" : ""}>
                 <span className="mb-2 block font-mono text-sm font-bold text-[#D9A01B]">
@@ -585,8 +618,9 @@ export function IntroductionSection() {
 
                 <ul className="space-y-3">
                   {lineage.inspirations.map((institution) => (
-                    <li
+                    <a
                       key={institution.name}
+                      href={institution.url}
                       className="group/institution flex items-center gap-4 rounded-lg border border-gray-200/80 bg-white/80 p-3 transition-all duration-200 hover:border-[#D9A01B]/40 hover:bg-white"
                     >
                       <div className="relative flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white">
@@ -595,14 +629,14 @@ export function IntroductionSection() {
                           alt={`${institution.name} logo`}
                           fill
                           sizes="64px"
-                          className="object-contain p-1.5 opacity-80 grayscale transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
+                          className="object-contain p-1.5 opacity-80 transition-all duration-300 group-hover/institution:opacity-100 group-hover/institution:grayscale-0"
                         />
                       </div>
 
                       <span className="text-sm font-medium leading-snug text-foreground">
                         {institution.name}
                       </span>
-                    </li>
+                    </a>
                   ))}
                 </ul>
 
@@ -644,11 +678,125 @@ export function IntroductionSection() {
         of this moment makes their separation no longer affordable.
       </p>
     </div>
+
+          <div className="relative left-1/2 mt-12 aspect-[21/9] w-screen -translate-x-1/2 overflow-hidden">
+        <Image
+          src="https://i.postimg.cc/cJXn0t4P/DSCF5531.jpg"
+          alt="Gathering around the fire"
+          fill
+          className="object-cover"
+        />
+      </div>
+  </div>
+</section>
+
+{/* Why Wisdom? Section Content */}
+<section className="relative left-1/2 right-1/2 -mx-[50vw] w-full bg-white pt-0 pb-4 lg:pt-0 lg:pb-4 xl:w-screen">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <div className="space-y-8">
+      <div className="mb-16 text-center">
+        <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+          Why Wisdom?
+        </h2>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Within our work, we often draw from a{" "}
+        <a
+          href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          framework
+        </a>{" "}
+        developed by Daniel Schmachtenberger and Nate Hagens, and later evolved
+        by Vanessa Machado de Oliveira that distinguishes between narrow boundary
+        intelligence, wide boundary intelligence, and wisdom—sometimes called
+        whole-shebang wisdom.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        We find this framework helpful not only for understanding how humans
+        relate to complexity and systemic challenges, but for clarifying the
+        direction our collective efforts must ultimately move toward: wisdom.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        The Center for Humane Technology describes one of the defining
+        challenges of our time as{" "}
+        <a
+          href="https://secondrenaissance.net/glossary/Wisdom+Gap"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          the wisdom gap
+        </a>
+        : the growing divide between rising global complexity and
+        humanity&apos;s capacity to respond with sufficient coherence,
+        discernment, and care. We live in a world overflowing with information,
+        intelligence, and technological power, yet increasingly unable to
+        navigate wisely the complexity we have created.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        In this sense, the metacrisis is fundamentally a wisdom crisis.
+      </p>
+
+      {/* Wisdom Definition Callout */}
+      <div className="border-l-2 border-[#D9A01B] pl-6 py-1 md:pl-8">
+        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+          By wisdom, we do not mean expertise, intelligence, or the accumulation
+                of knowledge. We mean the capacity to perceive reality accurately, to
+                discern what truly matters in a given context, and to participate in
+                life in ways that serve the flourishing of the larger whole — a
+                capacity grounded in a deep understanding of the central existential
+                questions of life.
+        </p>
+      </div>
+
+      <p className="leading-relaxed text-muted-foreground">
+        Wisdom is deepened by engaging with reality and the world through{" "}
+        <a
+          href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-900 underline transition-opacity hover:opacity-80"
+        >
+          multiple ways of knowing
+        </a>{" "}
+        and depths of relationality, expanding our capacity to sense what is
+        needed in a given moment and respond accordingly.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        It allows us to hold complexity with humility and care, and to move
+        beyond fragmented grasps for certainty or control. It shifts our
+        relationship with the world from subject-object to subject-subject: from
+        managing reality to participating within it. To speak of wisdom,
+        ultimately, is to speak of integration — reuniting what modernity has
+        fragmented.
+      </p>
+
+      <p className="leading-relaxed text-muted-foreground">
+        As we face the consequences of the metacrisis, the cost of continuing to
+        incentivize narrow-boundary intelligence becomes increasingly
+        catastrophic. What this moment requires is a societal movement from
+        narrow boundary, to wide boundary, and eventually toward wisdom. Yet the
+        infrastructures capable of cultivating such transition remain largely
+        absent from modern society.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        Our work is an attempt to help create them.
+      </p>
+    </div>
   </div>
 </section>
 
       {/* Zak Stein Quote */}
-      <figure className="relative left-1/2 my-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
+      <figure className="relative left-1/2 mt-12 w-screen -translate-x-1/2 overflow-hidden bg-[#111827] px-4 py-12 text-center md:py-16">
         <div className="relative mx-auto max-w-4xl px-8 md:px-16">
           {/* Left Background Quote */}
           <span className="pointer-events-none absolute left-0 top-[-20px] select-none font-serif text-7xl text-gray-800 md:top-[-40px] md:text-9xl">
@@ -717,7 +865,7 @@ export function FieldsOfWorkSection() {
   ]
 
   return (
-    <section className="bg-cream py-12 lg:py-20">
+    <section id="fields-of-work" className="bg-cream py-12 lg:py-16">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Header and Introduction */}
         <div className="mx-auto mb-16 max-w-4xl text-center">
@@ -806,10 +954,10 @@ export function FieldsOfWorkSection() {
 
 export function WhyWisdomSection() {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-1 lg:py-1">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-10">
+        <div className="mb-2">
           <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
             Why Wisdom?
           </h2>
@@ -823,7 +971,7 @@ export function WhyWisdomSection() {
               href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              className="text-cyan-800 font-medium underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
             >
               framework
             </a>{" "}
@@ -847,7 +995,7 @@ export function WhyWisdomSection() {
               href="https://secondrenaissance.net/glossary/Wisdom+Gap"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              className="text-cyan-800 font-medium underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
             >
               the wisdom gap
             </a>
@@ -863,7 +1011,7 @@ export function WhyWisdomSection() {
           </p>
 
           {/* Wisdom Definition Highlight */}
-          <div className="rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+          <div className="rounded-r-xl border-l-4 border-cyan-800 bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
             <p className="leading-relaxed text-muted-foreground">
               By wisdom, we do not mean expertise, intelligence, or the
               accumulation of knowledge. We mean the capacity to perceive
@@ -880,7 +1028,7 @@ export function WhyWisdomSection() {
               href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              className="text-cyan-800 font-medium underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
             >
               multiple ways of knowing
             </a>{" "}

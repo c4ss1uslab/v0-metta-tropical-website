@@ -35,7 +35,7 @@ export default function ParallaxIncenseSection({
        * 0.3 = 30% from the top of the screen ("somewhat in the middle, going near the top").
        * Increase to 0.4 or 0.5 if you want it to trigger lower on the screen.
        */
-      const triggerY = windowHeight * 0.16;
+      const triggerY = windowHeight * 0.12;
 
       if (incenseStaticY > triggerY) {
         /*
