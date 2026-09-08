@@ -58,11 +58,7 @@ export default function ParallaxIncenseSection({
         if (maxScroll <= 0) {
           targetProgress = 0;
         } else {
-          const movementMultiplier = 2;
-          targetProgress = Math.max(
-            0,
-            Math.min(1, scrolledPast / (maxScroll * movementMultiplier))
-          );
+          targetProgress = Math.max(0, Math.min(1, scrolledPast / maxScroll));
         }
       }
     };
