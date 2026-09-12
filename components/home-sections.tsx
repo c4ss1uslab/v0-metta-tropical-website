@@ -143,7 +143,7 @@ const lineages = [
       url: "https://decolonialfutures.net/",
     },
     {
-      name: "The Civilization Research Institute",
+      name: "Civilization Research Institute",
       logo: images.civilizationresearchinstitute,
       url: "https://civilizationresearchinstitute.org/",
     },
