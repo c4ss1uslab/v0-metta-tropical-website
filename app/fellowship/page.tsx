@@ -224,84 +224,168 @@ export default function FellowshipPage() {
       <Navigation />
 
       <main className="min-h-screen bg-[#FFFDF6] pt-16">
-        {/* HERO */}
-        <section className="relative overflow-hidden bg-[#FFFDF6] py-20 lg:py-28">
-          {/* Soft organic color fields */}
-          <div className="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full bg-[#D9A01B]/20 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-28 -left-24 h-96 w-96 rounded-full bg-olive/15 blur-3xl" />
-          <div className="pointer-events-none absolute left-[46%] top-12 h-52 w-52 rounded-full bg-crimson/10 blur-3xl" />
+{/* HERO */}
+<section className="relative overflow-hidden bg-[#FFFDF6]">
+  {/* Main Hero */}
+  <div className="relative py-20 lg:py-28">
+    {/* Soft organic color fields */}
+    <div className="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full bg-[#D9A01B]/20 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-28 -left-24 h-96 w-96 rounded-full bg-olive/15 blur-3xl" />
+    <div className="pointer-events-none absolute left-[46%] top-12 h-52 w-52 rounded-full bg-crimson/10 blur-3xl" />
 
-          <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-[0.14em] text-olive">
-                Metta Tropical Fellowship
-              </span>
+    <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
+      <div className="max-w-4xl">
+        {/* Welcome */}
+        <span className="text-sm font-medium uppercase tracking-[0.14em] text-olive">
+          Welcome to the
+        </span>
 
-              <h1 className="mt-5 max-w-4xl font-serif text-4xl font-medium leading-[1.05] text-foreground md:text-6xl lg:text-7xl">
-                Tending The Soul of an Emergent Culture
-              </h1>
+        {/* Fellowship / Collective Name */}
+        <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
+          Metta Tropical Collective
+        </h1>
 
-              <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
-                <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
-                  What is this moment in history asking of your life?
-                </p>
+        {/* Subtitle */}
+        <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+          Tending The Soul of an Emergent Culture
+        </p>
 
-                <p className="mt-3 text-muted-foreground">
-                  Some questions, when lived inside them, are capable of
-                  reorganizing an entire life.
-                </p>
-              </div>
+        {/* Central Question */}
+        <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
+          <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
+            What is this moment in history asking of your life?
+          </p>
+        </div>
 
-              <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                An eight-month initiatory journey for a generation coming of age
-                in a time between worlds—when inherited ways of living are
-                reaching their limits and the forms of life capable of replacing
-                them have not yet fully emerged.
-              </p>
+        {/* Fellowship Description */}
+        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          An eight-month initiatory journey for a generation coming of age
+          in a time between worlds—when inherited ways of living are reaching
+          their limits and the forms of life capable of replacing them have
+          not yet fully emerged.
+        </p>
 
-              <p className="mt-5 max-w-3xl leading-relaxed text-muted-foreground">
-                At its core, this is a fellowship of collective inquiry,
-                exploring what this moment requires of us, who we must become to
-                meet it, and what is worth giving our lives to—then begin the
-                deeper work of transforming our lives in response.
-              </p>
+        {/* Key Information */}
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
+            January — August 2027
+          </span>
 
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
-                  January — August 2027
-                </span>
+          <span className="rounded-full border border-olive/30 bg-white/70 px-5 py-2 text-sm text-foreground">
+            Brazil
+          </span>
 
-                <span className="rounded-full border border-olive/30 bg-white/70 px-5 py-2 text-sm text-foreground">
-                  Brazil
-                </span>
+          <span className="rounded-full border border-crimson/20 bg-white/70 px-5 py-2 text-sm text-foreground">
+            15–20 participants
+          </span>
 
-                <span className="rounded-full border border-crimson/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-                  15–20 participants
-                </span>
+          <span className="rounded-full border border-cyan-800/20 bg-white/70 px-5 py-2 text-sm text-foreground">
+            Offered as a gift
+          </span>
+        </div>
 
-                <span className="rounded-full border border-cyan-800/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-                  Offered as a gift
-                </span>
-              </div>
+        {/* Primary Actions */}
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="#journey"
+            className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+          >
+            Explore the Journey
+          </a>
 
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#journey"
-                  className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
-                >
-                  Explore the Journey
-                </a>
+          <a
+            href="#apply"
+            className="inline-flex items-center justify-center rounded-md border border-foreground/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
+          >
+            Begin Application
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                <a
-                  href="#apply"
-                  className="inline-flex items-center justify-center rounded-md border border-foreground/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
-                >
-                  Begin Application
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+  {/* Fellowship Section Navigation */}
+  <div className="border-y border-border bg-background/95">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center gap-1 overflow-x-auto py-3 scrollbar-none">
+        <span className="mr-3 hidden shrink-0 text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground/60 md:block">
+          Explore
+        </span>
+
+        <a
+          href="#invitation"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF4F2]"
+        >
+          <span className="h-2 w-2 rounded-full bg-crimson" />
+          The Invitation
+        </a>
+
+        <a
+          href="#why-now"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#F3F7EC]"
+        >
+          <span className="h-2 w-2 rounded-full bg-olive" />
+          Why Now
+        </a>
+
+        <a
+          href="#journey"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF9E9]"
+        >
+          <span className="h-2 w-2 rounded-full bg-[#D9A01B]" />
+          The Journey
+        </a>
+
+        <a
+          href="#streams"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#EFF8F8]"
+        >
+          <span className="h-2 w-2 rounded-full bg-cyan-800" />
+          Five Streams
+        </a>
+
+        <a
+          href="#pedagogy"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF4F2]"
+        >
+          <span className="h-2 w-2 rounded-full bg-crimson" />
+          Pedagogy
+        </a>
+
+        <a
+          href="#structure"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#F3F7EC]"
+        >
+          <span className="h-2 w-2 rounded-full bg-olive" />
+          Curriculum
+        </a>
+
+        <a
+          href="#who-this-is-for"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF9E9]"
+        >
+          <span className="h-2 w-2 rounded-full bg-[#D9A01B]" />
+          Who It&apos;s For
+        </a>
+
+        <a
+          href="#gift"
+          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#EFF8F8]"
+        >
+          <span className="h-2 w-2 rounded-full bg-cyan-800" />
+          The Gift
+        </a>
+
+        <a
+          href="#apply"
+          className="ml-2 shrink-0 rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
+        >
+          Apply
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
