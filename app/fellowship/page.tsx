@@ -247,7 +247,7 @@ export default function FellowshipPage() {
 
         {/* Subtitle */}
         <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-          Tending The Soul of an Emergent Culture
+          Cultivating The Wisdom Required To Respond To The Complexity Of Our Times
         </p>
 
         {/* Central Question */}
