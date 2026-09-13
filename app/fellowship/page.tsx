@@ -304,59 +304,54 @@ export default function FellowshipPage() {
     </div>
   </div>
 
- {/* Fellowship Section Navigation */}
+{/* Fellowship Section Navigation */}
 <div className="border-y border-white/10 bg-[#111827]">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
-    <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 py-4 md:justify-start">
-      <span className="mr-3 hidden text-xs font-medium uppercase tracking-[0.12em] text-yellow/60 md:block">
-        Explore
-      </span>
-
+    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
       <a
         href="#invitation"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         The Invitation
       </a>
 
       <a
         href="#why-now"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         Why Now
       </a>
 
       <a
         href="#journey"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         The Journey
       </a>
 
       <a
         href="#streams"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         Five Streams
       </a>
 
       <a
         href="#pedagogy"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         Pedagogy
       </a>
 
       <a
         href="#structure"
-        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
       >
         Curriculum
       </a>
     </div>
   </div>
 </div>
-</section>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
