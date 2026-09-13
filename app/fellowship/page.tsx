@@ -304,88 +304,58 @@ export default function FellowshipPage() {
     </div>
   </div>
 
-  {/* Fellowship Section Navigation */}
-  <div className="border-y border-border bg-background/95">
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div className="flex items-center gap-1 overflow-x-auto py-3 scrollbar-none">
-        <span className="mr-3 hidden shrink-0 text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground/60 md:block">
-          Explore
-        </span>
+ {/* Fellowship Section Navigation */}
+<div className="border-y border-white/10 bg-[#111827]">
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 py-4 md:justify-start">
+      <span className="mr-3 hidden text-xs font-medium uppercase tracking-[0.12em] text-yellow/60 md:block">
+        Explore
+      </span>
 
-        <a
-          href="#invitation"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF4F2]"
-        >
-          <span className="h-2 w-2 rounded-full bg-crimson" />
-          The Invitation
-        </a>
+      <a
+        href="#invitation"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        The Invitation
+      </a>
 
-        <a
-          href="#why-now"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#F3F7EC]"
-        >
-          <span className="h-2 w-2 rounded-full bg-olive" />
-          Why Now
-        </a>
+      <a
+        href="#why-now"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        Why Now
+      </a>
 
-        <a
-          href="#journey"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF9E9]"
-        >
-          <span className="h-2 w-2 rounded-full bg-[#D9A01B]" />
-          The Journey
-        </a>
+      <a
+        href="#journey"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        The Journey
+      </a>
 
-        <a
-          href="#streams"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#EFF8F8]"
-        >
-          <span className="h-2 w-2 rounded-full bg-cyan-800" />
-          Five Streams
-        </a>
+      <a
+        href="#streams"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        Five Streams
+      </a>
 
-        <a
-          href="#pedagogy"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF4F2]"
-        >
-          <span className="h-2 w-2 rounded-full bg-crimson" />
-          Pedagogy
-        </a>
+      <a
+        href="#pedagogy"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        Pedagogy
+      </a>
 
-        <a
-          href="#structure"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#F3F7EC]"
-        >
-          <span className="h-2 w-2 rounded-full bg-olive" />
-          Curriculum
-        </a>
-
-        <a
-          href="#who-this-is-for"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#FFF9E9]"
-        >
-          <span className="h-2 w-2 rounded-full bg-[#D9A01B]" />
-          Who It&apos;s For
-        </a>
-
-        <a
-          href="#gift"
-          className="group flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-[#EFF8F8]"
-        >
-          <span className="h-2 w-2 rounded-full bg-cyan-800" />
-          The Gift
-        </a>
-
-        <a
-          href="#apply"
-          className="ml-2 shrink-0 rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
-        >
-          Apply
-        </a>
-      </div>
+      <a
+        href="#structure"
+        className="rounded-full px-4 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+      >
+        Curriculum
+      </a>
     </div>
   </div>
-</section>
+</div>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
