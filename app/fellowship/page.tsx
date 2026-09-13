@@ -242,7 +242,7 @@ export default function FellowshipPage() {
 
         {/* Fellowship / Collective Name */}
         <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
-          Metta Tropical Collective
+          Metta Tropical Fellowship
         </h1>
 
         {/* Subtitle */}
