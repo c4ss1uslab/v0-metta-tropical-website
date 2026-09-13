@@ -356,6 +356,7 @@ export default function FellowshipPage() {
     </div>
   </div>
 </div>
+</section>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
