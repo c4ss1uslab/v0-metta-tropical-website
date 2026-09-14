@@ -435,279 +435,96 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-{/* THE INVITATION */}
-<section
-  id="invitation"
-  className="scroll-mt-32 bg-background py-20 lg:py-24"
->
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        {/* INVITATION */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+              The Invitation
+            </span>
 
-    {/* Section Title */}
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-      The Invitation
-    </span>
+            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
+              You may already know what it feels like to live between worlds.
+            </h2>
 
-    {/* Opening Quote */}
-    <blockquote className="mt-5 max-w-3xl">
-      <p
-        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        &ldquo;It&apos;s actually the time of people in that liminal phase to
-        work on developing these new structures.&rdquo;
-      </p>
+            <div className="mt-8 space-y-6 text-muted-foreground">
+              <p className="leading-relaxed">
+                To have lost faith in the underlying logic of the current
+                system, while still being dependent on it. To feel that some of
+                the paths you inherited can no longer hold the deep questions
+                inside you. To care deeply about the crises of our time while
+                struggling to know how to respond without reproducing the same
+                patterns, becoming overwhelmed, or absorbed back into ways of
+                life you no longer fully believe in.
+              </p>
 
-      <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
-        — Daniel Schmachtenberger
-      </cite>
-    </blockquote>
+              <p className="leading-relaxed">
+                We understand this as part of what it means to grow up in a time
+                between worlds: when inherited ways of being are revealing
+                their limits, while the forms of life capable of replacing them
+                have not yet fully emerged.
+              </p>
+            </div>
 
-    <div className="mt-10 space-y-6 text-muted-foreground">
-      <p className="leading-relaxed">
-        In times between worlds—when the predominant structures and stories of
-        a civilization begin to decay before new ones have been built—certain
-        individuals find themselves{" "}
-        <strong className="font-semibold text-foreground">
-          living without a world
-        </strong>
-        . Neither fully belonging to the old nor yet inhabiting what comes
-        next. They are living in the liminal space between collapse and
-        emergence, between what is dying and what has not yet been born.
-      </p>
+            <details className="group mt-8 rounded-xl border border-border bg-cream">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
+                <span className="font-medium text-foreground">
+                  Read the full invitation
+                </span>
+                <span className="text-xl text-[#D9A01B]">+</span>
+              </summary>
 
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-        You may already know what this feels like.
-      </p>
+              <div className="space-y-6 border-t border-border px-6 py-7 text-muted-foreground md:px-8">
+                <p className="leading-relaxed">
+                  For some, this creates the strange experience of living
+                  without a world—no longer finding a home in our dominant
+                  culture, but not yet fully inhabiting what might come next.
+                  This can be profoundly disorienting and stressful. But it can
+                  also become a moment of unimaginable opportunity, meaning and
+                  responsibility.
+                </p>
 
-      <p className="leading-relaxed">
-        To have lost faith in the underlying logic of the current system while
-        still being deeply dependent on it. To feel that some of the paths you
-        inherited can no longer hold the questions living inside you. To care
-        deeply about the crises of our time while struggling to know how to
-        respond without reproducing the same patterns.
-      </p>
+                <p className="leading-relaxed">
+                  It&apos;s the time of people in this liminal phase to
+                  recognize that there is no inherent manual for crossing this
+                  threshold. We will have to learn, practice and embody
+                  capacities our existing institutions have not yet learned how
+                  to cultivate—and begin experimenting with ways of seeing,
+                  being, knowing, and acting from which different futures can
+                  emerge.
+                </p>
 
-      <p className="leading-relaxed">
-        There is something profoundly disorienting and overwhelming about this
-        experience. But there may also be an invitation within it.
-      </p>
+                <p className="leading-relaxed">
+                  This is not solely a process of learning new ideas, skills or
+                  capacities, but a deeper kind of formation in which the full
+                  scope of what it means to be human is taken seriously:
+                  allowing what we come to know and understand to fully reshape
+                  how we live, what we value, how we relate, what we take
+                  responsibility for, and what we ultimately give ourselves to.
+                </p>
 
-      <p className="leading-relaxed">
-        When the old maps no longer lead where we need to go, and there is no
-        instruction manual for crossing the threshold. It is the time for those
-        living in this liminal space to learn how to perceive reality
-        differently, cultivate capacities our existing institutions rarely know
-        how to develop, and experiment together with ways of living, relating,
-        and responding from which radically different futures might emerge.
-      </p>
+                <p className="leading-relaxed">
+                  Transformations of this depth rarely happen alone. They
+                  require sanctuaries of transformation—spaces where we can
+                  encounter ourselves, one another, and the world more deeply;
+                  where new ideas and experiences begin to reshape how we
+                  perceive reality; where practices help us compost old ways of
+                  being and allow new ones to take root; where grief, longing,
+                  and responsibility can be held and matured in relationship
+                  with others; and where community helps us remain faithful to
+                  what we say truly matters and to what we are willing to devote
+                  our lives to.
+                </p>
 
-      <p className="leading-relaxed">
-        This is why we understand this moment not only as a crisis, but
-        potentially as a civilizational rite of passage—one that asks us to
-        question who we are becoming, what we aspire toward, which desires are
-        shaping our lives, what we are willing to let go of and compost, and
-        what may need to change if our lives are to serve the flourishing of all
-        living beings.
-      </p>
-
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-        And thresholds of this depth are difficult to cross alone.
-      </p>
-
-      <p className="leading-relaxed">
-        They need relationships strong enough to hold uncertainty. Practices
-        that help us remain present when old identities and assumptions begin
-        to loosen. Friends and mentors who can challenge and care for us. Places
-        where grief and longing can be taken seriously, and where we can
-        experiment with other possibilities of life aligned to what we know to
-        be true.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        The Metta Tropical Fellowship is our attempt to create such a place.
-      </p>
-    </div>
-  </div>
-</section>
-
-{/* WHO WE MUST BECOME */}
-<section
-  id="who-we-must-become"
-  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
->
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-
-    {/* Section Title */}
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-      Who We Must Become
-    </span>
-
-    {/* Opening Statement */}
-    <div className="mt-5 max-w-3xl">
-      <p
-        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Reclaiming leadership as a{" "}
-        <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
-          sacred responsibility
-        </span>{" "}
-        toward the flourishing of all life.
-      </p>
-    </div>
-
-    {/* Introduction */}
-    <div className="mt-10 space-y-6 text-muted-foreground">
-      <p className="leading-relaxed">
-        Human beings grow toward the horizons of possibility they are able to
-        imagine. We are formed not only by what we are taught, but by the
-        images our cultures teach us to admire and aspire toward. Yet at a
-        moment asking so much of humanity, many of the dominant images
-        available to us—the achiever, the entrepreneur, the conscious leader,
-        even the changemaker—feel too small for the depth of transformation
-        this moment requires. It asks for deeper and more integrated forms of
-        human maturity.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        For us, that maturation involves a shift in our relationship to all
-        life: with ourselves, with one another, with the world we participate
-        in, and with the sacred.
-      </p>
-    </div>
-
-    {/* Four Relationships */}
-    <div className="mt-10 overflow-hidden border border-foreground/15 bg-background md:grid md:grid-cols-2">
-
-      {/* SELF */}
-      <article className="border-b border-foreground/15 p-6 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-crimson">
-          Self
-        </span>
-
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Fragmentation
-          <span className="mx-2 text-[#D9A01B]">→</span>
-          Towards Wholeness
-        </h3>
-
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to meet the different parts of ourselves with greater
-          presence, compassion, and love, becoming less governed by unconscious
-          fear, conditioning, wounds, and protective patterns, and more capable
-          of acting from a deeper place of wholeness.
-        </p>
-
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Self-awareness · Embodied presence · Emotional maturity · Integration
-        </p>
-      </article>
-
-      {/* OTHER */}
-      <article className="border-b border-foreground/15 p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#B88610]">
-          Other
-        </span>
-
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Separation
-          <span className="mx-2 text-[#D9A01B]">→</span>
-          Towards Interbeing
-        </h3>
-
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to encounter others not as objects, obstacles, or resources,
-          but as beings whose lives are of transcendental worth, and deeply
-          entangled with our own. Developing the capacity to remain in
-          connection with others despite differences and conflict.
-        </p>
-
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Attunement · Deep listening · Intimacy · Compassion · Presence ·
-          Attention
-        </p>
-      </article>
-
-      {/* WORLD */}
-      <article className="border-b border-foreground/15 p-6 md:border-b-0 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-800">
-          World
-        </span>
-
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Observers
-          <span className="mx-2 text-[#D9A01B]">→</span>
-          Towards Participation
-        </h3>
-
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to see ourselves not as observers standing outside the
-          world, but as participants within complex social, ecological,
-          historical, and economic systems, becoming more capable of responding
-          with humility, discernment, and responsibility.
-        </p>
-
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Systems perception · Complexity · Historical awareness · Power
-          literacy · Ecological belonging · Imagination · Complicity in Harm
-        </p>
-      </article>
-
-      {/* SACRED */}
-      <article className="p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-olive">
-          The Sacred
-        </span>
-
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Disenchantment
-          <span className="mx-2 text-[#D9A01B]">→</span>
-          Towards Reverence
-        </h3>
-
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Recovering the capacity to experience life as intrinsically valuable,
-          meaningful, mysterious, and worthy of care—and allowing our
-          relationship to the sacred to expand our love, devotion, meaning and
-          service to the larger whole.
-        </p>
-
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Value perception · Reverence · Meaning · Truth · Moral discernment ·
-          Devotion · Beauty
-        </p>
-      </article>
-    </div>
-
-    {/* Closing */}
-    <div className="mt-10 space-y-6 text-muted-foreground">
-      <p className="leading-relaxed">
-        This is a simple orientation toward four relationships we believe this
-        moment is asking us to deepen if we want to steward civilization
-        towards life-enhancing futures.
-      </p>
-
-      <p className="leading-relaxed">
-        Throughout history, humanity has carried images of such possibility:
-        the saint, the bodhisattva, the spiritual warrior, the sacred
-        activist—figures for whom inner transformation became inseparable from
-        responsibility and service towards the whole.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        The Fellowship is not only an attempt to reawaken this kind of
-        aspiration, but to create the conditions through which such becoming
-        can take root.
-      </p>
-    </div>
-  </div>
-</section>
+                <p className="font-medium leading-relaxed text-foreground">
+                  The Metta Tropical Fellowship is our attempt to create such a
+                  place: an experimental community in which we can live inside
+                  the deepest questions this moment is asking of us, and allow
+                  our insights to radically reshape how we live in the world.
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
 
         {/* WHY NOW */}
         <section className="bg-cream py-20 lg:py-24">
