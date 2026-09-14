@@ -28,8 +28,8 @@ export function HeroSection() {
   {/* DESKTOP BACKGROUND IMAGE LAYER (From Code 1) - Hidden on Mobile */}
   <div className="hidden lg:block absolute inset-0 lg:left-1/3"> 
     <Image 
-      src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg" 
-      alt="Metta Tropical Collective Hero Image" 
+      src="https://cdn.imageurlgenerator.com/uploads/e9abcf43-d3c8-43bf-bf5b-a93e20d6ab4c.gif" 
+      alt="alter do chão, Pará. Carimbó. Per" 
       fill 
       className="object-cover object-center" 
       priority 
@@ -261,8 +261,8 @@ export function IntroductionSection() {
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos_1234029733-WbYYUpcs7i7gZeQt8QQtmpceC9jLXP.jpeg"
-                alt="Tropical Collage"
+                src="https://postimg.cc/kVQxygvV"
+                alt="Árvores da Amazônia, Parintins, Manaus. Personal Archieve, Rebeca Lissa"
                 fill
                 className="bg-foreground object-contain"
               />
