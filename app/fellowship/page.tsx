@@ -435,96 +435,103 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-        {/* INVITATION */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-              The Invitation
-            </span>
+{/* THE INVITATION */}
+<section
+  id="invitation"
+  className="scroll-mt-32 bg-background py-20 lg:py-24"
+>
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
-            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-              You may already know what it feels like to live between worlds.
-            </h2>
+    {/* Section Title */}
+    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      The Invitation
+    </span>
 
-            <div className="mt-8 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                To have lost faith in the underlying logic of the current
-                system, while still being dependent on it. To feel that some of
-                the paths you inherited can no longer hold the deep questions
-                inside you. To care deeply about the crises of our time while
-                struggling to know how to respond without reproducing the same
-                patterns, becoming overwhelmed, or absorbed back into ways of
-                life you no longer fully believe in.
-              </p>
+    {/* Opening Quote */}
+    <blockquote className="mt-5 max-w-3xl">
+      <p
+        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        &ldquo;It&apos;s actually the time of people in that liminal phase to
+        work on developing these new structures.&rdquo;
+      </p>
 
-              <p className="leading-relaxed">
-                We understand this as part of what it means to grow up in a time
-                between worlds: when inherited ways of being are revealing
-                their limits, while the forms of life capable of replacing them
-                have not yet fully emerged.
-              </p>
-            </div>
+      <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
+        — Daniel Schmachtenberger
+      </cite>
+    </blockquote>
 
-            <details className="group mt-8 rounded-xl border border-border bg-cream">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
-                <span className="font-medium text-foreground">
-                  Read the full invitation
-                </span>
-                <span className="text-xl text-[#D9A01B]">+</span>
-              </summary>
+    <div className="mt-10 space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        In times between worlds—when the predominant structures and stories of
+        a civilization begin to decay before new ones have been built—certain
+        individuals find themselves{" "}
+        <strong className="font-semibold text-foreground">
+          living without a world
+        </strong>
+        . Neither fully belonging to the old nor yet inhabiting what comes
+        next. They are living in the liminal space between collapse and
+        emergence, between what is dying and what has not yet been born.
+      </p>
 
-              <div className="space-y-6 border-t border-border px-6 py-7 text-muted-foreground md:px-8">
-                <p className="leading-relaxed">
-                  For some, this creates the strange experience of living
-                  without a world—no longer finding a home in our dominant
-                  culture, but not yet fully inhabiting what might come next.
-                  This can be profoundly disorienting and stressful. But it can
-                  also become a moment of unimaginable opportunity, meaning and
-                  responsibility.
-                </p>
+      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+        You may already know what this feels like.
+      </p>
 
-                <p className="leading-relaxed">
-                  It&apos;s the time of people in this liminal phase to
-                  recognize that there is no inherent manual for crossing this
-                  threshold. We will have to learn, practice and embody
-                  capacities our existing institutions have not yet learned how
-                  to cultivate—and begin experimenting with ways of seeing,
-                  being, knowing, and acting from which different futures can
-                  emerge.
-                </p>
+      <p className="leading-relaxed">
+        To have lost faith in the underlying logic of the current system while
+        still being deeply dependent on it. To feel that some of the paths you
+        inherited can no longer hold the questions living inside you. To care
+        deeply about the crises of our time while struggling to know how to
+        respond without reproducing the same patterns.
+      </p>
 
-                <p className="leading-relaxed">
-                  This is not solely a process of learning new ideas, skills or
-                  capacities, but a deeper kind of formation in which the full
-                  scope of what it means to be human is taken seriously:
-                  allowing what we come to know and understand to fully reshape
-                  how we live, what we value, how we relate, what we take
-                  responsibility for, and what we ultimately give ourselves to.
-                </p>
+      <p className="leading-relaxed">
+        There is something profoundly disorienting and overwhelming about this
+        experience. But there may also be an invitation within it.
+      </p>
 
-                <p className="leading-relaxed">
-                  Transformations of this depth rarely happen alone. They
-                  require sanctuaries of transformation—spaces where we can
-                  encounter ourselves, one another, and the world more deeply;
-                  where new ideas and experiences begin to reshape how we
-                  perceive reality; where practices help us compost old ways of
-                  being and allow new ones to take root; where grief, longing,
-                  and responsibility can be held and matured in relationship
-                  with others; and where community helps us remain faithful to
-                  what we say truly matters and to what we are willing to devote
-                  our lives to.
-                </p>
+      <p className="leading-relaxed">
+        When the old maps no longer lead where we need to go, and there is no
+        instruction manual for crossing the threshold. It is the time for those
+        living in this liminal space to learn how to perceive reality
+        differently, cultivate capacities our existing institutions rarely know
+        how to develop, and experiment together with ways of living, relating,
+        and responding from which radically different futures might emerge.
+      </p>
 
-                <p className="font-medium leading-relaxed text-foreground">
-                  The Metta Tropical Fellowship is our attempt to create such a
-                  place: an experimental community in which we can live inside
-                  the deepest questions this moment is asking of us, and allow
-                  our insights to radically reshape how we live in the world.
-                </p>
-              </div>
-            </details>
-          </div>
-        </section>
+      <p className="leading-relaxed">
+        This is why we understand this moment not only as a crisis, but
+        potentially as a civilizational rite of passage—one that asks us to
+        question who we are becoming, what we aspire toward, which desires are
+        shaping our lives, what we are willing to let go of and compost, and
+        what may need to change if our lives are to serve the flourishing of all
+        living beings.
+      </p>
+
+      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+        And thresholds of this depth are difficult to cross alone.
+      </p>
+
+      <p className="leading-relaxed">
+        They need relationships strong enough to hold uncertainty. Practices
+        that help us remain present when old identities and assumptions begin
+        to loosen. Friends and mentors who can challenge and care for us. Places
+        where grief and longing can be taken seriously, and where we can
+        experiment with other possibilities of life aligned to what we know to
+        be true.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        The Metta Tropical Fellowship is our attempt to create such a place.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* WHY NOW */}
         <section className="bg-cream py-20 lg:py-24">
