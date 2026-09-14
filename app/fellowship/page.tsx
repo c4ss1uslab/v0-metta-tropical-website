@@ -354,43 +354,91 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-        {/* The Fellowship */}
-        <section className="bg-[#FFFDF6] py-16 lg:py-20">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-              The Fellowship
-            </span>
+ {/* The Fellowship */}
+<section className="bg-[#FFFDF6] py-16 lg:py-20">
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      The Fellowship
+    </span>
 
-            <h2 className="mt-4 max-w-3xl font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
-              A new kind of transformative journey for a time of planetary crisis
-            </h2>
+    {/* Main Title */}
+    <h2
+      className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      A{" "}
+      <span className="rounded-sm bg-[#F4D35E]/55 px-1.5 py-0.5 font-bold text-[#7A5700]">
+        new kind
+      </span>{" "}
+      of transformative journey for a time of planetary crisis
+    </h2>
 
-            <div className="mt-8 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil, emerging from a simple recognition: we are living through the unraveling of a world whose promises are reaching their limits, while many of our attempts to respond continue to reproduce the very logics of separation, extraction, and optimization that brought us here. The crises of our time cannot be met through better ideas, strategies, or solutions alone. They ask for a deeper transformation in how we perceive reality, relate to ourselves and one another, encounter the living world and the sacred, and participate in life.
-              </p>
+    <div className="mt-8 space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
+        emerging from a simple recognition: we are living through the
+        unraveling of a world whose promises are reaching their limits, while
+        many of our attempts to respond continue to reproduce the very logics
+        of separation, extraction, and optimization that brought us here. The
+        crises of our time cannot be met through better ideas, strategies, or
+        solutions alone. They ask for a deeper transformation in{" "}
+        <strong className="font-semibold text-foreground">
+          how we perceive reality, relate to ourselves and one another,
+          encounter the living world and the sacred, and participate in life
+        </strong>
+        .
+      </p>
 
-              <p className="leading-relaxed">
-                Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual formation, relational practice, complexity theory, systems transformation, civilizational inquiry, and land-based wisdom—bringing into relationship ways of knowing, practices, and lineages rooted across the Global South and Global North that rarely meet within the same educational space.
-              </p>
+      <p className="leading-relaxed">
+        Rather than a traditional leadership program, the Fellowship is a
+        living process of formation weaving together spiritual formation,
+        relational practice, complexity theory, systems transformation,
+        civilizational inquiry, and land-based wisdom—bringing into relationship
+        ways of knowing, practices, and lineages rooted across the Global South
+        and Global North that rarely meet within the same educational space.
+      </p>
 
-              <p className="leading-relaxed">
-                We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who feel the depth of our predicament in their bodies, and who are called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
-              </p>
-            </div>
+      <p className="leading-relaxed">
+        We are calling together post-activist leaders—artists, educators,
+        organizers, thinkers, change-makers, and spiritual practitioners—who
+        feel the depth of our predicament in their bodies, and who are called
+        to undergo the kind of transformation that can better prepare us to
+        navigate and respond wisely to these times.
+      </p>
+    </div>
 
-            <div className="mt-8 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-              <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
-                At its heart, the Fellowship is an attempt to create the kinds of
-                educational and communal spaces this moment demands: sanctuaries of
-                transformation where we can live inside the questions that matter most
-                for this time, and undergo the kind of shape-shift through which our
-                lives begin to reorganize around what we come to recognize as true,
-                valuable, and worthy of our devotion.
-              </p>
-            </div>
-          </div>
-        </section>
+    {/* Highlight / Manifesto Block */}
+    <div className="relative mt-10">
+      {/* Offset background layer */}
+      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] rounded-tl-[2rem] bg-[#D9A01B]/30" />
+
+      {/* Main block */}
+      <div className="relative overflow-hidden rounded-br-[2rem] rounded-tl-[2rem] border border-[#D9A01B]/35 bg-[#FFF4C7] px-7 py-8 md:px-10 md:py-9">
+        {/* Decorative circle */}
+        <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
+
+        <div className="relative">
+          <span className="mb-5 block h-2.5 w-2.5 rounded-full bg-[#D9A01B]" />
+
+          <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+            At its heart, the Fellowship is an attempt to create the kinds of
+            educational and communal spaces this moment demands:{" "}
+            <strong className="font-medium">
+              sanctuaries of transformation
+            </strong>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which our lives
+            begin to reorganize around what we come to recognize as true,
+            valuable, and worthy of our devotion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
