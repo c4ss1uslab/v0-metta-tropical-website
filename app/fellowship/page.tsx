@@ -247,7 +247,7 @@ export default function FellowshipPage() {
 
         {/* Subtitle */}
         <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-          Cultivating The Wisdom Required To Respond To The Complexity Of Our Times
+          Cultivating the Wisdom Required to Respond to the Complexity of Our Times
         </p>
 
         {/* Central Question */}
