@@ -435,7 +435,7 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-{/* LIVING BETWEEN WORLDS */}
+{/* THE INVITATION */}
 <section
   id="invitation"
   className="scroll-mt-32 bg-background py-20 lg:py-24"
@@ -444,20 +444,20 @@ export default function FellowshipPage() {
 
     {/* Section Title */}
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-      Living Between Worlds
+      The Invitation
     </span>
 
     {/* Opening Quote */}
     <blockquote className="mt-5 max-w-3xl">
       <p
-        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-cyan-800 md:text-3xl"
+        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
         style={{
           fontFamily:
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
         &ldquo;It&apos;s actually the time of people in that liminal phase to
-        work on developing what are these new structures.&rdquo;
+        work on developing these new structures.&rdquo;
       </p>
 
       <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
