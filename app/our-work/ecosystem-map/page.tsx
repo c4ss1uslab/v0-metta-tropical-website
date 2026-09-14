@@ -716,10 +716,10 @@ export default function MettaTropical() {
             >
               Enter the map
             </a>
-            <a className="btn quiet" href="#about">
+            <a className="btn quiet bg-[#111827] hover:bg-[#111827]/90" href="#about">
               About
             </a>
-            <a className="btn quiet" href="#library">
+            <a className="btn quiet bg-[#111827] hover:bg-[#111827]/90" href="#library">
               Library
             </a>
           </div>
@@ -768,7 +768,7 @@ export default function MettaTropical() {
                 </p>
 
               <p style={{ marginTop: "var(--space-5)" }}>
-                <a className="btn quiet" href="#library">
+                <a className="btn quiet bg-[#111827] hover:bg-[#111827]/90" href="#library">
                   Read the full argument
                 </a>
               </p>
