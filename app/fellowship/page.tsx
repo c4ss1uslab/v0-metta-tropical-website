@@ -375,7 +375,7 @@ export default function FellowshipPage() {
               </p>
 
               <p className="leading-relaxed">
-                We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who feel the depth of our predicament in their bodies who are called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
+                We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who feel the depth of our predicament in their bodies, and who are called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
               </p>
             </div>
 
