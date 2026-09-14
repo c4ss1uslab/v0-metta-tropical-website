@@ -410,33 +410,31 @@ export default function FellowshipPage() {
       </p>
     </div>
 
-    {/* Highlight / Manifesto Block */}
-    <div className="relative mt-10">
-      {/* Offset background layer */}
-      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] bg-[#D9A01B]/30" />
+{/* Highlight / Manifesto Block */}
+<div className="relative mt-10">
+  {/* Offset background layer */}
+  <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] bg-[#D9A01B]/30" />
 
-      {/* Main block */}
-      <div className="relative overflow-hidden rounded-br-[2rem] border border-[#D9A01B]/35 bg-[#FFF4C7] px-7 py-8 md:px-10 md:py-9">
-        {/* Decorative form */}
-        <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
+  {/* Main block */}
+  <div className="relative overflow-hidden rounded-br-[2rem] border border-[#D9A01B]/35 bg-[#D9A01B]/10 px-7 py-8 md:px-10 md:py-9">
+    {/* Decorative form */}
+    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
 
-        <div className="relative">
-          <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
-            At its heart, the Fellowship is an attempt to create the kinds of
-            educational and communal spaces this moment demands:{" "}
-            <strong className="font-medium">
-              sanctuaries of transformation
-            </strong>{" "}
-            where we can live inside the questions that matter most for this
-            time, and undergo the kind of shape-shift through which our lives
-            begin to reorganize around what we come to recognize as true,
-            valuable, and worthy of our devotion.
-          </p>
-        </div>
-      </div>
+    <div className="relative">
+      <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+        At its heart, the Fellowship is an attempt to create the kinds of
+        educational and communal spaces this moment demands:{" "}
+        <strong className="font-medium">
+          sanctuaries of transformation
+        </strong>{" "}
+        where we can live inside the questions that matter most for this
+        time, and undergo the kind of shape-shift through which our lives
+        begin to reorganize around what we come to recognize as true,
+        valuable, and worthy of our devotion.
+      </p>
     </div>
   </div>
-</section>
+</div>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
