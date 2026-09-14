@@ -1114,10 +1114,10 @@ function GlobalStyles() {
   --text-secondary: #5E5B55; 
   --text-tertiary: #87837E;
   --border-default: #E6E3D8;
-  --border-muted: #2C2A25; 
+  --border-muted: #111827; 
   --btn-primary: #D9A01B; 
   --btn-text: #FFFDF6;
-  --btn-quiet-bg: #2C2A25; 
+  --btn-quiet-bg: #111827; 
   --btn-quiet-text: #FFFDF6;
   --soul: #8B0000;    
   --systems: #008B8B; 
