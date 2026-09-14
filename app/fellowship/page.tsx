@@ -354,7 +354,7 @@ export default function FellowshipPage() {
           </div>
         </section>
 
- {/* The Fellowship */}
+{/* The Fellowship */}
 <section className="bg-[#FFFDF6] py-16 lg:py-20">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
@@ -370,7 +370,7 @@ export default function FellowshipPage() {
       }}
     >
       A{" "}
-      <span className="rounded-sm bg-[#F4D35E]/55 px-1.5 py-0.5 font-bold text-[#7A5700]">
+      <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
         new kind
       </span>{" "}
       of transformative journey for a time of planetary crisis
@@ -413,16 +413,14 @@ export default function FellowshipPage() {
     {/* Highlight / Manifesto Block */}
     <div className="relative mt-10">
       {/* Offset background layer */}
-      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] rounded-tl-[2rem] bg-[#D9A01B]/30" />
+      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] bg-[#D9A01B]/30" />
 
       {/* Main block */}
-      <div className="relative overflow-hidden rounded-br-[2rem] rounded-tl-[2rem] border border-[#D9A01B]/35 bg-[#FFF4C7] px-7 py-8 md:px-10 md:py-9">
-        {/* Decorative circle */}
+      <div className="relative overflow-hidden rounded-br-[2rem] border border-[#D9A01B]/35 bg-[#FFF4C7] px-7 py-8 md:px-10 md:py-9">
+        {/* Decorative form */}
         <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
 
         <div className="relative">
-          <span className="mb-5 block h-2.5 w-2.5 rounded-full bg-[#D9A01B]" />
-
           <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
             At its heart, the Fellowship is an attempt to create the kinds of
             educational and communal spaces this moment demands:{" "}
