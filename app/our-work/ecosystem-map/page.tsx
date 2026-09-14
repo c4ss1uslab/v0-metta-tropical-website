@@ -190,8 +190,7 @@ const entries: LibraryEntry[] = [
         </p>
         <p>
           We, the ones doing this mapping, are constantly choosing what to
-          emphasise and what to make invisible. This entry stays open, and
-          it is the one we most want to be corrected on.
+          emphasise and what to make invisible.
         </p>
       </>
     ),
