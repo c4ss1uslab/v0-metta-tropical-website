@@ -28,8 +28,8 @@ export function HeroSection() {
   {/* DESKTOP BACKGROUND IMAGE LAYER (From Code 1) - Hidden on Mobile */}
   <div className="hidden lg:block absolute inset-0 lg:left-1/3"> 
     <Image 
-      src="https://cdn.imageurlgenerator.com/uploads/e9abcf43-d3c8-43bf-bf5b-a93e20d6ab4c.gif" 
-      alt="alter do chão, Pará. Carimbó. Per" 
+      src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg" 
+      alt="Contemplative group of people looking at the descending sun from within a river" 
       fill 
       className="object-cover object-center" 
       priority 
@@ -262,7 +262,7 @@ export function IntroductionSection() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
               <Image
                 src="https://cdn.imageurlgenerator.com/uploads/2c792545-3019-45ae-98dd-eecb234de1e5.jpeg"
-                alt="Folhas da Amazônia, Manaus, Manaus. Personal Archieve, Rebeca Lissa"
+                alt="Folhas da Amazônia, Manaus, Manaus. Personal Archive, Rebeca Lissa"
                 fill
                 className="bg-foreground object-contain"
               />
