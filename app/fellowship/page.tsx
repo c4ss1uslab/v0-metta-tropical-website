@@ -224,173 +224,173 @@ export default function FellowshipPage() {
       <Navigation />
 
       <main className="min-h-screen bg-[#FFFDF6] pt-16">
-{/* HERO */}
-<section className="relative overflow-hidden bg-[#FFFDF6]">
-  {/* Main Hero */}
-  <div className="relative py-20 lg:py-28">
-    {/* Soft organic color fields */}
-    <div className="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full bg-[#D9A01B]/20 blur-3xl" />
-    <div className="pointer-events-none absolute -bottom-28 -left-24 h-96 w-96 rounded-full bg-olive/15 blur-3xl" />
-    <div className="pointer-events-none absolute left-[46%] top-12 h-52 w-52 rounded-full bg-crimson/10 blur-3xl" />
+        {/* HERO */}
+        <section className="relative overflow-hidden bg-[#FFFDF6]">
+          {/* Main Hero */}
+          <div className="relative py-20 lg:py-28">
+            {/* Soft organic color fields */}
+            <div className="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full bg-[#D9A01B]/20 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-28 -left-24 h-96 w-96 rounded-full bg-olive/15 blur-3xl" />
+            <div className="pointer-events-none absolute left-[46%] top-12 h-52 w-52 rounded-full bg-crimson/10 blur-3xl" />
 
-    <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
-      <div className="max-w-4xl">
-        {/* Welcome */}
-        <span className="text-sm font-medium uppercase tracking-[0.14em] text-olive">
-          Welcome to the
-        </span>
+            <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
+              <div className="max-w-4xl">
+                {/* Welcome */}
+                <span className="text-sm font-medium uppercase tracking-[0.14em] text-olive">
+                  Welcome to the
+                </span>
 
-        {/* Fellowship / Collective Name */}
-        <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
-          Metta Tropical Fellowship
-        </h1>
+                {/* Fellowship / Collective Name */}
+                <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
+                  Metta Tropical Fellowship
+                </h1>
 
-        {/* Subtitle */}
-        <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-          Cultivating the Wisdom Required to Respond to the Complexity of Our Times
-        </p>
+                {/* Subtitle */}
+                <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+                  Cultivating the Wisdom Required to Respond to the Complexity of Our Times
+                </p>
 
-        {/* Central Question */}
-        <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
-          <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
-            What is this moment in history asking of your life?
-          </p>
-        </div>
+                {/* Central Question */}
+                <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
+                  <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
+                    What is this moment in history asking of your life?
+                  </p>
+                </div>
 
-        {/* Fellowship Description */}
-        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-          An eight-month initiatory journey for a generation coming of age
-          in a time between worlds—when inherited ways of living are reaching
-          their limits and the forms of life capable of replacing them have
-          not yet fully emerged.
-        </p>
+                {/* Fellowship Description */}
+                <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+                  An eight-month initiatory journey for a generation coming of age
+                  in a time between worlds—when inherited ways of living are reaching
+                  their limits and the forms of life capable of replacing them have
+                  not yet fully emerged.
+                </p>
 
-        {/* Key Information */}
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
-            January — August 2027
-          </span>
+                {/* Key Information */}
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
+                    January — August 2027
+                  </span>
 
-          <span className="rounded-full border border-olive/30 bg-white/70 px-5 py-2 text-sm text-foreground">
-            Brazil
-          </span>
+                  <span className="rounded-full border border-olive/30 bg-white/70 px-5 py-2 text-sm text-foreground">
+                    Brazil
+                  </span>
 
-          <span className="rounded-full border border-crimson/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-            15–20 participants
-          </span>
+                  <span className="rounded-full border border-crimson/20 bg-white/70 px-5 py-2 text-sm text-foreground">
+                    15–20 participants
+                  </span>
 
-          <span className="rounded-full border border-cyan-800/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-            Offered as a gift
-          </span>
-        </div>
+                  <span className="rounded-full border border-cyan-800/20 bg-white/70 px-5 py-2 text-sm text-foreground">
+                    Offered as a gift
+                  </span>
+                </div>
 
-        {/* Primary Actions */}
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#journey"
-            className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
-          >
-            Explore the Journey
-          </a>
+                {/* Primary Actions */}
+                <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="#journey"
+                    className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+                  >
+                    Explore the Journey
+                  </a>
 
-          <a
-            href="#apply"
-            className="inline-flex items-center justify-center rounded-md border border-foreground/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
-          >
-            Begin Application
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <a
+                    href="#apply"
+                    className="inline-flex items-center justify-center rounded-md border border-foreground/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
+                  >
+                    Begin Application
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-{/* Fellowship Section Navigation */}
-<div className="border-y border-white/10 bg-[#111827]">
-  <div className="mx-auto max-w-6xl px-6 lg:px-8">
-    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
-      <a
-        href="#invitation"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        The Invitation
-      </a>
+          {/* Fellowship Section Navigation */}
+          <div className="border-y border-white/10 bg-[#111827]">
+            <div className="mx-auto max-w-6xl px-6 lg:px-8">
+              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
+                <a
+                  href="#invitation"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  The Invitation
+                </a>
 
-      <a
-        href="#why-now"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        Why Now
-      </a>
+                <a
+                  href="#why-now"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  Why Now
+                </a>
 
-      <a
-        href="#journey"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        The Journey
-      </a>
+                <a
+                  href="#journey"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  The Journey
+                </a>
 
-      <a
-        href="#streams"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        Five Streams
-      </a>
+                <a
+                  href="#streams"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  Five Streams
+                </a>
 
-      <a
-        href="#pedagogy"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        Pedagogy
-      </a>
+                <a
+                  href="#pedagogy"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  Pedagogy
+                </a>
 
-      <a
-        href="#structure"
-        className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-      >
-        Curriculum
-      </a>
-    </div>
-  </div>
-</div>
-      </section>
+                <a
+                  href="#structure"
+                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
+                >
+                  Curriculum
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      {/* The Fellowship */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-      The Fellowship
-    </span>
+        {/* The Fellowship */}
+        <section className="bg-[#FFFDF6] py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              The Fellowship
+            </span>
 
-    <h2 className="mt-4 max-w-3xl font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
-      A new kind of transformative journey for a time of planetary crisis
-    </h2>
+            <h2 className="mt-4 max-w-3xl font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl">
+              A new kind of transformative journey for a time of planetary crisis
+            </h2>
 
-    <div className="mt-8 space-y-6 text-muted-foreground">
-      <p className="leading-relaxed">
-        The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil, emerging from a simple recognition: we are living through the unraveling of a world whose promises are reaching their limits, while many of our attempts to respond continue to reproduce the very logics of separation, extraction, and optimization that brought us here. The crises of our time cannot be met through better ideas, strategies, or solutions alone. They ask for a deeper transformation in how we perceive reality, relate to ourselves and one another, encounter the living world and the sacred, and participate in life.
-      </p>
+            <div className="mt-8 space-y-6 text-muted-foreground">
+              <p className="leading-relaxed">
+                The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil, emerging from a simple recognition: we are living through the unraveling of a world whose promises are reaching their limits, while many of our attempts to respond continue to reproduce the very logics of separation, extraction, and optimization that brought us here. The crises of our time cannot be met through better ideas, strategies, or solutions alone. They ask for a deeper transformation in how we perceive reality, relate to ourselves and one another, encounter the living world and the sacred, and participate in life.
+              </p>
 
-      <p className="leading-relaxed">
-       Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual formation, relational practice, complexity theory, systems transformation, civilizational inquiry, and land-based wisdom—bringing into relationship ways of knowing, practices, and lineages rooted across the Global South and Global North that rarely meet within the same educational space.
-      </p>
+              <p className="leading-relaxed">
+                Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual formation, relational practice, complexity theory, systems transformation, civilizational inquiry, and land-based wisdom—bringing into relationship ways of knowing, practices, and lineages rooted across the Global South and Global North that rarely meet within the same educational space.
+              </p>
 
-      <p className="leading-relaxed">
-        We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who cannot look away from the depth of our predicament, and who feel called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
-      </p>
-    </div>
+              <p className="leading-relaxed">
+                We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who feel the depth of our predicament in their bodies who are called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
+              </p>
+            </div>
 
-    <div className="mt-8 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
-      <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
-        At its heart, the Fellowship is an attempt to create the kinds of
-        educational and communal spaces this moment demands: sanctuaries of
-        transformation where we can live inside the questions that matter most
-        for this time, and undergo the kind of shape-shift through which our
-        lives begin to reorganize around what we come to recognize as true,
-        valuable, and worthy of our devotion.
-      </p>
-    </div>
-  </div>
-</section>
+            <div className="mt-8 rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-6 md:px-8 md:py-7">
+              <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+                At its heart, the Fellowship is an attempt to create the kinds of
+                educational and communal spaces this moment demands: sanctuaries of
+                transformation where we can live inside the questions that matter most
+                for this time, and undergo the kind of shape-shift through which our
+                lives begin to reorganize around what we come to recognize as true,
+                valuable, and worthy of our devotion.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* INVITATION */}
         <section className="bg-background py-20 lg:py-24">
@@ -768,11 +768,10 @@ export default function FellowshipPage() {
               {architecture.map((item, index) => (
                 <div
                   key={item.title}
-                  className={`grid gap-2 py-4 md:grid-cols-[160px_1fr] md:gap-8 ${
-                    index !== architecture.length - 1
-                      ? "border-b border-border"
-                      : ""
-                  }`}
+                  className={`grid gap-2 py-4 md:grid-cols-[160px_1fr] md:gap-8 ${index !== architecture.length - 1
+                    ? "border-b border-border"
+                    : ""
+                    }`}
                 >
                   <span className="font-serif text-lg font-medium text-foreground">
                     {item.title}
