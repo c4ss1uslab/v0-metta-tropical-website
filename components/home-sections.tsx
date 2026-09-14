@@ -261,7 +261,7 @@ export function IntroductionSection() {
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
               <Image
-                src="https://cdn.imageurlgenerator.com/uploads/2c404955-b796-4ecc-8c58-db4ad7b40628.jpg"
+                src="https://cdn.imageurlgenerator.com/uploads/1f77d4ae-26ec-4a4a-90ab-8a92a522541f.jpg"
                 alt="Árvores da Amazônia, Parintins, Manaus. Personal Archieve, Rebeca Lissa"
                 fill
                 className="bg-foreground object-contain"
