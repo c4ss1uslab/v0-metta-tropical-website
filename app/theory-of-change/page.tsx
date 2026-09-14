@@ -1045,7 +1045,7 @@ export default function TheoryOfChangePage() {
 </div>
 
 {/* FOOTER SECTION */}
-<footer className="mt-12 relative rounded-xl border border-amber-200/70 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
+<footer className="mt-12 relative rounded-xl border border-border bg-card/30 dark:border-stone-800 bg-[#fdfbf7] dark:bg-[#181715] p-6 sm:p-8 shadow-sm shadow-amber-900/5 text-sm text-stone-700 dark:text-stone-300">
 
   {/* Paper Top Accent Strip */}
   <div className="absolute top-0 left-6 right-6 h-[2px] dark:bg-stone-700/40 rounded-full" />
@@ -1440,7 +1440,7 @@ export default function TheoryOfChangePage() {
     {/* Box 1 */}
     <div className="relative flex flex-col items-center justify-center text-center">
       <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        Rivalrous dynamics x Exponential technology
+        A collapse in our shared capacities to perceive reality as disclosing intrinsic value and to make decisions accordingly
       </div>
       {/* Desktop Operator Badge centered in the gap after Box 1 */}
       <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
@@ -1460,7 +1460,7 @@ export default function TheoryOfChangePage() {
         </span>
       </div>
       <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        Systems that reward externalizing harm onto the commons and the future
+                Rivalrous dynamics x Exponential technology
       </div>
       {/* Desktop Operator Badge centered in the gap after Box 2 */}
       <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
@@ -1480,7 +1480,7 @@ export default function TheoryOfChangePage() {
         </span>
       </div>
       <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        A collapse in our shared capacity to make sense of the world well enough to choose well within it
+        Systems that reward externalizing harm onto the commons and the future
       </div>
       {/* Desktop Operator Badge centered in the gap after Box 3 */}
       <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">

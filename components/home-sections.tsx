@@ -29,9 +29,9 @@ export function HeroSection() {
   <div className="hidden lg:block absolute inset-0 lg:left-1/3"> 
     <Image 
       src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg" 
-      alt="Metta Tropical Collective Hero Image" 
+      alt="Contemplative group of people looking at the descending sun from within a river" 
       fill 
-      className="object-cover object-center" 
+      className="object-cover object-[center_61%]"
       priority 
     /> 
     {/* Desktop: keep the left fade */} 
@@ -81,7 +81,7 @@ export function HeroSection() {
   <div className="mt-6 relative w-full h-[60vh] lg:hidden">
     <Image
       src="https://i.postimg.cc/7LVZy16j/designretrospace.jpg"
-      alt="Metta Tropical Collective Hero Image"
+      alt="Contemplative group of people looking at the descending sun from within a river"
       fill
       className="object-cover object-center"
       priority
@@ -262,7 +262,7 @@ export function IntroductionSection() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:sticky lg:top-24">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cosmos_1234029733-WbYYUpcs7i7gZeQt8QQtmpceC9jLXP.jpeg"
-                alt="Tropical Collage"
+                alt="Tropical woman collage"
                 fill
                 className="bg-foreground object-contain"
               />
