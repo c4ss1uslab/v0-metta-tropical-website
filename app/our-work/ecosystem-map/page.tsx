@@ -743,11 +743,10 @@ export default function MettaTropical() {
               </span>
             </div>
             <div>
-              <h2>
-                Integrating a fragmented ecosystem of educational responses to
-                the metacrisis
+              <h2 className="text-xl font-semibold">Integrating a fragmented ecosystem of educational responses to the metacrisis
               </h2>
-              <p className="lede">
+              <br></br>
+              <p className="body-lg">
                 Over the past decades, many new developmental and
                 transformational practices have emerged around the world. They
                 grew inside alternative educational spaces, exploring
@@ -761,15 +760,12 @@ export default function MettaTropical() {
                 lineages in their own right, with frameworks tested over time
                 and communities built around them. The list keeps expanding.
               </p>
-              
-              <div className="callout">
-                <p className="font-serif text-lg text-primary">
+              <p className="body-lg">
                   Yet they remain{" "}
-                  <span className="mark font-medium">fragmented and siloed</span>, often
+                  <span className="bg-[#FBBF24]">fragmented and siloed</span>, often
                   concentrated in the Global North and largely inaccessible to
                   most communities in the Global South.
                 </p>
-              </div>
 
               <p style={{ marginTop: "var(--space-5)" }}>
                 <a className="btn quiet" href="#library">
