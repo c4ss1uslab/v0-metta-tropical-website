@@ -367,27 +367,15 @@ export default function FellowshipPage() {
 
     <div className="mt-8 space-y-6 text-muted-foreground">
       <p className="leading-relaxed">
-        The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
-        built on a simple premise: the crises of our time cannot be met through
-        better ideas, strategies, or solutions alone. They require a radical
-        transformation in how we perceive reality, relate to one another, and
-        participate in life.
+        The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil, emerging from a simple recognition: we are living through the unraveling of a world whose promises are reaching their limits, while many of our attempts to respond continue to reproduce the very logics of separation, extraction, and optimization that brought us here. The crises of our time cannot be met through better ideas, strategies, or solutions alone. They ask for a deeper transformation in how we perceive reality, relate to ourselves and one another, encounter the living world and the sacred, and participate in life.
       </p>
 
       <p className="leading-relaxed">
-        Rather than a traditional leadership program, the Fellowship is a
-        living process of formation weaving together spiritual practice,
-        systems and complexity thinking, relational work, social
-        transformation, and land-based wisdom through immersive retreats,
-        collective inquiry, sustained practice, mentorship, and community.
+       Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual practice, systems and complexity thinking, relational work, social transformation, and land-based wisdom—bringing into relationship knowledge, practices, and lineages emerging from both the Global South and Global North.
       </p>
 
       <p className="leading-relaxed">
-        We are calling together post-activist leaders—artists, educators,
-        organizers, thinkers, change-makers, and spiritual practitioners—who
-        cannot look away from the depth of our predicament, and who sense that
-        any meaningful response must emerge from a fundamentally different
-        relationship with all life—self, other, world, and the sacred.
+        We are calling together post-activist leaders—artists, educators, organizers, thinkers, change-makers, and spiritual practitioners—who cannot look away from the depth of our predicament, and who feel called to undergo the kind of transformation that can better prepare us to navigate and respond wisely to these times.
       </p>
     </div>
 
