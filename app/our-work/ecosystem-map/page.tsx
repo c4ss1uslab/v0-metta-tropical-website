@@ -280,7 +280,7 @@ const entries: LibraryEntry[] = [
           </div>
           <div className="phase">
             <span className="n">Phase 4</span>
-            <p>Deepening the research.</p>
+            <p>Deepening and expanding the research.</p>
           </div>
         </div>
         <p className="ui tertiary" style={{ marginTop: "var(--space-4)" }}>
