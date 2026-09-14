@@ -421,7 +421,7 @@ export default function FellowshipPage() {
     <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
 
     <div className="relative">
-      <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+      <p className="text-lg leading-relaxed text-foreground md:text-xl">
         At its heart, the Fellowship is an attempt to create the kinds of
         educational and communal spaces this moment demands:{" "}
         <strong className="font-medium">
