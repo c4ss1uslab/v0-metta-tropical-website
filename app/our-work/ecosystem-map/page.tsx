@@ -743,7 +743,7 @@ export default function MettaTropical() {
               </span>
             </div>
             <div>
-              <h2 className="text-xl font-semibold">Integrating a fragmented ecosystem of educational responses to the metacrisis
+              <h2 className="!text-[43px] font-semibold">Integrating a fragmented ecosystem of educational responses to the metacrisis
               </h2>
               <br></br>
               <p className="body-lg">
