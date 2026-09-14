@@ -11,20 +11,7 @@ import React, { useMemo, useState } from "react";
  * Usage: drop this file into any Vite / Next / CRA project as
  * MettaTropical.tsx and render <MettaTropical /> on a page.
  * It ships its own <style> block, so no Tailwind or CSS module
- * is required — just make sure the two Google Fonts below are
- * reachable (either via the <link> in your HTML head, or swap
- * for next/font / a local @font-face).
- *
- * Structural notes for editing:
- * - All design tokens live in the CSS string in <GlobalStyles>.
- *   Change a value there and the whole page follows.
- * - Library entries live in the `entries` array below. Add one
- *   by pushing a new object; `kind` must match one of the filter
- *   chips ("essay" | "note" | "diagram" | "reference").
- * - Glossary terms live in the `glossaryTerms` array.
- * - The hero diagram's unfold sequence is driven by `step`
- *   (0–5). `CAPACITY_ORDER` and `perches` describe what lights
- *   up and where the swallows land at each step.
+ * is required.
  */
 
 // ----------------------------------------------------------------
@@ -52,10 +39,9 @@ const entries: LibraryEntry[] = [
           transformational initiatives started to emerge around the world, as
           part of alternative educational spaces exploring dimensions of
           human development not available within formal institutions. They
-          covered a wide range of domains: systems thinking, rites of
-          passage, soul initiation, nature-based immersion, deep ecology,
-          regeneration, spiritual development, men's work, relationality,
-          social change.
+          covered a wide range of domains: systems thinking, rites of passage,
+          soul initiation, nature-based immersion, deep ecology, regeneration,
+          spiritual development, men's work, relationality, social change.
         </p>
         <p>
           Many evolved into lineages in themselves. A lot of them developed
@@ -186,11 +172,14 @@ const entries: LibraryEntry[] = [
           prejudices.
         </p>
         <p>
-          Who gets to be the mappers? Where are the voices of the ones being mapped? What are the incentive landscapes, values and power structures underscoring the act of mapping itself?
+          Who gets to be the mappers? Where are the voices of the ones being
+          mapped? What are the incentive landscapes, values and power
+          structures underscoring the act of mapping itself?
         </p>
         <p>
           We, the ones doing this mapping, are constantly choosing what to
-          emphasise and what to make invisible.
+          emphasise and what to make invisible. This entry stays open, and
+          it is the one we most want to be corrected on.
         </p>
       </>
     ),
@@ -280,7 +269,7 @@ const entries: LibraryEntry[] = [
           </div>
           <div className="phase">
             <span className="n">Phase 4</span>
-            <p>Deepening and expanding the research.</p>
+            <p>Deepening the research.</p>
           </div>
         </div>
         <p className="ui tertiary" style={{ marginTop: "var(--space-4)" }}>
@@ -386,18 +375,10 @@ const filterKinds: { key: "all" | EntryKind; label: string }[] = [
 ];
 
 // ----------------------------------------------------------------
-// Hero diagram: capacities light up in this order as `step` (1–4)
-// advances. Index 0 and 5 are "no new capacity" (start / final
-// connective step). Kept as a plain array so the sequence can be
-// reordered by rearranging four strings.
+// Hero diagram coordinates
 // ----------------------------------------------------------------
 const CAPACITY_ORDER: (null | "soul" | "systems" | "soil" | "society")[] = [
-  null,
-  "soul",
-  "systems",
-  "soil",
-  "society",
-  null,
+  null, "soul", "systems", "soil", "society", null,
 ];
 
 const STAGE_LABELS = [
@@ -409,44 +390,13 @@ const STAGE_LABELS = [
   "Everything connects. Click to begin again.",
 ];
 
-// Where the four swallows perch at each of the six steps: [x, y] per bird.
 const PERCHES: [number, number][][] = [
-  [
-    [118, 150],
-    [152, 206],
-    [92, 252],
-    [196, 112],
-  ],
-  [
-    [268, 58],
-    [330, 34],
-    [212, 96],
-    [392, 28],
-  ],
-  [
-    [604, 102],
-    [672, 132],
-    [540, 66],
-    [740, 158],
-  ],
-  [
-    [128, 452],
-    [246, 512],
-    [70, 398],
-    [330, 534],
-  ],
-  [
-    [628, 462],
-    [700, 404],
-    [556, 520],
-    [772, 432],
-  ],
-  [
-    [430, 44],
-    [530, 60],
-    [330, 40],
-    [620, 88],
-  ],
+  [[118, 150], [152, 206], [92, 252], [196, 112]],
+  [[268, 58], [330, 34], [212, 96], [392, 28]],
+  [[604, 102], [672, 132], [540, 66], [740, 158]],
+  [[128, 452], [246, 512], [70, 398], [330, 534]],
+  [[628, 462], [700, 404], [556, 520], [772, 432]],
+  [[430, 44], [530, 60], [330, 40], [620, 88]],
 ];
 
 const BIRD_PATHS = [
@@ -521,7 +471,7 @@ const NODES: NodeDef[] = [
 
 interface ConnDef {
   group: 1 | 2 | 3 | 4 | 5;
-  color: string; // CSS var expression
+  color: string;
   d: string;
 }
 
@@ -827,20 +777,25 @@ export default function MettaTropical() {
 
       {/* ===== POSITION ===== */}
       <section className="wrap" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        <div className="pull">
-          <p className="label">Where we stand</p>
-          <p className="big">
-            The act of mapping holds immense power and responsibility,
-            echoing a long history of precedents and prejudices.
-          </p>
-          <p className="small">
-            Who gets to be the mappers? Where are the voices of the ones
-            being mapped? What incentive landscapes, values and power
-            structures underscore the act of mapping itself? We, the ones
-            doing this mapping, are constantly choosing what to emphasise and
-            what to make invisible.
-          </p>
-        </div>
+        <details className="pull">
+          <summary>
+            <span className="label">Where we stand</span>
+            <span className="tri" style={{ marginLeft: "var(--space-3)" }} />
+          </summary>
+          <div className="pull-body">
+            <p className="big">
+              The act of mapping holds immense power and responsibility,
+              echoing a long history of precedents and prejudices.
+            </p>
+            <p className="small">
+              Who gets to be the mappers? Where are the voices of the ones
+              being mapped? What incentive landscapes, values and power
+              structures underscore the act of mapping itself? We, the ones
+              doing this mapping, are constantly choosing what to emphasise and
+              what to make invisible.
+            </p>
+          </div>
+        </details>
       </section>
 
       {/* ===== LIBRARY ===== */}
@@ -1043,8 +998,7 @@ export default function MettaTropical() {
 
 // ----------------------------------------------------------------
 // Styles — all design tokens live in :root. Change a value here
-// and the whole component follows. Values are sourced from
-// mettatropical_design_specs.md.
+// and the whole component follows.
 // ----------------------------------------------------------------
 
 function GlobalStyles() {
@@ -1054,19 +1008,21 @@ function GlobalStyles() {
 
 :root{
   --surface-base:#FFFFFF;
-  --surface-accent:#F3FF82;
+  --surface-accent:#FBBF24; /* Brighter, sunnier yellow (Amber 400) */
   --surface-technical:#4FC1E0;
   --surface-organic:#7D8764;
   --surface-raised:#AD2831;
   --surface-ritual:#5B21B6;
   --surface-sunk:#FAFAF8;
 
-  --text-primary:#111827;
-  --text-secondary:#4B5563;
-  --text-tertiary:#8C877F;
+  --text-primary:#155E75;
+  --text-secondary:#374151;
+  --text-tertiary:#6B7280;
 
   --border-default:#E5E7EB;
-  --border-muted:#1C1C1C;
+  --border-muted:#155E75;
+
+  --btn-primary:#111827;
 
   --soul:var(--surface-ritual);
   --systems:var(--surface-technical);
@@ -1075,12 +1031,13 @@ function GlobalStyles() {
 
   --font-primary:"Cormorant Garamond",ui-serif,Georgia,serif;
   --font-secondary:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
-  --size-xs:12px; --size-sm:14px; --size-md:18px; --size-lg:20px;
-  --size-xl:24px; --size-2xl:36px; --size-3xl:56px; --size-4xl:72px;
+  
+  --size-xs:12px; --size-sm:14px; --size-md:16px; --size-lg:18px;
+  --size-xl:20px; --size-2xl:28px; --size-3xl:40px; --size-4xl:56px;
   --lh-base:1.6;
 
-  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:20px;
-  --space-5:32px; --space-6:48px; --space-7:72px; --space-8:120px;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px;
+  --space-5:24px; --space-6:32px; --space-7:48px; --space-8:80px;
 
   --radius-xs:2px; --radius-sm:4px; --radius-md:8px;
 
@@ -1097,6 +1054,7 @@ function GlobalStyles() {
     --border-default:#2A2D34; --border-muted:#F4F4F2;
     --surface-technical:#7FD6EE; --surface-organic:#A3AE85;
     --surface-raised:#E0616A; --surface-ritual:#A78BFA;
+    --btn-primary:#F4F4F2;
   }
 }
 [data-theme="dark"]{
@@ -1105,6 +1063,7 @@ function GlobalStyles() {
   --border-default:#2A2D34; --border-muted:#F4F4F2;
   --surface-technical:#7FD6EE; --surface-organic:#A3AE85;
   --surface-raised:#E0616A; --surface-ritual:#A78BFA;
+  --btn-primary:#F4F4F2;
 }
 
 *{box-sizing:border-box}
@@ -1136,10 +1095,9 @@ h3{font-size:var(--size-2xl)}
 .body-lg{font-size:var(--size-lg)}
 
 .eyebrow{display:inline-block;font-family:var(--font-secondary);font-size:var(--size-xs);
-  font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--text-primary);
+  font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#111827;
   background:var(--surface-accent);padding:var(--space-2) var(--space-3);
   border-radius:var(--radius-xs);margin-bottom:var(--space-5)}
-[data-theme="dark"] .eyebrow{color:#111827}
 .mark{background:var(--surface-accent);color:#111827;padding:0 .22em;border-radius:var(--radius-xs);
   box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
@@ -1164,11 +1122,11 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 .btn{display:inline-block;font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
   text-transform:uppercase;letter-spacing:.12em;text-decoration:none;cursor:pointer;
   padding:var(--space-3) var(--space-4);border-radius:var(--radius-sm);
-  border:2px solid var(--border-muted);background:var(--surface-base);color:var(--text-primary);
+  border:2px solid var(--btn-primary);background:var(--surface-base);color:var(--btn-primary);
   transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease)}
-.btn:hover{background:var(--surface-accent);color:#111827;border-color:var(--border-muted)}
+.btn:hover{background:var(--surface-accent);color:#111827;border-color:var(--btn-primary)}
 .btn.quiet{border-color:var(--border-default);color:var(--text-secondary)}
-.btn.quiet:hover{border-color:var(--border-muted);color:#111827}
+.btn.quiet:hover{border-color:var(--btn-primary);color:var(--btn-primary)}
 
 .hero{border-bottom:2px solid var(--border-muted);background:var(--surface-sunk)}
 .hero-inner{max-width:1120px;margin:0 auto;padding:var(--space-5) var(--space-4) var(--space-7)}
@@ -1212,12 +1170,19 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
   aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:var(--space-4)}
 
 .pull{background:var(--surface-accent);color:#111827;border-radius:var(--radius-md);
-  padding:var(--space-7) var(--space-5);margin:var(--space-7) 0;text-align:center}
+  margin:var(--space-7) 0;text-align:center;transition:border-radius var(--motion-fast) var(--ease)}
+.pull summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:center;
+  padding:var(--space-5);font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:600;
+  text-transform:uppercase;letter-spacing:.14em}
+.pull summary::-webkit-details-marker{display:none}
+.pull .tri{color:#111827;margin-top:0;
+  flex:none;width:0;height:0;border-left:10px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent;
+  transition:transform var(--motion-fast) var(--ease)}
+.pull[open] .tri{transform:rotate(90deg)}
+.pull-body{padding:0 var(--space-5) var(--space-6)}
 .pull .big{font-size:clamp(24px,4.4vw,var(--size-2xl));line-height:1.24;font-weight:600;
   max-width:46rem;margin:0 auto var(--space-4)}
-.pull .small{max-width:42rem;margin:0 auto;font-size:var(--size-lg);color:#26272B}
-.pull .label{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
-  text-transform:uppercase;letter-spacing:.14em;margin-bottom:var(--space-4);color:#26272B}
+.pull .small{max-width:42rem;margin:0 auto;font-family:var(--font-secondary);font-size:var(--size-md);color:#111827}
 
 .libbar{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);flex-wrap:wrap;
   border-bottom:2px solid var(--border-muted);padding-bottom:var(--space-3);margin-bottom:var(--space-5)}
@@ -1242,7 +1207,7 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
   transition:transform var(--motion-fast) var(--ease)}
 .entry[open] .tri{transform:rotate(90deg)}
 .entry .head{flex:1;min-width:0}
-.entry .ttl{display:block;font-size:var(--size-xl);font-weight:600;line-height:1.2}
+.entry .ttl{display:block;font-size:var(--size-xl);font-weight:600;line-height:1.2;color:var(--text-primary)}
 .entry .dek{display:block;font-family:var(--font-secondary);font-size:var(--size-sm);color:var(--text-secondary);
   max-height:0;opacity:0;overflow:hidden;
   transition:max-height var(--motion-base) var(--ease),opacity var(--motion-base) var(--ease),margin var(--motion-base) var(--ease)}
@@ -1256,7 +1221,8 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 .tag.reference{color:var(--surface-raised)}
 .entry .body{padding:var(--space-4) var(--space-5) var(--space-5);max-width:var(--measure);
   border-top:1px solid var(--border-default)}
-.entry .body p{font-size:var(--size-lg)}
+/* Critical fix: Changed toggle contents to secondary font & md size for strict readability */
+.entry .body p{font-family:var(--font-secondary);font-size:var(--size-md);line-height:1.6;color:var(--text-primary)}
 .entries.cards .entry .body{max-width:none}
 
 .caps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);margin-top:var(--space-5)}
@@ -1271,15 +1237,22 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 .cap li{font-family:var(--font-secondary);font-size:var(--size-sm);color:var(--text-secondary);
   padding:var(--space-2) 0;border-top:1px solid var(--border-default)}
 .cap li:first-child{border-top:none}
-.lenses{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-3)}
-.lens{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;text-transform:uppercase;
-  letter-spacing:.08em;border:2px solid var(--border-default);border-radius:var(--radius-sm);
-  padding:var(--space-2) var(--space-3);color:var(--text-secondary)}
 
+/* Filters */
+.lenses{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-3)}
+.lens{font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:600;
+  background:var(--surface-sunk);color:var(--text-primary);
+  border:1px solid var(--border-default);border-radius:var(--radius-md);
+  padding:var(--space-2) var(--space-3)}
+
+/* Search glossary box */
 .gsearch{width:100%;max-width:26rem;font-family:var(--font-secondary);font-size:var(--size-md);
-  background:var(--surface-base);color:var(--text-primary);
-  border:2px solid var(--border-muted);border-radius:var(--radius-sm);padding:var(--space-3) var(--space-4)}
+  background:var(--surface-sunk);color:var(--text-primary);
+  border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);
+  transition:border-color var(--motion-fast) var(--ease), box-shadow var(--motion-fast) var(--ease)}
 .gsearch::placeholder{color:var(--text-tertiary)}
+.gsearch:focus{outline:none;border-color:var(--surface-accent);box-shadow:0 0 0 3px rgba(251,191,36,0.3)}
+
 .gterm{border-top:1px solid var(--border-default);padding:var(--space-4) 0;max-width:48rem}
 .gterm:first-of-type{border-top:2px solid var(--border-muted)}
 .gterm dt{font-size:var(--size-xl);font-weight:700}
@@ -1307,7 +1280,7 @@ footer{border-top:2px solid var(--border-muted);background:var(--surface-sunk);
 @media(max-width:620px){
   .entry summary{padding:var(--space-4)}
   .entry .body{padding-left:var(--space-4);padding-right:var(--space-4)}
-  .pull{padding:var(--space-6) var(--space-4)}
+  .pull-body{padding:0 var(--space-4) var(--space-5)}
 }
 `}</style>
   );
