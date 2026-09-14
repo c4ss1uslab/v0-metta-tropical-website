@@ -533,6 +533,182 @@ export default function FellowshipPage() {
   </div>
 </section>
 
+{/* WHO WE MUST BECOME */}
+<section
+  id="who-we-must-become"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
+>
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
+    {/* Section Title */}
+    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      Who We Must Become
+    </span>
+
+    {/* Opening Statement */}
+    <div className="mt-5 max-w-3xl">
+      <p
+        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Reclaiming leadership as a{" "}
+        <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+          sacred responsibility
+        </span>{" "}
+        toward the flourishing of all life.
+      </p>
+    </div>
+
+    {/* Introduction */}
+    <div className="mt-10 space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        Human beings grow toward the horizons of possibility they are able to
+        imagine. We are formed not only by what we are taught, but by the
+        images our cultures teach us to admire and aspire toward. Yet at a
+        moment asking so much of humanity, many of the dominant images
+        available to us—the achiever, the entrepreneur, the conscious leader,
+        even the changemaker—feel too small for the depth of transformation
+        this moment requires. It asks for deeper and more integrated forms of
+        human maturity.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        For us, that maturation involves a shift in our relationship to all
+        life: with ourselves, with one another, with the world we participate
+        in, and with the sacred.
+      </p>
+    </div>
+
+    {/* Four Relationships */}
+    <div className="mt-10 overflow-hidden border border-foreground/15 bg-background md:grid md:grid-cols-2">
+
+      {/* SELF */}
+      <article className="border-b border-foreground/15 p-6 md:border-r md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-crimson">
+          Self
+        </span>
+
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+          From Fragmentation
+          <span className="mx-2 text-[#D9A01B]">→</span>
+          Towards Wholeness
+        </h3>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Learning to meet the different parts of ourselves with greater
+          presence, compassion, and love, becoming less governed by unconscious
+          fear, conditioning, wounds, and protective patterns, and more capable
+          of acting from a deeper place of wholeness.
+        </p>
+
+        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
+          Self-awareness · Embodied presence · Emotional maturity · Integration
+        </p>
+      </article>
+
+      {/* OTHER */}
+      <article className="border-b border-foreground/15 p-6 md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#B88610]">
+          Other
+        </span>
+
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+          From Separation
+          <span className="mx-2 text-[#D9A01B]">→</span>
+          Towards Interbeing
+        </h3>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Learning to encounter others not as objects, obstacles, or resources,
+          but as beings whose lives are of transcendental worth, and deeply
+          entangled with our own. Developing the capacity to remain in
+          connection with others despite differences and conflict.
+        </p>
+
+        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
+          Attunement · Deep listening · Intimacy · Compassion · Presence ·
+          Attention
+        </p>
+      </article>
+
+      {/* WORLD */}
+      <article className="border-b border-foreground/15 p-6 md:border-b-0 md:border-r md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-800">
+          World
+        </span>
+
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+          From Observers
+          <span className="mx-2 text-[#D9A01B]">→</span>
+          Towards Participation
+        </h3>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Learning to see ourselves not as observers standing outside the
+          world, but as participants within complex social, ecological,
+          historical, and economic systems, becoming more capable of responding
+          with humility, discernment, and responsibility.
+        </p>
+
+        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
+          Systems perception · Complexity · Historical awareness · Power
+          literacy · Ecological belonging · Imagination · Complicity in Harm
+        </p>
+      </article>
+
+      {/* SACRED */}
+      <article className="p-6 md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-olive">
+          The Sacred
+        </span>
+
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+          From Disenchantment
+          <span className="mx-2 text-[#D9A01B]">→</span>
+          Towards Reverence
+        </h3>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Recovering the capacity to experience life as intrinsically valuable,
+          meaningful, mysterious, and worthy of care—and allowing our
+          relationship to the sacred to expand our love, devotion, meaning and
+          service to the larger whole.
+        </p>
+
+        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
+          Value perception · Reverence · Meaning · Truth · Moral discernment ·
+          Devotion · Beauty
+        </p>
+      </article>
+    </div>
+
+    {/* Closing */}
+    <div className="mt-10 space-y-6 text-muted-foreground">
+      <p className="leading-relaxed">
+        This is a simple orientation toward four relationships we believe this
+        moment is asking us to deepen if we want to steward civilization
+        towards life-enhancing futures.
+      </p>
+
+      <p className="leading-relaxed">
+        Throughout history, humanity has carried images of such possibility:
+        the saint, the bodhisattva, the spiritual warrior, the sacred
+        activist—figures for whom inner transformation became inseparable from
+        responsibility and service towards the whole.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        The Fellowship is not only an attempt to reawaken this kind of
+        aspiration, but to create the conditions through which such becoming
+        can take root.
+      </p>
+    </div>
+  </div>
+</section>
+
         {/* WHY NOW */}
         <section className="bg-cream py-20 lg:py-24">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
