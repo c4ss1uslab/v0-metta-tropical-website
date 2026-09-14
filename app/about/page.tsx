@@ -518,14 +518,14 @@ export default function AboutPage() {
     </div>
 
     {/* Vows */}
-    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
+    <div className="mx-auto grid max-w-3xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
       {/* Left Column: The Soul Vows */}
       <div className="space-y-8">
         <h3 className="font-serif text-lg font-bold text-foreground md:text-xl">
           The Soul Vows
         </h3>
 
-        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Living beings are numberless,
             <br />
@@ -535,7 +535,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Delusions of separation without limit,
             <br />
@@ -545,7 +545,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Gates of truth and love are immeasurable,
             <br />
@@ -555,7 +555,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-crimson pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             The path of awakening and healing is unsurpassable,
             <br />
@@ -572,7 +572,7 @@ export default function AboutPage() {
           The Earth Vows
         </h3>
 
-        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             The roots of the metacrisis are interconnected,
             <br />
@@ -582,7 +582,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Delusions of capitalist modernity are inexhaustible,
             <br />
@@ -592,7 +592,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Life-affirming futures are boundless,
             <br />
@@ -602,7 +602,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="min-h-[78px] border-l-2 border-olive pl-3 sm:pl-4">
+        <div className="min-h-[60px] border-l-2 border-black pl-3 sm:pl-4">
           <p className="font-serif text-base leading-relaxed text-foreground italic">
             Planetary flourishing is not inevitable,
             <br />
@@ -633,7 +633,7 @@ export default function AboutPage() {
           rel="noopener noreferrer"
           className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
         >
-          post-capitalist vows
+          postcapitalist vows
         </a>{" "}
         articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
         our own surrender to what this moment is asking of us.
