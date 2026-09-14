@@ -371,7 +371,7 @@ export default function FellowshipPage() {
       </p>
 
       <p className="leading-relaxed">
-       Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual practice, systems and complexity thinking, relational work, social transformation, and land-based wisdom—bringing into relationship knowledge, practices, and lineages emerging from both the Global South and Global North.
+       Rather than a traditional leadership program, the Fellowship is a living process of formation weaving together spiritual formation, relational practice, complexity theory, systems transformation, civilizational inquiry, and land-based wisdom—bringing into relationship knowledge, practices, and lineages emerging from both the Global South and Global North.
       </p>
 
       <p className="leading-relaxed">
