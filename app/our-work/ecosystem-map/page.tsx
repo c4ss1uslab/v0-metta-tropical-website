@@ -870,10 +870,9 @@ export default function MettaTropical() {
         <div className="max-w-4xl">
           <span className="eyebrow">03 — Ecosystem filters</span>
           <h2>The lenses we read the ecosystem through</h2>
-          <p className="lede narrow secondary">
+          <p className="body-lg">
             Filters are not neutral. Each lens decides what becomes comparable
-            and what disappears. These are the ones currently in use, and they
-            are still being argued about.
+            and what disappears. We're increasingly adding lenses for a multiperspectival view.
           </p>
           <div style={{ marginTop: "var(--space-5)" }}>
             <p className="ui">Response orientation</p>
@@ -918,7 +917,7 @@ export default function MettaTropical() {
         <div className="max-w-4xl">
           <span className="eyebrow">04 — Glossary</span>
           <h2>Every term, defined once</h2>
-          <p className="lede narrow secondary">
+          <p className="body-lg">
             From metacrisis to wisdom lineage. Search covers both the terms and
             their definitions, so the concept works even when the name does
             not come to mind.
