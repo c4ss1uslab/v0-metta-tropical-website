@@ -186,9 +186,7 @@ const entries: LibraryEntry[] = [
           prejudices.
         </p>
         <p>
-          Who gets to be the mappers? Where are the voices of the ones being
-          mapped? What are the incentive landscapes, values and power
-          structures underscoring the act of mapping itself?
+          Who gets to be the mappers? Where are the voices of the ones being mapped? What are the incentive landscapes, values and power structures underscoring the act of mapping itself?
         </p>
         <p>
           We, the ones doing this mapping, are constantly choosing what to
