@@ -435,45 +435,47 @@ export default function FellowshipPage() {
   </div>
 </section>
 
- {/* LIVING BETWEEN WORLDS */}
+{/* LIVING BETWEEN WORLDS */}
 <section
   id="invitation"
   className="scroll-mt-32 bg-background py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
+
+    {/* Section Title */}
+    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       Living Between Worlds
-    </h2>
+    </span>
 
-    {/* Highlighted Quote */}
-    <div className="relative mt-8">
-      <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#D9A01B]/20" />
+    {/* Opening Quote */}
+    <blockquote className="mt-5 max-w-3xl">
+      <p
+        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-cyan-800 md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        &ldquo;It&apos;s actually the time of people in that liminal phase to
+        work on developing what are these new structures.&rdquo;
+      </p>
 
-      <blockquote className="relative border border-[#D9A01B] bg-[#D9A01B]/10 px-6 py-7 md:px-8 md:py-8">
-        <p className="font-serif text-lg italic leading-relaxed text-foreground md:text-xl">
-          &ldquo;That&apos;s what being an imaginal cell in the transition from
-          caterpillar to butterfly really means. It means taking some empowered
-          responsibility for being someone who recognizes that you can&apos;t
-          just run the instruction manual that was given historically, and the
-          new instruction manual doesn&apos;t exist yet. It&apos;s actually the
-          time of people in that liminal phase to work on developing what are
-          these new structures.&rdquo;
-        </p>
-
-        <cite className="mt-5 block text-sm font-medium not-italic text-[#B88610]">
-          — Daniel Schmachtenberger
-        </cite>
-      </blockquote>
-    </div>
+      <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
+        — Daniel Schmachtenberger
+      </cite>
+    </blockquote>
 
     <div className="mt-10 space-y-6 text-muted-foreground">
       <p className="leading-relaxed">
         In times between worlds—when the predominant structures and stories of
         a civilization begin to decay before new ones have been built—certain
-        individuals find themselves living without a world. Neither fully
-        belonging to the old nor yet inhabiting what comes next. They are living
-        in the liminal space between collapse and emergence, between what is
-        dying and what has not yet been born.
+        individuals find themselves{" "}
+        <strong className="font-semibold text-foreground">
+          living without a world
+        </strong>
+        . Neither fully belonging to the old nor yet inhabiting what comes
+        next. They are living in the liminal space between collapse and
+        emergence, between what is dying and what has not yet been born.
       </p>
 
       <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
