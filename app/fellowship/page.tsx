@@ -539,28 +539,25 @@ export default function FellowshipPage() {
   className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-
     {/* Section Title */}
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       Who We Must Become
     </span>
 
     {/* Opening Statement */}
-    <div className="mt-5 max-w-3xl">
-      <p
-        className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Reclaiming leadership as a{" "}
-        <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
-          sacred responsibility
-        </span>{" "}
-        toward the flourishing of all life.
-      </p>
-    </div>
+    <h2
+      className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      Reclaiming leadership as a{" "}
+      <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+        sacred responsibility
+      </span>{" "}
+      toward the flourishing of all life.
+    </h2>
 
     {/* Introduction */}
     <div className="mt-10 space-y-6 text-muted-foreground">
@@ -584,7 +581,6 @@ export default function FellowshipPage() {
 
     {/* Four Relationships */}
     <div className="mt-10 overflow-hidden border border-foreground/15 bg-background md:grid md:grid-cols-2">
-
       {/* SELF */}
       <article className="border-b border-foreground/15 p-6 md:border-r md:p-8">
         <span className="text-xs font-semibold uppercase tracking-[0.16em] text-crimson">
