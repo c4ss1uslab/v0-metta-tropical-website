@@ -5,13 +5,9 @@ import React, { useMemo, useState } from "react";
 /**
  * Metta Tropical — Educational Landscape Map
  * -------------------------------------------------------------
- * Converted from the standalone HTML prototype into a single
- * React component. Tokens come from mettatropical_design_specs.md.
- *
- * Usage: drop this file into any Vite / Next / CRA project as
- * MettaTropical.tsx and render <MettaTropical /> on a page.
- * It ships its own <style> block, so no Tailwind or CSS module
- * is required.
+ * Fixed Theme Scoping: CSS custom properties are now strictly 
+ * bound to `.theme-wrapper` so toggling light/dark mode instantly 
+ * overrides system OS preferences across all sections.
  */
 
 // ----------------------------------------------------------------
@@ -49,11 +45,13 @@ const entries: LibraryEntry[] = [
           tested over time and proven to support individual and collective
           transformation, with communities built around them.
         </p>
-        <p>
-          This is exciting news. The problem is that they remain fragmented
-          and siloed, often concentrated in the Global North and largely
-          inaccessible to most communities in the Global South.
-        </p>
+        <div className="callout">
+          <p className="font-serif text-lg">
+            This is exciting news. The problem is that they remain fragmented
+            and siloed, often concentrated in the Global North and largely
+            inaccessible to most communities in the Global South.
+          </p>
+        </div>
       </>
     ),
   },
@@ -83,7 +81,7 @@ const entries: LibraryEntry[] = [
           The result is people who are lopsided in their development:
           intellectually rigorous but ethically hollow, technically skilled
           but disembodied, ecologically aware but politically absent,
-          spiritually attuned but strategically blind, emotionally balanced
+          spiritual attuned but strategically blind, emotionally balanced
           but systemically naive.
         </p>
         <p>
@@ -102,11 +100,13 @@ const entries: LibraryEntry[] = [
     dek: "What is missing is not more programs, but an architecture that holds them together.",
     body: (
       <>
-        <p>
-          What is missing is not necessarily more programs, but
-          architectures capable of integrating these developmental
-          initiatives into a sustained ecosystem of formation.
-        </p>
+        <div className="callout">
+          <p className="font-serif text-lg">
+            What is missing is not necessarily more programs, but
+            architectures capable of integrating these developmental
+            initiatives into a sustained ecosystem of formation.
+          </p>
+        </div>
         <p>
           Imagine people able to access diverse developmental experiences
           affordably, within their own cultural context, supported by a
@@ -132,29 +132,29 @@ const entries: LibraryEntry[] = [
     body: (
       <>
         <p>
-          <strong>Root cause.</strong> How do we heal the disease of
+          <strong className="text-primary">Root cause.</strong> How do we heal the disease of
           separation? How do we change the way we relate to life — self,
           others, world, divine — towards wise, life-affirming ways of
           living?
         </p>
         <p>
-          <strong>Hypothesis.</strong> No shortcuts. Evolution of mind, body
+          <strong className="text-primary">Hypothesis.</strong> No shortcuts. Evolution of mind, body
           and spirit. Human development and maturation.
         </p>
         <p>
           Which means two things: we need to develop in a certain way in
           order to respond, and we need a shared base worldview and a
-          stronger sense of <em>we</em>.
+          stronger sense of <em className="text-primary">we</em>.
         </p>
         <p>
-          <strong>What we are attempting.</strong> To build educational
+          <strong className="text-primary">What we are attempting.</strong> To build educational
           architecture for continuous long-term development; to integrate an
           ecosystem of developmental initiatives; to evidence and connect
           people with real work on the world's most pressing problems; and
           to cultivate a network of support and community.
         </p>
         <p>
-          <strong>Action.</strong> Bring together the ones who are already
+          <strong className="text-primary">Action.</strong> Bring together the ones who are already
           doing it.
         </p>
       </>
@@ -494,7 +494,7 @@ const CONNECTIONS: ConnDef[] = [
 // ----------------------------------------------------------------
 
 export default function MettaTropical() {
-  const [theme, setTheme] = useState<"light" | "dark" | null>(null);
+  const [theme, setTheme] = useState<"light" | "dark" | "system">("system");
   const [step, setStep] = useState(0);
   const [filterKind, setFilterKind] = useState<"all" | EntryKind>("all");
   const [view, setView] = useState<"list" | "cards">("list");
@@ -528,7 +528,7 @@ export default function MettaTropical() {
   }, [query]);
 
   return (
-    <div data-theme={theme ?? undefined}>
+    <div className="theme-wrapper" data-theme={theme}>
       <GlobalStyles />
 
       <button
@@ -580,8 +580,8 @@ export default function MettaTropical() {
       </nav>
 
       {/* ===== HERO ===== */}
-      <header className="hero" id="top">
-        <div className="hero-inner">
+      <header className="hero bg-cream" id="top">
+        <div className="hero-inner max-w-6xl">
           <h1>METTA TROPICAL</h1>
           <p className="tagline">Educational Landscape Map</p>
 
@@ -727,232 +727,246 @@ export default function MettaTropical() {
       </header>
 
       {/* ===== ABOUT ===== */}
-      <section id="about" className="wrap">
-        <span className="eyebrow">01 — About the map</span>
-        <div className="cols">
-          <div className="figure">
-            <span className="ui tertiary" style={{ textAlign: "center", lineHeight: 2 }}>
-              map
-              <br />
-              graphic
-              <br />
-              loop
-              <br />
-              <br />[ to be added ]
-            </span>
-          </div>
-          <div>
-            <h2>
-              Integrating a fragmented ecosystem of educational responses to
-              the metacrisis
-            </h2>
-            <p className="lede">
-              Over the past decades, many new developmental and
-              transformational practices have emerged around the world. They
-              grew inside alternative educational spaces, exploring
-              dimensions of human development that formal institutions were
-              never designed to hold.
-            </p>
-            <p className="body-lg">
-              Systems thinking, rites of passage, soul initiation,
-              nature-based immersion, deep ecology, regeneration, spiritual
-              development, relationality, social change. Many have become
-              lineages in their own right, with frameworks tested over time
-              and communities built around them. The list keeps expanding.
-            </p>
-            <p className="body-lg">
-              Yet they remain{" "}
-              <span className="mark">fragmented and siloed</span>, often
-              concentrated in the Global North and largely inaccessible to
-              most communities in the Global South.
-            </p>
-            <p style={{ marginTop: "var(--space-5)" }}>
-              <a className="btn quiet" href="#library">
-                Read the full argument
-              </a>
-            </p>
+      <section id="about" className="bg-background py-24">
+        <div className="max-w-6xl">
+          <span className="eyebrow">01 — About the map</span>
+          <div className="cols">
+            <div className="figure">
+              <span className="ui tertiary" style={{ textAlign: "center", lineHeight: 2 }}>
+                map
+                <br />
+                graphic
+                <br />
+                loop
+                <br />
+                <br />[ to be added ]
+              </span>
+            </div>
+            <div>
+              <h2>
+                Integrating a fragmented ecosystem of educational responses to
+                the metacrisis
+              </h2>
+              <p className="lede">
+                Over the past decades, many new developmental and
+                transformational practices have emerged around the world. They
+                grew inside alternative educational spaces, exploring
+                dimensions of human development that formal institutions were
+                never designed to hold.
+              </p>
+              <p className="body-lg">
+                Systems thinking, rites of passage, soul initiation,
+                nature-based immersion, deep ecology, regeneration, spiritual
+                development, relationality, social change. Many have become
+                lineages in their own right, with frameworks tested over time
+                and communities built around them. The list keeps expanding.
+              </p>
+              
+              <div className="callout">
+                <p className="font-serif text-lg text-primary">
+                  Yet they remain{" "}
+                  <span className="mark font-medium">fragmented and siloed</span>, often
+                  concentrated in the Global North and largely inaccessible to
+                  most communities in the Global South.
+                </p>
+              </div>
+
+              <p style={{ marginTop: "var(--space-5)" }}>
+                <a className="btn quiet" href="#library">
+                  Read the full argument
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ===== POSITION ===== */}
-      <section className="wrap" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        <details className="pull">
-          <summary>
-            <span className="label">Where we stand</span>
-            <span className="tri" style={{ marginLeft: "var(--space-3)" }} />
-          </summary>
-          <div className="pull-body">
-            <p className="big">
-              The act of mapping holds immense power and responsibility,
-              echoing a long history of precedents and prejudices.
-            </p>
-            <p className="small">
-              Who gets to be the mappers? Where are the voices of the ones
-              being mapped? What incentive landscapes, values and power
-              structures underscore the act of mapping itself? We, the ones
-              doing this mapping, are constantly choosing what to emphasise and
-              what to make invisible.
-            </p>
-          </div>
-        </details>
+      <section className="bg-cream py-24" style={{ paddingTop: "var(--space-4)", paddingBottom: "var(--space-6)" }}>
+        <div className="max-w-4xl">
+          <details className="pull">
+            <summary>
+              <span className="label">Where we stand</span>
+              <span className="tri" style={{ marginLeft: "var(--space-3)" }} />
+            </summary>
+            <div className="pull-body callout">
+              <p className="font-serif text-2xl text-primary leading-relaxed mb-4">
+                The act of mapping holds immense power and responsibility,
+                echoing a long history of precedents and prejudices.
+              </p>
+              <p className="text-secondary leading-relaxed max-w-2xl">
+                Who gets to be the mappers? Where are the voices of the ones
+                being mapped? What incentive landscapes, values and power
+                structures underscore the act of mapping itself? We, the ones
+                doing this mapping, are constantly choosing what to emphasise and
+                what to make invisible.
+              </p>
+            </div>
+          </details>
+        </div>
       </section>
 
       {/* ===== LIBRARY ===== */}
-      <section id="library" className="wrap">
-        <span className="eyebrow">02 — Library</span>
-        <h2>Evergreen contents</h2>
-        <p className="lede narrow secondary">
-          Essays, notes, diagrams and definitions that accompany the map.
-          This section grows. Nothing here expires.
-        </p>
+      <section id="library" className="bg-background py-24">
+        <div className="max-w-6xl">
+          <span className="eyebrow">02 — Library</span>
+          <h2>Evergreen contents</h2>
+          <p className="lede narrow secondary">
+            Essays, notes, diagrams and definitions that accompany the map.
+            This section grows. Nothing here expires.
+          </p>
 
-        <div className="libbar" style={{ marginTop: "var(--space-5)" }}>
-          <div className="filters" role="group" aria-label="Filter by kind">
-            {filterKinds.map((f) => (
+          <div className="libbar" style={{ marginTop: "var(--space-5)" }}>
+            <div className="filters" role="group" aria-label="Filter by kind">
+              {filterKinds.map((f) => (
+                <button
+                  key={f.key}
+                  className="chip"
+                  aria-pressed={filterKind === f.key}
+                  onClick={() => setFilterKind(f.key)}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+            <div className="views" role="group" aria-label="View">
               <button
-                key={f.key}
                 className="chip"
-                aria-pressed={filterKind === f.key}
-                onClick={() => setFilterKind(f.key)}
+                aria-pressed={view === "list"}
+                onClick={() => setView("list")}
               >
-                {f.label}
+                List
               </button>
+              <button
+                className="chip"
+                aria-pressed={view === "cards"}
+                onClick={() => setView("cards")}
+              >
+                Cards
+              </button>
+            </div>
+          </div>
+
+          <div className={`entries ${view}`}>
+            {filteredEntries.map((entry, i) => (
+              <details className="entry" key={i}>
+                <summary>
+                  <span className="tri" />
+                  <span className="head">
+                    <span className="ttl">{entry.title}</span>
+                    <span className="dek">{entry.dek}</span>
+                  </span>
+                  <span className={`tag ${entry.kind}`}>
+                    {entry.kind[0].toUpperCase() + entry.kind.slice(1)}
+                  </span>
+                </summary>
+                <div className="body" style={entry.kind === "diagram" || entry.kind === "note" ? { maxWidth: "none" } : undefined}>
+                  {entry.body}
+                </div>
+              </details>
             ))}
           </div>
-          <div className="views" role="group" aria-label="View">
-            <button
-              className="chip"
-              aria-pressed={view === "list"}
-              onClick={() => setView("list")}
-            >
-              List
-            </button>
-            <button
-              className="chip"
-              aria-pressed={view === "cards"}
-              onClick={() => setView("cards")}
-            >
-              Cards
-            </button>
-          </div>
-        </div>
-
-        <div className={`entries ${view}`}>
-          {filteredEntries.map((entry, i) => (
-            <details className="entry" key={i}>
-              <summary>
-                <span className="tri" />
-                <span className="head">
-                  <span className="ttl">{entry.title}</span>
-                  <span className="dek">{entry.dek}</span>
-                </span>
-                <span className={`tag ${entry.kind}`}>
-                  {entry.kind[0].toUpperCase() + entry.kind.slice(1)}
-                </span>
-              </summary>
-              <div className="body" style={entry.kind === "diagram" || entry.kind === "note" ? { maxWidth: "none" } : undefined}>
-                {entry.body}
-              </div>
-            </details>
-          ))}
         </div>
       </section>
 
       {/* ===== FILTERS ===== */}
-      <section id="filters" className="wrap">
-        <span className="eyebrow">03 — Ecosystem filters</span>
-        <h2>The lenses we read the ecosystem through</h2>
-        <p className="lede narrow secondary">
-          Filters are not neutral. Each lens decides what becomes comparable
-          and what disappears. These are the ones currently in use, and they
-          are still being argued about.
-        </p>
-        <div style={{ marginTop: "var(--space-5)" }}>
-          <p className="ui">Response orientation</p>
-          <div className="lenses">
-            {[
-              "Metacrisis",
-              "Wisdom-centered",
-              "Systems change",
-              "Regeneration",
-              "Decolonial",
-              "Countercolonial",
-            ].map((l) => (
-              <span className="lens" key={l}>
-                {l}
-              </span>
-            ))}
+      <section id="filters" className="bg-cream py-24">
+        <div className="max-w-4xl">
+          <span className="eyebrow">03 — Ecosystem filters</span>
+          <h2>The lenses we read the ecosystem through</h2>
+          <p className="lede narrow secondary">
+            Filters are not neutral. Each lens decides what becomes comparable
+            and what disappears. These are the ones currently in use, and they
+            are still being argued about.
+          </p>
+          <div style={{ marginTop: "var(--space-5)" }}>
+            <p className="ui">Response orientation</p>
+            <div className="lenses">
+              {[
+                "Metacrisis",
+                "Wisdom-centered",
+                "Systems change",
+                "Regeneration",
+                "Decolonial",
+                "Countercolonial",
+              ].map((l) => (
+                <span className="lens" key={l}>
+                  {l}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div style={{ marginTop: "var(--space-5)" }}>
-          <p className="ui">Layer of response · advanced</p>
-          <div className="lenses">
-            {[
-              "Superstructure · culture, inner",
-              "Social structure",
-              "Infrastructure",
-              "Ecostructure",
-            ].map((l) => (
-              <span className="lens" key={l}>
-                {l}
-              </span>
-            ))}
+          <div style={{ marginTop: "var(--space-5)" }}>
+            <p className="ui">Layer of response · advanced</p>
+            <div className="lenses">
+              {[
+                "Superstructure · culture, inner",
+                "Social structure",
+                "Infrastructure",
+                "Ecostructure",
+              ].map((l) => (
+                <span className="lens" key={l}>
+                  {l}
+                </span>
+              ))}
+            </div>
           </div>
+          <p className="ui tertiary" style={{ marginTop: "var(--space-5)" }}>
+            Further lenses in development
+          </p>
         </div>
-        <p className="ui tertiary" style={{ marginTop: "var(--space-5)" }}>
-          Further lenses in development
-        </p>
       </section>
 
       {/* ===== GLOSSARY ===== */}
-      <section id="glossary" className="wrap">
-        <span className="eyebrow">04 — Glossary</span>
-        <h2>Every term, defined once</h2>
-        <p className="lede narrow secondary">
-          From metacrisis to wisdom lineage. Search covers both the terms and
-          their definitions, so the concept works even when the name does
-          not come to mind.
-        </p>
-        <label
-          className="ui tertiary"
-          htmlFor="glossary-search"
-          style={{
-            display: "block",
-            marginTop: "var(--space-5)",
-            marginBottom: "var(--space-2)",
-          }}
-        >
-          Search the glossary
-        </label>
-        <input
-          id="glossary-search"
-          className="gsearch"
-          type="search"
-          placeholder="Try “separation” or “lens”"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <p className="ui tertiary" style={{ marginTop: "var(--space-3)" }}>
-          {query
-            ? `${filteredTerms.length} of ${glossaryTerms.length} terms`
-            : `${glossaryTerms.length} terms`}
-        </p>
-        <dl style={{ margin: "var(--space-4) 0 0" }}>
-          {filteredTerms.map((t) => (
-            <div className="gterm" key={t.term}>
-              <dt>{t.term}</dt>
-              <dd>{t.definition}</dd>
-            </div>
-          ))}
-        </dl>
-        {filteredTerms.length === 0 && (
-          <p className="empty">No term matches that search. Try a broader word.</p>
-        )}
+      <section id="glossary" className="bg-background py-24">
+        <div className="max-w-4xl">
+          <span className="eyebrow">04 — Glossary</span>
+          <h2>Every term, defined once</h2>
+          <p className="lede narrow secondary">
+            From metacrisis to wisdom lineage. Search covers both the terms and
+            their definitions, so the concept works even when the name does
+            not come to mind.
+          </p>
+          <label
+            className="ui tertiary"
+            htmlFor="glossary-search"
+            style={{
+              display: "block",
+              marginTop: "var(--space-5)",
+              marginBottom: "var(--space-2)",
+            }}
+          >
+            Search the glossary
+          </label>
+          <input
+            id="glossary-search"
+            className="gsearch"
+            type="search"
+            placeholder="Try “separation” or “lens”"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <p className="ui tertiary" style={{ marginTop: "var(--space-3)" }}>
+            {query
+              ? `${filteredTerms.length} of ${glossaryTerms.length} terms`
+              : `${glossaryTerms.length} terms`}
+          </p>
+          <dl style={{ margin: "var(--space-4) 0 0" }}>
+            {filteredTerms.map((t) => (
+              <div className="gterm" key={t.term}>
+                <dt>{t.term}</dt>
+                <dd>{t.definition}</dd>
+              </div>
+            ))}
+          </dl>
+          {filteredTerms.length === 0 && (
+            <p className="empty">No term matches that search. Try a broader word.</p>
+          )}
+        </div>
       </section>
 
-      <footer>
-        <div className="wrap">
+      <footer className="bg-cream">
+        <div className="max-w-4xl pt-24 pb-16 text-center">
           <h3 style={{ maxWidth: "40rem", margin: "0 auto var(--space-4)" }}>
             Bring together the ones who are already doing it.
           </h3>
@@ -997,8 +1011,7 @@ export default function MettaTropical() {
 }
 
 // ----------------------------------------------------------------
-// Styles — all design tokens live in :root. Change a value here
-// and the whole component follows.
+// Styles — The CSS variable scoping is completely fixed here
 // ----------------------------------------------------------------
 
 function GlobalStyles() {
@@ -1007,107 +1020,186 @@ function GlobalStyles() {
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 :root{
-  --surface-base:#FFFFFF;
-  --surface-accent:#FBBF24; /* Brighter, sunnier yellow (Amber 400) */
-  --surface-technical:#4FC1E0;
-  --surface-organic:#7D8764;
-  --surface-raised:#AD2831;
-  --surface-ritual:#5B21B6;
-  --surface-sunk:#FAFAF8;
-
-  --text-primary:#155E75;
-  --text-secondary:#374151;
-  --text-tertiary:#6B7280;
-
-  --border-default:#E5E7EB;
-  --border-muted:#155E75;
-
-  --btn-primary:#111827;
-
-  --soul:var(--surface-ritual);
-  --systems:var(--surface-technical);
-  --soil:var(--surface-organic);
-  --society:var(--surface-raised);
-
+  /* Base typography and sizing available everywhere */
   --font-primary:"Cormorant Garamond",ui-serif,Georgia,serif;
   --font-secondary:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
   
   --size-xs:12px; --size-sm:14px; --size-md:16px; --size-lg:18px;
   --size-xl:20px; --size-2xl:28px; --size-3xl:40px; --size-4xl:56px;
-  --lh-base:1.6;
 
   --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px;
   --space-5:24px; --space-6:32px; --space-7:48px; --space-8:80px;
 
-  --radius-xs:2px; --radius-sm:4px; --radius-md:8px;
+  --radius-xs:0px; --radius-sm:2px; --radius-md:4px;
 
   --motion-instant:150ms; --motion-fast:250ms; --motion-base:400ms;
   --ease:cubic-bezier(.22,.61,.36,1);
 
-  --measure:38rem;
-  --navh:56px;
+  --measure:42rem;
+  --navh:64px;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --surface-base:#0E0F12; --surface-sunk:#15171B;
-    --text-primary:#F4F4F2; --text-secondary:#B9BEC7; --text-tertiary:#8C877F;
-    --border-default:#2A2D34; --border-muted:#F4F4F2;
-    --surface-technical:#7FD6EE; --surface-organic:#A3AE85;
-    --surface-raised:#E0616A; --surface-ritual:#A78BFA;
-    --btn-primary:#F4F4F2;
+
+/* 
+ * 1. Default Light Theme (Bound to .theme-wrapper)
+ */
+.theme-wrapper {
+  --surface-base: #FFFDF6; 
+  --surface-sunk: #F7F5E9; 
+  --surface-accent: #D9A01B; /* Gold */
+  --text-primary: #2C2A25; /* Foreground */
+  --text-secondary: #5E5B55; 
+  --text-tertiary: #87837E;
+  --border-default: #E6E3D8;
+  --border-muted: #2C2A25; 
+  --btn-primary: #D9A01B; 
+  --btn-text: #FFFDF6;
+  --btn-quiet-bg: #2C2A25; 
+  --btn-quiet-text: #FFFDF6;
+  --soul: #8B0000;    /* Crimson */
+  --systems: #008B8B; /* Cyan */
+  --soil: #556B2F;    /* Olive */
+  --society: #D9A01B; /* Gold */
+
+  /* Ensure the full wrapper adapts colors cleanly */
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding-top: var(--navh);
+  font-family: var(--font-primary);
+  font-size: var(--size-md);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 
+ * 2. OS-Level Dark Theme 
+ */
+@media (prefers-color-scheme: dark) {
+  .theme-wrapper[data-theme="system"] {
+    --surface-base: #1F1D1A; 
+    --surface-sunk: #282622;
+    --text-primary: #EBE8E1; 
+    --text-secondary: #A8A49D; 
+    --text-tertiary: #7A7771;
+    --border-default: #3D3A36; 
+    --border-muted: #EBE8E1;
+    --btn-primary: #D9A01B; 
+    --btn-text: #1F1D1A;
+    --btn-quiet-bg: #EBE8E1;
+    --btn-quiet-text: #1F1D1A;
+    --soul:#FF4D4D; --systems:#00FFFF; --soil:#9ACD32; --society:#FCD34D;
   }
 }
-[data-theme="dark"]{
-  --surface-base:#0E0F12; --surface-sunk:#15171B;
-  --text-primary:#F4F4F2; --text-secondary:#B9BEC7; --text-tertiary:#8C877F;
-  --border-default:#2A2D34; --border-muted:#F4F4F2;
-  --surface-technical:#7FD6EE; --surface-organic:#A3AE85;
-  --surface-raised:#E0616A; --surface-ritual:#A78BFA;
-  --btn-primary:#F4F4F2;
+
+/* 
+ * 3. Forced Dark Theme 
+ */
+.theme-wrapper[data-theme="dark"] {
+  --surface-base: #1F1D1A; 
+  --surface-sunk: #282622;
+  --text-primary: #EBE8E1; 
+  --text-secondary: #A8A49D; 
+  --text-tertiary: #7A7771;
+  --border-default: #3D3A36; 
+  --border-muted: #EBE8E1;
+  --btn-primary: #D9A01B; 
+  --btn-text: #1F1D1A;
+  --btn-quiet-bg: #EBE8E1;
+  --btn-quiet-text: #1F1D1A;
+  --soul:#FF4D4D; --systems:#00FFFF; --soil:#9ACD32; --society:#FCD34D;
 }
+
+/* 
+ * 4. Forced Light Theme (overrides OS Dark)
+ */
+.theme-wrapper[data-theme="light"] {
+  --surface-base: #FFFDF6; 
+  --surface-sunk: #F7F5E9; 
+  --text-primary: #2C2A25; 
+  --text-secondary: #5E5B55; 
+  --text-tertiary: #87837E;
+  --border-default: #E6E3D8;
+  --border-muted: #2C2A25; 
+  --btn-primary: #D9A01B; 
+  --btn-text: #FFFDF6;
+  --btn-quiet-bg: #2C2A25; 
+  --btn-quiet-text: #FFFDF6;
+  --soul: #8B0000;    
+  --systems: #008B8B; 
+  --soil: #556B2F;    
+  --society: #D9A01B; 
+}
+
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + var(--space-3))}
-body{margin:0}
-.wrap{max-width:1120px;margin:0 auto;padding:0 var(--space-4)}
+body{margin:0; background: #FFFDF6;} /* Safety fallback */
+
+p{margin:0 0 var(--space-4); line-height: 1.625; color: var(--text-secondary);}
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
 .narrow{max-width:var(--measure)}
 
-div[data-theme]{
-  padding-top:var(--navh);
-  background:var(--surface-base);color:var(--text-primary);
-  font-family:var(--font-primary);font-size:var(--size-md);font-weight:400;line-height:var(--lh-base);
-  -webkit-font-smoothing:antialiased;
-}
-p{margin:0 0 var(--space-4)}
-section{padding:var(--space-8) 0}
+/* Structural layout utility classes */
+.bg-cream { background-color: var(--surface-base); }
+.bg-background { background-color: var(--surface-sunk); }
+.py-24 { padding: var(--space-8) 0; }
+.pt-24 { padding-top: var(--space-8); }
+.pb-16 { padding-bottom: var(--space-6); }
+.max-w-6xl { max-width: 72rem; margin: 0 auto; padding: 0 var(--space-4); }
+.max-w-4xl { max-width: 56rem; margin: 0 auto; padding: 0 var(--space-4); }
 
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[tabindex]:focus-visible{
-  outline:3px solid var(--surface-ritual);outline-offset:3px;border-radius:var(--radius-xs)
+  outline:3px solid var(--surface-accent);outline-offset:3px;border-radius:var(--radius-xs)
 }
 
-h1,h2,h3,h4{margin:0;font-family:var(--font-primary);font-weight:600;line-height:1.12}
-h2{font-size:clamp(32px,5vw,var(--size-3xl));letter-spacing:-.01em;margin-bottom:var(--space-4)}
+h1,h2,h3,h4{margin:0;font-family:var(--font-primary);font-weight:500;line-height:1.12; color:var(--text-primary)}
+h2{font-size:clamp(32px,5vw,48px);letter-spacing:-.01em;margin-bottom:var(--space-4)}
 h3{font-size:var(--size-2xl)}
-.ui{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
+.ui{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;
   text-transform:uppercase;letter-spacing:.12em;line-height:1.4}
 .secondary{color:var(--text-secondary)} .tertiary{color:var(--text-tertiary)}
 .lede{font-size:var(--size-xl);line-height:1.45}
 .body-lg{font-size:var(--size-lg)}
 
-.eyebrow{display:inline-block;font-family:var(--font-secondary);font-size:var(--size-xs);
-  font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#111827;
-  background:var(--surface-accent);padding:var(--space-2) var(--space-3);
-  border-radius:var(--radius-xs);margin-bottom:var(--space-5)}
-.mark{background:var(--surface-accent);color:#111827;padding:0 .22em;border-radius:var(--radius-xs);
+/* Emulated the visual accents from About */
+.eyebrow{display:inline-block;font-family:var(--font-secondary);font-size:var(--size-sm);
+  font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--surface-accent);
+  background:transparent;padding:0;
+  border-radius:0;margin-bottom:var(--space-5)}
+  
+.callout{border-left:2px solid var(--surface-accent);padding-left:var(--space-4);margin:var(--space-4) 0}
+.callout p{color:var(--text-primary)}
+
+.mark{background:rgba(217, 160, 27, 0.15);color:var(--text-primary);padding:0 .22em;border-radius:var(--radius-xs);
   box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
 a{color:inherit}
 a.inline{text-decoration:underline;text-underline-offset:.18em;text-decoration-thickness:1px}
 
+/* Nav dynamically pulls from wrapper variables */
 nav{position:fixed;inset:0 0 auto 0;z-index:60;height:var(--navh);
-  background:var(--surface-base);border-bottom:2px solid var(--border-muted)}
+  background:var(--surface-base); /* Failsafe */
+  border-bottom:1px solid var(--border-default)}
+
+/* Re-apply the glass effect properly within scope */
+.theme-wrapper[data-theme="light"] nav,
+.theme-wrapper[data-theme="system"] nav {
+  background:rgba(255, 253, 246, 0.95);
+  backdrop-filter:blur(8px);
+}
+.theme-wrapper[data-theme="dark"] nav {
+  background:rgba(31, 29, 26, 0.95);
+  backdrop-filter:blur(8px);
+}
+@media (prefers-color-scheme: dark) {
+  .theme-wrapper[data-theme="system"] nav {
+    background:rgba(31, 29, 26, 0.95);
+  }
+}
+
 nav .row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);
-  max-width:1120px;margin:0 auto;padding:0 var(--space-4);height:var(--navh)}
+  max-width:72rem;margin:0 auto;padding:0 var(--space-4);height:var(--navh)}
 nav .brand{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
   text-transform:uppercase;letter-spacing:.16em;text-decoration:none;white-space:nowrap;color:var(--text-primary)}
 nav ul{display:flex;gap:var(--space-4);list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
@@ -1119,17 +1211,19 @@ nav a.navlink{font-family:var(--font-secondary);font-size:var(--size-xs);font-we
 nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-accent)}
 @media(max-width:720px){nav ul{gap:var(--space-3)}}
 
-.btn{display:inline-block;font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
-  text-transform:uppercase;letter-spacing:.12em;text-decoration:none;cursor:pointer;
-  padding:var(--space-3) var(--space-4);border-radius:var(--radius-sm);
-  border:2px solid var(--btn-primary);background:var(--surface-base);color:var(--btn-primary);
-  transition:background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease)}
-.btn:hover{background:var(--surface-accent);color:#111827;border-color:var(--btn-primary)}
-.btn.quiet{border-color:var(--border-default);color:var(--text-secondary)}
-.btn.quiet:hover{border-color:var(--btn-primary);color:var(--btn-primary)}
+/* Adjusted buttons to match solid blocks on About page */
+.btn{display:inline-flex; align-items:center; justify-content:center;
+  font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:500;
+  text-transform:none;letter-spacing:0.02em;text-decoration:none;cursor:pointer;
+  padding:var(--space-3) var(--space-6);border-radius:0;
+  border:none;background:var(--btn-primary);color:var(--btn-text);
+  transition:background var(--motion-fast) var(--ease)}
+.btn:hover{background:#B88610}
+.btn.quiet{background:var(--btn-quiet-bg);color:var(--btn-quiet-text);border:none}
+.btn.quiet:hover{background:rgba(44, 42, 37, 0.9)}
 
-.hero{border-bottom:2px solid var(--border-muted);background:var(--surface-sunk)}
-.hero-inner{max-width:1120px;margin:0 auto;padding:var(--space-5) var(--space-4) var(--space-7)}
+.hero{border-bottom:1px solid var(--border-default)}
+.hero-inner{padding:var(--space-5) var(--space-4) var(--space-7)}
 .stage{cursor:pointer;-webkit-tap-highlight-color:transparent}
 .stage svg{display:block;width:100%;height:auto;max-width:900px;margin:0 auto}
 .branch{fill:none;stroke:var(--text-primary);stroke-linecap:round;
@@ -1151,9 +1245,9 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 .horizon{stroke:var(--border-muted);stroke-width:1.2;stroke-dasharray:2 6}
 .bird{fill:var(--text-primary);opacity:.92;
   transition:transform 1200ms var(--ease)}
-.hero h1{font-size:clamp(36px,8vw,var(--size-4xl));font-weight:600;letter-spacing:.06em;text-align:center;
+.hero h1{font-size:clamp(36px,8vw,var(--size-4xl));font-weight:500;letter-spacing:.02em;text-align:center;
   margin-bottom:var(--space-3)}
-.hero .tagline{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
+.hero .tagline{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;
   text-transform:uppercase;letter-spacing:.2em;color:var(--text-secondary);text-align:center;
   margin-bottom:var(--space-6)}
 .hero .cta{display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap;margin-top:var(--space-5)}
@@ -1166,37 +1260,34 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 
 .cols{display:grid;grid-template-columns:.8fr 1.3fr;gap:var(--space-7);align-items:start}
 @media(max-width:860px){.cols{grid-template-columns:1fr;gap:var(--space-5)}}
-.figure{border:2px solid var(--border-muted);border-radius:var(--radius-md);background:var(--surface-sunk);
+.figure{border:1px solid var(--border-default);border-radius:var(--radius-sm);background:var(--surface-sunk);
   aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:var(--space-4)}
 
-.pull{background:var(--surface-accent);color:#111827;border-radius:var(--radius-md);
-  margin:var(--space-7) 0;text-align:center;transition:border-radius var(--motion-fast) var(--ease)}
-.pull summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:center;
-  padding:var(--space-5);font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:600;
-  text-transform:uppercase;letter-spacing:.14em}
+/* Pull Quote matching About section Callout */
+.pull{background:transparent;border:none;margin:0;text-align:left}
+.pull summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:flex-start;
+  padding:var(--space-4) 0;font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:600;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--surface-accent);border-top:1px solid var(--border-default)}
 .pull summary::-webkit-details-marker{display:none}
-.pull .tri{color:#111827;margin-top:0;
+.pull .tri{color:currentColor;margin-top:0;
   flex:none;width:0;height:0;border-left:10px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent;
   transition:transform var(--motion-fast) var(--ease)}
 .pull[open] .tri{transform:rotate(90deg)}
-.pull-body{padding:0 var(--space-5) var(--space-6)}
-.pull .big{font-size:clamp(24px,4.4vw,var(--size-2xl));line-height:1.24;font-weight:600;
-  max-width:46rem;margin:0 auto var(--space-4)}
-.pull .small{max-width:42rem;margin:0 auto;font-family:var(--font-secondary);font-size:var(--size-md);color:#111827}
+.pull-body{padding:0}
 
 .libbar{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);flex-wrap:wrap;
-  border-bottom:2px solid var(--border-muted);padding-bottom:var(--space-3);margin-bottom:var(--space-5)}
+  border-bottom:1px solid var(--border-default);padding-bottom:var(--space-3);margin-bottom:var(--space-5)}
 .filters,.views{display:flex;gap:var(--space-2);flex-wrap:wrap}
-.chip{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;text-transform:uppercase;
-  letter-spacing:.1em;padding:var(--space-2) var(--space-3);border-radius:var(--radius-sm);cursor:pointer;
-  border:2px solid var(--border-default);background:var(--surface-base);color:var(--text-secondary);
+.chip{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;text-transform:uppercase;
+  letter-spacing:.1em;padding:var(--space-2) var(--space-3);border-radius:0;cursor:pointer;
+  border:1px solid var(--border-default);background:var(--surface-base);color:var(--text-secondary);
   transition:border-color var(--motion-fast) var(--ease),background var(--motion-fast) var(--ease),color var(--motion-fast) var(--ease)}
-.chip:hover{border-color:var(--border-muted);color:var(--text-primary)}
-.chip[aria-pressed="true"]{background:var(--surface-accent);color:#111827;border-color:var(--border-muted)}
+.chip:hover{border-color:var(--text-primary);color:var(--text-primary)}
+.chip[aria-pressed="true"]{background:var(--text-primary);color:var(--surface-base);border-color:var(--text-primary)}
 
 .entries.list{display:flex;flex-direction:column;gap:var(--space-3)}
 .entries.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-4)}
-.entry{border:2px solid var(--border-default);border-radius:var(--radius-md);background:var(--surface-base);
+.entry{border:1px solid var(--border-default);border-radius:var(--radius-sm);background:var(--surface-base);
   transition:border-color var(--motion-fast) var(--ease)}
 .entry:hover,.entry[open]{border-color:var(--border-muted)}
 .entry summary{cursor:pointer;list-style:none;display:flex;gap:var(--space-4);align-items:flex-start;
@@ -1207,32 +1298,31 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
   transition:transform var(--motion-fast) var(--ease)}
 .entry[open] .tri{transform:rotate(90deg)}
 .entry .head{flex:1;min-width:0}
-.entry .ttl{display:block;font-size:var(--size-xl);font-weight:600;line-height:1.2;color:var(--text-primary)}
+.entry .ttl{display:block;font-size:var(--size-xl);font-weight:500;line-height:1.2;color:var(--text-primary)}
 .entry .dek{display:block;font-family:var(--font-secondary);font-size:var(--size-sm);color:var(--text-secondary);
   max-height:0;opacity:0;overflow:hidden;
   transition:max-height var(--motion-base) var(--ease),opacity var(--motion-base) var(--ease),margin var(--motion-base) var(--ease)}
 .entry:hover .dek,.entry[open] .dek,.entry:focus-within .dek{max-height:6rem;opacity:1;margin-top:var(--space-2)}
-.tag{flex:none;font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
+.tag{flex:none;font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;
   text-transform:uppercase;letter-spacing:.1em;padding:var(--space-1) var(--space-2);
-  border-radius:var(--radius-xs);border:2px solid currentColor;margin-top:var(--space-1)}
-.tag.essay{color:var(--surface-ritual)}
-.tag.note{color:var(--surface-organic)}
-.tag.diagram{color:#1D8FB0}
-.tag.reference{color:var(--surface-raised)}
+  border-radius:var(--radius-sm);border:1px solid currentColor;margin-top:var(--space-1)}
+.tag.essay{color:var(--soul)}
+.tag.note{color:var(--soil)}
+.tag.diagram{color:var(--systems)}
+.tag.reference{color:var(--society)}
 .entry .body{padding:var(--space-4) var(--space-5) var(--space-5);max-width:var(--measure);
   border-top:1px solid var(--border-default)}
-/* Critical fix: Changed toggle contents to secondary font & md size for strict readability */
-.entry .body p{font-family:var(--font-secondary);font-size:var(--size-md);line-height:1.6;color:var(--text-primary)}
+.entry .body p{font-family:var(--font-secondary);font-size:var(--size-md);line-height:1.625;color:var(--text-secondary)}
 .entries.cards .entry .body{max-width:none}
 
 .caps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);margin-top:var(--space-5)}
 @media(max-width:860px){.caps{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.caps{grid-template-columns:1fr}}
-.cap{border:2px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-4);
-  border-top-width:6px}
+.cap{border:1px solid var(--border-default);border-radius:var(--radius-sm);padding:var(--space-4);
+  border-top-width:4px}
 .cap.c1{border-top-color:var(--soul)} .cap.c2{border-top-color:var(--systems)}
 .cap.c3{border-top-color:var(--soil)} .cap.c4{border-top-color:var(--society)}
-.cap h4{font-size:var(--size-xl);font-weight:600;margin-bottom:var(--space-3)}
+.cap h4{font-size:var(--size-xl);font-weight:500;margin-bottom:var(--space-3)}
 .cap ul{margin:0;padding:0;list-style:none}
 .cap li{font-family:var(--font-secondary);font-size:var(--size-sm);color:var(--text-secondary);
   padding:var(--space-2) 0;border-top:1px solid var(--border-default)}
@@ -1240,35 +1330,35 @@ nav a.navlink:hover{color:var(--text-primary);border-bottom-color:var(--surface-
 
 /* Filters */
 .lenses{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-3)}
-.lens{font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:600;
+.lens{font-family:var(--font-secondary);font-size:var(--size-sm);font-weight:500;
   background:var(--surface-sunk);color:var(--text-primary);
-  border:1px solid var(--border-default);border-radius:var(--radius-md);
+  border:1px solid var(--border-default);border-radius:var(--radius-xs);
   padding:var(--space-2) var(--space-3)}
 
 /* Search glossary box */
 .gsearch{width:100%;max-width:26rem;font-family:var(--font-secondary);font-size:var(--size-md);
   background:var(--surface-sunk);color:var(--text-primary);
-  border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);
+  border:1px solid var(--border-default);border-radius:0;padding:var(--space-3) var(--space-4);
   transition:border-color var(--motion-fast) var(--ease), box-shadow var(--motion-fast) var(--ease)}
 .gsearch::placeholder{color:var(--text-tertiary)}
-.gsearch:focus{outline:none;border-color:var(--surface-accent);box-shadow:0 0 0 3px rgba(251,191,36,0.3)}
+.gsearch:focus{outline:none;border-color:var(--surface-accent);box-shadow:0 0 0 3px rgba(217,160,27,0.2)}
 
 .gterm{border-top:1px solid var(--border-default);padding:var(--space-4) 0;max-width:48rem}
 .gterm:first-of-type{border-top:2px solid var(--border-muted)}
-.gterm dt{font-size:var(--size-xl);font-weight:700}
+.gterm dt{font-size:var(--size-xl);font-weight:500}
 .gterm dd{margin:var(--space-2) 0 0;font-size:var(--size-lg);color:var(--text-secondary)}
 .empty{padding:var(--space-6) 0;color:var(--text-tertiary);font-family:var(--font-secondary);font-size:var(--size-sm)}
 
 .phases{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);margin-top:var(--space-4)}
 @media(max-width:860px){.phases{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.phases{grid-template-columns:1fr}}
-.phase{border-top:6px solid var(--border-default);padding-top:var(--space-3)}
-.phase.done{border-top-color:var(--surface-organic)}
-.phase .n{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:600;
+.phase{border-top:4px solid var(--border-default);padding-top:var(--space-3)}
+.phase.done{border-top-color:var(--soil)}
+.phase .n{font-family:var(--font-secondary);font-size:var(--size-xs);font-weight:500;
   text-transform:uppercase;letter-spacing:.1em}
 .phase p{font-family:var(--font-secondary);font-size:var(--size-sm);color:var(--text-secondary);margin:var(--space-2) 0 0}
 
-footer{border-top:2px solid var(--border-muted);background:var(--surface-sunk);
+footer{border-top:1px solid var(--border-default);
   padding:var(--space-8) 0 var(--space-7);text-align:center}
 .themebtn{position:fixed;bottom:20px;right:20px;z-index:70}
 
@@ -1280,7 +1370,6 @@ footer{border-top:2px solid var(--border-muted);background:var(--surface-sunk);
 @media(max-width:620px){
   .entry summary{padding:var(--space-4)}
   .entry .body{padding-left:var(--space-4);padding-right:var(--space-4)}
-  .pull-body{padding:0 var(--space-4) var(--space-5)}
 }
 `}</style>
   );
