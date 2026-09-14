@@ -1110,7 +1110,7 @@ function GlobalStyles() {
 .theme-wrapper[data-theme="light"] {
   --surface-base: #FFFDF6; 
   --surface-sunk: #F7F5E9; 
-  --text-primary: #2C2A25; 
+  --text-primary: #111827; 
   --text-secondary: #5E5B55; 
   --text-tertiary: #87837E;
   --border-default: #E6E3D8;
