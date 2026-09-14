@@ -427,10 +427,7 @@ export default function FellowshipPage() {
         <strong className="font-medium">
           sanctuaries of transformation
         </strong>{" "}
-        where we can live inside the questions that matter most for this
-        time, and undergo the kind of shape-shift through which our lives
-        begin to reorganize around what we come to recognize as true,
-        valuable, and worthy of our devotion.
+        where we can live inside the questions that matter most for this time, and undergo the kind of shape-shift through which what we come to know begins to reshape how we live, what we value, how we relate, what we take responsibility for, and what we ultimately offer our lives to.
       </p>
     </div>
   </div>
