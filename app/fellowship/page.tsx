@@ -2448,10 +2448,6 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
-      <p className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-        At the heart of our pedagogy
-      </p>
-
       <p className="mt-4 text-lg leading-relaxed text-foreground md:text-xl">
         At the heart of our pedagogy lies an aspiration not simply to understand
         interdependence, sacredness, and the intrinsic worth of a life, but to
