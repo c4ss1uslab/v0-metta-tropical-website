@@ -1282,844 +1282,798 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-        {/* STRUCTURE */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                The Structure
-              </span>
+{/* FELLOWSHIP OVERVIEW / STRUCTURE */}
+<section
+  id="structure"
+  className="scroll-mt-32 bg-background py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                What Sustains Transformation Over Time
-              </h2>
+    {/* Main Overview Title */}
+    <div className="text-center">
+      <h2 className="font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
+        The Fellowship Overview
+      </h2>
+    </div>
 
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The Fellowship is held by a developmental ecology of immersive
-                  experiences, sustained practice, collective inquiry, intimate
-                  relationships, mentorship, accompaniment, and spaces for
-                  integration.
-                </p>
+    {/* Structure Introduction */}
+    <div className="mx-auto mt-16 max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Structure
+      </span>
 
-                <p className="leading-relaxed">
-                  Rather than just moving through a sequence of courses or
-                  isolated experiences, we invite participants into a shared
-                  rhythm of immersion, practice, relationship, inquiry,
-                  integration, and reflection, allowing what we encounter to be
-                  tended with care, deepen over time, and gradually shift the
-                  way we live. The curriculum we are designing definitely
-                  matters, but we are even more interested in cultivating the
-                  conditions of care, support, trust and accompaniment we
-                  consider essential for the depth of transformation and
-                  unfoldment required at this moment.
+      <h3
+        className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        What Sustains Transformation Over Time
+      </h3>
+
+      <p className="mt-8 leading-relaxed text-muted-foreground">
+        The Fellowship is held by an ecology of transformation inviting
+        participants into a shared rhythm of immersive experiences, sustained
+        practice, collective inquiry, intimate relationships, mentorship,
+        accompaniment, and spaces for integration. These aspects of our journey
+        create the conditions of depth, care, support and accompaniment we
+        consider essential for deep transformation to take place.
+      </p>
+
+      <h4 className="mt-10 font-serif text-2xl font-medium text-foreground md:text-3xl">
+        The Ecology of Transformation Holding the Journey
+      </h4>
+    </div>
+
+    {/* ========================================================= */}
+    {/* 01 — CORE RHYTHM */}
+    {/* ========================================================= */}
+
+    <div className="mt-14 border-t border-[#D9A01B] pt-8">
+      <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-10">
+        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+          01 — The Core Rhythm
+        </span>
+
+        <p className="font-serif text-xl italic text-foreground md:text-2xl">
+          The recurring experiences that carry the journey forward.
+        </p>
+      </div>
+
+      {/* IMMERSIVE RETREATS */}
+      <div className="mt-10">
+        <h4 className="font-serif text-2xl font-medium text-foreground">
+          Immersive Retreats
+        </h4>
+
+        <p className="mt-4 max-w-4xl leading-relaxed text-muted-foreground">
+          Three week-long retreats anchor the beginning, middle, and completion
+          of the Fellowship. They are our deepest moments of immersion and
+          communal life, where the relational field we create allows us to dive
+          deeper into practice, inquiry, relationship, ritual, and communal
+          life, experimenting with ways of being that we may want to carry more
+          fully into our lives.
+        </p>
+
+        {/* Retreat Cards */}
+        <div className="mt-8 grid gap-5 lg:grid-cols-3">
+
+          {/* OPENING RETREAT */}
+          <article className="flex h-full flex-col border-t-4 border-[#D9A01B] bg-[#FFF9E9] p-6">
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Opening Retreat
+            </span>
+
+            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+              Inviting the Sacred
+            </h5>
+
+            <p className="mt-1 text-sm italic text-muted-foreground">
+              Tending to the Soul of Our Community
+            </p>
+
+            <p className="mt-4 text-xs font-medium text-[#B88610]">
+              Feb 7th–14th, 2026 · São Paulo
+            </p>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              The first retreat is where we begin to come into more intimate
+              relationships with ourselves, each other, and the sacred. Through
+              contemplative and relational practices of presencing, attunement,
+              deep listening, relationality, emergent dialogue, awareness,
+              story sharing and authentic communication, we begin cultivating
+              the relational soil from which the rest of the Fellowship can
+              grow.
+            </p>
+
+            {/* Learn More */}
+            <details className="group mt-5 border-t border-[#D9A01B]/25 pt-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+                <span>Learn more</span>
+                <span className="text-lg transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <div className="pt-4 text-sm leading-relaxed text-muted-foreground">
+                <p>
+                  Alongside these practices, we will enter shared rituals and
+                  ceremonies that mark our crossing into the journey together,
+                  helping us step into a deeper field of transformation and
+                  become more sensitive to the sacred. Over time, we hope to
+                  experience the community not simply as a collection of
+                  individuals, but as a{" "}
+                  <strong className="font-medium text-foreground">
+                    living collective body
+                  </strong>
+                  —learning to move as one river, to care for the whole we are
+                  becoming together, and to belong to something larger than
+                  ourselves.
                 </p>
               </div>
+            </details>
 
-              <h3 className="mt-10 font-serif text-2xl font-medium text-foreground">
-                The Ecology of Transformation Holding the Journey
-              </h3>
+            <p className="mt-5 text-sm font-medium leading-relaxed text-foreground">
+              This is where the soul and culture of our community begin to take
+              shape.
+            </p>
+          </article>
+
+          {/* MIDPOINT RETREAT */}
+          <article className="flex h-full flex-col border-t-4 border-cyan-800 bg-[#EFF8F8] p-6">
+            <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
+              Midpoint Retreat
+            </span>
+
+            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+              Feeling the Metacrisis
+            </h5>
+
+            <p className="mt-1 text-sm italic text-muted-foreground">
+              Relating to the Systems &amp; Territories We Are Embedded In
+            </p>
+
+            <p className="mt-4 text-xs font-medium text-cyan-800">
+              July 11th–18th, 2027 · TBD
+            </p>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Here we turn more directly toward the complexity of the systems
+              and histories we participate in, the colonial habits of being
+              still embedded in our civilization, the possibility of systemic
+              breakdown, the underlying causes of the metacrisis, and the ways
+              of perceiving, understanding and organizing life that have brought
+              us here.
+            </p>
+
+            {/* Learn More */}
+            <details className="group mt-5 border-t border-cyan-800/20 pt-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-cyan-800 [&::-webkit-details-marker]:hidden">
+                <span>Learn more</span>
+                <span className="text-lg transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <p className="pt-4 text-sm leading-relaxed text-muted-foreground">
+                We practice developing our capacity for collective sensemaking,
+                staying present with complexity without collapsing into
+                abstraction or simplistic solutions, and becoming more capable
+                of sensing patterns, tensions, aliveness and emergent
+                possibilities together rather than only as isolated individuals.
+              </p>
+            </details>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              We are in conversation with Indigenous and Quilombola communities
+              with whom we already have relationships, exploring the possibility
+              of holding this retreat within their territory. This is not yet
+              confirmed, but it is an intention we are tending with care. At
+              minimum, we will spend meaningful time learning with these
+              communities by encountering ways of seeing, being, and relating to
+              life that may unsettle some of what our dominant culture has taught
+              us to take for granted.
+            </p>
+          </article>
+
+          {/* CLOSING RETREAT */}
+          <article className="flex h-full flex-col border-t-4 border-crimson bg-[#FFF4F2] p-6">
+            <span className="text-xs font-medium uppercase tracking-wide text-crimson">
+              Closing Retreat
+            </span>
+
+            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+              Serving the Whole
+            </h5>
+
+            <p className="mt-1 text-sm italic text-muted-foreground">
+              Contributing to the Emergence of Life-Enhancing Futures
+            </p>
+
+            <p className="mt-4 text-xs font-medium text-crimson">
+              Dec 12th–19, 2027 · São Paulo
+            </p>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              The final retreat creates space to{" "}
+              <strong className="font-medium text-foreground">
+                metabolize and integrate the journey
+              </strong>
+              . Transformation does not happen only through what we experience,
+              but through the time and attention we give to understanding what
+              those experiences have revealed, what has actually changed, and
+              what we are now being asked to carry forward.
+            </p>
+
+            {/* Learn More */}
+            <details className="group mt-5 border-t border-crimson/20 pt-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-crimson [&::-webkit-details-marker]:hidden">
+                <span>Learn more</span>
+                <span className="text-lg transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+
+              <p className="pt-4 text-sm leading-relaxed text-muted-foreground">
+                This is a space to discern what has become precious enough that
+                we want to reorganize our lives around it.
+              </p>
+            </details>
+
+            <p className="mt-5 text-sm italic leading-relaxed text-foreground">
+              What has changed in us? What remains unresolved? What do we now
+              know to be true that asks something of the way we live? What
+              support will we need to remain faithful to it? What is asking to
+              emerge through each of us—and through this community?
+            </p>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              We close through reflection, celebration, personal commitments,
+              and forms of vow that help us carry what has been touched into our
+              own lives. The intention is not to leave the Fellowship with a
+              perfect plan, but to sense into what we want to protect, deepen,
+              practice, and offer our lives in service of.
+            </p>
+
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              The retreat is also a threshold into what this community might
+              become beyond the Fellowship. Our aspiration is not simply to run
+              cohorts and send people on their way, but to cultivate a long-term
+              developmental community capable of continuing to offer
+              relationship, practice, mentorship, experiences, care, and shared
+              responsibility across the years. We hope the Fellowship becomes
+              the beginning of a much longer journey.
+            </p>
+          </article>
+        </div>
+
+        <p className="mt-5 text-sm font-medium text-foreground">
+          Attendance at all three retreats is required for participation.
+        </p>
+      </div>
+
+      {/* INQUIRY + PRACTICE */}
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
+
+        {/* COLLECTIVE INQUIRY */}
+        <article className="border border-foreground/10 bg-cream p-6 md:p-8">
+          <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
+            Collective Inquiry
+          </span>
+
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Our regular online gatherings sustain the intellectual and
+            collective inquiry of the Fellowship. We encounter new ideas,
+            practices, ontologies, maps, frameworks and wisdom while continuing
+            to deepen what has been opened through the retreats.
+          </p>
+
+          <div className="mt-6 border-l-2 border-cyan-800 pl-4">
+            <p className="font-medium text-foreground">
+              Community Inquiry
+            </p>
+            <p className="mt-1 text-xs font-medium text-cyan-800">
+              Tuesday · 19h to 21h · Online
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Facilitated by our core team, these sessions introduce new ideas,
+              questions, frameworks, and inquiries, while also deepening the
+              ones that are already alive within the Fellowship. At times, we
+              will study the work of an upcoming guest beforehand so that our
+              encounter with them can begin from a deeper place.
+            </p>
+          </div>
+
+          <div className="mt-6 border-l-2 border-[#D9A01B] pl-4">
+            <p className="font-medium text-foreground">
+              Wisdom Dialogues
+            </p>
+            <p className="mt-1 text-xs font-medium text-[#B88610]">
+              Thursday · 19h to 21h · Online
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              During these sessions, we welcome local and global thinkers,
+              artists, organizers, leaders, contemplatives, elders,
+              practitioners, and wisdom holders whose lives and work are lived
+              responses to this moment of metacrisis.
+            </p>
+          </div>
+        </article>
+
+        {/* COLLECTIVE PRACTICE */}
+        <article className="border border-foreground/10 bg-[#FFF9E9] p-6 md:p-8">
+          <span className="text-xs font-medium uppercase tracking-wide text-crimson">
+            Collective Practice
+          </span>
+
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            During the fellowship, we will enter a rhythm of weekly practice,
+            where we will be engaging with contemplative, relational, and
+            developmental practices that can begin reshaping how we perceive
+            and relate with life.
+          </p>
+
+          <p className="mt-5 font-medium text-foreground">
+            Collective Practice — Wednesdays · 19h30–21h
+          </p>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            Every six to eight weeks, we therefore enter a sustained practice
+            cycle around specific contemplative, meditative, and relational
+            practices that deepen our capacity to be with and hold space for
+            ourselves and others with greater intimacy, attention, presence,
+            attunement, love, and compassion amid complexity.
+          </p>
+
+          {/* Learn More */}
+          <details className="group mt-6 border-t border-[#D9A01B]/30 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                One of the things that differentiate our work is that we
+                understand ourselves as practitioners: people interested not
+                only in ideas, but in becoming increasingly capable of living
+                from what we come to know matters most.
+              </p>
             </div>
-
-            <div className="mt-8 space-y-4">
-              {/* 01 CORE RHYTHM */}
-              <details className="overflow-hidden rounded-2xl border border-border bg-[#FFF9E9]">
-                <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-                        01 — The Core Rhythm
-                      </span>
-
-                      <h3 className="mt-2 font-serif text-xl font-medium text-foreground md:text-2xl">
-                        The recurring experiences that carry the journey forward
-                      </h3>
-                    </div>
-
-                    <span className="text-2xl text-[#B88610]">+</span>
-                  </div>
-                </summary>
-
-                <div className="space-y-4 border-t border-[#D9A01B]/20 bg-background px-6 py-6 md:px-8">
-                  {/* RETREATS */}
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-5 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <h4 className="font-serif text-xl font-medium text-foreground">
-                            Immersive Retreats
-                          </h4>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Step outside ordinary life to encounter it more
-                            deeply.
-                          </p>
-                        </div>
-
-                        <span className="text-xl text-olive">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-6 border-t border-border px-5 py-6 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Three week-long retreats anchor the beginning, middle,
-                        and completion of the Fellowship. They are our deepest
-                        moments of immersion. Sanctuaries of transformation
-                        where the rhythms of ordinary life loosen enough for
-                        deeper practice, silence, relationship, ritual, inquiry,
-                        and communal life to become possible.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        During these we slow down, listen deeply, practice
-                        together, spend time with land and silence, tend the
-                        relational field, grieve and celebrate, enter rites of
-                        passage, come in contact with different guests, and
-                        experiment with ways of being that we may want to carry
-                        more fully into our lives.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Each retreat is focused on exploring one or two of the
-                        Streams of Transformation—The Sacred, Soul, Systems,
-                        Soil and Society—into greater depth.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        The retreats are also experiments in communal life. The
-                        participants do not simply attend the retreat, but help
-                        care for conditions that make living together possible.
-                        Participants carry shared responsibilities for spaces,
-                        meals, transitions, and the many ordinary acts required
-                        for healthy community life.
-                      </p>
-
-                      {/* Opening */}
-                      <details className="rounded-lg border border-border bg-background">
-                        <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                          <div className="flex justify-between gap-5">
-                            <div>
-                              <p className="font-medium text-foreground">
-                                Opening Retreat — Inviting the Sacred
-                              </p>
-                              <p className="mt-1 text-sm italic">
-                                Tending to the Soul of Our Community
-                              </p>
-                              <p className="mt-2 text-xs text-[#B88610]">
-                                Feb 7th–14th, 2026 · São Paulo
-                              </p>
-                            </div>
-
-                            <span className="text-lg text-[#B88610]">+</span>
-                          </div>
-                        </summary>
-
-                        <div className="space-y-4 border-t border-border px-5 py-5">
-                          <p className="leading-relaxed">
-                            The first retreat is where we begin to come into
-                            more intimate relationships with ourselves, each
-                            other, and the sacred. Through contemplative and
-                            relational practices of presencing, attunement, deep
-                            listening, relationality, emergent dialogue,
-                            awareness, story sharing and authentic communication,
-                            we begin cultivating the relational soil from which
-                            the rest of the Fellowship can grow.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            Alongside these practices, we will enter shared
-                            rituals and ceremonies that mark our crossing into
-                            the journey together, helping us step into a deeper
-                            field of transformation and become more sensitive to
-                            the sacred. Over time, we hope to experience the
-                            community not simply as a collection of individuals,
-                            but as a living collective body—learning to move as
-                            one river, to care for the whole we are becoming
-                            together, and to belong to something larger than
-                            ourselves.
-                          </p>
-
-                          <p className="font-medium text-foreground">
-                            This is where the soul and culture of our community
-                            begin to take shape.
-                          </p>
-                        </div>
-                      </details>
-
-                      {/* Midpoint */}
-                      <details className="rounded-lg border border-border bg-background">
-                        <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                          <div className="flex justify-between gap-5">
-                            <div>
-                              <p className="font-medium text-foreground">
-                                Midpoint Retreat — Feeling the Metacrisis
-                              </p>
-                              <p className="mt-1 text-sm italic">
-                                Relating to the Systems &amp; Territories We Are
-                                Embedded In
-                              </p>
-                              <p className="mt-2 text-xs text-cyan-800">
-                                July 11th–18th, 2027 · TBD
-                              </p>
-                            </div>
-
-                            <span className="text-lg text-cyan-800">+</span>
-                          </div>
-                        </summary>
-
-                        <div className="space-y-4 border-t border-border px-5 py-5">
-                          <p className="leading-relaxed">
-                            Here we turn more directly toward the complexity of
-                            the systems and histories we participate in, the
-                            colonial habits of being still embedded in our
-                            civilization, the possibility of systemic breakdown,
-                            the underlying causes of the metacrisis, and the ways
-                            of perceiving, understanding and organizing life
-                            that have brought us here.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            We practice developing our capacity for collective
-                            sensemaking, staying present with complexity without
-                            collapsing into abstraction or simplistic solutions,
-                            and becoming more capable of sensing patterns,
-                            tensions, aliveness and emergent possibilities
-                            together rather than only as isolated individuals.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            We are in conversation with Indigenous and Quilombola
-                            communities with whom we already have relationships,
-                            exploring the possibility of holding this retreat
-                            within their territory. This is not yet confirmed,
-                            but it is an intention we are tending with care. At
-                            minimum, we will spend meaningful time learning with
-                            these communities by encountering ways of seeing,
-                            being, and relating to life that may unsettle some of
-                            what our dominant culture has taught us to take for
-                            granted.
-                          </p>
-                        </div>
-                      </details>
-
-                      {/* Closing */}
-                      <details className="rounded-lg border border-border bg-background">
-                        <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                          <div className="flex justify-between gap-5">
-                            <div>
-                              <p className="font-medium text-foreground">
-                                Closing Retreat — Serving the Whole
-                              </p>
-                              <p className="mt-1 text-sm italic">
-                                Contributing to the Emergence of Life-Enhancing
-                                Futures
-                              </p>
-                              <p className="mt-2 text-xs text-crimson">
-                                Dec 12th–19, 2027 · São Paulo
-                              </p>
-                            </div>
-
-                            <span className="text-lg text-crimson">+</span>
-                          </div>
-                        </summary>
-
-                        <div className="space-y-4 border-t border-border px-5 py-5">
-                          <p className="leading-relaxed">
-                            The final retreat creates space to metabolize and
-                            integrate the journey. Transformation does not
-                            happen only through what we experience, but through
-                            the time and attention we give to understanding what
-                            those experiences have revealed, what has actually
-                            changed, and what we are now being asked to carry
-                            forward.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            This is a space to discern what has become precious
-                            enough that we want to reorganize our lives around
-                            it.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            We will sit with questions such as: What has changed
-                            in us? What remains unresolved? What do we now know
-                            to be true that asks something of the way we live?
-                            What support will we need to remain faithful to it?
-                            What is asking to emerge through each of us—and
-                            through this community?
-                          </p>
-
-                          <p className="leading-relaxed">
-                            We close through reflection, celebration, personal
-                            commitments, and forms of vow that help us carry what
-                            has been touched into our own lives. The intention is
-                            not to leave the Fellowship with a perfect plan, but
-                            to sense into what we want to protect, deepen,
-                            practice, and offer our lives in service of.
-                          </p>
-
-                          <p className="leading-relaxed">
-                            The retreat is also a threshold into what this
-                            community might become beyond the Fellowship. Our
-                            aspiration is not simply to run cohorts and send
-                            people on their way, but to cultivate a long-term
-                            developmental community capable of continuing to
-                            offer relationship, practice, mentorship,
-                            experiences, care, and shared responsibility across
-                            the years. We hope the Fellowship becomes the
-                            beginning of a much longer journey.
-                          </p>
-                        </div>
-                      </details>
-
-                      <p className="font-medium text-foreground">
-                        Attendance at all three retreats is required for
-                        participation.
-                      </p>
-                    </div>
-                  </details>
-
-                  {/* COLLECTIVE INQUIRY */}
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-5 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <h4 className="font-serif text-xl font-medium text-foreground">
-                            Collective Inquiry
-                          </h4>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Keep digging and holding questions alive between
-                            immersions.
-                          </p>
-                        </div>
-
-                        <span className="text-xl text-cyan-800">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-5 border-t border-border px-5 py-6 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Our regular online gatherings sustain the intellectual
-                        and collective inquiry of the Fellowship. We encounter
-                        new ideas, practices, ontologies, maps, frameworks and
-                        wisdom while continuing to deepen what has been opened
-                        through the retreats and Five Streams.
-                      </p>
-
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                        <div className="bg-background p-5">
-                          <p className="font-medium text-foreground">
-                            Community Inquiry
-                          </p>
-                          <p className="mt-1 text-xs text-cyan-800">
-                            Tuesday · 19h to 21h
-                          </p>
-                          <p className="mt-3 text-sm leading-relaxed">
-                            Facilitated by our core team, these sessions
-                            introduce new ideas, questions, frameworks, and
-                            inquiries, while also deepening the ones that are
-                            already alive within the Fellowship. At times, we
-                            will study the work of an upcoming guest beforehand
-                            so that our encounter with them can begin from a
-                            deeper place.
-                          </p>
-                        </div>
-
-                        <div className="bg-background p-5">
-                          <p className="font-medium text-foreground">
-                            Wisdom Dialogues
-                          </p>
-                          <p className="mt-1 text-xs text-[#B88610]">
-                            Thursday · 19h to 21h
-                          </p>
-                          <p className="mt-3 text-sm leading-relaxed">
-                            During these sessions, we welcome local and global
-                            thinkers, artists, organizers, leaders,
-                            contemplatives, elders, practitioners, and wisdom
-                            holders whose lives and work are lived responses to
-                            this moment of metacrisis.
-                          </p>
-                          <p className="mt-3 text-sm leading-relaxed">
-                            We hope to use these moments, not only to know their
-                            work in more depth, but to bring our living
-                            questions, decisions, tensions, and paradoxes into
-                            conversation with people who may have walked further
-                            along particular paths.
-                          </p>
-                        </div>
-                      </div>
-
-                      <p className="text-sm font-medium text-foreground">
-                        Meet some of the people we are learning with →
-                      </p>
-                    </div>
-                  </details>
-
-                  {/* COLLECTIVE PRACTICE */}
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-5 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <h4 className="font-serif text-xl font-medium text-foreground">
-                            Collective Practice
-                          </h4>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Practice until another way of being becomes
-                            available.
-                          </p>
-                        </div>
-
-                        <span className="text-xl text-crimson">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-5 border-t border-border px-5 py-6 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Transformation requires more than knowing. During the
-                        fellowship, we will enter a rhythm of weekly practice,
-                        where we will be engaging with contemplative, relational,
-                        and developmental practices long enough for them to begin
-                        reshaping how we perceive and relate with life.
-                      </p>
-
-                      <p className="font-medium text-foreground">
-                        Collective Practice — Wednesdays · 19h30–21h
-                      </p>
-
-                      <p className="leading-relaxed">
-                        One of the things that differentiate our work is that we
-                        understand ourselves as practitioners: people interested
-                        not only in ideas, but in becoming increasingly capable
-                        of living from what we come to know matters most.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        In this, we draw inspiration from wisdom traditions and
-                        spiritual lineages that have long understood that
-                        worldview alone is insufficient for transformation. A
-                        way of seeing the world must be accompanied by practices
-                        through which that way of seeing can gradually become a
-                        way of being.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Every six to eight weeks, we therefore enter a sustained
-                        practice cycle around specific contemplative,
-                        meditative, and relational practices that deepen our
-                        capacity to be with and hold space for ourselves and
-                        others with greater intimacy, attention, presence,
-                        attunement, love, and compassion amid complexity.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Our practice ecology draws inspiration from lineages and
-                        approaches including Transformational Connection,
-                        Authentic Relating, Insight Dialogue, Internal Family
-                        Systems, Aletheia Unfoldment, Compassion Cultivation
-                        Training, Insight Meditation, Zen Buddhism, Soulmaking
-                        Dharma, Plum Village, and Vipassana.
-                      </p>
-                    </div>
-                  </details>
-                </div>
-              </details>
-
-              {/* 02 RELATIONAL WEB */}
-              <details className="overflow-hidden rounded-2xl border border-border bg-[#FFF4F2]">
-                <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-                        02 — The Relational Web
-                      </span>
-
-                      <h3 className="mt-2 font-serif text-xl font-medium text-foreground md:text-2xl">
-                        The relationships that accompany who you are becoming
-                      </h3>
-                    </div>
-
-                    <span className="text-2xl text-crimson">+</span>
-                  </div>
-                </summary>
-
-                <div className="space-y-5 border-t border-crimson/15 bg-background px-6 py-7 md:px-8">
-                  <p className="leading-relaxed text-muted-foreground">
-                    This journey is not meant to be navigated alone. It can be
-                    overwhelming, challenging and touch a lot of delicate places
-                    within ourselves that will need tending, care and
-                    attunement. Instead of relying on a single facilitator and
-                    staff to carry everything, the Fellowship creates multiple
-                    layers of accompaniment: intimate relationships with peers
-                    who know us over time, individual therapeutic or coaching
-                    support, relationships with mentors who have walked further
-                    along particular paths, and small groups that can offer a
-                    deeper sense of belonging.
-                  </p>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <p className="font-medium text-foreground">
-                            Dharma Family
-                          </p>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Depth grows in small circles of trust.
-                          </p>
-                        </div>
-                        <span className="text-lg text-crimson">+</span>
-                      </div>
-                    </summary>
-
-                    <p className="border-t border-border px-5 py-5 leading-relaxed text-muted-foreground">
-                      Intimate groups of three to four participants and a mentor
-                      walk together across the full Fellowship. They become a
-                      consistent place for reflection, truth, mutual care,
-                      accountability, and the kind of precise form of love and
-                      care that can best take place in smaller containers.
-                    </p>
-                  </details>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <p className="font-medium text-foreground">
-                            Mentorship
-                          </p>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Some thresholds cannot be crossed alone.
-                          </p>
-                        </div>
-                        <span className="text-lg text-[#B88610]">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-4 border-t border-border px-5 py-5 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Throughout the journey, we help participants form
-                        relationships with practitioners, teachers, leaders,
-                        elders, and others whose experience may speak directly
-                        to the questions they are living at this moment.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        We do not automatically assign every participant to a
-                        predetermined mentor. We believe meaningful mentorship
-                        grows through resonance, trust, and genuine relationships
-                        built over time.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Instead, we will incentivize participants to be
-                        constantly looking for possible mentors in their life,
-                        and will also create opportunities for them to meet the
-                        wider constellation of people connected to our
-                        community. As particular questions, fields of interest,
-                        or life decisions emerge for each participant we can
-                        help with specific connections from which deeper
-                        mentorship relationships may grow.
-                      </p>
-                    </div>
-                  </details>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <p className="font-medium text-foreground">
-                            Therapy &amp; Coaching
-                          </p>
-                          <p className="mt-1 text-sm italic text-muted-foreground">
-                            Tend what the journey stirs.
-                          </p>
-                        </div>
-                        <span className="text-lg text-olive">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-4 border-t border-border px-5 py-5 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Deep spaces of transformation can bring us into contact
-                        with psychological patterns, wounds, desires, questions,
-                        and decisions that deserve more individual attention
-                        than the Fellowship community itself can, or should,
-                        provide.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Participants may therefore choose to receive individual
-                        therapeutic or coaching accompaniment throughout the
-                        journey.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        We aim to connect participants with therapists familiar
-                        with approaches such as Internal Family Systems and with
-                        coaches who understand the existential and systemic
-                        questions at the heart of this Fellowship.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Therapy can offer a dedicated space for tending
-                        psychological and emotional material that arises.
-                        Coaching can support sensing deeply into current desires
-                        and longings, responsibility, choices, relationships,
-                        and how one&apos;s inner transformation meets the
-                        realities of everyday life.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        These spaces complement the Fellowship while remaining
-                        distinct from the educational and communal container
-                        itself. The Fellowship team does not receive the content
-                        of therapeutic or coaching sessions unless a participant
-                        chooses to share it.
-                      </p>
-
-                      <p className="text-sm italic leading-relaxed">
-                        We are particularly drawn to Internal Family Systems
-                        because it offers a compassionate way of meeting inner
-                        complexity rather than fighting it. Learning to
-                        recognize our different parts without being governed by
-                        them can allow us to cultivate a quality of wholeness
-                        and inner spaciousness needed to meet complexity outside
-                        ourselves as well.
-                      </p>
-                    </div>
-                  </details>
-                </div>
-              </details>
-
-              {/* 03 INTEGRATION */}
-              <details className="overflow-hidden rounded-2xl border border-border bg-[#EFF8F8]">
-                <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-                        03 — The Integration Rhythm
-                      </span>
-
-                      <h3 className="mt-2 font-serif text-xl font-medium text-foreground md:text-2xl">
-                        Transformation needs time to settle
-                      </h3>
-                    </div>
-
-                    <span className="text-2xl text-cyan-800">+</span>
-                  </div>
-                </summary>
-
-                <div className="space-y-5 border-t border-cyan-800/15 bg-background px-6 py-7 md:px-8">
-                  <p className="leading-relaxed text-muted-foreground">
-                    Not every week needs to bring something new. At the end of
-                    each Stream, we interrupt the regular rhythm of the
-                    Fellowship and create space to pause, metabolize, listen,
-                    repair, and integrate.
-                  </p>
-
-                  <p className="leading-relaxed text-muted-foreground">
-                    These weeks help us notice what has actually moved, not only
-                    in our understanding, but within our relationships,
-                    practices, lives, and collective field.
-                  </p>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <p className="font-medium text-foreground">
-                          Tending the Field
-                        </p>
-                        <span className="text-lg text-cyan-800">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-4 border-t border-border px-5 py-5 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        Inspired by the Plum Village practice of Beginning Anew,
-                        we create a recurring space to tend the health of our
-                        relationships before distance, hurt, or aversion harden.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        We nurture a space to practice appreciation, honest
-                        communication, acknowledgement of regrets and hurts,
-                        accountability, forgiveness, and repair. We learn to
-                        become more sensitive to how our individual actions
-                        affect the collective body, and that trust and intimacy
-                        do not grow by avoiding rupture, but by developing the
-                        capacity to meet rupture with truth, care, and
-                        responsibility.
-                      </p>
-
-                      <p className="font-medium text-foreground">
-                        The intention is not a community without conflict, but
-                        one increasingly interested and capable of caring for
-                        what happens between us.
-                      </p>
-                    </div>
-                  </details>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <p className="font-medium text-foreground">
-                          Resourcing Together
-                        </p>
-                        <span className="text-lg text-olive">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-4 border-t border-border px-5 py-5 text-muted-foreground">
-                      <p className="leading-relaxed">
-                        This space is for us to engage with a simple and
-                        important question: What does each of us actually need
-                        in order to feel sufficiently resourced to live well and
-                        offer what we are here to offer?
-                      </p>
-
-                      <p className="leading-relaxed">
-                        We are inviting the community not to treat resources as
-                        an entirely private problem each person must solve alone.
-                        We want to explore what becomes possible when a
-                        community begins to notice what it has in abundance,
-                        what it needs, and what might be able to circulate
-                        between us.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Resources may take the form of money, but also time,
-                        knowledge, introductions, opportunities, skills, places
-                        to stay, work, food, attention, access, friendship, and
-                        practical support. The aim is not to erase personal
-                        responsibility or create dependency, but to loosen the
-                        fantasy of complete self-sufficiency and experiment with
-                        interdependence as something material and lived, not
-                        merely something we believe.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        We hope to experiment with forms of mutual support that
-                        make our lives less isolated, less precarious, and less
-                        dependent on having every need mediated through the
-                        market economy, while also strengthening our capacity to
-                        share resources, carry risk together, and support one
-                        another in living more fully in alignment with what
-                        matters.
-                      </p>
-                    </div>
-                  </details>
-                </div>
-              </details>
-
-              {/* 04 EMERGENT */}
-              <details className="overflow-hidden rounded-2xl border border-border bg-[#F3F7EC]">
-                <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                        04 — Emergent Spaces
-                      </span>
-
-                      <h3 className="mt-2 font-serif text-xl font-medium text-foreground md:text-2xl">
-                        Leave room for what the journey itself begins to ask for
-                      </h3>
-                    </div>
-
-                    <span className="text-2xl text-olive">+</span>
-                  </div>
-                </summary>
-
-                <div className="space-y-6 border-t border-olive/15 bg-background px-6 py-7 text-muted-foreground md:px-8">
-                  <p className="leading-relaxed">
-                    Even though this Fellowship has been carefully designed, not
-                    everything can be planned in advance. As the questions,
-                    relationships, challenges, and desires of the cohort become
-                    clearer, we leave room to create additional spaces in
-                    response to what is genuinely alive in the cohort.
-                  </p>
-
-                  <div>
-                    <h4 className="font-serif text-xl font-medium text-foreground">
-                      Philosophical Dinners
-                    </h4>
-
-                    <p className="mt-3 leading-relaxed">
-                      Three to four times during the Fellowship, we plan to
-                      gather in São Paulo for intimate dinners with thinkers,
-                      elders, artists, organizers, practitioners, and friends of
-                      our community.
-                    </p>
-
-                    <p className="mt-3 leading-relaxed">
-                      These evenings are not a presentation or panel. They are
-                      organized around a meaningful question the cohort has been
-                      wrestling with, and worth spending a night with. We will
-                      have an evening of food, conversations and relationships
-                      with specific guests who care deeply about the state of
-                      our world, have been thinking deeply about what needs to be
-                      done, and are attempting to live in response.
-                    </p>
-                  </div>
-
-                  <details className="rounded-xl border border-border bg-cream">
-                    <summary className="cursor-pointer list-none px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <div className="flex justify-between gap-6">
-                        <div>
-                          <p className="font-medium text-foreground">
-                            Emergent Immersions
-                          </p>
-                          <p className="mt-1 text-sm italic">
-                            Additional weekend experiences created in response
-                            to what becomes alive.
-                          </p>
-                        </div>
-                        <span className="text-lg text-olive">+</span>
-                      </div>
-                    </summary>
-
-                    <div className="space-y-4 border-t border-border px-5 py-5">
-                      <p className="leading-relaxed">
-                        Across the eight months, additional weekend immersions
-                        may emerge around questions, practices, or capacities
-                        the cohort wants to explore more fully, but that
-                        haven&apos;t necessarily been part of the “core
-                        curriculum” of the Fellowship.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        These are not predetermined workshops delivered to the
-                        cohort. They emerge from the cohort itself, by sensing
-                        into the needs and desires most alive within the group.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        Participants will help out with this process by
-                        discerning what feels most needed, identifying someone
-                        or something we genuinely want to learn with, making
-                        invitations, helping organize the experience, and where
-                        necessary finding the resources required to bring it
-                        into being.
-                      </p>
-
-                      <p className="leading-relaxed">
-                        This might take the form of a weekend where we invite an
-                        expert on Nonviolent Communication, Warm Data, Theory U,
-                        Musica do Circulo, restorative practices, or relational
-                        work. It could also become a time for serving a specific
-                        community in need, travelling together to an important
-                        gathering or event, or something none of us can yet
-                        anticipate.
-                      </p>
-
-                      <p className="font-medium text-foreground">
-                        Part of the learning here is not only participating in
-                        what is offered, but becoming capable of bringing into
-                        being what the community senses it needs.
-                      </p>
-                    </div>
-                  </details>
-                </div>
-              </details>
+          </details>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            In this, we draw inspiration from wisdom traditions and spiritual
+            lineages that have long understood that worldview alone is
+            insufficient for transformation. A way of seeing the world must be
+            accompanied by practices through which that way of seeing can
+            gradually become a way of being.
+          </p>
+
+          <p className="mt-5 text-sm italic leading-relaxed text-muted-foreground">
+            Our practice ecology draws inspiration from lineages and approaches
+            including Transformational Connection, Authentic Relating, Insight
+            Dialogue, Internal Family Systems, Aletheia Unfoldment, Compassion
+            Cultivation Training, Insight Meditation, Zen Buddhism, Soulmaking
+            Dharma, Plum Village, and Vipassana.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* 02 — RELATIONAL WEB */}
+    {/* ========================================================= */}
+
+    <div className="mt-20 border-t border-crimson pt-8">
+      <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-10">
+        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+          02 — The Relational Web
+        </span>
+
+        <p className="font-serif text-xl italic text-foreground md:text-2xl">
+          The relationships that accompany who you are becoming.
+        </p>
+      </div>
+
+      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+        This journey can be overwhelming, challenging and touch a lot of
+        delicate places within ourselves that will need tending, care and
+        attunement. Instead of relying on a single facilitator and staff to
+        carry everything, the Fellowship creates multiple layers of
+        accompaniment:
+      </p>
+
+      <div className="mt-8 grid gap-5 md:grid-cols-3">
+
+        {/* DHARMA FAMILY */}
+        <article className="border-t-4 border-crimson bg-[#FFF4F2] p-6">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Dharma Family
+          </h4>
+
+          <p className="mt-2 text-sm italic text-crimson">
+            Depth grows in small circles of trust.
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            Intimate groups of three to four participants and a mentor walk
+            together across the full Fellowship. They become a consistent place
+            for reflection, truth, mutual care, accountability, and the kind of
+            precise form of love and care that can best take place in smaller
+            containers.
+          </p>
+        </article>
+
+        {/* MENTORSHIP */}
+        <article className="border-t-4 border-[#D9A01B] bg-[#FFF9E9] p-6">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Mentorship
+          </h4>
+
+          <p className="mt-2 text-sm italic text-[#B88610]">
+            Some thresholds cannot be crossed alone.
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            Throughout the journey, we help participants form relationships
+            with practitioners, teachers, leaders, elders, and others whose
+            experience may speak directly to the questions they are living at
+            this moment.
+          </p>
+
+          {/* How Mentorship Works */}
+          <details className="group mt-5 border-t border-[#D9A01B]/25 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>How mentorship works</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                We do not automatically assign every participant to a
+                predetermined mentor. We believe meaningful mentorship grows
+                through resonance, trust, and genuine relationships built over
+                time.
+              </p>
+
+              <p>
+                Instead, we will incentivize participants to be constantly
+                looking for possible mentors in their life, and will also create
+                opportunities for them to meet the wider constellation of people
+                connected to our community. As particular questions, fields of
+                interest, or life decisions emerge for each participant we can
+                help with specific connections from which deeper mentorship
+                relationships may grow.
+              </p>
             </div>
+          </details>
+        </article>
+
+        {/* THERAPY & COACHING */}
+        <article className="border-t-4 border-olive bg-[#F3F7EC] p-6">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Therapy &amp; Coaching
+          </h4>
+
+          <p className="mt-2 text-sm italic text-olive">
+            Tend what the journey stirs.
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            Deep spaces of transformation can bring us into contact with
+            psychological patterns, wounds, desires, questions, and decisions
+            that deserve more individual attention than the Fellowship
+            community itself can, or should, provide.
+          </p>
+
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            Participants may therefore choose to receive individual therapeutic
+            or coaching accompaniment throughout the journey.
+          </p>
+
+          {/* How Therapy Works */}
+          <details className="group mt-5 border-t border-olive/20 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
+              <span>How therapy and coaching works</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                We aim to connect participants with therapists familiar with
+                approaches such as Internal Family Systems and with coaches who
+                understand the existential and systemic questions at the heart
+                of this Fellowship.
+              </p>
+
+              <p>
+                Therapy can offer a dedicated space for tending psychological
+                and emotional material that arises. Coaching can support sensing
+                deeply into current desires and longings, responsibility,
+                choices, relationships, and how one&apos;s inner transformation
+                meets the realities of everyday life.
+              </p>
+
+              <p>
+                These spaces complement the Fellowship while remaining distinct
+                from the educational and communal container itself. The
+                Fellowship team does not receive the content of therapeutic or
+                coaching sessions unless a participant chooses to share it.
+              </p>
+
+              <p className="italic">
+                We are particularly drawn to Internal Family Systems because it
+                offers a compassionate way of meeting inner complexity rather
+                than fighting it. Learning to recognize our different parts
+                without being governed by them can allow us to cultivate a
+                quality of wholeness and inner spaciousness needed to meet
+                complexity outside ourselves as well.
+              </p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* 03 — INTEGRATION WEEK */}
+    {/* ========================================================= */}
+
+    <div className="mt-20 border-t border-cyan-800 pt-8">
+      <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-10">
+        <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+          03 — The Integration Week
+        </span>
+
+        <p className="font-serif text-xl italic text-foreground md:text-2xl">
+          Transformation needs time to settle.
+        </p>
+      </div>
+
+      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+        At the end of every six week cycle, we interrupt the regular rhythm of
+        the Fellowship and create space to{" "}
+        <strong className="font-medium text-foreground">
+          pause, metabolize, listen, repair, and integrate
+        </strong>
+        .
+      </p>
+
+      <p className="mt-3 text-muted-foreground">
+        We will hold two specific spaces during integration week:
+      </p>
+
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+        {/* TENDING THE FIELD */}
+        <article className="border-t-4 border-cyan-800 bg-[#EFF8F8] p-6 md:p-8">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Tending the Field
+          </h4>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            Inspired by the Plum Village practice of{" "}
+            <a
+              href="https://www.lionsroar.com/beginning-anew/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-cyan-800 decoration-2 underline-offset-4"
+            >
+              Beginning Anew
+            </a>
+            , we create a recurring space to tend the health of our
+            relationships before distance, hurt, or aversion harden.
+          </p>
+
+          <details className="group mt-6 border-t border-cyan-800/20 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-cyan-800 [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                We nurture a space to practice appreciation, honest
+                communication, acknowledgement of regrets and hurts,
+                accountability, forgiveness, and repair. We learn to become
+                more sensitive to how our individual actions affect the
+                collective body, and that trust and intimacy do not grow by
+                avoiding rupture, but by developing the capacity to meet rupture
+                with truth, care, and responsibility.
+              </p>
+
+              <p className="font-medium text-foreground">
+                The intention is not a community without conflict, but one
+                increasingly interested and capable of caring for what happens
+                between us.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        {/* RESOURCING TOGETHER */}
+        <article className="border-t-4 border-olive bg-[#F3F7EC] p-6 md:p-8">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Resourcing Together
+          </h4>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            This space is for us to better understand how to distribute
+            resources within our community by engaging with a simple and
+            important question:{" "}
+            <strong className="font-medium italic text-foreground">
+              What does each of us actually need in order to feel sufficiently
+              resourced to live well and offer what we are here to offer?
+            </strong>
+          </p>
+
+          <details className="group mt-6 border-t border-olive/20 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                We are inviting the community not to treat resources as an
+                entirely private problem each person must solve alone. We want
+                to explore what becomes possible when a community begins to
+                notice what it has in abundance, what it needs, and what might
+                be able to circulate between us.
+              </p>
+
+              <p>
+                Resources may take the form of money, but also time, knowledge,
+                introductions, opportunities, skills, places to stay, work,
+                food, attention, access, friendship, and practical support. The
+                aim is not to erase personal responsibility or create
+                dependency, but to loosen the fantasy of complete
+                self-sufficiency and experiment with interdependence as
+                something material and lived, not merely something we believe.
+              </p>
+
+              <p>
+                We hope to experiment with forms of mutual support that make our
+                lives less isolated, less precarious, and less dependent on
+                having every need mediated through the market economy, while
+                also strengthening our capacity to share resources, carry risk
+                together, and support one another in living more fully in
+                alignment with what matters.
+              </p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* 04 — EMERGENT SPACES */}
+    {/* ========================================================= */}
+
+    <div className="mt-20 border-t border-olive pt-8">
+      <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-10">
+        <span className="text-sm font-medium uppercase tracking-wide text-olive">
+          04 — Emergent Spaces
+        </span>
+
+        <p className="font-serif text-xl italic text-foreground md:text-2xl">
+          Leave room for what the journey itself begins to ask for.
+        </p>
+      </div>
+
+      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+        Even though this Fellowship has been carefully designed, not everything
+        can be planned in advance. As the questions, relationships, challenges,
+        and desires of the cohort become clearer, we leave room to create
+        additional spaces in response to what is genuinely alive in the cohort.
+      </p>
+
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+        {/* PHILOSOPHICAL DINNERS */}
+        <article className="border-t-4 border-[#D9A01B] bg-[#FFF9E9] p-6 md:p-8">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Philosophical Dinners
+          </h4>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            Three to four times during the Fellowship, we plan to gather in São
+            Paulo for intimate dinners with thinkers, elders, artists,
+            organizers, practitioners, and friends of our community.
+          </p>
+
+          <details className="group mt-6 border-t border-[#D9A01B]/25 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>How these philosophical dinners work</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <p className="pt-4 text-sm leading-relaxed text-muted-foreground">
+              These evenings are not a presentation or panel. They are
+              organized around{" "}
+              <strong className="font-medium text-foreground">
+                a meaningful question the cohort has been wrestling with
+              </strong>
+              , and worth spending a night with. We will have an evening of
+              food, conversations and relationships with specific guests who
+              care deeply about the state of our world, have been thinking
+              deeply about what needs to be done, and are attempting to live in
+              response.
+            </p>
+          </details>
+        </article>
+
+        {/* EMERGENT IMMERSIONS */}
+        <article className="border-t-4 border-olive bg-[#F3F7EC] p-6 md:p-8">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Emergent Immersions
+          </h4>
+
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            Across the eight months, additional weekend immersions may emerge
+            around questions, practices, or capacities the cohort wants to
+            explore more fully, but that haven&apos;t necessarily been part of
+            the “core curriculum” of the Fellowship.
+          </p>
+
+          <details className="group mt-6 border-t border-olive/20 pt-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
+              <span>How these immersions emerge</span>
+              <span className="text-lg transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                These are not predetermined workshops delivered to the cohort.
+                They emerge from the cohort itself, by sensing into the needs
+                and desires most alive within the group.
+              </p>
+
+              <p>
+                Participants will help out with this process by discerning what
+                feels most needed, identifying someone or something we genuinely
+                want to learn with, making invitations, helping organize the
+                experience, and where necessary finding the resources required
+                to bring it into being.
+              </p>
+
+              <p>
+                This might take the form of a weekend where we invite an expert
+                on Nonviolent Communication, Warm Data, Theory U, Musica do
+                Circulo, restorative practices, or relational work. It could
+                also become a time for serving a specific community in need,
+                travelling together to an important gathering or event, or
+                something none of us can yet anticipate.
+              </p>
+
+              <p className="font-medium text-foreground">
+                Part of the learning here is not only participating in what is
+                offered, but becoming capable of bringing into being what the
+                community senses it needs.
+              </p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
 
             {/* STRUCTURE AS PEDAGOGY */}
             <div className="mx-auto mt-12 max-w-4xl">
