@@ -705,234 +705,6 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-        {/* WHY NOW */}
-        <section className="bg-cream py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                Why This Exists, Now
-              </span>
-
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                A generation is coming of age inside a civilizational threshold.
-              </h2>
-
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  Beneath the visible crises of our time—ecological breakdown,
-                  social fragmentation, institutional instability, technological
-                  risk, meaning crisis—lies a deeper predicament often described
-                  as the metacrisis: a dysfunction in the underlying ways of
-                  perceiving, relating to, and understanding reality that modern
-                  civilization has been built upon.
-                </p>
-
-                <p className="leading-relaxed">
-                  As this predicament deepens, we see at least three broad
-                  attractors pulling at the future: greater fragmentation and
-                  chaos; authoritarian forms of order; or the emergence of more
-                  wisdom-informed and life-enhancing forms of civilization.
-                </p>
-
-                <p className="font-medium leading-relaxed text-foreground">
-                  Moving toward the third attractor is not a given. It will
-                  require profound changes not only in our systems and
-                  institutions, but in how we understand ourselves, reality and
-                  relate to all life.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
-              <article className="border-t-4 border-crimson bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-crimson">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Civilizational
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  This moment is historically distinct due to the unprecedented
-                  power humanity now holds to shape—and potentially
-                  destabilize—the conditions of life itself. Our technological
-                  power has grown much faster than the wisdom and maturity
-                  required to orient them. This ethical discernment and
-                  relational maturity requires decades, if not generations to
-                  cultivate to the levels we need at this moment.
-                </p>
-              </article>
-
-              <article className="border-t-4 border-[#D9A01B] bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Developmental
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  This period of civilizational breakdown can be understood as
-                  a potential rite of passage for humanity—a threshold that
-                  could invite us into greater wisdom and maturity. But rupture
-                  does not guarantee transformation. Without the practices,
-                  communities, elders, and developmental containers capable of
-                  holding such a passage, crisis can just as easily deepen fear,
-                  fragmentation, tribalism, and attachment to ways of life that
-                  are part of the problem.
-                </p>
-              </article>
-
-              <article className="border-t-4 border-cyan-800 bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Generational
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  A generation of young people feel the weight of this moment
-                  and long to participate meaningfully in what comes next, yet
-                  few institutions are helping them make consequential
-                  choices—what to study, where to work, how to live, what to
-                  value, and what to devote themselves to—in relation to the
-                  depth of the transition underway.
-                </p>
-              </article>
-            </div>
-
-            <div className="mt-10 max-w-4xl">
-              <p className="leading-relaxed text-muted-foreground">
-                The Fellowship exists to support the becoming of those who are
-                questioning not only our existing institutions and systems, but
-                the deeper logic upon which our world has been built—and whose
-                souls are longing to participate in bringing something
-                radically different into being.
-              </p>
-
-              <Link
-                href="/theory-of-change"
-                className="mt-5 inline-flex text-sm font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
-              >
-                Go deeper into our Theory of Change →
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* WHO WE MUST BECOME */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-              Who We Must Become
-            </span>
-
-            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Our images of human possibility feel too small for the
-              transformation required.
-            </h2>
-
-            <div className="mt-8 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                Human beings grow toward the horizons of possibility they are
-                able to imagine. We are formed not only by what we are taught,
-                but by the images our cultures teach us to admire and aspire
-                toward. Yet many of the dominant aspirations of modern life
-                remain organized around individual achievement, status,
-                productivity, recognition, and success. Even the figure of the
-                “changemaker” can leave untouched the deeper forms of maturation
-                and responsibility demanded by a civilizational crisis.
-              </p>
-
-              <p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">
-                We need more integrated human beings—people whose spiritual
-                life, relationships, understanding of systems, relationship to
-                power, ecological belonging, and sense of responsibility are no
-                longer fragmented from one another.
-              </p>
-            </div>
-
-            <details className="mt-8 rounded-xl border border-border bg-[#FFF9E9]">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
-                <span className="font-medium text-foreground">
-                  What might this way of being look like?
-                </span>
-
-                <span className="text-xl text-[#B88610]">+</span>
-              </summary>
-
-              <div className="border-t border-[#D9A01B]/20 px-6 py-7 md:px-8">
-                <ul className="space-y-4">
-                  {becomingQualities.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
-                    >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </details>
-
-            <details className="mt-4 rounded-xl border border-border bg-cream">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
-                <span className="font-medium text-foreground">
-                  Why integration matters
-                </span>
-
-                <span className="text-xl text-crimson">+</span>
-              </summary>
-
-              <div className="space-y-6 border-t border-border px-6 py-7 text-muted-foreground md:px-8">
-                <p className="leading-relaxed">
-                  These are not simply capacities to accumulate, but dimensions
-                  of a way of being that must mature together if we are to
-                  navigate a time between worlds with greater wisdom and
-                  responsibility. Spiritual depth without systemic understanding
-                  can become naïve. Systems intelligence without inner and
-                  relational maturity can reproduce domination. Power without
-                  wisdom can amplify harm. The work is integration.
-                </p>
-
-                <p className="leading-relaxed">
-                  Without a compelling horizon of who we must become, sacred
-                  dimensions of human potential can remain dormant—and with
-                  them, possibilities for the more beautiful worlds we might
-                  help bring into being.
-                </p>
-
-                <p className="leading-relaxed">
-                  Throughout history, humanity has carried images of such
-                  possibility: the saint, the bodhisattva, the sacred activist,
-                  the spiritual warrior—figures in whom spiritual and inner
-                  transformation became inseparable from systems understanding,
-                  responsibility, and service to something larger than the self.
-                </p>
-
-                <p className="font-medium leading-relaxed text-foreground">
-                  This is how we seek to reclaim leadership for our time: as a
-                  sacred responsibility toward the flourishing of all life. A
-                  lifelong practice of becoming wiser, more trustworthy, mature,
-                  and responsible—and increasingly capable of participating in
-                  the emergence of more life-enhancing forms of civilization.
-                </p>
-
-                <p className="leading-relaxed">
-                  The Fellowship is not only an attempt to reawaken this kind of
-                  aspiration, but to create the conditions through which such
-                  becoming can take root.
-                </p>
-              </div>
-            </details>
-          </div>
-        </section>
-
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
 <section
   id="structure"
@@ -1800,6 +1572,234 @@ export default function FellowshipPage() {
       </div>
     </div>
   </div>
+
+        {/* WHY NOW */}
+        <section className="bg-cream py-20 lg:py-24">
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <span className="text-sm font-medium uppercase tracking-wide text-olive">
+                Why This Exists, Now
+              </span>
+
+              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                A generation is coming of age inside a civilizational threshold.
+              </h2>
+
+              <div className="mt-8 space-y-6 text-muted-foreground">
+                <p className="leading-relaxed">
+                  Beneath the visible crises of our time—ecological breakdown,
+                  social fragmentation, institutional instability, technological
+                  risk, meaning crisis—lies a deeper predicament often described
+                  as the metacrisis: a dysfunction in the underlying ways of
+                  perceiving, relating to, and understanding reality that modern
+                  civilization has been built upon.
+                </p>
+
+                <p className="leading-relaxed">
+                  As this predicament deepens, we see at least three broad
+                  attractors pulling at the future: greater fragmentation and
+                  chaos; authoritarian forms of order; or the emergence of more
+                  wisdom-informed and life-enhancing forms of civilization.
+                </p>
+
+                <p className="font-medium leading-relaxed text-foreground">
+                  Moving toward the third attractor is not a given. It will
+                  require profound changes not only in our systems and
+                  institutions, but in how we understand ourselves, reality and
+                  relate to all life.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
+              <article className="border-t-4 border-crimson bg-background p-6">
+                <span className="text-xs font-medium uppercase tracking-wide text-crimson">
+                  The challenge is
+                </span>
+
+                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
+                  Civilizational
+                </h3>
+
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  This moment is historically distinct due to the unprecedented
+                  power humanity now holds to shape—and potentially
+                  destabilize—the conditions of life itself. Our technological
+                  power has grown much faster than the wisdom and maturity
+                  required to orient them. This ethical discernment and
+                  relational maturity requires decades, if not generations to
+                  cultivate to the levels we need at this moment.
+                </p>
+              </article>
+
+              <article className="border-t-4 border-[#D9A01B] bg-background p-6">
+                <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+                  The challenge is
+                </span>
+
+                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
+                  Developmental
+                </h3>
+
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  This period of civilizational breakdown can be understood as
+                  a potential rite of passage for humanity—a threshold that
+                  could invite us into greater wisdom and maturity. But rupture
+                  does not guarantee transformation. Without the practices,
+                  communities, elders, and developmental containers capable of
+                  holding such a passage, crisis can just as easily deepen fear,
+                  fragmentation, tribalism, and attachment to ways of life that
+                  are part of the problem.
+                </p>
+              </article>
+
+              <article className="border-t-4 border-cyan-800 bg-background p-6">
+                <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
+                  The challenge is
+                </span>
+
+                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
+                  Generational
+                </h3>
+
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  A generation of young people feel the weight of this moment
+                  and long to participate meaningfully in what comes next, yet
+                  few institutions are helping them make consequential
+                  choices—what to study, where to work, how to live, what to
+                  value, and what to devote themselves to—in relation to the
+                  depth of the transition underway.
+                </p>
+              </article>
+            </div>
+
+            <div className="mt-10 max-w-4xl">
+              <p className="leading-relaxed text-muted-foreground">
+                The Fellowship exists to support the becoming of those who are
+                questioning not only our existing institutions and systems, but
+                the deeper logic upon which our world has been built—and whose
+                souls are longing to participate in bringing something
+                radically different into being.
+              </p>
+
+              <Link
+                href="/theory-of-change"
+                className="mt-5 inline-flex text-sm font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
+              >
+                Go deeper into our Theory of Change →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* WHO WE MUST BECOME */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+              Who We Must Become
+            </span>
+
+            <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
+              Our images of human possibility feel too small for the
+              transformation required.
+            </h2>
+
+            <div className="mt-8 space-y-6 text-muted-foreground">
+              <p className="leading-relaxed">
+                Human beings grow toward the horizons of possibility they are
+                able to imagine. We are formed not only by what we are taught,
+                but by the images our cultures teach us to admire and aspire
+                toward. Yet many of the dominant aspirations of modern life
+                remain organized around individual achievement, status,
+                productivity, recognition, and success. Even the figure of the
+                “changemaker” can leave untouched the deeper forms of maturation
+                and responsibility demanded by a civilizational crisis.
+              </p>
+
+              <p className="font-serif text-xl leading-relaxed text-foreground md:text-2xl">
+                We need more integrated human beings—people whose spiritual
+                life, relationships, understanding of systems, relationship to
+                power, ecological belonging, and sense of responsibility are no
+                longer fragmented from one another.
+              </p>
+            </div>
+
+            <details className="mt-8 rounded-xl border border-border bg-[#FFF9E9]">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
+                <span className="font-medium text-foreground">
+                  What might this way of being look like?
+                </span>
+
+                <span className="text-xl text-[#B88610]">+</span>
+              </summary>
+
+              <div className="border-t border-[#D9A01B]/20 px-6 py-7 md:px-8">
+                <ul className="space-y-4">
+                  {becomingQualities.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
+                    >
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+
+            <details className="mt-4 rounded-xl border border-border bg-cream">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 [&::-webkit-details-marker]:hidden md:px-8">
+                <span className="font-medium text-foreground">
+                  Why integration matters
+                </span>
+
+                <span className="text-xl text-crimson">+</span>
+              </summary>
+
+              <div className="space-y-6 border-t border-border px-6 py-7 text-muted-foreground md:px-8">
+                <p className="leading-relaxed">
+                  These are not simply capacities to accumulate, but dimensions
+                  of a way of being that must mature together if we are to
+                  navigate a time between worlds with greater wisdom and
+                  responsibility. Spiritual depth without systemic understanding
+                  can become naïve. Systems intelligence without inner and
+                  relational maturity can reproduce domination. Power without
+                  wisdom can amplify harm. The work is integration.
+                </p>
+
+                <p className="leading-relaxed">
+                  Without a compelling horizon of who we must become, sacred
+                  dimensions of human potential can remain dormant—and with
+                  them, possibilities for the more beautiful worlds we might
+                  help bring into being.
+                </p>
+
+                <p className="leading-relaxed">
+                  Throughout history, humanity has carried images of such
+                  possibility: the saint, the bodhisattva, the sacred activist,
+                  the spiritual warrior—figures in whom spiritual and inner
+                  transformation became inseparable from systems understanding,
+                  responsibility, and service to something larger than the self.
+                </p>
+
+                <p className="font-medium leading-relaxed text-foreground">
+                  This is how we seek to reclaim leadership for our time: as a
+                  sacred responsibility toward the flourishing of all life. A
+                  lifelong practice of becoming wiser, more trustworthy, mature,
+                  and responsible—and increasingly capable of participating in
+                  the emergence of more life-enhancing forms of civilization.
+                </p>
+
+                <p className="leading-relaxed">
+                  The Fellowship is not only an attempt to reawaken this kind of
+                  aspiration, but to create the conditions through which such
+                  becoming can take root.
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
 
         {/* THE JOURNEY */}
         <section
