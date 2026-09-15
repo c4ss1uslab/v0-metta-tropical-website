@@ -246,7 +246,7 @@ const entries: LibraryEntry[] = [
     ),
   },
   {
-    kind: "note",
+    kind: "diagram",
     title: "Roadmap",
     dek: "Where the mapping is now, and what comes next.",
     body: (
@@ -257,41 +257,29 @@ const entries: LibraryEntry[] = [
             <p>Initial launch.</p>
           </div>
           <div className="phase">
-            <span className="n">Phase 2</span>
+            <span className="n">Phase 2 · jan 2027</span>
             <p>
               Working group and wisdom council; expanding the mapping with a
               fellowship of youth, teachers, mentors and network.
             </p>
           </div>
           <div className="phase">
-            <span className="n">Phase 3</span>
+            <span className="n">Phase 3 · mar 2027</span>
             <p>Integrating partners across the ecosystem.</p>
           </div>
           <div className="phase">
-            <span className="n">Phase 4</span>
-            <p>Deepening the research.</p>
+            <span className="n">Phase 4 · jun 2027</span>
+            <p>Deepening and expanding the research.</p>
           </div>
         </div>
-        <p className="ui tertiary" style={{ marginTop: "var(--space-4)" }}>
+        <p
+  className="ui tertiary"
+  style={{
+    marginTop: "var(--space-6)",
+    fontSize: "14px",
+  }}
+>
           Last updated · September 2026
-        </p>
-      </>
-    ),
-  },
-  {
-    kind: "reference",
-    title: "Glossary",
-    dek: "Every term, defined once. Search covers the terms and the definitions.",
-    body: (
-      <>
-        <p>
-          The full glossary lives further down this page, and will move to
-          its own page as it grows.
-        </p>
-        <p>
-          <a className="btn quiet" href="#glossary">
-            Go to the glossary
-          </a>
         </p>
       </>
     ),
@@ -941,7 +929,7 @@ export default function MettaTropical() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <p className="ui tertiary" style={{ marginTop: "var(--space-3)" }}>
+          <p className="text-lg" style={{ marginTop: "var(--space-3)" }}>
             {query
               ? `${filteredTerms.length} of ${glossaryTerms.length} terms`
               : `${glossaryTerms.length} terms`}
