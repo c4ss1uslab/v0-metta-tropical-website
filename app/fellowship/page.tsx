@@ -1744,14 +1744,11 @@ export default function FellowshipPage() {
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-
           <div>
-            {/* Stream Title */}
-            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+            <h3 className="text-3xl font-bold uppercase leading-tight tracking-wide text-[#D9A01B] md:text-4xl">
               The Sacred
             </h3>
 
-            {/* Subtitle */}
             <p
               className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
               style={{
@@ -1762,14 +1759,12 @@ export default function FellowshipPage() {
               Remembering What Ultimately Matters
             </p>
 
-            {/* Questions */}
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               What is intrinsically valuable? What is the ground we are standing
               on? What makes a life meaningful? What is worthy of our devotion?
               What is the true nature of reality we participate in?
             </p>
 
-            {/* Divider */}
             <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
               <p className="leading-relaxed text-muted-foreground">
                 We begin here because every path of transformation is oriented
@@ -1786,11 +1781,9 @@ export default function FellowshipPage() {
             </div>
           </div>
 
-          {/* Learn More */}
           <details className="group mt-auto pt-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-xl transition-transform group-open:rotate-45">
                 +
               </span>
@@ -1875,9 +1868,8 @@ export default function FellowshipPage() {
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-
           <div>
-            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+            <h3 className="text-3xl font-bold uppercase leading-tight tracking-wide text-[#D9A01B] md:text-4xl">
               Soul
             </h3>
 
@@ -1915,7 +1907,6 @@ export default function FellowshipPage() {
           <details className="group mt-auto pt-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-xl transition-transform group-open:rotate-45">
                 +
               </span>
@@ -1979,9 +1970,8 @@ export default function FellowshipPage() {
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-
           <div>
-            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+            <h3 className="text-3xl font-bold uppercase leading-tight tracking-wide text-[#D9A01B] md:text-4xl">
               Systems
             </h3>
 
@@ -2019,7 +2009,6 @@ export default function FellowshipPage() {
           <details className="group mt-auto pt-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-xl transition-transform group-open:rotate-45">
                 +
               </span>
@@ -2101,9 +2090,8 @@ export default function FellowshipPage() {
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-
           <div>
-            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+            <h3 className="text-3xl font-bold uppercase leading-tight tracking-wide text-[#D9A01B] md:text-4xl">
               Soil
             </h3>
 
@@ -2141,7 +2129,6 @@ export default function FellowshipPage() {
           <details className="group mt-auto pt-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-xl transition-transform group-open:rotate-45">
                 +
               </span>
@@ -2199,9 +2186,8 @@ export default function FellowshipPage() {
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-
           <div>
-            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+            <h3 className="text-3xl font-bold uppercase leading-tight tracking-wide text-[#D9A01B] md:text-4xl">
               Society
             </h3>
 
@@ -2236,7 +2222,6 @@ export default function FellowshipPage() {
           <details className="group mt-auto pt-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-xl transition-transform group-open:rotate-45">
                 +
               </span>
@@ -2302,7 +2287,7 @@ export default function FellowshipPage() {
         {/* Image */}
         <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
-            src="https://i.postimg.cc/pTPWScPF/cosmos-2044796254.jpg"
+            src="https://i.postimg.cc/5yyVd6jh/cosmos-892464698.jpg"
             alt="Society"
             loading="lazy"
             className="h-full min-h-[600px] w-full object-cover"
