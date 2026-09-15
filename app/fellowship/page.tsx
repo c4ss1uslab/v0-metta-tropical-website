@@ -1710,14 +1710,30 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-20">
-      {/* Sticky Section Marker */}
-      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-        <div className="border-t border-crimson pt-5">
-          <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-            02 — The Relational Web
-          </span>
-        </div>
+     {/* 02 — RELATIONAL WEB / Sticky Section Marker */}
+<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+  <div className="border-t border-crimson pt-5">
+    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-crimson">
+        02 — The Relational Web
+      </span>
+
+      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
+        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+          Dharma Family
+        </span>
+
+        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+          Mentorship
+        </span>
+
+        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+          Therapy &amp; Coaching
+        </span>
       </div>
+    </div>
+  </div>
+</div>
 
       <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         This journey can be overwhelming, challenging and touch a lot of
