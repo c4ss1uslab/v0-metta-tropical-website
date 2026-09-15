@@ -2298,123 +2298,295 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-        {/* PEDAGOGY */}
-        <section className="bg-[#F8F6F1] py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-                The Pedagogy
-              </span>
+{/* PEDAGOGY */}
+<section
+  id="pedagogy"
+  className="scroll-mt-32 bg-[#F8F6F1] py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                Learning to Perceive, Participate and Sense More Deeply in
-                Reality
-              </h2>
+    {/* ========================================================= */}
+    {/* PEDAGOGY INTRODUCTION */}
+    {/* ========================================================= */}
 
-              <p className="mt-3 font-serif text-lg italic text-muted-foreground">
-                How does transformation happen?
-              </p>
+    <div className="mx-auto max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Pedagogy
+      </span>
 
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The Five Streams describe the dimensions of life we will
-                  encounter. Our pedagogy asks a different question: How must we
-                  encounter them for what we come to know to actually transform
-                  how we live?
-                </p>
+      <p className="mt-8 leading-relaxed text-muted-foreground">
+        The Five Streams describe the dimensions of life we will engage with.
+        Our pedagogy asks a different question:{" "}
+        <strong className="font-medium italic text-foreground">
+          How must we engage with them for what we come to know to actually
+          transform how we live?
+        </strong>
+      </p>
 
-                <p className="leading-relaxed">
-                  We have developed extraordinary intellectual understanding of
-                  ecological breakdown, technological risk, systemic incentives,
-                  and the metacrisis, while continuing to organize our lives
-                  around many of the same desires, habits, relationships, and
-                  definitions of success that reproduce them.
-                </p>
+      <h2
+        className="mt-10 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The Pedagogy of Transformation
+      </h2>
+    </div>
 
-                <p className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                  Knowing something is not the same as being transformed by
-                  what we know.
-                </p>
+    {/* ========================================================= */}
+    {/* PEDAGOGICAL FRAMING */}
+    {/* ========================================================= */}
 
-                <p className="leading-relaxed">
-                  Education in a time of metacrisis must therefore help bridge a
-                  deeper knowing–becoming–doing gap: allowing what we encounter
-                  to move beyond ideas we understand and begin reshaping how we
-                  perceive, relate, choose, work, consume, and participate in
-                  the world.
-                </p>
+    <div className="mx-auto mt-10 max-w-4xl">
+      <div className="space-y-6 text-muted-foreground">
 
-                <p className="leading-relaxed">
-                  Modern education has cultivated extraordinary capacities for
-                  abstraction, analysis, and explanation. These capacities are
-                  indispensable, but they are not the whole of human perception.
-                  Reality exceeds what any single way of knowing can disclose.
-                </p>
+        <p
+          className="text-2xl font-semibold leading-snug text-foreground md:text-3xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Knowing something is not the same as being transformed by what we
+          know.
+        </p>
 
-                <p className="leading-relaxed">
-                  We call our approach{" "}
-                  <strong className="font-medium text-foreground">
-                    Relational Ontological Pedagogy
-                  </strong>
-                  : an education that seeks to refine how we perceive reality,
-                  deepen how we participate in what we perceive, cultivate our
-                  capacity to sense and discern together, and allow what we
-                  encounter to reshape who we become and how we live.
-                </p>
-              </div>
+        <p className="leading-relaxed">
+          Our civilization has developed extraordinary intellectual
+          understanding of ecological breakdown, technological risk, systemic
+          incentives, and the metacrisis, while continuing to organize our
+          lives around many of the same desires, habits, relationships, and
+          definitions of success that reproduce them.
+        </p>
 
-              <p className="mt-8 font-serif text-xl italic text-[#B88610] md:text-2xl">
-                Refine perception. Deepen participation. Sense together.
-                Transform how we live.
-              </p>
-            </div>
+        <p className="leading-relaxed">
+          Education in a time of metacrisis must therefore help bridge a deeper{" "}
+          <strong className="font-medium italic text-foreground">
+            knowing–becoming–doing gap
+          </strong>
+          : allowing what we encounter to move beyond ideas we understand and
+          begin reshaping how we perceive, relate, choose, work, consume, and
+          participate in the world.
+        </p>
 
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
-              {pedagogyMovements.map((movement) => (
-                <article
-                  key={movement.title}
-                  className={`border-t-4 ${movement.accent} bg-background p-6`}
-                >
-                  <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                    {movement.title}{" "}
-                    <span className="text-muted-foreground">—</span>{" "}
-                    {movement.subtitle}
-                  </h3>
+        <p className="leading-relaxed">
+          Modern education has cultivated extraordinary capacities for
+          abstraction, analysis, and explanation. These capacities are
+          indispensable, but they are not the whole of human perception.
+        </p>
 
-                  <p className="mt-3 font-serif italic leading-relaxed text-muted-foreground">
-                    {movement.question}
-                  </p>
+        <p className="leading-relaxed">
+          We call our approach{" "}
+          <strong className="font-medium text-foreground">
+            Relational Ontological Pedagogy
+          </strong>
+          : an education that seeks to refine how we perceive reality, deepen
+          how we participate in what we perceive, cultivate our capacity to
+          sense and discern together, and allow what we encounter to reshape who
+          we become and how we live.
+        </p>
+      </div>
 
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    {movement.text}
-                  </p>
-                </article>
-              ))}
-            </div>
+      <p className="mt-10 text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Our pedagogy is grounded in four main movements
+      </p>
+    </div>
 
-            <div className="mx-auto mt-12 max-w-4xl rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8">
-              <p className="text-sm uppercase tracking-wide text-[#B88610]">
-                At the heart of our pedagogy
-              </p>
+    {/* ========================================================= */}
+    {/* FOUR MOVEMENTS */}
+    {/* ========================================================= */}
 
-              <p className="mt-3 font-serif text-xl leading-relaxed text-foreground md:text-2xl">
-                Can we become the kind of people—and the kind of community—whose
-                way of living becomes increasingly coherent with what we have
-                learned to perceive as true, valuable, and sacred?
-              </p>
+    <div className="mx-auto mt-8 max-w-4xl space-y-6">
 
-              <p className="mt-5 leading-relaxed text-muted-foreground">
-                Our aspiration is not simply to understand interdependence,
-                sacredness, and the intrinsic worth of a life, but to become
-                capable of living from them—individually and together.
-              </p>
+      {/* ======================================================= */}
+      {/* 01 — ONTOLOGICAL */}
+      {/* ======================================================= */}
 
-              <p className="mt-5 text-sm font-medium text-foreground">
-                Go Deeper on Relational Ontological Pedagogy →
-              </p>
-            </div>
+      <article className="border border-[#D9A01B]/20 border-t-4 border-t-[#D9A01B] bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+        <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
+
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Ontological
+            </span>
+
+            <h3
+              className="mt-2 text-2xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Refine Perception
+            </h3>
           </div>
-        </section>
+
+          <div className="mt-6 md:mt-0">
+            <p className="font-serif text-lg italic leading-relaxed text-foreground">
+              What kind of world becomes visible through the way we learn to
+              perceive?
+            </p>
+
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              We seek to cultivate forms of perception,{" "}
+              <em>ways of looking at the world</em>, that make us more
+              sensitive to fundamental dimensions of reality which modernity
+              has often dismissed:{" "}
+              <em>
+                interdependence, intrinsic value, suffering, eros, meaning,
+                sacredness, beauty, and the transcendental worth of a life.
+              </em>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      {/* ======================================================= */}
+      {/* 02 — RELATIONAL */}
+      {/* ======================================================= */}
+
+      <article className="border border-crimson/20 border-t-4 border-t-crimson bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+        <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
+
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-crimson">
+              Relational
+            </span>
+
+            <h3
+              className="mt-2 text-2xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Deepen Participation
+            </h3>
+          </div>
+
+          <div className="mt-6 md:mt-0">
+            <p className="font-serif text-lg italic leading-relaxed text-foreground">
+              How deeply can we enter into relationship with what we perceive?
+            </p>
+
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              As our perception deepens, we learn to engage with reality through
+              multiple depths of participation: through abstraction, story,
+              feeling, sensation, intimacy, imagination, collective sensing,
+              and transpersonal experience.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      {/* ======================================================= */}
+      {/* 03 — COLLECTIVE */}
+      {/* ======================================================= */}
+
+      <article className="border border-cyan-800/20 border-t-4 border-t-cyan-800 bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+        <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
+
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
+              Collective
+            </span>
+
+            <h3
+              className="mt-2 text-2xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Sense From the Whole
+            </h3>
+          </div>
+
+          <div className="mt-6 md:mt-0">
+            <p className="font-serif text-lg italic leading-relaxed text-foreground">
+              What becomes possible when knowing is no longer located only
+              within the individual?
+            </p>
+
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              As trust, attention, and relational coherence deepen, the locus
+              from which we perceive can begin to widen. We practice sensing
+              not only from <em>ourselves</em> or <em>one another</em>, but the
+              larger collective field of relationships we are part of—learning
+              to access forms of intelligence and wisdom that no individual may
+              be able to perceive alone.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      {/* ======================================================= */}
+      {/* 04 — TRANSFORMATIONAL */}
+      {/* ======================================================= */}
+
+      <article className="border border-olive/20 border-t-4 border-t-olive bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+        <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
+
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-olive">
+              Transformational
+            </span>
+
+            <h3
+              className="mt-2 text-2xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Embody What We Know
+            </h3>
+          </div>
+
+          <div className="mt-6 md:mt-0">
+            <p className="font-serif text-lg italic leading-relaxed text-foreground">
+              How does what we perceive, relate with, and encounter become a
+              way of life?
+            </p>
+
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              Learning continues through practice, experimentation, service,
+              making, organizing, and the concrete choices of everyday life. We
+              ask whether what we are coming to know is actually beginning to
+              transform our desires, relationships, work, use of resources and
+              power, commitments, and ways of participating in the world.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    {/* ========================================================= */}
+    {/* CLOSING */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
+      <p className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        At the heart of our pedagogy
+      </p>
+
+      <p className="mt-4 text-lg leading-relaxed text-foreground md:text-xl">
+        At the heart of our pedagogy lies an aspiration not simply to understand
+        interdependence, sacredness, and the intrinsic worth of a life, but to
+        become ever more capable of living from them—individually and
+        collectively.
+      </p>
+
+      <a
+        href="#"
+        className="mt-6 inline-block text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
+      >
+        Go Deeper on Relational Ontological Pedagogy →
+      </a>
+    </div>
+  </div>
+</section>
 
 
             {/* STRUCTURE AS PEDAGOGY */}
