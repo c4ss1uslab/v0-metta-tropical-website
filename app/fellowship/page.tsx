@@ -1960,14 +1960,14 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Image */}
-        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
-          <img
-            src="https://i.postimg.cc/ZKnRZQpw/cosmos-800909522.jpg"
-            alt="Soil"
-            loading="lazy"
-            className="h-full min-h-[600px] w-full object-cover"
-          />
-        </div>
+<div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+  <img
+    src="https://i.postimg.cc/tTjqf30C/cosmos-111542218.jpg"
+    alt="Soil"
+    loading="lazy"
+    className="h-full min-h-[600px] w-full object-cover"
+  />
+</div>
 
         {/* Stream Card */}
         <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
