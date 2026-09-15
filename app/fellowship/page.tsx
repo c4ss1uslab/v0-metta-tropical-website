@@ -2465,48 +2465,6 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-
-            {/* STRUCTURE AS PEDAGOGY */}
-            <div className="mx-auto mt-12 max-w-4xl">
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-                The Structure Is Part of the Pedagogy
-              </h3>
-
-              <div className="mt-6 space-y-5 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The purpose of this developmental ecology is not to fill your
-                  calendar. The entire structure of the Fellowship is part of
-                  the learning itself.
-                </p>
-
-                <p className="leading-relaxed">
-                  Many of us live inside rhythms organized by urgency,
-                  fragmentation, constant input, individualized responsibility,
-                  economic pressure, and too little protected space to ask the
-                  questions that actually matter. These rhythms and habits
-                  continually shape what we pay attention to, what we desire,
-                  and what kinds of lives feel possible.
-                </p>
-
-                <p className="leading-relaxed">
-                  The Fellowship attempts to create a temporary counter-rhythm:
-                  enough continuity, relationship, practice, accountability,
-                  care, and shared responsibility to interrupt some of those
-                  patterns and experiment with different ones, until they
-                  become more fully integrated in our lives.
-                </p>
-
-                <p className="font-medium leading-relaxed text-foreground">
-                  The Fellowship itself becomes an experiment in creating the
-                  structures, habits and commitments that best support ourselves
-                  to align our lives with what we have come to recognize as true
-                  and worthy, and learning how to do so together, as a
-                  community.
-                </p>
-              </div>
-            </div>
-        </section>
-
   {/* PRACTICAL COMMITMENT */}
 <section
   id="practical-commitment"
