@@ -933,356 +933,7 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-        {/* THE JOURNEY */}
-        <section
-          id="journey"
-          className="scroll-mt-24 bg-cream py-20 lg:py-24"
-        >
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                The Journey
-              </span>
-
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-                An eight-month Architecture of Transformation
-              </h2>
-
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The kind of transformation we are seeking rarely happens
-                  through a single retreat, course, or breakthrough experience.
-                  It unfolds across time—through sustained practice,
-                  relationship, guidance, reflection, challenge, and commitment.
-                </p>
-
-                <p className="leading-relaxed">
-                  The previous section names the aspiration of who we must
-                  become from which this journey begins. The Fellowship gives
-                  that aspiration a path, a pedagogy, a container, and an
-                  orientation.
-                </p>
-
-                <p className="leading-relaxed">
-                  The Fellowship is an eight-month initiatory journey into the
-                  ways of seeing, being, knowing, and acting that we consider
-                  essential to help us navigate a time of metacrisis and
-                  civilizational transition with greater wisdom and
-                  responsibility.
-                </p>
-
-                <p className="leading-relaxed">
-                  To hold a process of this depth, we are experimenting with
-                  what we call an{" "}
-                  <strong className="font-medium text-foreground">
-                    Architecture of Transformation
-                  </strong>
-                  : a living developmental ecology of practices, inquiry,
-                  training, mentorship, immersive experiences, community, and
-                  accompaniment designed to create the conditions for deeper
-                  human transformation to take root.
-                </p>
-              </div>
-            </div>
-
-            {/* Architecture */}
-            <div className="mx-auto mt-10 max-w-4xl border-y border-border">
-              {architecture.map((item, index) => (
-                <div
-                  key={item.title}
-                  className={`grid gap-2 py-4 md:grid-cols-[160px_1fr] md:gap-8 ${index !== architecture.length - 1
-                    ? "border-b border-border"
-                    : ""
-                    }`}
-                >
-                  <span className="font-serif text-lg font-medium text-foreground">
-                    {item.title}
-                  </span>
-
-                  <span className="italic text-muted-foreground">
-                    {item.question}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Living Questions */}
-            <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-[#D9A01B] px-6 py-8 text-center md:px-10">
-              <p className="text-sm font-medium uppercase tracking-wide text-white/80">
-                Three living questions accompany the entire journey
-              </p>
-
-              <p className="mt-4 font-serif text-2xl font-medium text-white md:text-3xl">
-                Who are we? &nbsp; Where are we? &nbsp; What is being asked of
-                us?
-              </p>
-
-              <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-white/90">
-                These are not questions to be answered and set aside, but
-                living inquiries we learn to be more intimate with. Over the
-                eight months, we hold them as we move through five
-                interconnected Streams of Transformation.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* FIVE STREAMS */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto mb-12 max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-                The Five Streams of Transformation
-              </span>
-
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                What dimensions of life does our transformation engage?
-              </h2>
-
-              <p className="mt-5 leading-relaxed text-muted-foreground">
-                Each stream is a portal into a dimension of life with which we
-                seek to deepen our relationship. Open any stream to explore the
-                questions, practices, lineages, and people informing it.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {streams.map((stream) => (
-                <details
-                  key={stream.title}
-                  className={`overflow-hidden rounded-2xl border border-border border-t-4 ${stream.accent} ${stream.soft}`}
-                >
-                  <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                    <div className="flex items-start justify-between gap-6">
-                      <div>
-                        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                          <span
-                            className={`font-serif text-3xl font-medium ${stream.numberColor}`}
-                          >
-                            {stream.number}
-                          </span>
-
-                          <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-                            {stream.title}
-                          </h3>
-
-                          <span className="text-muted-foreground/40">—</span>
-
-                          <span className="text-sm font-medium text-muted-foreground">
-                            {stream.subtitle}
-                          </span>
-                        </div>
-
-                        <p className="mt-3 max-w-3xl font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
-                          {stream.question}
-                        </p>
-                      </div>
-
-                      <span
-                        className={`mt-1 shrink-0 text-2xl ${stream.numberColor}`}
-                      >
-                        +
-                      </span>
-                    </div>
-                  </summary>
-
-                  <div className="border-t border-border/70 bg-background/60 px-6 py-7 md:px-8">
-                    <div className="space-y-5 text-muted-foreground">
-                      {stream.paragraphs.map((paragraph) => (
-                        <p key={paragraph} className="leading-relaxed">
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-
-                    <div className="mt-7 border-t border-border pt-5">
-                      <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                        People we are learning with / voices informing this
-                        stream
-                      </p>
-
-                      <p className="mt-2 font-serif text-base leading-relaxed text-foreground">
-                        {stream.voices}
-                      </p>
-
-                      <p
-                        className={`mt-4 text-sm font-medium ${stream.numberColor}`}
-                      >
-                        {stream.resourceText}
-                      </p>
-                    </div>
-                  </div>
-                </details>
-              ))}
-            </div>
-
-            {/* Portal Questions */}
-            <div className="mx-auto mt-12 max-w-4xl">
-              <p className="mb-6 leading-relaxed text-muted-foreground">
-                In this way, the five Streams of Transformation become portals
-                for shifting our ways of relating to life:
-              </p>
-
-              <div className="space-y-3">
-                {[
-                  [
-                    "The Sacred",
-                    "What becomes possible when life is experienced as sacred rather than valueless?",
-                  ],
-                  [
-                    "Soul",
-                    "What becomes possible when we relate to ourselves and others from wholeness rather than fragmentation?",
-                  ],
-                  [
-                    "Systems",
-                    "What becomes possible when we perceive relationships, patterns, and interdependence rather than isolated problems?",
-                  ],
-                  [
-                    "Soil",
-                    "What becomes possible when the Earth is encountered as kin, alive and talking to us rather than resource?",
-                  ],
-                  [
-                    "Service",
-                    "What becomes possible when action emerges from interbeing rather than separation?",
-                  ],
-                ].map(([title, question]) => (
-                  <div
-                    key={title}
-                    className="grid gap-1 border-b border-border pb-3 md:grid-cols-[120px_1fr] md:gap-6"
-                  >
-                    <span className="font-medium text-foreground">
-                      {title} asks →
-                    </span>
-
-                    <span className="italic text-muted-foreground">
-                      {question}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* PEDAGOGY */}
-        <section className="bg-[#F8F6F1] py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-                The Pedagogy
-              </span>
-
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                Learning to Perceive, Participate and Sense More Deeply in
-                Reality
-              </h2>
-
-              <p className="mt-3 font-serif text-lg italic text-muted-foreground">
-                How does transformation happen?
-              </p>
-
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The Five Streams describe the dimensions of life we will
-                  encounter. Our pedagogy asks a different question: How must we
-                  encounter them for what we come to know to actually transform
-                  how we live?
-                </p>
-
-                <p className="leading-relaxed">
-                  We have developed extraordinary intellectual understanding of
-                  ecological breakdown, technological risk, systemic incentives,
-                  and the metacrisis, while continuing to organize our lives
-                  around many of the same desires, habits, relationships, and
-                  definitions of success that reproduce them.
-                </p>
-
-                <p className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                  Knowing something is not the same as being transformed by
-                  what we know.
-                </p>
-
-                <p className="leading-relaxed">
-                  Education in a time of metacrisis must therefore help bridge a
-                  deeper knowing–becoming–doing gap: allowing what we encounter
-                  to move beyond ideas we understand and begin reshaping how we
-                  perceive, relate, choose, work, consume, and participate in
-                  the world.
-                </p>
-
-                <p className="leading-relaxed">
-                  Modern education has cultivated extraordinary capacities for
-                  abstraction, analysis, and explanation. These capacities are
-                  indispensable, but they are not the whole of human perception.
-                  Reality exceeds what any single way of knowing can disclose.
-                </p>
-
-                <p className="leading-relaxed">
-                  We call our approach{" "}
-                  <strong className="font-medium text-foreground">
-                    Relational Ontological Pedagogy
-                  </strong>
-                  : an education that seeks to refine how we perceive reality,
-                  deepen how we participate in what we perceive, cultivate our
-                  capacity to sense and discern together, and allow what we
-                  encounter to reshape who we become and how we live.
-                </p>
-              </div>
-
-              <p className="mt-8 font-serif text-xl italic text-[#B88610] md:text-2xl">
-                Refine perception. Deepen participation. Sense together.
-                Transform how we live.
-              </p>
-            </div>
-
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
-              {pedagogyMovements.map((movement) => (
-                <article
-                  key={movement.title}
-                  className={`border-t-4 ${movement.accent} bg-background p-6`}
-                >
-                  <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                    {movement.title}{" "}
-                    <span className="text-muted-foreground">—</span>{" "}
-                    {movement.subtitle}
-                  </h3>
-
-                  <p className="mt-3 font-serif italic leading-relaxed text-muted-foreground">
-                    {movement.question}
-                  </p>
-
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    {movement.text}
-                  </p>
-                </article>
-              ))}
-            </div>
-
-            <div className="mx-auto mt-12 max-w-4xl rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8">
-              <p className="text-sm uppercase tracking-wide text-[#B88610]">
-                At the heart of our pedagogy
-              </p>
-
-              <p className="mt-3 font-serif text-xl leading-relaxed text-foreground md:text-2xl">
-                Can we become the kind of people—and the kind of community—whose
-                way of living becomes increasingly coherent with what we have
-                learned to perceive as true, valuable, and sacred?
-              </p>
-
-              <p className="mt-5 leading-relaxed text-muted-foreground">
-                Our aspiration is not simply to understand interdependence,
-                sacredness, and the intrinsic worth of a life, but to become
-                capable of living from them—individually and together.
-              </p>
-
-              <p className="mt-5 text-sm font-medium text-foreground">
-                Go Deeper on Relational Ontological Pedagogy →
-              </p>
-            </div>
-          </div>
-        </section>
-
-{/* FELLOWSHIP OVERVIEW / STRUCTURE */}
+        {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
 <section
   id="structure"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
@@ -2149,6 +1800,356 @@ export default function FellowshipPage() {
       </div>
     </div>
   </div>
+
+        {/* THE JOURNEY */}
+        <section
+          id="journey"
+          className="scroll-mt-24 bg-cream py-20 lg:py-24"
+        >
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl">
+              <span className="text-sm font-medium uppercase tracking-wide text-olive">
+                The Journey
+              </span>
+
+              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+                An eight-month Architecture of Transformation
+              </h2>
+
+              <div className="mt-8 space-y-6 text-muted-foreground">
+                <p className="leading-relaxed">
+                  The kind of transformation we are seeking rarely happens
+                  through a single retreat, course, or breakthrough experience.
+                  It unfolds across time—through sustained practice,
+                  relationship, guidance, reflection, challenge, and commitment.
+                </p>
+
+                <p className="leading-relaxed">
+                  The previous section names the aspiration of who we must
+                  become from which this journey begins. The Fellowship gives
+                  that aspiration a path, a pedagogy, a container, and an
+                  orientation.
+                </p>
+
+                <p className="leading-relaxed">
+                  The Fellowship is an eight-month initiatory journey into the
+                  ways of seeing, being, knowing, and acting that we consider
+                  essential to help us navigate a time of metacrisis and
+                  civilizational transition with greater wisdom and
+                  responsibility.
+                </p>
+
+                <p className="leading-relaxed">
+                  To hold a process of this depth, we are experimenting with
+                  what we call an{" "}
+                  <strong className="font-medium text-foreground">
+                    Architecture of Transformation
+                  </strong>
+                  : a living developmental ecology of practices, inquiry,
+                  training, mentorship, immersive experiences, community, and
+                  accompaniment designed to create the conditions for deeper
+                  human transformation to take root.
+                </p>
+              </div>
+            </div>
+
+            {/* Architecture */}
+            <div className="mx-auto mt-10 max-w-4xl border-y border-border">
+              {architecture.map((item, index) => (
+                <div
+                  key={item.title}
+                  className={`grid gap-2 py-4 md:grid-cols-[160px_1fr] md:gap-8 ${index !== architecture.length - 1
+                    ? "border-b border-border"
+                    : ""
+                    }`}
+                >
+                  <span className="font-serif text-lg font-medium text-foreground">
+                    {item.title}
+                  </span>
+
+                  <span className="italic text-muted-foreground">
+                    {item.question}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Living Questions */}
+            <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-[#D9A01B] px-6 py-8 text-center md:px-10">
+              <p className="text-sm font-medium uppercase tracking-wide text-white/80">
+                Three living questions accompany the entire journey
+              </p>
+
+              <p className="mt-4 font-serif text-2xl font-medium text-white md:text-3xl">
+                Who are we? &nbsp; Where are we? &nbsp; What is being asked of
+                us?
+              </p>
+
+              <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-white/90">
+                These are not questions to be answered and set aside, but
+                living inquiries we learn to be more intimate with. Over the
+                eight months, we hold them as we move through five
+                interconnected Streams of Transformation.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FIVE STREAMS */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="mx-auto mb-12 max-w-4xl">
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                The Five Streams of Transformation
+              </span>
+
+              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                What dimensions of life does our transformation engage?
+              </h2>
+
+              <p className="mt-5 leading-relaxed text-muted-foreground">
+                Each stream is a portal into a dimension of life with which we
+                seek to deepen our relationship. Open any stream to explore the
+                questions, practices, lineages, and people informing it.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {streams.map((stream) => (
+                <details
+                  key={stream.title}
+                  className={`overflow-hidden rounded-2xl border border-border border-t-4 ${stream.accent} ${stream.soft}`}
+                >
+                  <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
+                    <div className="flex items-start justify-between gap-6">
+                      <div>
+                        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                          <span
+                            className={`font-serif text-3xl font-medium ${stream.numberColor}`}
+                          >
+                            {stream.number}
+                          </span>
+
+                          <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+                            {stream.title}
+                          </h3>
+
+                          <span className="text-muted-foreground/40">—</span>
+
+                          <span className="text-sm font-medium text-muted-foreground">
+                            {stream.subtitle}
+                          </span>
+                        </div>
+
+                        <p className="mt-3 max-w-3xl font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                          {stream.question}
+                        </p>
+                      </div>
+
+                      <span
+                        className={`mt-1 shrink-0 text-2xl ${stream.numberColor}`}
+                      >
+                        +
+                      </span>
+                    </div>
+                  </summary>
+
+                  <div className="border-t border-border/70 bg-background/60 px-6 py-7 md:px-8">
+                    <div className="space-y-5 text-muted-foreground">
+                      {stream.paragraphs.map((paragraph) => (
+                        <p key={paragraph} className="leading-relaxed">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+
+                    <div className="mt-7 border-t border-border pt-5">
+                      <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                        People we are learning with / voices informing this
+                        stream
+                      </p>
+
+                      <p className="mt-2 font-serif text-base leading-relaxed text-foreground">
+                        {stream.voices}
+                      </p>
+
+                      <p
+                        className={`mt-4 text-sm font-medium ${stream.numberColor}`}
+                      >
+                        {stream.resourceText}
+                      </p>
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            {/* Portal Questions */}
+            <div className="mx-auto mt-12 max-w-4xl">
+              <p className="mb-6 leading-relaxed text-muted-foreground">
+                In this way, the five Streams of Transformation become portals
+                for shifting our ways of relating to life:
+              </p>
+
+              <div className="space-y-3">
+                {[
+                  [
+                    "The Sacred",
+                    "What becomes possible when life is experienced as sacred rather than valueless?",
+                  ],
+                  [
+                    "Soul",
+                    "What becomes possible when we relate to ourselves and others from wholeness rather than fragmentation?",
+                  ],
+                  [
+                    "Systems",
+                    "What becomes possible when we perceive relationships, patterns, and interdependence rather than isolated problems?",
+                  ],
+                  [
+                    "Soil",
+                    "What becomes possible when the Earth is encountered as kin, alive and talking to us rather than resource?",
+                  ],
+                  [
+                    "Service",
+                    "What becomes possible when action emerges from interbeing rather than separation?",
+                  ],
+                ].map(([title, question]) => (
+                  <div
+                    key={title}
+                    className="grid gap-1 border-b border-border pb-3 md:grid-cols-[120px_1fr] md:gap-6"
+                  >
+                    <span className="font-medium text-foreground">
+                      {title} asks →
+                    </span>
+
+                    <span className="italic text-muted-foreground">
+                      {question}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PEDAGOGY */}
+        <section className="bg-[#F8F6F1] py-20 lg:py-24">
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl">
+              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+                The Pedagogy
+              </span>
+
+              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
+                Learning to Perceive, Participate and Sense More Deeply in
+                Reality
+              </h2>
+
+              <p className="mt-3 font-serif text-lg italic text-muted-foreground">
+                How does transformation happen?
+              </p>
+
+              <div className="mt-8 space-y-6 text-muted-foreground">
+                <p className="leading-relaxed">
+                  The Five Streams describe the dimensions of life we will
+                  encounter. Our pedagogy asks a different question: How must we
+                  encounter them for what we come to know to actually transform
+                  how we live?
+                </p>
+
+                <p className="leading-relaxed">
+                  We have developed extraordinary intellectual understanding of
+                  ecological breakdown, technological risk, systemic incentives,
+                  and the metacrisis, while continuing to organize our lives
+                  around many of the same desires, habits, relationships, and
+                  definitions of success that reproduce them.
+                </p>
+
+                <p className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                  Knowing something is not the same as being transformed by
+                  what we know.
+                </p>
+
+                <p className="leading-relaxed">
+                  Education in a time of metacrisis must therefore help bridge a
+                  deeper knowing–becoming–doing gap: allowing what we encounter
+                  to move beyond ideas we understand and begin reshaping how we
+                  perceive, relate, choose, work, consume, and participate in
+                  the world.
+                </p>
+
+                <p className="leading-relaxed">
+                  Modern education has cultivated extraordinary capacities for
+                  abstraction, analysis, and explanation. These capacities are
+                  indispensable, but they are not the whole of human perception.
+                  Reality exceeds what any single way of knowing can disclose.
+                </p>
+
+                <p className="leading-relaxed">
+                  We call our approach{" "}
+                  <strong className="font-medium text-foreground">
+                    Relational Ontological Pedagogy
+                  </strong>
+                  : an education that seeks to refine how we perceive reality,
+                  deepen how we participate in what we perceive, cultivate our
+                  capacity to sense and discern together, and allow what we
+                  encounter to reshape who we become and how we live.
+                </p>
+              </div>
+
+              <p className="mt-8 font-serif text-xl italic text-[#B88610] md:text-2xl">
+                Refine perception. Deepen participation. Sense together.
+                Transform how we live.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+              {pedagogyMovements.map((movement) => (
+                <article
+                  key={movement.title}
+                  className={`border-t-4 ${movement.accent} bg-background p-6`}
+                >
+                  <h3 className="font-serif text-xl font-medium text-foreground md:text-2xl">
+                    {movement.title}{" "}
+                    <span className="text-muted-foreground">—</span>{" "}
+                    {movement.subtitle}
+                  </h3>
+
+                  <p className="mt-3 font-serif italic leading-relaxed text-muted-foreground">
+                    {movement.question}
+                  </p>
+
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    {movement.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div className="mx-auto mt-12 max-w-4xl rounded-r-xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 md:px-8">
+              <p className="text-sm uppercase tracking-wide text-[#B88610]">
+                At the heart of our pedagogy
+              </p>
+
+              <p className="mt-3 font-serif text-xl leading-relaxed text-foreground md:text-2xl">
+                Can we become the kind of people—and the kind of community—whose
+                way of living becomes increasingly coherent with what we have
+                learned to perceive as true, valuable, and sacred?
+              </p>
+
+              <p className="mt-5 leading-relaxed text-muted-foreground">
+                Our aspiration is not simply to understand interdependence,
+                sacredness, and the intrinsic worth of a life, but to become
+                capable of living from them—individually and together.
+              </p>
+
+              <p className="mt-5 text-sm font-medium text-foreground">
+                Go Deeper on Relational Ontological Pedagogy →
+              </p>
+            </div>
+          </div>
+        </section>
+
 
             {/* STRUCTURE AS PEDAGOGY */}
             <div className="mx-auto mt-12 max-w-4xl">
