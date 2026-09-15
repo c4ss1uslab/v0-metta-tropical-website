@@ -2507,97 +2507,427 @@ export default function FellowshipPage() {
             </div>
         </section>
 
-        {/* PRACTICAL COMMITMENT */}
-        <section className="bg-cream py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-                Practical Commitment
-              </span>
+      {/* PRACTICAL COMMITMENT */}
+<section
+  id="practical-commitment"
+  className="scroll-mt-32 bg-cream py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                What participation asks of you
-              </h2>
-            </div>
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
 
-            <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                ["Duration", "8 months"],
-                ["Cohort", "15–20 participants"],
-                [
-                  "Core format",
-                  "Three residential immersions, weekly online gatherings, sustained practice, Family Groups, individual accompaniment, and Integration Weeks",
-                ],
-                [
-                  "Location",
-                  "Brazil, with most in-person gatherings in São Paulo and one immersion in Bahia",
-                ],
-                [
-                  "Weekly commitment",
-                  "Approximately 8–10 hours during regular Fellowship weeks",
-                ],
-                [
-                  "Participation",
-                  "Full participation in the core journey is expected.",
-                ],
-              ].map(([label, value]) => (
-                <div
-                  key={label}
-                  className="rounded-xl border border-border bg-background p-5"
-                >
-                  <p className="text-xs font-medium uppercase tracking-wide text-olive">
-                    {label}
-                  </p>
-                  <p className="mt-2 leading-relaxed text-foreground">{value}</p>
-                </div>
-              ))}
-            </div>
+    <div className="mx-auto max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Practical Commitment
+      </span>
 
-            <div className="mx-auto mt-4 max-w-4xl rounded-xl border border-[#D9A01B]/30 bg-[#FFF9E9] p-5">
-              <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-                Key dates
-              </p>
-              <p className="mt-2 text-foreground">
-                September 12, 2026 – May 6, 2027
-              </p>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Detailed calendar →
-              </p>
-            </div>
+      <h2
+        className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        What Saying Yes to the Fellowship Asks of You
+      </h2>
+    </div>
 
-            <details className="mx-auto mt-8 max-w-4xl rounded-xl border border-border bg-background">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  A Note About Emergence
-                </span>
-                <span className="text-xl text-[#B88610]">+</span>
-              </summary>
+    {/* ========================================================= */}
+    {/* FELLOWSHIP DATES */}
+    {/* ========================================================= */}
 
-              <div className="space-y-4 border-t border-border px-6 py-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The structure of the Fellowship is intentional, but not rigid.
-                </p>
+    <div className="mx-auto mt-14 max-w-4xl">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Fellowship Dates
+      </h3>
 
-                <p className="leading-relaxed">
-                  Because this is our founding cohort, we will move through the
-                  journey with deep listening and responsiveness, continually
-                  sensing what the community needs, what questions are becoming
-                  alive, and what forms of support might help the work deepen.
-                </p>
+      <div className="mt-6 border border-foreground/10 bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8">
+        <p className="font-serif text-2xl font-medium text-foreground md:text-3xl">
+          February 7 – December 19, 2027
+        </p>
 
-                <p className="leading-relaxed">
-                  Some content, practices, guest encounters, or additional
-                  spaces may therefore emerge along the way.
-                </p>
+        <p className="mt-3 text-sm font-medium uppercase tracking-wide text-[#B88610]">
+          10 months · 15 participants
+        </p>
 
-                <p className="font-medium text-foreground">
-                  We want the structure to be strong enough to hold us, and
-                  alive enough to respond to what is actually emerging.
-                </p>
-              </div>
-            </details>
-          </div>
-        </section>
+        <p className="mt-5 max-w-3xl leading-relaxed text-muted-foreground">
+          Primarily based in São Paulo, Brazil, with three week-long residential
+          immersions, and weekly online gatherings throughout the year.
+        </p>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* IMMERSIVE RETREATS */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-5xl">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Immersive Retreats
+      </h3>
+
+      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
+        Three week-long gatherings anchor the beginning, midpoint, and
+        completion of the journey.
+      </p>
+
+      <div className="mt-7 grid items-stretch gap-5 lg:grid-cols-3">
+
+        {/* Opening Retreat */}
+        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+            Opening Retreat
+          </span>
+
+          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+            Inviting the Sacred
+          </h4>
+
+          <p className="mt-2 text-sm italic leading-relaxed text-muted-foreground">
+            Tending to the Soul of Our Community
+          </p>
+
+          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
+            February 7–14, 2027 · São Paulo
+          </p>
+        </article>
+
+        {/* Midpoint Retreat */}
+        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+            Midpoint Retreat
+          </span>
+
+          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+            Feeling the Metacrisis
+          </h4>
+
+          <p className="mt-2 text-sm italic leading-relaxed text-muted-foreground">
+            Relating to the Systems &amp; Territories We Are Embedded In
+          </p>
+
+          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
+            July 11–18, 2027 · Location to be confirmed
+          </p>
+        </article>
+
+        {/* Closing Retreat */}
+        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+            Closing Retreat
+          </span>
+
+          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+            Serving the Whole
+          </h4>
+
+          <p className="mt-2 text-sm italic leading-relaxed text-muted-foreground">
+            Contributing to the Emergence of Life-Enhancing Futures
+          </p>
+
+          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
+            December 12–19, 2027 · Location to be confirmed
+          </p>
+        </article>
+      </div>
+
+      <p className="mt-5 text-sm font-semibold text-foreground">
+        Full participation in all three retreats is expected.
+      </p>
+    </div>
+
+    {/* ========================================================= */}
+    {/* WEEKLY RHYTHM */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-5xl">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Weekly Rhythm
+      </h3>
+
+      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
+        Our regular online spaces for inquiry, practice, and guest interaction.
+      </p>
+
+      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-3">
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Community Inquiry
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Tuesdays · 19h–21h · Online
+          </p>
+        </article>
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Collective Practice
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Wednesdays · 19h30–21h · Online
+          </p>
+        </article>
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Wisdom Dialogues
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Thursdays · 19h–21h · Online
+          </p>
+        </article>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* RELATIONAL SUPPORT */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-5xl">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Relational Support
+      </h3>
+
+      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
+        Spaces for more individual accompaniment within the Fellowship.
+      </p>
+
+      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-3">
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Dharma Families
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Once a month
+          </p>
+        </article>
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Therapy and/or Coaching
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Highly recommended · approximately twice a month
+          </p>
+        </article>
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Mentorship
+          </h4>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            Available as meaningful relationships emerge
+          </p>
+        </article>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* EMERGENT SPACES */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-5xl">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Emergent Spaces
+      </h3>
+
+      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
+        Additional experiences that arise in response to the cohort&apos;s
+        inquiries, desires and needs.
+      </p>
+
+      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-2">
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Philosophical Dinners
+          </h4>
+
+          <p className="mt-2 text-sm italic text-muted-foreground">
+            In-person · São Paulo
+          </p>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            2–4 gatherings throughout the Fellowship
+          </p>
+        </article>
+
+        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+          <h4 className="font-serif text-xl font-medium text-foreground">
+            Emergent Immersions
+          </h4>
+
+          <p className="mt-2 text-sm italic text-muted-foreground">
+            In-person or online
+          </p>
+
+          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+            2–3 possible weekend experiences
+          </p>
+        </article>
+      </div>
+
+      <p className="mt-5 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+        These spaces are responsive to the interests and needs of the community
+        and may not all be required for participation.
+      </p>
+    </div>
+
+    {/* ========================================================= */}
+    {/* AT A GLANCE */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-20 max-w-4xl border-t border-border pt-10">
+      <h3
+        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        At a Glance
+      </h3>
+
+      <div className="mt-7 divide-y divide-border border-y border-border">
+
+        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
+          <span className="font-medium text-foreground">
+            Residential Commitment
+          </span>
+
+          <span className="text-muted-foreground">
+            Full-time participation in{" "}
+            <strong className="font-medium text-foreground">
+              three week-long retreats
+            </strong>
+          </span>
+        </div>
+
+        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
+          <span className="font-medium text-foreground">
+            Regular Commitment
+          </span>
+
+          <span className="text-muted-foreground">
+            Approximately{" "}
+            <strong className="font-medium text-foreground">
+              8–10 hours per week
+            </strong>
+          </span>
+        </div>
+
+        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
+          <span className="font-medium text-foreground">
+            Rest &amp; Integration
+          </span>
+
+          <span className="text-muted-foreground">
+            Two dedicated rest weeks, alongside Integration Weeks throughout
+            the journey
+          </span>
+        </div>
+
+        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
+          <span className="font-medium text-foreground">
+            Participation
+          </span>
+
+          <span className="leading-relaxed text-muted-foreground">
+            We ask participants to treat the Fellowship as a meaningful
+            commitment and to protect the time needed to participate fully in
+            the core journey (immersive retreats, weekly rhythm, and relational
+            support).
+          </span>
+        </div>
+      </div>
+
+      <a
+        href="#"
+        className="mt-6 inline-block text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
+      >
+        View the full Fellowship calendar →
+      </a>
+    </div>
+
+    {/* ========================================================= */}
+    {/* NOTE ABOUT EMERGENCE */}
+    {/* Maintained in the same design as the original */}
+    {/* ========================================================= */}
+
+    <details className="mx-auto mt-12 max-w-4xl rounded-xl border border-border bg-background">
+      <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
+        <span className="font-medium text-foreground">
+          A Note About Emergence
+        </span>
+
+        <span className="text-xl text-[#B88610]">+</span>
+      </summary>
+
+      <div className="space-y-4 border-t border-border px-6 py-6 text-muted-foreground">
+        <p className="leading-relaxed">
+          The structure of the Fellowship is intentional, but not rigid.
+        </p>
+
+        <p className="leading-relaxed">
+          Because this is our founding cohort, we will move through the journey
+          with deep listening and responsiveness, continually sensing what the
+          community needs, what questions are becoming alive, and what forms of
+          support might help the work deepen.
+        </p>
+
+        <p className="leading-relaxed">
+          Some content, practices, guest encounters, or additional spaces may
+          therefore emerge along the way.
+        </p>
+
+        <p className="font-medium text-foreground">
+          We want the structure to be strong enough to hold us, and alive
+          enough to respond to what is actually emerging.
+        </p>
+      </div>
+    </details>
+  </div>
+</section>
 
         {/* WHO THIS IS FOR */}
         <section className="bg-background py-20 lg:py-24">
