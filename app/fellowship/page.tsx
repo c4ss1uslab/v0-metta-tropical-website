@@ -2895,7 +2895,7 @@ export default function FellowshipPage() {
 
         <div className="pb-6 md:pb-0 md:pr-8">
           <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-            In-person Residential Commitment
+            Residential Commitment · In-Person
           </p>
 
           <p className="mt-3 leading-relaxed text-muted-foreground">
