@@ -1294,7 +1294,13 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="text-center">
-      <h2 className="font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
+      <h2
+        className="text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
         The Fellowship Overview
       </h2>
     </div>
@@ -1305,16 +1311,6 @@ export default function FellowshipPage() {
         The Structure
       </span>
 
-      <h3
-        className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        What Sustains Transformation Over Time
-      </h3>
-
       <p className="mt-8 leading-relaxed text-muted-foreground">
         The Fellowship is held by an ecology of transformation inviting
         participants into a shared rhythm of immersive experiences, sustained
@@ -1324,25 +1320,36 @@ export default function FellowshipPage() {
         consider essential for deep transformation to take place.
       </p>
 
-      <h4 className="mt-10 font-serif text-2xl font-medium text-foreground md:text-3xl">
+      <h3
+        className="mt-10 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
         The Ecology of Transformation Holding the Journey
-      </h4>
+      </h3>
     </div>
 
     {/* ========================================================= */}
     {/* 01 — CORE RHYTHM */}
     {/* ========================================================= */}
 
-    <div className="mt-14 border-t border-[#D9A01B] pt-8">
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-        01 — The Core Rhythm
-      </span>
+    <div className="mt-16">
+      {/* Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-[#D9A01B] pt-5">
+          <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+            01 — The Core Rhythm
+          </span>
+        </div>
+      </div>
 
       {/* ======================================================= */}
       {/* IMMERSIVE RETREATS */}
       {/* ======================================================= */}
 
-      <div className="mt-10">
+      <div className="mt-6">
         <h4 className="font-serif text-2xl font-medium text-foreground">
           Immersive Retreats
         </h4>
@@ -1357,11 +1364,11 @@ export default function FellowshipPage() {
         </p>
 
         {/* Retreat Cards */}
-        <div className="mt-8 grid gap-5 lg:grid-cols-3">
+        <div className="mt-8 grid items-start gap-5 lg:grid-cols-3">
 
           {/* OPENING RETREAT */}
-          <article className="flex h-full flex-col bg-[#D9A01B] p-6">
-            <span className="text-xs font-semibold uppercase tracking-wide text-foreground/70">
+          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+            <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Opening Retreat
             </span>
 
@@ -1369,15 +1376,15 @@ export default function FellowshipPage() {
               Inviting the Sacred
             </h5>
 
-            <p className="mt-1 text-sm italic text-foreground/75">
+            <p className="mt-1 text-sm italic text-muted-foreground">
               Tending to the Soul of Our Community
             </p>
 
-            <p className="mt-4 text-xs font-semibold text-foreground/75">
+            <p className="mt-4 text-xs font-semibold text-[#B88610]">
               Feb 7th–14th, 2026 · São Paulo
             </p>
 
-            <p className="mt-5 text-sm leading-relaxed text-foreground/85">
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               The first retreat is where we begin to come into more intimate
               relationships with ourselves, each other, and the sacred. Through
               contemplative and relational practices of presencing, attunement,
@@ -1388,15 +1395,14 @@ export default function FellowshipPage() {
             </p>
 
             <details className="group mt-auto pt-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-foreground/25 pt-4 text-sm font-semibold text-foreground [&::-webkit-details-marker]:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/30 pt-4 text-sm font-semibold text-[#B88610] [&::-webkit-details-marker]:hidden">
                 <span>Learn more</span>
-
                 <span className="text-lg transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
 
-              <div className="space-y-4 pt-4 text-sm leading-relaxed text-foreground/85">
+              <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
                 <p>
                   Alongside these practices, we will enter shared rituals and
                   ceremonies that mark our crossing into the journey together,
@@ -1421,8 +1427,8 @@ export default function FellowshipPage() {
           </article>
 
           {/* MIDPOINT RETREAT */}
-          <article className="flex h-full flex-col bg-[#D9A01B] p-6">
-            <span className="text-xs font-semibold uppercase tracking-wide text-foreground/70">
+          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+            <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Midpoint Retreat
             </span>
 
@@ -1430,15 +1436,15 @@ export default function FellowshipPage() {
               Feeling the Metacrisis
             </h5>
 
-            <p className="mt-1 text-sm italic text-foreground/75">
+            <p className="mt-1 text-sm italic text-muted-foreground">
               Relating to the Systems &amp; Territories We Are Embedded In
             </p>
 
-            <p className="mt-4 text-xs font-semibold text-foreground/75">
+            <p className="mt-4 text-xs font-semibold text-[#B88610]">
               July 11th–18th, 2027 · TBD
             </p>
 
-            <p className="mt-5 text-sm leading-relaxed text-foreground/85">
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Here we turn more directly toward the complexity of the systems
               and histories we participate in, the colonial habits of being
               still embedded in our civilization, the possibility of systemic
@@ -1448,22 +1454,21 @@ export default function FellowshipPage() {
             </p>
 
             <details className="group mt-auto pt-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-foreground/25 pt-4 text-sm font-semibold text-foreground [&::-webkit-details-marker]:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/30 pt-4 text-sm font-semibold text-[#B88610] [&::-webkit-details-marker]:hidden">
                 <span>Learn more</span>
-
                 <span className="text-lg transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
 
-              <div className="space-y-4 pt-4 text-sm leading-relaxed text-foreground/85">
+              <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
                 <p>
                   We practice developing our capacity for collective
                   sensemaking, staying present with complexity without
                   collapsing into abstraction or simplistic solutions, and
-                  becoming more capable of sensing patterns, tensions, aliveness
-                  and emergent possibilities together rather than only as
-                  isolated individuals.
+                  becoming more capable of sensing patterns, tensions,
+                  aliveness and emergent possibilities together rather than
+                  only as isolated individuals.
                 </p>
 
                 <p>
@@ -1482,8 +1487,8 @@ export default function FellowshipPage() {
           </article>
 
           {/* CLOSING RETREAT */}
-          <article className="flex h-full flex-col bg-[#D9A01B] p-6">
-            <span className="text-xs font-semibold uppercase tracking-wide text-foreground/70">
+          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+            <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Closing Retreat
             </span>
 
@@ -1491,15 +1496,15 @@ export default function FellowshipPage() {
               Serving the Whole
             </h5>
 
-            <p className="mt-1 text-sm italic text-foreground/75">
+            <p className="mt-1 text-sm italic text-muted-foreground">
               Contributing to the Emergence of Life-Enhancing Futures
             </p>
 
-            <p className="mt-4 text-xs font-semibold text-foreground/75">
+            <p className="mt-4 text-xs font-semibold text-[#B88610]">
               Dec 12th–19, 2027 · São Paulo
             </p>
 
-            <p className="mt-5 text-sm leading-relaxed text-foreground/85">
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               The final retreat creates space to{" "}
               <strong className="font-semibold text-foreground">
                 metabolize and integrate the journey
@@ -1511,15 +1516,14 @@ export default function FellowshipPage() {
             </p>
 
             <details className="group mt-auto pt-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-foreground/25 pt-4 text-sm font-semibold text-foreground [&::-webkit-details-marker]:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/30 pt-4 text-sm font-semibold text-[#B88610] [&::-webkit-details-marker]:hidden">
                 <span>Learn more</span>
-
                 <span className="text-lg transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
 
-              <div className="space-y-4 pt-4 text-sm leading-relaxed text-foreground/85">
+              <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
                 <p>
                   This is a space to discern what has become precious enough
                   that we want to reorganize our lives around it.
@@ -1536,20 +1540,21 @@ export default function FellowshipPage() {
                 <p>
                   We close through reflection, celebration, personal
                   commitments, and forms of vow that help us carry what has
-                  been touched into our own lives. The intention is not to leave
-                  the Fellowship with a perfect plan, but to sense into what we
-                  want to protect, deepen, practice, and offer our lives in
-                  service of.
+                  been touched into our own lives. The intention is not to
+                  leave the Fellowship with a perfect plan, but to sense into
+                  what we want to protect, deepen, practice, and offer our lives
+                  in service of.
                 </p>
 
                 <p>
-                  The retreat is also a threshold into what this community might
-                  become beyond the Fellowship. Our aspiration is not simply to
-                  run cohorts and send people on their way, but to cultivate a
-                  long-term developmental community capable of continuing to
-                  offer relationship, practice, mentorship, experiences, care,
-                  and shared responsibility across the years. We hope the
-                  Fellowship becomes the beginning of a much longer journey.
+                  The retreat is also a threshold into what this community
+                  might become beyond the Fellowship. Our aspiration is not
+                  simply to run cohorts and send people on their way, but to
+                  cultivate a long-term developmental community capable of
+                  continuing to offer relationship, practice, mentorship,
+                  experiences, care, and shared responsibility across the
+                  years. We hope the Fellowship becomes the beginning of a much
+                  longer journey.
                 </p>
               </div>
             </details>
@@ -1577,9 +1582,9 @@ export default function FellowshipPage() {
           what has been opened through the retreats.
         </p>
 
-        <div className="mt-7 grid gap-5 md:grid-cols-2">
+        <div className="mt-7 grid items-start gap-5 md:grid-cols-2">
           {/* COMMUNITY INQUIRY */}
-          <article className="bg-cream p-6 md:p-7">
+          <article className="border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-7">
             <h5 className="font-serif text-xl font-medium text-foreground">
               Community Inquiry
             </h5>
@@ -1598,7 +1603,7 @@ export default function FellowshipPage() {
           </article>
 
           {/* WISDOM DIALOGUES */}
-          <article className="bg-cream p-6 md:p-7">
+          <article className="border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-7">
             <h5 className="font-serif text-xl font-medium text-foreground">
               Wisdom Dialogues
             </h5>
@@ -1633,7 +1638,7 @@ export default function FellowshipPage() {
           relate with life.
         </p>
 
-        <div className="mt-7 bg-cream p-6 md:p-8">
+        <div className="mt-7 border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8">
           <p className="font-medium text-foreground">
             Collective Practice — Wednesdays · 19h30–21h
           </p>
@@ -1649,7 +1654,6 @@ export default function FellowshipPage() {
           <details className="group mt-6">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-border pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
@@ -1689,12 +1693,17 @@ export default function FellowshipPage() {
     {/* 02 — RELATIONAL WEB */}
     {/* ========================================================= */}
 
-    <div className="mt-20 border-t border-crimson pt-8">
-      <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-        02 — The Relational Web
-      </span>
+    <div className="mt-20">
+      {/* Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-crimson pt-5">
+          <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+            02 — The Relational Web
+          </span>
+        </div>
+      </div>
 
-      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+      <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         This journey can be overwhelming, challenging and touch a lot of
         delicate places within ourselves that will need tending, care and
         attunement. Instead of relying on a single facilitator and staff to
@@ -1702,19 +1711,19 @@ export default function FellowshipPage() {
         accompaniment:
       </p>
 
-      <div className="mt-8 grid gap-5 md:grid-cols-3">
+      <div className="mt-8 grid items-start gap-5 md:grid-cols-3">
 
         {/* DHARMA FAMILY */}
-        <article className="flex h-full flex-col bg-crimson p-6 text-background">
-          <h4 className="font-serif text-xl font-medium text-background">
+        <article className="border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
+          <h4 className="font-serif text-xl font-medium text-crimson">
             Dharma Family
           </h4>
 
-          <p className="mt-2 text-sm italic text-background/75">
+          <p className="mt-2 text-sm italic text-muted-foreground">
             Depth grows in small circles of trust.
           </p>
 
-          <p className="mt-5 text-sm leading-relaxed text-background/85">
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
             Intimate groups of three to four participants and a mentor walk
             together across the full Fellowship. They become a consistent place
             for reflection, truth, mutual care, accountability, and the kind of
@@ -1724,16 +1733,16 @@ export default function FellowshipPage() {
         </article>
 
         {/* MENTORSHIP */}
-        <article className="flex h-full flex-col bg-crimson p-6 text-background">
-          <h4 className="font-serif text-xl font-medium text-background">
+        <article className="flex flex-col border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
+          <h4 className="font-serif text-xl font-medium text-crimson">
             Mentorship
           </h4>
 
-          <p className="mt-2 text-sm italic text-background/75">
+          <p className="mt-2 text-sm italic text-muted-foreground">
             Some thresholds cannot be crossed alone.
           </p>
 
-          <p className="mt-5 text-sm leading-relaxed text-background/85">
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
             Throughout the journey, we help participants form relationships
             with practitioners, teachers, leaders, elders, and others whose
             experience may speak directly to the questions they are living at
@@ -1741,15 +1750,14 @@ export default function FellowshipPage() {
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/25 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-crimson/20 pt-4 text-sm font-medium text-crimson [&::-webkit-details-marker]:hidden">
               <span>How mentorship works</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <div className="space-y-4 pt-4 text-sm leading-relaxed text-background/85">
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 We do not automatically assign every participant to a
                 predetermined mentor. We believe meaningful mentorship grows
@@ -1760,27 +1768,27 @@ export default function FellowshipPage() {
               <p>
                 Instead, we will incentivize participants to be constantly
                 looking for possible mentors in their life, and will also create
-                opportunities for them to meet the wider constellation of people
-                connected to our community. As particular questions, fields of
-                interest, or life decisions emerge for each participant we can
-                help with specific connections from which deeper mentorship
-                relationships may grow.
+                opportunities for them to meet the wider constellation of
+                people connected to our community. As particular questions,
+                fields of interest, or life decisions emerge for each
+                participant we can help with specific connections from which
+                deeper mentorship relationships may grow.
               </p>
             </div>
           </details>
         </article>
 
         {/* THERAPY & COACHING */}
-        <article className="flex h-full flex-col bg-crimson p-6 text-background">
-          <h4 className="font-serif text-xl font-medium text-background">
+        <article className="flex flex-col border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
+          <h4 className="font-serif text-xl font-medium text-crimson">
             Therapy &amp; Coaching
           </h4>
 
-          <p className="mt-2 text-sm italic text-background/75">
+          <p className="mt-2 text-sm italic text-muted-foreground">
             Tend what the journey stirs.
           </p>
 
-          <p className="mt-5 text-sm leading-relaxed text-background/85">
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
             Deep spaces of transformation can bring us into contact with
             psychological patterns, wounds, desires, questions, and decisions
             that deserve more individual attention than the Fellowship
@@ -1788,15 +1796,14 @@ export default function FellowshipPage() {
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/25 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-crimson/20 pt-4 text-sm font-medium text-crimson [&::-webkit-details-marker]:hidden">
               <span>How therapy and coaching works</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <div className="space-y-4 pt-4 text-sm leading-relaxed text-background/85">
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 Participants may therefore choose to receive individual
                 therapeutic or coaching accompaniment throughout the journey.
@@ -1842,12 +1849,17 @@ export default function FellowshipPage() {
     {/* 03 — INTEGRATION WEEK */}
     {/* ========================================================= */}
 
-    <div className="mt-20 border-t border-cyan-800 pt-8">
-      <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-        03 — The Integration Week
-      </span>
+    <div className="mt-20">
+      {/* Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-cyan-800 pt-5">
+          <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+            03 — The Integration Week
+          </span>
+        </div>
+      </div>
 
-      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+      <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         At the end of every six week cycle, we interrupt the regular rhythm of
         the Fellowship and create space to{" "}
         <strong className="font-medium text-foreground">
@@ -1860,21 +1872,21 @@ export default function FellowshipPage() {
         We will hold two specific spaces during integration week:
       </p>
 
-      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
+      <div className="mt-8 grid items-start gap-5 md:grid-cols-2">
 
         {/* TENDING THE FIELD */}
-        <article className="flex h-full flex-col bg-cyan-800 p-6 md:p-8">
-          <h4 className="font-serif text-xl font-medium text-[#F5D76E]">
+        <article className="flex flex-col border border-cyan-800/20 bg-cyan-800/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[330px] md:p-8">
+          <h4 className="font-serif text-xl font-medium text-[#B88610]">
             Tending the Field
           </h4>
 
-          <p className="mt-5 leading-relaxed text-background/85">
+          <p className="mt-5 leading-relaxed text-muted-foreground">
             Inspired by the Plum Village practice of{" "}
             <a
               href="https://www.lionsroar.com/beginning-anew/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-background underline decoration-[#F5D76E] decoration-2 underline-offset-4"
+              className="font-medium text-foreground underline decoration-cyan-800 decoration-2 underline-offset-4"
             >
               Beginning Anew
             </a>
@@ -1883,15 +1895,14 @@ export default function FellowshipPage() {
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/20 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-cyan-800/20 pt-4 text-sm font-medium text-cyan-800 [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <div className="space-y-4 pt-4 text-sm leading-relaxed text-background/85">
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 We nurture a space to practice appreciation, honest
                 communication, acknowledgement of regrets and hurts,
@@ -1902,7 +1913,7 @@ export default function FellowshipPage() {
                 rupture with truth, care, and responsibility.
               </p>
 
-              <p className="font-medium text-background">
+              <p className="font-medium text-foreground">
                 The intention is not a community without conflict, but one
                 increasingly interested and capable of caring for what happens
                 between us.
@@ -1912,31 +1923,30 @@ export default function FellowshipPage() {
         </article>
 
         {/* RESOURCING TOGETHER */}
-        <article className="flex h-full flex-col bg-cyan-800 p-6 md:p-8">
-          <h4 className="font-serif text-xl font-medium text-[#F5D76E]">
+        <article className="flex flex-col border border-cyan-800/20 bg-cyan-800/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[330px] md:p-8">
+          <h4 className="font-serif text-xl font-medium text-[#B88610]">
             Resourcing Together
           </h4>
 
-          <p className="mt-5 leading-relaxed text-background/85">
+          <p className="mt-5 leading-relaxed text-muted-foreground">
             This space is for us to better understand how to distribute
             resources within our community by engaging with a simple and
             important question:{" "}
-            <strong className="font-medium italic text-background">
+            <strong className="font-medium italic text-foreground">
               What does each of us actually need in order to feel sufficiently
               resourced to live well and offer what we are here to offer?
             </strong>
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/20 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-cyan-800/20 pt-4 text-sm font-medium text-cyan-800 [&::-webkit-details-marker]:hidden">
               <span>Learn more</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <div className="space-y-4 pt-4 text-sm leading-relaxed text-background/85">
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 We are inviting the community not to treat resources as an
                 entirely private problem each person must solve alone. We want
@@ -1956,8 +1966,8 @@ export default function FellowshipPage() {
               </p>
 
               <p>
-                We hope to experiment with forms of mutual support that make our
-                lives less isolated, less precarious, and less dependent on
+                We hope to experiment with forms of mutual support that make
+                our lives less isolated, less precarious, and less dependent on
                 having every need mediated through the market economy, while
                 also strengthening our capacity to share resources, carry risk
                 together, and support one another in living more fully in
@@ -1973,45 +1983,49 @@ export default function FellowshipPage() {
     {/* 04 — EMERGENT SPACES */}
     {/* ========================================================= */}
 
-    <div className="mt-20 border-t border-olive pt-8">
-      <span className="text-sm font-medium uppercase tracking-wide text-olive">
-        04 — Emergent Spaces
-      </span>
+    <div className="mt-20">
+      {/* Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-olive pt-5">
+          <span className="text-sm font-medium uppercase tracking-wide text-olive">
+            04 — Emergent Spaces
+          </span>
+        </div>
+      </div>
 
-      <p className="mt-8 max-w-4xl leading-relaxed text-muted-foreground">
+      <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         Even though this Fellowship has been carefully designed, not everything
         can be planned in advance. As the questions, relationships, challenges,
         and desires of the cohort become clearer, we leave room to create
         additional spaces in response to what is genuinely alive in the cohort.
       </p>
 
-      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
+      <div className="mt-8 grid items-start gap-5 md:grid-cols-2">
 
         {/* PHILOSOPHICAL DINNERS */}
-        <article className="flex h-full flex-col bg-olive p-6 md:p-8">
-          <h4 className="font-serif text-xl font-medium text-background">
+        <article className="flex flex-col border border-olive/20 bg-olive/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px] md:p-8">
+          <h4 className="font-serif text-xl font-medium text-olive">
             Philosophical Dinners
           </h4>
 
-          <p className="mt-5 leading-relaxed text-background/85">
+          <p className="mt-5 leading-relaxed text-muted-foreground">
             Three to four times during the Fellowship, we plan to gather in São
             Paulo for intimate dinners with thinkers, elders, artists,
             organizers, practitioners, and friends of our community.
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/20 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-olive/20 pt-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
               <span>How these philosophical dinners work</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <p className="pt-4 text-sm leading-relaxed text-background/85">
+            <p className="pt-4 text-sm leading-relaxed text-muted-foreground">
               These evenings are not a presentation or panel. They are
               organized around{" "}
-              <strong className="font-medium text-background">
+              <strong className="font-medium text-foreground">
                 a meaningful question the cohort has been wrestling with
               </strong>
               , and worth spending a night with. We will have an evening of
@@ -2024,12 +2038,12 @@ export default function FellowshipPage() {
         </article>
 
         {/* EMERGENT IMMERSIONS */}
-        <article className="flex h-full flex-col bg-olive p-6 md:p-8">
-          <h4 className="font-serif text-xl font-medium text-background">
+        <article className="flex flex-col border border-olive/20 bg-olive/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px] md:p-8">
+          <h4 className="font-serif text-xl font-medium text-olive">
             Emergent Immersions
           </h4>
 
-          <p className="mt-5 leading-relaxed text-background/85">
+          <p className="mt-5 leading-relaxed text-muted-foreground">
             Across the eight months, additional weekend immersions may emerge
             around questions, practices, or capacities the cohort wants to
             explore more fully, but that haven&apos;t necessarily been part of
@@ -2037,15 +2051,14 @@ export default function FellowshipPage() {
           </p>
 
           <details className="group mt-auto pt-6">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-background/20 pt-4 text-sm font-medium text-[#F5D76E] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-olive/20 pt-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
               <span>How these immersions emerge</span>
-
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
             </summary>
 
-            <div className="space-y-4 pt-4 text-sm leading-relaxed text-background/85">
+            <div className="space-y-4 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 These are not predetermined workshops delivered to the cohort.
                 They emerge from the cohort itself, by sensing into the needs
@@ -2054,10 +2067,10 @@ export default function FellowshipPage() {
 
               <p>
                 Participants will help out with this process by discerning what
-                feels most needed, identifying someone or something we genuinely
-                want to learn with, making invitations, helping organize the
-                experience, and where necessary finding the resources required
-                to bring it into being.
+                feels most needed, identifying someone or something we
+                genuinely want to learn with, making invitations, helping
+                organize the experience, and where necessary finding the
+                resources required to bring it into being.
               </p>
 
               <p>
@@ -2069,7 +2082,7 @@ export default function FellowshipPage() {
                 something none of us can yet anticipate.
               </p>
 
-              <p className="font-medium text-background">
+              <p className="font-medium text-foreground">
                 Part of the learning here is not only participating in what is
                 offered, but becoming capable of bringing into being what the
                 community senses it needs.
@@ -2079,6 +2092,8 @@ export default function FellowshipPage() {
         </article>
       </div>
     </div>
+  </div>
+</section>
 
             {/* STRUCTURE AS PEDAGOGY */}
             <div className="mx-auto mt-12 max-w-4xl">
