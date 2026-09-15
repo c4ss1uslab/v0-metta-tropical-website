@@ -1691,236 +1691,577 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-        {/* THE JOURNEY */}
-        <section
-          id="journey"
-          className="scroll-mt-24 bg-cream py-20 lg:py-24"
-        >
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                The Journey
+{/* THE PATH */}
+<section
+  id="journey"
+  className="scroll-mt-32 bg-background py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* PATH INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Path
+      </span>
+
+      <p className="mt-8 leading-relaxed text-muted-foreground">
+        Over the ten months, we will move through five interconnected{" "}
+        <strong className="font-medium text-foreground">
+          Streams of Transformation
+        </strong>
+        —The Sacred, Soul, Systems, Soil, and Society. Rather than seeing them
+        as subjects we need to master, we understand them as dimensions of life
+        we are learning to perceive more deeply, enter into relationship with
+        more skillfully, and be transformed by what they reveal to us.
+      </p>
+
+      <h2
+        id="streams"
+        className="scroll-mt-32 mt-10 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The Path of Transformation
+      </h2>
+    </div>
+
+    {/* ========================================================= */}
+    {/* STREAMS */}
+    {/* ========================================================= */}
+
+    <div className="mt-14 space-y-10 lg:space-y-14">
+
+      {/* ======================================================= */}
+      {/* 01 — THE SACRED */}
+      {/* ======================================================= */}
+
+      <div className="grid items-stretch gap-5 md:grid-cols-2">
+
+        {/* Stream Card */}
+        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              The Sacred
+            </span>
+
+            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
+              Remembering What Ultimately Matters
+            </h3>
+
+            <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              What is intrinsically valuable? What is the ground we are standing
+              on? What makes a life meaningful? What is worthy of our devotion?
+              What is the true nature of reality we participate in?
+            </p>
+          </div>
+
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
               </span>
+            </summary>
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
-                An eight-month Architecture of Transformation
-              </h2>
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <p>
+                We begin here because every path of transformation is oriented
+                by what we ultimately value. We approach the sacred not as a
+                realm above or outside of ordinary life, but as a depth
+                dimension of life itself—one that becomes available through
+                particular qualities of attention, perception and participation
+                that modernity has largely taught us to close. Rather than
+                prescribing a single metaphysical belief, we engage multiple
+                wisdom traditions and lineages that can help reawaken our
+                capacity to encounter this dimension of life more
+                wholeheartedly.
+              </p>
 
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The kind of transformation we are seeking rarely happens
-                  through a single retreat, course, or breakthrough experience.
-                  It unfolds across time—through sustained practice,
-                  relationship, guidance, reflection, challenge, and commitment.
+              <p>
+                To encounter the sacred is to experience the world as radically
+                interdependent, intrinsically valuable, alive with meaning and
+                worthy of reverence. We will explore how modernity&apos;s
+                desacralization of the world may be one of the deeper
+                conditions underlying the metacrisis: what we cease to
+                experience as intrinsically valuable becomes easier to
+                instrumentalize, commodify, and destroy.
+              </p>
+
+              <p>
+                The Sacred is therefore not simply one stream among others. It
+                is the{" "}
+                <strong className="font-medium text-foreground">
+                  orienting horizon
+                </strong>{" "}
+                within which the other streams acquire meaning, significance,
+                and continually return us to the question of what our lives and
+                our transformation are ultimately in service of.
+              </p>
+
+              <p>
+                This stream brings contemplative and wisdom traditions into
+                dialogue with philosophy, theology, and contemporary attempts
+                to recover the sacred within a disenchanted world. We engage
+                the practices and forms of perception through which different
+                traditions have cultivated relationships with mystery, meaning,
+                devotion, and the intrinsic worth of life.
+              </p>
+
+              <div className="border-t border-border pt-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                  People we are learning with / voices informing this stream
                 </p>
 
-                <p className="leading-relaxed">
-                  The previous section names the aspiration of who we must
-                  become from which this journey begins. The Fellowship gives
-                  that aspiration a path, a pedagogy, a container, and an
-                  orientation.
+                <p className="mt-3 font-serif leading-relaxed text-foreground">
+                  Brother Phap Huu · Adam Bucko · Zak Stein · Henrique Vieira ·
+                  David Dias · Ilia Delio
                 </p>
 
-                <p className="leading-relaxed">
-                  The Fellowship is an eight-month initiatory journey into the
-                  ways of seeing, being, knowing, and acting that we consider
-                  essential to help us navigate a time of metacrisis and
-                  civilizational transition with greater wisdom and
-                  responsibility.
-                </p>
-
-                <p className="leading-relaxed">
-                  To hold a process of this depth, we are experimenting with
-                  what we call an{" "}
-                  <strong className="font-medium text-foreground">
-                    Architecture of Transformation
-                  </strong>
-                  : a living developmental ecology of practices, inquiry,
-                  training, mentorship, immersive experiences, community, and
-                  accompaniment designed to create the conditions for deeper
-                  human transformation to take root.
+                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  Explore some of the teachings, traditions, and resources
+                  informing this stream →
                 </p>
               </div>
             </div>
+          </details>
+        </article>
 
-            {/* Architecture */}
-            <div className="mx-auto mt-10 max-w-4xl border-y border-border">
-              {architecture.map((item, index) => (
-                <div
-                  key={item.title}
-                  className={`grid gap-2 py-4 md:grid-cols-[160px_1fr] md:gap-8 ${index !== architecture.length - 1
-                    ? "border-b border-border"
-                    : ""
-                    }`}
-                >
-                  <span className="font-serif text-lg font-medium text-foreground">
-                    {item.title}
-                  </span>
+        {/* Image */}
+        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+          <img
+            src="https://i.postimg.cc/L8qnkWsn/cosmos-1430999382.jpg"
+            alt="The Sacred"
+            loading="lazy"
+            className="h-full min-h-[470px] w-full object-cover"
+          />
+        </div>
+      </div>
 
-                  <span className="italic text-muted-foreground">
-                    {item.question}
-                  </span>
-                </div>
-              ))}
-            </div>
+      {/* ======================================================= */}
+      {/* 02 — SOUL */}
+      {/* ======================================================= */}
 
-            {/* Living Questions */}
-            <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-[#D9A01B] px-6 py-8 text-center md:px-10">
-              <p className="text-sm font-medium uppercase tracking-wide text-white/80">
-                Three living questions accompany the entire journey
-              </p>
+      <div className="grid items-stretch gap-5 md:grid-cols-2">
 
-              <p className="mt-4 font-serif text-2xl font-medium text-white md:text-3xl">
-                Who are we? &nbsp; Where are we? &nbsp; What is being asked of
-                us?
-              </p>
+        {/* Image */}
+        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+          <img
+            src="https://i.postimg.cc/q736rFfF/Human-Heart-copy-300x300.jpg"
+            alt="Soul"
+            loading="lazy"
+            className="h-full min-h-[470px] w-full object-cover"
+          />
+        </div>
 
-              <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-white/90">
-                These are not questions to be answered and set aside, but
-                living inquiries we learn to be more intimate with. Over the
-                eight months, we hold them as we move through five
-                interconnected Streams of Transformation.
-              </p>
-            </div>
+        {/* Stream Card */}
+        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Soul
+            </span>
+
+            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
+              Remembering Who We Are
+            </h3>
+
+            <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              Who are we? What is a human being for? What does it mean to meet
+              ourselves and each other more truthfully? What prevents me from
+              meeting life more fully? How might we recover our capacity to
+              sense the world with soul? How can relationships become a doorway
+              into the sacred?
+            </p>
           </div>
-        </section>
 
-        {/* FIVE STREAMS */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="mx-auto mb-12 max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-                The Five Streams of Transformation
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
               </span>
+            </summary>
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                What dimensions of life does our transformation engage?
-              </h2>
-
-              <p className="mt-5 leading-relaxed text-muted-foreground">
-                Each stream is a portal into a dimension of life with which we
-                seek to deepen our relationship. Open any stream to explore the
-                questions, practices, lineages, and people informing it.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {streams.map((stream) => (
-                <details
-                  key={stream.title}
-                  className={`overflow-hidden rounded-2xl border border-border border-t-4 ${stream.accent} ${stream.soft}`}
-                >
-                  <summary className="cursor-pointer list-none px-6 py-6 [&::-webkit-details-marker]:hidden md:px-8">
-                    <div className="flex items-start justify-between gap-6">
-                      <div>
-                        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                          <span
-                            className={`font-serif text-3xl font-medium ${stream.numberColor}`}
-                          >
-                            {stream.number}
-                          </span>
-
-                          <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-                            {stream.title}
-                          </h3>
-
-                          <span className="text-muted-foreground/40">—</span>
-
-                          <span className="text-sm font-medium text-muted-foreground">
-                            {stream.subtitle}
-                          </span>
-                        </div>
-
-                        <p className="mt-3 max-w-3xl font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
-                          {stream.question}
-                        </p>
-                      </div>
-
-                      <span
-                        className={`mt-1 shrink-0 text-2xl ${stream.numberColor}`}
-                      >
-                        +
-                      </span>
-                    </div>
-                  </summary>
-
-                  <div className="border-t border-border/70 bg-background/60 px-6 py-7 md:px-8">
-                    <div className="space-y-5 text-muted-foreground">
-                      {stream.paragraphs.map((paragraph) => (
-                        <p key={paragraph} className="leading-relaxed">
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-
-                    <div className="mt-7 border-t border-border pt-5">
-                      <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                        People we are learning with / voices informing this
-                        stream
-                      </p>
-
-                      <p className="mt-2 font-serif text-base leading-relaxed text-foreground">
-                        {stream.voices}
-                      </p>
-
-                      <p
-                        className={`mt-4 text-sm font-medium ${stream.numberColor}`}
-                      >
-                        {stream.resourceText}
-                      </p>
-                    </div>
-                  </div>
-                </details>
-              ))}
-            </div>
-
-            {/* Portal Questions */}
-            <div className="mx-auto mt-12 max-w-4xl">
-              <p className="mb-6 leading-relaxed text-muted-foreground">
-                In this way, the five Streams of Transformation become portals
-                for shifting our ways of relating to life:
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <p>
+                Grounded in the sacred, we turn toward the depths of human
+                experience, because the quality of our actions emerges from the
+                quality of our being, and who we are becoming is always shaped
+                in relationship.
               </p>
 
-              <div className="space-y-3">
-                {[
-                  [
-                    "The Sacred",
-                    "What becomes possible when life is experienced as sacred rather than valueless?",
-                  ],
-                  [
-                    "Soul",
-                    "What becomes possible when we relate to ourselves and others from wholeness rather than fragmentation?",
-                  ],
-                  [
-                    "Systems",
-                    "What becomes possible when we perceive relationships, patterns, and interdependence rather than isolated problems?",
-                  ],
-                  [
-                    "Soil",
-                    "What becomes possible when the Earth is encountered as kin, alive and talking to us rather than resource?",
-                  ],
-                  [
-                    "Service",
-                    "What becomes possible when action emerges from interbeing rather than separation?",
-                  ],
-                ].map(([title, question]) => (
-                  <div
-                    key={title}
-                    className="grid gap-1 border-b border-border pb-3 md:grid-cols-[120px_1fr] md:gap-6"
-                  >
-                    <span className="font-medium text-foreground">
-                      {title} asks →
-                    </span>
+              <p>
+                This stream explores the emotional, psychological, relational,
+                embodied and spiritual work of becoming more whole. A process
+                of encountering our conditioning and protective patterns,
+                tending to fragmentation and wounds, learning to discern the
+                desires that shape us, questioning the stories through which we
+                understand ourselves, and opening space for the totality of our
+                being to come to life.
+              </p>
 
-                    <span className="italic text-muted-foreground">
-                      {question}
-                    </span>
-                  </div>
-                ))}
+              <p>
+                We not only explore our inner worlds, but the spaces between us:
+                how we listen, attune, navigate differences, communicate
+                lovingly, build intimacy, meet another more fully, and
+                participate in relationships where more of our humanity can
+                become available.
+              </p>
+
+              <p>
+                Without this dimension of formation, our attempts to transform
+                the world can easily reproduce the patterns of separation,
+                domination, projection and fragmentation we hope to heal.
+              </p>
+
+              <p>
+                This stream draws from contemplative practice, depth and
+                developmental psychology, relational and somatic practices,
+                trauma-informed approaches, nature-based initiation, and
+                traditions of human formation concerned with wholeness,
+                maturation, eros, intimacy, and soul.
+              </p>
+
+              <div className="border-t border-border pt-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                  People we are learning with / voices informing this stream
+                </p>
+
+                <p className="mt-3 font-serif leading-relaxed text-foreground">
+                  Bill Plotkin · Steffi Bednarek · Vanessa Ferreira · Francis
+                  Weller · Sean Wilkinson
+                </p>
+
+                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  Explore some of the practices, lineages, and resources
+                  informing this stream →
+                </p>
               </div>
             </div>
+          </details>
+        </article>
+      </div>
+
+      {/* ======================================================= */}
+      {/* 03 — SYSTEMS */}
+      {/* ======================================================= */}
+
+      <div className="grid items-stretch gap-5 md:grid-cols-2">
+
+        {/* Stream Card */}
+        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Systems
+            </span>
+
+            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
+              Remembering Where We Are
+            </h3>
+
+            <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              What does it mean to be in a time between worlds? What are the
+              deeper dynamics generating the metacrisis? How does change happen?
+              How is this system learning and changing through its
+              relationships? What needs to be hospiced rather than improved?
+              How deeply have the logics of modernity colonized our minds,
+              desires and imagination?
+            </p>
           </div>
-        </section>
+
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <p>
+                With a deeper sense of who we are, we turn toward the complexity
+                of the systems we participate in. This stream cultivates the
+                capacity to perceive patterns beneath events, trace the
+                historical and structural roots of the metacrisis, and
+                understand the cultural, political, technological, economic,
+                and ecological forces shaping the world around us.
+              </p>
+
+              <p>
+                We investigate how dominant worldviews, colonial histories,
+                incentive structures, institutions, and economic systems have
+                shaped not only society, but also our desires, identities,
+                relationships, and imagination. This means learning to recognize
+                how deeply the logics of the systems we inhabit—mechanistic,
+                linear, transactional, extractive—are deeply embedded within
+                us, guiding our ways of perceiving, being and acting in the
+                world.
+              </p>
+
+              <p>
+                The more clearly we can perceive the patterns and dynamics
+                generating our crises, within and outside ourselves, the
+                greater our capacity to respond at the depth from which they
+                are being produced.
+              </p>
+
+              <p>
+                This stream brings systems thinking and complexity science into
+                conversation with metacrisis research, political economy,
+                decolonial thought, historical analysis, post-capitalist
+                experimentation, and metamodernism—cultivating both a clearer
+                diagnosis of the world we inhabit and a wider imagination of
+                what might come next.
+              </p>
+
+              <div className="border-t border-border pt-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                  People we are learning with / voices informing this stream
+                </p>
+
+                <p className="mt-3 font-serif leading-relaxed text-foreground">
+                  Alnoor Ladha · Zak Stein · Vanessa Andreotti · Indy Johar ·
+                  Nora Bateson · Kate Raworth · Nate Hagens
+                </p>
+
+                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  Explore some of the maps, ideas, and resources informing this
+                  stream →
+                </p>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        {/* Image */}
+        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+          <img
+            src="https://i.postimg.cc/nz1zcbdr/cosmos-805790790.jpg"
+            alt="Systems"
+            loading="lazy"
+            className="h-full min-h-[470px] w-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* ======================================================= */}
+      {/* 04 — SOIL */}
+      {/* ======================================================= */}
+
+      <div className="grid items-stretch gap-5 md:grid-cols-2">
+
+        {/* Image */}
+        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+          <img
+            src="https://i.postimg.cc/ZKnRZQpw/cosmos-800909522.jpg"
+            alt="Soil"
+            loading="lazy"
+            className="h-full min-h-[470px] w-full object-cover"
+          />
+        </div>
+
+        {/* Stream Card */}
+        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Soil
+            </span>
+
+            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
+              Remembering Our Place In The Web of Life
+            </h3>
+
+            <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              What does the more-than-human world know that we have forgotten?
+              How might we organize life through reciprocity rather than
+              ownership? What would it mean to encounter another world without
+              colonizing it? How might we live in a world that holds multiple
+              worlds? What changes when a river becomes a relative?
+            </p>
+          </div>
+
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <p>
+                Having explored the systems of the human world, we return to the
+                larger living world to which we have always belonged. This
+                stream tends our relationship with land, place, ancestry, and
+                the more-than-human world. It investigates what becomes possible
+                when Earth is no longer encountered primarily as a resource,
+                but as kin, teacher, community, and living participant in our
+                becoming.
+              </p>
+
+              <p>
+                This stream moves beyond abstractions and intellectual study.
+                Through relationships with Indigenous, Quilombola, land-based,
+                and territorial communities and movements in Brazil and Latin
+                America, we seek to learn by experiencing forms of life grounded
+                in reciprocity, ancestry, autonomy, collective memory, and
+                relationship with land. The invitation is not simply to
+                experience another way of living, but to allow these encounters
+                to unsettle us, to reveal assumptions about life, land,
+                progress and relationships that modernity has taught us to treat
+                as normal, and open us to other ways of seeing, being, and
+                relating to life that are essential for the survival of our
+                species and all life on earth.
+              </p>
+
+              <p>
+                This stream draws from Indigenous and Quilombola wisdom,
+                agroecology, land-based movements, bioregional thought,
+                nature-based practice, and communities across Latin America
+                that have preserved and regenerated forms of relationship with
+                life despite centuries of dispossession and erasure.
+              </p>
+
+              <div className="border-t border-border pt-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                  People we are learning with / voices informing this stream
+                </p>
+
+                <p className="mt-3 font-serif leading-relaxed text-foreground">
+                  Cristine Takuá · Kaká Werá · Tainá Marajoara · Jera Guarani ·
+                  Ailton Krenak · Mestre Cobra Mansa · Joelson Ferreira
+                </p>
+
+                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  Explore some of the communities, teachings, and resources
+                  informing this stream →
+                </p>
+              </div>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      {/* ======================================================= */}
+      {/* 05 — SOCIETY */}
+      {/* ======================================================= */}
+
+      <div className="grid items-stretch gap-5 md:grid-cols-2">
+
+        {/* Stream Card */}
+        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
+          <div>
+            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+              Society
+            </span>
+
+            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
+              Remembering How to Respond to This Moment
+            </h3>
+
+            <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+              What does this moment ask of us—together? What is uniquely ours
+              to offer? What is our responsibility at this time? How have people
+              in history dealt with moments of collapse, and what are people
+              doing now? What matters most in a time of civilizational
+              transition? How do movements emerge, grow, and reshape society?
+            </p>
+          </div>
+
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <p>
+                Having explored what is sacred, deepened our relationship with
+                ourselves and one another, investigated the systems shaping our
+                world, and remembered our belonging within the living Earth, we
+                ask:
+              </p>
+
+              <p className="font-serif text-xl font-medium text-foreground">
+                How might we live in response?
+              </p>
+
+              <p>
+                This stream brings us into direct contact with people,
+                communities, movements and initiatives at the living edge of
+                cultural and societal renewal—those experimenting with how to
+                organize their lives and work in response to the metacrisis.
+              </p>
+
+              <p>
+                Through these encounters, we explore movement-building,
+                community organizing, institution-building, peacebuilding,
+                ethical uses of power, and the many ways people have responded
+                to moments of profound historical rupture. Their lives and
+                stories become invitations to discern more deeply where our own
+                gifts, responsibilities, and commitments might belong.
+              </p>
+
+              <p>
+                This stream also asks us to move beyond the mythology of the
+                solitary hero, leader, or changemaker. We explore what it means
+                to act collectively as one body—to cultivate the trust,
+                coherence, relational capacity, and coordination required to
+                respond to this moment in ways that no individual could
+                possibly hold alone.
+              </p>
+
+              <p>
+                This is where wisdom, power, and love learn to walk together
+                towards building the life-enhancing futures we most long for.
+              </p>
+
+              <p>
+                In this stream, we draw inspiration from social movements,
+                organizers, peacebuilders, institution-builders, cultural
+                leaders, and communities that have been attempting to respond
+                to moments of civilizational rupture with devotion, courage and
+                imagination.
+              </p>
+
+              <div className="border-t border-border pt-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
+                  People we are learning with / voices informing this stream
+                </p>
+
+                <p className="mt-3 font-serif leading-relaxed text-foreground">
+                  John Paul Lederach · Rachel Donald · Lourenço Bustani ·
+                  Cristiane Figueiras · Bruno Torturra · Thiago Ávila
+                </p>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        {/* Image */}
+        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+          <img
+            src="https://i.postimg.cc/pTPWScPF/cosmos-2044796254.jpg"
+            alt="Society"
+            loading="lazy"
+            className="h-full min-h-[470px] w-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* PEDAGOGY */}
         <section className="bg-[#F8F6F1] py-20 lg:py-24">
