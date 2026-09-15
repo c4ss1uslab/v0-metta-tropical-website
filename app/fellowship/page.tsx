@@ -326,9 +326,9 @@ export default function FellowshipPage() {
       </div>
     </div>
   </section>
-</main>
 
           {/* Fellowship Section Navigation */}
+          <section>
           <div className="border-y border-white/10 bg-[#111827]">
             <div className="mx-auto max-w-6xl px-6 lg:px-8">
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
