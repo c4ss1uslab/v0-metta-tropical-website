@@ -750,7 +750,7 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        The Ecology of Transformation Holding the Journey
+        The Ecology of Transformation - The Structures that Hold the Journey
       </h3>
     </div>
 
