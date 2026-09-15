@@ -1743,34 +1743,35 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-              The Sacred
-            </span>
+        <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
 
-            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
-              Remembering What Ultimately Matters
+          <div>
+            {/* Stream Title */}
+            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              The Sacred
             </h3>
 
+            {/* Subtitle */}
+            <p
+              className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Remembering What Ultimately Matters
+            </p>
+
+            {/* Questions */}
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               What is intrinsically valuable? What is the ground we are standing
               on? What makes a life meaningful? What is worthy of our devotion?
               What is the true nature of reality we participate in?
             </p>
-          </div>
 
-          <details className="group mt-auto pt-8">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
-              <span>Learn more</span>
-
-              <span className="text-xl transition-transform group-open:rotate-45">
-                +
-              </span>
-            </summary>
-
-            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
-              <p>
+            {/* Divider */}
+            <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
+              <p className="leading-relaxed text-muted-foreground">
                 We begin here because every path of transformation is oriented
                 by what we ultimately value. We approach the sacred not as a
                 realm above or outside of ordinary life, but as a depth
@@ -1782,7 +1783,20 @@ export default function FellowshipPage() {
                 capacity to encounter this dimension of life more
                 wholeheartedly.
               </p>
+            </div>
+          </div>
 
+          {/* Learn More */}
+          <details className="group mt-auto pt-8">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-5 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+              <span>Learn more</span>
+
+              <span className="text-xl transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
               <p>
                 To encounter the sacred is to experience the world as radically
                 interdependent, intrinsically valuable, alive with meaning and
@@ -1833,12 +1847,12 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
             src="https://i.postimg.cc/L8qnkWsn/cosmos-1430999382.jpg"
             alt="The Sacred"
             loading="lazy"
-            className="h-full min-h-[470px] w-full object-cover"
+            className="h-full min-h-[600px] w-full object-cover"
           />
         </div>
       </div>
@@ -1850,25 +1864,32 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Image */}
-        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
-            src="https://i.postimg.cc/q736rFfF/Human-Heart-copy-300x300.jpg"
+            src="https://i.postimg.cc/VLPJ9gCj/cosmos-361211120.jpg"
             alt="Soul"
             loading="lazy"
-            className="h-full min-h-[470px] w-full object-cover"
+            className="h-full min-h-[600px] w-full object-cover"
           />
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-              Soul
-            </span>
+        <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
 
-            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
-              Remembering Who We Are
+          <div>
+            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              Soul
             </h3>
+
+            <p
+              className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Remembering Who We Are
+            </p>
 
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               Who are we? What is a human being for? What does it mean to meet
@@ -1877,6 +1898,18 @@ export default function FellowshipPage() {
               sense the world with soul? How can relationships become a doorway
               into the sacred?
             </p>
+
+            <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
+              <p className="leading-relaxed text-muted-foreground">
+                This stream explores the emotional, psychological, relational,
+                embodied and spiritual work of becoming more whole. A process
+                of encountering our conditioning and protective patterns,
+                tending to fragmentation and wounds, learning to discern the
+                desires that shape us, questioning the stories through which we
+                understand ourselves, and opening space for the totality of our
+                being to come to life.
+              </p>
+            </div>
           </div>
 
           <details className="group mt-auto pt-8">
@@ -1894,16 +1927,6 @@ export default function FellowshipPage() {
                 experience, because the quality of our actions emerges from the
                 quality of our being, and who we are becoming is always shaped
                 in relationship.
-              </p>
-
-              <p>
-                This stream explores the emotional, psychological, relational,
-                embodied and spiritual work of becoming more whole. A process
-                of encountering our conditioning and protective patterns,
-                tending to fragmentation and wounds, learning to discern the
-                desires that shape us, questioning the stories through which we
-                understand ourselves, and opening space for the totality of our
-                being to come to life.
               </p>
 
               <p>
@@ -1955,15 +1978,22 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-              Systems
-            </span>
+        <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
 
-            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
-              Remembering Where We Are
+          <div>
+            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              Systems
             </h3>
+
+            <p
+              className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Remembering Where We Are
+            </p>
 
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               What does it mean to be in a time between worlds? What are the
@@ -1973,6 +2003,17 @@ export default function FellowshipPage() {
               How deeply have the logics of modernity colonized our minds,
               desires and imagination?
             </p>
+
+            <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
+              <p className="leading-relaxed text-muted-foreground">
+                With a deeper sense of who we are, we turn toward the complexity
+                of the systems we participate in. This stream cultivates the
+                capacity to perceive patterns beneath events, trace the
+                historical and structural roots of the metacrisis, and
+                understand the cultural, political, technological, economic,
+                and ecological forces shaping the world around us.
+              </p>
+            </div>
           </div>
 
           <details className="group mt-auto pt-8">
@@ -1985,15 +2026,6 @@ export default function FellowshipPage() {
             </summary>
 
             <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
-              <p>
-                With a deeper sense of who we are, we turn toward the complexity
-                of the systems we participate in. This stream cultivates the
-                capacity to perceive patterns beneath events, trace the
-                historical and structural roots of the metacrisis, and
-                understand the cultural, political, technological, economic,
-                and ecological forces shaping the world around us.
-              </p>
-
               <p>
                 We investigate how dominant worldviews, colonial histories,
                 incentive structures, institutions, and economic systems have
@@ -2041,12 +2073,12 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
             src="https://i.postimg.cc/nz1zcbdr/cosmos-805790790.jpg"
             alt="Systems"
             loading="lazy"
-            className="h-full min-h-[470px] w-full object-cover"
+            className="h-full min-h-[600px] w-full object-cover"
           />
         </div>
       </div>
@@ -2058,25 +2090,32 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Image */}
-        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
             src="https://i.postimg.cc/ZKnRZQpw/cosmos-800909522.jpg"
             alt="Soil"
             loading="lazy"
-            className="h-full min-h-[470px] w-full object-cover"
+            className="h-full min-h-[600px] w-full object-cover"
           />
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-              Soil
-            </span>
+        <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
 
-            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
-              Remembering Our Place In The Web of Life
+          <div>
+            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              Soil
             </h3>
+
+            <p
+              className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Remembering Our Place In The Web of Life
+            </p>
 
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               What does the more-than-human world know that we have forgotten?
@@ -2085,6 +2124,18 @@ export default function FellowshipPage() {
               colonizing it? How might we live in a world that holds multiple
               worlds? What changes when a river becomes a relative?
             </p>
+
+            <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
+              <p className="leading-relaxed text-muted-foreground">
+                Having explored the systems of the human world, we return to the
+                larger living world to which we have always belonged. This
+                stream tends our relationship with land, place, ancestry, and
+                the more-than-human world. It investigates what becomes
+                possible when Earth is no longer encountered primarily as a
+                resource, but as kin, teacher, community, and living participant
+                in our becoming.
+              </p>
+            </div>
           </div>
 
           <details className="group mt-auto pt-8">
@@ -2098,16 +2149,6 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
               <p>
-                Having explored the systems of the human world, we return to the
-                larger living world to which we have always belonged. This
-                stream tends our relationship with land, place, ancestry, and
-                the more-than-human world. It investigates what becomes possible
-                when Earth is no longer encountered primarily as a resource,
-                but as kin, teacher, community, and living participant in our
-                becoming.
-              </p>
-
-              <p>
                 This stream moves beyond abstractions and intellectual study.
                 Through relationships with Indigenous, Quilombola, land-based,
                 and territorial communities and movements in Brazil and Latin
@@ -2116,8 +2157,8 @@ export default function FellowshipPage() {
                 relationship with land. The invitation is not simply to
                 experience another way of living, but to allow these encounters
                 to unsettle us, to reveal assumptions about life, land,
-                progress and relationships that modernity has taught us to treat
-                as normal, and open us to other ways of seeing, being, and
+                progress and relationships that modernity has taught us to
+                treat as normal, and open us to other ways of seeing, being, and
                 relating to life that are essential for the survival of our
                 species and all life on earth.
               </p>
@@ -2157,15 +2198,22 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-5 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-h-[470px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
-          <div>
-            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-              Society
-            </span>
+        <article className="flex min-h-[600px] flex-col border border-foreground/10 bg-white/80 p-7 shadow-[0_8px_28px_rgba(15,23,42,0.06)] md:p-9">
 
-            <h3 className="mt-3 font-serif text-2xl font-medium leading-tight text-foreground md:text-3xl">
-              Remembering How to Respond to This Moment
+          <div>
+            <h3 className="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              Society
             </h3>
+
+            <p
+              className="mt-3 text-xl font-semibold leading-tight tracking-[-0.015em] text-foreground md:text-2xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Remembering How to Respond to This Moment
+            </p>
 
             <p className="mt-6 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
               What does this moment ask of us—together? What is uniquely ours
@@ -2174,6 +2222,15 @@ export default function FellowshipPage() {
               doing now? What matters most in a time of civilizational
               transition? How do movements emerge, grow, and reshape society?
             </p>
+
+            <div className="mt-7 border-t border-[#D9A01B]/50 pt-6">
+              <p className="leading-relaxed text-muted-foreground">
+                This stream brings us into direct contact with people,
+                communities, movements and initiatives at the living edge of
+                cultural and societal renewal—those experimenting with how to
+                organize their lives and work in response to the metacrisis.
+              </p>
+            </div>
           </div>
 
           <details className="group mt-auto pt-8">
@@ -2193,24 +2250,17 @@ export default function FellowshipPage() {
                 ask:
               </p>
 
-              <p className="font-serif text-xl font-medium text-foreground">
+              <p className="font-semibold text-foreground">
                 How might we live in response?
               </p>
 
               <p>
-                This stream brings us into direct contact with people,
-                communities, movements and initiatives at the living edge of
-                cultural and societal renewal—those experimenting with how to
-                organize their lives and work in response to the metacrisis.
-              </p>
-
-              <p>
-                Through these encounters, we explore movement-building,
-                community organizing, institution-building, peacebuilding,
-                ethical uses of power, and the many ways people have responded
-                to moments of profound historical rupture. Their lives and
-                stories become invitations to discern more deeply where our own
-                gifts, responsibilities, and commitments might belong.
+                We will explore movement-building, community organizing,
+                institution-building, peacebuilding, ethical uses of power, and
+                the many ways people have responded to moments of profound
+                historical rupture. Their lives and stories become invitations
+                to discern more deeply where our own gifts, responsibilities,
+                and commitments might belong.
               </p>
 
               <p>
@@ -2250,12 +2300,12 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="min-h-[470px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
+        <div className="min-h-[600px] overflow-hidden border border-foreground/10 shadow-[0_8px_28px_rgba(15,23,42,0.06)]">
           <img
             src="https://i.postimg.cc/pTPWScPF/cosmos-2044796254.jpg"
             alt="Society"
             loading="lazy"
-            className="h-full min-h-[470px] w-full object-cover"
+            className="h-full min-h-[600px] w-full object-cover"
           />
         </div>
       </div>
