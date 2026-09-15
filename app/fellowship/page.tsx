@@ -735,8 +735,7 @@ export default function FellowshipPage() {
       </span>
 
       <p className="mt-8 leading-relaxed text-muted-foreground">
-        The Fellowship is held by an ecology of transformation inviting
-        participants into a shared rhythm of immersive experiences, sustained
+        The Fellowship is held by an ecology of transformation, structures that hold the journey together, inviting participants into a shared rhythm of immersive experiences, sustained
         practice, collective inquiry, intimate relationships, mentorship,
         accompaniment, and spaces for integration. These aspects of our journey
         create the conditions of depth, care, support and accompaniment we
@@ -750,7 +749,7 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        The Ecology of Transformation - The Structures Holding the Journey
+        The Ecology of Transformation 
       </h3>
     </div>
 
