@@ -2093,7 +2093,6 @@ export default function FellowshipPage() {
       </div>
     </div>
   </div>
-</section>
 
             {/* STRUCTURE AS PEDAGOGY */}
             <div className="mx-auto mt-12 max-w-4xl">
@@ -2134,7 +2133,6 @@ export default function FellowshipPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* PRACTICAL COMMITMENT */}
