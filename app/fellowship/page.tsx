@@ -1571,6 +1571,7 @@ export default function FellowshipPage() {
       </div>
     </div>
   </div>
+</section>
 
 {/* THE PATH */}
 <section
