@@ -2507,7 +2507,7 @@ export default function FellowshipPage() {
             </div>
         </section>
 
-    {/* PRACTICAL COMMITMENT */}
+  {/* PRACTICAL COMMITMENT */}
 <section
   id="practical-commitment"
   className="scroll-mt-32 bg-cream py-20 lg:py-24"
@@ -2543,7 +2543,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-10 max-w-5xl border-y border-border py-6">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
 
         <div>
           <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
@@ -2584,6 +2584,16 @@ export default function FellowshipPage() {
             São Paulo, Brazil
           </p>
         </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Language
+          </p>
+
+          <p className="mt-2 font-medium text-foreground">
+            Portuguese
+          </p>
+        </div>
       </div>
     </div>
 
@@ -2603,9 +2613,8 @@ export default function FellowshipPage() {
           Immersive Retreats
         </h3>
 
-        <p className="font-serif text-sm italic text-muted-foreground md:text-base">
-          Three week-long gatherings anchor the beginning, midpoint, and
-          completion of the journey.
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Three week-long gatherings anchoring the journey
         </p>
       </div>
 
@@ -2625,9 +2634,15 @@ export default function FellowshipPage() {
             Tending to the Soul of Our Community
           </p>
 
-          <p className="mt-auto pt-5 text-sm font-semibold text-foreground">
-            February 7–14, 2027 · São Paulo
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              February 7–14, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              São Paulo
+            </p>
+          </div>
         </article>
 
         {/* Midpoint Retreat */}
@@ -2644,9 +2659,15 @@ export default function FellowshipPage() {
             Relating to the Systems &amp; Territories We Are Embedded In
           </p>
 
-          <p className="mt-auto pt-5 text-sm font-semibold text-foreground">
-            July 11–18, 2027 · Location to be confirmed
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              July 11–18, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              Location to be confirmed
+            </p>
+          </div>
         </article>
 
         {/* Closing Retreat */}
@@ -2663,9 +2684,15 @@ export default function FellowshipPage() {
             Contributing to the Emergence of Life-Enhancing Futures
           </p>
 
-          <p className="mt-auto pt-5 text-sm font-semibold text-foreground">
-            December 12–19, 2027 · Location to be confirmed
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              December 12–19, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              Location to be confirmed
+            </p>
+          </div>
         </article>
       </div>
 
@@ -2690,8 +2717,8 @@ export default function FellowshipPage() {
           Weekly Rhythm
         </h3>
 
-        <p className="font-serif text-sm italic text-muted-foreground md:text-base">
-          Our regular online spaces for inquiry, practice, and guest interaction.
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Regular online spaces for inquiry, practice and guest interactions
         </p>
       </div>
 
@@ -2745,7 +2772,7 @@ export default function FellowshipPage() {
           Relational Support
         </h3>
 
-        <p className="font-serif text-sm italic text-muted-foreground md:text-base">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
           Spaces for more individual accompaniment within the Fellowship.
         </p>
       </div>
@@ -2768,7 +2795,7 @@ export default function FellowshipPage() {
           </h4>
 
           <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
-            Highly recommended · approximately twice a month
+            Twice a month
           </p>
         </article>
 
@@ -2778,7 +2805,7 @@ export default function FellowshipPage() {
           </h4>
 
           <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
-            Available as meaningful relationships emerge
+            Via resonance and emergence
           </p>
         </article>
       </div>
@@ -2800,7 +2827,7 @@ export default function FellowshipPage() {
           Emergent Spaces
         </h3>
 
-        <p className="font-serif text-sm italic text-muted-foreground md:text-base">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
           Additional experiences that arise in response to the cohort&apos;s
           inquiries, desires and needs.
         </p>
@@ -2858,30 +2885,21 @@ export default function FellowshipPage() {
         At a Glance
       </h3>
 
-      {/* Participation first */}
-      <div className="mt-6 max-w-4xl">
-        <p className="font-medium text-foreground">
-          Participation
-        </p>
-
-        <p className="mt-2 leading-relaxed text-muted-foreground">
-          We ask participants to treat the Fellowship as a meaningful
-          commitment and to protect the time needed to participate fully in the
-          core journey (immersive retreats, weekly rhythm, and relational
-          support).
-        </p>
-      </div>
+      <p className="mt-5 max-w-4xl leading-relaxed text-muted-foreground">
+        We ask participants to treat the Fellowship as a meaningful commitment
+        and to protect the time needed to participate fully in the core journey.
+      </p>
 
       {/* Three commitments */}
       <div className="mt-8 grid border-y border-border py-6 md:grid-cols-3 md:divide-x md:divide-border">
 
         <div className="pb-6 md:pb-0 md:pr-8">
           <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-            Residential Commitment
+            In-person Residential Commitment
           </p>
 
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Full-time participation in{" "}
+            Full time participation required in{" "}
             <strong className="font-medium text-foreground">
               three week-long retreats
             </strong>
@@ -2923,7 +2941,6 @@ export default function FellowshipPage() {
 
     {/* ========================================================= */}
     {/* NOTE ABOUT EMERGENCE */}
-    {/* Maintained exactly as before */}
     {/* ========================================================= */}
 
     <details className="mx-auto mt-12 max-w-4xl rounded-xl border border-border bg-background">
