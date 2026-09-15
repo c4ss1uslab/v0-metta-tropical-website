@@ -1336,24 +1336,30 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-16">
-  {/* Sticky Section Marker */}
-  <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-    <div className="border-t border-[#D9A01B] pt-5">
-      <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-8">
-        <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
-          01 — The Core Rhythm
+  {/* 01 — CORE RHYTHM / Sticky Section Marker */}
+<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+  <div className="border-t border-[#D9A01B] pt-5">
+    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        01 — The Core Rhythm
+      </span>
+
+      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
+        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+          Immersive Retreats
         </span>
 
-        <p className="text-sm text-muted-foreground md:text-right">
-          Immersive Retreats{" "}
-          <span className="mx-2 text-[#D9A01B]">|</span>
-          Collective Inquiry{" "}
-          <span className="mx-2 text-[#D9A01B]">|</span>
+        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+          Collective Inquiry
+        </span>
+
+        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
           Collective Practice
-        </p>
+        </span>
       </div>
     </div>
   </div>
+</div>
 
       {/* ======================================================= */}
       {/* IMMERSIVE RETREATS */}
