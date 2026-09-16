@@ -2961,134 +2961,379 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-        {/* WHO THIS IS FOR */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-              Who This Is For
-            </span>
+{/* WHO THIS IS FOR */}
+<section
+  id="who-this-is-for"
+  className="scroll-mt-32 bg-background py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-            <blockquote className="mt-8 border-l-4 border-crimson pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
-              &ldquo;That&apos;s what being an imaginal cell in the transition
-              from caterpillar to butterfly really means. It means taking some
-              empowered responsibility for being someone who recognizes that
-              you can&apos;t just run the instruction manual that was given
-              historically, and the new instruction manual doesn&apos;t exist
-              yet. It&apos;s actually the time of people in that liminal phase
-              to work on developing what are these new structures.&rdquo;
-            </blockquote>
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
 
-            <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
-              — Daniel Schmachtenberger
-            </cite>
+    <div className="mx-auto max-w-4xl">
 
-            <div className="mt-10 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                We are calling together postactivist educators, thinkers,
-                artists, leaders, and change-makers who refuse to look away from
-                the crises of our time, who feel the complexity of this time
-                between worlds, and who are searching for ways to better
-                navigate and respond to it.
-              </p>
+      {/* Section Label */}
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Who This Is For
+      </span>
 
-              <p className="leading-relaxed">
-                This first Fellowship is serving Brazilian young adults between
-                18 and 29 who are questioning the limitations of conventional
-                approaches to systems change, transformation, and education; who
-                long to participate meaningfully in what comes next; and who
-                sense that any meaningful response to this moment must begin in
-                a fundamentally different relationship with all life: self,
-                other, world, and the sacred.
-              </p>
-            </div>
+      {/* Main Heading */}
+      <h2
+        className="mt-4 max-w-4xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        For a generation ready to take responsibility for{" "}
+        <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+          embodying
+        </span>{" "}
+        the world it longs to bring into being
+      </h2>
 
-            <details className="mt-8 rounded-xl border border-border bg-[#FFF9E9]">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  This might be for you if...
-                </span>
-                <span className="text-xl text-[#B88610]">+</span>
-              </summary>
+      {/* Introductory Text */}
+      <div className="mt-9 space-y-6 text-muted-foreground">
+        <p className="leading-relaxed">
+          We are calling together post-activist leaders—artists, educators,
+          organizers, thinkers, change-makers, technologists and spiritual
+          practitioners—who feel the depth of our predicament in their bodies,
+          and who are called to undergo the kind of transformation that can
+          better prepare us to navigate and respond wisely to these times.
+        </p>
 
-              <div className="border-t border-[#D9A01B]/20 px-6 py-6">
-                <ul className="space-y-4">
-                  {fitSignals.map((signal) => (
-                    <li
-                      key={signal}
-                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
-                    >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-                      <span>{signal}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </details>
+        <p className="leading-relaxed">
+          Our first Fellowship is looking for{" "}
+          <strong className="font-semibold text-foreground">
+            Brazilian young adults between 18 and 29
+          </strong>{" "}
+          who are questioning the limitations of conventional approaches to
+          systems change, leadership, and education; who long to contribute to
+          the emergence of new systems, cultures and more life-enhancing way of
+          living; and who recognize that any meaningful response to this moment
+          must begin with a radical shift in the ways we perceive, relate and
+          participate in reality.
+        </p>
+      </div>
+    </div>
 
-            <details className="mt-4 rounded-xl border border-border bg-[#F3F7EC]">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  You might come from many different paths
-                </span>
-                <span className="text-xl text-olive">+</span>
-              </summary>
+    {/* ========================================================= */}
+    {/* THIS FELLOWSHIP IS FOR THOSE WHO */}
+    {/* ========================================================= */}
 
-              <div className="border-t border-olive/15 px-6 py-6">
-                <ul className="space-y-4">
-                  {possiblePaths.map((path) => (
-                    <li
-                      key={path}
-                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
-                    >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-                      <span>{path}</span>
-                    </li>
-                  ))}
+    <div className="mx-auto mt-14 max-w-4xl">
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        This Fellowship is for those who:
+      </h3>
 
-                  <li className="font-medium text-foreground">
-                    Or perhaps none of these descriptions quite fit.
-                  </li>
-                </ul>
-              </div>
-            </details>
+      {/* Open List — No Dropdown */}
+      <div className="mt-6 border border-[#D9A01B]/20 bg-[#FFFDF6] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-9 md:py-8">
+        <ul className="space-y-5">
 
-            <p className="mt-8 font-serif text-xl leading-relaxed text-foreground">
-              What matters most to us is not your title or what you have already
-              accomplished, but the sincerity of your inquiry, the depth of your
-              commitment, and your willingness to let your life become part of
-              the response.
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Feel the{" "}
+              <strong className="font-semibold text-foreground">
+                pain and beauty of the world deeply
+              </strong>{" "}
+              and are called to care for it.
             </p>
+          </li>
 
-            {/* Still unsure */}
-            <div className="mt-10 rounded-xl bg-cream p-6 md:p-8">
-              <h3 className="font-serif text-2xl font-medium text-foreground">
-                Still unsure?
-              </h3>
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
-              <p className="mt-3 leading-relaxed text-muted-foreground">
-                If something here resonates but you are unsure whether this is
-                the right moment—or whether this Fellowship is the right
-                container for you—we would love to have a conversation.
-              </p>
+            <p className="leading-relaxed text-muted-foreground">
+              Sense that inherited definitions of{" "}
+              <strong className="font-semibold text-foreground">
+                success, progress, and impact
+              </strong>{" "}
+              no longer fully answer the questions your life is asking.
+            </p>
+          </li>
 
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Conversation"
-                  className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
-                >
-                  Schedule a conversation
-                </a>
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
-                <a
-                  href="mailto:fellowship@mettatropical.org"
-                  className="inline-flex items-center justify-center rounded-md border border-foreground/20 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background"
-                >
-                  Write to us
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+            <p className="leading-relaxed text-muted-foreground">
+              Have grown skeptical of the{" "}
+              <strong className="font-semibold text-foreground">
+                underlying assumptions
+              </strong>{" "}
+              that shape many of our responses to the crises we face.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Want to understand the{" "}
+              <strong className="font-semibold text-foreground">
+                deeper roots of the metacrisis
+              </strong>
+              , while recognizing that intellectual understanding alone is not
+              enough.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Feel called to offer their{" "}
+              <strong className="font-semibold text-foreground">
+                lives and unique gifts in service of life-affirming futures
+              </strong>
+              .
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Sense that{" "}
+              <strong className="font-semibold text-foreground">
+                spiritual transformation, relational maturity, systemic
+                understanding, and collective action
+              </strong>{" "}
+              are inseparable.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Long for a community where{" "}
+              <strong className="font-semibold text-foreground">
+                deep questions of meaning, value, vocation, and existence
+              </strong>{" "}
+              can be held seriously.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Are willing to examine their{" "}
+              <strong className="font-semibold text-foreground">
+                own desires, habits, identities, and ways of life
+              </strong>
+              , and they may be contributing to the patterns we hope to
+              transform.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-4">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              Long for a community that will{" "}
+              <strong className="font-semibold text-foreground">
+                care for their becoming, challenge them to grow, and accompany
+                them in offering their gifts in service of life
+              </strong>
+              .
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* YOU MIGHT IDENTIFY AS */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-14 max-w-4xl">
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        You might identify as:
+      </h3>
+
+      {/* Open List of Possible Paths */}
+      <div className="mt-6 border-l-2 border-olive/40 bg-[#F3F7EC]/60 px-6 py-7 md:px-9 md:py-8">
+
+        <ul className="grid gap-x-10 gap-y-5 md:grid-cols-2">
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              An{" "}
+              <strong className="font-semibold text-foreground">
+                artist
+              </strong>{" "}
+              reshaping our cultural imagination
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              A{" "}
+              <strong className="font-semibold text-foreground">
+                community-builder
+              </strong>{" "}
+              cultivating islands of sanity
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              An{" "}
+              <strong className="font-semibold text-foreground">
+                educator
+              </strong>{" "}
+              reimagining learning at a time between worlds
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              A{" "}
+              <strong className="font-semibold text-foreground">
+                researcher
+              </strong>{" "}
+              investigating the root causes of our crisis
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              An{" "}
+              <strong className="font-semibold text-foreground">
+                entrepreneur
+              </strong>{" "}
+              building life-affirming institutions
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              An{" "}
+              <strong className="font-semibold text-foreground">
+                activist
+              </strong>{" "}
+              exploring non-violence and social change
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              A{" "}
+              <strong className="font-semibold text-foreground">
+                technologist
+              </strong>{" "}
+              wrestling with the ethics behind their work
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+
+            <p className="leading-relaxed text-muted-foreground">
+              A{" "}
+              <strong className="font-semibold text-foreground">
+                climate organizer
+              </strong>{" "}
+              carrying the grief and urgency of accelerating ecological
+              breakdown
+            </p>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Beyond Categories */}
+      <p className="mt-7 leading-relaxed text-muted-foreground">
+        Or perhaps none of these descriptions quite fit. You may still be
+        discovering who you are, what is yours to offer, and how you might
+        meaningfully participate in this moment.
+      </p>
+    </div>
+
+    {/* ========================================================= */}
+    {/* WHAT MATTERS MOST */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-10 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-8">
+      <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+        What matters most to us is not your identity, title or what you have
+        already accomplished, but{" "}
+        <strong className="font-semibold">
+          the sincerity of your inquiry, your commitment to individual and
+          collective transformation, and your genuine desire to contribute to
+          the life of this community.
+        </strong>
+      </p>
+    </div>
+
+    {/* ========================================================= */}
+    {/* STILL UNSURE */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-cream p-6 md:p-8">
+      <h3 className="font-serif text-2xl font-medium text-foreground">
+        Still unsure?
+      </h3>
+
+      <p className="mt-3 leading-relaxed text-muted-foreground">
+        If something here resonates, but you are unsure whether this is the
+        right moment or if this Fellowship is the right container for you, we
+        would love to meet you, hear the questions you are living with, and
+        explore that together. Whether or not you eventually join the
+        Fellowship.
+      </p>
+
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Conversation"
+          className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+        >
+          Schedule a conversation →
+        </a>
+
+        <a
+          href="mailto:fellowship@mettatropical.org"
+          className="inline-flex items-center justify-center rounded-md border border-foreground/20 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background"
+        >
+          Write to us →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
                 {/* WHY NOW */}
         <section className="bg-cream py-20 lg:py-24">
