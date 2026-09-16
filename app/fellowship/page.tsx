@@ -2220,6 +2220,21 @@ export default function FellowshipPage() {
         The Pedagogy
       </span>
 
+      {/* Highlighted Statement */}
+      <p
+        className="mt-4 text-2xl font-semibold leading-snug text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Knowing something is not the same as{" "}
+        <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+          being transformed
+        </span>{" "}
+        by what we know.
+      </p>
+
       <p className="mt-8 leading-relaxed text-muted-foreground">
         The Five Streams describe the dimensions of life we will engage with.
         Our pedagogy asks a different question:{" "}
@@ -2246,17 +2261,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto mt-10 max-w-4xl">
       <div className="space-y-6 text-muted-foreground">
-
-        <p
-          className="text-2xl font-semibold leading-snug text-foreground md:text-3xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          Knowing something is not the same as being transformed by what we
-          know.
-        </p>
 
         <p className="leading-relaxed">
           Our civilization has developed extraordinary intellectual
