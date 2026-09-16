@@ -3204,7 +3204,7 @@ export default function FellowshipPage() {
         <p className="leading-relaxed">
           This is not a selection process interview. It is a space for mutual
           discernment, offered with care and without pressure, to help you
-          sense whether participating in the Fellowship feels aligned with
+          sense whether applying to the Fellowship feels aligned with
           your life right now.
         </p>
 
