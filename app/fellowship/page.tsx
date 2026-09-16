@@ -3034,11 +3034,11 @@ export default function FellowshipPage() {
         This Fellowship is for those who:
       </h3>
 
-      {/* Open List — No Dropdown */}
-      <div className="mt-6 border border-[#D9A01B]/20 bg-[#FFFDF6] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-9 md:py-8">
-        <ul className="space-y-5">
+      {/* Compact, Always-Visible List */}
+      <div className="mt-6 border border-[#D9A01B]/20 bg-[#FFFDF6] px-6 py-6 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-9 md:py-7">
+        <ul className="space-y-3">
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
@@ -3046,11 +3046,11 @@ export default function FellowshipPage() {
               <strong className="font-semibold text-foreground">
                 pain and beauty of the world deeply
               </strong>{" "}
-              and are called to care for it.
+              and are called to care more deeply for it.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
@@ -3062,7 +3062,7 @@ export default function FellowshipPage() {
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
@@ -3074,77 +3074,75 @@ export default function FellowshipPage() {
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
               Want to understand the{" "}
               <strong className="font-semibold text-foreground">
                 deeper roots of the metacrisis
-              </strong>
-              , while recognizing that intellectual understanding alone is not
-              enough.
+              </strong>{" "}
+              and how to respond appropriately to it.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
               Feel called to offer their{" "}
               <strong className="font-semibold text-foreground">
-                lives and unique gifts in service of life-affirming futures
-              </strong>
-              .
+                lives and unique gifts
+              </strong>{" "}
+              in service of life-affirming futures.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
               Sense that{" "}
               <strong className="font-semibold text-foreground">
-                spiritual transformation, relational maturity, systemic
-                understanding, and collective action
+                spiritual transformation, systemic understanding, and
+                collective action
               </strong>{" "}
               are inseparable.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Long for a community where{" "}
+              Long for a community where deep questions of{" "}
               <strong className="font-semibold text-foreground">
-                deep questions of meaning, value, vocation, and existence
+                meaning, value, vocation, and existence
               </strong>{" "}
               can be held seriously.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Are willing to examine their{" "}
+              Are willing to examine how their{" "}
               <strong className="font-semibold text-foreground">
                 own desires, habits, identities, and ways of life
               </strong>
-              , and they may be contributing to the patterns we hope to
-              transform.
+              , may be contributing to the patterns we hope to transform.
             </p>
           </li>
 
-          <li className="flex items-start gap-4">
+          <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Long for a community that will{" "}
+              Long for a community that{" "}
               <strong className="font-semibold text-foreground">
-                care for their becoming, challenge them to grow, and accompany
-                them in offering their gifts in service of life
+                welcomes who they are, nurtures their becoming, and supports
+                them in transforming how they live
               </strong>
               .
             </p>
@@ -3158,7 +3156,7 @@ export default function FellowshipPage() {
     {/* YOU MIGHT IDENTIFY AS */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-14 max-w-4xl">
+    <div className="mx-auto mt-12 max-w-4xl">
       <h3
         className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
         style={{
@@ -3169,113 +3167,44 @@ export default function FellowshipPage() {
         You might identify as:
       </h3>
 
-      {/* Open List of Possible Paths */}
-      <div className="mt-6 border-l-2 border-olive/40 bg-[#F3F7EC]/60 px-6 py-7 md:px-9 md:py-8">
+      {/* Single Paragraph — No Bullets or Box */}
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        An{" "}
+        <strong className="font-semibold text-foreground">
+          artist
+        </strong>{" "}
+        reshaping our cultural imagination, a{" "}
+        <strong className="font-semibold text-foreground">
+          community-builder
+        </strong>{" "}
+        cultivating islands of sanity, an{" "}
+        <strong className="font-semibold text-foreground">
+          educator
+        </strong>{" "}
+        reimagining learning at a time between worlds, a{" "}
+        <strong className="font-semibold text-foreground">
+          researcher
+        </strong>{" "}
+        investigating the root causes of our crisis, an{" "}
+        <strong className="font-semibold text-foreground">
+          entrepreneur
+        </strong>{" "}
+        building life-affirming institutions, an{" "}
+        <strong className="font-semibold text-foreground">
+          activist
+        </strong>{" "}
+        exploring non-violence and social change, a{" "}
+        <strong className="font-semibold text-foreground">
+          technologist
+        </strong>{" "}
+        wrestling with the ethics behind their work, a{" "}
+        <strong className="font-semibold text-foreground">
+          climate organizer
+        </strong>{" "}
+        carrying the grief and urgency of accelerating ecological breakdown.
+      </p>
 
-        <ul className="grid gap-x-10 gap-y-5 md:grid-cols-2">
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              An{" "}
-              <strong className="font-semibold text-foreground">
-                artist
-              </strong>{" "}
-              reshaping our cultural imagination
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              A{" "}
-              <strong className="font-semibold text-foreground">
-                community-builder
-              </strong>{" "}
-              cultivating islands of sanity
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              An{" "}
-              <strong className="font-semibold text-foreground">
-                educator
-              </strong>{" "}
-              reimagining learning at a time between worlds
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              A{" "}
-              <strong className="font-semibold text-foreground">
-                researcher
-              </strong>{" "}
-              investigating the root causes of our crisis
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              An{" "}
-              <strong className="font-semibold text-foreground">
-                entrepreneur
-              </strong>{" "}
-              building life-affirming institutions
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              An{" "}
-              <strong className="font-semibold text-foreground">
-                activist
-              </strong>{" "}
-              exploring non-violence and social change
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              A{" "}
-              <strong className="font-semibold text-foreground">
-                technologist
-              </strong>{" "}
-              wrestling with the ethics behind their work
-            </p>
-          </li>
-
-          <li className="flex items-start gap-3">
-            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-
-            <p className="leading-relaxed text-muted-foreground">
-              A{" "}
-              <strong className="font-semibold text-foreground">
-                climate organizer
-              </strong>{" "}
-              carrying the grief and urgency of accelerating ecological
-              breakdown
-            </p>
-          </li>
-
-        </ul>
-      </div>
-
-      {/* Beyond Categories */}
-      <p className="mt-7 leading-relaxed text-muted-foreground">
+      <p className="mt-6 leading-relaxed text-muted-foreground">
         Or perhaps none of these descriptions quite fit. You may still be
         discovering who you are, what is yours to offer, and how you might
         meaningfully participate in this moment.
@@ -3286,15 +3215,12 @@ export default function FellowshipPage() {
     {/* WHAT MATTERS MOST */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-10 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-8">
-      <p className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+    <div className="mx-auto mt-10 max-w-4xl border-x-2 border-[#B88610] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-8">
+      <p className="font-semibold leading-relaxed text-foreground">
         What matters most to us is not your identity, title or what you have
-        already accomplished, but{" "}
-        <strong className="font-semibold">
-          the sincerity of your inquiry, your commitment to individual and
-          collective transformation, and your genuine desire to contribute to
-          the life of this community.
-        </strong>
+        already accomplished, but the sincerity of your inquiry, your
+        commitment to individual and collective transformation, and your
+        genuine desire to contribute to the life of this community.
       </p>
     </div>
 
@@ -3303,7 +3229,13 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-cream p-6 md:p-8">
-      <h3 className="font-serif text-2xl font-medium text-foreground">
+      <h3
+        className="text-2xl font-normal leading-tight text-foreground"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
         Still unsure?
       </h3>
 
