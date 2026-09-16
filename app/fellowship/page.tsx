@@ -3031,7 +3031,7 @@ export default function FellowshipPage() {
       </h3>
 
       {/* Same cream background as the Still Unsure box */}
-      <div className="mt-6 rounded-xl border border-border bg-cream px-6 py-6 md:px-9 md:py-7">
+      <div className="mt-6 rounded-xl bg-cream p-6 md:p-8">
         <ul className="space-y-3">
 
           <li className="flex items-start gap-3">
