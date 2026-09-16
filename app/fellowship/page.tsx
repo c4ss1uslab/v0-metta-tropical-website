@@ -3034,7 +3034,7 @@ export default function FellowshipPage() {
         This Fellowship is for those who:
       </h3>
 
-      {/* Compact, Always-Visible List */}
+      {/* Compact list — no bold text within bullet points */}
       <div className="mt-6 border border-[#D9A01B]/20 bg-[#FFFDF6] px-6 py-6 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-9 md:py-7">
         <ul className="space-y-3">
 
@@ -3042,11 +3042,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Feel the{" "}
-              <strong className="font-semibold text-foreground">
-                pain and beauty of the world deeply
-              </strong>{" "}
-              and are called to care more deeply for it.
+              Feel the pain and beauty of the world deeply and are called to
+              care more deeply for it.
             </p>
           </li>
 
@@ -3054,10 +3051,7 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Sense that inherited definitions of{" "}
-              <strong className="font-semibold text-foreground">
-                success, progress, and impact
-              </strong>{" "}
+              Sense that inherited definitions of success, progress, and impact
               no longer fully answer the questions your life is asking.
             </p>
           </li>
@@ -3066,11 +3060,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Have grown skeptical of the{" "}
-              <strong className="font-semibold text-foreground">
-                underlying assumptions
-              </strong>{" "}
-              that shape many of our responses to the crises we face.
+              Have grown skeptical of the underlying assumptions that shape
+              many of our responses to the crises we face.
             </p>
           </li>
 
@@ -3078,11 +3069,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Want to understand the{" "}
-              <strong className="font-semibold text-foreground">
-                deeper roots of the metacrisis
-              </strong>{" "}
-              and how to respond appropriately to it.
+              Want to understand the deeper roots of the metacrisis and how to
+              respond appropriately to it.
             </p>
           </li>
 
@@ -3090,11 +3078,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Feel called to offer their{" "}
-              <strong className="font-semibold text-foreground">
-                lives and unique gifts
-              </strong>{" "}
-              in service of life-affirming futures.
+              Feel called to offer their lives and unique gifts in service of
+              life-affirming futures.
             </p>
           </li>
 
@@ -3102,12 +3087,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Sense that{" "}
-              <strong className="font-semibold text-foreground">
-                spiritual transformation, systemic understanding, and
-                collective action
-              </strong>{" "}
-              are inseparable.
+              Sense that spiritual transformation, systemic understanding, and
+              collective action are inseparable.
             </p>
           </li>
 
@@ -3115,11 +3096,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Long for a community where deep questions of{" "}
-              <strong className="font-semibold text-foreground">
-                meaning, value, vocation, and existence
-              </strong>{" "}
-              can be held seriously.
+              Long for a community where deep questions of meaning, value,
+              vocation, and existence can be held seriously.
             </p>
           </li>
 
@@ -3127,11 +3105,9 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Are willing to examine how their{" "}
-              <strong className="font-semibold text-foreground">
-                own desires, habits, identities, and ways of life
-              </strong>
-              , may be contributing to the patterns we hope to transform.
+              Are willing to examine how their own desires, habits, identities,
+              and ways of life may be contributing to the patterns we hope to
+              transform.
             </p>
           </li>
 
@@ -3139,12 +3115,8 @@ export default function FellowshipPage() {
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
 
             <p className="leading-relaxed text-muted-foreground">
-              Long for a community that{" "}
-              <strong className="font-semibold text-foreground">
-                welcomes who they are, nurtures their becoming, and supports
-                them in transforming how they live
-              </strong>
-              .
+              Long for a community that welcomes who they are, nurtures their
+              becoming, and supports them in transforming how they live.
             </p>
           </li>
 
@@ -3204,19 +3176,12 @@ export default function FellowshipPage() {
         carrying the grief and urgency of accelerating ecological breakdown.
       </p>
 
+      {/* Closing paragraphs — no yellow box */}
       <p className="mt-6 leading-relaxed text-muted-foreground">
         Or perhaps none of these descriptions quite fit. You may still be
         discovering who you are, what is yours to offer, and how you might
         meaningfully participate in this moment.
-      </p>
-    </div>
-
-    {/* ========================================================= */}
-    {/* WHAT MATTERS MOST */}
-    {/* ========================================================= */}
-
-    <div className="mx-auto mt-10 max-w-4xl border-x-2 border-[#B88610] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-8">
-      <p className="font-semibold leading-relaxed text-foreground">
+        {" "}
         What matters most to us is not your identity, title or what you have
         already accomplished, but the sincerity of your inquiry, your
         commitment to individual and collective transformation, and your
