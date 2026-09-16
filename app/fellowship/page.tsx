@@ -3112,10 +3112,14 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* YOU MIGHT IDENTIFY AS */}
-    {/* ========================================================= */}
+{/* YOU MIGHT IDENTIFY AS */}
+{/* ========================================================= */}
 
-    <div className="mx-auto mt-12 max-w-4xl">
+<div className="mx-auto mt-12 max-w-5xl">
+  <div className="grid items-stretch gap-8 md:grid-cols-2 lg:gap-12">
+
+    {/* LEFT — TEXT */}
+    <div className="flex flex-col justify-center">
       <h3
         className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
         style={{
@@ -3164,6 +3168,19 @@ export default function FellowshipPage() {
         the life of this community.
       </p>
     </div>
+
+    {/* RIGHT — IMAGE */}
+    <div className="relative min-h-[320px] overflow-hidden md:min-h-0">
+      <img
+        src="https://i.postimg.cc/wMG4Qrs8/DSCF5672.jpg"
+        alt="Community gathering at Metta Tropical"
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+    </div>
+
+  </div>
+</div>
 
     {/* ========================================================= */}
     {/* STILL UNSURE */}
