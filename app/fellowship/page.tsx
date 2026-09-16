@@ -2973,13 +2973,10 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto max-w-4xl">
-
-      {/* Section Label */}
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         Who This Is For
       </span>
 
-      {/* Main Heading */}
       <h2
         className="mt-4 max-w-4xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
@@ -2994,7 +2991,6 @@ export default function FellowshipPage() {
         the world it longs to bring into being
       </h2>
 
-      {/* Introductory Text */}
       <div className="mt-9 space-y-6 text-muted-foreground">
         <p className="leading-relaxed">
           We are calling together post-activist leaders—artists, educators,
@@ -3034,13 +3030,12 @@ export default function FellowshipPage() {
         This Fellowship is for those who:
       </h3>
 
-      {/* Compact list — no bold text within bullet points */}
-      <div className="mt-6 border border-[#D9A01B]/20 bg-[#FFFDF6] px-6 py-6 shadow-[0_8px_24px_rgba(15,23,42,0.035)] md:px-9 md:py-7">
+      {/* Same cream background as the Still Unsure box */}
+      <div className="mt-6 rounded-xl border border-border bg-cream px-6 py-6 md:px-9 md:py-7">
         <ul className="space-y-3">
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Feel the pain and beauty of the world deeply and are called to
               care more deeply for it.
@@ -3049,7 +3044,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Sense that inherited definitions of success, progress, and impact
               no longer fully answer the questions your life is asking.
@@ -3058,7 +3052,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Have grown skeptical of the underlying assumptions that shape
               many of our responses to the crises we face.
@@ -3067,7 +3060,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Want to understand the deeper roots of the metacrisis and how to
               respond appropriately to it.
@@ -3076,7 +3068,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Feel called to offer their lives and unique gifts in service of
               life-affirming futures.
@@ -3085,7 +3076,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Sense that spiritual transformation, systemic understanding, and
               collective action are inseparable.
@@ -3094,7 +3084,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Long for a community where deep questions of meaning, value,
               vocation, and existence can be held seriously.
@@ -3103,7 +3092,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Are willing to examine how their own desires, habits, identities,
               and ways of life may be contributing to the patterns we hope to
@@ -3113,7 +3101,6 @@ export default function FellowshipPage() {
 
           <li className="flex items-start gap-3">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-
             <p className="leading-relaxed text-muted-foreground">
               Long for a community that welcomes who they are, nurtures their
               becoming, and supports them in transforming how they live.
@@ -3139,32 +3126,23 @@ export default function FellowshipPage() {
         You might identify as:
       </h3>
 
-      {/* Single Paragraph — No Bullets or Box */}
       <p className="mt-5 leading-relaxed text-muted-foreground">
         An{" "}
-        <strong className="font-semibold text-foreground">
-          artist
-        </strong>{" "}
+        <strong className="font-semibold text-foreground">artist</strong>{" "}
         reshaping our cultural imagination, a{" "}
         <strong className="font-semibold text-foreground">
           community-builder
         </strong>{" "}
         cultivating islands of sanity, an{" "}
-        <strong className="font-semibold text-foreground">
-          educator
-        </strong>{" "}
+        <strong className="font-semibold text-foreground">educator</strong>{" "}
         reimagining learning at a time between worlds, a{" "}
-        <strong className="font-semibold text-foreground">
-          researcher
-        </strong>{" "}
+        <strong className="font-semibold text-foreground">researcher</strong>{" "}
         investigating the root causes of our crisis, an{" "}
         <strong className="font-semibold text-foreground">
           entrepreneur
         </strong>{" "}
         building life-affirming institutions, an{" "}
-        <strong className="font-semibold text-foreground">
-          activist
-        </strong>{" "}
+        <strong className="font-semibold text-foreground">activist</strong>{" "}
         exploring non-violence and social change, a{" "}
         <strong className="font-semibold text-foreground">
           technologist
@@ -3176,16 +3154,14 @@ export default function FellowshipPage() {
         carrying the grief and urgency of accelerating ecological breakdown.
       </p>
 
-      {/* Closing paragraphs — no yellow box */}
       <p className="mt-6 leading-relaxed text-muted-foreground">
         Or perhaps none of these descriptions quite fit. You may still be
         discovering who you are, what is yours to offer, and how you might
-        meaningfully participate in this moment.
-        {" "}
-        What matters most to us is not your identity, title or what you have
-        already accomplished, but the sincerity of your inquiry, your
-        commitment to individual and collective transformation, and your
-        genuine desire to contribute to the life of this community.
+        meaningfully participate in this moment. What matters most to us is not
+        your identity, title or what you have already accomplished, but the
+        sincerity of your inquiry, your commitment to individual and
+        collective transformation, and your genuine desire to contribute to
+        the life of this community.
       </p>
     </div>
 
@@ -3194,6 +3170,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-cream p-6 md:p-8">
+
       <h3
         className="text-2xl font-normal leading-tight text-foreground"
         style={{
@@ -3201,18 +3178,44 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        Still unsure?
+        Still Unsure?
       </h3>
 
-      <p className="mt-3 leading-relaxed text-muted-foreground">
-        If something here resonates, but you are unsure whether this is the
-        right moment or if this Fellowship is the right container for you, we
-        would love to meet you, hear the questions you are living with, and
-        explore that together. Whether or not you eventually join the
-        Fellowship.
+      {/* Discernment Call Invitation */}
+      <p className="mt-5 text-lg font-bold text-olive">
+        Schedule a discernment call.
       </p>
 
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-5 space-y-5 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          If something here resonates, but you&apos;re unsure whether the
+          Fellowship is the right place for you—or whether this is the right
+          moment in your life—we would love to explore that with you.
+        </p>
+
+        <p className="leading-relaxed">
+          We offer these conversations as a space to meet you beyond an
+          application: to listen to the questions you are living, what is
+          challenging you, what is seeking to emerge, and what draws you toward
+          this journey.
+        </p>
+
+        <p className="leading-relaxed">
+          This is not a selection process interview. It is a space for mutual
+          discernment, offered with care and without pressure, to help you
+          sense whether participating in the Fellowship feels aligned with
+          your life right now.
+        </p>
+
+        <p className="leading-relaxed">
+          Whether or not you eventually join, we would love to meet you.
+        </p>
+
+      </div>
+
+      {/* Actions */}
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
         <a
           href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Conversation"
           className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -3227,6 +3230,7 @@ export default function FellowshipPage() {
           Write to us →
         </a>
       </div>
+
     </div>
 
   </div>
