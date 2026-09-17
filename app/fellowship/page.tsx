@@ -3383,7 +3383,7 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-       {/* OFFERED AS A GIFT */}
+     {/* OFFERED AS A GIFT */}
 <section
   id="offered-as-a-gift"
   className="scroll-mt-32 bg-[#FFF9E9] py-20 lg:py-28"
@@ -3456,7 +3456,6 @@ export default function FellowshipPage() {
         simply could not access experiences we deeply longed for.
       </p>
 
-      {/* Bold, but same font and size as the body text */}
       <p className="font-semibold leading-relaxed text-foreground">
         We want to practice something different.
       </p>
@@ -3471,10 +3470,10 @@ export default function FellowshipPage() {
 
     {/* ========================================================= */}
     {/* WHAT DOES OFFERED AS A GIFT MEAN? */}
-    {/* Square edges, no surrounding border, thick yellow line on left */}
+    {/* Square edges, no surrounding border, 13px yellow line */}
     {/* ========================================================= */}
 
-    <details className="group mt-9 border-l-[18px] border-l-[#D9A01B] bg-background">
+    <details className="group mt-9 border-l-[13px] border-l-[#D9A01B] bg-background">
 
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
         <span
@@ -3612,22 +3611,28 @@ export default function FellowshipPage() {
 
     {/* ========================================================= */}
     {/* COLLECTIVE RESOURCE FUND */}
-    {/* Existing dropdown retained */}
+    {/* Identical design to the Offered as a Gift dropdown */}
     {/* ========================================================= */}
 
-    <details className="group mt-10 rounded-xl border border-olive/20 bg-[#F3F7EC]">
+    <details className="group mt-10 border-l-[13px] border-l-[#D9A01B] bg-background">
 
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
-        <span className="font-medium text-foreground">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
+        <span
+          className="text-lg font-medium leading-snug text-foreground md:text-xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Collective Resource Fund
         </span>
 
-        <span className="text-xl text-olive transition-transform group-open:rotate-45">
+        <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
           +
         </span>
       </summary>
 
-      <div className="space-y-5 border-t border-olive/15 px-6 py-6 text-muted-foreground">
+      <div className="space-y-6 px-6 pb-8 text-muted-foreground">
 
         <p className="leading-relaxed">
           Beyond making the Fellowship accessible, we are also experimenting
