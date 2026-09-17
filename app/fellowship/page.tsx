@@ -3750,19 +3750,49 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* CLOSING STATEMENT */}
-    {/* ========================================================= */}
+{/* CLOSING STATEMENT — FULL-WIDTH BANNER */}
+{/* ========================================================= */}
 
-    <div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-background px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
-      <p className="leading-relaxed text-foreground">
-        The Fellowship exists to help restore the intergenerational fabric
-        through which the wisdom, courage, and capacities this moment demands
-        can be cultivated and carried forward. We hope that, by coming together
-        in intimate and trustworthy relationships across generations, we can
-        become more capable of wisely stewarding our passage through this
-        civilizational threshold.
-      </p>
-    </div>
+<div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden bg-background py-16 shadow-[0_8px_30px_rgba(15,23,42,0.06)] md:py-20">
+
+  {/* Large organic yellow form — upper left */}
+  <div className="pointer-events-none absolute -left-24 -top-32 h-72 w-72 rounded-full bg-[#D9A01B]/18 md:h-96 md:w-96" />
+
+  {/* Smaller yellow form — lower right */}
+  <div className="pointer-events-none absolute -bottom-16 right-[8%] h-32 w-32 rounded-full border-[18px] border-[#D9A01B]/30 md:h-44 md:w-44 md:border-[24px]" />
+
+  {/* Small accent line */}
+  <div className="pointer-events-none absolute left-1/2 top-0 h-1.5 w-24 -translate-x-1/2 bg-[#D9A01B]" />
+
+  {/* Content */}
+  <div className="relative mx-auto max-w-4xl px-6 text-center lg:px-8">
+
+    <p
+      className="text-xl font-medium leading-relaxed text-foreground md:text-2xl lg:text-[1.7rem]"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      The Fellowship exists to help restore the intergenerational fabric
+      through which the wisdom, courage, and capacities this moment demands
+      can be cultivated and carried forward.
+    </p>
+
+    <p
+      className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      We hope that, by coming together in intimate and trustworthy
+      relationships across generations, we can become more capable of wisely
+      stewarding our passage through this civilizational threshold.
+    </p>
+
+  </div>
+</div>
 
   </div>
 </section>
