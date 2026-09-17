@@ -3749,26 +3749,25 @@ export default function FellowshipPage() {
 
     </div>
 
-    {/* ========================================================= */}
+{/* ========================================================= */}
 {/* CLOSING STATEMENT — FULL-WIDTH BANNER */}
 {/* ========================================================= */}
 
-<div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden bg-background py-16 shadow-[0_8px_30px_rgba(15,23,42,0.06)] md:py-20">
+<div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden bg-background py-8 shadow-[0_8px_30px_rgba(15,23,42,0.06)] md:py-10">
 
   {/* Large organic yellow form — upper left */}
-  <div className="pointer-events-none absolute -left-24 -top-32 h-72 w-72 rounded-full bg-[#D9A01B]/18 md:h-96 md:w-96" />
+  <div className="pointer-events-none absolute -left-20 -top-24 h-56 w-56 rounded-full bg-[#D9A01B]/18 md:h-72 md:w-72" />
 
   {/* Smaller yellow form — lower right */}
-  <div className="pointer-events-none absolute -bottom-16 right-[8%] h-32 w-32 rounded-full border-[18px] border-[#D9A01B]/30 md:h-44 md:w-44 md:border-[24px]" />
+  <div className="pointer-events-none absolute -bottom-12 right-[8%] h-24 w-24 rounded-full border-[14px] border-[#D9A01B]/30 md:h-32 md:w-32 md:border-[18px]" />
 
   {/* Small accent line */}
-  <div className="pointer-events-none absolute left-1/2 top-0 h-1.5 w-24 -translate-x-1/2 bg-[#D9A01B]" />
+  <div className="pointer-events-none absolute left-1/2 top-0 h-1.5 w-20 -translate-x-1/2 bg-[#D9A01B]" />
 
   {/* Content */}
-  <div className="relative mx-auto max-w-4xl px-6 text-center lg:px-8">
-
+  <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
     <p
-      className="text-xl font-medium leading-relaxed text-foreground md:text-2xl lg:text-[1.7rem]"
+      className="mx-auto max-w-3xl text-center text-lg font-medium leading-relaxed text-foreground md:text-xl"
       style={{
         fontFamily:
           '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -3776,21 +3775,11 @@ export default function FellowshipPage() {
     >
       The Fellowship exists to help restore the intergenerational fabric
       through which the wisdom, courage, and capacities this moment demands
-      can be cultivated and carried forward.
+      can be cultivated and carried forward. We hope that, by coming together
+      in intimate and trustworthy relationships across generations, we can
+      become more capable of wisely stewarding our passage through this
+      civilizational threshold.
     </p>
-
-    <p
-      className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl"
-      style={{
-        fontFamily:
-          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-      }}
-    >
-      We hope that, by coming together in intimate and trustworthy
-      relationships across generations, we can become more capable of wisely
-      stewarding our passage through this civilizational threshold.
-    </p>
-
   </div>
 </div>
 
