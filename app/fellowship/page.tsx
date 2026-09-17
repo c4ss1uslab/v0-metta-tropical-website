@@ -3301,7 +3301,6 @@ export default function FellowshipPage() {
         >
           it was never taught how to carry
         </span>
-        .
       </h2>
 
       {/* Opening Text */}
@@ -3409,8 +3408,7 @@ export default function FellowshipPage() {
             institutions are helping them make consequential life choices—how
             to live, what to value, what to learn, where to work, and what to
             devote themselves to—in relation to the depth of the transition
-            underway, and cultivate the capacities required for to respond to
-            the civilizational challenges we face at this moment.
+            underway, while preparing them to carry the responsibilities this civilizational moment is placing before them.
           </p>
         </article>
 
