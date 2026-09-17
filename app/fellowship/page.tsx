@@ -3442,19 +3442,19 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* CLOSING STATEMENT */}
-    {/* ========================================================= */}
+{/* CLOSING STATEMENT */}
+{/* ========================================================= */}
 
-    <div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
-      <p className="leading-relaxed text-foreground">
-        The Fellowship exists to help restore the intergenerational fabric
-        through which the wisdom, courage, and capacities this moment demands
-        can be cultivated and carried forward. We hope that, by coming together
-        in intimate and trustworthy relationships across generations, we can
-        become more capable of wisely stewarding our passage through this
-        civilizational threshold.
-      </p>
-    </div>
+<div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-background px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
+  <p className="leading-relaxed text-foreground">
+    The Fellowship exists to help restore the intergenerational fabric
+    through which the wisdom, courage, and capacities this moment demands
+    can be cultivated and carried forward. We hope that, by coming together
+    in intimate and trustworthy relationships across generations, we can
+    become more capable of wisely stewarding our passage through this
+    civilizational threshold.
+  </p>
+</div>
 
   </div>
 </section>
