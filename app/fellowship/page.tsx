@@ -3674,6 +3674,7 @@ export default function FellowshipPage() {
     </details>
 
   </div>
+  </div>
 </section>
 
         {/* FINAL CTA */}
