@@ -3409,9 +3409,17 @@ export default function FellowshipPage() {
         }}
       >
         A{" "}
-        <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
-          post-capitalist
-        </span>{" "}
+        <span
+  className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+  style={{
+    fontSize: "inherit",
+    fontFamily: "inherit",
+    fontWeight: "inherit",
+    lineHeight: "inherit",
+  }}
+>
+  post-capitalist
+</span>
         approach to money
       </h2>
     </div>
