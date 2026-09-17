@@ -3276,12 +3276,10 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="max-w-4xl">
-      {/* Section Label */}
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         Why This Exists, Now
       </span>
 
-      {/* Main Heading */}
       <h2
         className="mt-4 max-w-4xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
@@ -3301,9 +3299,9 @@ export default function FellowshipPage() {
         >
           it was never taught how to carry
         </span>
+        .
       </h2>
 
-      {/* Opening Text */}
       <div className="mt-9 space-y-6 text-muted-foreground">
         <p className="leading-relaxed">
           Beneath the visible crises of our time—ecological breakdown, social
@@ -3321,13 +3319,10 @@ export default function FellowshipPage() {
           As this predicament deepens, we see at least three broad attractors
           pulling at the future: greater fragmentation and chaos; authoritarian
           forms of order; or the emergence of more life-enhancing and
-          wisdom-centered forms of civilization.
-        </p>
-
-        <p className="leading-relaxed">
-          Moving toward the third attractor is not a given, it will require
-          profound changes not only in our systems and institutions, but in how
-          we understand ourselves, reality and relate to all life.
+          wisdom-centered forms of civilization. Moving toward the third
+          attractor is not a given, it will require profound changes not only
+          in our systems and institutions, but in how we understand ourselves,
+          reality and relate to all life.
         </p>
       </div>
     </div>
@@ -3337,7 +3332,6 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-12">
-      {/* Outside the three boxes */}
       <p className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         The Challenge Is:
       </p>
@@ -3408,7 +3402,8 @@ export default function FellowshipPage() {
             institutions are helping them make consequential life choices—how
             to live, what to value, what to learn, where to work, and what to
             devote themselves to—in relation to the depth of the transition
-            underway, while preparing them to carry the responsibilities this civilizational moment is placing before them.
+            underway, and cultivate the capacities required for to respond to
+            the civilizational challenges we face at this moment.
           </p>
         </article>
 
@@ -3429,11 +3424,8 @@ export default function FellowshipPage() {
         Older generations carry hard-won wisdom from lives spent within and
         outside the systems we have inherited. Younger generations bring their
         own wisdom, questions, and sensitivity to what no longer holds,
-        alongside a longing to help bring different futures into being.
-      </p>
-
-      <p className="leading-relaxed">
-        We place young people at the center of this Fellowship not because the
+        alongside a longing to help bring different futures into being. We
+        place young people at the center of this Fellowship not because the
         responsibility is theirs to carry alone, but because they will live
         most fully with the consequences of the choices being made today.
       </p>
@@ -3453,7 +3445,7 @@ export default function FellowshipPage() {
     {/* CLOSING STATEMENT */}
     {/* ========================================================= */}
 
-    <div className="mt-10 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 shadow-[0_6px_20px_rgba(15,23,42,0.035)] md:px-8">
+    <div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-[#FFF9E9] px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
       <p className="leading-relaxed text-foreground">
         The Fellowship exists to help restore the intergenerational fabric
         through which the wisdom, courage, and capacities this moment demands
