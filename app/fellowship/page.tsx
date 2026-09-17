@@ -3750,21 +3750,220 @@ export default function FellowshipPage() {
     </div>
 
 {/* ========================================================= */}
-{/* CLOSING STATEMENT — FULL-WIDTH BANNER */}
+{/* CLOSING STATEMENT — FULL-WIDTH MANDALA BANNER */}
 {/* ========================================================= */}
 
 <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden bg-background py-8 shadow-[0_8px_30px_rgba(15,23,42,0.06)] md:py-10">
 
-  {/* Large organic yellow form — upper left */}
-  <div className="pointer-events-none absolute -left-20 -top-24 h-56 w-56 rounded-full bg-[#D9A01B]/18 md:h-72 md:w-72" />
+  {/* ======================================================= */}
+  {/* MANDALA — UPPER LEFT */}
+  {/* ======================================================= */}
 
-  {/* Smaller yellow form — lower right */}
-  <div className="pointer-events-none absolute -bottom-12 right-[8%] h-24 w-24 rounded-full border-[14px] border-[#D9A01B]/30 md:h-32 md:w-32 md:border-[18px]" />
+  <svg
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+    className="pointer-events-none absolute -left-16 -top-20 h-56 w-56 text-[#D9A01B] opacity-[0.18] md:-left-20 md:-top-24 md:h-72 md:w-72"
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {/* Outer circle */}
+      <circle cx="100" cy="100" r="72" />
 
-  {/* Small accent line */}
+      {/* Outer petals */}
+      <g>
+        <path d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z" />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      {/* Inner leaf / heart forms */}
+      <g>
+        <path d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z" />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      {/* Inner rings */}
+      <circle cx="100" cy="100" r="32" />
+      <circle cx="100" cy="100" r="14" />
+    </g>
+
+    {/* Small ornamental dots */}
+    <g fill="currentColor">
+      <circle cx="100" cy="10" r="4" />
+      <circle cx="100" cy="190" r="4" />
+      <circle cx="10" cy="100" r="4" />
+      <circle cx="190" cy="100" r="4" />
+      <circle cx="36" cy="36" r="4" />
+      <circle cx="164" cy="36" r="4" />
+      <circle cx="36" cy="164" r="4" />
+      <circle cx="164" cy="164" r="4" />
+    </g>
+  </svg>
+
+  {/* ======================================================= */}
+  {/* MANDALA — LOWER RIGHT */}
+  {/* Same pattern, smaller */}
+  {/* ======================================================= */}
+
+  <svg
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+    className="pointer-events-none absolute -bottom-16 right-[5%] h-40 w-40 rotate-[22deg] text-[#D9A01B] opacity-[0.22] md:-bottom-20 md:right-[7%] md:h-52 md:w-52"
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="100" cy="100" r="72" />
+
+      <g>
+        <path d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z" />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      <g>
+        <path d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z" />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      <circle cx="100" cy="100" r="32" />
+      <circle cx="100" cy="100" r="14" />
+    </g>
+
+    <g fill="currentColor">
+      <circle cx="100" cy="10" r="4" />
+      <circle cx="100" cy="190" r="4" />
+      <circle cx="10" cy="100" r="4" />
+      <circle cx="190" cy="100" r="4" />
+      <circle cx="36" cy="36" r="4" />
+      <circle cx="164" cy="36" r="4" />
+      <circle cx="36" cy="164" r="4" />
+      <circle cx="164" cy="164" r="4" />
+    </g>
+  </svg>
+
+  {/* Small central yellow accent */}
   <div className="pointer-events-none absolute left-1/2 top-0 h-1.5 w-20 -translate-x-1/2 bg-[#D9A01B]" />
 
-  {/* Content */}
+  {/* ======================================================= */}
+  {/* TEXT */}
+  {/* ======================================================= */}
+
   <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
     <p
       className="mx-auto max-w-3xl text-center text-lg font-medium leading-relaxed text-foreground md:text-xl"
@@ -3781,9 +3980,8 @@ export default function FellowshipPage() {
       civilizational threshold.
     </p>
   </div>
-</div>
 
-  </div>
+</div>
 </section>
 
         {/* FINAL CTA */}
