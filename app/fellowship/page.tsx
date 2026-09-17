@@ -3695,8 +3695,8 @@ export default function FellowshipPage() {
             institutions are helping them make consequential life choices—how
             to live, what to value, what to learn, where to work, and what to
             devote themselves to—in relation to the depth of the transition
-            underway, while preparing them to carry the responsibilities 
-            this civilizational moment is placing before them.
+            underway, while preparing them to carry the responsibilities this
+            civilizational moment is placing before them.
           </p>
         </article>
 
@@ -3704,50 +3704,65 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* INTERGENERATIONAL RESPONSE */}
+    {/* INTERGENERATIONAL RESPONSE + IMAGE */}
     {/* ========================================================= */}
 
-    <div className="mt-12 max-w-4xl space-y-6 text-muted-foreground">
+    <div className="mt-12 grid items-stretch gap-8 md:grid-cols-2 lg:gap-10">
 
-      <p className="font-semibold leading-relaxed text-foreground">
-        None of this is the work of the young alone.
-      </p>
+      {/* LEFT — TEXT */}
+      <div className="space-y-6 text-muted-foreground">
 
-      <p className="leading-relaxed">
-        Older generations carry hard-won wisdom from lives spent within and
-        outside the systems we have inherited. Younger generations bring their
-        own wisdom, questions, and sensitivity to what no longer holds,
-        alongside a longing to help bring different futures into being. We
-        place young people at the center of this Fellowship not because the
-        responsibility is theirs to carry alone, but because they will live
-        most fully with the consequences of the choices being made today.
-      </p>
+        <p className="font-semibold leading-relaxed text-foreground">
+          None of this is the work of the young alone.
+        </p>
 
-      <p className="leading-relaxed">
-        <strong className="font-semibold text-foreground">
-          The work of this moment is therefore intergenerational.
-        </strong>{" "}
-        We need spaces where generations can find one another again—to learn
-        from what has been lived, discern what must be carried forward and what
-        must be left behind, and begin taking responsibility for the future
-        together.
-      </p>
+        <p className="leading-relaxed">
+          Older generations carry hard-won wisdom from lives spent within and
+          outside the systems we have inherited. Younger generations bring their
+          own wisdom, questions, and sensitivity to what no longer holds,
+          alongside a longing to help bring different futures into being. We
+          place young people at the center of this Fellowship not because the
+          responsibility is theirs to carry alone, but because they will live
+          most fully with the consequences of the choices being made today.
+        </p>
+
+        <p className="leading-relaxed">
+          <strong className="font-semibold text-foreground">
+            The work of this moment is therefore intergenerational.
+          </strong>{" "}
+          We need spaces where generations can find one another again—to learn
+          from what has been lived, discern what must be carried forward and
+          what must be left behind, and begin taking responsibility for the
+          future together.
+        </p>
+      </div>
+
+      {/* RIGHT — IMAGE */}
+      <div className="relative min-h-[340px] overflow-hidden md:min-h-0">
+        <img
+          src="https://i.postimg.cc/SxVsRcXW/DSCF5376.jpg"
+          alt="Intergenerational gathering at Metta Tropical"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+
     </div>
 
     {/* ========================================================= */}
-{/* CLOSING STATEMENT */}
-{/* ========================================================= */}
+    {/* CLOSING STATEMENT */}
+    {/* ========================================================= */}
 
-<div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-background px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
-  <p className="leading-relaxed text-foreground">
-    The Fellowship exists to help restore the intergenerational fabric
-    through which the wisdom, courage, and capacities this moment demands
-    can be cultivated and carried forward. We hope that, by coming together
-    in intimate and trustworthy relationships across generations, we can
-    become more capable of wisely stewarding our passage through this
-    civilizational threshold.
-  </p>
-</div>
+    <div className="mt-10 max-w-4xl border-l-[5px] border-[#D9A01B] bg-background px-6 py-7 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:px-8">
+      <p className="leading-relaxed text-foreground">
+        The Fellowship exists to help restore the intergenerational fabric
+        through which the wisdom, courage, and capacities this moment demands
+        can be cultivated and carried forward. We hope that, by coming together
+        in intimate and trustworthy relationships across generations, we can
+        become more capable of wisely stewarding our passage through this
+        civilizational threshold.
+      </p>
+    </div>
 
   </div>
 </section>
