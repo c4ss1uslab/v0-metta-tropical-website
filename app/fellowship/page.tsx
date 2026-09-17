@@ -3555,10 +3555,10 @@ export default function FellowshipPage() {
     </details>
 
   </div>
-  </div>
+        </div>
 </section>
 
-{/* WHY THIS EXISTS, NOW */}
+  {/* WHY THIS EXISTS, NOW */}
 <section
   id="why-now"
   className="scroll-mt-32 bg-cream py-20 lg:py-28"
@@ -3982,6 +3982,7 @@ export default function FellowshipPage() {
   </div>
 
 </div>
+  </div>
 </section>
 
         {/* FINAL CTA */}
