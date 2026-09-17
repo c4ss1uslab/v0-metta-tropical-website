@@ -3402,27 +3402,26 @@ export default function FellowshipPage() {
 
       {/* Main Heading */}
       <h2
-        className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        A{" "}
-        <span
-  className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+  className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
   style={{
-    fontSize: "inherit",
-    fontFamily: "inherit",
-    fontWeight: "inherit",
-    lineHeight: "inherit",
+    fontFamily:
+      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
   }}
 >
-  post-capitalist
-</span>
-        approach to money
-      </h2>
-    </div>
+  A{" "}
+  <span
+    className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+    style={{
+      fontSize: "inherit",
+      fontFamily: "inherit",
+      fontWeight: "inherit",
+      lineHeight: "inherit",
+    }}
+  >
+    post-capitalist
+  </span>{" "}
+  approach to money
+</h2>
 
     {/* ========================================================= */}
     {/* OPENING QUOTE */}
