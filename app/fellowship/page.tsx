@@ -2972,6 +2972,661 @@ export default function FellowshipPage() {
   </div>
 </section>
 
+{/* ========================================================= */}
+{/* FELLOWSHIP SCHEDULE OVERVIEW */}
+{/* ========================================================= */}
+
+<section
+  id="schedule"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+
+    {/* ======================================================= */}
+    {/* INTRODUCTION */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Schedule Overview
+      </span>
+
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The 2027 Fellowship Journey
+      </h2>
+
+      <p className="mt-6 max-w-3xl leading-relaxed text-muted-foreground">
+        Our journey unfolds through a rhythm of immersive retreats,
+        eight-week online cycles, and dedicated periods for rest and
+        integration. Each phase builds upon the previous one, allowing
+        our inquiry, practice, and relationships to deepen throughout
+        the year.
+      </p>
+
+      {/* Date Overview */}
+      <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+        <span className="font-medium text-[#B88610]">
+          February – December 2027
+        </span>
+
+        <span className="hidden h-1 w-1 rounded-full bg-[#D9A01B] sm:block" />
+
+        <span className="text-muted-foreground">
+          Five Streams of Transformation
+        </span>
+
+        <span className="hidden h-1 w-1 rounded-full bg-[#D9A01B] sm:block" />
+
+        <span className="text-muted-foreground">
+          Three Residential Retreats
+        </span>
+      </div>
+    </div>
+
+    {/* ======================================================= */}
+    {/* RECURRING WEEKLY RHYTHM */}
+    {/* ======================================================= */}
+
+    <div
+      id="weekly-cadence"
+      className="mx-auto mt-12 max-w-5xl border border-[#D9A01B]/20 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:p-8"
+    >
+
+      {/* Header */}
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+
+        <h3
+          className="text-xl font-semibold text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          One Shared Weekly Rhythm
+        </h3>
+
+        <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+          During every online cycle
+        </span>
+
+      </div>
+
+      <p className="mt-3 leading-relaxed text-muted-foreground">
+        Throughout each online cycle, we gather three times a week.
+        The same rhythm accompanies all five Streams of Transformation.
+      </p>
+
+      {/* Three Weekly Gatherings */}
+      <div className="mt-7 grid gap-0 border-y border-border py-5 md:grid-cols-3 md:divide-x md:divide-border">
+
+        {/* Tuesday */}
+        <div className="pb-5 md:pb-0 md:pr-6">
+
+          <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
+            Tuesday
+          </span>
+
+          <h4 className="mt-2 font-serif text-lg font-medium leading-snug text-foreground">
+            Collective Inquiry
+          </h4>
+
+          <p className="mt-2 text-sm text-muted-foreground">
+            19h–21h
+          </p>
+
+        </div>
+
+        {/* Wednesday */}
+        <div className="border-t border-border py-5 md:border-t-0 md:px-6 md:py-0">
+
+          <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
+            Wednesday
+          </span>
+
+          <h4 className="mt-2 font-serif text-lg font-medium leading-snug text-foreground">
+            Contemplative &amp; Relational Practice
+          </h4>
+
+          <p className="mt-2 text-sm text-muted-foreground">
+            19h30–21h
+          </p>
+
+        </div>
+
+        {/* Thursday */}
+        <div className="border-t border-border pt-5 md:border-t-0 md:pl-6 md:pt-0">
+
+          <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
+            Thursday
+          </span>
+
+          <h4 className="mt-2 font-serif text-lg font-medium leading-snug text-foreground">
+            Wisdom Dialogues
+          </h4>
+
+          <p className="mt-2 text-sm text-muted-foreground">
+            19h–21h
+          </p>
+
+        </div>
+
+      </div>
+
+      <p className="mt-4 text-sm italic text-muted-foreground">
+        All three gatherings take place online. Rest weeks and residential
+        retreats follow a different rhythm.
+      </p>
+
+    </div>
+
+    {/* ======================================================= */}
+    {/* JOURNEY TIMELINE */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto mt-16 max-w-5xl">
+
+      <div className="mb-9 flex flex-wrap items-center gap-x-7 gap-y-3">
+
+        <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+          Follow the Journey
+        </span>
+
+        {/* Legend */}
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+
+          <span className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#D9A01B]" />
+            Retreat / Ceremony
+          </span>
+
+          <span className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="h-2.5 w-2.5 rounded-full bg-cyan-800" />
+            Online Cycle
+          </span>
+
+          <span className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="h-2.5 w-2.5 rounded-full bg-olive" />
+            Rest
+          </span>
+
+        </div>
+      </div>
+
+      {/* Continuous Timeline */}
+      <div className="relative">
+
+        {/* Vertical connecting line */}
+        <div
+          className="pointer-events-none absolute bottom-7 left-[11px] top-7 w-px bg-[#D9A01B]/40 md:left-[15px]"
+          aria-hidden="true"
+        />
+
+        {[
+          /* ================================================= */
+          /* OPENING CEREMONY */
+          /* ================================================= */
+
+          {
+            kind: "ceremony",
+            label: "The Beginning",
+            title: "Opening Ceremony",
+            subtitle: "Coming Together",
+            dates: "February 3, 2027",
+            time: "18h45–21h30",
+            location: "Online",
+          },
+
+          /* ================================================= */
+          /* OPENING RETREAT */
+          /* ================================================= */
+
+          {
+            kind: "retreat",
+            label: "Opening Retreat",
+            title: "Inviting the Sacred",
+            subtitle: "Tending to the Soul of Our Community",
+            dates: "February 7–14, 2027",
+            location: "São Paulo, Brazil",
+          },
+
+          /* ================================================= */
+          /* THE SACRED */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 01 · Eight-Week Online Cycle",
+            title: "The Sacred",
+            subtitle: "Remembering What Ultimately Matters",
+            dates: "February 15 – April 11, 2027",
+            weeks: [
+              "February 15–21, 2027",
+              "February 22–28, 2027",
+              "March 1–7, 2027",
+              "March 8–14, 2027",
+              "March 15–21, 2027",
+              "March 22–28, 2027",
+              "March 29 – April 4, 2027",
+              "April 5–11, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* SOUL */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 02 · Eight-Week Online Cycle",
+            title: "Soul",
+            subtitle: "Remembering Who We Are",
+            dates: "April 12 – June 6, 2027",
+            weeks: [
+              "April 12–18, 2027",
+              "April 19–25, 2027",
+              "April 26 – May 2, 2027",
+              "May 3–9, 2027",
+              "May 10–16, 2027",
+              "May 17–23, 2027",
+              "May 24–30, 2027",
+              "May 31 – June 6, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* REST WEEK 01 */
+          /* ================================================= */
+
+          {
+            kind: "rest",
+            label: "Rest & Integration",
+            title: "Rest Week",
+            dates: "June 7–13, 2027",
+          },
+
+          /* ================================================= */
+          /* SYSTEMS — FIRST PHASE */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 03 · First Three Weeks",
+            title: "Systems",
+            subtitle: "Remembering Where We Are",
+            dates: "June 14 – July 4, 2027",
+            weeks: [
+              "June 14–20, 2027",
+              "June 21–27, 2027",
+              "June 27 – July 4, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* MIDPOINT RETREAT */
+          /* ================================================= */
+
+          {
+            kind: "retreat",
+            label: "Midpoint Retreat",
+            title: "Feeling the Metacrisis",
+            subtitle:
+              "Relating to the Systems & Territories We Are Embedded In",
+            dates: "July 4–11, 2027",
+            location: "Location to be confirmed",
+          },
+
+          /* ================================================= */
+          /* SYSTEMS — SECOND PHASE */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 03 · Final Five Weeks",
+            title: "Systems — Continued",
+            subtitle: "Remembering Where We Are",
+            dates: "July 12 – August 15, 2027",
+            startWeek: 4,
+            weeks: [
+              "July 12–18, 2027",
+              "July 19–25, 2027",
+              "July 26 – August 1, 2027",
+              "August 2–8, 2027",
+              "August 9–15, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* SOIL */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 04 · Eight-Week Online Cycle",
+            title: "Soil",
+            subtitle: "Remembering Our Place in the Web of Life",
+            dates: "August 16 – October 10, 2027",
+            weeks: [
+              "August 16–22, 2027",
+              "August 23–29, 2027",
+              "August 30 – September 5, 2027",
+              "September 6–12, 2027",
+              "September 13–19, 2027",
+              "September 20–26, 2027",
+              "September 27 – October 3, 2027",
+              "October 4–10, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* REST WEEK 02 */
+          /* ================================================= */
+
+          {
+            kind: "rest",
+            label: "Rest & Integration",
+            title: "Rest Week",
+            dates: "October 11–17, 2027",
+          },
+
+          /* ================================================= */
+          /* SOCIETY */
+          /* ================================================= */
+
+          {
+            kind: "online",
+            label: "Stream 05 · Eight-Week Online Cycle",
+            title: "Society",
+            subtitle: "Remembering How to Respond to This Moment",
+            dates: "October 18 – December 12, 2027",
+            weeks: [
+              "October 18–24, 2027",
+              "October 25–31, 2027",
+              "November 1–7, 2027",
+              "November 8–14, 2027",
+              "November 15–21, 2027",
+              "November 22–28, 2027",
+              "November 29 – December 5, 2027",
+              "December 6–12, 2027",
+            ],
+          },
+
+          /* ================================================= */
+          /* CLOSING RETREAT */
+          /* ================================================= */
+
+          {
+            kind: "retreat",
+            label: "Closing Retreat",
+            title: "Serving the Whole",
+            subtitle:
+              "Contributing to the Emergence of Life-Enhancing Futures",
+            dates: "December 12–19, 2027",
+            location: "Location to be confirmed",
+          },
+
+        ].map((event, index) => (
+
+          <div
+            key={`${event.title}-${index}`}
+            className="relative pb-7 pl-10 last:pb-0 md:pl-14"
+          >
+
+            {/* ================================================= */}
+            {/* TIMELINE NODE */}
+            {/* ================================================= */}
+
+            <div
+              className={`absolute left-0 top-6 z-10 flex h-6 w-6 items-center justify-center rounded-full border-[5px] border-[#FFFDF6] shadow-sm md:h-8 md:w-8 ${
+                event.kind === "online"
+                  ? "bg-cyan-800"
+                  : event.kind === "rest"
+                  ? "bg-olive"
+                  : "bg-[#D9A01B]"
+              }`}
+              aria-hidden="true"
+            />
+
+            {/* ================================================= */}
+            {/* REST WEEKS — MINIMAL */}
+            {/* ================================================= */}
+
+            {event.kind === "rest" ? (
+
+              <div className="border-l-4 border-olive/60 bg-[#F3F7EC] px-6 py-5">
+
+                <span className="text-xs font-medium uppercase tracking-wide text-olive">
+                  {event.label}
+                </span>
+
+                <div className="mt-2 flex flex-wrap items-baseline justify-between gap-x-5 gap-y-2">
+
+                  <h3
+                    className="text-xl font-semibold text-foreground"
+                    style={{
+                      fontFamily:
+                        '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                    }}
+                  >
+                    {event.title}
+                  </h3>
+
+                  <span className="text-sm text-muted-foreground">
+                    {event.dates}
+                  </span>
+
+                </div>
+
+                <p className="mt-2 text-sm italic leading-relaxed text-muted-foreground">
+                  A dedicated pause for rest, integration, and renewal.
+                </p>
+
+              </div>
+
+            ) : (
+
+              /* =============================================== */
+              /* RETREATS, CEREMONY & ONLINE STREAMS */
+              /* =============================================== */
+
+              <article
+                className={`border bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8 ${
+                  event.kind === "online"
+                    ? "border-cyan-800/15 border-l-4 border-l-cyan-800"
+                    : "border-[#D9A01B]/20 border-l-4 border-l-[#D9A01B]"
+                }`}
+              >
+
+                {/* Event Type */}
+                <span
+                  className={`text-xs font-medium uppercase tracking-wide ${
+                    event.kind === "online"
+                      ? "text-cyan-800"
+                      : "text-[#B88610]"
+                  }`}
+                >
+                  {event.label}
+                </span>
+
+                {/* Title and Date */}
+                <div className="mt-3 flex flex-col gap-3 md:flex-row md:items-start md:justify-between md:gap-8">
+
+                  <div className="min-w-0">
+
+                    <h3
+                      className="text-2xl font-semibold leading-tight text-foreground"
+                      style={{
+                        fontFamily:
+                          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                      }}
+                    >
+                      {event.title}
+                    </h3>
+
+                    {"subtitle" in event && event.subtitle && (
+
+                      <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+                        {event.subtitle}
+                      </p>
+
+                    )}
+
+                  </div>
+
+                  <div className="shrink-0 md:max-w-[190px] md:text-right">
+
+                    <p className="text-sm font-semibold leading-relaxed text-foreground">
+                      {event.dates}
+                    </p>
+
+                    {"location" in event && event.location && (
+
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {event.location}
+                      </p>
+
+                    )}
+
+                    {"time" in event && event.time && (
+
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {event.time}
+                      </p>
+
+                    )}
+
+                  </div>
+
+                </div>
+
+                {/* ============================================= */}
+                {/* ONLINE CYCLE — WEEKLY RHYTHM & WEEK DROPDOWN */}
+                {/* ============================================= */}
+
+                {event.kind === "online" &&
+                  "weeks" in event &&
+                  event.weeks && (
+
+                  <div className="mt-6 border-t border-border pt-5">
+
+                    {/* Compact Weekly Rhythm Reminder */}
+                    <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+
+                      <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
+                        Every Week
+                      </span>
+
+                      <span className="text-sm text-muted-foreground">
+                        Tue · Collective Inquiry
+                      </span>
+
+                      <span className="text-sm text-muted-foreground">
+                        Wed · Practice
+                      </span>
+
+                      <span className="text-sm text-muted-foreground">
+                        Thu · Wisdom Dialogues
+                      </span>
+
+                    </div>
+
+                    {/* Expandable Weekly Breakdown */}
+                    <details className="group mt-5">
+
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-border/70 pt-4 [&::-webkit-details-marker]:hidden">
+
+                        <span className="text-sm font-medium text-[#B88610]">
+                          View the weekly breakdown
+                        </span>
+
+                        <svg
+                          className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+
+                      </summary>
+
+                      {/* Week List */}
+                      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+
+                        {event.weeks.map((week, weekIndex) => (
+
+                          <div
+                            key={`${event.title}-${weekIndex}`}
+                            className="border-l-2 border-[#D9A01B]/45 bg-[#FFFDF6] px-4 py-3"
+                          >
+
+                            <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+                              Week{" "}
+                              {("startWeek" in event &&
+                                typeof event.startWeek === "number"
+                                ? event.startWeek
+                                : 1) + weekIndex}
+                            </span>
+
+                            <p className="mt-1 text-sm leading-relaxed text-foreground">
+                              {week}
+                            </p>
+
+                            {/*
+                              Future weekly themes can be added here
+                              beneath the corresponding week dates.
+                            */}
+
+                          </div>
+
+                        ))}
+
+                      </div>
+
+                    </details>
+
+                  </div>
+
+                )}
+
+              </article>
+
+            )}
+
+          </div>
+
+        ))}
+
+      </div>
+    </div>
+
+    {/* ======================================================= */}
+    {/* CLOSING NOTE */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl border-t border-border pt-6">
+
+      <p className="text-sm italic leading-relaxed text-muted-foreground">
+        The calendar provides the overall architecture of the journey.
+        Specific weekly themes, guest encounters, and additional emergent
+        experiences will be shared as the Fellowship unfolds.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
 {/* WHO THIS IS FOR */}
 <section
   id="who-this-is-for"
