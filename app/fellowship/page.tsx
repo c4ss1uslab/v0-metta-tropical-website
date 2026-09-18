@@ -3490,7 +3490,70 @@ export default function FellowshipPage() {
       })}
 
     </div>
+{/* ========================================================= */}
+{/* A NOTE ON EMERGENCE */}
+{/* ========================================================= */}
 
+<div className="mt-10 border-y border-foreground/15">
+
+  <details className="group">
+
+    {/* Dropdown Heading */}
+    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D9A01B] [&::-webkit-details-marker]:hidden">
+
+      <h3
+        className="text-lg font-semibold leading-snug text-foreground md:text-xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        A Note on Emergence
+      </h3>
+
+      {/* Dropdown Arrow */}
+      <svg
+        className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+
+    </summary>
+
+    {/* Expanded Content */}
+    <div className="max-w-4xl space-y-5 pb-7 leading-relaxed text-muted-foreground">
+
+      <p>
+        The Fellowship follows an intentional rhythm, but its structure is
+        not rigid. As our founding cohort, we will remain attentive to the
+        community’s evolving needs, allowing certain inquiries, practices,
+        and encounters to emerge along the way.
+      </p>
+
+      <p>
+        Dharma Families and individual coaching or therapy will be arranged
+        around participants’ availability, while Philosophical Dinners and
+        possible Emergent Immersions will be scheduled in conversation with
+        the community.
+      </p>
+
+      <p>
+        We want the structure to be strong enough to hold us, and alive
+        enough to respond to what emerges as we walk this journey together.
+      </p>
+
+    </div>
+
+  </details>
+
+</div>
   </div>
 </section>
 
