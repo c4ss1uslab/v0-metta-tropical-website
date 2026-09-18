@@ -2978,7 +2978,7 @@ export default function FellowshipPage() {
 
 <section
   id="schedule"
-  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
+  className="scroll-mt-32 bg-[#FFFDF6] py-16 lg:py-20"
 >
   <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -3002,32 +3002,26 @@ export default function FellowshipPage() {
         The Fellowship Schedule
       </h2>
 
-      <p className="mt-5 text-sm font-medium text-[#B88610]">
+      <p className="mt-4 text-sm font-medium text-[#B88610]">
         February – December 2027
       </p>
 
     </div>
 
     {/* ======================================================= */}
-    {/* TIMELINE LEGEND */}
+    {/* FORMAT LEGEND */}
     {/* ======================================================= */}
 
-    <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3">
+    <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3">
 
       <span className="flex items-center gap-2.5 text-sm text-muted-foreground">
-
-        <span className="h-3 w-3 rounded-full bg-[#FACC15] shadow-[0_0_0_3px_rgba(250,204,21,0.16),0_0_10px_rgba(250,204,21,0.45)]" />
-
+        <span className="h-2.5 w-2.5 rounded-full bg-[#E6BE43] shadow-[0_0_0_3px_rgba(230,190,67,0.12),0_0_8px_rgba(230,190,67,0.32)]" />
         Online
-
       </span>
 
       <span className="flex items-center gap-2.5 text-sm text-muted-foreground">
-
-        <span className="h-3 w-3 rounded-full bg-[#4ADE80] shadow-[0_0_0_3px_rgba(74,222,128,0.16),0_0_10px_rgba(74,222,128,0.45)]" />
-
+        <span className="h-2.5 w-2.5 rounded-full bg-[#74C69D] shadow-[0_0_0_3px_rgba(116,198,157,0.12),0_0_8px_rgba(116,198,157,0.32)]" />
         In-person
-
       </span>
 
     </div>
@@ -3036,12 +3030,12 @@ export default function FellowshipPage() {
     {/* CONNECTED TIMELINE */}
     {/* ======================================================= */}
 
-    <div className="relative mt-6">
+    <div className="relative mt-5">
 
-      {/* Continuous connecting line */}
+      {/* Continuous timeline line */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-5 left-[9px] top-5 w-px bg-[#D9A01B]/35 md:left-[11px]"
+        className="pointer-events-none absolute bottom-4 left-[9px] top-4 w-px bg-[#B88610]/30 md:left-[11px]"
       />
 
       {[
@@ -3051,11 +3045,12 @@ export default function FellowshipPage() {
 
         {
           kind: "ceremony",
-          label: "The Beginning",
-          title: "The Launch",
-          subtitle: "Opening Ceremony Call",
+          label: "The Launch",
+          title: "Opening Ceremony Call",
+          subtitle: null,
           dates: "February 3, 2027",
           time: "18h45–21h30",
+          location: null,
         },
 
         /* ================================================= */
@@ -3068,6 +3063,7 @@ export default function FellowshipPage() {
           title: "Inviting the Sacred",
           subtitle: "Tending to the Soul of Our Community",
           dates: "February 7–14, 2027",
+          time: null,
           location: "São Paulo, Brazil",
         },
 
@@ -3081,16 +3077,8 @@ export default function FellowshipPage() {
           title: "The Sacred",
           subtitle: "Remembering What Ultimately Matters",
           dates: "February 15 – April 11, 2027",
-          weeks: [
-            "February 15–21, 2027",
-            "February 22–28, 2027",
-            "March 1–7, 2027",
-            "March 8–14, 2027",
-            "March 15–21, 2027",
-            "March 22–28, 2027",
-            "March 29 – April 4, 2027",
-            "April 5–11, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3103,16 +3091,8 @@ export default function FellowshipPage() {
           title: "Soul",
           subtitle: "Remembering Who We Are",
           dates: "April 12 – June 6, 2027",
-          weeks: [
-            "April 12–18, 2027",
-            "April 19–25, 2027",
-            "April 26 – May 2, 2027",
-            "May 3–9, 2027",
-            "May 10–16, 2027",
-            "May 17–23, 2027",
-            "May 24–30, 2027",
-            "May 31 – June 6, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3123,7 +3103,10 @@ export default function FellowshipPage() {
           kind: "rest",
           label: "Time Off",
           title: "Rest Week",
+          subtitle: null,
           dates: "June 7–13, 2027",
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3136,11 +3119,8 @@ export default function FellowshipPage() {
           title: "Systems",
           subtitle: "Remembering Where We Are",
           dates: "June 14 – July 4, 2027",
-          weeks: [
-            "June 14–20, 2027",
-            "June 21–27, 2027",
-            "June 27 – July 4, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3154,6 +3134,7 @@ export default function FellowshipPage() {
           subtitle:
             "Relating to the Systems & Territories We Are Embedded In",
           dates: "July 4–11, 2027",
+          time: null,
           location: "Location to be confirmed",
         },
 
@@ -3167,14 +3148,8 @@ export default function FellowshipPage() {
           title: "Systems",
           subtitle: "Remembering Where We Are",
           dates: "July 12 – August 15, 2027",
-          startWeek: 4,
-          weeks: [
-            "July 12–18, 2027",
-            "July 19–25, 2027",
-            "July 26 – August 1, 2027",
-            "August 2–8, 2027",
-            "August 9–15, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3187,16 +3162,8 @@ export default function FellowshipPage() {
           title: "Soil",
           subtitle: "Remembering Our Place in the Web of Life",
           dates: "August 16 – October 10, 2027",
-          weeks: [
-            "August 16–22, 2027",
-            "August 23–29, 2027",
-            "August 30 – September 5, 2027",
-            "September 6–12, 2027",
-            "September 13–19, 2027",
-            "September 20–26, 2027",
-            "September 27 – October 3, 2027",
-            "October 4–10, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3207,7 +3174,10 @@ export default function FellowshipPage() {
           kind: "rest",
           label: "Time Off",
           title: "Rest Week",
+          subtitle: null,
           dates: "October 11–17, 2027",
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3220,16 +3190,8 @@ export default function FellowshipPage() {
           title: "Society",
           subtitle: "Remembering How to Respond to This Moment",
           dates: "October 18 – December 12, 2027",
-          weeks: [
-            "October 18–24, 2027",
-            "October 25–31, 2027",
-            "November 1–7, 2027",
-            "November 8–14, 2027",
-            "November 15–21, 2027",
-            "November 22–28, 2027",
-            "November 29 – December 5, 2027",
-            "December 6–12, 2027",
-          ],
+          time: null,
+          location: null,
         },
 
         /* ================================================= */
@@ -3243,6 +3205,7 @@ export default function FellowshipPage() {
           subtitle:
             "Contributing to the Emergence of Life-Enhancing Futures",
           dates: "December 12–19, 2027",
+          time: null,
           location: "Location to be confirmed",
         },
 
@@ -3254,35 +3217,54 @@ export default function FellowshipPage() {
 
         const isRest = event.kind === "rest";
 
+        /*
+          Two distinct color systems:
+
+          Timeline accents:
+          Darker yellow and green for the left-side dots,
+          vertical card borders and event labels.
+
+          Format indicators:
+          Softer, luminous yellow and green for the
+          Online / In-person badges.
+        */
+
+        const accentColor = isOnline
+          ? "#B88610"
+          : "#387453";
+
+        const formatDotColor = isOnline
+          ? "#E6BE43"
+          : "#74C69D";
+
         return (
 
           <div
             key={`${event.title}-${index}`}
-            className="relative pb-3.5 pl-8 last:pb-0 md:pl-11"
+            className="relative pb-2 pl-8 last:pb-0 md:pl-11"
           >
 
             {/* =============================================== */}
-            {/* TIMELINE NODE */}
+            {/* TIMELINE NODE — DARKER ACCENT */}
             {/* =============================================== */}
 
             <div
               aria-hidden="true"
-              className={`absolute left-0 top-5 z-10 h-5 w-5 rounded-full border-[4px] border-[#FFFDF6] md:left-[1px] md:h-6 md:w-6 ${
-                isRest
-                  ? "bg-[#374151]"
-                  : isOnline
-                  ? "bg-[#FACC15] shadow-[0_0_10px_rgba(250,204,21,0.4)]"
-                  : "bg-[#4ADE80] shadow-[0_0_10px_rgba(74,222,128,0.4)]"
-              }`}
+              className="absolute left-0 top-4 z-10 h-5 w-5 rounded-full border-[4px] border-[#FFFDF6] md:left-[1px] md:h-6 md:w-6"
+              style={{
+                backgroundColor: isRest
+                  ? "#374151"
+                  : accentColor,
+              }}
             />
 
             {/* =============================================== */}
-            {/* REST WEEK — DARK, COMPACT */}
+            {/* REST WEEK — DARK, MINIMAL */}
             {/* =============================================== */}
 
             {isRest ? (
 
-              <div className="bg-[#343B43] px-5 py-3.5 text-white shadow-[0_4px_14px_rgba(15,23,42,0.08)] md:px-6">
+              <div className="bg-[#343B43] px-4 py-3 text-white shadow-[0_3px_12px_rgba(15,23,42,0.07)] md:px-5">
 
                 <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-2">
 
@@ -3298,7 +3280,7 @@ export default function FellowshipPage() {
                       Rest Week
                     </h3>
 
-                    <span className="rounded-full border border-white/20 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white/80">
+                    <span className="rounded-full border border-white/20 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white/80">
                       Off Week
                     </span>
 
@@ -3319,38 +3301,45 @@ export default function FellowshipPage() {
               /* ============================================= */
 
               <article
-                className={`border bg-white px-5 py-4 shadow-[0_5px_18px_rgba(15,23,42,0.045)] md:px-6 md:py-5 ${
-                  isOnline
-                    ? "border-foreground/10 border-l-[3px] border-l-[#FACC15]"
-                    : "border-foreground/10 border-l-[3px] border-l-[#4ADE80]"
-                }`}
+                className="border border-foreground/10 border-l-[3px] bg-white px-4 py-3 shadow-[0_3px_12px_rgba(15,23,42,0.035)] md:px-5 md:py-3.5"
+                style={{
+                  borderLeftColor: accentColor,
+                }}
               >
 
                 {/* =========================================== */}
                 {/* TOP ROW: EVENT LABEL + FORMAT INDICATOR */}
                 {/* =========================================== */}
 
-                <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5">
 
-                  <span className="text-[11px] font-semibold uppercase tracking-wide text-[#B88610]">
+                  {/* Label matches the left vertical border */}
+                  <span
+                    className="text-[11px] font-semibold uppercase tracking-wide"
+                    style={{
+                      color: accentColor,
+                    }}
+                  >
                     {event.label}
                   </span>
 
-                  {/* Bright format indicator */}
+                  {/* Softer luminous Online / In-person badge */}
                   <span
-                    className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide ${
+                    className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
                       isOnline
-                        ? "border-[#FACC15]/50 bg-[#FFFBEB] text-[#8A6500]"
-                        : "border-[#4ADE80]/50 bg-[#F0FDF4] text-[#166534]"
+                        ? "border-[#E6BE43]/40 bg-[#FFF9E8] text-[#8A6500]"
+                        : "border-[#74C69D]/40 bg-[#F0FAF4] text-[#276145]"
                     }`}
                   >
 
                     <span
-                      className={`h-2.5 w-2.5 rounded-full ${
-                        isOnline
-                          ? "bg-[#FACC15] shadow-[0_0_0_2px_rgba(250,204,21,0.14),0_0_8px_rgba(250,204,21,0.65)]"
-                          : "bg-[#4ADE80] shadow-[0_0_0_2px_rgba(74,222,128,0.14),0_0_8px_rgba(74,222,128,0.65)]"
-                      }`}
+                      className="h-2.5 w-2.5 rounded-full"
+                      style={{
+                        backgroundColor: formatDotColor,
+                        boxShadow: isOnline
+                          ? "0 0 0 2px rgba(230,190,67,0.12), 0 0 7px rgba(230,190,67,0.38)"
+                          : "0 0 0 2px rgba(116,198,157,0.12), 0 0 7px rgba(116,198,157,0.38)",
+                      }}
                     />
 
                     {isOnline ? "Online" : "In-person"}
@@ -3363,12 +3352,12 @@ export default function FellowshipPage() {
                 {/* TITLE, SUBTITLE & DATES */}
                 {/* =========================================== */}
 
-                <div className="mt-3 flex flex-col gap-2 md:flex-row md:items-start md:justify-between md:gap-6">
+                <div className="mt-2 flex flex-col gap-1.5 md:flex-row md:items-start md:justify-between md:gap-5">
 
                   <div className="min-w-0">
 
                     <h3
-                      className="text-xl font-semibold leading-tight text-foreground md:text-[22px]"
+                      className="text-xl font-semibold leading-tight text-foreground md:text-[21px]"
                       style={{
                         fontFamily:
                           '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -3377,10 +3366,10 @@ export default function FellowshipPage() {
                       {event.title}
                     </h3>
 
-                    {"subtitle" in event && event.subtitle && (
+                    {event.subtitle && (
 
                       <p
-                        className="mt-1 text-sm font-normal leading-snug text-muted-foreground md:text-base"
+                        className="mt-0.5 text-sm font-normal leading-snug text-muted-foreground md:text-base"
                         style={{
                           fontFamily:
                             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -3394,23 +3383,23 @@ export default function FellowshipPage() {
                   </div>
 
                   {/* Dates and location */}
-                  <div className="shrink-0 md:max-w-[200px] md:text-right">
+                  <div className="shrink-0 md:max-w-[205px] md:text-right">
 
                     <p className="text-sm font-medium leading-snug text-foreground">
                       {event.dates}
                     </p>
 
-                    {"time" in event && event.time && (
+                    {event.time && (
 
-                      <p className="mt-1 text-xs text-muted-foreground">
+                      <p className="mt-0.5 text-xs text-muted-foreground">
                         {event.time}
                       </p>
 
                     )}
 
-                    {"location" in event && event.location && (
+                    {event.location && (
 
-                      <p className="mt-1 text-xs text-muted-foreground">
+                      <p className="mt-0.5 text-xs text-muted-foreground">
                         {event.location}
                       </p>
 
@@ -3421,127 +3410,70 @@ export default function FellowshipPage() {
                 </div>
 
                 {/* =========================================== */}
-                {/* ONLINE STREAMS: WEEKLY MEETINGS */}
+                {/* ONLINE STREAMS: COMPACT WEEKLY SESSIONS */}
                 {/* =========================================== */}
 
-                {event.kind === "online" &&
-                  "weeks" in event &&
-                  event.weeks && (
+                {event.kind === "online" && (
 
-                  <div className="mt-4 border-t border-foreground/10 pt-3">
+                  <div className="mt-2.5 border-t border-foreground/10 pt-2.5">
 
-                    {/* Three recurring meetings */}
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1.5">
 
-                      <span className="text-[10px] font-semibold uppercase tracking-wide text-[#B88610]">
+                      <span
+                        className="text-[10px] font-semibold uppercase tracking-wide"
+                        style={{
+                          color: accentColor,
+                        }}
+                      >
                         Every Week
                       </span>
 
                       {/* Tuesday */}
                       <span className="text-xs leading-relaxed text-muted-foreground">
+
                         <strong className="font-semibold text-foreground">
                           Tue
                         </strong>
-                        {" · "}
-                        Collective Inquiry{" "}
+
+                        {" · "}Collective Inquiry{" "}
+
                         <span className="whitespace-nowrap font-medium text-foreground">
                           (19h–21h)
                         </span>
+
                       </span>
 
                       {/* Wednesday */}
                       <span className="text-xs leading-relaxed text-muted-foreground">
+
                         <strong className="font-semibold text-foreground">
                           Wed
                         </strong>
-                        {" · "}
-                        Practice{" "}
+
+                        {" · "}Practice{" "}
+
                         <span className="whitespace-nowrap font-medium text-foreground">
                           (19h30–21h)
                         </span>
+
                       </span>
 
                       {/* Thursday */}
                       <span className="text-xs leading-relaxed text-muted-foreground">
+
                         <strong className="font-semibold text-foreground">
                           Thu
                         </strong>
-                        {" · "}
-                        Wisdom Dialogues{" "}
+
+                        {" · "}Wisdom Dialogues{" "}
+
                         <span className="whitespace-nowrap font-medium text-foreground">
                           (19h–21h)
                         </span>
+
                       </span>
 
                     </div>
-
-                    {/* ======================================== */}
-                    {/* EXPANDABLE WEEKLY BREAKDOWN */}
-                    {/* ======================================== */}
-
-                    <details className="group mt-3">
-
-                      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-foreground/10 pt-3 [&::-webkit-details-marker]:hidden">
-
-                        <span className="text-xs font-medium text-[#B88610]">
-                          View weekly breakdown
-                        </span>
-
-                        <svg
-                          className="h-4 w-4 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.8"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          aria-hidden="true"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-
-                      </summary>
-
-                      {/* Weeks */}
-                      <div className="mt-3 grid gap-2 sm:grid-cols-2">
-
-                        {event.weeks.map((week, weekIndex) => (
-
-                          <div
-                            key={`${event.title}-${index}-${weekIndex}`}
-                            className="border-l-2 border-[#D9A01B]/50 bg-[#FFFDF6] px-3 py-2.5"
-                          >
-
-                            <span className="text-[10px] font-semibold uppercase tracking-wide text-[#B88610]">
-                              Week{" "}
-                              {(
-                                "startWeek" in event &&
-                                typeof event.startWeek === "number"
-                                  ? event.startWeek
-                                  : 1
-                              ) + weekIndex}
-                            </span>
-
-                            <p className="mt-0.5 text-xs leading-relaxed text-foreground">
-                              {week}
-                            </p>
-
-                            {/*
-                              Add a weekly theme here in the future.
-                              Example:
-
-                              <p className="mt-1 text-xs text-muted-foreground">
-                                Theme: The Nature of the Sacred
-                              </p>
-                            */}
-
-                          </div>
-
-                        ))}
-
-                      </div>
-
-                    </details>
 
                   </div>
 
