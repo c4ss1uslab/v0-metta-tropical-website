@@ -228,33 +228,30 @@ export default function FellowshipPage() {
 <section className="relative isolate overflow-hidden bg-[#FFFDF6]">
 
   {/* ========================================================= */}
-  {/* VIDEO BACKGROUND */}
+  {/* VIMEO VIDEO BACKGROUND */}
   {/* ========================================================= */}
 
-  <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+  <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
 
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      aria-hidden="true"
+    <iframe
+      src="https://player.vimeo.com/video/1132652455?h=3111e9c59b&background=1&autopause=0"
+      title="Metta Tropical Fellowship Background Video"
+      allow="autoplay; fullscreen; picture-in-picture"
+      loading="eager"
       tabIndex={-1}
-      className="absolute inset-0 h-full w-full object-cover"
-    >
-      {/* Replace the URL below with your video link */}
-      <source
-        src="YOUR_VIDEO_URL_HERE.mp4"
-        type="video/mp4"
-      />
-    </video>
+      aria-hidden="true"
+      className="pointer-events-none absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 border-0"
+      style={{
+        width: "max(100%, 177.78vh)",
+        height: "max(100%, 56.25vw)",
+      }}
+    />
 
-    {/* Cream overlay to maintain text readability */}
-    <div className="absolute inset-0 bg-[#FFFDF6]/80" />
+    {/* Cream overlay for readability */}
+    <div className="absolute inset-0 bg-[#FFFDF6]/70" />
 
-    {/* Subtle gradient for additional visual depth */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF6]/40 via-transparent to-[#FFFDF6]/10" />
+    {/* Subtle gradient for depth */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF6]/30 via-transparent to-[#FFFDF6]/10" />
 
   </div>
 
@@ -262,7 +259,7 @@ export default function FellowshipPage() {
   {/* MAIN HERO */}
   {/* ========================================================= */}
 
-  <div className="relative py-20 lg:py-28">
+  <div className="relative z-10 py-20 lg:py-28">
 
     <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -273,7 +270,7 @@ export default function FellowshipPage() {
           Welcome to the
         </span>
 
-        {/* Fellowship / Collective Name */}
+        {/* Fellowship Name */}
         <h1
           className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
           style={{
