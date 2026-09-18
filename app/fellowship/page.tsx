@@ -2501,7 +2501,7 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-  {/* PRACTICAL COMMITMENT */}
+{/* PRACTICAL COMMITMENT */}
 <section
   id="practical-commitment"
   className="scroll-mt-32 bg-cream py-20 lg:py-24"
@@ -2588,6 +2588,7 @@ export default function FellowshipPage() {
             Portuguese
           </p>
         </div>
+
       </div>
     </div>
 
@@ -2596,6 +2597,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-5xl">
+
       <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
         <h3
           className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -2688,6 +2690,7 @@ export default function FellowshipPage() {
             </p>
           </div>
         </article>
+
       </div>
 
       <p className="mt-4 text-sm font-semibold text-foreground">
@@ -2700,6 +2703,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-5xl">
+
       <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
         <h3
           className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -2747,6 +2751,7 @@ export default function FellowshipPage() {
             Thursdays · 19h–21h · Online
           </p>
         </article>
+
       </div>
     </div>
 
@@ -2755,6 +2760,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-5xl">
+
       <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
         <h3
           className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -2802,6 +2808,7 @@ export default function FellowshipPage() {
             Via resonance and emergence
           </p>
         </article>
+
       </div>
     </div>
 
@@ -2810,6 +2817,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-12 max-w-5xl">
+
       <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
         <h3
           className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -2856,12 +2864,14 @@ export default function FellowshipPage() {
             2–3 possible weekend experiences
           </p>
         </article>
+
       </div>
 
       <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
         These spaces are responsive to the interests and needs of the community
         and may not all be required for participation.
       </p>
+
     </div>
 
     {/* ========================================================= */}
@@ -2869,6 +2879,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-14 max-w-5xl border-t border-border pt-9">
+
       <h3
         className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
         style={{
@@ -2922,52 +2933,11 @@ export default function FellowshipPage() {
             Two dedicated rest weeks with no programming
           </p>
         </div>
+
       </div>
 
-      <a
-        href="#"
-        className="mt-6 inline-block text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
-      >
-        View the full Fellowship calendar →
-      </a>
     </div>
 
-    {/* ========================================================= */}
-    {/* NOTE ABOUT EMERGENCE */}
-    {/* ========================================================= */}
-
-    <details className="mx-auto mt-12 max-w-4xl rounded-xl border border-border bg-background">
-      <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-        <span className="font-medium text-foreground">
-          A Note About Emergence
-        </span>
-
-        <span className="text-xl text-[#B88610]">+</span>
-      </summary>
-
-      <div className="space-y-4 border-t border-border px-6 py-6 text-muted-foreground">
-        <p className="leading-relaxed">
-          The structure of the Fellowship is intentional, but not rigid.
-        </p>
-
-        <p className="leading-relaxed">
-          Because this is our founding cohort, we will move through the journey
-          with deep listening and responsiveness, continually sensing what the
-          community needs, what questions are becoming alive, and what forms of
-          support might help the work deepen.
-        </p>
-
-        <p className="leading-relaxed">
-          Some content, practices, guest encounters, or additional spaces may
-          therefore emerge along the way.
-        </p>
-
-        <p className="font-medium text-foreground">
-          We want the structure to be strong enough to hold us, and alive
-          enough to respond to what is actually emerging.
-        </p>
-      </div>
-    </details>
   </div>
 </section>
 
