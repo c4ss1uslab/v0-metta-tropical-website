@@ -2504,7 +2504,7 @@ export default function FellowshipPage() {
 {/* PRACTICAL COMMITMENT */}
 <section
   id="practical-commitment"
-  className="scroll-mt-32 bg-cream py-20 lg:py-24"
+  className="scroll-mt-32 bg-white py-20 lg:py-24"
 >
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
@@ -2617,7 +2617,7 @@ export default function FellowshipPage() {
       <div className="mt-5 grid items-stretch gap-4 lg:grid-cols-3">
 
         {/* Opening Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Opening Retreat
           </span>
@@ -2642,7 +2642,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Midpoint Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Midpoint Retreat
           </span>
@@ -2667,7 +2667,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Closing Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Closing Retreat
           </span>
@@ -2722,7 +2722,7 @@ export default function FellowshipPage() {
 
       <div className="mt-5 grid items-stretch gap-4 md:grid-cols-3">
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Community Inquiry
           </h4>
@@ -2732,7 +2732,7 @@ export default function FellowshipPage() {
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Collective Practice
           </h4>
@@ -2742,7 +2742,7 @@ export default function FellowshipPage() {
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Wisdom Dialogues
           </h4>
@@ -2779,7 +2779,7 @@ export default function FellowshipPage() {
 
       <div className="mt-5 grid items-stretch gap-4 md:grid-cols-3">
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Dharma Families
           </h4>
@@ -2789,7 +2789,7 @@ export default function FellowshipPage() {
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Therapy and/or Coaching
           </h4>
@@ -2799,7 +2799,7 @@ export default function FellowshipPage() {
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Mentorship
           </h4>
@@ -2837,7 +2837,7 @@ export default function FellowshipPage() {
 
       <div className="mt-5 grid items-stretch gap-4 md:grid-cols-2">
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Philosophical Dinners
           </h4>
@@ -2851,7 +2851,7 @@ export default function FellowshipPage() {
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-5 shadow-[0_6px_20px_rgba(15,23,42,0.045)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <h4 className="font-serif text-lg font-medium text-foreground">
             Emergent Immersions
           </h4>
