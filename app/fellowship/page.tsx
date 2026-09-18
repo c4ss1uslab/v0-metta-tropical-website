@@ -2919,8 +2919,7 @@ export default function FellowshipPage() {
           </p>
 
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Two dedicated rest weeks, alongside Integration Weeks throughout
-            the journey
+            Two dedicated rest weeks with no programming
           </p>
         </div>
       </div>
