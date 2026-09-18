@@ -3985,6 +3985,688 @@ export default function FellowshipPage() {
   </div>
 </section>
 
+{/* ========================================================= */}
+{/* FREQUENTLY ASKED QUESTIONS */}
+{/* ========================================================= */}
+
+<section
+  id="faq"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* ======================================================= */}
+    {/* SECTION HEADING */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+      <h2
+        className="text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Frequently Asked Questions
+      </h2>
+    </div>
+
+    {/* ======================================================= */}
+    {/* FAQ ACCORDION */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto mt-9 max-w-4xl space-y-3">
+
+      {/* ----------------------------------------------------- */}
+      {/* 01 — TIME COMMITMENT */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What is the time commitment?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            The Fellowship requires approximately 8–10 hours per week during
+            online periods, alongside three week-long, in-person retreats over
+            the ten months. The online journey unfolds in cycles of approximately
+            12–14 weeks of weekly gatherings, each followed by a week of rest
+            to allow space for integration and renewal.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 02 — LANGUAGE */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Is the Fellowship conducted in Portuguese?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Yes. The Fellowship is primarily conducted in Portuguese and rooted
+            in the Brazilian context. Some guest teachers may speak English or
+            Spanish, with translation provided.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 03 — COST */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What is the cost of the Fellowship?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            The Fellowship is offered as a gift, with no program fee. This
+            includes online sessions, retreats, accommodation and meals during
+            retreats, and the individual therapeutic and coaching support
+            offered throughout the program. Participants are only responsible
+            for their transportation to and from the in-person retreats.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 04 — LOCATION */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Can I participate if I don't live in São Paulo?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Yes. The weekly sessions take place online, so you can participate
+            from elsewhere in Brazil or abroad. Full time attendance in all
+            three in-person retreats are required for all participants. We may
+            also organize additional in-person gatherings (philosophical
+            dinners and weekend immersions) throughout the Fellowship, which
+            we highly recommend participation but they won't be required.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 05 — RETREATS */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Do I need to attend all three retreats?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Yes. The retreats are central to the Fellowship's developmental
+            journey and to building the relationships that will hold our
+            community. We ask applicants to confirm that they can attend all
+            three before committing to the program. If you foresee a conflict
+            or have particular circumstances you would like to discuss,
+            please reach out before applying.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 06 — WORKING OR STUDYING */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Can I participate while working or studying full-time?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            The Fellowship is designed to take place alongside participants'
+            existing lives, but it does require a substantial commitment of
+            time, energy, and attention. We encourage you to consider your
+            current responsibilities and whether you can realistically make
+            space for the weekly gatherings, personal practice, and three
+            retreats. If you're unsure, we would be happy to explore this
+            with you in a discernment conversation.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 07 — SELECTION */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            How are fellows selected?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="space-y-5 px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Our intention is to bring together a group of people who resonate
+            deeply with the Fellowship's inquiries, recognize in this
+            invitation something they have been longing for, and feel ready
+            to participate wholeheartedly in this journey.
+          </p>
+
+          <p>
+            We are less interested in what you have accomplished than in the
+            path that has brought you here: the questions you have been living
+            with, the experiences that have shaped you, and what is drawing
+            you toward this work. Because this is our first cohort, we are
+            especially attentive to bringing together a group of people who
+            can genuinely enrich each other's journey. We also want to take
+            time to genuinely meet the applicants and explore the resonance
+            between your aspirations, the inquiries at the heart of the
+            Fellowship, and the community we hope to cultivate together.
+          </p>
+
+          <p>
+            Ultimately, we are looking for people who will not only benefit
+            from this community, but feel the call to help bring it into being.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 08 — AGE RANGE */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Can I apply if I am outside the 18–29 age range?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Yes. Our first Fellowship is primarily designed for Brazilian
+            young adults aged 18–29, but we are open to considering a small
+            number of applicants outside this range whose aspirations and
+            circumstances resonate deeply with our mission. We cannot
+            guarantee admission outside the intended age range, but we
+            encourage you to reach out if you feel strongly drawn to this
+            work. We are also cultivating a wider intergenerational
+            community, with other possibilities of engagement with us.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 09 — AFTER THE FELLOWSHIP */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What happens after the Fellowship?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            We see the Fellowship not as an isolated ten-month experience,
+            but as a doorway into a longer-term community of practice,
+            learning, inquiry and shared responsibility. Our aspiration is
+            for fellows to remain part of the growing Metta Tropical
+            Collective community, where we will intentionally offer multiple
+            online and in-person opportunities to continue practicing,
+            developing, gathering, and collaborating beyond the formal
+            program.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 10 — LEADERSHIP */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What if I don't see myself as a leader?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="space-y-5 px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            We totally understand. We recognize that the word leadership
+            carries considerable baggage, often associated with status,
+            authority, achievement, or influence over others. Part of our
+            work is to reclaim a different understanding of leadership as a
+            sacred responsibility toward the flourishing of all life: a way
+            of relating to ourselves, one another, and the world with love,
+            wisdom, courage, and a willingness to care for something larger
+            than ourselves.
+          </p>
+
+          <p>
+            We sometimes use the term post-activism to gesture toward this
+            orientation. This is not a rejection of activism, but as an
+            invitation to question the very ways of perceiving, thinking,
+            relating, and organizing life from which our attempts to change
+            the world tend to arise.
+          </p>
+
+          <p>
+            Ultimately, we are interested in those who feel the pain of the
+            world deeply, and long to offer their lives in service of all
+            life. You do not need to call yourself a leader or post-activist,
+            but If you recognize something of that longing in your own heart,
+            this invitation is for you.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 11 — PREVIOUS EXPERIENCE */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Do I need previous experience with spirituality, systems thinking,
+            the metacrisis, or relational practices?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="space-y-5 px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Not necessarily. We do not expect applicants to be experts or
+            experienced practitioners in all these fields. Fellows will
+            arrive with different backgrounds, depths of experience, and
+            ways of engaging with the questions at the heart of our work.
+          </p>
+
+          <p>
+            At the same time, we are looking for people who recognize
+            something of their own journey in these inquiries and long to
+            explore them more deeply, in the company of others who share
+            that commitment. What matters more is your genuine desire and
+            curiosity to step fully into these dimensions of life, and the
+            recognition that this is the type of space your soul is most
+            hungry for at this moment in life.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 12 — RELIGION AND SPIRITUALITY */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Is the Fellowship affiliated with a particular religion or
+            spiritual tradition?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="space-y-5 px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            No. The Fellowship is not directly affiliated with any religious
+            or spiritual institution, although those of us holding this work
+            have been profoundly shaped and supported by spiritual and
+            wisdom traditions along our paths.
+          </p>
+
+          <p>
+            Buddhism has been a particularly important influence, alongside
+            other contemplative traditions, philosophical inquiries, and
+            contemporary approaches to human development and relational
+            practice. We carry deep gratitude for these lineages and seek
+            to honor the ways they have shaped our understanding of reality,
+            our practices, and how we aspire to live. So, in some way the
+            Fellowship is inevitably shaped by them.
+          </p>
+
+          <p>
+            We believe the roots of the metacrisis are deeply spiritual.
+            Beneath the breakdown of our systems lie deeper questions about
+            how we understand existence, what we recognize as intrinsically
+            valuable, what gives our lives meaning, and how we relate to one
+            another, the living world, and the sacred. Spiritual and religious
+            traditions have spent centuries engaging with these questions,
+            developing profound bodies of wisdom and practice around them.
+            We believe responding meaningfully to this moment requires us
+            to bring these dimensions of life back into the heart of our
+            collective inquiry.
+          </p>
+
+          <p>
+            To be part of the Fellowship you do not need to identify as
+            religious or spiritual, or subscribe to any particular worldview.
+            What we ask is a sincere willingness to engage with these
+            dimensions of life through inquiry, practice, and dialogue.
+          </p>
+
+          <p>
+            We also recognize that spirituality and religion can be delicate
+            territory. Many people carry experiences of harm, exclusion, or
+            disillusionment from religious and spiritual spaces, and we do
+            not take this lightly. Our intention is neither to shy away from
+            these questions nor to impose any specific path, but to create
+            conditions in which we can engage with them with openness,
+            discernment, humility, and care, knowing the importance they
+            have for our time.
+          </p>
+        </div>
+      </details>
+
+      {/* ----------------------------------------------------- */}
+      {/* 13 — DISCERNMENT CONVERSATION */}
+      {/* ----------------------------------------------------- */}
+
+      <details className="group border border-foreground/10 bg-background shadow-[0_4px_18px_rgba(15,23,42,0.035)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 md:px-8 [&::-webkit-details-marker]:hidden">
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            I'm interested, but I'm unsure whether this is the right moment
+            for me. Can we talk?
+          </span>
+
+          <svg
+            className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+
+        <div className="space-y-5 px-6 pb-7 leading-relaxed text-muted-foreground md:px-8">
+          <p>
+            Absolutely. We know that committing to a journey like this can
+            involve significant questions about your life, responsibilities,
+            and aspirations.
+          </p>
+
+          <p>
+            We offer discernment conversations as a space to meet you,
+            listen to what is alive for you, and explore together whether
+            the Fellowship feels aligned with your current moment. These
+            conversations are not selection interviews, and there is no
+            pressure to apply afterward.
+          </p>
+
+          <p>
+            Whether or not you eventually join the Fellowship, we would
+            love to meet you.
+          </p>
+
+          <a
+            href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Discernment%20Conversation"
+            className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Schedule a conversation →
+          </a>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
         {/* FINAL CTA */}
         <section id="apply" className="scroll-mt-24 bg-yellow py-20 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
