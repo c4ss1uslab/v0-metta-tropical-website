@@ -4521,9 +4521,12 @@ export default function FellowshipPage() {
               </div>
 
               {/* Replace this text with an <a> once its destination is set */}
-              <p className="pt-2 text-sm font-semibold text-[#B88610]">
-                Explore the Spirit of Our Work →
-              </p>
+              <a
+  href="/about"
+  className="inline-block pt-2 text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
+>
+  Explore the Spirit of Our Work →
+</a>
             </>
           ),
         },
