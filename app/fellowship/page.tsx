@@ -603,7 +603,14 @@ export default function FellowshipPage() {
           >
             At its heart, the Fellowship is an attempt to create the kinds
             of educational and communal spaces this moment demands:{" "}
-            <strong className="font-bold">
+            <strong
+              className="font-bold"
+              style={{
+                fontSize: "inherit",
+                fontFamily: "inherit",
+                lineHeight: "inherit",
+              }}
+            >
               sanctuaries of transformation
             </strong>{" "}
             where we can live inside the questions that matter most for this
