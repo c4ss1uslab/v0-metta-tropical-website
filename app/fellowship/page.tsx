@@ -5383,100 +5383,215 @@ export default function FellowshipPage() {
       </div>
     </div>
 
-    {/* ========================================================= */}
-    {/* GUEST TEACHERS */}
-    {/* ========================================================= */}
+{/* ========================================================= */}
+{/* GUEST TEACHERS */}
+{/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-6xl">
-      <div className="mb-7">
-        <h3
-          className="text-xl font-semibold text-foreground md:text-2xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          Guest Teachers
-        </h3>
-      </div>
+<div className="mx-auto mt-16 max-w-6xl">
 
-      <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        {[
-          {
-            name: "Bayo Akomolafe",
-            image: "https://i.postimg.cc/VvfYLwS4/Bayo-Akomolafe.jpg",
-            href: "#",
-          },
-          {
-            name: "Lourenço Bustani",
-            image: "https://i.postimg.cc/L59H6Sqr/Lourenco-Bustani.jpg",
-            href: "#",
-          },
-          {
-            name: "Nate Hagens",
-            image: "https://i.postimg.cc/L59H6SYp/Nate-Hagens.jpg",
-            href: "#",
-          },
-          {
-            name: "Nora Bateson",
-            image: "https://i.postimg.cc/VvKzJhnw/Nora-Bateson.jpg",
-            href: "#",
-          },
-          {
-            name: "Vanessa Andreotti",
-            image: "https://i.postimg.cc/kGT72HKB/Vanessa-Andreotti.jpg",
-            href: "#",
-          },
-          {
-            name: "Zak Stein",
-            image: "https://i.postimg.cc/Y2RrDvVT/Zak-Stein.jpg",
-            href: "#",
-          },
-          {
-            name: "Lama Rod",
-            image: "https://i.postimg.cc/SNjhZDcM/Lama-Rod.jpg",
-            href: "#",
-          },
-          {
-            name: "Samantha Sweetwater",
-            image: "https://i.postimg.cc/TYh6kCnJ/Samantha-Sweetwater.jpg",
-            href: "#",
-          },
-          {
-            name: "Adam Bucko",
-            image: "https://i.postimg.cc/FRFqYHZB/Adam-Bucko.jpg",
-            href: "#",
-          },
-        ].map((teacher) => (
-          <div key={teacher.name} className="min-w-0">
-            <div className="relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-              <img
-                src={teacher.image}
-                alt={teacher.name}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
+  {/* ========================================================= */}
+  {/* SECTION TITLE */}
+  {/* ========================================================= */}
 
-            <div className="mt-3">
-              <a
-                href={teacher.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-base font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
+  <div className="mb-7">
+
+    <h3
+      className="text-xl font-semibold text-foreground md:text-2xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      Guest Teachers
+    </h3>
+
+  </div>
+
+  {/* ========================================================= */}
+  {/* GUEST TEACHERS GRID */}
+  {/* 2 columns mobile / 3 tablet / 5 desktop */}
+  {/* ========================================================= */}
+
+  <div className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
+
+    {[
+      /* ===================================================== */
+      /* ROW 1 */
+      /* ===================================================== */
+
+      {
+        name: "Bayo Akomolafe",
+        image: "https://i.postimg.cc/VvfYLwS4/Bayo-Akomolafe.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Cristine Takuá",
+        image: "https://i.postimg.cc/bJHm9c6Z/Cristine-Takua.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Nate Hagens",
+        image: "https://i.postimg.cc/L59H6SYp/Nate-Hagens.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Mestre Cobra Mansa",
+        image: "https://i.postimg.cc/LXBx3KxQ/Cobra-Mansa.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Nora Bateson",
+        image: "https://i.postimg.cc/VvKzJhnw/Nora-Bateson.jpg",
+        linkedin: "",
+      },
+
+      /* ===================================================== */
+      /* ROW 2 */
+      /* ===================================================== */
+
+      {
+        name: "Lourenço Bustani",
+        image: "https://i.postimg.cc/L59H6Sqr/Lourenco-Bustani.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Vanessa Andreotti",
+        image: "https://i.postimg.cc/kGT72HKB/Vanessa-Andreotti.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Ubiraci Pataxó",
+        image: "https://i.postimg.cc/sxjwn68v/Ibiraci-Pataxo.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Zak Stein",
+        image: "https://i.postimg.cc/Y2RrDvVT/Zak-Stein.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "John Vervaeke",
+        image: "https://i.postimg.cc/FzTGwb5j/John-Verveake.jpg",
+        linkedin: "",
+      },
+
+      /* ===================================================== */
+      /* ROW 3 */
+      /* ===================================================== */
+
+      {
+        name: "Lama Rod",
+        image: "https://i.postimg.cc/SNjhZDcM/Lama-Rod.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Claudio Miranda",
+        image: "https://i.postimg.cc/tTtBNQrb/Claudio-Miranda.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Samantha Sweetwater",
+        image: "https://i.postimg.cc/TYh6kCnJ/Samantha-Sweetwater.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Kaka Verá",
+        image: "https://i.postimg.cc/kGTwLN3F/Kaka-Vera.jpg",
+        linkedin: "",
+      },
+
+      {
+        name: "Adam Bucko",
+        image: "https://i.postimg.cc/FRFqYHZB/Adam-Bucko.jpg",
+        linkedin: "",
+      },
+
+    ].map((teacher) => (
+
+      <div
+        key={teacher.name}
+        className="min-w-0"
+      >
+
+        {/* =================================================== */}
+        {/* PORTRAIT */}
+        {/* =================================================== */}
+
+        <div className="relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
+
+          <img
+            src={teacher.image}
+            alt={teacher.name}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+
+        </div>
+
+        {/* =================================================== */}
+        {/* NAME AND LINKEDIN */}
+        {/* =================================================== */}
+
+        <div className="mt-3">
+
+          {teacher.linkedin ? (
+
+            <a
+              href={teacher.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-baseline gap-1 text-base font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+
+              {teacher.name}
+
+              <span
+                className="shrink-0 text-sm"
+                aria-hidden="true"
               >
-                {teacher.name}
-                <span className="text-sm" aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        ))}
+                ↗
+              </span>
+
+            </a>
+
+          ) : (
+
+            <span
+              className="block text-base font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              {teacher.name}
+            </span>
+
+          )}
+
+        </div>
+
       </div>
-    </div>
+
+    ))}
+
+  </div>
+
+</div>
   </div>
 </section>
 
