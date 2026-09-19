@@ -4364,9 +4364,10 @@ export default function FellowshipPage() {
 
     {/* ========================================================= */}
     {/* THE DISCERNMENT PROCESS */}
+    {/* Reduced spacing from mt-16 to mt-8 */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-4xl">
+    <div className="mx-auto mt-8 max-w-4xl">
 
       <h3
         className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -4378,21 +4379,12 @@ export default function FellowshipPage() {
         The Discernment Process
       </h3>
 
-      <p className="mt-5 leading-relaxed text-muted-foreground">
-        The process itself is designed as an invitation into some of the
-        questions at the heart of our work:{" "}
-        <em>
-          Who must we become? What is my experience of living in a time
-          between worlds? What is trying to emerge through me at this time?
-          How am I making sense of this moment? What support do I mostly
-          long for right now? What are some of the deepest longings for
-          my life?
-        </em>
-      </p>
-
-      <p className="mt-5 leading-relaxed text-muted-foreground">
-        Through four stages of discernment, we hope to create opportunities
-        for genuine connection, inquiry and encounters.
+      <p className="mt-5 italic leading-relaxed text-muted-foreground">
+        The process itself is an invitation into some of the questions
+        at the heart of our work: How am I experiencing this time between
+        worlds? What is my life longing for? What is being asked of me?
+        Who must we become to meet this moment? What kind of community
+        do I need to hold me at this time?
       </p>
 
     </div>
@@ -4401,12 +4393,12 @@ export default function FellowshipPage() {
     {/* FOUR-STAGE DISCERNMENT TIMELINE */}
     {/* ========================================================= */}
 
-    <div className="relative mx-auto mt-12 max-w-4xl">
+    <div className="relative mx-auto mt-10 max-w-4xl">
 
-      {/* Continuous Vertical Line */}
+      {/* Continuous Vertical Line — Olive Green */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-10 left-[19px] top-5 w-px bg-[#D9A01B]/45 md:left-[23px]"
+        className="pointer-events-none absolute bottom-10 left-[19px] top-5 w-px bg-olive/45 md:left-[23px]"
       />
 
       <div className="space-y-0">
@@ -4418,7 +4410,7 @@ export default function FellowshipPage() {
         <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             01
           </div>
 
@@ -4437,8 +4429,8 @@ export default function FellowshipPage() {
                 Online Application
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
-                Sep 18 – Nov 15
+              <span className="shrink-0 text-sm font-semibold text-olive">
+                Sep 18 – Nov 15, 2026
               </span>
 
             </div>
@@ -4460,7 +4452,7 @@ export default function FellowshipPage() {
         <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             02
           </div>
 
@@ -4479,8 +4471,8 @@ export default function FellowshipPage() {
                 Individual Conversations
               </h4>
 
-              <span className="max-w-[250px] text-sm italic leading-relaxed text-[#B88610] md:text-right">
-                Invitations sent 2–3 weeks after application submission
+              <span className="shrink-0 text-sm font-semibold text-olive">
+                Rolling Basis
               </span>
 
             </div>
@@ -4504,7 +4496,7 @@ export default function FellowshipPage() {
         <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             03
           </div>
 
@@ -4523,19 +4515,18 @@ export default function FellowshipPage() {
                 Community Engagement
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
-                Nov 9 – Dec 11
+              <span className="shrink-0 text-sm font-semibold text-olive">
+                Nov 9 – Dec 11, 2026
               </span>
 
             </div>
 
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              A month-long process of engaging with our community and
-              other applicants through online sessions, practices, and
-              conversations. This is an opportunity to experience a glimpse
-              of the Fellowship before making a deeper commitment, by
-              experiencing our ways of learning, practicing, relating,
-              and making sense of the world together.
+              Over the course of a month, we will offer optional weekly
+              online gatherings (90 minutes each) where you can connect
+              with our community and fellow applicants, experience our
+              ways of learning, practicing, and relating, and get a glimpse
+              of the Fellowship before making a deeper commitment.
             </p>
 
           </div>
@@ -4548,8 +4539,8 @@ export default function FellowshipPage() {
 
         <div className="relative pl-14 md:pl-20">
 
-          {/* Final Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#D9A01B] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(217,160,27,0.16)] md:h-12 md:w-12">
+          {/* Final Timeline Marker — Olive Green */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-olive text-sm font-semibold text-white shadow-[0_4px_14px_rgba(15,23,42,0.10)] md:h-12 md:w-12">
             04
           </div>
 
@@ -4568,16 +4559,15 @@ export default function FellowshipPage() {
                 Final Invitations &amp; Commitment
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
+              <span className="shrink-0 text-sm font-semibold text-olive">
                 By Dec 15, 2026
               </span>
 
             </div>
 
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              We will extend formal invitations to the founding cohort
-              of the Metta Tropical Fellowship. Those invited will have
-              2–3 weeks to confirm their participation.
+              Those invited to the founding cohort of the Metta Tropical
+              Fellowship will have 2–3 weeks to confirm their participation.
             </p>
 
           </div>
@@ -4596,7 +4586,7 @@ export default function FellowshipPage() {
 
       <a
         href="#apply"
-        className="inline-flex items-center justify-center rounded-md bg-olive px-7 py-3.5 text-sm font-medium text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
+        className="inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
       >
         Begin your application →
       </a>
