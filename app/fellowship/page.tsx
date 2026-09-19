@@ -501,76 +501,117 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* FULL-WIDTH IMAGE + MANIFESTO BANNER */}
+    {/* FULL-WIDTH MANIFESTO BANNER */}
     {/* ========================================================= */}
 
-    <div className="relative left-1/2 mt-12 w-screen -translate-x-1/2">
+    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2">
 
-      {/*
-        Desktop layout:
-        - 40px left margin
-        - 50% image / 50% manifesto box
-        - 40px gap between image and box
-        - Box reaches the right edge of the screen
-
-        Both columns stretch to exactly the same height.
-      */}
-
-      <div className="grid grid-cols-1 items-stretch gap-6 pl-6 md:grid-cols-2 md:gap-10 md:pl-10">
+      <div className="relative isolate overflow-hidden border-y border-[#D9A01B]/10 bg-white shadow-[0_0_24px_rgba(15,23,42,0.075)]">
 
         {/* ===================================================== */}
-        {/* LEFT — IMAGE */}
+        {/* CENTRAL HORIZONTAL YELLOW LINE — APPROX. 4 CM */}
         {/* ===================================================== */}
 
-        <div className="relative min-h-[260px] w-full overflow-hidden md:min-h-0">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-[152px] -translate-x-1/2 bg-[#D9A01B]"
+        />
 
-          <img
-            src="https://i.postimg.cc/7P5Gt2S0/DSCF5398.jpg"
-            alt="Metta Tropical Fellowship gathering"
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover"
+        {/* ===================================================== */}
+        {/* TOP RIGHT — LARGE, DELICATE HALF-MOON */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 220 220"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-5 -top-12 z-0 h-36 w-36 text-[#E8BC2F] opacity-35 md:-right-8 md:-top-16 md:h-56 md:w-56 md:opacity-45"
+        >
+
+          {/* Main half-circle */}
+          <path
+            d="M 150 5 A 105 105 0 0 0 150 215"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
 
-        </div>
-
-        {/* ===================================================== */}
-        {/* RIGHT — WHITE MANIFESTO BOX */}
-        {/* ===================================================== */}
-
-        <div className="relative flex min-w-0 items-center border border-black/5 bg-white shadow-[0_8px_26px_rgba(15,23,42,0.075)]">
-
-          {/* Vertical yellow line — left edge */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute bottom-0 left-0 top-0 w-7 bg-[#E8BC2F]"
+          {/* Smaller concentric arc */}
+          <path
+            d="M 150 32 A 78 78 0 0 0 150 188"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
           />
 
-          {/* ================================================= */}
-          {/* MANIFESTO TEXT */}
-          {/* ================================================= */}
+          {/* Delicate innermost crescent */}
+          <path
+            d="M 150 61 A 49 49 0 0 0 150 159"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            opacity="0.45"
+          />
 
-          <div className="relative z-10 w-full py-8 pl-12 pr-6 text-center md:py-10 md:pl-16 md:pr-10 lg:pl-20 lg:pr-14">
+        </svg>
 
-            <p
-              className="mx-auto max-w-2xl text-base leading-relaxed text-foreground md:text-lg"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              At its heart, the Fellowship is an attempt to create the kinds
-              of educational and communal spaces this moment demands:{" "}
-              <strong className="font-semibold">
-                sanctuaries of transformation
-              </strong>{" "}
-              where we can live inside the questions that matter most for this
-              time, and undergo the kind of shape-shift through which what we
-              come to know begins to reshape how we live, what we value, how
-              we relate, what we take responsibility for, and what we
-              ultimately offer our lives to.
-            </p>
+        {/* ===================================================== */}
+        {/* BOTTOM LEFT — SMALLER ASYMMETRICAL CRESCENT */}
+        {/* ===================================================== */}
 
-          </div>
+        <svg
+          viewBox="0 0 180 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-12 -left-8 z-0 h-28 w-28 -rotate-[20deg] text-[#E8BC2F] opacity-40 md:-bottom-14 md:-left-10 md:h-44 md:w-44 md:opacity-50"
+        >
+
+          {/* Main half-moon */}
+          <path
+            d="M 40 5 A 85 85 0 0 1 40 175"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Inner crescent */}
+          <path
+            d="M 40 28 A 62 62 0 0 1 40 152"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* CENTERED MANIFESTO TEXT */}
+        {/* ===================================================== */}
+
+        <div className="relative z-10 mx-auto max-w-4xl px-8 py-9 text-center md:px-12 md:py-11">
+
+          <p
+            className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            At its heart, the Fellowship is an attempt to create the kinds
+            of educational and communal spaces this moment demands:{" "}
+            <strong className="font-bold">
+              sanctuaries of transformation
+            </strong>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which what we
+            come to know begins to reshape how we live, what we value, how
+            we relate, what we take responsibility for, and what we
+            ultimately offer our lives to.
+          </p>
 
         </div>
 
