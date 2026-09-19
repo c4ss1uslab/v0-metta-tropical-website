@@ -318,7 +318,7 @@ export default function FellowshipPage() {
 
         {/* Fellowship Description */}
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-          A ten-month initiatory journey for a generation coming of age in
+          A ten-month initiatory journey for a generation growing up in
           a time between worlds—when inherited ways of living are reaching
           their limits and the forms of life capable of replacing them have
           not yet fully emerged.
