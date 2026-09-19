@@ -5033,6 +5033,10 @@ export default function FellowshipPage() {
         transition: opacity 300ms ease, visibility 300ms ease;
       }
 
+      #team .team-photo {
+        transition: transform 500ms ease;
+      }
+
       @media (hover: hover) and (pointer: fine) {
         #team .team-portrait:hover .team-bio {
           opacity: 1;
@@ -5044,23 +5048,23 @@ export default function FellowshipPage() {
           transform: scale(1.035);
         }
       }
-
-      #team .team-photo {
-        transition: transform 500ms ease;
-      }
     `}
   </style>
 
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
+
     {/* ========================================================= */}
     {/* SECTION INTRODUCTION */}
     {/* ========================================================= */}
 
     <div className="mx-auto max-w-4xl">
+
+      {/* Section Label */}
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         The Team
       </span>
 
+      {/* Main Heading */}
       <h2
         className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
@@ -5085,65 +5089,70 @@ export default function FellowshipPage() {
         , too.
       </h2>
 
+      {/* ===================================================== */}
+      {/* UPDATED INTRODUCTORY TEXT */}
+      {/* ===================================================== */}
+
       <div className="mt-8 space-y-6 text-muted-foreground">
+
         <p className="leading-relaxed">
-          Most of us holding this journey have spent years wrestling with
-          the questions of living at a time between worlds. We have been
-          shaped by the experience of questioning the ways of life we have
-          inherited, longing for what has yet to emerge, and searching for
-          how to offer our lives more meaningfully to this moment.
+          Most of us holding this journey have spent years wrestling
+          with the challenges of living at a time between worlds.
+          We have been shaped by the experience of questioning the
+          ways of life we have inherited, longing for what has yet
+          to emerge, and searching for how to offer our lives more
+          meaningfully to this moment.
         </p>
 
         <p className="leading-relaxed">
-          For us, the metacrisis is something we feel before we can make
-          sense of it. It&apos;s the unsettling texture of everyday life, the
-          disbelief at how strange things have become, the sense that the
-          ground beneath our familiar ways of life has become unreliable,
-          and the deeper knowing that something more truthful, meaningful,
-          and real is possible.
+          For us, the metacrisis is something we feel before we can
+          make sense of it. It's the unsettling texture of everyday
+          life, the disbelief at how strange things have become,
+          the sense that the ground beneath our familiar ways of
+          life has become unreliable, and the deeper knowing that
+          something more truthful, meaningful, and beautiful
+          is possible.
         </p>
 
         <p className="leading-relaxed">
-          Our paths have taken us through different traditions, communities,
-          ideas, and transformative experiences, searching for guidance,
-          wisdom and islands of sanity amid the disorientation of our
-          times. Along the way, we have found others who feel the depth of
-          this moment, who refuse to become numb to the suffering and
-          disenchantment around us, and who still long for something
-          different to emerge.
+          Our paths have taken us through different traditions,
+          communities, ideas, and transformative experiences in
+          search of guidance, wisdom, and islands of sanity amid
+          the disorientation of our times. Along the way, we have
+          found not only companions who share the depth of these
+          questions, but also teachers, elders, and thinkers whose
+          wisdom, practices, and ways of living have helped us make
+          sense of this moment, deepen our own journeys, and sustain
+          our commitment to more life-affirming futures.
         </p>
 
         <p className="leading-relaxed">
-          We are not holding this Fellowship because we have figured out
-          how to navigate the transition ahead. In many ways, quite the
-          opposite. We are holding it because we, too, are trying to
-          discern how to live and respond to this moment. We have longed
-          for spaces where our grief can be met without being rushed,
-          our deepest longings can be given room to breathe, and our
-          imagination can reach beyond the limits of the world we have
-          inherited. Places where we can be held, challenged, and
-          accompanied through the transformation this moment asks of us.
-        </p>
-
-        <p className="font-medium leading-relaxed text-foreground">
-          We are here because we need this ourselves.
+          We are not holding this Fellowship because we have
+          figured out how to navigate the transition ahead.
+          Quite the opposite. We are holding it because we, too,
+          are trying to discern how to live and respond to this
+          moment, and because we have been profoundly shaped by
+          the people, practices, frameworks and wisdom we have
+          encountered along the way.
         </p>
 
         <p className="leading-relaxed">
-          The Fellowship is our offering to those who recognize something
-          of this longing and an invitation for us to start walking this
-          journey together, sharing the wisdom, learnings and insights we
-          have gained on the way, so we can cultivate the community needed
-          to meet this moment differently.
+          The Fellowship is our attempt to bring these gifts into
+          relationship. To gather those who recognize something
+          of this longing, connect them with the teachers, elders,
+          and companions who have nourished our own journeys,
+          and create a community where we can continue learning,
+          practicing, and becoming more capable of meeting this
+          moment together.
         </p>
 
         <p className="leading-relaxed">
-          Below are some of the people who will accompany this journey
-          through retreat facilitation, shared inquiry and practice,
-          mentorship, coaching, therapy, and guest dialogues, each bringing
-          their own experience and gifts in service of your unfolding.
+          Below are some of the people who will accompany you
+          this journey:
         </p>
+
       </div>
+
     </div>
 
     {/* ========================================================= */}
@@ -5151,7 +5160,9 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-14 max-w-6xl">
+
       <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
+
         <h3
           className="text-xl font-semibold text-foreground md:text-2xl"
           style={{
@@ -5165,434 +5176,431 @@ export default function FellowshipPage() {
         <span className="text-xs text-muted-foreground">
           Hover over a portrait to read their story
         </span>
+
       </div>
+
+      {/* ===================================================== */}
+      {/* CORE TEAM GRID — FOUR COLUMNS */}
+      {/* ===================================================== */}
 
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-        {/* MARCELO */}
-        <div className="min-w-0">
-          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-            <img
-              src="https://i.postimg.cc/pL7y0wwR/marcelo.jpg"
-              alt="Marcelo Peterlini"
-              loading="lazy"
-              className="team-photo absolute inset-0 h-full w-full object-cover"
-            />
 
-            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
-              <p className="text-xs leading-[1.5] text-white/90">
-                <strong className="font-semibold text-white">Mars</strong> is an educator
-                who has dedicated his life to understanding how to design
-                educational architectures that enable young people to realize
-                their fullest capacity and become wise elders capable of serving
-                the flourishing of life. To do this, he has been exploring how
-                to integrate spiritual formation, emotional maturity,
-                leadership development, and systems thinking into transformative
-                experiences that help us cultivate the capacities needed to
-                navigate the complexity of life and respond to the metacrisis.
+        {[
+          /* ================================================= */
+          /* MARCELO PETERLINI */
+          /* ================================================= */
+
+          {
+            name: "Marcelo Peterlini",
+            role: "Team Member & Facilitator",
+            image: "https://i.postimg.cc/pL7y0wwR/marcelo.jpg",
+            linkedin:
+              "https://www.linkedin.com/in/marcelo-peterlini-8a03ba22/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Mars
+                </strong>{" "}
+                is an educator who has dedicated his life to understanding
+                how to design educational architectures that enable young
+                people to realize their fullest capacity and become wise
+                elders capable of serving the flourishing of life. To do
+                this, he has been exploring how to integrate spiritual
+                formation, emotional maturity, leadership development,
+                and systems thinking into transformative experiences
+                that help us cultivate the capacities needed to navigate
+                the complexity of life and respond to the metacrisis.
                 Over more than ten years working in education, he has
-                collaborated with major Latin American leadership organizations,
-                developed socio-emotional education programs for schools,
-                mentored young people to enter universities, organized spiritual
-                retreats for youth, initiated a project to explore masculinity
-                with teenage boys in schools in the São Paulo region, and
-                offers therapeutic coaching to young leaders to align their
+                collaborated with major Latin American leadership
+                organizations, developed socio-emotional education
+                programs for schools, mentored young people to enter
+                universities, organized spiritual retreats for youth,
+                initiated a project to explore masculinity with teenage
+                boys in schools in the São Paulo region, and offers
+                therapeutic coaching to young leaders to align their
                 lives with their higher service to the planet.
-              </p>
-            </div>
-          </div>
+              </>
+            ),
+          },
 
-          <div className="mt-4">
-            <a
-              href="https://www.linkedin.com/in/marcelo-peterlini-8a03ba22/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              Marcelo Peterlini
-              <span className="text-sm" aria-hidden="true">↗</span>
-            </a>
+          /* ================================================= */
+          /* CÁSSIUS CARVALHO */
+          /* ================================================= */
 
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              Team Member &amp; Facilitator
-            </p>
-          </div>
-        </div>
-
-        {/* CÁSSIUS */}
-        <div className="min-w-0">
-          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-            <img
-              src="https://i.postimg.cc/9QSzx6v8/Cassius.png"
-              alt="Cássius Carvalho"
-              loading="lazy"
-              className="team-photo absolute inset-0 h-full w-full object-cover"
-            />
-
-            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
-              <p className="text-xs leading-[1.5] text-white/90">
-                <strong className="font-semibold text-white">Cássius</strong> is a
-                self-directed learner, meta-designer, and metacrisis researcher
-                who has spent the past five years exploring the question:{" "}
+          {
+            name: "Cássius Carvalho",
+            role: "Team Member & Researcher",
+            image: "https://i.postimg.cc/9QSzx6v8/Cassius.png",
+            linkedin: "https://www.linkedin.com/in/cassiuscarvalho/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Cássius
+                </strong>{" "}
+                is a self-directed learner, meta-designer, and
+                metacrisis researcher who has spent the past five
+                years exploring the question:{" "}
                 <em>
-                  How can we create systems that help us “play life” together —
-                  coordinating and collaborating toward increasingly wise and
-                  regenerative futures?
+                  How can we create systems that help us “play life”
+                  together — coordinating and collaborating toward
+                  increasingly wise and regenerative futures?
                 </em>{" "}
-                At 17, he was the first Latin American participant accepted
-                into a highly competitive career acceleration program in Silicon
-                Valley, and at 19 he was responsible for managing over $4
-                million in an AI startup. This experience disillusioned him
-                with a techno-solutionist worldview, and since 2019 he has been
-                exploring the intersections of art, technology, consciousness,
-                learning, regeneration, and play as systemic responses to the
-                metacrisis — applying his discoveries across diverse projects
-                and initiatives.
-              </p>
-            </div>
-          </div>
+                At 17, he was the first Latin American participant
+                accepted into a highly competitive career acceleration
+                program in Silicon Valley, and at 19 he was responsible
+                for managing over $4 million in an AI startup. This
+                experience disillusioned him with a techno-solutionist
+                worldview, and since 2019 he has been exploring the
+                intersections of art, technology, consciousness,
+                learning, regeneration, and play as systemic responses
+                to the metacrisis — applying his discoveries across
+                diverse projects and initiatives.
+              </>
+            ),
+          },
 
-          <div className="mt-4">
-            <a
-              href="https://www.linkedin.com/in/cassiuscarvalho/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              Cássius Carvalho
-              <span className="text-sm" aria-hidden="true">↗</span>
-            </a>
+          /* ================================================= */
+          /* NATHALIE ZOGBI */
+          /* ================================================= */
 
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              Team Member &amp; Researcher
-            </p>
-          </div>
-        </div>
-
-        {/* NATHALIE */}
-        <div className="min-w-0">
-          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-            <img
-              src="https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg"
-              alt="Nathalie Zogbi"
-              loading="lazy"
-              className="team-photo absolute inset-0 h-full w-full object-cover"
-            />
-
-            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
-              <p className="text-xs leading-[1.5] text-white/90">
+          {
+            name: "Nathalie Zogbi",
+            role: "Team Member & Mentor",
+            image: "https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg",
+            linkedin:
+              "https://www.linkedin.com/in/nathalie-zogbi-ruah-53648856/",
+            bio: (
+              <>
                 Before joining Imaginable Futures, Nathalie co-founded
-                CO.LETIVO, a teacher residency program in Brazil aimed at
-                bringing equity and excellence to teacher training in the
-                country. Nathalie was also a partner at SOMOS Educação, where
-                she managed Colégio Anglo 21, the company&apos;s leading primary and
-                secondary school in São Paulo. She also worked in the
-                company&apos;s M&amp;A and school operations teams. During her time in
-                education, Nathalie conducted a deep inquiry into what drives
-                extraordinary learning experiences, connecting research findings
-                from Learning Science to school practices worldwide. As part of
-                this journey, she visited over 40 schools across seven
-                countries and mapped effective learning conditions, curriculum
-                design choices, instructional strategies, and support systems
-                beyond the classroom. Nathalie began her career in investment
-                banking before moving into education in search of meaning and
-                social impact.
-              </p>
+                CO.LETIVO, a teacher residency program in Brazil aimed
+                at bringing equity and excellence to teacher training
+                in the country. Nathalie was also a partner at SOMOS
+                Educação, where she managed Colégio Anglo 21, the
+                company’s leading primary and secondary school in
+                São Paulo. She also worked in the company’s M&amp;A
+                and school operations teams. During her time in
+                education, Nathalie conducted a deep inquiry into
+                what drives extraordinary learning experiences,
+                connecting research findings from Learning Science
+                to school practices worldwide. As part of this
+                journey, she visited over 40 schools across seven
+                countries and mapped effective learning conditions,
+                curriculum design choices, instructional strategies,
+                and support systems beyond the classroom. Nathalie
+                began her career in investment banking before moving
+                into education in search of meaning and social impact.
+              </>
+            ),
+          },
+
+          /* ================================================= */
+          /* KAREN SUN */
+          /* ================================================= */
+
+          {
+            name: "Karen Sun",
+            role: "Team Member & Guest Teacher",
+            image: "https://i.postimg.cc/y85WfMw2/Karen.jpg",
+            linkedin: "https://www.linkedin.com/in/karenysun/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Karen
+                </strong>{" "}
+                is an educator and advisory Chief Technology Officer
+                with global experience researching and working at
+                the intersection of education and technology, in both
+                for-profit and non-profit organizations. Today, her
+                work focuses on understanding how to make wise,
+                life-conscious decisions around technology — and
+                especially how to bring this inquiry into educational
+                and governmental spaces. She has led initiatives
+                such as a digital school for COVID-displaced elementary
+                students in Colombia, digital literacy training and
+                higher education counseling in South Africa, and the
+                development of adaptive learning tools used by millions
+                of students on Quizlet. Karen is currently the CTO
+                of VélezReyes+, a Latin American philanthropic
+                platform working through education and leadership
+                transformation, and a professor of society and
+                technology at Insper, in Brazil.
+              </>
+            ),
+          },
+
+        ].map((member) => (
+
+          <div key={member.name} className="min-w-0">
+
+            {/* =============================================== */}
+            {/* PORTRAIT WITH HOVER-ONLY BIOGRAPHY */}
+            {/* =============================================== */}
+
+            <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
+
+              <img
+                src={member.image}
+                alt={member.name}
+                loading="lazy"
+                className="team-photo absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
+
+                <p className="text-xs leading-[1.5] text-white/90">
+                  {member.bio}
+                </p>
+
+              </div>
+
             </div>
-          </div>
 
-          <div className="mt-4">
-            <a
-              href="https://www.linkedin.com/in/nathalie-zogbi-ruah-53648856/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              Nathalie Zogbi
-              <span className="text-sm" aria-hidden="true">↗</span>
-            </a>
+            {/* =============================================== */}
+            {/* ALWAYS-VISIBLE NAME, ROLE AND LINKEDIN */}
+            {/* =============================================== */}
 
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              Team Member &amp; Mentor
-            </p>
-          </div>
-        </div>
+            <div className="mt-4">
 
-        {/* KAREN */}
-        <div className="min-w-0">
-          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-            <img
-              src="https://i.postimg.cc/y85WfMw2/Karen.jpg"
-              alt="Karen Sun"
-              loading="lazy"
-              className="team-photo absolute inset-0 h-full w-full object-cover"
-            />
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                {member.name}
 
-            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
-              <p className="text-xs leading-[1.5] text-white/90">
-                <strong className="font-semibold text-white">Karen</strong> is an
-                educator and advisory Chief Technology Officer with global
-                experience researching and working at the intersection of
-                education and technology, in both for-profit and non-profit
-                organizations. Today, her work focuses on understanding how to
-                make wise, life-conscious decisions around technology — and
-                especially how to bring this inquiry into educational and
-                governmental spaces. She has led initiatives such as a digital
-                school for COVID-displaced elementary students in Colombia,
-                digital literacy training and higher education counseling in
-                South Africa, and the development of adaptive learning tools
-                used by millions of students on Quizlet. Karen is currently the
-                CTO of VélezReyes+, a Latin American philanthropic platform
-                working through education and leadership transformation, and a
-                professor of society and technology at Insper, in Brazil.
+                <span
+                  className="shrink-0 text-sm"
+                  aria-hidden="true"
+                >
+                  ↗
+                </span>
+
+              </a>
+
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                {member.role}
               </p>
+
             </div>
+
           </div>
 
-          <div className="mt-4">
-            <a
-              href="https://www.linkedin.com/in/karenysun/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              Karen Sun
-              <span className="text-sm" aria-hidden="true">↗</span>
-            </a>
+        ))}
 
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              Team Member &amp; Guest Teacher
-            </p>
-          </div>
-        </div>
       </div>
+
     </div>
 
-{/* ========================================================= */}
-{/* GUEST TEACHERS */}
-{/* ========================================================= */}
+    {/* ========================================================= */}
+    {/* GUEST TEACHERS */}
+    {/* ========================================================= */}
 
-<div className="mx-auto mt-16 max-w-6xl">
+    <div className="mx-auto mt-16 max-w-6xl">
 
-  {/* ========================================================= */}
-  {/* SECTION TITLE */}
-  {/* ========================================================= */}
+      {/* Section Title */}
+      <div className="mb-7">
 
-  <div className="mb-7">
-
-    <h3
-      className="text-xl font-semibold text-foreground md:text-2xl"
-      style={{
-        fontFamily:
-          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-      }}
-    >
-      Guest Teachers
-    </h3>
-
-  </div>
-
-  {/* ========================================================= */}
-  {/* GUEST TEACHERS GRID */}
-  {/* 2 columns mobile / 3 tablet / 5 desktop */}
-  {/* ========================================================= */}
-
-  <div className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
-
-    {[
-      /* ===================================================== */
-      /* ROW 1 */
-      /* ===================================================== */
-
-      {
-        name: "Bayo Akomolafe",
-        image: "https://i.postimg.cc/VvfYLwS4/Bayo-Akomolafe.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Cristine Takuá",
-        image: "https://i.postimg.cc/bJHm9c6Z/Cristine-Takua.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Nate Hagens",
-        image: "https://i.postimg.cc/L59H6SYp/Nate-Hagens.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Mestre Cobra Mansa",
-        image: "https://i.postimg.cc/LXBx3KxQ/Cobra-Mansa.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Nora Bateson",
-        image: "https://i.postimg.cc/VvKzJhnw/Nora-Bateson.jpg",
-        linkedin: "",
-      },
-
-      /* ===================================================== */
-      /* ROW 2 */
-      /* ===================================================== */
-
-      {
-        name: "Lourenço Bustani",
-        image: "https://i.postimg.cc/L59H6Sqr/Lourenco-Bustani.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Vanessa Andreotti",
-        image: "https://i.postimg.cc/kGT72HKB/Vanessa-Andreotti.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Ubiraci Pataxó",
-        image: "https://i.postimg.cc/sxjwn68v/Ibiraci-Pataxo.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Zak Stein",
-        image: "https://i.postimg.cc/Y2RrDvVT/Zak-Stein.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "John Vervaeke",
-        image: "https://i.postimg.cc/FzTGwb5j/John-Verveake.jpg",
-        linkedin: "",
-      },
-
-      /* ===================================================== */
-      /* ROW 3 */
-      /* ===================================================== */
-
-      {
-        name: "Lama Rod",
-        image: "https://i.postimg.cc/SNjhZDcM/Lama-Rod.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Claudio Miranda",
-        image: "https://i.postimg.cc/tTtBNQrb/Claudio-Miranda.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Samantha Sweetwater",
-        image: "https://i.postimg.cc/TYh6kCnJ/Samantha-Sweetwater.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Kaka Verá",
-        image: "https://i.postimg.cc/kGTwLN3F/Kaka-Vera.jpg",
-        linkedin: "",
-      },
-
-      {
-        name: "Adam Bucko",
-        image: "https://i.postimg.cc/FRFqYHZB/Adam-Bucko.jpg",
-        linkedin: "",
-      },
-
-    ].map((teacher) => (
-
-      <div
-        key={teacher.name}
-        className="min-w-0"
-      >
-
-        {/* =================================================== */}
-        {/* PORTRAIT */}
-        {/* =================================================== */}
-
-        <div className="relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
-
-          <img
-            src={teacher.image}
-            alt={teacher.name}
-            loading="lazy"
-            className="h-full w-full object-cover"
-          />
-
-        </div>
-
-        {/* =================================================== */}
-        {/* NAME AND LINKEDIN */}
-        {/* =================================================== */}
-
-        <div className="mt-3">
-
-          {teacher.linkedin ? (
-
-            <a
-              href={teacher.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-baseline gap-1 text-base font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-
-              {teacher.name}
-
-              <span
-                className="shrink-0 text-sm"
-                aria-hidden="true"
-              >
-                ↗
-              </span>
-
-            </a>
-
-          ) : (
-
-            <span
-              className="block text-base font-semibold leading-tight text-foreground"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              {teacher.name}
-            </span>
-
-          )}
-
-        </div>
+        <h3
+          className="text-xl font-semibold text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Guest Teachers
+        </h3>
 
       </div>
 
-    ))}
+      {/* ===================================================== */}
+      {/* GUEST TEACHERS GRID */}
+      {/* 2 mobile / 3 tablet / 5 desktop */}
+      {/* ===================================================== */}
+
+      <div className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
+
+        {[
+          /* ================================================= */
+          /* ROW 1 */
+          /* ================================================= */
+
+          {
+            name: "Bayo Akomolafe",
+            image: "https://i.postimg.cc/VvfYLwS4/Bayo-Akomolafe.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Cristine Takuá",
+            image: "https://i.postimg.cc/bJHm9c6Z/Cristine-Takua.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Nate Hagens",
+            image: "https://i.postimg.cc/L59H6SYp/Nate-Hagens.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Mestre Cobra Mansa",
+            image: "https://i.postimg.cc/LXBx3KxQ/Cobra-Mansa.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Nora Bateson",
+            image: "https://i.postimg.cc/VvKzJhnw/Nora-Bateson.jpg",
+            linkedin: "",
+          },
+
+          /* ================================================= */
+          /* ROW 2 */
+          /* ================================================= */
+
+          {
+            name: "Lourenço Bustani",
+            image: "https://i.postimg.cc/L59H6Sqr/Lourenco-Bustani.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Vanessa Andreotti",
+            image: "https://i.postimg.cc/kGT72HKB/Vanessa-Andreotti.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Ubiraci Pataxó",
+            image: "https://i.postimg.cc/sxjwn68v/Ibiraci-Pataxo.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Zak Stein",
+            image: "https://i.postimg.cc/Y2RrDvVT/Zak-Stein.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "John Vervaeke",
+            image: "https://i.postimg.cc/FzTGwb5j/John-Verveake.jpg",
+            linkedin: "",
+          },
+
+          /* ================================================= */
+          /* ROW 3 */
+          /* ================================================= */
+
+          {
+            name: "Lama Rod",
+            image: "https://i.postimg.cc/SNjhZDcM/Lama-Rod.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Claudio Miranda",
+            image: "https://i.postimg.cc/tTtBNQrb/Claudio-Miranda.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Samantha Sweetwater",
+            image: "https://i.postimg.cc/TYh6kCnJ/Samantha-Sweetwater.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Kaka Verá",
+            image: "https://i.postimg.cc/kGTwLN3F/Kaka-Vera.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Adam Bucko",
+            image: "https://i.postimg.cc/FRFqYHZB/Adam-Bucko.jpg",
+            linkedin: "",
+          },
+
+        ].map((teacher) => (
+
+          <div key={teacher.name} className="min-w-0">
+
+            {/* =============================================== */}
+            {/* PORTRAIT */}
+            {/* =============================================== */}
+
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
+
+              <img
+                src={teacher.image}
+                alt={teacher.name}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+
+            </div>
+
+            {/* =============================================== */}
+            {/* NAME AND OPTIONAL LINKEDIN */}
+            {/* =============================================== */}
+
+            <div className="mt-3">
+
+              {teacher.linkedin ? (
+
+                <a
+                  href={teacher.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-baseline gap-1 text-base font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  {teacher.name}
+
+                  <span
+                    className="shrink-0 text-sm"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+
+                </a>
+
+              ) : (
+
+                <span
+                  className="block text-base font-semibold leading-tight text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  {teacher.name}
+                </span>
+
+              )}
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
 
   </div>
 
-</div>
-  </div>
 </section>
 
 {/* ========================================================= */}
