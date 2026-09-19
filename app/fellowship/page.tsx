@@ -663,15 +663,18 @@ export default function FellowshipPage() {
 
 <section
   id="invitation"
-  className="scroll-mt-32 overflow-x-clip bg-background py-20 lg:py-24"
+  className="scroll-mt-32 bg-background py-20 lg:py-24"
 >
   {/* ========================================================= */}
-  {/* MAIN CONTENT */}
+  {/* SINGLE ALIGNED CONTENT CONTAINER */}
   {/* ========================================================= */}
 
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
-    {/* Section Title */}
+    {/* ========================================================= */}
+    {/* SECTION TITLE */}
+    {/* ========================================================= */}
+
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       The Invitation
     </span>
@@ -700,7 +703,7 @@ export default function FellowshipPage() {
     </blockquote>
 
     {/* ========================================================= */}
-    {/* FIRST PART OF THE INVITATION */}
+    {/* FIRST PART — LIVING BETWEEN WORLDS */}
     {/* ========================================================= */}
 
     <div className="mt-10 space-y-6 text-muted-foreground">
@@ -717,7 +720,7 @@ export default function FellowshipPage() {
         emergence, between what is dying and what has not yet been born.
       </p>
 
-      {/* Same font and size as surrounding body text */}
+      {/* Same font size and family as body text */}
       <p className="font-medium leading-relaxed text-foreground">
         You may already know what this feels like.
       </p>
@@ -746,124 +749,67 @@ export default function FellowshipPage() {
 
     </div>
 
-  </div>
+    {/* ========================================================= */}
+    {/* PHOTOGRAPH — ALIGNED WITH THE TEXT MARGINS */}
+    {/* ========================================================= */}
 
-  {/* ========================================================= */}
-  {/* BOTTOM SECTION — TEXT LEFT / SINGLE IMAGE RIGHT */}
-  {/* ========================================================= */}
+    {/*
+      The photograph now sits inside the SAME max-w-4xl
+      container as all the paragraphs.
 
-  <div className="relative left-1/2 mt-6 w-screen -translate-x-1/2">
+      This means:
+      - Its left edge aligns with the text.
+      - Its right edge aligns with the text.
+      - It never touches the edges of the browser.
+      - It creates a visual pause before the closing invitation.
 
-    <div className="grid grid-cols-1 items-stretch md:grid-cols-2">
+      Adjust aspect-[16/9] if you'd prefer a taller image.
+    */}
 
-      {/* ===================================================== */}
-      {/* LEFT COLUMN — CLOSING TEXT */}
-      {/* ===================================================== */}
+    <figure className="relative my-10 w-full overflow-hidden bg-[#EAE7DF] shadow-[0_8px_26px_rgba(15,23,42,0.07)] md:my-12">
 
-      <div
-        className="
-          min-w-0
-          px-6
-          md:pl-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]
-          md:pr-10
-          lg:pr-14
-        "
-      >
+      <img
+        src="https://i.postimg.cc/sgNRdS9N/DSCF4966-(1).jpg"
+        alt="People gathering during a Metta Tropical experience"
+        loading="lazy"
+        className="aspect-[16/9] w-full object-cover"
+      />
 
-        <div className="space-y-6 text-muted-foreground">
+    </figure>
 
-          {/* Image begins alongside this paragraph */}
-          <p className="leading-relaxed">
-            This is why we understand this moment not only as a crisis, but
-            potentially as a civilizational rite of passage—one that asks us to
-            question who we are becoming, what we aspire toward, which desires
-            are shaping our lives, what we are willing to let go of and
-            compost, and what may need to change if our lives are to serve
-            the flourishing of all living beings.
-          </p>
+    {/* ========================================================= */}
+    {/* CLOSING INVITATION */}
+    {/* ========================================================= */}
 
-          {/* Same font and size as surrounding body text */}
-          <p className="font-medium leading-relaxed text-foreground">
-            And thresholds of this depth are difficult to cross alone.
-          </p>
+    <div className="space-y-6 text-muted-foreground">
 
-          <p className="leading-relaxed">
-            They need relationships strong enough to hold uncertainty.
-            Practices that help us remain present when old identities and
-            assumptions begin to loosen. Friends and mentors who can
-            challenge and care for us. Places where grief and longing can
-            be taken seriously, and where we can experiment with other
-            possibilities of life aligned to what we know to be true.
-          </p>
+      <p className="leading-relaxed">
+        This is why we understand this moment not only as a crisis, but
+        potentially as a civilizational rite of passage—one that asks us to
+        question who we are becoming, what we aspire toward, which desires
+        are shaping our lives, what we are willing to let go of and compost,
+        and what may need to change if our lives are to serve the flourishing
+        of all living beings.
+      </p>
 
-          {/* Image ends alongside this sentence */}
-          <p className="font-medium leading-relaxed text-foreground">
-            The Metta Tropical Fellowship is our attempt to create such a
-            place.
-          </p>
+      {/* Same font size and family as body text */}
+      <p className="font-medium leading-relaxed text-foreground">
+        And thresholds of this depth are difficult to cross alone.
+      </p>
 
-        </div>
+      <p className="leading-relaxed">
+        They need relationships strong enough to hold uncertainty. Practices
+        that help us remain present when old identities and assumptions begin
+        to loosen. Friends and mentors who can challenge and care for us.
+        Places where grief and longing can be taken seriously, and where we
+        can experiment with other possibilities of life aligned to what we
+        know to be true.
+      </p>
 
-      </div>
-
-      {/* ===================================================== */}
-      {/* RIGHT COLUMN — SINGLE LARGER PHOTOGRAPH */}
-      {/* ===================================================== */}
-
-      {/*
-        The image occupies most of the right half.
-
-        Desktop:
-        - Top aligns with the first closing paragraph.
-        - Bottom aligns with the final sentence.
-        - Left and right margins keep it away from the page edges.
-
-        Mobile:
-        - Photograph moves beneath the text.
-        - A minimum height keeps the image visible.
-      */}
-
-      <div
-        className="
-          relative
-          mt-8
-          min-h-[360px]
-          w-full
-          md:mt-0
-          md:min-h-0
-        "
-      >
-
-        {/* Image Frame with Comfortable Margins */}
-        <div
-          className="
-            absolute
-            inset-y-0
-            left-6
-            right-6
-            overflow-hidden
-            bg-[#EAE7DF]
-            shadow-[0_10px_30px_rgba(15,23,42,0.10)]
-            sm:left-10
-            sm:right-10
-            md:left-8
-            md:right-12
-            lg:left-12
-            lg:right-16
-            xl:right-20
-          "
-        >
-
-          <img
-            src="https://i.postimg.cc/sgNRdS9N/DSCF4966-(1).jpg"
-            alt="People gathering during a Metta Tropical experience"
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-
-        </div>
-
-      </div>
+      {/* Final Statement */}
+      <p className="font-medium leading-relaxed text-foreground">
+        The Metta Tropical Fellowship is our attempt to create such a place.
+      </p>
 
     </div>
 
