@@ -4286,6 +4286,326 @@ export default function FellowshipPage() {
         </div>
 </section>
 
+{/* ========================================================= */}
+{/* THE APPLICATION PROCESS */}
+{/* ========================================================= */}
+
+<section
+  id="application-process"
+  className="scroll-mt-32 bg-white py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+
+      {/* Small Section Label */}
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Application Process
+      </span>
+
+      {/* Main Subtitle */}
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        An Invitation Into{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            fontWeight: "inherit",
+            fontStyle: "inherit",
+            lineHeight: "inherit",
+            letterSpacing: "inherit",
+          }}
+        >
+          Discernment
+        </span>
+      </h2>
+
+      {/* Introductory Text */}
+      <div className="mt-8 space-y-6 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          We do not see the application process simply as a way for us to
+          select participants. We see it as an invitation into a mutual
+          process of discernment, an opportunity for both of us to explore
+          whether this is the right moment, the right community, and the
+          right commitment for the next chapter of your life.
+        </p>
+
+        <p className="leading-relaxed">
+          We are less interested in impressive accomplishments or positions
+          you have held. We are looking for truth, honesty, and sincerity.
+          We want to understand the path that has brought you here,
+          interested in this Fellowship: the questions you have been
+          wrestling with, the experiences that have shaped you, the moment
+          of life you find yourself in, the inquiries that live in your body,
+          and the deeper longings that may be seeking space to be met
+          more fully.
+        </p>
+
+        <p className="leading-relaxed">
+          Our hope is that, whatever the outcome, this process already
+          offers you something meaningful.
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* THE DISCERNMENT PROCESS */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-4xl">
+
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The Discernment Process
+      </h3>
+
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        The process itself is designed as an invitation into some of the
+        questions at the heart of our work:{" "}
+        <em>
+          Who must we become? What is my experience of living in a time
+          between worlds? What is trying to emerge through me at this time?
+          How am I making sense of this moment? What support do I mostly
+          long for right now? What are some of the deepest longings for
+          my life?
+        </em>
+      </p>
+
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        Through four stages of discernment, we hope to create opportunities
+        for genuine connection, inquiry and encounters.
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* FOUR-STAGE DISCERNMENT TIMELINE */}
+    {/* ========================================================= */}
+
+    <div className="relative mx-auto mt-12 max-w-4xl">
+
+      {/* Continuous Vertical Line */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-10 left-[19px] top-5 w-px bg-[#D9A01B]/45 md:left-[23px]"
+      />
+
+      <div className="space-y-0">
+
+        {/* ===================================================== */}
+        {/* STAGE 01 — ONLINE APPLICATION */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+
+          {/* Numbered Timeline Marker */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            01
+          </div>
+
+          {/* Stage Content */}
+          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Online Application
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
+                Sep 18 – Nov 15
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              We invite you to share more about your story, your questions,
+              your inquiries, your relationship with this moment, and what
+              is calling you toward this fellowship.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 02 — INDIVIDUAL CONVERSATIONS */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+
+          {/* Numbered Timeline Marker */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            02
+          </div>
+
+          {/* Stage Content */}
+          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Individual Conversations
+              </h4>
+
+              <span className="max-w-[250px] text-sm italic leading-relaxed text-[#B88610] md:text-right">
+                Invitations sent 2–3 weeks after application submission
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Selected applicants will be invited to an individual
+              conversation with our team. This is a space to get to know
+              you more fully, understand your current moment, longings
+              and challenges, explore resonances with our work, and clarify
+              questions and expectations about the Fellowship.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 03 — COMMUNITY ENGAGEMENT */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+
+          {/* Numbered Timeline Marker */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#D9A01B] bg-white text-sm font-semibold text-[#B88610] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            03
+          </div>
+
+          {/* Stage Content */}
+          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Community Engagement
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
+                Nov 9 – Dec 11
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              A month-long process of engaging with our community and
+              other applicants through online sessions, practices, and
+              conversations. This is an opportunity to experience a glimpse
+              of the Fellowship before making a deeper commitment, by
+              experiencing our ways of learning, practicing, relating,
+              and making sense of the world together.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 04 — FINAL INVITATIONS & COMMITMENT */}
+        {/* ===================================================== */}
+
+        <div className="relative pl-14 md:pl-20">
+
+          {/* Final Timeline Marker */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#D9A01B] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(217,160,27,0.16)] md:h-12 md:w-12">
+            04
+          </div>
+
+          {/* Stage Content */}
+          <div>
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Final Invitations &amp; Commitment
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#B88610]">
+                By Dec 15, 2026
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              We will extend formal invitations to the founding cohort
+              of the Metta Tropical Fellowship. Those invited will have
+              2–3 weeks to confirm their participation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* APPLICATION CTA */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-14 max-w-4xl border-t border-foreground/10 pt-9">
+
+      <a
+        href="#apply"
+        className="inline-flex items-center justify-center rounded-md bg-olive px-7 py-3.5 text-sm font-medium text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
+      >
+        Begin your application →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
   {/* WHY THIS EXISTS, NOW */}
 <section
   id="why-now"
