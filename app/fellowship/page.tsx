@@ -4391,10 +4391,10 @@ export default function FellowshipPage() {
 
     <div className="relative mx-auto mt-10 max-w-4xl">
 
-      {/* Continuous Vertical Line — Brighter Green */}
+      {/* Continuous Vertical Line — Original Gold */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-8 left-[19px] top-5 w-px bg-[#4F8F57]/45 md:left-[23px]"
+        className="pointer-events-none absolute bottom-8 left-[19px] top-5 w-px bg-[#D9A01B]/45 md:left-[23px]"
       />
 
       <div>
@@ -4406,7 +4406,7 @@ export default function FellowshipPage() {
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             01
           </div>
 
@@ -4425,7 +4425,7 @@ export default function FellowshipPage() {
                 Online Application
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
                 Sep 18 – Nov 15, 2026
               </span>
 
@@ -4448,7 +4448,7 @@ export default function FellowshipPage() {
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             02
           </div>
 
@@ -4467,7 +4467,7 @@ export default function FellowshipPage() {
                 Individual Conversations
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
                 Rolling Basis
               </span>
 
@@ -4492,7 +4492,7 @@ export default function FellowshipPage() {
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             03
           </div>
 
@@ -4511,7 +4511,7 @@ export default function FellowshipPage() {
                 Community Engagement
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
                 Nov 9 – Dec 11, 2026
               </span>
 
@@ -4535,8 +4535,8 @@ export default function FellowshipPage() {
 
         <div className="relative pl-14 md:pl-20">
 
-          {/* Final Timeline Marker — Brighter Green */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#4F8F57] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(15,23,42,0.10)] md:h-12 md:w-12">
+          {/* Final Timeline Marker — Original Gold */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#D9A01B] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(217,160,27,0.16)] md:h-12 md:w-12">
             04
           </div>
 
@@ -4555,7 +4555,7 @@ export default function FellowshipPage() {
                 Final Invitations &amp; Commitment
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
                 By Dec 15, 2026
               </span>
 
@@ -4575,14 +4575,14 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* APPLICATION CTA */}
+    {/* APPLICATION CTA — ORIGINAL OLIVE GREEN */}
     {/* ========================================================= */}
 
     <div className="mx-auto mt-14 max-w-4xl border-t border-foreground/10 pt-9">
 
       <a
         href="#apply"
-        className="inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
+        className="inline-flex items-center justify-center rounded-md bg-olive px-7 py-3.5 text-sm font-medium text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
       >
         Begin your application →
       </a>
