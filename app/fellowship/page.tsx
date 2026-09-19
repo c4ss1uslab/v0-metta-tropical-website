@@ -4302,12 +4302,10 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      {/* Small Section Label */}
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         The Application Process
       </span>
 
-      {/* Main Subtitle */}
       <h2
         className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
@@ -4331,7 +4329,6 @@ export default function FellowshipPage() {
         </span>
       </h2>
 
-      {/* Introductory Text */}
       <div className="mt-8 space-y-6 text-muted-foreground">
 
         <p className="leading-relaxed">
@@ -4364,7 +4361,6 @@ export default function FellowshipPage() {
 
     {/* ========================================================= */}
     {/* THE DISCERNMENT PROCESS */}
-    {/* Reduced spacing from mt-16 to mt-8 */}
     {/* ========================================================= */}
 
     <div className="mx-auto mt-8 max-w-4xl">
@@ -4395,27 +4391,27 @@ export default function FellowshipPage() {
 
     <div className="relative mx-auto mt-10 max-w-4xl">
 
-      {/* Continuous Vertical Line — Olive Green */}
+      {/* Continuous Vertical Line — Brighter Green */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-10 left-[19px] top-5 w-px bg-olive/45 md:left-[23px]"
+        className="pointer-events-none absolute bottom-8 left-[19px] top-5 w-px bg-[#4F8F57]/45 md:left-[23px]"
       />
 
-      <div className="space-y-0">
+      <div>
 
         {/* ===================================================== */}
         {/* STAGE 01 — ONLINE APPLICATION */}
         {/* ===================================================== */}
 
-        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             01
           </div>
 
           {/* Stage Content */}
-          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
 
@@ -4429,7 +4425,7 @@ export default function FellowshipPage() {
                 Online Application
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-olive">
+              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
                 Sep 18 – Nov 15, 2026
               </span>
 
@@ -4449,15 +4445,15 @@ export default function FellowshipPage() {
         {/* STAGE 02 — INDIVIDUAL CONVERSATIONS */}
         {/* ===================================================== */}
 
-        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             02
           </div>
 
           {/* Stage Content */}
-          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
 
@@ -4471,7 +4467,7 @@ export default function FellowshipPage() {
                 Individual Conversations
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-olive">
+              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
                 Rolling Basis
               </span>
 
@@ -4493,15 +4489,15 @@ export default function FellowshipPage() {
         {/* STAGE 03 — COMMUNITY ENGAGEMENT */}
         {/* ===================================================== */}
 
-        <div className="relative pb-10 pl-14 md:pb-12 md:pl-20">
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
           {/* Numbered Timeline Marker */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-olive bg-white text-sm font-semibold text-olive shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#4F8F57] bg-white text-sm font-semibold text-[#4F8F57] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             03
           </div>
 
           {/* Stage Content */}
-          <div className="border-b border-foreground/10 pb-9 md:pb-11">
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
 
@@ -4515,7 +4511,7 @@ export default function FellowshipPage() {
                 Community Engagement
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-olive">
+              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
                 Nov 9 – Dec 11, 2026
               </span>
 
@@ -4539,8 +4535,8 @@ export default function FellowshipPage() {
 
         <div className="relative pl-14 md:pl-20">
 
-          {/* Final Timeline Marker — Olive Green */}
-          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-olive text-sm font-semibold text-white shadow-[0_4px_14px_rgba(15,23,42,0.10)] md:h-12 md:w-12">
+          {/* Final Timeline Marker — Brighter Green */}
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#4F8F57] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(15,23,42,0.10)] md:h-12 md:w-12">
             04
           </div>
 
@@ -4559,7 +4555,7 @@ export default function FellowshipPage() {
                 Final Invitations &amp; Commitment
               </h4>
 
-              <span className="shrink-0 text-sm font-semibold text-olive">
+              <span className="shrink-0 text-sm font-semibold text-[#4F8F57]">
                 By Dec 15, 2026
               </span>
 
