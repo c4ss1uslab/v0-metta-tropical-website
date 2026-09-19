@@ -447,7 +447,7 @@ export default function FellowshipPage() {
 {/* ========================================================= */}
 {/* THE FELLOWSHIP */}
 {/* ========================================================= */}
-<section id="fellowship-overview" className="scroll-mt-24 ..."></section>
+
 <section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
 
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -928,6 +928,7 @@ export default function FellowshipPage() {
 </section>
 
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
+        <section id="fellowship-overview" className="scroll-mt-24 ..."></section>
 <section
   id="structure"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
