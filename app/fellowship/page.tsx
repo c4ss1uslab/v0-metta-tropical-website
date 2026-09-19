@@ -5090,10 +5090,15 @@ export default function FellowshipPage() {
       </h2>
 
       {/* ===================================================== */}
-      {/* UPDATED INTRODUCTORY TEXT */}
+      {/* LETTER-STYLE INTRODUCTION */}
       {/* ===================================================== */}
 
       <div className="mt-8 space-y-6 text-muted-foreground">
+
+        {/* Letter Opening */}
+        <p className="font-medium leading-relaxed text-foreground">
+          Dear friend,
+        </p>
 
         <p className="leading-relaxed">
           Most of us holding this journey have spent years wrestling
@@ -5146,9 +5151,13 @@ export default function FellowshipPage() {
           moment together.
         </p>
 
-        <p className="leading-relaxed">
-          Below are some of the people who will accompany you
-          this journey:
+        {/* Letter Sign-Off */}
+        <p className="leading-relaxed text-foreground">
+          With love,
+          <br />
+          <span className="font-semibold">
+            The Metta Tropical Team
+          </span>
         </p>
 
       </div>
@@ -5156,10 +5165,22 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
+    {/* INTRODUCTION TO THE PEOPLE */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl">
+
+      <p className="leading-relaxed text-muted-foreground">
+        Meet some of the people who will accompany you this journey.
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
     {/* CORE TEAM */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-14 max-w-6xl">
+    <div className="mx-auto mt-10 max-w-6xl">
 
       <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
 
