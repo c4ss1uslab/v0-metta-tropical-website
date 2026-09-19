@@ -334,33 +334,23 @@ export default function FellowshipPage() {
         {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
         {/* ===================================================== */}
 
-        <div className="mt-10 flex flex-col items-start">
+        <div className="mt-10 flex flex-col items-start gap-4">
 
-          {/* Dates — Bold, Same Color as Main Title */}
-          <div className="flex items-center gap-3">
+          {/* Dates — Regular Weight, Centered, Same Width as Button */}
+          <span
+            className="block w-[220px] text-center text-base font-normal tracking-wide text-foreground"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            February — December 2027
+          </span>
 
-            {/* Minimalist Gold Accent */}
-            <span
-              aria-hidden="true"
-              className="h-[2px] w-8 bg-[#D9A01B]"
-            />
-
-            <span
-              className="text-sm font-bold tracking-wide text-foreground md:text-base"
-              style={{
-                fontFamily:
-                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-              }}
-            >
-              February — December 2027
-            </span>
-
-          </div>
-
-          {/* Primary Application Button */}
+          {/* Primary Application Button — Matching Width */}
           <a
             href="#apply"
-            className="mt-5 inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
+            className="inline-flex w-[220px] items-center justify-center rounded-md bg-[#E8BC2F] px-5 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
           >
             Begin Application →
           </a>
