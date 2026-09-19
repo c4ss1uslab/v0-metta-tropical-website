@@ -4375,7 +4375,8 @@ export default function FellowshipPage() {
         The Discernment Process
       </h3>
 
-      <p className="mt-5 italic leading-relaxed text-muted-foreground">
+      {/* Regular text — no italics */}
+      <p className="mt-5 leading-relaxed text-muted-foreground">
         The process itself is an invitation into some of the questions
         at the heart of our work: How am I experiencing this time between
         worlds? What is my life longing for? What is being asked of me?
@@ -4405,12 +4406,10 @@ export default function FellowshipPage() {
 
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
-          {/* Numbered Timeline Marker */}
           <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             01
           </div>
 
-          {/* Stage Content */}
           <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
@@ -4447,12 +4446,10 @@ export default function FellowshipPage() {
 
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
-          {/* Numbered Timeline Marker */}
           <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             02
           </div>
 
-          {/* Stage Content */}
           <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
@@ -4491,12 +4488,10 @@ export default function FellowshipPage() {
 
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
 
-          {/* Numbered Timeline Marker */}
           <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
             03
           </div>
 
-          {/* Stage Content */}
           <div className="border-b border-foreground/10 pb-4 md:pb-5">
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
@@ -4535,12 +4530,10 @@ export default function FellowshipPage() {
 
         <div className="relative pl-14 md:pl-20">
 
-          {/* Final Timeline Marker — Original Gold */}
           <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#D9A01B] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(217,160,27,0.16)] md:h-12 md:w-12">
             04
           </div>
 
-          {/* Stage Content */}
           <div>
 
             <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
@@ -4575,10 +4568,10 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* APPLICATION CTA — ORIGINAL OLIVE GREEN */}
+    {/* APPLICATION CTA — NO HORIZONTAL DIVIDER */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-14 max-w-4xl border-t border-foreground/10 pt-9">
+    <div className="mx-auto mt-14 max-w-4xl">
 
       <a
         href="#apply"
