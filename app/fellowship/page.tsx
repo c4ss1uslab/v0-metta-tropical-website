@@ -365,56 +365,86 @@ export default function FellowshipPage() {
 
 </section>
 
-          {/* Fellowship Section Navigation */}
-          <section>
-          <div className="border-y border-white/10 bg-[#111827]">
-            <div className="mx-auto max-w-6xl px-6 lg:px-8">
-              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
-                <a
-                  href="#invitation"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  The Invitation
-                </a>
+{/* ========================================================= */}
+{/* FELLOWSHIP SECTION NAVIGATION */}
+{/* ========================================================= */}
 
-                <a
-                  href="#why-now"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Why Now
-                </a>
+<section>
+  <nav
+    aria-label="Fellowship section navigation"
+    className="border-y border-white/10 bg-[#111827]"
+  >
+    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                <a
-                  href="#journey"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  The Journey
-                </a>
+      {/* ===================================================== */}
+      {/* NAVIGATION LINKS */}
+      {/* Equal-width columns on desktop */}
+      {/* Horizontal scrolling on smaller screens */}
+      {/* ===================================================== */}
 
-                <a
-                  href="#streams"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Five Streams
-                </a>
+      <div className="flex items-center overflow-x-auto py-3 lg:grid lg:grid-cols-7 lg:overflow-visible lg:gap-1">
 
-                <a
-                  href="#pedagogy"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Pedagogy
-                </a>
+        {[
+          {
+            label: "Fellowship Overview",
+            href: "#fellowship-overview",
+          },
+          {
+            label: "Curriculum",
+            href: "#path",
+          },
+          {
+            label: "Pedagogy",
+            href: "#pedagogy",
+          },
+          {
+            label: "Schedule",
+            href: "#schedule",
+          },
+          {
+            label: "Cost",
+            href: "#cost",
+          },
+          {
+            label: "Team",
+            href: "#team",
+          },
+          {
+            label: "FAQ",
+            href: "#faq",
+          },
+        ].map((item) => (
 
-                <a
-                  href="#structure"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Curriculum
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+          <a
+            key={item.label}
+            href={item.href}
+            className="
+              flex shrink-0 items-center justify-center
+              whitespace-nowrap
+              rounded-md
+              px-4 py-3
+              text-center text-sm font-medium
+              text-[#D9A01B]
+              transition-colors duration-200
+              hover:bg-white/10
+              hover:text-[#E8BC2F]
+              lg:w-full lg:px-2
+            "
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            {item.label}
+          </a>
+
+        ))}
+
+      </div>
+
+    </div>
+  </nav>
+</section>
 
 {/* ========================================================= */}
 {/* THE FELLOWSHIP */}
