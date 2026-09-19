@@ -5171,7 +5171,7 @@ export default function FellowshipPage() {
     <div className="mx-auto mt-12 max-w-4xl">
 
       <p className="leading-relaxed text-muted-foreground">
-        Meet some of the people who will accompany you this journey.
+        Meet some of the people who will accompany you this journey:
       </p>
 
     </div>
