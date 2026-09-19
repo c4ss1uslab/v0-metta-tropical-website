@@ -423,9 +423,15 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-{/* The Fellowship */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
+{/* THE FELLOWSHIP */}
+<section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* SECTION HEADING */}
+    {/* ========================================================= */}
+
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
@@ -445,15 +451,21 @@ export default function FellowshipPage() {
       of transformative journey for a time of planetary crisis
     </h2>
 
+    {/* ========================================================= */}
+    {/* MAIN TEXT */}
+    {/* ========================================================= */}
+
     <div className="mt-8 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
         emerging from the recognition that we are living through the
         unraveling of a world whose promises are reaching their limits, while
-        many of our attempts to respond to our crisis continue to reproduce the very logics
-        of separation, extraction, and optimization that brought us here. The
-        crises of our time cannot be met through better ideas, strategies, or
-        solutions alone. They ask for a deeper transformation in{" "}
+        many of our attempts to respond to our crisis continue to reproduce
+        the very logics of separation, extraction, and optimization that
+        brought us here. The crises of our time cannot be met through better
+        ideas, strategies, or solutions alone. They ask for a deeper
+        transformation in{" "}
         <strong className="font-semibold text-foreground">
           how we perceive reality, relate to ourselves and one another,
           encounter the living world and the sacred, and participate in life
@@ -465,9 +477,10 @@ export default function FellowshipPage() {
         Rather than a traditional leadership program, the Fellowship is a
         living process of formation weaving together spiritual formation,
         relational practice, complexity theory, systems change,
-        civilizational inquiry, and land-based wisdom—bringing into relationship
-        ways of knowing, practices, and lineages rooted across the Global South
-        and Global North that rarely meet within the same educational space.
+        civilizational inquiry, and land-based wisdom—bringing into
+        relationship ways of knowing, practices, and lineages rooted across
+        the Global South and Global North that rarely meet within the same
+        educational space.
       </p>
 
       <p className="leading-relaxed">
@@ -477,31 +490,292 @@ export default function FellowshipPage() {
         to undergo the kind of transformation that can better prepare us to
         navigate and respond wisely to these times.
       </p>
+
     </div>
 
-{/* Highlight / Manifesto Block */}
-<div className="relative mt-10">
-  {/* Offset background layer */}
-  <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] bg-[#D9A01B]/30" />
+    {/* ========================================================= */}
+    {/* FULL-WIDTH CLOSING BANNER */}
+    {/* ========================================================= */}
 
-  {/* Main block */}
-  <div className="relative overflow-hidden rounded-br-[2rem] border border-[#D9A01B]/35 bg-[#D9A01B]/10 px-7 py-8 md:px-10 md:py-9">
-    {/* Decorative form */}
-    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
+    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-9 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-11">
 
-    <div className="relative">
-      <p className="text-lg leading-relaxed text-foreground md:text-xl">
-        At its heart, the Fellowship is an attempt to create the kinds of
-        educational and communal spaces this moment demands:{" "}
-        <strong className="font-medium">
-          sanctuaries of transformation
-        </strong>{" "}
-        where we can live inside the questions that matter most for this time, and undergo the kind of shape-shift through which what we come to know begins to reshape how we live, what we value, how we relate, what we take responsibility for, and what we ultimately offer our lives to.
-      </p>
+      {/* ======================================================= */}
+      {/* TOP CENTER ACCENT */}
+      {/* ======================================================= */}
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-32 -translate-x-1/2 bg-[#D9A01B]"
+      />
+
+      {/* ======================================================= */}
+      {/* UPPER LEFT — ORGANIC LEAF WITH VISIBLE VEINS */}
+      {/* ======================================================= */}
+
+      <svg
+        viewBox="0 0 320 360"
+        fill="none"
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-16 -top-14 h-56 w-52 rotate-[-12deg] text-[#D9A01B] opacity-[0.23] md:-left-9 md:-top-20 md:h-[340px] md:w-[310px] md:opacity-[0.3]"
+      >
+
+        {/* Delicate outer leaf silhouette */}
+        <path
+          d="
+            M 20 14
+            C 119 16, 240 51, 286 148
+            C 308 201, 277 269, 184 306
+            C 92 285, 35 202, 20 14
+            Z
+          "
+          fill="currentColor"
+          fillOpacity="0.1"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+
+        {/* Central spine */}
+        <path
+          d="M 20 14 C 70 114, 125 213, 184 306"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+        />
+
+        {/* Major veins — right side */}
+        <g
+          stroke="currentColor"
+          strokeWidth="2.1"
+          strokeLinecap="round"
+        >
+          <path d="M 45 62 C 108 55, 163 68, 210 98" />
+          <path d="M 66 108 C 137 94, 204 106, 251 140" />
+          <path d="M 90 154 C 163 144, 229 164, 279 194" />
+          <path d="M 116 200 C 182 192, 239 214, 272 239" />
+          <path d="M 145 250 C 194 249, 227 261, 243 277" />
+        </g>
+
+        {/* Secondary veins — botanical detail */}
+        <g
+          stroke="currentColor"
+          strokeWidth="1.1"
+          strokeLinecap="round"
+          opacity="0.8"
+        >
+          <path d="M 97 57 L 122 79" />
+          <path d="M 142 66 L 164 91" />
+          <path d="M 122 101 L 150 124" />
+          <path d="M 181 105 L 203 133" />
+          <path d="M 155 150 L 179 177" />
+          <path d="M 212 158 L 229 187" />
+          <path d="M 184 197 L 204 225" />
+          <path d="M 231 215 L 244 246" />
+
+          {/* Left-side branching */}
+          <path d="M 53 81 C 39 119, 36 143, 45 166" />
+          <path d="M 78 128 C 63 170, 65 194, 76 217" />
+          <path d="M 105 174 C 96 218, 106 247, 127 268" />
+          <path d="M 133 226 C 139 254, 151 273, 169 291" />
+        </g>
+
+        {/* A subtle continuation of the stem */}
+        <path
+          d="M 184 306 C 197 324, 212 338, 234 350"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+
+      </svg>
+
+      {/* ======================================================= */}
+      {/* LOWER RIGHT — SUN / COSMOS MOTIF */}
+      {/* ======================================================= */}
+
+      <svg
+        viewBox="0 0 400 400"
+        fill="none"
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-32 -right-28 h-64 w-64 rotate-[12deg] text-[#D9A01B] opacity-[0.23] md:-bottom-40 md:-right-16 md:h-[390px] md:w-[390px] md:opacity-[0.29]"
+      >
+
+        {/* Outer celestial rings */}
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+        >
+          <circle
+            cx="200"
+            cy="200"
+            r="172"
+            strokeWidth="1.4"
+            strokeDasharray="2 9"
+          />
+
+          <circle
+            cx="200"
+            cy="200"
+            r="148"
+            strokeWidth="1.5"
+          />
+
+          <circle
+            cx="200"
+            cy="200"
+            r="120"
+            strokeWidth="1.1"
+            opacity="0.8"
+          />
+
+          <circle
+            cx="200"
+            cy="200"
+            r="85"
+            strokeWidth="1.5"
+          />
+        </g>
+
+        {/* Inner solar form */}
+        <circle
+          cx="200"
+          cy="200"
+          r="52"
+          fill="currentColor"
+          fillOpacity="0.08"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+
+        <circle
+          cx="200"
+          cy="200"
+          r="32"
+          stroke="currentColor"
+          strokeWidth="1.4"
+        />
+
+        <circle
+          cx="200"
+          cy="200"
+          r="9"
+          fill="currentColor"
+          fillOpacity="0.65"
+        />
+
+        {/* Radial rays */}
+        <g
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        >
+          {Array.from({ length: 24 }).map((_, index) => {
+
+            const angle = (index * Math.PI) / 12;
+
+            const x1 = 200 + Math.cos(angle) * 91;
+            const y1 = 200 + Math.sin(angle) * 91;
+
+            const x2 = 200 + Math.cos(angle) * 112;
+            const y2 = 200 + Math.sin(angle) * 112;
+
+            return (
+              <line
+                key={index}
+                x1={x1}
+                y1={y1}
+                x2={x2}
+                y2={y2}
+              />
+            );
+
+          })}
+        </g>
+
+        {/* Orbital arcs */}
+        <g
+          stroke="currentColor"
+          strokeWidth="1.3"
+          strokeLinecap="round"
+          opacity="0.85"
+        >
+          <ellipse
+            cx="200"
+            cy="200"
+            rx="185"
+            ry="68"
+            transform="rotate(-35 200 200)"
+          />
+
+          <ellipse
+            cx="200"
+            cy="200"
+            rx="185"
+            ry="68"
+            transform="rotate(35 200 200)"
+          />
+
+          <ellipse
+            cx="200"
+            cy="200"
+            rx="185"
+            ry="68"
+            transform="rotate(90 200 200)"
+          />
+        </g>
+
+        {/* Small orbiting celestial bodies */}
+        <g fill="currentColor">
+          <circle cx="45" cy="134" r="4" />
+          <circle cx="343" cy="106" r="5" />
+          <circle cx="315" cy="330" r="3.5" />
+          <circle cx="109" cy="338" r="3" />
+        </g>
+
+        {/* Four understated stars */}
+        <g
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        >
+          <path d="M 55 48 L 55 67 M 45 57.5 L 65 57.5" />
+          <path d="M 345 45 L 345 65 M 335 55 L 355 55" />
+          <path d="M 360 292 L 360 314 M 349 303 L 371 303" />
+          <path d="M 72 286 L 72 300 M 65 293 L 79 293" />
+        </g>
+
+      </svg>
+
+      {/* ======================================================= */}
+      {/* CENTERED MANIFESTO TEXT */}
+      {/* ======================================================= */}
+
+      <div className="relative z-10 mx-auto max-w-4xl px-8 text-center md:px-12">
+
+        <p
+          className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          At its heart, the Fellowship is an attempt to create the kinds
+          of educational and communal spaces this moment demands:{" "}
+          <strong className="font-semibold">
+            sanctuaries of transformation
+          </strong>{" "}
+          where we can live inside the questions that matter most for this
+          time, and undergo the kind of shape-shift through which what we
+          come to know begins to reshape how we live, what we value, how
+          we relate, what we take responsibility for, and what we
+          ultimately offer our lives to.
+        </p>
+
+      </div>
+
     </div>
+
   </div>
-</div>
-  </div>
+
 </section>
 
 {/* THE INVITATION */}
