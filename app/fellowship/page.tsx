@@ -2404,6 +2404,7 @@ export default function FellowshipPage() {
     </div>
   </div>
 </section>
+</section>
 
 {/* PEDAGOGY */}
 <section
