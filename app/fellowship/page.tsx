@@ -4021,7 +4021,7 @@ export default function FellowshipPage() {
 
      {/* OFFERED AS A GIFT */}
 <section
-  id="offered-as-a-gift"
+  id="cost"
   className="scroll-mt-32 bg-[#FFF9E9] py-20 lg:py-28"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
