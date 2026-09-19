@@ -420,7 +420,10 @@ export default function FellowshipPage() {
           </div>
         </section>
 
+{/* ========================================================= */}
 {/* THE FELLOWSHIP */}
+{/* ========================================================= */}
+
 <section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
 
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -433,6 +436,7 @@ export default function FellowshipPage() {
       The Fellowship
     </span>
 
+    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -493,7 +497,7 @@ export default function FellowshipPage() {
     {/* FULL-WIDTH CLOSING BANNER */}
     {/* ========================================================= */}
 
-    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-9 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-11">
+    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-10 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-12">
 
       {/* ======================================================= */}
       {/* CENTERED YELLOW ACCENT LINE */}
@@ -501,46 +505,70 @@ export default function FellowshipPage() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
+        className="pointer-events-none absolute left-1/2 top-0 z-30 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
       />
 
       {/* ======================================================= */}
-      {/* UPPER LEFT — ORIGINAL LEAF IMAGE */}
+      {/* LEAF IMAGE — UPPER LEFT */}
       {/* ======================================================= */}
 
-      <img
-        src="https://i.postimg.cc/Y0fXBWY0/cosmos-1825932171.jpg"
-        alt=""
+      <div
         aria-hidden="true"
-        loading="lazy"
-        className="pointer-events-none absolute -left-12 -top-10 z-0 w-36 max-w-none select-none opacity-25 mix-blend-multiply md:-left-5 md:-top-12 md:w-52 md:opacity-30"
+        className="pointer-events-none absolute left-0 top-0 z-10 h-40 w-40 overflow-hidden md:h-56 md:w-56"
         style={{
-          filter:
-            "grayscale(1) sepia(1) saturate(4) hue-rotate(8deg)",
+          maskImage:
+            "linear-gradient(to bottom right, black 35%, transparent 95%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom right, black 35%, transparent 95%)",
         }}
-      />
+      >
+
+        <img
+          src="https://i.postimg.cc/Y0fXBWY0/cosmos-1825932171.jpg"
+          alt=""
+          loading="eager"
+          className="h-full w-full object-cover opacity-80"
+          style={{
+            filter:
+              "grayscale(1) sepia(1) saturate(3) hue-rotate(5deg)",
+          }}
+        />
+
+      </div>
 
       {/* ======================================================= */}
-      {/* LOWER RIGHT — ORIGINAL SUN IMAGE */}
+      {/* SUN IMAGE — LOWER RIGHT */}
       {/* ======================================================= */}
 
-      <img
-        src="https://i.postimg.cc/WpMYkQCL/cosmos-2075508743.jpg"
-        alt=""
+      <div
         aria-hidden="true"
-        loading="lazy"
-        className="pointer-events-none absolute -bottom-36 -right-24 z-0 w-72 max-w-none select-none opacity-20 mix-blend-multiply md:-bottom-60 md:-right-20 md:w-[460px] md:opacity-25"
+        className="pointer-events-none absolute -bottom-16 right-0 z-10 h-56 w-56 overflow-hidden md:-bottom-24 md:h-80 md:w-80"
         style={{
-          filter:
-            "grayscale(1) sepia(1) saturate(4) hue-rotate(8deg)",
+          maskImage:
+            "linear-gradient(to top left, black 40%, transparent 95%)",
+          WebkitMaskImage:
+            "linear-gradient(to top left, black 40%, transparent 95%)",
         }}
-      />
+      >
+
+        <img
+          src="https://i.postimg.cc/WpMYkQCL/cosmos-2075508743.jpg"
+          alt=""
+          loading="eager"
+          className="h-full w-full object-cover opacity-80"
+          style={{
+            filter:
+              "grayscale(1) sepia(1) saturate(3) hue-rotate(5deg)",
+          }}
+        />
+
+      </div>
 
       {/* ======================================================= */}
       {/* CENTERED MANIFESTO TEXT */}
       {/* ======================================================= */}
 
-      <div className="relative z-10 mx-auto max-w-4xl px-8 text-center md:px-12">
+      <div className="relative z-20 mx-auto max-w-4xl px-8 text-center md:px-12">
 
         <p
           className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
