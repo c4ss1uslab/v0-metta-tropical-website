@@ -420,22 +420,14 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-{/* ========================================================= */}
-{/* THE FELLOWSHIP */}
-{/* ========================================================= */}
-
-<section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
-
+{/* The Fellowship */}
+<section className="bg-[#FFFDF6] py-16 lg:py-20">
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-
-    {/* ========================================================= */}
-    {/* SECTION HEADING */}
-    {/* ========================================================= */}
-
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
 
+    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -444,27 +436,21 @@ export default function FellowshipPage() {
       }}
     >
       A{" "}
-      <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+      <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
         new kind
       </span>{" "}
       of transformative journey for a time of planetary crisis
     </h2>
 
-    {/* ========================================================= */}
-    {/* MAIN TEXT */}
-    {/* ========================================================= */}
-
     <div className="mt-8 space-y-6 text-muted-foreground">
-
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
         emerging from the recognition that we are living through the
         unraveling of a world whose promises are reaching their limits, while
-        many of our attempts to respond to our crisis continue to reproduce
-        the very logics of separation, extraction, and optimization that
-        brought us here. The crises of our time cannot be met through better
-        ideas, strategies, or solutions alone. They ask for a deeper
-        transformation in{" "}
+        many of our attempts to respond to our crisis continue to reproduce the very logics
+        of separation, extraction, and optimization that brought us here. The
+        crises of our time cannot be met through better ideas, strategies, or
+        solutions alone. They ask for a deeper transformation in{" "}
         <strong className="font-semibold text-foreground">
           how we perceive reality, relate to ourselves and one another,
           encounter the living world and the sacred, and participate in life
@@ -476,10 +462,9 @@ export default function FellowshipPage() {
         Rather than a traditional leadership program, the Fellowship is a
         living process of formation weaving together spiritual formation,
         relational practice, complexity theory, systems change,
-        civilizational inquiry, and land-based wisdom—bringing into
-        relationship ways of knowing, practices, and lineages rooted across
-        the Global South and Global North that rarely meet within the same
-        educational space.
+        civilizational inquiry, and land-based wisdom—bringing into relationship
+        ways of knowing, practices, and lineages rooted across the Global South
+        and Global North that rarely meet within the same educational space.
       </p>
 
       <p className="leading-relaxed">
@@ -489,519 +474,177 @@ export default function FellowshipPage() {
         to undergo the kind of transformation that can better prepare us to
         navigate and respond wisely to these times.
       </p>
-
     </div>
-
-    {/* ========================================================= */}
-    {/* FULL-WIDTH CLOSING BANNER */}
-    {/* ========================================================= */}
-
-    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-10 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-12">
-
-      {/* ======================================================= */}
-      {/* CENTRAL YELLOW LINE */}
-      {/* ======================================================= */}
-
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
-      />
-
-      {/* ======================================================= */}
-      {/* BOTANICAL LEAF — UPPER LEFT */}
-      {/* Original vector drawing with detailed branching veins */}
-      {/* ======================================================= */}
-
-      <svg
-        viewBox="0 0 360 360"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        aria-hidden="true"
-        className="pointer-events-none absolute -left-10 -top-12 z-0 h-44 w-44 text-[#C99B20] opacity-50 md:-left-8 md:-top-16 md:h-64 md:w-64 md:opacity-60"
-      >
-
-        <defs>
-          {/* Leaf silhouette used to contain the veins */}
-          <clipPath id="fellowship-leaf-clip">
-            <path
-              d="
-                M 35 14
-                C 121 13, 244 49, 298 128
-                C 335 181, 325 242, 252 309
-                C 149 308, 61 222, 35 14
-                Z
-              "
-            />
-          </clipPath>
-        </defs>
-
-        {/* --------------------------------------------------- */}
-        {/* LEAF OUTLINE */}
-        {/* --------------------------------------------------- */}
-
-        <path
-          d="
-            M 35 14
-            C 121 13, 244 49, 298 128
-            C 335 181, 325 242, 252 309
-            C 149 308, 61 222, 35 14
-            Z
-          "
-          fill="currentColor"
-          fillOpacity="0.065"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinejoin="round"
-        />
-
-        {/* --------------------------------------------------- */}
-        {/* CENTRAL VEIN */}
-        {/* --------------------------------------------------- */}
-
-        <path
-          d="
-            M 35 14
-            C 86 77, 141 143, 192 214
-            C 219 250, 238 280, 252 309
-          "
-          stroke="currentColor"
-          strokeWidth="3.8"
-          strokeLinecap="round"
-        />
-
-        {/* --------------------------------------------------- */}
-        {/* PRIMARY VEINS */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          clipPath="url(#fellowship-leaf-clip)"
-          stroke="currentColor"
-          strokeWidth="2.1"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-
-          {/* Upper-side branching veins */}
-          <path d="M 69 53 C 106 45, 144 47, 184 60" />
-          <path d="M 92 82 C 143 68, 193 72, 230 91" />
-          <path d="M 117 114 C 173 99, 233 106, 265 132" />
-          <path d="M 142 147 C 205 132, 258 147, 290 176" />
-          <path d="M 165 181 C 225 168, 283 188, 310 215" />
-          <path d="M 192 214 C 250 207, 289 229, 308 253" />
-          <path d="M 218 254 C 267 250, 288 265, 294 283" />
-
-          {/* Lower-side branching veins */}
-          <path d="M 71 54 C 49 82, 46 111, 52 135" />
-          <path d="M 93 83 C 71 120, 67 151, 75 178" />
-          <path d="M 118 116 C 96 154, 98 190, 111 216" />
-          <path d="M 143 149 C 127 192, 136 230, 150 255" />
-          <path d="M 169 184 C 159 225, 171 259, 188 280" />
-          <path d="M 195 219 C 194 252, 207 283, 222 296" />
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* SECONDARY VEINS — FINE BOTANICAL TEXTURE */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          clipPath="url(#fellowship-leaf-clip)"
-          stroke="currentColor"
-          strokeWidth="0.95"
-          strokeLinecap="round"
-          opacity="0.85"
-        >
-
-          {/* Upper network */}
-          <path d="M 104 48 C 110 35, 117 25, 124 19" />
-          <path d="M 141 47 C 153 35, 163 31, 175 30" />
-          <path d="M 148 72 C 156 57, 162 49, 173 43" />
-          <path d="M 189 76 C 199 60, 208 54, 220 51" />
-          <path d="M 179 103 C 187 88, 197 81, 207 75" />
-          <path d="M 222 108 C 232 94, 245 88, 257 86" />
-          <path d="M 213 137 C 224 120, 237 112, 251 105" />
-          <path d="M 255 149 C 268 132, 277 126, 291 124" />
-          <path d="M 224 170 C 233 155, 245 144, 258 138" />
-          <path d="M 267 184 C 282 172, 294 166, 309 167" />
-          <path d="M 245 205 C 257 190, 269 183, 282 180" />
-          <path d="M 273 232 C 289 221, 302 218, 320 219" />
-
-          {/* Lower network */}
-          <path d="M 55 100 C 40 107, 27 115, 19 127" />
-          <path d="M 55 128 C 43 137, 34 150, 30 162" />
-          <path d="M 73 150 C 58 161, 46 176, 40 191" />
-          <path d="M 77 176 C 63 187, 57 199, 55 212" />
-          <path d="M 101 186 C 87 199, 79 211, 75 224" />
-          <path d="M 110 212 C 100 230, 100 242, 103 254" />
-          <path d="M 133 220 C 119 233, 113 249, 112 262" />
-          <path d="M 149 252 C 142 268, 143 281, 151 293" />
-          <path d="M 173 256 C 165 273, 168 285, 179 299" />
-
-          {/* Small cross-connections */}
-          <path d="M 122 73 C 126 82, 135 91, 144 95" />
-          <path d="M 158 86 C 163 95, 169 104, 178 108" />
-          <path d="M 184 125 C 191 134, 199 141, 207 144" />
-          <path d="M 218 160 C 225 168, 234 177, 241 180" />
-          <path d="M 115 164 C 122 173, 129 181, 138 184" />
-          <path d="M 142 199 C 149 209, 158 216, 165 219" />
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* STEM */}
-        {/* --------------------------------------------------- */}
-
-        <path
-          d="M 252 309 C 264 326, 277 340, 294 352"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-
-      </svg>
-
-      {/* ======================================================= */}
-      {/* SUN & COSMOS — LOWER RIGHT */}
-      {/* Ornamental celestial drawing, partially cropped */}
-      {/* ======================================================= */}
-
-      <svg
-        viewBox="0 0 500 500"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        aria-hidden="true"
-        className="pointer-events-none absolute -bottom-36 -right-20 z-0 h-64 w-64 text-[#C99B20] opacity-45 md:-bottom-[245px] md:-right-16 md:h-[440px] md:w-[440px] md:opacity-55"
-      >
-
-        <defs>
-
-          {/* Gradual golden glow */}
-          <radialGradient id="fellowship-sun-glow">
-            <stop
-              offset="0%"
-              stopColor="#D9A01B"
-              stopOpacity="0.22"
-            />
-
-            <stop
-              offset="65%"
-              stopColor="#D9A01B"
-              stopOpacity="0.06"
-            />
-
-            <stop
-              offset="100%"
-              stopColor="#D9A01B"
-              stopOpacity="0"
-            />
-          </radialGradient>
-
-        </defs>
-
-        {/* --------------------------------------------------- */}
-        {/* SOFT SOLAR GLOW */}
-        {/* --------------------------------------------------- */}
-
-        <circle
-          cx="250"
-          cy="250"
-          r="245"
-          fill="url(#fellowship-sun-glow)"
-        />
-
-        {/* --------------------------------------------------- */}
-        {/* CELESTIAL OUTER RINGS */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-        >
-
-          <circle
-            cx="250"
-            cy="250"
-            r="231"
-            strokeWidth="1.2"
-            strokeDasharray="2 8"
-          />
-
-          <circle
-            cx="250"
-            cy="250"
-            r="211"
-            strokeWidth="1.5"
-          />
-
-          <circle
-            cx="250"
-            cy="250"
-            r="197"
-            strokeWidth="0.8"
-          />
-
-          <circle
-            cx="250"
-            cy="250"
-            r="175"
-            strokeWidth="2"
-          />
-
-          <circle
-            cx="250"
-            cy="250"
-            r="155"
-            strokeWidth="1"
-          />
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* SOLAR RAYS */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-        >
-
-          {Array.from({ length: 36 }).map((_, index) => {
-
-            const angle = (index * Math.PI * 2) / 36;
-
-            const innerRadius = index % 3 === 0 ? 178 : 181;
-            const outerRadius = index % 3 === 0 ? 207 : 197;
-
-            const x1 = 250 + Math.cos(angle) * innerRadius;
-            const y1 = 250 + Math.sin(angle) * innerRadius;
-
-            const x2 = 250 + Math.cos(angle) * outerRadius;
-            const y2 = 250 + Math.sin(angle) * outerRadius;
-
-            return (
-              <line
-                key={index}
-                x1={x1}
-                y1={y1}
-                x2={x2}
-                y2={y2}
-                strokeWidth={index % 3 === 0 ? 2 : 1.2}
-              />
-            );
-
-          })}
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* ORBITAL GEOMETRY */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          stroke="currentColor"
-          strokeWidth="1.15"
-          opacity="0.8"
-        >
-
-          <ellipse
-            cx="250"
-            cy="250"
-            rx="236"
-            ry="92"
-            transform="rotate(35 250 250)"
-          />
-
-          <ellipse
-            cx="250"
-            cy="250"
-            rx="236"
-            ry="92"
-            transform="rotate(-35 250 250)"
-          />
-
-          <ellipse
-            cx="250"
-            cy="250"
-            rx="236"
-            ry="92"
-            transform="rotate(90 250 250)"
-          />
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* INNER SUN */}
-        {/* --------------------------------------------------- */}
-
-        <circle
-          cx="250"
-          cy="250"
-          r="132"
-          fill="currentColor"
-          fillOpacity="0.025"
-          stroke="currentColor"
-          strokeWidth="1.5"
-        />
-
-        <circle
-          cx="250"
-          cy="250"
-          r="112"
-          stroke="currentColor"
-          strokeWidth="1"
-        />
-
-        <circle
-          cx="250"
-          cy="250"
-          r="88"
-          fill="currentColor"
-          fillOpacity="0.08"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-
-        {/* --------------------------------------------------- */}
-        {/* TWELVE RADIATING PETALS */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-        >
-
-          {Array.from({ length: 12 }).map((_, index) => (
-
-            <path
-              key={index}
-              d="
-                M 250 162
-                C 231 185, 232 208, 250 230
-                C 268 208, 269 185, 250 162
-                Z
-              "
-              transform={`rotate(${index * 30} 250 250)`}
-            />
-
-          ))}
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* CENTRAL SOLAR DISC */}
-        {/* --------------------------------------------------- */}
-
-        <circle
-          cx="250"
-          cy="250"
-          r="45"
-          fill="currentColor"
-          fillOpacity="0.12"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-
-        <circle
-          cx="250"
-          cy="250"
-          r="30"
-          stroke="currentColor"
-          strokeWidth="1"
-        />
-
-        <circle
-          cx="250"
-          cy="250"
-          r="12"
-          fill="currentColor"
-          fillOpacity="0.45"
-        />
-
-        {/* --------------------------------------------------- */}
-        {/* SMALL CELESTIAL DETAILS */}
-        {/* --------------------------------------------------- */}
-
-        <g fill="currentColor">
-
-          <circle cx="43" cy="159" r="3" />
-          <circle cx="403" cy="101" r="4" />
-          <circle cx="449" cy="302" r="3" />
-          <circle cx="128" cy="437" r="3" />
-
-          {Array.from({ length: 12 }).map((_, index) => {
-
-            const angle = (index * Math.PI * 2) / 12;
-
-            const x = 250 + Math.cos(angle) * 145;
-            const y = 250 + Math.sin(angle) * 145;
-
-            return (
-              <circle
-                key={index}
-                cx={x}
-                cy={y}
-                r="2.2"
-              />
-            );
-
-          })}
-
-        </g>
-
-        {/* --------------------------------------------------- */}
-        {/* FOUR SMALL STARS */}
-        {/* --------------------------------------------------- */}
-
-        <g
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-
-          <path d="M 80 72 V 94 M 69 83 H 91" />
-
-          <path d="M 421 65 V 89 M 409 77 H 433" />
-
-          <path d="M 450 374 V 390 M 442 382 H 458" />
-
-          <path d="M 65 374 V 394 M 55 384 H 75" />
-
-        </g>
-
-      </svg>
-
-      {/* ======================================================= */}
-      {/* CENTERED MANIFESTO TEXT */}
-      {/* ======================================================= */}
-
-      <div className="relative z-10 mx-auto max-w-4xl px-8 text-center md:px-12">
-
-        <p
-          className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          At its heart, the Fellowship is an attempt to create the kinds
-          of educational and communal spaces this moment demands:{" "}
-          <strong className="font-semibold">
-            sanctuaries of transformation
-          </strong>{" "}
-          where we can live inside the questions that matter most for this
-          time, and undergo the kind of shape-shift through which what we
-          come to know begins to reshape how we live, what we value, how
-          we relate, what we take responsibility for, and what we
-          ultimately offer our lives to.
-        </p>
-
-      </div>
-
-    </div>
-
   </div>
 
+  {/* Full-width Manifesto Block */}
+  <div className="relative mt-12 left-1/2 w-screen -translate-x-1/2">
+    <div className="relative overflow-hidden border border-black/5 bg-white shadow-[0_10px_28px_rgba(15,23,42,0.07)]">
+      {/* Small centered yellow line on top edge */}
+      <div className="absolute left-1/2 top-0 h-[3px] w-16 -translate-x-1/2 bg-[#D9A01B]" />
+
+      {/* Leaf drawing - top left */}
+      <div className="pointer-events-none absolute left-0 top-0 opacity-75">
+        <svg
+          width="210"
+          height="220"
+          viewBox="0 0 210 220"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-[170px] w-[170px] md:h-[200px] md:w-[200px]"
+        >
+          {/* Main upper leaf */}
+          <path
+            d="M5 118C54 115 103 91 182 18"
+            stroke="#D9A01B"
+            strokeWidth="1.5"
+            strokeOpacity="0.52"
+          />
+          <path
+            d="M5 118C37 120 69 118 96 111C136 101 165 71 182 18"
+            stroke="#D9A01B"
+            strokeWidth="0.9"
+            strokeOpacity="0.34"
+          />
+          <path
+            d="M5 118C33 100 55 82 74 65C95 46 122 30 182 18"
+            stroke="#D9A01B"
+            strokeWidth="0.9"
+            strokeOpacity="0.34"
+          />
+
+          {/* Veins upper */}
+          <path d="M34 110C40 96 48 82 62 68" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+          <path d="M50 106C57 90 67 77 83 61" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+          <path d="M67 100C75 84 87 67 103 51" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+          <path d="M84 92C95 74 109 57 126 41" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+          <path d="M102 83C114 66 130 47 146 30" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+          <path d="M122 72C136 55 150 39 165 24" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
+
+          <path d="M30 115C40 126 49 137 60 149" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M48 112C57 126 67 140 78 154" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M67 106C78 123 90 141 101 158" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M88 99C100 119 112 137 122 151" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M110 89C123 107 138 124 149 136" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+
+          {/* Lower overlapping leaf */}
+          <path
+            d="M122 202C130 185 141 166 160 147C175 132 189 126 210 121"
+            stroke="#D9A01B"
+            strokeWidth="1.2"
+            strokeOpacity="0.45"
+          />
+          <path
+            d="M122 202C128 188 133 176 140 165C154 146 171 132 210 121"
+            stroke="#D9A01B"
+            strokeWidth="0.8"
+            strokeOpacity="0.28"
+          />
+          <path d="M136 190C141 175 147 163 157 151" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M149 181C155 166 163 152 174 140" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+          <path d="M163 171C169 157 178 144 191 133" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
+        </svg>
+      </div>
+
+      {/* Sun / cosmos drawing - bottom right */}
+      <div className="pointer-events-none absolute bottom-[-70px] right-[-26px] opacity-80">
+        <svg
+          width="250"
+          height="250"
+          viewBox="0 0 250 250"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-[190px] w-[190px] md:h-[230px] md:w-[230px]"
+        >
+          {/* Center disc */}
+          <circle
+            cx="124"
+            cy="124"
+            r="38"
+            fill="#D9A01B"
+            fillOpacity="0.22"
+            stroke="#D9A01B"
+            strokeOpacity="0.72"
+            strokeWidth="1.4"
+          />
+
+          {/* Petal-like top ring */}
+          <path
+            d="M68 93C79 75 93 61 107 54C100 71 97 83 97 95"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M82 78C94 60 108 46 122 40C117 58 116 75 116 87"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M100 68C111 49 124 36 137 30C135 49 136 67 138 80"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M121 64C132 46 146 33 160 28C157 47 157 65 159 80"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M143 68C155 51 170 40 184 36C178 54 176 71 176 86"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M162 78C176 63 193 54 208 51C196 67 191 81 190 95"
+            stroke="#D9A01B"
+            strokeOpacity="0.76"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+
+          {/* Lower rays */}
+          <path d="M124 168V208" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M109 165L100 202" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M94 158L76 191" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M82 148L56 174" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M141 165L149 201" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M156 158L172 190" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M168 148L192 173" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
+        </svg>
+      </div>
+
+      {/* Text */}
+      <div className="relative mx-auto max-w-5xl px-6 py-8 text-center md:px-10 md:py-10">
+        <p className="mx-auto max-w-4xl text-base leading-relaxed text-foreground md:text-lg">
+          At its heart, the Fellowship is an attempt to create the kinds of
+          educational and communal spaces this moment demands:{" "}
+          <strong className="font-medium">
+            sanctuaries of transformation
+          </strong>{" "}
+          where we can live inside the questions that matter most for this time,
+          and undergo the kind of shape-shift through which what we come to know
+          begins to reshape how we live, what we value, how we relate, what we
+          take responsibility for, and what we ultimately offer our lives to.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 {/* THE INVITATION */}
