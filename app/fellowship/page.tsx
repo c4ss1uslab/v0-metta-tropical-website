@@ -420,9 +420,18 @@ export default function FellowshipPage() {
           </div>
         </section>
 
-{/* The Fellowship */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
+{/* ========================================================= */}
+{/* THE FELLOWSHIP */}
+{/* ========================================================= */}
+
+<section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* SECTION HEADING */}
+    {/* ========================================================= */}
+
     <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
@@ -442,15 +451,21 @@ export default function FellowshipPage() {
       of transformative journey for a time of planetary crisis
     </h2>
 
+    {/* ========================================================= */}
+    {/* MAIN TEXT */}
+    {/* ========================================================= */}
+
     <div className="mt-8 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
         emerging from the recognition that we are living through the
         unraveling of a world whose promises are reaching their limits, while
-        many of our attempts to respond to our crisis continue to reproduce the very logics
-        of separation, extraction, and optimization that brought us here. The
-        crises of our time cannot be met through better ideas, strategies, or
-        solutions alone. They ask for a deeper transformation in{" "}
+        many of our attempts to respond to our crisis continue to reproduce
+        the very logics of separation, extraction, and optimization that
+        brought us here. The crises of our time cannot be met through better
+        ideas, strategies, or solutions alone. They ask for a deeper
+        transformation in{" "}
         <strong className="font-semibold text-foreground">
           how we perceive reality, relate to ourselves and one another,
           encounter the living world and the sacred, and participate in life
@@ -462,9 +477,10 @@ export default function FellowshipPage() {
         Rather than a traditional leadership program, the Fellowship is a
         living process of formation weaving together spiritual formation,
         relational practice, complexity theory, systems change,
-        civilizational inquiry, and land-based wisdom—bringing into relationship
-        ways of knowing, practices, and lineages rooted across the Global South
-        and Global North that rarely meet within the same educational space.
+        civilizational inquiry, and land-based wisdom—bringing into
+        relationship ways of knowing, practices, and lineages rooted across
+        the Global South and Global North that rarely meet within the same
+        educational space.
       </p>
 
       <p className="leading-relaxed">
@@ -474,177 +490,308 @@ export default function FellowshipPage() {
         to undergo the kind of transformation that can better prepare us to
         navigate and respond wisely to these times.
       </p>
+
     </div>
+
+    {/* ========================================================= */}
+    {/* FULL-WIDTH MANIFESTO BANNER */}
+    {/* ========================================================= */}
+
+    <div className="relative left-1/2 mt-12 w-screen -translate-x-1/2">
+
+      <div className="relative overflow-hidden border border-black/5 bg-white shadow-[0_10px_28px_rgba(15,23,42,0.07)]">
+
+        {/* ===================================================== */}
+        {/* CENTERED YELLOW LINE */}
+        {/* ===================================================== */}
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 h-[3px] w-16 -translate-x-1/2 bg-[#E8BC2F]"
+        />
+
+        {/* ===================================================== */}
+        {/* BOTANICAL LEAF — EXTREME BOTTOM LEFT */}
+        {/* Drawn in SVG; no external image required */}
+        {/* ===================================================== */}
+
+        <div className="pointer-events-none absolute bottom-0 left-0 z-0 opacity-90">
+
+          <svg
+            width="220"
+            height="260"
+            viewBox="0 0 220 260"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            className="h-[170px] w-[145px] md:h-[220px] md:w-[185px]"
+          >
+
+            {/* ------------------------------------------------- */}
+            {/* LEAF OUTLINE */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="
+                M109 8
+                C86 25, 63 53, 47 88
+                C33 118, 28 149, 31 177
+                C35 208, 52 230, 79 243
+                C92 249, 102 252, 109 253
+                C116 252, 126 249, 139 243
+                C166 230, 183 208, 187 177
+                C190 149, 185 118, 171 88
+                C155 53, 132 25, 109 8Z
+              "
+              stroke="#E8BC2F"
+              strokeWidth="1.7"
+              strokeOpacity="0.9"
+            />
+
+            {/* ------------------------------------------------- */}
+            {/* MAIN CENTRAL STEM */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="
+                M109 253
+                C109 221, 109 191, 109 159
+                C109 129, 109 96, 109 8
+              "
+              stroke="#E8BC2F"
+              strokeWidth="2"
+              strokeOpacity="0.95"
+            />
+
+            {/* Stem continuing to bottom edge */}
+            <path
+              d="M109 253 L109 260"
+              stroke="#E8BC2F"
+              strokeWidth="1.8"
+              strokeOpacity="0.9"
+            />
+
+            {/* ------------------------------------------------- */}
+            {/* LEFT PRIMARY VEINS */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="M108 42 C93 49, 79 58, 68 72"
+              stroke="#E8BC2F"
+              strokeWidth="1.15"
+              strokeOpacity="0.78"
+            />
+
+            <path
+              d="M108 63 C88 71, 72 82, 57 99"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.76"
+            />
+
+            <path
+              d="M108 87 C88 95, 70 108, 52 126"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.75"
+            />
+
+            <path
+              d="M108 112 C86 121, 66 136, 47 154"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.74"
+            />
+
+            <path
+              d="M108 138 C84 149, 65 164, 49 181"
+              stroke="#E8BC2F"
+              strokeWidth="1.05"
+              strokeOpacity="0.72"
+            />
+
+            <path
+              d="M108 164 C86 177, 70 191, 58 205"
+              stroke="#E8BC2F"
+              strokeWidth="1.05"
+              strokeOpacity="0.7"
+            />
+
+            <path
+              d="M108 192 C89 205, 78 216, 70 225"
+              stroke="#E8BC2F"
+              strokeWidth="1"
+              strokeOpacity="0.68"
+            />
+
+            {/* ------------------------------------------------- */}
+            {/* RIGHT PRIMARY VEINS */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="M110 42 C125 49, 139 58, 150 72"
+              stroke="#E8BC2F"
+              strokeWidth="1.15"
+              strokeOpacity="0.78"
+            />
+
+            <path
+              d="M110 63 C130 71, 146 82, 161 99"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.76"
+            />
+
+            <path
+              d="M110 87 C130 95, 148 108, 166 126"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.75"
+            />
+
+            <path
+              d="M110 112 C132 121, 152 136, 171 154"
+              stroke="#E8BC2F"
+              strokeWidth="1.1"
+              strokeOpacity="0.74"
+            />
+
+            <path
+              d="M110 138 C134 149, 153 164, 169 181"
+              stroke="#E8BC2F"
+              strokeWidth="1.05"
+              strokeOpacity="0.72"
+            />
+
+            <path
+              d="M110 164 C132 177, 148 191, 160 205"
+              stroke="#E8BC2F"
+              strokeWidth="1.05"
+              strokeOpacity="0.7"
+            />
+
+            <path
+              d="M110 192 C129 205, 140 216, 148 225"
+              stroke="#E8BC2F"
+              strokeWidth="1"
+              strokeOpacity="0.68"
+            />
+
+            {/* ------------------------------------------------- */}
+            {/* SECONDARY VEINS — LEFT */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="M83 57 C77 66, 72 75, 67 85"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.38"
+            />
+
+            <path
+              d="M72 78 C66 88, 61 98, 56 109"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.38"
+            />
+
+            <path
+              d="M62 103 C56 114, 51 125, 47 136"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.36"
+            />
+
+            <path
+              d="M54 131 C49 142, 45 153, 42 164"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.34"
+            />
+
+            <path
+              d="M51 159 C47 169, 45 179, 44 188"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.32"
+            />
+
+            {/* ------------------------------------------------- */}
+            {/* SECONDARY VEINS — RIGHT */}
+            {/* ------------------------------------------------- */}
+
+            <path
+              d="M137 57 C143 66, 148 75, 153 85"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.38"
+            />
+
+            <path
+              d="M148 78 C154 88, 159 98, 164 109"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.38"
+            />
+
+            <path
+              d="M158 103 C164 114, 169 125, 173 136"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.36"
+            />
+
+            <path
+              d="M166 131 C171 142, 175 153, 178 164"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.34"
+            />
+
+            <path
+              d="M169 159 C173 169, 175 179, 176 188"
+              stroke="#E8BC2F"
+              strokeWidth="0.65"
+              strokeOpacity="0.32"
+            />
+
+          </svg>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* CENTERED MANIFESTO TEXT */}
+        {/* ===================================================== */}
+
+        <div className="relative z-10 mx-auto max-w-5xl px-6 py-8 text-center md:px-10 md:py-10">
+
+          <p
+            className="mx-auto max-w-4xl text-base leading-relaxed text-foreground md:text-lg"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            At its heart, the Fellowship is an attempt to create the kinds
+            of educational and communal spaces this moment demands:{" "}
+            <strong className="font-medium">
+              sanctuaries of transformation
+            </strong>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which what we
+            come to know begins to reshape how we live, what we value, how
+            we relate, what we take responsibility for, and what we
+            ultimately offer our lives to.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
-  {/* Full-width Manifesto Block */}
-  <div className="relative mt-12 left-1/2 w-screen -translate-x-1/2">
-    <div className="relative overflow-hidden border border-black/5 bg-white shadow-[0_10px_28px_rgba(15,23,42,0.07)]">
-      {/* Small centered yellow line on top edge */}
-      <div className="absolute left-1/2 top-0 h-[3px] w-16 -translate-x-1/2 bg-[#D9A01B]" />
-
-      {/* Leaf drawing - top left */}
-      <div className="pointer-events-none absolute left-0 top-0 opacity-75">
-        <svg
-          width="210"
-          height="220"
-          viewBox="0 0 210 220"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-[170px] w-[170px] md:h-[200px] md:w-[200px]"
-        >
-          {/* Main upper leaf */}
-          <path
-            d="M5 118C54 115 103 91 182 18"
-            stroke="#D9A01B"
-            strokeWidth="1.5"
-            strokeOpacity="0.52"
-          />
-          <path
-            d="M5 118C37 120 69 118 96 111C136 101 165 71 182 18"
-            stroke="#D9A01B"
-            strokeWidth="0.9"
-            strokeOpacity="0.34"
-          />
-          <path
-            d="M5 118C33 100 55 82 74 65C95 46 122 30 182 18"
-            stroke="#D9A01B"
-            strokeWidth="0.9"
-            strokeOpacity="0.34"
-          />
-
-          {/* Veins upper */}
-          <path d="M34 110C40 96 48 82 62 68" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-          <path d="M50 106C57 90 67 77 83 61" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-          <path d="M67 100C75 84 87 67 103 51" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-          <path d="M84 92C95 74 109 57 126 41" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-          <path d="M102 83C114 66 130 47 146 30" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-          <path d="M122 72C136 55 150 39 165 24" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.28" />
-
-          <path d="M30 115C40 126 49 137 60 149" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M48 112C57 126 67 140 78 154" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M67 106C78 123 90 141 101 158" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M88 99C100 119 112 137 122 151" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M110 89C123 107 138 124 149 136" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-
-          {/* Lower overlapping leaf */}
-          <path
-            d="M122 202C130 185 141 166 160 147C175 132 189 126 210 121"
-            stroke="#D9A01B"
-            strokeWidth="1.2"
-            strokeOpacity="0.45"
-          />
-          <path
-            d="M122 202C128 188 133 176 140 165C154 146 171 132 210 121"
-            stroke="#D9A01B"
-            strokeWidth="0.8"
-            strokeOpacity="0.28"
-          />
-          <path d="M136 190C141 175 147 163 157 151" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M149 181C155 166 163 152 174 140" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-          <path d="M163 171C169 157 178 144 191 133" stroke="#D9A01B" strokeWidth="0.7" strokeOpacity="0.24" />
-        </svg>
-      </div>
-
-      {/* Sun / cosmos drawing - bottom right */}
-      <div className="pointer-events-none absolute bottom-[-70px] right-[-26px] opacity-80">
-        <svg
-          width="250"
-          height="250"
-          viewBox="0 0 250 250"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-[190px] w-[190px] md:h-[230px] md:w-[230px]"
-        >
-          {/* Center disc */}
-          <circle
-            cx="124"
-            cy="124"
-            r="38"
-            fill="#D9A01B"
-            fillOpacity="0.22"
-            stroke="#D9A01B"
-            strokeOpacity="0.72"
-            strokeWidth="1.4"
-          />
-
-          {/* Petal-like top ring */}
-          <path
-            d="M68 93C79 75 93 61 107 54C100 71 97 83 97 95"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M82 78C94 60 108 46 122 40C117 58 116 75 116 87"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M100 68C111 49 124 36 137 30C135 49 136 67 138 80"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M121 64C132 46 146 33 160 28C157 47 157 65 159 80"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M143 68C155 51 170 40 184 36C178 54 176 71 176 86"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M162 78C176 63 193 54 208 51C196 67 191 81 190 95"
-            stroke="#D9A01B"
-            strokeOpacity="0.76"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-
-          {/* Lower rays */}
-          <path d="M124 168V208" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M109 165L100 202" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M94 158L76 191" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M82 148L56 174" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M141 165L149 201" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M156 158L172 190" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M168 148L192 173" stroke="#D9A01B" strokeOpacity="0.66" strokeWidth="1.2" strokeLinecap="round" />
-        </svg>
-      </div>
-
-      {/* Text */}
-      <div className="relative mx-auto max-w-5xl px-6 py-8 text-center md:px-10 md:py-10">
-        <p className="mx-auto max-w-4xl text-base leading-relaxed text-foreground md:text-lg">
-          At its heart, the Fellowship is an attempt to create the kinds of
-          educational and communal spaces this moment demands:{" "}
-          <strong className="font-medium">
-            sanctuaries of transformation
-          </strong>{" "}
-          where we can live inside the questions that matter most for this time,
-          and undergo the kind of shape-shift through which what we come to know
-          begins to reshape how we live, what we value, how we relate, what we
-          take responsibility for, and what we ultimately offer our lives to.
-        </p>
-      </div>
-    </div>
-  </div>
 </section>
 
 {/* THE INVITATION */}
