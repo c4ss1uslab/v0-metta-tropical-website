@@ -928,7 +928,6 @@ export default function FellowshipPage() {
 </section>
 
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
-        <section id="fellowship-overview" className="scroll-mt-24 ..."></section>
 <section
   id="structure"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
