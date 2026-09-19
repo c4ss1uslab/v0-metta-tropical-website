@@ -374,71 +374,76 @@ export default function FellowshipPage() {
     aria-label="Fellowship section navigation"
     className="border-y border-white/10 bg-[#111827]"
   >
-    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
 
-      {/* ===================================================== */}
-      {/* NAVIGATION LINKS */}
-      {/* Equal-width columns on desktop */}
       {/* Horizontal scrolling on smaller screens */}
-      {/* ===================================================== */}
+      <div className="overflow-x-auto">
 
-      <div className="flex items-center overflow-x-auto py-3 lg:grid lg:grid-cols-7 lg:overflow-visible lg:gap-1">
+        {/*
+          justify-between distributes the available empty space
+          equally BETWEEN the actual navigation labels.
 
-        {[
-          {
-            label: "Fellowship Overview",
-            href: "#fellowship-overview",
-          },
-          {
-            label: "Curriculum",
-            href: "#path",
-          },
-          {
-            label: "Pedagogy",
-            href: "#pedagogy",
-          },
-          {
-            label: "Schedule",
-            href: "#schedule",
-          },
-          {
-            label: "Cost",
-            href: "#cost",
-          },
-          {
-            label: "Team",
-            href: "#team",
-          },
-          {
-            label: "FAQ",
-            href: "#faq",
-          },
-        ].map((item) => (
+          No horizontal padding on individual links means the
+          visible text has symmetrical spacing.
+        */}
 
-          <a
-            key={item.label}
-            href={item.href}
-            className="
-              flex shrink-0 items-center justify-center
-              whitespace-nowrap
-              rounded-md
-              px-4 py-3
-              text-center text-sm font-medium
-              text-[#D9A01B]
-              transition-colors duration-200
-              hover:bg-white/10
-              hover:text-[#E8BC2F]
-              lg:w-full lg:px-2
-            "
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            {item.label}
-          </a>
+        <div className="flex w-full min-w-[1000px] items-center justify-between py-4 lg:min-w-0">
 
-        ))}
+          {[
+            {
+              label: "Fellowship Overview",
+              href: "#fellowship-overview",
+            },
+            {
+              label: "Curriculum",
+              href: "#path",
+            },
+            {
+              label: "Pedagogy",
+              href: "#pedagogy",
+            },
+            {
+              label: "Schedule",
+              href: "#schedule",
+            },
+            {
+              label: "Cost",
+              href: "#cost",
+            },
+            {
+              label: "Team",
+              href: "#team",
+            },
+            {
+              label: "FAQ",
+              href: "#faq",
+            },
+          ].map((item) => (
+
+            <a
+              key={item.label}
+              href={item.href}
+              className="
+                shrink-0
+                whitespace-nowrap
+                py-2
+                text-base font-medium
+                text-[#D9A01B]
+                transition-colors duration-200
+                hover:text-[#E8BC2F]
+                md:text-lg
+              "
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              {item.label}
+            </a>
+
+          ))}
+
+        </div>
 
       </div>
 
