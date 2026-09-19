@@ -657,11 +657,18 @@ export default function FellowshipPage() {
 
 </section>
 
+{/* ========================================================= */}
 {/* THE INVITATION */}
+{/* ========================================================= */}
+
 <section
   id="invitation"
-  className="scroll-mt-32 bg-background py-20 lg:py-24"
+  className="scroll-mt-32 overflow-x-clip bg-background py-20 lg:py-24"
 >
+  {/* ========================================================= */}
+  {/* MAIN CONTENT */}
+  {/* ========================================================= */}
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
     {/* Section Title */}
@@ -669,8 +676,12 @@ export default function FellowshipPage() {
       The Invitation
     </span>
 
-    {/* Opening Quote */}
+    {/* ========================================================= */}
+    {/* OPENING QUOTE */}
+    {/* ========================================================= */}
+
     <blockquote className="mt-5 max-w-3xl">
+
       <p
         className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
         style={{
@@ -685,9 +696,15 @@ export default function FellowshipPage() {
       <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
         — Daniel Schmachtenberger
       </cite>
+
     </blockquote>
 
+    {/* ========================================================= */}
+    {/* FIRST PART OF THE INVITATION */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         In times between worlds—when the predominant structures and stories of
         a civilization begin to decay before new ones have been built—certain
@@ -700,7 +717,14 @@ export default function FellowshipPage() {
         emergence, between what is dying and what has not yet been born.
       </p>
 
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+      {/* Same Font Family as the Rest of the Page */}
+      <p
+        className="text-xl font-medium leading-relaxed text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
         You may already know what this feels like.
       </p>
 
@@ -726,33 +750,109 @@ export default function FellowshipPage() {
         and responding from which radically different futures might emerge.
       </p>
 
-      <p className="leading-relaxed">
-        This is why we understand this moment not only as a crisis, but
-        potentially as a civilizational rite of passage—one that asks us to
-        question who we are becoming, what we aspire toward, which desires are
-        shaping our lives, what we are willing to let go of and compost, and
-        what may need to change if our lives are to serve the flourishing of all
-        living beings.
-      </p>
-
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-        And thresholds of this depth are difficult to cross alone.
-      </p>
-
-      <p className="leading-relaxed">
-        They need relationships strong enough to hold uncertainty. Practices
-        that help us remain present when old identities and assumptions begin
-        to loosen. Friends and mentors who can challenge and care for us. Places
-        where grief and longing can be taken seriously, and where we can
-        experiment with other possibilities of life aligned to what we know to
-        be true.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        The Metta Tropical Fellowship is our attempt to create such a place.
-      </p>
     </div>
+
   </div>
+
+  {/* ========================================================= */}
+  {/* BOTTOM SECTION — TEXT LEFT / IMAGE RIGHT */}
+  {/* ========================================================= */}
+
+  {/*
+    Full-width layout.
+
+    On desktop:
+    - Text occupies the left half.
+    - Image occupies the right half.
+    - Both columns stretch to exactly the same height.
+    - The image begins with the first paragraph and ends
+      alongside the final sentence.
+
+    On mobile:
+    - Text appears first.
+    - Image appears underneath.
+  */}
+
+  <div className="relative left-1/2 mt-6 w-screen -translate-x-1/2">
+
+    <div className="grid grid-cols-1 items-stretch md:grid-cols-2">
+
+      {/* ===================================================== */}
+      {/* LEFT COLUMN — CLOSING TEXT */}
+      {/* ===================================================== */}
+
+      <div
+        className="
+          min-w-0
+          px-6
+          md:py-0
+          md:pl-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]
+          md:pr-10
+          lg:pr-14
+        "
+      >
+
+        <div className="space-y-6 text-muted-foreground">
+
+          {/* Opening Paragraph — Image Begins Here */}
+          <p className="leading-relaxed">
+            This is why we understand this moment not only as a crisis, but
+            potentially as a civilizational rite of passage—one that asks us to
+            question who we are becoming, what we aspire toward, which desires
+            are shaping our lives, what we are willing to let go of and
+            compost, and what may need to change if our lives are to serve
+            the flourishing of all living beings.
+          </p>
+
+          {/* Same Font Family as the Rest of the Page */}
+          <p
+            className="text-xl font-medium leading-relaxed text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            And thresholds of this depth are difficult to cross alone.
+          </p>
+
+          <p className="leading-relaxed">
+            They need relationships strong enough to hold uncertainty.
+            Practices that help us remain present when old identities and
+            assumptions begin to loosen. Friends and mentors who can
+            challenge and care for us. Places where grief and longing can
+            be taken seriously, and where we can experiment with other
+            possibilities of life aligned to what we know to be true.
+          </p>
+
+          {/* Final Sentence — Image Ends Here */}
+          <p className="font-medium leading-relaxed text-foreground">
+            The Metta Tropical Fellowship is our attempt to create such a
+            place.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* ===================================================== */}
+      {/* RIGHT COLUMN — FULL-HEIGHT IMAGE */}
+      {/* ===================================================== */}
+
+      <div className="relative mt-8 min-h-[320px] w-full overflow-hidden bg-[#EAE7DF] md:mt-0 md:min-h-0">
+
+        <img
+          src="https://i.postimg.cc/7P5Gt2S0/DSCF5398.jpg"
+          alt="A moment from the Metta Tropical community"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 {/* WHO WE MUST BECOME */}
