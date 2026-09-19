@@ -606,10 +606,12 @@ export default function FellowshipPage() {
             <span
               style={{
                 fontFamily: "inherit",
-                fontSize: "1em",
-                fontWeight: 700,
+                fontSize: "inherit",
+                fontWeight: "inherit",
+                fontStyle: "inherit",
                 lineHeight: "inherit",
                 letterSpacing: "inherit",
+                WebkitTextStroke: "0.3px currentColor",
               }}
             >
               sanctuaries of transformation
