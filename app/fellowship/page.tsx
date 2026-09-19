@@ -379,14 +379,7 @@ export default function FellowshipPage() {
       {/* Horizontal scrolling on smaller screens */}
       <div className="overflow-x-auto">
 
-        {/*
-          justify-between distributes the available empty space
-          equally BETWEEN the actual navigation labels.
-
-          No horizontal padding on individual links means the
-          visible text has symmetrical spacing.
-        */}
-
+        {/* Equal spacing between navigation labels */}
         <div className="flex w-full min-w-[1000px] items-center justify-between py-4 lg:min-w-0">
 
           {[
@@ -428,7 +421,7 @@ export default function FellowshipPage() {
                 whitespace-nowrap
                 py-2
                 text-base font-medium
-                text-[#D9A01B]
+                text-white
                 transition-colors duration-200
                 hover:text-[#E8BC2F]
                 md:text-lg
