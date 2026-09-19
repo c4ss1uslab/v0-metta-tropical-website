@@ -5682,20 +5682,17 @@ export default function FellowshipPage() {
           different to emerge.
         </p>
 
+        {/* Two paragraphs combined into one */}
         <p className="leading-relaxed">
           We are not holding this Fellowship because we have figured out
           how to navigate the transition ahead. In many ways, quite the
-          opposite.
-        </p>
-
-        <p className="leading-relaxed">
-          We are holding it because we, too, are trying to discern how to
-          live and respond to this moment. We have longed for spaces where
-          our grief can be met without being rushed, our deepest longings
-          can be given room to breathe, and our imagination can reach
-          beyond the limits of the world we have inherited. Places where
-          we can be held, challenged, and accompanied through the
-          transformation this moment asks of us.
+          opposite. We are holding it because we, too, are trying to
+          discern how to live and respond to this moment. We have longed
+          for spaces where our grief can be met without being rushed,
+          our deepest longings can be given room to breathe, and our
+          imagination can reach beyond the limits of the world we have
+          inherited. Places where we can be held, challenged, and
+          accompanied through the transformation this moment asks of us.
         </p>
 
         <p className="font-medium leading-relaxed text-foreground">
@@ -5725,10 +5722,10 @@ export default function FellowshipPage() {
     {/* CORE TEAM */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-5xl">
+    <div className="mx-auto mt-14 max-w-5xl">
 
       {/* Gallery Heading */}
-      <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
+      <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
 
         <h3
           className="text-xl font-semibold text-foreground md:text-2xl"
@@ -5740,18 +5737,17 @@ export default function FellowshipPage() {
           Core Team
         </h3>
 
-        <span className="text-xs text-muted-foreground md:text-sm">
+        <span className="text-xs text-muted-foreground">
           Hover over or tap a portrait to read their story
         </span>
 
       </div>
 
       {/* ===================================================== */}
-      {/* TEAM GRID */}
-      {/* Two columns on desktop; one column on mobile */}
+      {/* FOUR-COLUMN TEAM GRID */}
       {/* ===================================================== */}
 
-      <div className="grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 md:gap-y-14">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
 
         {/* ===================================================== */}
         {/* MARCELO PETERLINI */}
@@ -5759,6 +5755,7 @@ export default function FellowshipPage() {
 
         <div className="min-w-0">
 
+          {/* Only the portrait and bio are inside details */}
           <details className="group">
 
             <summary className="relative block aspect-[4/5] cursor-pointer list-none overflow-hidden bg-[#EAE7DF] [&::-webkit-details-marker]:hidden">
@@ -5768,86 +5765,72 @@ export default function FellowshipPage() {
                 src="https://i.postimg.cc/pL7y0wwR/marcelo.jpg"
                 alt="Marcelo Peterlini"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-              />
-
-              {/* Subtle Darkening on Hover */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[#17251E]/0 transition-colors duration-300 group-hover:bg-[#17251E]/85 group-open:bg-[#17251E]/85 group-focus-within:bg-[#17251E]/85"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
               />
 
               {/* Biography Overlay */}
-              <div
-                className="absolute inset-0 z-10 flex flex-col justify-center overflow-y-auto bg-[#17251E]/95 p-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-open:opacity-100 group-focus-within:opacity-100 md:p-8"
-              >
+              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
 
-                <div className="my-auto">
-
-                  <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.14em] text-[#E8BC2F]">
-                    Marcelo Peterlini
-                  </span>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    <strong className="font-semibold text-white">
-                      Mars
-                    </strong>{" "}
-                    is an educator who has dedicated his life to
-                    understanding how to design educational architectures
-                    that enable young people to realize their fullest
-                    capacity and become wise elders capable of serving
-                    the flourishing of life. To do this, he has been
-                    exploring how to integrate spiritual formation,
-                    emotional maturity, leadership development, and
-                    systems thinking into transformative experiences
-                    that help us cultivate the capacities needed to
-                    navigate the complexity of life and respond to
-                    the metacrisis. Over more than ten years working
-                    in education, he has collaborated with major
-                    Latin American leadership organizations, developed
-                    socio-emotional education programs for schools,
-                    mentored young people to enter universities,
-                    organized spiritual retreats for youth, initiated
-                    a project to explore masculinity with teenage boys
-                    in schools in the São Paulo region, and offers
-                    therapeutic coaching to young leaders to align
-                    their lives with their higher service to the planet.
-                  </p>
-
-                </div>
+                <p className="text-xs leading-[1.5] text-white/90">
+                  <strong className="font-semibold text-white">
+                    Mars
+                  </strong>{" "}
+                  is an educator who has dedicated his life to understanding
+                  how to design educational architectures that enable young
+                  people to realize their fullest capacity and become wise
+                  elders capable of serving the flourishing of life. To do
+                  this, he has been exploring how to integrate spiritual
+                  formation, emotional maturity, leadership development,
+                  and systems thinking into transformative experiences
+                  that help us cultivate the capacities needed to navigate
+                  the complexity of life and respond to the metacrisis.
+                  Over more than ten years working in education, he has
+                  collaborated with major Latin American leadership
+                  organizations, developed socio-emotional education
+                  programs for schools, mentored young people to enter
+                  universities, organized spiritual retreats for youth,
+                  initiated a project to explore masculinity with teenage
+                  boys in schools in the São Paulo region, and offers
+                  therapeutic coaching to young leaders to align their
+                  lives with their higher service to the planet.
+                </p>
 
               </div>
 
-              {/* Hover Invitation — Hidden When Bio Appears */}
-              <div className="pointer-events-none absolute bottom-5 right-5 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/80 bg-black/20 text-lg text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0 group-focus-within:opacity-0">
+              {/* Small Hover/Tap Indicator */}
+              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
                 +
               </div>
 
             </summary>
 
-            {/* Name and Role — Always Visible */}
-            <div className="mt-5">
-
-              <a
-                href="https://www.linkedin.com/in/marcelo-peterlini-8a03ba22/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-xl font-semibold text-foreground transition-colors hover:text-[#B88610]"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Marcelo Peterlini ↗
-              </a>
-
-              <p className="mt-1 text-sm text-muted-foreground">
-                Team Member &amp; Facilitator
-              </p>
-
-            </div>
-
           </details>
+
+          {/* ================================================= */}
+          {/* ALWAYS-VISIBLE NAME, ROLE & LINKEDIN */}
+          {/* ================================================= */}
+
+          <div className="mt-4">
+
+            <a
+              href="https://www.linkedin.com/in/marcelo-peterlini-8a03ba22/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Marcelo Peterlini
+              <span className="text-sm" aria-hidden="true">↗</span>
+            </a>
+
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Team Member &amp; Facilitator
+            </p>
+
+          </div>
 
         </div>
 
@@ -5866,85 +5849,69 @@ export default function FellowshipPage() {
                 src="https://i.postimg.cc/9QSzx6v8/Cassius.png"
                 alt="Cássius Carvalho"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-              />
-
-              {/* Subtle Darkening on Hover */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[#17251E]/0 transition-colors duration-300 group-hover:bg-[#17251E]/85 group-open:bg-[#17251E]/85 group-focus-within:bg-[#17251E]/85"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
               />
 
               {/* Biography Overlay */}
-              <div
-                className="absolute inset-0 z-10 flex flex-col justify-center overflow-y-auto bg-[#17251E]/95 p-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-open:opacity-100 group-focus-within:opacity-100 md:p-8"
-              >
+              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
 
-                <div className="my-auto">
-
-                  <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.14em] text-[#E8BC2F]">
-                    Cássius Carvalho
-                  </span>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    <strong className="font-semibold text-white">
-                      Cássius
-                    </strong>{" "}
-                    is a self-directed learner, meta-designer, and
-                    metacrisis researcher who has spent the past five
-                    years exploring the question:{" "}
-                    <em>
-                      How can we create systems that help us “play life”
-                      together — coordinating and collaborating toward
-                      increasingly wise and regenerative futures?
-                    </em>{" "}
-                    At 17, he was the first Latin American participant
-                    accepted into a highly competitive career
-                    acceleration program in Silicon Valley, and at 19
-                    he was responsible for managing over $4 million
-                    in an AI startup. This experience disillusioned
-                    him with a techno-solutionist worldview, and
-                    since 2019 he has been exploring the intersections
-                    of art, technology, consciousness, learning,
-                    regeneration, and play as systemic responses
-                    to the metacrisis — applying his discoveries
-                    across diverse projects and initiatives.
-                  </p>
-
-                </div>
+                <p className="text-xs leading-[1.5] text-white/90">
+                  <strong className="font-semibold text-white">
+                    Cássius
+                  </strong>{" "}
+                  is a self-directed learner, meta-designer, and
+                  metacrisis researcher who has spent the past five
+                  years exploring the question:{" "}
+                  <em>
+                    How can we create systems that help us “play life”
+                    together — coordinating and collaborating toward
+                    increasingly wise and regenerative futures?
+                  </em>{" "}
+                  At 17, he was the first Latin American participant
+                  accepted into a highly competitive career acceleration
+                  program in Silicon Valley, and at 19 he was responsible
+                  for managing over $4 million in an AI startup. This
+                  experience disillusioned him with a techno-solutionist
+                  worldview, and since 2019 he has been exploring the
+                  intersections of art, technology, consciousness,
+                  learning, regeneration, and play as systemic responses
+                  to the metacrisis — applying his discoveries across
+                  diverse projects and initiatives.
+                </p>
 
               </div>
 
-              {/* Hover Invitation */}
-              <div className="pointer-events-none absolute bottom-5 right-5 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/80 bg-black/20 text-lg text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0 group-focus-within:opacity-0">
+              {/* Hover/Tap Indicator */}
+              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
                 +
               </div>
 
             </summary>
 
-            {/* Name and Role — Always Visible */}
-            <div className="mt-5">
-
-              <a
-                href="https://www.linkedin.com/in/cassiuscarvalho/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-xl font-semibold text-foreground transition-colors hover:text-[#B88610]"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Cássius Carvalho ↗
-              </a>
-
-              <p className="mt-1 text-sm text-muted-foreground">
-                Team Member &amp; Researcher
-              </p>
-
-            </div>
-
           </details>
+
+          {/* Always-Visible Name, Role & LinkedIn */}
+          <div className="mt-4">
+
+            <a
+              href="https://www.linkedin.com/in/cassiuscarvalho/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Cássius Carvalho
+              <span className="text-sm" aria-hidden="true">↗</span>
+            </a>
+
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Team Member &amp; Researcher
+            </p>
+
+          </div>
 
         </div>
 
@@ -5963,83 +5930,66 @@ export default function FellowshipPage() {
                 src="https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg"
                 alt="Nathalie Zogbi"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-              />
-
-              {/* Subtle Darkening on Hover */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[#17251E]/0 transition-colors duration-300 group-hover:bg-[#17251E]/85 group-open:bg-[#17251E]/85 group-focus-within:bg-[#17251E]/85"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
               />
 
               {/* Biography Overlay */}
-              <div
-                className="absolute inset-0 z-10 flex flex-col justify-center overflow-y-auto bg-[#17251E]/95 p-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-open:opacity-100 group-focus-within:opacity-100 md:p-8"
-              >
+              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
 
-                <div className="my-auto">
-
-                  <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.14em] text-[#E8BC2F]">
-                    Nathalie Zogbi
-                  </span>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    Before joining Imaginable Futures, Nathalie
-                    co-founded CO.LETIVO, a teacher residency program
-                    in Brazil aimed at bringing equity and excellence
-                    to teacher training in the country. Nathalie was
-                    also a partner at SOMOS Educação, where she
-                    managed Colégio Anglo 21, the company’s leading
-                    primary and secondary school in São Paulo.
-                    She also worked in the company’s M&amp;A and school
-                    operations teams. During her time in education,
-                    Nathalie conducted a deep inquiry into what drives
-                    extraordinary learning experiences, connecting
-                    research findings from Learning Science to school
-                    practices worldwide. As part of this journey,
-                    she visited over 40 schools across seven countries
-                    and mapped effective learning conditions,
-                    curriculum design choices, instructional strategies,
-                    and support systems beyond the classroom.
-                    Nathalie began her career in investment banking
-                    before moving into education in search of meaning
-                    and social impact.
-                  </p>
-
-                </div>
+                <p className="text-xs leading-[1.5] text-white/90">
+                  Before joining Imaginable Futures, Nathalie co-founded
+                  CO.LETIVO, a teacher residency program in Brazil aimed
+                  at bringing equity and excellence to teacher training
+                  in the country. Nathalie was also a partner at SOMOS
+                  Educação, where she managed Colégio Anglo 21, the
+                  company’s leading primary and secondary school in
+                  São Paulo. She also worked in the company’s M&amp;A
+                  and school operations teams. During her time in
+                  education, Nathalie conducted a deep inquiry into
+                  what drives extraordinary learning experiences,
+                  connecting research findings from Learning Science
+                  to school practices worldwide. As part of this
+                  journey, she visited over 40 schools across seven
+                  countries and mapped effective learning conditions,
+                  curriculum design choices, instructional strategies,
+                  and support systems beyond the classroom. Nathalie
+                  began her career in investment banking before moving
+                  into education in search of meaning and social impact.
+                </p>
 
               </div>
 
-              {/* Hover Invitation */}
-              <div className="pointer-events-none absolute bottom-5 right-5 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/80 bg-black/20 text-lg text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0 group-focus-within:opacity-0">
+              {/* Hover/Tap Indicator */}
+              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
                 +
               </div>
 
             </summary>
 
-            {/* Name and Role — Always Visible */}
-            <div className="mt-5">
-
-              <a
-                href="https://www.linkedin.com/in/nathalie-zogbi-ruah-53648856/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-xl font-semibold text-foreground transition-colors hover:text-[#B88610]"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Nathalie Zogbi ↗
-              </a>
-
-              <p className="mt-1 text-sm text-muted-foreground">
-                Team Member &amp; Mentor
-              </p>
-
-            </div>
-
           </details>
+
+          {/* Always-Visible Name, Role & LinkedIn */}
+          <div className="mt-4">
+
+            <a
+              href="https://www.linkedin.com/in/nathalie-zogbi-ruah-53648856/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Nathalie Zogbi
+              <span className="text-sm" aria-hidden="true">↗</span>
+            </a>
+
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Team Member &amp; Mentor
+            </p>
+
+          </div>
 
         </div>
 
@@ -6058,84 +6008,69 @@ export default function FellowshipPage() {
                 src="https://i.postimg.cc/y85WfMw2/Karen.jpg"
                 alt="Karen Sun"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-              />
-
-              {/* Subtle Darkening on Hover */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[#17251E]/0 transition-colors duration-300 group-hover:bg-[#17251E]/85 group-open:bg-[#17251E]/85 group-focus-within:bg-[#17251E]/85"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
               />
 
               {/* Biography Overlay */}
-              <div
-                className="absolute inset-0 z-10 flex flex-col justify-center overflow-y-auto bg-[#17251E]/95 p-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-open:opacity-100 group-focus-within:opacity-100 md:p-8"
-              >
+              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
 
-                <div className="my-auto">
-
-                  <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.14em] text-[#E8BC2F]">
-                    Karen Sun
-                  </span>
-
-                  <p className="text-sm leading-relaxed text-white/90">
-                    <strong className="font-semibold text-white">
-                      Karen
-                    </strong>{" "}
-                    is an educator and advisory Chief Technology Officer
-                    with global experience researching and working at
-                    the intersection of education and technology,
-                    in both for-profit and non-profit organizations.
-                    Today, her work focuses on understanding how to
-                    make wise, life-conscious decisions around
-                    technology — and especially how to bring this
-                    inquiry into educational and governmental spaces.
-                    She has led initiatives such as a digital school
-                    for COVID-displaced elementary students in Colombia,
-                    digital literacy training and higher education
-                    counseling in South Africa, and the development
-                    of adaptive learning tools used by millions of
-                    students on Quizlet. Karen is currently the CTO
-                    of VélezReyes+, a Latin American philanthropic
-                    platform working through education and leadership
-                    transformation, and a professor of society and
-                    technology at Insper, in Brazil.
-                  </p>
-
-                </div>
+                <p className="text-xs leading-[1.5] text-white/90">
+                  <strong className="font-semibold text-white">
+                    Karen
+                  </strong>{" "}
+                  is an educator and advisory Chief Technology Officer
+                  with global experience researching and working at
+                  the intersection of education and technology, in both
+                  for-profit and non-profit organizations. Today, her
+                  work focuses on understanding how to make wise,
+                  life-conscious decisions around technology — and
+                  especially how to bring this inquiry into educational
+                  and governmental spaces. She has led initiatives
+                  such as a digital school for COVID-displaced
+                  elementary students in Colombia, digital literacy
+                  training and higher education counseling in South
+                  Africa, and the development of adaptive learning
+                  tools used by millions of students on Quizlet.
+                  Karen is currently the CTO of VélezReyes+, a Latin
+                  American philanthropic platform working through
+                  education and leadership transformation, and a
+                  professor of society and technology at Insper,
+                  in Brazil.
+                </p>
 
               </div>
 
-              {/* Hover Invitation */}
-              <div className="pointer-events-none absolute bottom-5 right-5 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/80 bg-black/20 text-lg text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0 group-focus-within:opacity-0">
+              {/* Hover/Tap Indicator */}
+              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
                 +
               </div>
 
             </summary>
 
-            {/* Name and Role — Always Visible */}
-            <div className="mt-5">
-
-              <a
-                href="https://www.linkedin.com/in/karenysun/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-xl font-semibold text-foreground transition-colors hover:text-[#B88610]"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Karen Sun ↗
-              </a>
-
-              <p className="mt-1 text-sm text-muted-foreground">
-                Team Member &amp; Guest Teacher
-              </p>
-
-            </div>
-
           </details>
+
+          {/* Always-Visible Name, Role & LinkedIn */}
+          <div className="mt-4">
+
+            <a
+              href="https://www.linkedin.com/in/karenysun/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              Karen Sun
+              <span className="text-sm" aria-hidden="true">↗</span>
+            </a>
+
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Team Member &amp; Guest Teacher
+            </p>
+
+          </div>
 
         </div>
 
