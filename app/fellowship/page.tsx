@@ -224,7 +224,10 @@ export default function FellowshipPage() {
       <Navigation />
 
     <main className="min-h-screen bg-[#FFFDF6] pt-16">
+{/* ========================================================= */}
 {/* HERO */}
+{/* ========================================================= */}
+
 <section className="relative isolate overflow-hidden bg-[#FFFDF6]">
 
   {/* ========================================================= */}
@@ -273,7 +276,7 @@ export default function FellowshipPage() {
           Welcome to the
         </span>
 
-        {/* Fellowship / Collective Name */}
+        {/* Fellowship Name */}
         <h1
           className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
           style={{
@@ -284,7 +287,7 @@ export default function FellowshipPage() {
           Metta Tropical Fellowship
         </h1>
 
-        {/* Subtitle */}
+        {/* Updated Subtitle */}
         <p
           className="mt-3 text-xl italic leading-relaxed text-muted-foreground md:text-2xl"
           style={{
@@ -292,11 +295,13 @@ export default function FellowshipPage() {
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
           }}
         >
-          Cultivating the Wisdom Required to Respond to the Complexity of Our
-          Times
+          Cultivating the Wisdom Required at a Time Between Worlds
         </p>
 
-        {/* Central Question */}
+        {/* ===================================================== */}
+        {/* CENTRAL QUESTION */}
+        {/* ===================================================== */}
+
         <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
 
           <p
@@ -316,48 +321,39 @@ export default function FellowshipPage() {
 
         </div>
 
-        {/* Fellowship Description */}
+        {/* ===================================================== */}
+        {/* UPDATED FELLOWSHIP DESCRIPTION */}
+        {/* ===================================================== */}
+
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-          A ten-month initiatory journey for a generation called to take responsibility for who we must become at a time between worlds
+          A ten-month initiatory journey for a generation called to take
+          responsibility for who we must become at a time of planetary crisis.
         </p>
 
-        {/* Key Information */}
-        <div className="mt-8 flex flex-wrap items-center gap-3">
+        {/* ===================================================== */}
+        {/* APPLICATION BUTTON + PROGRAM DATES */}
+        {/* ===================================================== */}
 
-          <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
-            February — December 2027
-          </span>
+        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
 
-          <span className="rounded-full border border-olive/30 bg-white/80 px-5 py-2 text-sm text-foreground">
-            São Paulo, Brazil
-          </span>
-
-          <span className="rounded-full border border-crimson/20 bg-white/80 px-5 py-2 text-sm text-foreground">
-            15–20 participants
-          </span>
-
-          <span className="rounded-full border border-cyan-800/20 bg-white/80 px-5 py-2 text-sm text-foreground">
-            Offered as a gift
-          </span>
-
-        </div>
-
-        {/* Primary Actions */}
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-
-          <a
-            href="#journey"
-            className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
-          >
-            Explore the Journey
-          </a>
-
+          {/* Primary CTA */}
           <a
             href="#apply"
-            className="inline-flex items-center justify-center rounded-md border border-foreground/30 bg-white/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-white/60"
+            className="inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
           >
-            Begin Application
+            Begin Application →
           </a>
+
+          {/* Fellowship Dates — Simple Text, No Badge or Icon */}
+          <span
+            className="text-sm font-medium tracking-wide text-muted-foreground"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            February — December 2027
+          </span>
 
         </div>
 
