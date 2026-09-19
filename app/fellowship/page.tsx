@@ -436,7 +436,6 @@ export default function FellowshipPage() {
       The Fellowship
     </span>
 
-    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -500,250 +499,45 @@ export default function FellowshipPage() {
     <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-9 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-11">
 
       {/* ======================================================= */}
-      {/* TOP CENTER ACCENT */}
+      {/* CENTERED YELLOW ACCENT LINE */}
       {/* ======================================================= */}
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-32 -translate-x-1/2 bg-[#D9A01B]"
+        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
       />
 
       {/* ======================================================= */}
-      {/* UPPER LEFT — ORGANIC LEAF WITH VISIBLE VEINS */}
+      {/* UPPER LEFT — ORIGINAL LEAF IMAGE */}
       {/* ======================================================= */}
 
-      <svg
-        viewBox="0 0 320 360"
-        fill="none"
+      <img
+        src="https://i.postimg.cc/Y0fXBWY0/cosmos-1825932171.jpg"
+        alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -left-16 -top-14 h-56 w-52 rotate-[-12deg] text-[#D9A01B] opacity-[0.23] md:-left-9 md:-top-20 md:h-[340px] md:w-[310px] md:opacity-[0.3]"
-      >
-
-        {/* Delicate outer leaf silhouette */}
-        <path
-          d="
-            M 20 14
-            C 119 16, 240 51, 286 148
-            C 308 201, 277 269, 184 306
-            C 92 285, 35 202, 20 14
-            Z
-          "
-          fill="currentColor"
-          fillOpacity="0.1"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-
-        {/* Central spine */}
-        <path
-          d="M 20 14 C 70 114, 125 213, 184 306"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-        />
-
-        {/* Major veins — right side */}
-        <g
-          stroke="currentColor"
-          strokeWidth="2.1"
-          strokeLinecap="round"
-        >
-          <path d="M 45 62 C 108 55, 163 68, 210 98" />
-          <path d="M 66 108 C 137 94, 204 106, 251 140" />
-          <path d="M 90 154 C 163 144, 229 164, 279 194" />
-          <path d="M 116 200 C 182 192, 239 214, 272 239" />
-          <path d="M 145 250 C 194 249, 227 261, 243 277" />
-        </g>
-
-        {/* Secondary veins — botanical detail */}
-        <g
-          stroke="currentColor"
-          strokeWidth="1.1"
-          strokeLinecap="round"
-          opacity="0.8"
-        >
-          <path d="M 97 57 L 122 79" />
-          <path d="M 142 66 L 164 91" />
-          <path d="M 122 101 L 150 124" />
-          <path d="M 181 105 L 203 133" />
-          <path d="M 155 150 L 179 177" />
-          <path d="M 212 158 L 229 187" />
-          <path d="M 184 197 L 204 225" />
-          <path d="M 231 215 L 244 246" />
-
-          {/* Left-side branching */}
-          <path d="M 53 81 C 39 119, 36 143, 45 166" />
-          <path d="M 78 128 C 63 170, 65 194, 76 217" />
-          <path d="M 105 174 C 96 218, 106 247, 127 268" />
-          <path d="M 133 226 C 139 254, 151 273, 169 291" />
-        </g>
-
-        {/* A subtle continuation of the stem */}
-        <path
-          d="M 184 306 C 197 324, 212 338, 234 350"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-
-      </svg>
+        loading="lazy"
+        className="pointer-events-none absolute -left-12 -top-10 z-0 w-36 max-w-none select-none opacity-25 mix-blend-multiply md:-left-5 md:-top-12 md:w-52 md:opacity-30"
+        style={{
+          filter:
+            "grayscale(1) sepia(1) saturate(4) hue-rotate(8deg)",
+        }}
+      />
 
       {/* ======================================================= */}
-      {/* LOWER RIGHT — SUN / COSMOS MOTIF */}
+      {/* LOWER RIGHT — ORIGINAL SUN IMAGE */}
       {/* ======================================================= */}
 
-      <svg
-        viewBox="0 0 400 400"
-        fill="none"
+      <img
+        src="https://i.postimg.cc/WpMYkQCL/cosmos-2075508743.jpg"
+        alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 -right-28 h-64 w-64 rotate-[12deg] text-[#D9A01B] opacity-[0.23] md:-bottom-40 md:-right-16 md:h-[390px] md:w-[390px] md:opacity-[0.29]"
-      >
-
-        {/* Outer celestial rings */}
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-        >
-          <circle
-            cx="200"
-            cy="200"
-            r="172"
-            strokeWidth="1.4"
-            strokeDasharray="2 9"
-          />
-
-          <circle
-            cx="200"
-            cy="200"
-            r="148"
-            strokeWidth="1.5"
-          />
-
-          <circle
-            cx="200"
-            cy="200"
-            r="120"
-            strokeWidth="1.1"
-            opacity="0.8"
-          />
-
-          <circle
-            cx="200"
-            cy="200"
-            r="85"
-            strokeWidth="1.5"
-          />
-        </g>
-
-        {/* Inner solar form */}
-        <circle
-          cx="200"
-          cy="200"
-          r="52"
-          fill="currentColor"
-          fillOpacity="0.08"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-
-        <circle
-          cx="200"
-          cy="200"
-          r="32"
-          stroke="currentColor"
-          strokeWidth="1.4"
-        />
-
-        <circle
-          cx="200"
-          cy="200"
-          r="9"
-          fill="currentColor"
-          fillOpacity="0.65"
-        />
-
-        {/* Radial rays */}
-        <g
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        >
-          {Array.from({ length: 24 }).map((_, index) => {
-
-            const angle = (index * Math.PI) / 12;
-
-            const x1 = 200 + Math.cos(angle) * 91;
-            const y1 = 200 + Math.sin(angle) * 91;
-
-            const x2 = 200 + Math.cos(angle) * 112;
-            const y2 = 200 + Math.sin(angle) * 112;
-
-            return (
-              <line
-                key={index}
-                x1={x1}
-                y1={y1}
-                x2={x2}
-                y2={y2}
-              />
-            );
-
-          })}
-        </g>
-
-        {/* Orbital arcs */}
-        <g
-          stroke="currentColor"
-          strokeWidth="1.3"
-          strokeLinecap="round"
-          opacity="0.85"
-        >
-          <ellipse
-            cx="200"
-            cy="200"
-            rx="185"
-            ry="68"
-            transform="rotate(-35 200 200)"
-          />
-
-          <ellipse
-            cx="200"
-            cy="200"
-            rx="185"
-            ry="68"
-            transform="rotate(35 200 200)"
-          />
-
-          <ellipse
-            cx="200"
-            cy="200"
-            rx="185"
-            ry="68"
-            transform="rotate(90 200 200)"
-          />
-        </g>
-
-        {/* Small orbiting celestial bodies */}
-        <g fill="currentColor">
-          <circle cx="45" cy="134" r="4" />
-          <circle cx="343" cy="106" r="5" />
-          <circle cx="315" cy="330" r="3.5" />
-          <circle cx="109" cy="338" r="3" />
-        </g>
-
-        {/* Four understated stars */}
-        <g
-          stroke="currentColor"
-          strokeWidth="1.6"
-          strokeLinecap="round"
-        >
-          <path d="M 55 48 L 55 67 M 45 57.5 L 65 57.5" />
-          <path d="M 345 45 L 345 65 M 335 55 L 355 55" />
-          <path d="M 360 292 L 360 314 M 349 303 L 371 303" />
-          <path d="M 72 286 L 72 300 M 65 293 L 79 293" />
-        </g>
-
-      </svg>
+        loading="lazy"
+        className="pointer-events-none absolute -bottom-36 -right-24 z-0 w-72 max-w-none select-none opacity-20 mix-blend-multiply md:-bottom-60 md:-right-20 md:w-[460px] md:opacity-25"
+        style={{
+          filter:
+            "grayscale(1) sepia(1) saturate(4) hue-rotate(8deg)",
+        }}
+      />
 
       {/* ======================================================= */}
       {/* CENTERED MANIFESTO TEXT */}
