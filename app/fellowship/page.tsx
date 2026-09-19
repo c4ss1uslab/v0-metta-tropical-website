@@ -425,7 +425,9 @@ export default function FellowshipPage() {
 {/* ========================================================= */}
 
 <section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
     {/* ========================================================= */}
     {/* SECTION HEADING */}
     {/* ========================================================= */}
@@ -434,7 +436,6 @@ export default function FellowshipPage() {
       The Fellowship
     </span>
 
-    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -462,6 +463,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-8 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
         emerging from the recognition that we are living through the
@@ -495,6 +497,7 @@ export default function FellowshipPage() {
         to undergo the kind of transformation that can better prepare us to
         navigate and respond wisely to these times.
       </p>
+
     </div>
 
     {/* ========================================================= */}
@@ -502,25 +505,57 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="relative left-1/2 mt-12 w-screen -translate-x-1/2">
-      <div className="flex items-stretch">
-        {/* Left image */}
-        <div className="relative hidden w-[150px] shrink-0 overflow-hidden md:block lg:w-[210px]">
+
+      {/*
+        Left padding creates space between the image and
+        the left edge of the browser.
+
+        No right padding is added, so the white box
+        continues all the way to the right edge.
+      */}
+
+      <div className="flex items-stretch gap-3 pl-4 sm:gap-4 sm:pl-6 md:gap-5 md:pl-8 lg:gap-6 lg:pl-12">
+
+        {/* ===================================================== */}
+        {/* LEFT IMAGE */}
+        {/* ===================================================== */}
+
+        <div className="relative w-[68px] shrink-0 self-stretch overflow-hidden bg-[#FFFDF6] sm:w-[110px] md:w-[150px] lg:w-[210px]">
+
           <img
             src="https://i.postimg.cc/Qdfjr63d/cosmos-2119129400-(1).jpg"
             alt="Decorative botanical image"
-            className="h-full w-full object-cover"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{
+              mixBlendMode: "multiply",
+              maskImage:
+                "linear-gradient(to right, black 0%, black 82%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to right, black 0%, black 82%, transparent 100%)",
+            }}
           />
+
         </div>
 
-        {/* White box */}
-        <div className="relative flex-1 overflow-hidden border border-black/5 bg-white shadow-[0_10px_28px_rgba(15,23,42,0.07)]">
-          {/* Vertical yellow line on far left edge */}
+        {/* ===================================================== */}
+        {/* WHITE MANIFESTO BOX */}
+        {/* ===================================================== */}
+
+        <div className="relative min-w-0 flex-1 overflow-hidden border border-black/5 bg-white shadow-[0_8px_26px_rgba(15,23,42,0.075)]">
+
+          {/* Vertical yellow line */}
           <div
             aria-hidden="true"
-            className="absolute left-0 top-0 h-full w-7 bg-[#E8BC2F]"
+            className="pointer-events-none absolute bottom-0 left-0 top-0 w-7 bg-[#E8BC2F]"
           />
 
-          <div className="relative z-10 mx-auto max-w-5xl px-8 py-8 text-center md:px-12 md:py-9 lg:px-16">
+          {/* ================================================= */}
+          {/* CENTERED TEXT */}
+          {/* ================================================= */}
+
+          <div className="relative z-10 mx-auto max-w-5xl py-8 pl-11 pr-4 text-center sm:px-12 md:py-9 md:pl-16 md:pr-12 lg:pl-20 lg:pr-16">
+
             <p
               className="mx-auto max-w-4xl text-base leading-relaxed text-foreground md:text-lg"
               style={{
@@ -539,11 +574,17 @@ export default function FellowshipPage() {
               we relate, what we take responsibility for, and what we
               ultimately offer our lives to.
             </p>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
 {/* THE INVITATION */}
