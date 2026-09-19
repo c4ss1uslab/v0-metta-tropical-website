@@ -436,7 +436,6 @@ export default function FellowshipPage() {
       The Fellowship
     </span>
 
-    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -500,75 +499,483 @@ export default function FellowshipPage() {
     <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-[#D9A01B]/10 bg-white py-10 shadow-[0_0_24px_rgba(15,23,42,0.075)] md:py-12">
 
       {/* ======================================================= */}
-      {/* CENTERED YELLOW ACCENT LINE */}
+      {/* CENTRAL YELLOW LINE */}
       {/* ======================================================= */}
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 z-30 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
+        className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-36 -translate-x-1/2 bg-[#D9A01B]"
       />
 
       {/* ======================================================= */}
-      {/* LEAF IMAGE — UPPER LEFT */}
+      {/* BOTANICAL LEAF — UPPER LEFT */}
+      {/* Original vector drawing with detailed branching veins */}
       {/* ======================================================= */}
 
-      <div
+      <svg
+        viewBox="0 0 360 360"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
         aria-hidden="true"
-        className="pointer-events-none absolute left-0 top-0 z-10 h-40 w-40 overflow-hidden md:h-56 md:w-56"
-        style={{
-          maskImage:
-            "linear-gradient(to bottom right, black 35%, transparent 95%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom right, black 35%, transparent 95%)",
-        }}
+        className="pointer-events-none absolute -left-10 -top-12 z-0 h-44 w-44 text-[#C99B20] opacity-50 md:-left-8 md:-top-16 md:h-64 md:w-64 md:opacity-60"
       >
 
-        <img
-          src="https://i.postimg.cc/Y0fXBWY0/cosmos-1825932171.jpg"
-          alt=""
-          loading="eager"
-          className="h-full w-full object-cover opacity-80"
-          style={{
-            filter:
-              "grayscale(1) sepia(1) saturate(3) hue-rotate(5deg)",
-          }}
+        <defs>
+          {/* Leaf silhouette used to contain the veins */}
+          <clipPath id="fellowship-leaf-clip">
+            <path
+              d="
+                M 35 14
+                C 121 13, 244 49, 298 128
+                C 335 181, 325 242, 252 309
+                C 149 308, 61 222, 35 14
+                Z
+              "
+            />
+          </clipPath>
+        </defs>
+
+        {/* --------------------------------------------------- */}
+        {/* LEAF OUTLINE */}
+        {/* --------------------------------------------------- */}
+
+        <path
+          d="
+            M 35 14
+            C 121 13, 244 49, 298 128
+            C 335 181, 325 242, 252 309
+            C 149 308, 61 222, 35 14
+            Z
+          "
+          fill="currentColor"
+          fillOpacity="0.065"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinejoin="round"
         />
 
-      </div>
+        {/* --------------------------------------------------- */}
+        {/* CENTRAL VEIN */}
+        {/* --------------------------------------------------- */}
+
+        <path
+          d="
+            M 35 14
+            C 86 77, 141 143, 192 214
+            C 219 250, 238 280, 252 309
+          "
+          stroke="currentColor"
+          strokeWidth="3.8"
+          strokeLinecap="round"
+        />
+
+        {/* --------------------------------------------------- */}
+        {/* PRIMARY VEINS */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          clipPath="url(#fellowship-leaf-clip)"
+          stroke="currentColor"
+          strokeWidth="2.1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+
+          {/* Upper-side branching veins */}
+          <path d="M 69 53 C 106 45, 144 47, 184 60" />
+          <path d="M 92 82 C 143 68, 193 72, 230 91" />
+          <path d="M 117 114 C 173 99, 233 106, 265 132" />
+          <path d="M 142 147 C 205 132, 258 147, 290 176" />
+          <path d="M 165 181 C 225 168, 283 188, 310 215" />
+          <path d="M 192 214 C 250 207, 289 229, 308 253" />
+          <path d="M 218 254 C 267 250, 288 265, 294 283" />
+
+          {/* Lower-side branching veins */}
+          <path d="M 71 54 C 49 82, 46 111, 52 135" />
+          <path d="M 93 83 C 71 120, 67 151, 75 178" />
+          <path d="M 118 116 C 96 154, 98 190, 111 216" />
+          <path d="M 143 149 C 127 192, 136 230, 150 255" />
+          <path d="M 169 184 C 159 225, 171 259, 188 280" />
+          <path d="M 195 219 C 194 252, 207 283, 222 296" />
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* SECONDARY VEINS — FINE BOTANICAL TEXTURE */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          clipPath="url(#fellowship-leaf-clip)"
+          stroke="currentColor"
+          strokeWidth="0.95"
+          strokeLinecap="round"
+          opacity="0.85"
+        >
+
+          {/* Upper network */}
+          <path d="M 104 48 C 110 35, 117 25, 124 19" />
+          <path d="M 141 47 C 153 35, 163 31, 175 30" />
+          <path d="M 148 72 C 156 57, 162 49, 173 43" />
+          <path d="M 189 76 C 199 60, 208 54, 220 51" />
+          <path d="M 179 103 C 187 88, 197 81, 207 75" />
+          <path d="M 222 108 C 232 94, 245 88, 257 86" />
+          <path d="M 213 137 C 224 120, 237 112, 251 105" />
+          <path d="M 255 149 C 268 132, 277 126, 291 124" />
+          <path d="M 224 170 C 233 155, 245 144, 258 138" />
+          <path d="M 267 184 C 282 172, 294 166, 309 167" />
+          <path d="M 245 205 C 257 190, 269 183, 282 180" />
+          <path d="M 273 232 C 289 221, 302 218, 320 219" />
+
+          {/* Lower network */}
+          <path d="M 55 100 C 40 107, 27 115, 19 127" />
+          <path d="M 55 128 C 43 137, 34 150, 30 162" />
+          <path d="M 73 150 C 58 161, 46 176, 40 191" />
+          <path d="M 77 176 C 63 187, 57 199, 55 212" />
+          <path d="M 101 186 C 87 199, 79 211, 75 224" />
+          <path d="M 110 212 C 100 230, 100 242, 103 254" />
+          <path d="M 133 220 C 119 233, 113 249, 112 262" />
+          <path d="M 149 252 C 142 268, 143 281, 151 293" />
+          <path d="M 173 256 C 165 273, 168 285, 179 299" />
+
+          {/* Small cross-connections */}
+          <path d="M 122 73 C 126 82, 135 91, 144 95" />
+          <path d="M 158 86 C 163 95, 169 104, 178 108" />
+          <path d="M 184 125 C 191 134, 199 141, 207 144" />
+          <path d="M 218 160 C 225 168, 234 177, 241 180" />
+          <path d="M 115 164 C 122 173, 129 181, 138 184" />
+          <path d="M 142 199 C 149 209, 158 216, 165 219" />
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* STEM */}
+        {/* --------------------------------------------------- */}
+
+        <path
+          d="M 252 309 C 264 326, 277 340, 294 352"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+
+      </svg>
 
       {/* ======================================================= */}
-      {/* SUN IMAGE — LOWER RIGHT */}
+      {/* SUN & COSMOS — LOWER RIGHT */}
+      {/* Ornamental celestial drawing, partially cropped */}
       {/* ======================================================= */}
 
-      <div
+      <svg
+        viewBox="0 0 500 500"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-16 right-0 z-10 h-56 w-56 overflow-hidden md:-bottom-24 md:h-80 md:w-80"
-        style={{
-          maskImage:
-            "linear-gradient(to top left, black 40%, transparent 95%)",
-          WebkitMaskImage:
-            "linear-gradient(to top left, black 40%, transparent 95%)",
-        }}
+        className="pointer-events-none absolute -bottom-36 -right-20 z-0 h-64 w-64 text-[#C99B20] opacity-45 md:-bottom-[245px] md:-right-16 md:h-[440px] md:w-[440px] md:opacity-55"
       >
 
-        <img
-          src="https://i.postimg.cc/WpMYkQCL/cosmos-2075508743.jpg"
-          alt=""
-          loading="eager"
-          className="h-full w-full object-cover opacity-80"
-          style={{
-            filter:
-              "grayscale(1) sepia(1) saturate(3) hue-rotate(5deg)",
-          }}
+        <defs>
+
+          {/* Gradual golden glow */}
+          <radialGradient id="fellowship-sun-glow">
+            <stop
+              offset="0%"
+              stopColor="#D9A01B"
+              stopOpacity="0.22"
+            />
+
+            <stop
+              offset="65%"
+              stopColor="#D9A01B"
+              stopOpacity="0.06"
+            />
+
+            <stop
+              offset="100%"
+              stopColor="#D9A01B"
+              stopOpacity="0"
+            />
+          </radialGradient>
+
+        </defs>
+
+        {/* --------------------------------------------------- */}
+        {/* SOFT SOLAR GLOW */}
+        {/* --------------------------------------------------- */}
+
+        <circle
+          cx="250"
+          cy="250"
+          r="245"
+          fill="url(#fellowship-sun-glow)"
         />
 
-      </div>
+        {/* --------------------------------------------------- */}
+        {/* CELESTIAL OUTER RINGS */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+        >
+
+          <circle
+            cx="250"
+            cy="250"
+            r="231"
+            strokeWidth="1.2"
+            strokeDasharray="2 8"
+          />
+
+          <circle
+            cx="250"
+            cy="250"
+            r="211"
+            strokeWidth="1.5"
+          />
+
+          <circle
+            cx="250"
+            cy="250"
+            r="197"
+            strokeWidth="0.8"
+          />
+
+          <circle
+            cx="250"
+            cy="250"
+            r="175"
+            strokeWidth="2"
+          />
+
+          <circle
+            cx="250"
+            cy="250"
+            r="155"
+            strokeWidth="1"
+          />
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* SOLAR RAYS */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+        >
+
+          {Array.from({ length: 36 }).map((_, index) => {
+
+            const angle = (index * Math.PI * 2) / 36;
+
+            const innerRadius = index % 3 === 0 ? 178 : 181;
+            const outerRadius = index % 3 === 0 ? 207 : 197;
+
+            const x1 = 250 + Math.cos(angle) * innerRadius;
+            const y1 = 250 + Math.sin(angle) * innerRadius;
+
+            const x2 = 250 + Math.cos(angle) * outerRadius;
+            const y2 = 250 + Math.sin(angle) * outerRadius;
+
+            return (
+              <line
+                key={index}
+                x1={x1}
+                y1={y1}
+                x2={x2}
+                y2={y2}
+                strokeWidth={index % 3 === 0 ? 2 : 1.2}
+              />
+            );
+
+          })}
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* ORBITAL GEOMETRY */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          stroke="currentColor"
+          strokeWidth="1.15"
+          opacity="0.8"
+        >
+
+          <ellipse
+            cx="250"
+            cy="250"
+            rx="236"
+            ry="92"
+            transform="rotate(35 250 250)"
+          />
+
+          <ellipse
+            cx="250"
+            cy="250"
+            rx="236"
+            ry="92"
+            transform="rotate(-35 250 250)"
+          />
+
+          <ellipse
+            cx="250"
+            cy="250"
+            rx="236"
+            ry="92"
+            transform="rotate(90 250 250)"
+          />
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* INNER SUN */}
+        {/* --------------------------------------------------- */}
+
+        <circle
+          cx="250"
+          cy="250"
+          r="132"
+          fill="currentColor"
+          fillOpacity="0.025"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+
+        <circle
+          cx="250"
+          cy="250"
+          r="112"
+          stroke="currentColor"
+          strokeWidth="1"
+        />
+
+        <circle
+          cx="250"
+          cy="250"
+          r="88"
+          fill="currentColor"
+          fillOpacity="0.08"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+
+        {/* --------------------------------------------------- */}
+        {/* TWELVE RADIATING PETALS */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        >
+
+          {Array.from({ length: 12 }).map((_, index) => (
+
+            <path
+              key={index}
+              d="
+                M 250 162
+                C 231 185, 232 208, 250 230
+                C 268 208, 269 185, 250 162
+                Z
+              "
+              transform={`rotate(${index * 30} 250 250)`}
+            />
+
+          ))}
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* CENTRAL SOLAR DISC */}
+        {/* --------------------------------------------------- */}
+
+        <circle
+          cx="250"
+          cy="250"
+          r="45"
+          fill="currentColor"
+          fillOpacity="0.12"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+
+        <circle
+          cx="250"
+          cy="250"
+          r="30"
+          stroke="currentColor"
+          strokeWidth="1"
+        />
+
+        <circle
+          cx="250"
+          cy="250"
+          r="12"
+          fill="currentColor"
+          fillOpacity="0.45"
+        />
+
+        {/* --------------------------------------------------- */}
+        {/* SMALL CELESTIAL DETAILS */}
+        {/* --------------------------------------------------- */}
+
+        <g fill="currentColor">
+
+          <circle cx="43" cy="159" r="3" />
+          <circle cx="403" cy="101" r="4" />
+          <circle cx="449" cy="302" r="3" />
+          <circle cx="128" cy="437" r="3" />
+
+          {Array.from({ length: 12 }).map((_, index) => {
+
+            const angle = (index * Math.PI * 2) / 12;
+
+            const x = 250 + Math.cos(angle) * 145;
+            const y = 250 + Math.sin(angle) * 145;
+
+            return (
+              <circle
+                key={index}
+                cx={x}
+                cy={y}
+                r="2.2"
+              />
+            );
+
+          })}
+
+        </g>
+
+        {/* --------------------------------------------------- */}
+        {/* FOUR SMALL STARS */}
+        {/* --------------------------------------------------- */}
+
+        <g
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        >
+
+          <path d="M 80 72 V 94 M 69 83 H 91" />
+
+          <path d="M 421 65 V 89 M 409 77 H 433" />
+
+          <path d="M 450 374 V 390 M 442 382 H 458" />
+
+          <path d="M 65 374 V 394 M 55 384 H 75" />
+
+        </g>
+
+      </svg>
 
       {/* ======================================================= */}
       {/* CENTERED MANIFESTO TEXT */}
       {/* ======================================================= */}
 
-      <div className="relative z-20 mx-auto max-w-4xl px-8 text-center md:px-12">
+      <div className="relative z-10 mx-auto max-w-4xl px-8 text-center md:px-12">
 
         <p
           className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
