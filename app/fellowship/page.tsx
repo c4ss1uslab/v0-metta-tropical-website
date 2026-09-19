@@ -287,9 +287,9 @@ export default function FellowshipPage() {
           Metta Tropical Fellowship
         </h1>
 
-        {/* Updated Subtitle */}
+        {/* Subtitle — Same Color as Title */}
         <p
-          className="mt-3 text-xl italic leading-relaxed text-muted-foreground md:text-2xl"
+          className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
           style={{
             fontFamily:
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -322,7 +322,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* ===================================================== */}
-        {/* UPDATED FELLOWSHIP DESCRIPTION */}
+        {/* FELLOWSHIP DESCRIPTION */}
         {/* ===================================================== */}
 
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
@@ -331,29 +331,39 @@ export default function FellowshipPage() {
         </p>
 
         {/* ===================================================== */}
-        {/* APPLICATION BUTTON + PROGRAM DATES */}
+        {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
         {/* ===================================================== */}
 
-        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <div className="mt-10 flex flex-col items-start">
 
-          {/* Primary CTA */}
+          {/* Dates — Bold, Same Color as Main Title */}
+          <div className="flex items-center gap-3">
+
+            {/* Minimalist Gold Accent */}
+            <span
+              aria-hidden="true"
+              className="h-[2px] w-8 bg-[#D9A01B]"
+            />
+
+            <span
+              className="text-sm font-bold tracking-wide text-foreground md:text-base"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              February — December 2027
+            </span>
+
+          </div>
+
+          {/* Primary Application Button */}
           <a
             href="#apply"
-            className="inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
+            className="mt-5 inline-flex items-center justify-center rounded-md bg-[#E8BC2F] px-7 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
           >
             Begin Application →
           </a>
-
-          {/* Fellowship Dates — Simple Text, No Badge or Icon */}
-          <span
-            className="text-sm font-medium tracking-wide text-muted-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            February — December 2027
-          </span>
 
         </div>
 
