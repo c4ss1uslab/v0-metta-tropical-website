@@ -717,7 +717,6 @@ export default function FellowshipPage() {
         emergence, between what is dying and what has not yet been born.
       </p>
 
-      {/* Same Font Family as the Rest of the Page */}
       <p
         className="text-xl font-medium leading-relaxed text-foreground md:text-2xl"
         style={{
@@ -755,23 +754,8 @@ export default function FellowshipPage() {
   </div>
 
   {/* ========================================================= */}
-  {/* BOTTOM SECTION — TEXT LEFT / IMAGE RIGHT */}
+  {/* BOTTOM SECTION — TEXT LEFT / PHOTO COMPOSITION RIGHT */}
   {/* ========================================================= */}
-
-  {/*
-    Full-width layout.
-
-    On desktop:
-    - Text occupies the left half.
-    - Image occupies the right half.
-    - Both columns stretch to exactly the same height.
-    - The image begins with the first paragraph and ends
-      alongside the final sentence.
-
-    On mobile:
-    - Text appears first.
-    - Image appears underneath.
-  */}
 
   <div className="relative left-1/2 mt-6 w-screen -translate-x-1/2">
 
@@ -785,7 +769,6 @@ export default function FellowshipPage() {
         className="
           min-w-0
           px-6
-          md:py-0
           md:pl-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]
           md:pr-10
           lg:pr-14
@@ -794,7 +777,6 @@ export default function FellowshipPage() {
 
         <div className="space-y-6 text-muted-foreground">
 
-          {/* Opening Paragraph — Image Begins Here */}
           <p className="leading-relaxed">
             This is why we understand this moment not only as a crisis, but
             potentially as a civilizational rite of passage—one that asks us to
@@ -804,7 +786,6 @@ export default function FellowshipPage() {
             the flourishing of all living beings.
           </p>
 
-          {/* Same Font Family as the Rest of the Page */}
           <p
             className="text-xl font-medium leading-relaxed text-foreground md:text-2xl"
             style={{
@@ -824,7 +805,6 @@ export default function FellowshipPage() {
             possibilities of life aligned to what we know to be true.
           </p>
 
-          {/* Final Sentence — Image Ends Here */}
           <p className="font-medium leading-relaxed text-foreground">
             The Metta Tropical Fellowship is our attempt to create such a
             place.
@@ -835,17 +815,91 @@ export default function FellowshipPage() {
       </div>
 
       {/* ===================================================== */}
-      {/* RIGHT COLUMN — FULL-HEIGHT IMAGE */}
+      {/* RIGHT COLUMN — TWO OVERLAPPING PHOTOGRAPHS */}
       {/* ===================================================== */}
 
-      <div className="relative mt-8 min-h-[320px] w-full overflow-hidden bg-[#EAE7DF] md:mt-0 md:min-h-0">
+      {/*
+        The right column still takes up half of the page.
 
-        <img
-          src="https://i.postimg.cc/7P5Gt2S0/DSCF5398.jpg"
-          alt="A moment from the Metta Tropical community"
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        However, the composition is padded on both sides,
+        so the photographs do not touch the page margins.
+
+        The two images:
+        - Have different vertical positions.
+        - Overlap slightly.
+        - Have subtle, different rotations.
+        - Use smaller dimensions than the previous single image.
+        - Remain inside the height of the closing text on desktop.
+      */}
+
+      <div className="relative mt-10 min-w-0 px-9 sm:px-14 md:mt-0 md:px-10 lg:px-16 xl:px-20">
+
+        {/* Composition Container */}
+        <div className="relative mx-auto h-[420px] w-full max-w-[480px] sm:h-[500px] md:h-full md:min-h-[440px]">
+
+          {/* ================================================= */}
+          {/* FIRST IMAGE — UPPER LEFT */}
+          {/* ================================================= */}
+
+          <div
+            className="
+              absolute
+              left-[1%]
+              top-[1%]
+              z-10
+              h-[69%]
+              w-[64%]
+              -rotate-[3deg]
+              overflow-hidden
+              border-[5px] border-white
+              bg-[#EAE7DF]
+              shadow-[0_10px_28px_rgba(15,23,42,0.12)]
+              transition-transform duration-500
+              hover:z-30 hover:-rotate-[1deg]
+            "
+          >
+
+            <img
+              src="https://i.postimg.cc/YC9ws8gX/DSCF5023.jpg"
+              alt="A moment from the Metta Tropical community"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+
+          </div>
+
+          {/* ================================================= */}
+          {/* SECOND IMAGE — LOWER RIGHT, SLIGHTLY OVERLAPPING */}
+          {/* ================================================= */}
+
+          <div
+            className="
+              absolute
+              bottom-[1%]
+              right-[1%]
+              z-20
+              h-[68%]
+              w-[63%]
+              rotate-[4deg]
+              overflow-hidden
+              border-[5px] border-white
+              bg-[#EAE7DF]
+              shadow-[0_12px_32px_rgba(15,23,42,0.14)]
+              transition-transform duration-500
+              hover:rotate-[1deg]
+            "
+          >
+
+            <img
+              src="https://i.postimg.cc/sgNRdS9N/DSCF4966-(1).jpg"
+              alt="People gathering during a Metta Tropical experience"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+
+          </div>
+
+        </div>
 
       </div>
 
