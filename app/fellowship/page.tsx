@@ -5614,6 +5614,37 @@ export default function FellowshipPage() {
   id="team"
   className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
 >
+  {/* ========================================================= */}
+  {/* HOVER-ONLY BIOGRAPHY BEHAVIOR */}
+  {/* ========================================================= */}
+
+  <style>
+    {`
+      #team .team-bio {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 300ms ease, visibility 300ms ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        #team .team-portrait:hover .team-bio {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+        #team .team-portrait:hover .team-photo {
+          transform: scale(1.035);
+        }
+      }
+
+      #team .team-photo {
+        transition: transform 500ms ease;
+      }
+    `}
+  </style>
+
   <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
     {/* ========================================================= */}
@@ -5622,12 +5653,10 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      {/* Section Label */}
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         The Team
       </span>
 
-      {/* Main Heading */}
       <h2
         className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
@@ -5652,7 +5681,6 @@ export default function FellowshipPage() {
         , too.
       </h2>
 
-      {/* Introductory Text */}
       <div className="mt-8 space-y-6 text-muted-foreground">
 
         <p className="leading-relaxed">
@@ -5682,7 +5710,6 @@ export default function FellowshipPage() {
           different to emerge.
         </p>
 
-        {/* Two paragraphs combined into one */}
         <p className="leading-relaxed">
           We are not holding this Fellowship because we have figured out
           how to navigate the transition ahead. In many ways, quite the
@@ -5724,7 +5751,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto mt-14 max-w-5xl">
 
-      {/* Gallery Heading */}
       <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
 
         <h3
@@ -5738,7 +5764,7 @@ export default function FellowshipPage() {
         </h3>
 
         <span className="text-xs text-muted-foreground">
-          Hover over or tap a portrait to read their story
+          Hover over a portrait to read their story
         </span>
 
       </div>
@@ -5755,61 +5781,50 @@ export default function FellowshipPage() {
 
         <div className="min-w-0">
 
-          {/* Only the portrait and bio are inside details */}
-          <details className="group">
+          {/* Portrait — Hover Only, No Click Behavior */}
+          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
 
-            <summary className="relative block aspect-[4/5] cursor-pointer list-none overflow-hidden bg-[#EAE7DF] [&::-webkit-details-marker]:hidden">
+            <img
+              src="https://i.postimg.cc/pL7y0wwR/marcelo.jpg"
+              alt="Marcelo Peterlini"
+              loading="lazy"
+              className="team-photo absolute inset-0 h-full w-full object-cover"
+            />
 
-              {/* Portrait */}
-              <img
-                src="https://i.postimg.cc/pL7y0wwR/marcelo.jpg"
-                alt="Marcelo Peterlini"
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
-              />
+            {/* Biography Overlay */}
+            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
 
-              {/* Biography Overlay */}
-              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+              <p className="text-xs leading-[1.5] text-white/90">
 
-                <p className="text-xs leading-[1.5] text-white/90">
-                  <strong className="font-semibold text-white">
-                    Mars
-                  </strong>{" "}
-                  is an educator who has dedicated his life to understanding
-                  how to design educational architectures that enable young
-                  people to realize their fullest capacity and become wise
-                  elders capable of serving the flourishing of life. To do
-                  this, he has been exploring how to integrate spiritual
-                  formation, emotional maturity, leadership development,
-                  and systems thinking into transformative experiences
-                  that help us cultivate the capacities needed to navigate
-                  the complexity of life and respond to the metacrisis.
-                  Over more than ten years working in education, he has
-                  collaborated with major Latin American leadership
-                  organizations, developed socio-emotional education
-                  programs for schools, mentored young people to enter
-                  universities, organized spiritual retreats for youth,
-                  initiated a project to explore masculinity with teenage
-                  boys in schools in the São Paulo region, and offers
-                  therapeutic coaching to young leaders to align their
-                  lives with their higher service to the planet.
-                </p>
+                <strong className="font-semibold text-white">
+                  Mars
+                </strong>{" "}
+                is an educator who has dedicated his life to understanding
+                how to design educational architectures that enable young
+                people to realize their fullest capacity and become wise
+                elders capable of serving the flourishing of life. To do
+                this, he has been exploring how to integrate spiritual
+                formation, emotional maturity, leadership development,
+                and systems thinking into transformative experiences
+                that help us cultivate the capacities needed to navigate
+                the complexity of life and respond to the metacrisis.
+                Over more than ten years working in education, he has
+                collaborated with major Latin American leadership
+                organizations, developed socio-emotional education
+                programs for schools, mentored young people to enter
+                universities, organized spiritual retreats for youth,
+                initiated a project to explore masculinity with teenage
+                boys in schools in the São Paulo region, and offers
+                therapeutic coaching to young leaders to align their
+                lives with their higher service to the planet.
 
-              </div>
+              </p>
 
-              {/* Small Hover/Tap Indicator */}
-              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
-                +
-              </div>
+            </div>
 
-            </summary>
+          </div>
 
-          </details>
-
-          {/* ================================================= */}
-          {/* ALWAYS-VISIBLE NAME, ROLE & LINKEDIN */}
-          {/* ================================================= */}
-
+          {/* Always-Visible Name, Role and LinkedIn */}
           <div className="mt-4">
 
             <a
@@ -5840,57 +5855,52 @@ export default function FellowshipPage() {
 
         <div className="min-w-0">
 
-          <details className="group">
+          {/* Portrait — Hover Only */}
+          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
 
-            <summary className="relative block aspect-[4/5] cursor-pointer list-none overflow-hidden bg-[#EAE7DF] [&::-webkit-details-marker]:hidden">
+            <img
+              src="https://i.postimg.cc/9QSzx6v8/Cassius.png"
+              alt="Cássius Carvalho"
+              loading="lazy"
+              className="team-photo absolute inset-0 h-full w-full object-cover"
+            />
 
-              {/* Portrait */}
-              <img
-                src="https://i.postimg.cc/9QSzx6v8/Cassius.png"
-                alt="Cássius Carvalho"
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
-              />
+            {/* Biography Overlay */}
+            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
 
-              {/* Biography Overlay */}
-              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+              <p className="text-xs leading-[1.5] text-white/90">
 
-                <p className="text-xs leading-[1.5] text-white/90">
-                  <strong className="font-semibold text-white">
-                    Cássius
-                  </strong>{" "}
-                  is a self-directed learner, meta-designer, and
-                  metacrisis researcher who has spent the past five
-                  years exploring the question:{" "}
-                  <em>
-                    How can we create systems that help us “play life”
-                    together — coordinating and collaborating toward
-                    increasingly wise and regenerative futures?
-                  </em>{" "}
-                  At 17, he was the first Latin American participant
-                  accepted into a highly competitive career acceleration
-                  program in Silicon Valley, and at 19 he was responsible
-                  for managing over $4 million in an AI startup. This
-                  experience disillusioned him with a techno-solutionist
-                  worldview, and since 2019 he has been exploring the
-                  intersections of art, technology, consciousness,
-                  learning, regeneration, and play as systemic responses
-                  to the metacrisis — applying his discoveries across
-                  diverse projects and initiatives.
-                </p>
+                <strong className="font-semibold text-white">
+                  Cássius
+                </strong>{" "}
+                is a self-directed learner, meta-designer, and
+                metacrisis researcher who has spent the past five
+                years exploring the question:{" "}
 
-              </div>
+                <em>
+                  How can we create systems that help us “play life”
+                  together — coordinating and collaborating toward
+                  increasingly wise and regenerative futures?
+                </em>{" "}
 
-              {/* Hover/Tap Indicator */}
-              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
-                +
-              </div>
+                At 17, he was the first Latin American participant
+                accepted into a highly competitive career acceleration
+                program in Silicon Valley, and at 19 he was responsible
+                for managing over $4 million in an AI startup. This
+                experience disillusioned him with a techno-solutionist
+                worldview, and since 2019 he has been exploring the
+                intersections of art, technology, consciousness,
+                learning, regeneration, and play as systemic responses
+                to the metacrisis — applying his discoveries across
+                diverse projects and initiatives.
 
-            </summary>
+              </p>
 
-          </details>
+            </div>
 
-          {/* Always-Visible Name, Role & LinkedIn */}
+          </div>
+
+          {/* Always-Visible Name, Role and LinkedIn */}
           <div className="mt-4">
 
             <a
@@ -5921,54 +5931,47 @@ export default function FellowshipPage() {
 
         <div className="min-w-0">
 
-          <details className="group">
+          {/* Portrait — Hover Only */}
+          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
 
-            <summary className="relative block aspect-[4/5] cursor-pointer list-none overflow-hidden bg-[#EAE7DF] [&::-webkit-details-marker]:hidden">
+            <img
+              src="https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg"
+              alt="Nathalie Zogbi"
+              loading="lazy"
+              className="team-photo absolute inset-0 h-full w-full object-cover"
+            />
 
-              {/* Portrait */}
-              <img
-                src="https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg"
-                alt="Nathalie Zogbi"
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
-              />
+            {/* Biography Overlay */}
+            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
 
-              {/* Biography Overlay */}
-              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+              <p className="text-xs leading-[1.5] text-white/90">
 
-                <p className="text-xs leading-[1.5] text-white/90">
-                  Before joining Imaginable Futures, Nathalie co-founded
-                  CO.LETIVO, a teacher residency program in Brazil aimed
-                  at bringing equity and excellence to teacher training
-                  in the country. Nathalie was also a partner at SOMOS
-                  Educação, where she managed Colégio Anglo 21, the
-                  company’s leading primary and secondary school in
-                  São Paulo. She also worked in the company’s M&amp;A
-                  and school operations teams. During her time in
-                  education, Nathalie conducted a deep inquiry into
-                  what drives extraordinary learning experiences,
-                  connecting research findings from Learning Science
-                  to school practices worldwide. As part of this
-                  journey, she visited over 40 schools across seven
-                  countries and mapped effective learning conditions,
-                  curriculum design choices, instructional strategies,
-                  and support systems beyond the classroom. Nathalie
-                  began her career in investment banking before moving
-                  into education in search of meaning and social impact.
-                </p>
+                Before joining Imaginable Futures, Nathalie co-founded
+                CO.LETIVO, a teacher residency program in Brazil aimed
+                at bringing equity and excellence to teacher training
+                in the country. Nathalie was also a partner at SOMOS
+                Educação, where she managed Colégio Anglo 21, the
+                company’s leading primary and secondary school in
+                São Paulo. She also worked in the company’s M&amp;A
+                and school operations teams. During her time in
+                education, Nathalie conducted a deep inquiry into
+                what drives extraordinary learning experiences,
+                connecting research findings from Learning Science
+                to school practices worldwide. As part of this
+                journey, she visited over 40 schools across seven
+                countries and mapped effective learning conditions,
+                curriculum design choices, instructional strategies,
+                and support systems beyond the classroom. Nathalie
+                began her career in investment banking before moving
+                into education in search of meaning and social impact.
 
-              </div>
+              </p>
 
-              {/* Hover/Tap Indicator */}
-              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
-                +
-              </div>
+            </div>
 
-            </summary>
+          </div>
 
-          </details>
-
-          {/* Always-Visible Name, Role & LinkedIn */}
+          {/* Always-Visible Name, Role and LinkedIn */}
           <div className="mt-4">
 
             <a
@@ -5999,57 +6002,50 @@ export default function FellowshipPage() {
 
         <div className="min-w-0">
 
-          <details className="group">
+          {/* Portrait — Hover Only */}
+          <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
 
-            <summary className="relative block aspect-[4/5] cursor-pointer list-none overflow-hidden bg-[#EAE7DF] [&::-webkit-details-marker]:hidden">
+            <img
+              src="https://i.postimg.cc/y85WfMw2/Karen.jpg"
+              alt="Karen Sun"
+              loading="lazy"
+              className="team-photo absolute inset-0 h-full w-full object-cover"
+            />
 
-              {/* Portrait */}
-              <img
-                src="https://i.postimg.cc/y85WfMw2/Karen.jpg"
-                alt="Karen Sun"
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
-              />
+            {/* Biography Overlay */}
+            <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
 
-              {/* Biography Overlay */}
-              <div className="pointer-events-none absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/96 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:pointer-events-auto group-hover:opacity-100 group-open:pointer-events-auto group-open:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+              <p className="text-xs leading-[1.5] text-white/90">
 
-                <p className="text-xs leading-[1.5] text-white/90">
-                  <strong className="font-semibold text-white">
-                    Karen
-                  </strong>{" "}
-                  is an educator and advisory Chief Technology Officer
-                  with global experience researching and working at
-                  the intersection of education and technology, in both
-                  for-profit and non-profit organizations. Today, her
-                  work focuses on understanding how to make wise,
-                  life-conscious decisions around technology — and
-                  especially how to bring this inquiry into educational
-                  and governmental spaces. She has led initiatives
-                  such as a digital school for COVID-displaced
-                  elementary students in Colombia, digital literacy
-                  training and higher education counseling in South
-                  Africa, and the development of adaptive learning
-                  tools used by millions of students on Quizlet.
-                  Karen is currently the CTO of VélezReyes+, a Latin
-                  American philanthropic platform working through
-                  education and leadership transformation, and a
-                  professor of society and technology at Insper,
-                  in Brazil.
-                </p>
+                <strong className="font-semibold text-white">
+                  Karen
+                </strong>{" "}
+                is an educator and advisory Chief Technology Officer
+                with global experience researching and working at
+                the intersection of education and technology, in both
+                for-profit and non-profit organizations. Today, her
+                work focuses on understanding how to make wise,
+                life-conscious decisions around technology — and
+                especially how to bring this inquiry into educational
+                and governmental spaces. She has led initiatives
+                such as a digital school for COVID-displaced
+                elementary students in Colombia, digital literacy
+                training and higher education counseling in South
+                Africa, and the development of adaptive learning
+                tools used by millions of students on Quizlet.
+                Karen is currently the CTO of VélezReyes+, a Latin
+                American philanthropic platform working through
+                education and leadership transformation, and a
+                professor of society and technology at Insper,
+                in Brazil.
 
-              </div>
+              </p>
 
-              {/* Hover/Tap Indicator */}
-              <div className="pointer-events-none absolute bottom-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/80 bg-black/25 text-base text-white transition-opacity duration-300 group-hover:opacity-0 group-open:opacity-0">
-                +
-              </div>
+            </div>
 
-            </summary>
+          </div>
 
-          </details>
-
-          {/* Always-Visible Name, Role & LinkedIn */}
+          {/* Always-Visible Name, Role and LinkedIn */}
           <div className="mt-4">
 
             <a
