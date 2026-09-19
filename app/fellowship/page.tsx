@@ -1797,6 +1797,8 @@ export default function FellowshipPage() {
 </section>
 
 {/* THE PATH */}
+<section id="path" className="scroll-mt-24 ...">
+
 <section
   id="journey"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
