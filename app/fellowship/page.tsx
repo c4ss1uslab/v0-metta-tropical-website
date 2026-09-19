@@ -501,63 +501,58 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* FULL-WIDTH MANIFESTO BLOCK */}
+    {/* FULL-WIDTH IMAGE + MANIFESTO BANNER */}
     {/* ========================================================= */}
 
     <div className="relative left-1/2 mt-12 w-screen -translate-x-1/2">
 
       {/*
-        Left padding creates space between the image and
-        the left edge of the browser.
+        Desktop layout:
+        - 40px left margin
+        - 50% image / 50% manifesto box
+        - 40px gap between image and box
+        - Box reaches the right edge of the screen
 
-        No right padding is added, so the white box
-        continues all the way to the right edge.
+        Both columns stretch to exactly the same height.
       */}
 
-      <div className="flex items-stretch gap-3 pl-4 sm:gap-4 sm:pl-6 md:gap-5 md:pl-8 lg:gap-6 lg:pl-12">
+      <div className="grid grid-cols-1 items-stretch gap-6 pl-6 md:grid-cols-2 md:gap-10 md:pl-10">
 
         {/* ===================================================== */}
-        {/* LEFT IMAGE */}
+        {/* LEFT — IMAGE */}
         {/* ===================================================== */}
 
-        <div className="relative w-[68px] shrink-0 self-stretch overflow-hidden bg-[#FFFDF6] sm:w-[110px] md:w-[150px] lg:w-[210px]">
+        <div className="relative min-h-[260px] w-full overflow-hidden md:min-h-0">
 
           <img
-            src="https://i.postimg.cc/Qdfjr63d/cosmos-2119129400-(1).jpg"
-            alt="Decorative botanical image"
+            src="https://i.postimg.cc/7P5Gt2S0/DSCF5398.jpg"
+            alt="Metta Tropical Fellowship gathering"
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{
-              mixBlendMode: "multiply",
-              maskImage:
-                "linear-gradient(to right, black 0%, black 82%, transparent 100%)",
-              WebkitMaskImage:
-                "linear-gradient(to right, black 0%, black 82%, transparent 100%)",
-            }}
           />
 
         </div>
 
         {/* ===================================================== */}
-        {/* WHITE MANIFESTO BOX */}
+        {/* RIGHT — WHITE MANIFESTO BOX */}
         {/* ===================================================== */}
 
-        <div className="relative min-w-0 flex-1 overflow-hidden border border-black/5 bg-white shadow-[0_8px_26px_rgba(15,23,42,0.075)]">
+        <div className="relative flex min-w-0 items-center border border-black/5 bg-white shadow-[0_8px_26px_rgba(15,23,42,0.075)]">
 
-          {/* Vertical yellow line */}
+          {/* Vertical yellow line — left edge */}
           <div
             aria-hidden="true"
             className="pointer-events-none absolute bottom-0 left-0 top-0 w-7 bg-[#E8BC2F]"
           />
 
           {/* ================================================= */}
-          {/* CENTERED TEXT */}
+          {/* MANIFESTO TEXT */}
           {/* ================================================= */}
 
-          <div className="relative z-10 mx-auto max-w-5xl py-8 pl-11 pr-4 text-center sm:px-12 md:py-9 md:pl-16 md:pr-12 lg:pl-20 lg:pr-16">
+          <div className="relative z-10 w-full py-8 pl-12 pr-6 text-center md:py-10 md:pl-16 md:pr-10 lg:pl-20 lg:pr-14">
 
             <p
-              className="mx-auto max-w-4xl text-base leading-relaxed text-foreground md:text-lg"
+              className="mx-auto max-w-2xl text-base leading-relaxed text-foreground md:text-lg"
               style={{
                 fontFamily:
                   '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
