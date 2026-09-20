@@ -336,21 +336,31 @@ export default function FellowshipPage() {
 
         <div className="mt-10 flex flex-col items-start gap-3">
 
-          {/* Dates — Lighter Orange, Matching Button Typography */}
-          <div
+          {/* Dates — Clickable Link to Schedule Overview */}
+          <a
+            href="#schedule"
+            aria-label="View the Fellowship Schedule Overview"
             className="
-              flex
+              inline-flex
               h-[36px]
               w-[220px]
               items-center
               justify-center
               rounded-md
-              bg-[#C7804B]
+              bg-[#BF7540]
               px-3
               text-center
               text-sm
               font-semibold
               text-white
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:bg-[#AD6533]
+              focus-visible:outline
+              focus-visible:outline-2
+              focus-visible:outline-offset-2
+              focus-visible:outline-[#BF7540]
             "
             style={{
               fontFamily:
@@ -358,7 +368,7 @@ export default function FellowshipPage() {
             }}
           >
             February — December 2027
-          </div>
+          </a>
 
           {/* Primary Application Button */}
           <a
