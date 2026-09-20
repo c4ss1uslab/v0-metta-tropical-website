@@ -2225,10 +2225,8 @@ export default function FellowshipPage() {
         <strong className="font-medium text-foreground">
           Streams of Transformation
         </strong>
-        —The Sacred, Soul, Systems, Soil, and Society. Rather than seeing them
-        as subjects we need to master, we understand them as dimensions of life
-        we are learning to perceive more deeply, enter into relationship with
-        more skillfully, and be transformed by what they reveal to us.
+        —The Sacred, Soul, Systems, Soil, and Society. You can see them as our "curriculum", but rather than engaging with them as subjects we need to master, we understand them as dimensions of life
+        we are learning to perceive more deeply, relate with more skillfully, and be transformed by what they reveal to us.
       </p>
 
       <h2
