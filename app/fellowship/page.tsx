@@ -3188,11 +3188,7 @@ export default function FellowshipPage() {
             </p>
 
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              Learning continues through practice, experimentation, service,
-              making, organizing, and the concrete choices of everyday life. We
-              ask whether what we are coming to know is actually beginning to
-              transform our desires, relationships, work, use of resources and
-              power, commitments, and ways of participating in the world.
+              Transformation deepens through active participation in the world—through work, experimentation, creation, organizing, service, and the responsibilities of everyday life. As we encounter the world's complexity, resistance, and consequences, we discover what has truly become embodied within us, and where our desires, relationships, habits and choices are still asking to change.
             </p>
           </div>
         </div>
