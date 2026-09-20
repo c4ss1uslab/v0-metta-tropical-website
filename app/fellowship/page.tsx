@@ -534,7 +534,7 @@ export default function FellowshipPage() {
 
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
-        emerging from the recognition that we are living through the
+        emerging from the understanding that we are living through the
         unraveling of a world whose promises are reaching their limits, while
         many of our attempts to respond to our crisis continue to reproduce
         the very logics of separation, extraction, and optimization that
