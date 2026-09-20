@@ -3108,10 +3108,7 @@ export default function FellowshipPage() {
             </p>
 
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              As our perception deepens, we learn to engage with reality through
-              multiple depths of participation: through abstraction, story,
-              feeling, sensation, intimacy, imagination, collective sensing,
-              and transpersonal experience.
+              As our perception opens to different dimensions of reality, we cultivate the capacity to enter into deeper relationship with what we encounter—not only through abstraction, but through the stories we inhabit, the feelings and sensations we experience, the attunement and intimacy of relationship, the symbols and images of our imagination, the intelligence of the collective field, and the depths of contemplative and transpersonal experience. Each opens a different way of relating to life itself.
             </p>
           </div>
         </div>
