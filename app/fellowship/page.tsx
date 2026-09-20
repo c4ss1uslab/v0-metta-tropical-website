@@ -2924,7 +2924,10 @@ export default function FellowshipPage() {
   </div>
 </section>
 
+{/* ========================================================= */}
 {/* PEDAGOGY */}
+{/* ========================================================= */}
+
 <section
   id="pedagogy"
   className="scroll-mt-32 bg-[#F8F6F1] py-20 lg:py-28"
@@ -2936,31 +2939,33 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto max-w-4xl">
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+
+      {/* Section title — matches The Structure and The Path */}
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Pedagogy
       </span>
 
       {/* Highlighted Statement */}
       <p
-  className="mt-4 text-2xl font-semibold leading-snug text-foreground md:text-3xl"
-  style={{
-    fontFamily:
-      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-  }}
->
-  Knowing something is not the same as{" "}
-  <span
-    className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
-    style={{
-      fontSize: "inherit",
-      fontFamily: "inherit",
-      fontWeight: "inherit",
-    }}
-  >
-    being transformed
-  </span>{" "}
-  by what we know.
-</p>
+        className="mt-4 text-2xl font-semibold leading-snug text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Knowing something is not the same as{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontSize: "inherit",
+            fontFamily: "inherit",
+            fontWeight: "inherit",
+          }}
+        >
+          being transformed
+        </span>{" "}
+        by what we know.
+      </p>
 
       <p className="mt-8 leading-relaxed text-muted-foreground">
         The Five Streams describe the dimensions of life we will engage with.
@@ -2971,8 +2976,9 @@ export default function FellowshipPage() {
         </strong>
       </p>
 
+      {/* One font size smaller */}
       <h2
-        className="mt-10 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        className="mt-10 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
           fontFamily:
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -2980,6 +2986,7 @@ export default function FellowshipPage() {
       >
         The Pedagogy of Transformation
       </h2>
+
     </div>
 
     {/* ========================================================= */}
@@ -2987,6 +2994,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mx-auto mt-10 max-w-4xl">
+
       <div className="space-y-6 text-muted-foreground">
 
         <p className="leading-relaxed">
@@ -3007,11 +3015,7 @@ export default function FellowshipPage() {
           participate in the world.
         </p>
 
-        <p className="leading-relaxed">
-          Modern education has cultivated extraordinary capacities for
-          abstraction, analysis, and explanation. These capacities are
-          indispensable, but they are not the whole of human perception.
-        </p>
+        {/* Specified paragraph removed */}
 
         <p className="leading-relaxed">
           We call our approach{" "}
@@ -3023,11 +3027,13 @@ export default function FellowshipPage() {
           sense and discern together, and allow what we encounter to reshape who
           we become and how we live.
         </p>
+
       </div>
 
       <p className="mt-10 text-sm font-medium uppercase tracking-wide text-[#B88610]">
         Our pedagogy is grounded in four main movements
       </p>
+
     </div>
 
     {/* ========================================================= */}
@@ -3041,9 +3047,11 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <article className="border border-[#D9A01B]/20 border-t-4 border-t-[#D9A01B] bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
           <div>
+
             <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
               Ontological
             </span>
@@ -3057,9 +3065,11 @@ export default function FellowshipPage() {
             >
               Refine Perception
             </h3>
+
           </div>
 
           <div className="mt-6 md:mt-0">
+
             <p className="font-serif text-lg italic leading-relaxed text-foreground">
               What kind of world becomes visible through the way we learn to
               perceive?
@@ -3075,8 +3085,11 @@ export default function FellowshipPage() {
                 sacredness, beauty, and the transcendental worth of a life.
               </em>
             </p>
+
           </div>
+
         </div>
+
       </article>
 
       {/* ======================================================= */}
@@ -3084,9 +3097,11 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <article className="border border-crimson/20 border-t-4 border-t-crimson bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
           <div>
+
             <span className="text-xs font-medium uppercase tracking-wide text-crimson">
               Relational
             </span>
@@ -3100,18 +3115,29 @@ export default function FellowshipPage() {
             >
               Deepen Participation
             </h3>
+
           </div>
 
           <div className="mt-6 md:mt-0">
+
             <p className="font-serif text-lg italic leading-relaxed text-foreground">
               How deeply can we enter into relationship with what we perceive?
             </p>
 
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              As our perception opens up, we practice entering into deeper relationship with what we encounter—not only through abstraction, but through the stories we inhabit, the feelings and sensations we experience, the intimacy of relationship, the symbols of our imagination, the intelligence of the collective field, and the depths of contemplative and transpersonal experience. Each opens a different way of relating to life itself.
+              As our perception opens up, we practice entering into deeper
+              relationship with what we encounter—not only through abstraction,
+              but through the stories we inhabit, the feelings and sensations
+              we experience, the intimacy of relationship, the symbols of our
+              imagination, the intelligence of the collective field, and the
+              depths of contemplative and transpersonal experience. Each opens
+              a different way of relating to life itself.
             </p>
+
           </div>
+
         </div>
+
       </article>
 
       {/* ======================================================= */}
@@ -3119,9 +3145,11 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <article className="border border-cyan-800/20 border-t-4 border-t-cyan-800 bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
           <div>
+
             <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
               Collective
             </span>
@@ -3135,9 +3163,11 @@ export default function FellowshipPage() {
             >
               Sense From the Whole
             </h3>
+
           </div>
 
           <div className="mt-6 md:mt-0">
+
             <p className="font-serif text-lg italic leading-relaxed text-foreground">
               What becomes possible when knowing is no longer located only
               within the individual?
@@ -3151,8 +3181,11 @@ export default function FellowshipPage() {
               to access forms of intelligence and wisdom that no individual may
               be able to perceive alone.
             </p>
+
           </div>
+
         </div>
+
       </article>
 
       {/* ======================================================= */}
@@ -3160,9 +3193,11 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <article className="border border-olive/20 border-t-4 border-t-olive bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-9">
+
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
           <div>
+
             <span className="text-xs font-medium uppercase tracking-wide text-olive">
               Transformational
             </span>
@@ -3176,32 +3211,54 @@ export default function FellowshipPage() {
             >
               Embody What We Know
             </h3>
+
           </div>
 
           <div className="mt-6 md:mt-0">
+
             <p className="font-serif text-lg italic leading-relaxed text-foreground">
               How does what we perceive, relate with, and encounter become a
               way of life?
             </p>
 
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              Transformation deepens through active participation in the world—through work, experimentation, creation, organizing, service, and the responsibilities of everyday life. As we encounter the world's complexity, resistance, and consequences, we discover what has truly become embodied within us, and where our desires, relationships, habits and choices are still asking to change.
+              Transformation deepens through active participation in the
+              world—through work, experimentation, creation, organizing,
+              service, and the responsibilities of everyday life. As we
+              encounter the world's complexity, resistance, and consequences,
+              we discover what has truly become embodied within us, and where
+              our desires, relationships, habits and choices are still asking
+              to change.
             </p>
+
           </div>
+
         </div>
+
       </article>
+
     </div>
 
     {/* ========================================================= */}
-    {/* CLOSING */}
+    {/* CLOSING — WIDER YELLOW BOX */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-12 max-w-4xl border-l-4 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
+    {/*
+      Previous width: max-w-4xl (896px).
+      New width: up to 1100px, within the section container.
+
+      This adds approximately 2–3cm on each side on desktop.
+      The left border increases from 4px to 8px.
+    */}
+
+    <div className="mx-auto mt-12 w-full max-w-[1100px] border-l-8 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
+
       <p className="mt-4 text-lg leading-relaxed text-foreground md:text-xl">
         At the heart of our pedagogy lies an aspiration not simply to understand
-        interdependence, sacredness, and the intrinsic worth of a life, but to
-        become ever more capable of living from them—individually and
-        collectively.
+        interdependence, sacredness, love, and the intrinsic value of life, but
+        to cultivate the practices, relationships, and conditions through which
+        we become ever more capable of living from them—individually and
+        together.
       </p>
 
       <a
@@ -3210,7 +3267,9 @@ export default function FellowshipPage() {
       >
         Go Deeper on Relational Ontological Pedagogy →
       </a>
+
     </div>
+
   </div>
 </section>
 
