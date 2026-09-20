@@ -500,7 +500,8 @@ export default function FellowshipPage() {
     {/* SECTION HEADING */}
     {/* ========================================================= */}
 
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+    {/* Increased from text-sm to text-base */}
+    <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
 
