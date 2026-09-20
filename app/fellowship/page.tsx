@@ -953,10 +953,7 @@ export default function FellowshipPage() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to meet the different parts of ourselves with greater
-          presence, compassion, and love, becoming less governed by unconscious
-          fear, conditioning, wounds, and protective patterns, and more capable
-          of acting from a deeper place of wholeness.
+          Remembering who we are beneath our conditioning, while learning to meet the many parts of ourselves with presence, compassion, and love—becoming less governed by fear, wounds, and protective patterns, and more able to live from a deeper ground of wholeness.
         </p>
 
       </article>
