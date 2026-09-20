@@ -223,145 +223,271 @@ export default function FellowshipPage() {
     <>
       <Navigation />
 
-      <main className="min-h-screen bg-[#FFFDF6] pt-16">
-        {/* HERO */}
-        <section className="relative overflow-hidden bg-[#FFFDF6]">
-          {/* Main Hero */}
-          <div className="relative py-20 lg:py-28">
-            {/* Soft organic color fields */}
-            <div className="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full bg-[#D9A01B]/20 blur-3xl" />
-            <div className="pointer-events-none absolute -bottom-28 -left-24 h-96 w-96 rounded-full bg-olive/15 blur-3xl" />
-            <div className="pointer-events-none absolute left-[46%] top-12 h-52 w-52 rounded-full bg-crimson/10 blur-3xl" />
+    <main className="min-h-screen bg-[#FFFDF6] pt-16">
+{/* ========================================================= */}
+{/* HERO */}
+{/* ========================================================= */}
 
-            <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
-              <div className="max-w-4xl">
-                {/* Welcome */}
-                <span className="text-sm font-medium uppercase tracking-[0.14em] text-olive">
-                  Welcome to the
-                </span>
+<section className="relative isolate overflow-hidden bg-[#FFFDF6]">
 
-                {/* Fellowship / Collective Name */}
-                <h1 className="mt-4 font-serif text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl">
-                  Metta Tropical Fellowship
-                </h1>
+  {/* ========================================================= */}
+  {/* VIDEO BACKGROUND */}
+  {/* ========================================================= */}
 
-                {/* Subtitle */}
-                <p className="mt-3 font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-                  Cultivating the Wisdom Required to Respond to the Complexity of Our Times
-                </p>
+  <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
-                {/* Central Question */}
-                <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
-                  <p className="font-serif text-xl italic leading-relaxed text-foreground md:text-2xl">
-                    What is this moment in history asking of your life?
-                  </p>
-                </div>
+    {/* Cream overlay to maintain text readability */}
+    <div className="absolute inset-0 bg-[#FFFDF6]/80" />
 
-                {/* Fellowship Description */}
-                <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-                  An eight-month initiatory journey for a generation coming of age
-                  in a time between worlds—when inherited ways of living are reaching
-                  their limits and the forms of life capable of replacing them have
-                  not yet fully emerged.
-                </p>
+    {/* Subtle gradient for additional visual depth */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF6]/40 via-transparent to-[#FFFDF6]/10" />
 
-                {/* Key Information */}
-                <div className="mt-8 flex flex-wrap items-center gap-3">
-                  <span className="rounded-full bg-[#D9A01B] px-5 py-2 text-sm font-medium text-white">
-                    January — August 2027
-                  </span>
+  </div>
 
-                  <span className="rounded-full border border-olive/30 bg-white/70 px-5 py-2 text-sm text-foreground">
-                    Brazil
-                  </span>
+  {/* ========================================================= */}
+  {/* MAIN HERO */}
+  {/* ========================================================= */}
 
-                  <span className="rounded-full border border-crimson/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-                    15–20 participants
-                  </span>
+  <div className="relative py-20 lg:py-28">
 
-                  <span className="rounded-full border border-cyan-800/20 bg-white/70 px-5 py-2 text-sm text-foreground">
-                    Offered as a gift
-                  </span>
-                </div>
+    <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
 
-                {/* Primary Actions */}
-                <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <a
-                    href="#journey"
-                    className="inline-flex items-center justify-center rounded-md bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
-                  >
-                    Explore the Journey
-                  </a>
+      <div className="max-w-4xl">
 
-                  <a
-                    href="#apply"
-                    className="inline-flex items-center justify-center rounded-md border border-foreground/30 px-7 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
-                  >
-                    Begin Application
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Welcome */}
+        <span className="text-sm font-medium uppercase tracking-[0.14em] text-[#B96A32]">
+          Welcome to the
+        </span>
 
-          {/* Fellowship Section Navigation */}
-          <div className="border-y border-white/10 bg-[#111827]">
-            <div className="mx-auto max-w-6xl px-6 lg:px-8">
-              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4">
-                <a
-                  href="#invitation"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  The Invitation
-                </a>
+        {/* Fellowship Name */}
+        <h1
+          className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Metta Tropical Fellowship
+        </h1>
 
-                <a
-                  href="#why-now"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Why Now
-                </a>
+        {/* Subtitle */}
+        <p
+          className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Cultivating the Wisdom Required at a Time Between Worlds
+        </p>
 
-                <a
-                  href="#journey"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  The Journey
-                </a>
+        {/* ===================================================== */}
+        {/* CENTRAL QUESTION */}
+        {/* ===================================================== */}
 
-                <a
-                  href="#streams"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Five Streams
-                </a>
+        <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
 
-                <a
-                  href="#pedagogy"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Pedagogy
-                </a>
+          <p
+            className="text-xl italic leading-relaxed text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What is this moment in history{" "}
 
-                <a
-                  href="#structure"
-                  className="rounded-full px-3 py-2 text-sm font-medium text-yellow transition-colors hover:bg-white/10"
-                >
-                  Curriculum
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+            <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+              asking of your life?
+            </span>
 
-{/* The Fellowship */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
+          </p>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* FELLOWSHIP DESCRIPTION */}
+        {/* ===================================================== */}
+
+        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          A ten-month initiatory journey for a generation called to take
+          responsibility for who we must become at a time of planetary crisis.
+        </p>
+
+        {/* ===================================================== */}
+        {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
+        {/* ===================================================== */}
+
+        <div className="mt-10 flex flex-col items-start gap-3">
+
+          {/* Dates — Clickable Link to Schedule Overview */}
+          <a
+            href="#schedule"
+            aria-label="View the Fellowship Schedule Overview"
+            className="
+              inline-flex
+              h-[36px]
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              bg-[#BF7540]
+              px-3
+              text-center
+              text-sm
+              font-semibold
+              text-white
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:bg-[#AD6533]
+              focus-visible:outline
+              focus-visible:outline-2
+              focus-visible:outline-offset-2
+              focus-visible:outline-[#BF7540]
+            "
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            February — December 2027
+          </a>
+
+          {/* Primary Application Button */}
+          <a
+            href="#apply"
+            className="
+              inline-flex
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              bg-[#E8BC2F]
+              px-5
+              py-3.5
+              text-sm
+              font-semibold
+              text-foreground
+              shadow-[0_5px_15px_rgba(15,23,42,0.08)]
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:bg-[#D9A01B]
+            "
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Begin Application →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ========================================================= */}
+{/* FELLOWSHIP SECTION NAVIGATION */}
+{/* ========================================================= */}
+
+<section>
+  <nav
+    aria-label="Fellowship section navigation"
+    className="border-y border-white/10 bg-[#111827]"
+  >
+    <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
+
+      {/* Horizontal scrolling on smaller screens */}
+      <div className="overflow-x-auto">
+
+        {/* Equal spacing between navigation labels */}
+        <div className="flex w-full min-w-[1000px] items-center justify-between py-4 lg:min-w-0">
+
+          {[
+            {
+              label: "Fellowship Overview",
+              href: "#fellowship-overview",
+            },
+            {
+              label: "Curriculum",
+              href: "#path",
+            },
+            {
+              label: "Pedagogy",
+              href: "#pedagogy",
+            },
+            {
+              label: "Schedule",
+              href: "#schedule",
+            },
+            {
+              label: "Cost",
+              href: "#cost",
+            },
+            {
+              label: "Team",
+              href: "#team",
+            },
+            {
+              label: "FAQ",
+              href: "#faq",
+            },
+          ].map((item) => (
+
+            <a
+              key={item.label}
+              href={item.href}
+              className="
+                shrink-0
+                whitespace-nowrap
+                py-2
+                text-base font-medium
+                text-white
+                transition-colors duration-200
+                hover:text-[#E8BC2F]
+                md:text-lg
+              "
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              {item.label}
+            </a>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+</section>
+
+{/* ========================================================= */}
+{/* THE FELLOWSHIP */}
+{/* ========================================================= */}
+
+<section className="overflow-x-clip bg-[#FFFDF6] py-16 lg:py-20">
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+
+    {/* ========================================================= */}
+    {/* SECTION HEADING */}
+    {/* ========================================================= */}
+
+    {/* Increased from text-sm to text-base */}
+    <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
 
-    {/* Main Title */}
     <h2
       className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
       style={{
@@ -370,21 +496,35 @@ export default function FellowshipPage() {
       }}
     >
       A{" "}
-      <span className="font-bold text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+      <span
+        className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+        style={{
+          fontSize: "inherit",
+          fontWeight: "inherit",
+          lineHeight: "inherit",
+          fontFamily: "inherit",
+        }}
+      >
         new kind
       </span>{" "}
       of transformative journey for a time of planetary crisis
     </h2>
 
+    {/* ========================================================= */}
+    {/* MAIN TEXT */}
+    {/* ========================================================= */}
+
     <div className="mt-8 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
-        emerging from a simple recognition: we are living through the
+        emerging from the understanding that we are living through the
         unraveling of a world whose promises are reaching their limits, while
-        many of our attempts to respond continue to reproduce the very logics
-        of separation, extraction, and optimization that brought us here. The
-        crises of our time cannot be met through better ideas, strategies, or
-        solutions alone. They ask for a deeper transformation in{" "}
+        many of our attempts to respond to our crisis continue to reproduce
+        the very logics of separation, extraction, and optimization that
+        brought us here. The crises of our time cannot be met through better
+        ideas, strategies, or solutions alone. They ask for a deeper
+        transformation in{" "}
         <strong className="font-semibold text-foreground">
           how we perceive reality, relate to ourselves and one another,
           encounter the living world and the sacred, and participate in life
@@ -395,60 +535,176 @@ export default function FellowshipPage() {
       <p className="leading-relaxed">
         Rather than a traditional leadership program, the Fellowship is a
         living process of formation weaving together spiritual formation,
-        relational practice, complexity theory, systems transformation,
-        civilizational inquiry, and land-based wisdom—bringing into relationship
-        ways of knowing, practices, and lineages rooted across the Global South
-        and Global North that rarely meet within the same educational space.
+        relational practice, complexity theory, systems change,
+        civilizational inquiry, and land-based wisdom—bringing into
+        relationship ways of knowing, practices, and lineages rooted across
+        the Global South and Global North that rarely meet within the same
+        educational space.
       </p>
 
-      <p className="leading-relaxed">
-        We are calling together post-activist leaders—artists, educators,
-        organizers, thinkers, change-makers, and spiritual practitioners—who
-        feel the depth of our predicament in their bodies, and who are called
-        to undergo the kind of transformation that can better prepare us to
-        navigate and respond wisely to these times.
-      </p>
     </div>
 
-{/* Highlight / Manifesto Block */}
-<div className="relative mt-10">
-  {/* Offset background layer */}
-  <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-br-[2rem] bg-[#D9A01B]/30" />
+    {/* ========================================================= */}
+    {/* FULL-WIDTH MANIFESTO BANNER */}
+    {/* ========================================================= */}
 
-  {/* Main block */}
-  <div className="relative overflow-hidden rounded-br-[2rem] border border-[#D9A01B]/35 bg-[#D9A01B]/10 px-7 py-8 md:px-10 md:py-9">
-    {/* Decorative form */}
-    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full border-[18px] border-[#D9A01B]/15" />
+    <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2">
 
-    <div className="relative">
-      <p className="text-lg leading-relaxed text-foreground md:text-xl">
-        At its heart, the Fellowship is an attempt to create the kinds of
-        educational and communal spaces this moment demands:{" "}
-        <strong className="font-medium">
-          sanctuaries of transformation
-        </strong>{" "}
-        where we can live inside the questions that matter most for this time, and undergo the kind of shape-shift through which what we come to know begins to reshape how we live, what we value, how we relate, what we take responsibility for, and what we ultimately offer our lives to.
-      </p>
+      <div className="relative isolate overflow-hidden border-y border-[#D9A01B]/10 bg-white shadow-[0_0_24px_rgba(15,23,42,0.075)]">
+
+        {/* ===================================================== */}
+        {/* CENTRAL HORIZONTAL YELLOW LINE — APPROX. 4 CM */}
+        {/* ===================================================== */}
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 h-[4px] w-[152px] -translate-x-1/2 bg-[#D9A01B]"
+        />
+
+        {/* ===================================================== */}
+        {/* TOP RIGHT — LARGE, DELICATE HALF-MOON */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 220 220"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-5 -top-12 z-0 h-36 w-36 text-[#E8BC2F] opacity-35 md:-right-8 md:-top-16 md:h-56 md:w-56 md:opacity-45"
+        >
+
+          {/* Main half-circle */}
+          <path
+            d="M 150 5 A 105 105 0 0 0 150 215"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Smaller concentric arc */}
+          <path
+            d="M 150 32 A 78 78 0 0 0 150 188"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+          {/* Delicate innermost crescent */}
+          <path
+            d="M 150 61 A 49 49 0 0 0 150 159"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            opacity="0.45"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* BOTTOM LEFT — SMALLER ASYMMETRICAL CRESCENT */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 180 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-12 -left-8 z-0 h-28 w-28 -rotate-[20deg] text-[#E8BC2F] opacity-40 md:-bottom-14 md:-left-10 md:h-44 md:w-44 md:opacity-50"
+        >
+
+          {/* Main half-moon */}
+          <path
+            d="M 40 5 A 85 85 0 0 1 40 175"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Inner crescent */}
+          <path
+            d="M 40 28 A 62 62 0 0 1 40 152"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* CENTERED MANIFESTO TEXT */}
+        {/* ===================================================== */}
+
+        <div className="relative z-10 mx-auto max-w-4xl px-8 py-9 text-center md:px-12 md:py-11">
+
+          <p
+            className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            At its heart, the Fellowship is an attempt to create the kinds
+            of educational and communal spaces this moment demands:{" "}
+            <span
+              style={{
+                fontFamily: "inherit",
+                fontSize: "inherit",
+                fontWeight: "inherit",
+                fontStyle: "inherit",
+                lineHeight: "inherit",
+                letterSpacing: "inherit",
+                WebkitTextStroke: "0.3px currentColor",
+              }}
+            >
+              sanctuaries of transformation
+            </span>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which what we
+            come to know begins to reshape how we live, what we value, how
+            we relate, what we take responsibility for, and what we
+            ultimately offer our lives to.
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
-</div>
-  </div>
+
 </section>
 
+{/* ========================================================= */}
 {/* THE INVITATION */}
+{/* ========================================================= */}
+
 <section
   id="invitation"
   className="scroll-mt-32 bg-background py-20 lg:py-24"
 >
+  {/* ========================================================= */}
+  {/* SINGLE ALIGNED CONTENT CONTAINER */}
+  {/* ========================================================= */}
+
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
-    {/* Section Title */}
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+    {/* ========================================================= */}
+    {/* SECTION TITLE — MATCHES THE FELLOWSHIP */}
+    {/* ========================================================= */}
+
+    <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       The Invitation
     </span>
 
-    {/* Opening Quote */}
+    {/* ========================================================= */}
+    {/* OPENING QUOTE */}
+    {/* ========================================================= */}
+
     <blockquote className="mt-5 max-w-3xl">
+
       <p
         className="text-2xl font-semibold italic leading-[1.25] tracking-[-0.02em] text-foreground md:text-3xl"
         style={{
@@ -456,16 +712,22 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        &ldquo;It&apos;s actually the time of people in that liminal phase to
-        work on developing these new structures.&rdquo;
+        &ldquo;It's actually the time of people in that liminal phase to
+        work on developing the new structures.&rdquo;
       </p>
 
       <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
         — Daniel Schmachtenberger
       </cite>
+
     </blockquote>
 
+    {/* ========================================================= */}
+    {/* FIRST PART — LIVING BETWEEN WORLDS */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         In times between worlds—when the predominant structures and stories of
         a civilization begin to decay before new ones have been built—certain
@@ -478,7 +740,7 @@ export default function FellowshipPage() {
         emergence, between what is dying and what has not yet been born.
       </p>
 
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+      <p className="font-medium leading-relaxed text-foreground">
         You may already know what this feels like.
       </p>
 
@@ -492,75 +754,124 @@ export default function FellowshipPage() {
 
       <p className="leading-relaxed">
         There is something profoundly disorienting and overwhelming about this
-        experience. But there may also be an invitation within it.
+        experience. But there may also be an invitation within it. When the
+        old maps no longer lead where we need to go, and there is no
+        instruction manual for crossing the threshold. It is the time for
+        those living in this liminal space to learn how to cultivate the
+        capacities our existing institutions rarely know how to develop,
+        and experiment together with ways of living, relating, and responding
+        from which radically different futures might emerge.
       </p>
 
-      <p className="leading-relaxed">
-        When the old maps no longer lead where we need to go, and there is no
-        instruction manual for crossing the threshold. It is the time for those
-        living in this liminal space to learn how to perceive reality
-        differently, cultivate capacities our existing institutions rarely know
-        how to develop, and experiment together with ways of living, relating,
-        and responding from which radically different futures might emerge.
-      </p>
+    </div>
+
+    {/* ========================================================= */}
+    {/* PHOTOGRAPH — ALIGNED WITH THE TEXT MARGINS */}
+    {/* ========================================================= */}
+
+    <figure className="relative my-10 w-full overflow-hidden bg-[#EAE7DF] shadow-[0_8px_26px_rgba(15,23,42,0.07)] md:my-12">
+
+      <img
+        src="https://i.postimg.cc/sgNRdS9N/DSCF4966-(1).jpg"
+        alt="People gathering during a Metta Tropical experience"
+        loading="lazy"
+        className="aspect-[16/9] w-full object-cover"
+      />
+
+    </figure>
+
+    {/* ========================================================= */}
+    {/* CLOSING INVITATION */}
+    {/* ========================================================= */}
+
+    <div className="space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        This is why we understand this moment not only as a crisis, but
-        potentially as a civilizational rite of passage—one that asks us to
-        question who we are becoming, what we aspire toward, which desires are
-        shaping our lives, what we are willing to let go of and compost, and
-        what may need to change if our lives are to serve the flourishing of all
+        This is why we understand this moment as a potential civilizational
+        rite of passage—one that asks us to question who we are becoming,
+        what we aspire toward, which desires are shaping our lives,
+        what we are willing to let go of and compost, and what may need
+        to change if our lives are to serve the flourishing of all
         living beings.
       </p>
 
-      <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-        And thresholds of this depth are difficult to cross alone.
-      </p>
-
       <p className="leading-relaxed">
-        They need relationships strong enough to hold uncertainty. Practices
-        that help us remain present when old identities and assumptions begin
-        to loosen. Friends and mentors who can challenge and care for us. Places
-        where grief and longing can be taken seriously, and where we can
-        experiment with other possibilities of life aligned to what we know to
-        be true.
+        Thresholds of this depth are difficult to cross alone, they need
+        relationships strong enough to hold uncertainty. Practices that
+        help us remain present when old identities and assumptions begin
+        to loosen. Friends and mentors who can challenge and care for us.
+        Places where grief and longing can be taken seriously, and where
+        we can experiment with other possibilities of life aligned to
+        what we know to be true.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
         The Metta Tropical Fellowship is our attempt to create such a place.
       </p>
+
     </div>
+
   </div>
+
 </section>
 
+{/* ========================================================= */}
 {/* WHO WE MUST BECOME */}
+{/* ========================================================= */}
+
 <section
   id="who-we-must-become"
   className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    {/* Section Title */}
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+
+    {/* ========================================================= */}
+    {/* SECTION TITLE */}
+    {/* ========================================================= */}
+
+    <span
+      className="text-base font-medium uppercase tracking-wide text-[#B88610]"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+      }}
+    >
       Who We Must Become
     </span>
 
-    {/* Opening Statement */}
+    {/* ========================================================= */}
+    {/* OPENING STATEMENT */}
+    {/* ========================================================= */}
+
     <h2
-      className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
+      className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl lg:text-4xl"
       style={{
         fontFamily:
           '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
       }}
     >
       Reclaiming leadership as a{" "}
-      <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+      <span
+        className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+        style={{
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: "inherit",
+          fontStyle: "inherit",
+          lineHeight: "inherit",
+          letterSpacing: "inherit",
+        }}
+      >
         sacred responsibility
       </span>{" "}
       toward the flourishing of all life.
     </h2>
 
-    {/* Introduction */}
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         Human beings grow toward the horizons of possibility they are able to
         imagine. We are formed not only by what we are taught, but by the
@@ -577,123 +888,239 @@ export default function FellowshipPage() {
         life: with ourselves, with one another, with the world we participate
         in, and with the sacred.
       </p>
+
     </div>
 
-    {/* Four Relationships */}
-    <div className="mt-10 overflow-hidden border border-foreground/15 bg-background md:grid md:grid-cols-2">
+    {/* ========================================================= */}
+    {/* FOUR RELATIONSHIPS */}
+    {/* ========================================================= */}
+
+    {/*
+      Updated design:
+      - All capacity keywords removed.
+      - Slightly reduced padding for more compact boxes.
+      - Equal-height cards within each row.
+      - Small 8px gap between boxes.
+      - No visible borders.
+      - Subtle shadows.
+      - Bold burnt-orange titles.
+      - Lighter orange arrows.
+    */}
+
+    <div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
+
+      {/* ===================================================== */}
       {/* SELF */}
-      <article className="border-b border-foreground/15 p-6 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-crimson">
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
           Self
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Fragmentation
-          <span className="mx-2 text-[#D9A01B]">→</span>
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Fragmentation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
           Towards Wholeness
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to meet the different parts of ourselves with greater
-          presence, compassion, and love, becoming less governed by unconscious
-          fear, conditioning, wounds, and protective patterns, and more capable
-          of acting from a deeper place of wholeness.
+          Remembering who we are beneath our conditioning, while learning to meet the many parts of ourselves with presence, compassion, and love—becoming less governed by fear, wounds, and protective patterns, and more able to live from a deeper ground of wholeness.
         </p>
 
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Self-awareness · Embodied presence · Emotional maturity · Integration
-        </p>
       </article>
 
+      {/* ===================================================== */}
       {/* OTHER */}
-      <article className="border-b border-foreground/15 p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#B88610]">
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
           Other
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Separation
-          <span className="mx-2 text-[#D9A01B]">→</span>
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Separation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
           Towards Interbeing
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to encounter others not as objects, obstacles, or resources,
-          but as beings whose lives are of transcendental worth, and deeply
-          entangled with our own. Developing the capacity to remain in
-          connection with others despite differences and conflict.
+          Reawakening to our entanglement with other beings, human and more-than-human, encountering them not as objects or resources, but as lives of intrinsic worth—and cultivating relationships grounded in intimacy, reciprocity, and genuine care for each others flourishing.
         </p>
 
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Attunement · Deep listening · Intimacy · Compassion · Presence ·
-          Attention
-        </p>
       </article>
 
+      {/* ===================================================== */}
       {/* WORLD */}
-      <article className="border-b border-foreground/15 p-6 md:border-b-0 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-800">
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
           World
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Observers
-          <span className="mx-2 text-[#D9A01B]">→</span>
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Observation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
           Towards Participation
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to see ourselves not as observers standing outside the
-          world, but as participants within complex social, ecological,
-          historical, and economic systems, becoming more capable of responding
-          with humility, discernment, and responsibility.
+          Remembering that we are participants, not spectators, in a living and interdependent world, embedded within social, ecological, historical, and economic systems, where the ways we live ripple far beyond ourselves and carry consequences for the larger web of life.
         </p>
 
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Systems perception · Complexity · Historical awareness · Power
-          literacy · Ecological belonging · Imagination · Complicity in Harm
-        </p>
       </article>
 
-      {/* SACRED */}
-      <article className="p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-olive">
+      {/* ===================================================== */}
+      {/* THE SACRED */}
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
           The Sacred
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
-          From Disenchantment
-          <span className="mx-2 text-[#D9A01B]">→</span>
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Disenchantment{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
           Towards Reverence
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Recovering the capacity to experience life as intrinsically valuable,
-          meaningful, mysterious, and worthy of care—and allowing our
-          relationship to the sacred to expand our love, devotion, meaning and
-          service to the larger whole.
+          Recovering our sense of belonging within a mysterious cosmos, experiencing life as intrinsically valuable, meaningful and sacred, while recognizing ourselves as unique expressions of that same mystery. And allowing our relationship to the sacred to expand love, devotion, and responsibility toward the whole.
         </p>
 
-        <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
-          Value perception · Reverence · Meaning · Truth · Moral discernment ·
-          Devotion · Beauty
-        </p>
       </article>
+
     </div>
 
-    {/* Closing */}
+    {/* ========================================================= */}
+    {/* CLOSING */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         This is a simple orientation toward four relationships we believe this
         moment is asking us to deepen if we want to steward civilization
-        towards life-enhancing futures.
-      </p>
-
-      <p className="leading-relaxed">
-        Throughout history, humanity has carried images of such possibility:
-        the saint, the bodhisattva, the spiritual warrior, the sacred
-        activist—figures for whom inner transformation became inseparable from
-        responsibility and service towards the whole.
+        towards life-enhancing futures. Throughout history, humanity has
+        carried images of such possibility: the saint, the bodhisattva,
+        the spiritual warrior, the sacred activist—figures for whom inner
+        transformation became inseparable from responsibility and service
+        towards the whole.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
@@ -701,13 +1128,15 @@ export default function FellowshipPage() {
         aspiration, but to create the conditions through which such becoming
         can take root.
       </p>
+
     </div>
+
   </div>
 </section>
 
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
 <section
-  id="structure"
+  id="fellowship-overview"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
 >
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -1571,8 +2000,11 @@ export default function FellowshipPage() {
       </div>
     </div>
   </div>
+</section>
 
 {/* THE PATH */}
+<section id="path" className="scroll-mt-24 ...">
+
 <section
   id="journey"
   className="scroll-mt-32 bg-background py-20 lg:py-28"
@@ -2178,6 +2610,7 @@ export default function FellowshipPage() {
     </div>
   </div>
 </section>
+</section>
 
 {/* PEDAGOGY */}
 <section
@@ -2194,6 +2627,28 @@ export default function FellowshipPage() {
       <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
         The Pedagogy
       </span>
+
+      {/* Highlighted Statement */}
+      <p
+  className="mt-4 text-2xl font-semibold leading-snug text-foreground md:text-3xl"
+  style={{
+    fontFamily:
+      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+  }}
+>
+  Knowing something is not the same as{" "}
+  <span
+    className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+    style={{
+      fontSize: "inherit",
+      fontFamily: "inherit",
+      fontWeight: "inherit",
+    }}
+  >
+    being transformed
+  </span>{" "}
+  by what we know.
+</p>
 
       <p className="mt-8 leading-relaxed text-muted-foreground">
         The Five Streams describe the dimensions of life we will engage with.
@@ -2221,17 +2676,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto mt-10 max-w-4xl">
       <div className="space-y-6 text-muted-foreground">
-
-        <p
-          className="text-2xl font-semibold leading-snug text-foreground md:text-3xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          Knowing something is not the same as being transformed by what we
-          know.
-        </p>
 
         <p className="leading-relaxed">
           Our civilization has developed extraordinary intellectual
@@ -2465,52 +2909,10 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-
-            {/* STRUCTURE AS PEDAGOGY */}
-            <div className="mx-auto mt-12 max-w-4xl">
-              <h3 className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-                The Structure Is Part of the Pedagogy
-              </h3>
-
-              <div className="mt-6 space-y-5 text-muted-foreground">
-                <p className="leading-relaxed">
-                  The purpose of this developmental ecology is not to fill your
-                  calendar. The entire structure of the Fellowship is part of
-                  the learning itself.
-                </p>
-
-                <p className="leading-relaxed">
-                  Many of us live inside rhythms organized by urgency,
-                  fragmentation, constant input, individualized responsibility,
-                  economic pressure, and too little protected space to ask the
-                  questions that actually matter. These rhythms and habits
-                  continually shape what we pay attention to, what we desire,
-                  and what kinds of lives feel possible.
-                </p>
-
-                <p className="leading-relaxed">
-                  The Fellowship attempts to create a temporary counter-rhythm:
-                  enough continuity, relationship, practice, accountability,
-                  care, and shared responsibility to interrupt some of those
-                  patterns and experiment with different ones, until they
-                  become more fully integrated in our lives.
-                </p>
-
-                <p className="font-medium leading-relaxed text-foreground">
-                  The Fellowship itself becomes an experiment in creating the
-                  structures, habits and commitments that best support ourselves
-                  to align our lives with what we have come to recognize as true
-                  and worthy, and learning how to do so together, as a
-                  community.
-                </p>
-              </div>
-            </div>
-        </section>
-
-      {/* PRACTICAL COMMITMENT */}
+{/* PRACTICAL COMMITMENT */}
 <section
   id="practical-commitment"
-  className="scroll-mt-32 bg-cream py-20 lg:py-28"
+  className="scroll-mt-32 bg-white py-20 lg:py-24"
 >
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
@@ -2530,38 +2932,71 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        What Saying Yes to the Fellowship Asks of You
+        What{" "}
+        <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+          Saying Yes
+        </span>{" "}
+        to the Fellowship Asks of You
       </h2>
     </div>
 
     {/* ========================================================= */}
-    {/* FELLOWSHIP DATES */}
+    {/* PROGRAM OVERVIEW */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-14 max-w-4xl">
-      <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Fellowship Dates
-      </h3>
+    <div className="mx-auto mt-10 max-w-5xl border-y border-border py-6">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
 
-      <div className="mt-6 border border-foreground/10 bg-background p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8">
-        <p className="font-serif text-2xl font-medium text-foreground md:text-3xl">
-          February 7 – December 19, 2027
-        </p>
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Program Length
+          </p>
 
-        <p className="mt-3 text-sm font-medium uppercase tracking-wide text-[#B88610]">
-          10 months · 15 participants
-        </p>
+          <p className="mt-2 font-medium text-foreground">
+            10 months
+          </p>
+        </div>
 
-        <p className="mt-5 max-w-3xl leading-relaxed text-muted-foreground">
-          Primarily based in São Paulo, Brazil, with three week-long residential
-          immersions, and weekly online gatherings throughout the year.
-        </p>
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Format
+          </p>
+
+          <p className="mt-2 font-medium text-foreground">
+            Hybrid — residential and online
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Participants
+          </p>
+
+          <p className="mt-2 font-medium text-foreground">
+            15
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Location
+          </p>
+
+          <p className="mt-2 font-medium text-foreground">
+            São Paulo, Brazil
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            Language
+          </p>
+
+          <p className="mt-2 font-medium text-foreground">
+            Portuguese
+          </p>
+        </div>
+
       </div>
     </div>
 
@@ -2569,31 +3004,33 @@ export default function FellowshipPage() {
     {/* IMMERSIVE RETREATS */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-5xl">
-      <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Immersive Retreats
-      </h3>
+    <div className="mx-auto mt-12 max-w-5xl">
 
-      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
-        Three week-long gatherings anchor the beginning, midpoint, and
-        completion of the journey.
-      </p>
+      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
+        <h3
+          className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Immersive Retreats
+        </h3>
 
-      <div className="mt-7 grid items-stretch gap-5 lg:grid-cols-3">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Three week-long gatherings anchoring the journey
+        </p>
+      </div>
+
+      <div className="mt-5 grid items-stretch gap-4 lg:grid-cols-3">
 
         {/* Opening Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Opening Retreat
           </span>
 
-          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+          <h4 className="mt-3 font-serif text-lg font-medium leading-snug text-foreground">
             Inviting the Sacred
           </h4>
 
@@ -2601,18 +3038,24 @@ export default function FellowshipPage() {
             Tending to the Soul of Our Community
           </p>
 
-          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
-            February 7–14, 2027 · São Paulo
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              February 7–14, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              São Paulo
+            </p>
+          </div>
         </article>
 
         {/* Midpoint Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Midpoint Retreat
           </span>
 
-          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+          <h4 className="mt-3 font-serif text-lg font-medium leading-snug text-foreground">
             Feeling the Metacrisis
           </h4>
 
@@ -2620,18 +3063,24 @@ export default function FellowshipPage() {
             Relating to the Systems &amp; Territories We Are Embedded In
           </p>
 
-          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
-            July 11–18, 2027 · Location to be confirmed
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              July 11–18, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              Location to be confirmed
+            </p>
+          </div>
         </article>
 
         {/* Closing Retreat */}
-        <article className="flex h-full flex-col border border-[#D9A01B]/20 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
           <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Closing Retreat
           </span>
 
-          <h4 className="mt-3 font-serif text-xl font-medium leading-snug text-foreground">
+          <h4 className="mt-3 font-serif text-lg font-medium leading-snug text-foreground">
             Serving the Whole
           </h4>
 
@@ -2639,13 +3088,20 @@ export default function FellowshipPage() {
             Contributing to the Emergence of Life-Enhancing Futures
           </p>
 
-          <p className="mt-auto pt-6 text-sm font-semibold text-foreground">
-            December 12–19, 2027 · Location to be confirmed
-          </p>
+          <div className="mt-auto pt-5">
+            <p className="text-sm font-semibold text-foreground">
+              December 12–19, 2027
+            </p>
+
+            <p className="mt-1 text-sm text-muted-foreground">
+              Location to be confirmed
+            </p>
+          </div>
         </article>
+
       </div>
 
-      <p className="mt-5 text-sm font-semibold text-foreground">
+      <p className="mt-4 text-sm font-semibold text-foreground">
         Full participation in all three retreats is expected.
       </p>
     </div>
@@ -2654,52 +3110,56 @@ export default function FellowshipPage() {
     {/* WEEKLY RHYTHM */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-5xl">
-      <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Weekly Rhythm
-      </h3>
+    <div className="mx-auto mt-12 max-w-5xl">
 
-      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
-        Our regular online spaces for inquiry, practice, and guest interaction.
-      </p>
+      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
+        <h3
+          className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Weekly Rhythm
+        </h3>
 
-      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-3">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Regular online spaces for inquiry, practice and guest interactions
+        </p>
+      </div>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+      <div className="mt-5 grid items-stretch gap-4 md:grid-cols-3">
+
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Community Inquiry
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             Tuesdays · 19h–21h · Online
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Collective Practice
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             Wednesdays · 19h30–21h · Online
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Wisdom Dialogues
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             Thursdays · 19h–21h · Online
           </p>
         </article>
+
       </div>
     </div>
 
@@ -2707,52 +3167,56 @@ export default function FellowshipPage() {
     {/* RELATIONAL SUPPORT */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-5xl">
-      <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Relational Support
-      </h3>
+    <div className="mx-auto mt-12 max-w-5xl">
 
-      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
-        Spaces for more individual accompaniment within the Fellowship.
-      </p>
+      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
+        <h3
+          className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Relational Support
+        </h3>
 
-      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-3">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Spaces for more individual accompaniment within the Fellowship.
+        </p>
+      </div>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+      <div className="mt-5 grid items-stretch gap-4 md:grid-cols-3">
+
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Dharma Families
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             Once a month
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Therapy and/or Coaching
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
-            Highly recommended · approximately twice a month
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
+            Twice a month
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Mentorship
           </h4>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
-            Available as meaningful relationships emerge
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
+            Via resonance and emergence
           </p>
         </article>
+
       </div>
     </div>
 
@@ -2760,66 +3224,72 @@ export default function FellowshipPage() {
     {/* EMERGENT SPACES */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-16 max-w-5xl">
-      <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Emergent Spaces
-      </h3>
+    <div className="mx-auto mt-12 max-w-5xl">
 
-      <p className="mt-3 font-serif text-lg italic leading-relaxed text-muted-foreground">
-        Additional experiences that arise in response to the cohort&apos;s
-        inquiries, desires and needs.
-      </p>
+      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:gap-4">
+        <h3
+          className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Emergent Spaces
+        </h3>
 
-      <div className="mt-7 grid items-stretch gap-5 md:grid-cols-2">
+        <p className="font-serif text-base italic text-muted-foreground md:text-lg">
+          Additional experiences that arise in response to the cohort&apos;s
+          inquiries, desires and needs.
+        </p>
+      </div>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+      <div className="mt-5 grid items-stretch gap-4 md:grid-cols-2">
+
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Philosophical Dinners
           </h4>
 
-          <p className="mt-2 text-sm italic text-muted-foreground">
+          <p className="mt-1 text-sm italic text-muted-foreground">
             In-person · São Paulo
           </p>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             2–4 gatherings throughout the Fellowship
           </p>
         </article>
 
-        <article className="flex h-full flex-col border border-foreground/10 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
-          <h4 className="font-serif text-xl font-medium text-foreground">
+        <article className="flex h-full flex-col border border-[#EAE7DF] bg-white p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.015),0_6px_22px_rgba(15,23,42,0.07)]">
+          <h4 className="font-serif text-lg font-medium text-foreground">
             Emergent Immersions
           </h4>
 
-          <p className="mt-2 text-sm italic text-muted-foreground">
+          <p className="mt-1 text-sm italic text-muted-foreground">
             In-person or online
           </p>
 
-          <p className="mt-auto pt-6 text-sm font-medium text-[#B88610]">
+          <p className="mt-auto pt-5 text-sm font-medium text-[#B88610]">
             2–3 possible weekend experiences
           </p>
         </article>
+
       </div>
 
-      <p className="mt-5 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+      <p className="mt-4 max-w-4xl text-sm leading-relaxed text-muted-foreground">
         These spaces are responsive to the interests and needs of the community
         and may not all be required for participation.
       </p>
+
     </div>
 
     {/* ========================================================= */}
     {/* AT A GLANCE */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-20 max-w-4xl border-t border-border pt-10">
+    <div className="mx-auto mt-14 max-w-5xl border-t border-border pt-9">
+
       <h3
-        className="text-2xl font-semibold leading-tight text-foreground md:text-3xl"
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
         style={{
           fontFamily:
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
@@ -2828,540 +3298,3160 @@ export default function FellowshipPage() {
         At a Glance
       </h3>
 
-      <div className="mt-7 divide-y divide-border border-y border-border">
+      <p className="mt-5 max-w-4xl leading-relaxed text-muted-foreground">
+        We ask participants to treat the Fellowship as a meaningful commitment
+        and to protect the time needed to participate fully in the core journey.
+      </p>
 
-        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
-          <span className="font-medium text-foreground">
-            Residential Commitment
-          </span>
+      {/* Three commitments */}
+      <div className="mt-8 grid border-y border-border py-6 md:grid-cols-3 md:divide-x md:divide-border">
 
-          <span className="text-muted-foreground">
-            Full-time participation in{" "}
+        <div className="pb-6 md:pb-0 md:pr-8">
+          <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+            Residential Commitment · In-Person
+          </p>
+
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Full time participation required in{" "}
             <strong className="font-medium text-foreground">
               three week-long retreats
             </strong>
-          </span>
+          </p>
         </div>
 
-        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
-          <span className="font-medium text-foreground">
-            Regular Commitment
-          </span>
+        <div className="border-t border-border py-6 md:border-t-0 md:px-8 md:py-0">
+          <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
+            Regular Commitment · Online
+          </p>
 
-          <span className="text-muted-foreground">
+          <p className="mt-3 leading-relaxed text-muted-foreground">
             Approximately{" "}
             <strong className="font-medium text-foreground">
               8–10 hours per week
             </strong>
-          </span>
+          </p>
         </div>
 
-        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
-          <span className="font-medium text-foreground">
+        <div className="border-t border-border pt-6 md:border-t-0 md:pl-8 md:pt-0">
+          <p className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
             Rest &amp; Integration
-          </span>
+          </p>
 
-          <span className="text-muted-foreground">
-            Two dedicated rest weeks, alongside Integration Weeks throughout
-            the journey
-          </span>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Two dedicated rest weeks with no programming
+          </p>
         </div>
 
-        <div className="grid gap-2 py-5 md:grid-cols-[190px_1fr] md:gap-8">
-          <span className="font-medium text-foreground">
-            Participation
-          </span>
-
-          <span className="leading-relaxed text-muted-foreground">
-            We ask participants to treat the Fellowship as a meaningful
-            commitment and to protect the time needed to participate fully in
-            the core journey (immersive retreats, weekly rhythm, and relational
-            support).
-          </span>
-        </div>
       </div>
 
-      <a
-        href="#"
-        className="mt-6 inline-block text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
-      >
-        View the full Fellowship calendar →
-      </a>
     </div>
 
-    {/* ========================================================= */}
-    {/* NOTE ABOUT EMERGENCE */}
-    {/* Maintained in the same design as the original */}
-    {/* ========================================================= */}
-
-    <details className="mx-auto mt-12 max-w-4xl rounded-xl border border-border bg-background">
-      <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-        <span className="font-medium text-foreground">
-          A Note About Emergence
-        </span>
-
-        <span className="text-xl text-[#B88610]">+</span>
-      </summary>
-
-      <div className="space-y-4 border-t border-border px-6 py-6 text-muted-foreground">
-        <p className="leading-relaxed">
-          The structure of the Fellowship is intentional, but not rigid.
-        </p>
-
-        <p className="leading-relaxed">
-          Because this is our founding cohort, we will move through the journey
-          with deep listening and responsiveness, continually sensing what the
-          community needs, what questions are becoming alive, and what forms of
-          support might help the work deepen.
-        </p>
-
-        <p className="leading-relaxed">
-          Some content, practices, guest encounters, or additional spaces may
-          therefore emerge along the way.
-        </p>
-
-        <p className="font-medium text-foreground">
-          We want the structure to be strong enough to hold us, and alive
-          enough to respond to what is actually emerging.
-        </p>
-      </div>
-    </details>
   </div>
 </section>
 
-        {/* WHO THIS IS FOR */}
-        <section className="bg-background py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-              Who This Is For
-            </span>
+{/* ========================================================= */}
+{/* FELLOWSHIP SCHEDULE */}
+{/* ========================================================= */}
 
-            <blockquote className="mt-8 border-l-4 border-crimson pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
-              &ldquo;That&apos;s what being an imaginal cell in the transition
-              from caterpillar to butterfly really means. It means taking some
-              empowered responsibility for being someone who recognizes that
-              you can&apos;t just run the instruction manual that was given
-              historically, and the new instruction manual doesn&apos;t exist
-              yet. It&apos;s actually the time of people in that liminal phase
-              to work on developing what are these new structures.&rdquo;
-            </blockquote>
+<section
+  id="schedule"
+  className="scroll-mt-32 bg-[#FFFDF6] py-16 lg:py-20"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
-            <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
-              — Daniel Schmachtenberger
-            </cite>
+    {/* ======================================================= */}
+    {/* SECTION HEADING */}
+    {/* ======================================================= */}
 
-            <div className="mt-10 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                We are calling together postactivist educators, thinkers,
-                artists, leaders, and change-makers who refuse to look away from
-                the crises of our time, who feel the complexity of this time
-                between worlds, and who are searching for ways to better
-                navigate and respond to it.
-              </p>
+    <div className="max-w-4xl">
 
-              <p className="leading-relaxed">
-                This first Fellowship is serving Brazilian young adults between
-                18 and 29 who are questioning the limitations of conventional
-                approaches to systems change, transformation, and education; who
-                long to participate meaningfully in what comes next; and who
-                sense that any meaningful response to this moment must begin in
-                a fundamentally different relationship with all life: self,
-                other, world, and the sacred.
-              </p>
-            </div>
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Schedule Overview
+      </span>
 
-            <details className="mt-8 rounded-xl border border-border bg-[#FFF9E9]">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  This might be for you if...
-                </span>
-                <span className="text-xl text-[#B88610]">+</span>
-              </summary>
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The Fellowship Schedule
+      </h2>
 
-              <div className="border-t border-[#D9A01B]/20 px-6 py-6">
-                <ul className="space-y-4">
-                  {fitSignals.map((signal) => (
-                    <li
-                      key={signal}
-                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
+      <p className="mt-4 text-sm font-medium text-[#B88610]">
+        February – December 2027
+      </p>
+
+    </div>
+
+    {/* ======================================================= */}
+    {/* FORMAT LEGEND */}
+    {/* ======================================================= */}
+
+    <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3">
+
+      <span className="flex items-center gap-2.5 text-sm text-muted-foreground">
+        <span className="h-2.5 w-2.5 rounded-full bg-[#E6BE43] shadow-[0_0_0_3px_rgba(230,190,67,0.12),0_0_8px_rgba(230,190,67,0.32)]" />
+        Online
+      </span>
+
+      <span className="flex items-center gap-2.5 text-sm text-muted-foreground">
+        <span className="h-2.5 w-2.5 rounded-full bg-[#74C69D] shadow-[0_0_0_3px_rgba(116,198,157,0.12),0_0_8px_rgba(116,198,157,0.32)]" />
+        In-person
+      </span>
+
+    </div>
+
+    {/* ======================================================= */}
+    {/* CONNECTED TIMELINE */}
+    {/* ======================================================= */}
+
+    <div className="relative mt-5">
+
+      {/* Continuous timeline line */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-4 left-[9px] top-4 w-px bg-[#B88610]/30 md:left-[11px]"
+      />
+
+      {[
+        /* ================================================= */
+        /* 01 — OPENING CEREMONY */
+        /* ================================================= */
+
+        {
+          kind: "ceremony",
+          label: "The Launch",
+          title: "Opening Ceremony Call",
+          subtitle: null,
+          dates: "February 3, 2027",
+          time: "18h45–21h30",
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 02 — OPENING RETREAT */
+        /* ================================================= */
+
+        {
+          kind: "retreat",
+          label: "Opening Retreat",
+          title: "Inviting the Sacred",
+          subtitle: "Tending to the Soul of Our Community",
+          dates: "February 7–14, 2027",
+          time: null,
+          location: "São Paulo, Brazil",
+        },
+
+        /* ================================================= */
+        /* 03 — THE SACRED */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 1 · Eight-Week Cycle",
+          title: "The Sacred",
+          subtitle: "Remembering What Ultimately Matters",
+          dates: "February 15 – April 11, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 04 — SOUL */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 2 · Eight-Week Cycle",
+          title: "Soul",
+          subtitle: "Remembering Who We Are",
+          dates: "April 12 – June 6, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 05 — REST WEEK */
+        /* ================================================= */
+
+        {
+          kind: "rest",
+          label: "Time Off",
+          title: "Rest Week",
+          subtitle: null,
+          dates: "June 7–13, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 06 — SYSTEMS / FIRST THREE WEEKS */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 3 · Eight-Week Cycle · Weeks 1–3",
+          title: "Systems",
+          subtitle: "Remembering Where We Are",
+          dates: "June 14 – July 4, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 07 — MIDPOINT RETREAT */
+        /* ================================================= */
+
+        {
+          kind: "retreat",
+          label: "Midpoint Retreat",
+          title: "Feeling the Metacrisis",
+          subtitle:
+            "Relating to the Systems & Territories We Are Embedded In",
+          dates: "July 4–11, 2027",
+          time: null,
+          location: "Location to be confirmed",
+        },
+
+        /* ================================================= */
+        /* 08 — SYSTEMS / FINAL FIVE WEEKS */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 3 · Eight-Week Cycle · Weeks 4–8",
+          title: "Systems",
+          subtitle: "Remembering Where We Are",
+          dates: "July 12 – August 15, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 09 — SOIL */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 4 · Eight-Week Cycle",
+          title: "Soil",
+          subtitle: "Remembering Our Place in the Web of Life",
+          dates: "August 16 – October 10, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 10 — REST WEEK */
+        /* ================================================= */
+
+        {
+          kind: "rest",
+          label: "Time Off",
+          title: "Rest Week",
+          subtitle: null,
+          dates: "October 11–17, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 11 — SOCIETY */
+        /* ================================================= */
+
+        {
+          kind: "online",
+          label: "Stream 5 · Eight-Week Cycle",
+          title: "Society",
+          subtitle: "Remembering How to Respond to This Moment",
+          dates: "October 18 – December 12, 2027",
+          time: null,
+          location: null,
+        },
+
+        /* ================================================= */
+        /* 12 — CLOSING RETREAT */
+        /* ================================================= */
+
+        {
+          kind: "retreat",
+          label: "Closing Retreat",
+          title: "Serving the Whole",
+          subtitle:
+            "Contributing to the Emergence of Life-Enhancing Futures",
+          dates: "December 12–19, 2027",
+          time: null,
+          location: "Location to be confirmed",
+        },
+
+      ].map((event, index) => {
+
+        const isOnline =
+          event.kind === "online" ||
+          event.kind === "ceremony";
+
+        const isRest = event.kind === "rest";
+
+        /*
+          Two distinct color systems:
+
+          Timeline accents:
+          Darker yellow and green for the left-side dots,
+          vertical card borders and event labels.
+
+          Format indicators:
+          Softer, luminous yellow and green for the
+          Online / In-person badges.
+        */
+
+        const accentColor = isOnline
+          ? "#B88610"
+          : "#387453";
+
+        const formatDotColor = isOnline
+          ? "#E6BE43"
+          : "#74C69D";
+
+        return (
+
+          <div
+            key={`${event.title}-${index}`}
+            className="relative pb-2 pl-8 last:pb-0 md:pl-11"
+          >
+
+            {/* =============================================== */}
+            {/* TIMELINE NODE — DARKER ACCENT */}
+            {/* =============================================== */}
+
+            <div
+              aria-hidden="true"
+              className="absolute left-0 top-4 z-10 h-5 w-5 rounded-full border-[4px] border-[#FFFDF6] md:left-[1px] md:h-6 md:w-6"
+              style={{
+                backgroundColor: isRest
+                  ? "#374151"
+                  : accentColor,
+              }}
+            />
+
+            {/* =============================================== */}
+            {/* REST WEEK — DARK, MINIMAL */}
+            {/* =============================================== */}
+
+            {isRest ? (
+
+              <div className="bg-[#343B43] px-4 py-3 text-white shadow-[0_3px_12px_rgba(15,23,42,0.07)] md:px-5">
+
+                <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-2">
+
+                  <div className="flex items-center gap-3">
+
+                    <h3
+                      className="text-base font-semibold leading-tight md:text-lg"
+                      style={{
+                        fontFamily:
+                          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                      }}
                     >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-                      <span>{signal}</span>
-                    </li>
-                  ))}
-                </ul>
+                      Rest Week
+                    </h3>
+
+                    <span className="rounded-full border border-white/20 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white/80">
+                      Off Week
+                    </span>
+
+                  </div>
+
+                  <span className="text-sm text-white/80">
+                    {event.dates}
+                  </span>
+
+                </div>
+
               </div>
-            </details>
 
-            <details className="mt-4 rounded-xl border border-border bg-[#F3F7EC]">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  You might come from many different paths
-                </span>
-                <span className="text-xl text-olive">+</span>
-              </summary>
+            ) : (
 
-              <div className="border-t border-olive/15 px-6 py-6">
-                <ul className="space-y-4">
-                  {possiblePaths.map((path) => (
-                    <li
-                      key={path}
-                      className="flex items-start gap-3 leading-relaxed text-muted-foreground"
+              /* ============================================= */
+              /* CEREMONY / RETREAT / ONLINE STREAM */
+              /* ============================================= */
+
+              <article
+                className="border border-foreground/10 border-l-[3px] bg-white px-4 py-3 shadow-[0_3px_12px_rgba(15,23,42,0.035)] md:px-5 md:py-3.5"
+                style={{
+                  borderLeftColor: accentColor,
+                }}
+              >
+
+                {/* =========================================== */}
+                {/* TOP ROW: EVENT LABEL + FORMAT INDICATOR */}
+                {/* =========================================== */}
+
+                <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5">
+
+                  {/* Label matches the left vertical border */}
+                  <span
+                    className="text-[11px] font-semibold uppercase tracking-wide"
+                    style={{
+                      color: accentColor,
+                    }}
+                  >
+                    {event.label}
+                  </span>
+
+                  {/* Softer luminous Online / In-person badge */}
+                  <span
+                    className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+                      isOnline
+                        ? "border-[#E6BE43]/40 bg-[#FFF9E8] text-[#8A6500]"
+                        : "border-[#74C69D]/40 bg-[#F0FAF4] text-[#276145]"
+                    }`}
+                  >
+
+                    <span
+                      className="h-2.5 w-2.5 rounded-full"
+                      style={{
+                        backgroundColor: formatDotColor,
+                        boxShadow: isOnline
+                          ? "0 0 0 2px rgba(230,190,67,0.12), 0 0 7px rgba(230,190,67,0.38)"
+                          : "0 0 0 2px rgba(116,198,157,0.12), 0 0 7px rgba(116,198,157,0.38)",
+                      }}
+                    />
+
+                    {isOnline ? "Online" : "In-person"}
+
+                  </span>
+
+                </div>
+
+                {/* =========================================== */}
+                {/* TITLE, SUBTITLE & DATES */}
+                {/* =========================================== */}
+
+                <div className="mt-2 flex flex-col gap-1.5 md:flex-row md:items-start md:justify-between md:gap-5">
+
+                  <div className="min-w-0">
+
+                    <h3
+                      className="text-xl font-semibold leading-tight text-foreground md:text-[21px]"
+                      style={{
+                        fontFamily:
+                          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                      }}
                     >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
-                      <span>{path}</span>
-                    </li>
-                  ))}
+                      {event.title}
+                    </h3>
 
-                  <li className="font-medium text-foreground">
-                    Or perhaps none of these descriptions quite fit.
-                  </li>
-                </ul>
-              </div>
-            </details>
+                    {event.subtitle && (
 
-            <p className="mt-8 font-serif text-xl leading-relaxed text-foreground">
-              What matters most to us is not your title or what you have already
-              accomplished, but the sincerity of your inquiry, the depth of your
-              commitment, and your willingness to let your life become part of
-              the response.
-            </p>
+                      <p
+                        className="mt-0.5 text-sm font-normal leading-snug text-muted-foreground md:text-base"
+                        style={{
+                          fontFamily:
+                            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                        }}
+                      >
+                        {event.subtitle}
+                      </p>
 
-            {/* Still unsure */}
-            <div className="mt-10 rounded-xl bg-cream p-6 md:p-8">
-              <h3 className="font-serif text-2xl font-medium text-foreground">
-                Still unsure?
-              </h3>
+                    )}
 
-              <p className="mt-3 leading-relaxed text-muted-foreground">
-                If something here resonates but you are unsure whether this is
-                the right moment—or whether this Fellowship is the right
-                container for you—we would love to have a conversation.
-              </p>
+                  </div>
 
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Conversation"
-                  className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
-                >
-                  Schedule a conversation
-                </a>
+                  {/* Dates and location */}
+                  <div className="shrink-0 md:max-w-[205px] md:text-right">
 
-                <a
-                  href="mailto:fellowship@mettatropical.org"
-                  className="inline-flex items-center justify-center rounded-md border border-foreground/20 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background"
-                >
-                  Write to us
-                </a>
-              </div>
-            </div>
+                    <p className="text-sm font-medium leading-snug text-foreground">
+                      {event.dates}
+                    </p>
+
+                    {event.time && (
+
+                      <p className="mt-0.5 text-xs text-muted-foreground">
+                        {event.time}
+                      </p>
+
+                    )}
+
+                    {event.location && (
+
+                      <p className="mt-0.5 text-xs text-muted-foreground">
+                        {event.location}
+                      </p>
+
+                    )}
+
+                  </div>
+
+                </div>
+
+                {/* =========================================== */}
+                {/* ONLINE STREAMS: COMPACT WEEKLY SESSIONS */}
+                {/* =========================================== */}
+
+                {event.kind === "online" && (
+
+                  <div className="mt-2.5 border-t border-foreground/10 pt-2.5">
+
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1.5">
+
+                      <span
+                        className="text-[10px] font-semibold uppercase tracking-wide"
+                        style={{
+                          color: accentColor,
+                        }}
+                      >
+                        Every Week
+                      </span>
+
+                      {/* Tuesday */}
+                      <span className="text-xs leading-relaxed text-muted-foreground">
+
+                        <strong className="font-semibold text-foreground">
+                          Tue
+                        </strong>
+
+                        {" · "}Collective Inquiry{" "}
+
+                        <span className="whitespace-nowrap font-medium text-foreground">
+                          (19h–21h)
+                        </span>
+
+                      </span>
+
+                      {/* Wednesday */}
+                      <span className="text-xs leading-relaxed text-muted-foreground">
+
+                        <strong className="font-semibold text-foreground">
+                          Wed
+                        </strong>
+
+                        {" · "}Practice{" "}
+
+                        <span className="whitespace-nowrap font-medium text-foreground">
+                          (19h30–21h)
+                        </span>
+
+                      </span>
+
+                      {/* Thursday */}
+                      <span className="text-xs leading-relaxed text-muted-foreground">
+
+                        <strong className="font-semibold text-foreground">
+                          Thu
+                        </strong>
+
+                        {" · "}Wisdom Dialogues{" "}
+
+                        <span className="whitespace-nowrap font-medium text-foreground">
+                          (19h–21h)
+                        </span>
+
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                )}
+
+              </article>
+
+            )}
+
           </div>
-        </section>
 
-                {/* WHY NOW */}
-        <section className="bg-cream py-20 lg:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="max-w-4xl">
-              <span className="text-sm font-medium uppercase tracking-wide text-olive">
-                Why This Exists, Now
+        );
+
+      })}
+
+    </div>
+{/* ========================================================= */}
+{/* A NOTE ON EMERGENCE */}
+{/* ========================================================= */}
+
+<div className="mt-10 border-y border-foreground/15">
+
+  <details className="group">
+
+    {/* Dropdown Heading */}
+    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D9A01B] [&::-webkit-details-marker]:hidden">
+
+      <h3
+        className="text-lg font-semibold leading-snug text-foreground md:text-xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        A Note on Emergence
+      </h3>
+
+      {/* Dropdown Arrow */}
+      <svg
+        className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+
+    </summary>
+
+    {/* Expanded Content */}
+    <div className="max-w-4xl space-y-5 pb-7 leading-relaxed text-muted-foreground">
+
+      <p>
+        The Fellowship follows an intentional rhythm, but its structure is
+        not rigid. As our founding cohort, we will remain attentive to the
+        community’s evolving needs, allowing certain inquiries, practices,
+        and encounters to emerge along the way.
+      </p>
+
+      <p>
+        Dharma Families and individual coaching or therapy will be arranged
+        around participants’ availability, while Philosophical Dinners and
+        possible Emergent Immersions will be scheduled in conversation with
+        the community.
+      </p>
+
+      <p>
+        We want the structure to be strong enough to hold us, and alive
+        enough to respond to what emerges as we walk this journey together.
+      </p>
+
+    </div>
+
+  </details>
+
+</div>
+  </div>
+</section>
+
+{/* WHO THIS IS FOR */}
+<section
+  id="who-this-is-for"
+  className="scroll-mt-32 bg-background py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Who This Is For
+      </span>
+
+      <h2
+        className="mt-4 max-w-4xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        For a generation ready to take responsibility for{" "}
+        <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+          embodying
+        </span>{" "}
+        the world it longs to bring into being
+      </h2>
+
+      <div className="mt-9 space-y-6 text-muted-foreground">
+        <p className="leading-relaxed">
+          We are calling together post-activist leaders—artists, educators,
+          organizers, thinkers, change-makers, technologists and spiritual
+          practitioners—who feel the depth of our predicament in their bodies,
+          and who are called to undergo the kind of transformation that can
+          better prepare us to navigate and respond wisely to these times.
+        </p>
+
+        <p className="leading-relaxed">
+          Our first Fellowship is looking for{" "}
+          <strong className="font-semibold text-foreground">
+            Brazilian young adults between 18 and 29
+          </strong>{" "}
+          who are questioning the limitations of conventional approaches to
+          systems change, leadership, and education; who long to contribute to
+          the emergence of new systems, cultures and more life-enhancing way of
+          living; and who recognize that any meaningful response to this moment
+          must begin with a radical shift in the ways we perceive, relate and
+          participate in reality.
+        </p>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* THIS FELLOWSHIP IS FOR THOSE WHO */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-14 max-w-4xl">
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        This Fellowship is for those who:
+      </h3>
+
+      {/* Same cream background as the Still Unsure box */}
+      <div className="mt-6 rounded-xl bg-cream p-6 md:p-8">
+        <ul className="space-y-3">
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Feel the pain and beauty of the world deeply and are called to
+              care more deeply for it.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Sense that inherited definitions of success, progress, and impact
+              no longer fully answer the questions your life is asking.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Have grown skeptical of the underlying assumptions that shape
+              many of our responses to the crises we face.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Want to understand the deeper roots of the metacrisis and how to
+              respond appropriately to it.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Feel called to offer their lives and unique gifts in service of
+              life-affirming futures.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Sense that spiritual transformation, systemic understanding, and
+              collective action are inseparable.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Long for a community where deep questions of meaning, value,
+              vocation, and existence can be held seriously.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Are willing to examine how their own desires, habits, identities,
+              and ways of life may be contributing to the patterns we hope to
+              transform.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-3">
+            <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <p className="leading-relaxed text-muted-foreground">
+              Long for a community that welcomes who they are, nurtures their
+              becoming, and supports them in transforming how they live.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+{/* YOU MIGHT IDENTIFY AS */}
+{/* ========================================================= */}
+
+<div className="mx-auto mt-12 max-w-5xl">
+  <div className="grid items-stretch gap-8 md:grid-cols-2 lg:gap-12">
+
+    {/* LEFT — TEXT */}
+    <div className="flex flex-col justify-center">
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        You might identify as:
+      </h3>
+
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        An{" "}
+        <strong className="font-semibold text-foreground">artist</strong>{" "}
+        reshaping our cultural imagination, a{" "}
+        <strong className="font-semibold text-foreground">
+          community-builder
+        </strong>{" "}
+        cultivating islands of sanity, an{" "}
+        <strong className="font-semibold text-foreground">educator</strong>{" "}
+        reimagining learning at a time between worlds, a{" "}
+        <strong className="font-semibold text-foreground">researcher</strong>{" "}
+        investigating the root causes of our crisis, an{" "}
+        <strong className="font-semibold text-foreground">
+          entrepreneur
+        </strong>{" "}
+        building life-affirming institutions, an{" "}
+        <strong className="font-semibold text-foreground">activist</strong>{" "}
+        exploring non-violence and social change, a{" "}
+        <strong className="font-semibold text-foreground">
+          technologist
+        </strong>{" "}
+        wrestling with the ethics behind their work, a{" "}
+        <strong className="font-semibold text-foreground">
+          climate organizer
+        </strong>{" "}
+        carrying the grief and urgency of accelerating ecological breakdown.
+      </p>
+
+      <p className="mt-6 leading-relaxed text-muted-foreground">
+        Or perhaps none of these descriptions quite fit. You may still be
+        discovering who you are, what is yours to offer, and how you might
+        meaningfully participate in this moment. What matters most to us is not
+        your identity, title or what you have already accomplished, but the
+        sincerity of your inquiry, your commitment to individual and
+        collective transformation, and your genuine desire to contribute to
+        the life of this community.
+      </p>
+    </div>
+
+    {/* RIGHT — IMAGE */}
+    <div className="relative min-h-[320px] overflow-hidden md:min-h-0">
+      <img
+        src="https://i.postimg.cc/wMG4Qrs8/DSCF5672.jpg"
+        alt="Community gathering at Metta Tropical"
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+    </div>
+
+  </div>
+</div>
+
+    {/* ========================================================= */}
+    {/* STILL UNSURE */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-cream p-6 md:p-8">
+
+      <h3
+        className="text-2xl font-normal leading-tight text-foreground"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Still Unsure?
+      </h3>
+
+      {/* Discernment Call Invitation */}
+      <p className="mt-5 text-lg font-bold text-olive">
+        Schedule a discernment call.
+      </p>
+
+      <div className="mt-5 space-y-5 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          If something here resonates, but you&apos;re unsure whether the
+          Fellowship is the right place for you—or whether this is the right
+          moment in your life—we would love to explore that with you.
+        </p>
+
+        <p className="leading-relaxed">
+          We offer these conversations as a space to meet you beyond an
+          application: to listen to the questions you are living, what is
+          challenging you, what is seeking to emerge, and what draws you toward
+          this journey.
+        </p>
+
+        <p className="leading-relaxed">
+          This is not a selection process interview. It is a space for mutual
+          discernment, offered with care and without pressure, to help you
+          sense whether applying to the Fellowship feels aligned with
+          your life right now.
+        </p>
+
+        <p className="leading-relaxed">
+          Whether or not you eventually join, we would love to meet you.
+        </p>
+
+      </div>
+
+      {/* Actions */}
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Conversation"
+          className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+        >
+          Schedule a conversation →
+        </a>
+
+        <a
+          href="mailto:fellowship@mettatropical.org"
+          className="inline-flex items-center justify-center rounded-md border border-foreground/20 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-background"
+        >
+          Write to us →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+     {/* OFFERED AS A GIFT */}
+<section
+  id="cost"
+  className="scroll-mt-32 bg-[#FFF9E9] py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div>
+      {/* Section Label */}
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Cost — Offered as a Gift
+      </span>
+
+      {/* Main Heading */}
+      <h2
+  className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+  style={{
+    fontFamily:
+      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+  }}
+>
+  A{" "}
+  <span
+    className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+    style={{
+      fontSize: "inherit",
+      fontFamily: "inherit",
+      fontWeight: "inherit",
+      lineHeight: "inherit",
+    }}
+  >
+    post-capitalist
+  </span>{" "}
+  approach to money
+</h2>
+
+    {/* ========================================================= */}
+    {/* OPENING QUOTE */}
+    {/* ========================================================= */}
+
+    <blockquote className="mt-10 border-l-4 border-[#D9A01B] pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
+      &ldquo;In the Story of Separation, giving does not come naturally. If
+      I&apos;m separate from you, then more for me is less for you. In the
+      story of Interbeing, life is a gift. We did not earn the sun, the water,
+      our breath, or the beating of our hearts. Life is a gift.&rdquo;
+    </blockquote>
+
+    <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
+      — Charles Eisenstein
+    </cite>
+
+    {/* ========================================================= */}
+    {/* WHY WE OFFER THE FELLOWSHIP AS A GIFT */}
+    {/* ========================================================= */}
+
+    <div className="mt-10 space-y-6 text-muted-foreground">
+
+      <p className="leading-relaxed">
+        We believe the practices, relationships, wisdom, and forms of community
+        needed to navigate a time of metacrisis should not become privileges
+        available only to those who can afford them. At a moment when so much
+        is at stake, helping those who feel called to serve life wholeheartedly
+        become more capable of doing so feels like a sacred responsibility we
+        must share.
+      </p>
+
+      <p className="leading-relaxed">
+        This conviction is also personal. Many of us holding this work have
+        spent decades seeking transformational, educational, and developmental
+        spaces that deeply shaped our lives, yet access to them was often
+        limited by cost. Coming from the Global South, opportunities created
+        in the Global North could become prohibitively expensive. At times we
+        found scholarships, made significant sacrifices to participate, or
+        simply could not access experiences we deeply longed for.
+      </p>
+
+      <p className="font-semibold leading-relaxed text-foreground">
+        We want to practice something different.
+      </p>
+
+      <p className="leading-relaxed">
+        For this reason, the Fellowship is offered as a gift, so that financial
+        capacity does not determine who has access to the forms of formation
+        we believe are increasingly important for this time.
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* WHAT DOES OFFERED AS A GIFT MEAN? */}
+    {/* Square edges, no surrounding border, 13px yellow line */}
+    {/* ========================================================= */}
+
+    <details className="group mt-9 border-l-[13px] border-l-[#D9A01B] bg-background">
+
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
+        <span
+          className="text-lg font-medium leading-snug text-foreground md:text-xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          What does &ldquo;offered as a gift&rdquo; mean for us?
+        </span>
+
+        <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
+          +
+        </span>
+      </summary>
+
+      <div className="space-y-6 px-6 pb-8 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          A gift, for us, is not simply a financial agreement. It is an
+          experiment in loosening the logics of separation, transaction, and
+          scarcity so deeply embedded in us by modernity, and remembering
+          ourselves as interdependent beings, part of the same living
+          movement of giving and receiving.
+        </p>
+
+        <p className="font-semibold leading-relaxed text-foreground">
+          Rather than reinforcing the familiar approach to education as
+          consumers, asking:
+        </p>
+
+        <p className="font-serif text-lg italic leading-relaxed text-foreground">
+          How much does this cost? What will I get in return? Is this
+          investment worth it? How will this expand my network? Will this
+          make me a more interesting or accomplished person?
+        </p>
+
+        <p className="font-semibold leading-relaxed text-foreground">
+          We want to make room for another kind of inquiry:
+        </p>
+
+        <p className="font-serif text-lg italic leading-relaxed text-foreground">
+          What is this moment of my life asking of me? Can this fellowship
+          support me on this path? Am I ready to offer myself wholeheartedly
+          to this journey? Does something in this invitation speak to a truth
+          I have been longing to live? Is this a community I long to belong
+          to, and help bring into being?
+        </p>
+
+        <p className="leading-relaxed text-foreground">
+          If something in you comes alive in response to that question, we
+          invite you to listen to it.
+        </p>
+
+      </div>
+    </details>
+
+    {/* ========================================================= */}
+    {/* WHAT DOES THIS GIFT INCLUDE? */}
+    {/* ========================================================= */}
+
+    <div className="mt-12">
+
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        What Does This Gift Include?
+      </h3>
+
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        Offering the Fellowship as a gift does not mean it has no material
+        costs. Retreat spaces, food, facilitation, therapy, teachers, travel
+        support, and the labor of holding this community all require real
+        resources. Some are themselves gifted; others are carried by
+        supporters, practitioners, and friends who believe this work matters
+        and want to make it possible for others. Their generosity allows the
+        central discernment to remain about readiness, resonance, and your
+        current moment rather than your financial situation.
+      </p>
+
+      {/* Square-edged Gift Includes Box */}
+      <div className="mt-7 bg-background p-6 md:p-8">
+
+        <h4
+          className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          This Fellowship gift includes:
+        </h4>
+
+        <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+
+          <li className="flex items-start gap-3 text-muted-foreground">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <span>All online sessions and facilitation</span>
+          </li>
+
+          <li className="flex items-start gap-3 text-muted-foreground">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <span>All in-person retreat experiences</span>
+          </li>
+
+          <li className="flex items-start gap-3 text-muted-foreground">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <span>Accommodation and food during retreats</span>
+          </li>
+
+          <li className="flex items-start gap-3 text-muted-foreground">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <span>Coaching/therapy and developmental support</span>
+          </li>
+
+          <li className="flex items-start gap-3 text-muted-foreground">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+            <span>All resources and materials for sessions</span>
+          </li>
+
+        </ul>
+
+        <p className="mt-7 border-t border-border pt-5 text-sm italic leading-relaxed text-muted-foreground">
+          Participants are only responsible for transportation to and from
+          the in-person retreats.
+        </p>
+
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* COLLECTIVE RESOURCE FUND */}
+    {/* Identical design to the Offered as a Gift dropdown */}
+    {/* ========================================================= */}
+
+    <details className="group mt-10 border-l-[13px] border-l-[#D9A01B] bg-background">
+
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
+        <span
+          className="text-lg font-medium leading-snug text-foreground md:text-xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Collective Resource Fund
+        </span>
+
+        <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
+          +
+        </span>
+      </summary>
+
+      <div className="space-y-6 px-6 pb-8 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          Beyond making the Fellowship accessible, we are also experimenting
+          with new ways of relating to resources as a community. Our hope is
+          to create a Collective Resource Fund—a shared pool of resources
+          that can support participants throughout the journey based on real
+          needs and opportunities.
+        </p>
+
+        <p className="leading-relaxed">
+          These resources could support: transportation to retreats,
+          complementary developmental experiences, seed funding for projects
+          and initiatives, temporary financial support that help cover basic
+          needs of participants.
+        </p>
+
+        <p className="leading-relaxed">
+          The distribution of these resources will happen through a
+          transparent collective process involving participants and the team,
+          inspired by practices of collective resource sharing and gift
+          economies. This is all part of our practice to learn how resources
+          can flow with greater trust, transparency, and care toward where
+          they are most needed.
+        </p>
+
+        <p className="font-medium text-foreground">
+          We are currently fundraising for this Collective Resource Fund and
+          hope to have resources available throughout the Fellowship journey.
+        </p>
+
+      </div>
+    </details>
+
+  </div>
+        </div>
+</section>
+
+{/* ========================================================= */}
+{/* THE APPLICATION PROCESS */}
+{/* ========================================================= */}
+
+<section
+  id="application-process"
+  className="scroll-mt-32 bg-white py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Application Process
+      </span>
+
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        An Invitation Into{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            fontWeight: "inherit",
+            fontStyle: "inherit",
+            lineHeight: "inherit",
+            letterSpacing: "inherit",
+          }}
+        >
+          Discernment
+        </span>
+      </h2>
+
+      <div className="mt-8 space-y-6 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          We do not see the application process simply as a way for us to
+          select participants. We see it as an invitation into a mutual
+          process of discernment, an opportunity for both of us to explore
+          whether this is the right moment, the right community, and the
+          right commitment for the next chapter of your life.
+        </p>
+
+        <p className="leading-relaxed">
+          We are less interested in impressive accomplishments or positions
+          you have held. We are looking for truth, honesty, and sincerity.
+          We want to understand the path that has brought you here,
+          interested in this Fellowship: the questions you have been
+          wrestling with, the experiences that have shaped you, the moment
+          of life you find yourself in, the inquiries that live in your body,
+          and the deeper longings that may be seeking space to be met
+          more fully.
+        </p>
+
+        <p className="leading-relaxed">
+          Our hope is that, whatever the outcome, this process already
+          offers you something meaningful.
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* THE DISCERNMENT PROCESS */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-8 max-w-4xl">
+
+      <h3
+        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        The Discernment Process
+      </h3>
+
+      {/* Regular text — no italics */}
+      <p className="mt-5 leading-relaxed text-muted-foreground">
+        The process itself is an invitation into some of the questions
+        at the heart of our work: How am I experiencing this time between
+        worlds? What is my life longing for? What is being asked of me?
+        Who must we become to meet this moment? What kind of community
+        do I need to hold me at this time?
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* FOUR-STAGE DISCERNMENT TIMELINE */}
+    {/* ========================================================= */}
+
+    <div className="relative mx-auto mt-10 max-w-4xl">
+
+      {/* Continuous Vertical Line — Original Gold */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-8 left-[19px] top-5 w-px bg-[#D9A01B]/45 md:left-[23px]"
+      />
+
+      <div>
+
+        {/* ===================================================== */}
+        {/* STAGE 01 — ONLINE APPLICATION */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
+
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            01
+          </div>
+
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Online Application
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
+                Sep 18 – Nov 15, 2026
               </span>
 
-              <h2 className="mt-4 font-serif text-3xl font-medium text-foreground md:text-4xl">
-                A generation is coming of age inside a civilizational threshold.
-              </h2>
-
-              <div className="mt-8 space-y-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  Beneath the visible crises of our time—ecological breakdown,
-                  social fragmentation, institutional instability, technological
-                  risk, meaning crisis—lies a deeper predicament often described
-                  as the metacrisis: a dysfunction in the underlying ways of
-                  perceiving, relating to, and understanding reality that modern
-                  civilization has been built upon.
-                </p>
-
-                <p className="leading-relaxed">
-                  As this predicament deepens, we see at least three broad
-                  attractors pulling at the future: greater fragmentation and
-                  chaos; authoritarian forms of order; or the emergence of more
-                  wisdom-informed and life-enhancing forms of civilization.
-                </p>
-
-                <p className="font-medium leading-relaxed text-foreground">
-                  Moving toward the third attractor is not a given. It will
-                  require profound changes not only in our systems and
-                  institutions, but in how we understand ourselves, reality and
-                  relate to all life.
-                </p>
-              </div>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
-              <article className="border-t-4 border-crimson bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-crimson">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Civilizational
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  This moment is historically distinct due to the unprecedented
-                  power humanity now holds to shape—and potentially
-                  destabilize—the conditions of life itself. Our technological
-                  power has grown much faster than the wisdom and maturity
-                  required to orient them. This ethical discernment and
-                  relational maturity requires decades, if not generations to
-                  cultivate to the levels we need at this moment.
-                </p>
-              </article>
-
-              <article className="border-t-4 border-[#D9A01B] bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-[#B88610]">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Developmental
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  This period of civilizational breakdown can be understood as
-                  a potential rite of passage for humanity—a threshold that
-                  could invite us into greater wisdom and maturity. But rupture
-                  does not guarantee transformation. Without the practices,
-                  communities, elders, and developmental containers capable of
-                  holding such a passage, crisis can just as easily deepen fear,
-                  fragmentation, tribalism, and attachment to ways of life that
-                  are part of the problem.
-                </p>
-              </article>
-
-              <article className="border-t-4 border-cyan-800 bg-background p-6">
-                <span className="text-xs font-medium uppercase tracking-wide text-cyan-800">
-                  The challenge is
-                </span>
-
-                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
-                  Generational
-                </h3>
-
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  A generation of young people feel the weight of this moment
-                  and long to participate meaningfully in what comes next, yet
-                  few institutions are helping them make consequential
-                  choices—what to study, where to work, how to live, what to
-                  value, and what to devote themselves to—in relation to the
-                  depth of the transition underway.
-                </p>
-              </article>
-            </div>
-
-            <div className="mt-10 max-w-4xl">
-              <p className="leading-relaxed text-muted-foreground">
-                The Fellowship exists to support the becoming of those who are
-                questioning not only our existing institutions and systems, but
-                the deeper logic upon which our world has been built—and whose
-                souls are longing to participate in bringing something
-                radically different into being.
-              </p>
-
-              <Link
-                href="/theory-of-change"
-                className="mt-5 inline-flex text-sm font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
-              >
-                Go deeper into our Theory of Change →
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* OFFERED AS A GIFT */}
-        <section className="bg-[#FFF9E9] py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-              Offered as a Gift
-            </span>
-
-            <blockquote className="mt-8 border-l-4 border-[#D9A01B] pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
-              &ldquo;In the Story of Separation, giving does not come naturally.
-              If I&apos;m separate from you, then more for me is less for you.
-              In the story of Interbeing, life is a gift. We did not earn the
-              sun, the water, our breath, or the beating of our hearts. Life is
-              a gift.&rdquo;
-            </blockquote>
-
-            <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
-              — Charles Eisenstein
-            </cite>
-
-            <div className="mt-10 space-y-6 text-muted-foreground">
-              <p className="leading-relaxed">
-                We believe the practices, relationships, wisdom, and forms of
-                community needed to navigate a time of metacrisis should not
-                become privileges available only to those who can afford them.
-                At a moment when so much is at stake, helping those who feel
-                called to serve life wholeheartedly become more capable of
-                doing so feels less like a product to sell and more like a
-                sacred responsibility we must share.
-              </p>
-
-              <p className="leading-relaxed">
-                This conviction is also personal. Many of us holding this work
-                have spent decades seeking transformational, educational, and
-                developmental spaces that deeply shaped our lives, yet access
-                to them was often limited by cost. Coming from the Global South,
-                opportunities created in the Global North could become
-                prohibitively expensive. At times we found scholarships, made
-                significant sacrifices to participate, or simply could not
-                access experiences we deeply longed for.
-              </p>
-
-              <p className="font-serif text-xl font-medium text-foreground md:text-2xl">
-                We want to practice something different.
-              </p>
-
-              <p className="leading-relaxed">
-                For this reason, the Fellowship is offered as a gift, so that
-                financial capacity does not determine who has access to the
-                forms of formation we believe are increasingly important for
-                this time.
-              </p>
-            </div>
-
-            <details className="mt-8 rounded-xl border border-[#D9A01B]/30 bg-background">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  What does “offered as a gift” mean?
-                </span>
-                <span className="text-xl text-[#B88610]">+</span>
-              </summary>
-
-              <div className="space-y-5 border-t border-border px-6 py-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  A gift, for us, is not simply a financial model. It is an
-                  experiment in loosening the logics of separation,
-                  transaction, and scarcity so deeply embedded in us by
-                  modernity, and remembering ourselves as interdependent
-                  beings—part of the same living movement of giving and
-                  receiving.
-                </p>
-
-                <p className="leading-relaxed">
-                  Rather than reinforcing the familiar reflex that asks:
-                </p>
-
-                <p className="font-serif text-lg italic text-foreground">
-                  Is this program worth this amount of money? What will I get in
-                  return?
-                </p>
-
-                <p className="leading-relaxed">
-                  We want to create enough space for different questions to
-                  become possible:
-                </p>
-
-                <p className="font-serif text-lg italic leading-relaxed text-foreground">
-                  Does this feel aligned with what this moment of my life is
-                  asking of me? Can I fully commit to this wholeheartedly at
-                  this moment? What is my heart and soul asking me to move
-                  toward?
-                </p>
-
-                <p className="font-medium text-foreground">
-                  If something in you comes alive in response to that question,
-                  we invite you to listen to it.
-                </p>
-
-                <p className="leading-relaxed">
-                  Offering the Fellowship as a gift does not mean it has no
-                  material costs. Retreat spaces, food, facilitation, therapy,
-                  teachers, travel support, and the labor of holding this
-                  community all require real resources. Some are themselves
-                  gifted; others are carried by supporters, practitioners, and
-                  friends who believe this work matters and want to make it
-                  possible for others. Their generosity allows the central
-                  discernment to remain about readiness, resonance, and your
-                  current moment rather than your financial situation.
-                </p>
-              </div>
-            </details>
-
-            {/* Gift includes */}
-            <div className="mt-8 rounded-xl bg-background p-6 md:p-8">
-              <h3 className="font-serif text-2xl font-medium text-foreground">
-                This Fellowship gift includes
-              </h3>
-
-              <ul className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {giftIncludes.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 text-muted-foreground"
-                  >
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="mt-5 text-sm italic text-muted-foreground">
-                Participants are only responsible for transportation to and from
-                the in-person retreats.
-              </p>
-            </div>
-
-            <p className="mt-8 leading-relaxed text-muted-foreground">
-              In a culture organized so deeply around scarcity, transactionality,
-              and extraction, we want to mess with this mentality, and
-              experiment with what becomes possible when we begin to interrupt
-              those patterns together.
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              We invite you to share more about your story, your questions,
+              your inquiries, your relationship with this moment, and what
+              is calling you toward this fellowship.
             </p>
 
-            {/* Collective Resource Fund */}
-            <details className="mt-6 rounded-xl border border-olive/20 bg-[#F3F7EC]">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 [&::-webkit-details-marker]:hidden">
-                <span className="font-medium text-foreground">
-                  Collective Resource Fund
-                </span>
-                <span className="text-xl text-olive">+</span>
-              </summary>
-
-              <div className="space-y-5 border-t border-olive/15 px-6 py-6 text-muted-foreground">
-                <p className="leading-relaxed">
-                  Beyond making the Fellowship accessible, we are also
-                  experimenting with new ways of relating to resources as a
-                  community. Our hope is to create a Collective Resource Fund—a
-                  shared pool of resources that can support participants
-                  throughout the journey based on real needs and opportunities.
-                </p>
-
-                <p className="leading-relaxed">
-                  These resources could support: transportation to retreats,
-                  complementary developmental experiences, seed funding for
-                  projects and initiatives, temporary financial support that
-                  help cover basic needs of participants.
-                </p>
-
-                <p className="leading-relaxed">
-                  The distribution of these resources will happen through a
-                  transparent collective process involving participants and the
-                  team, inspired by practices of collective resource sharing and
-                  gift economies. This is all part of our practice to learn how
-                  resources can flow with greater trust, transparency, and care
-                  toward where they are most needed.
-                </p>
-
-                <p className="font-medium text-foreground">
-                  We are currently fundraising for this Collective Resource
-                  Fund and hope to have resources available throughout the
-                  Fellowship journey.
-                </p>
-              </div>
-            </details>
           </div>
-        </section>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 02 — INDIVIDUAL CONVERSATIONS */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
+
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            02
+          </div>
+
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Individual Conversations
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
+                Rolling Basis
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Selected applicants will be invited to an individual
+              conversation with our team. This is a space to get to know
+              you more fully, understand your current moment, longings
+              and challenges, explore resonances with our work, and clarify
+              questions and expectations about the Fellowship.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 03 — COMMUNITY ENGAGEMENT */}
+        {/* ===================================================== */}
+
+        <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
+
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border-[1.2px] border-[#D9A01B] bg-white text-sm font-semibold text-[#D9A01B] shadow-[0_3px_12px_rgba(15,23,42,0.04)] md:h-12 md:w-12">
+            03
+          </div>
+
+          <div className="border-b border-foreground/10 pb-4 md:pb-5">
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Community Engagement
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
+                Nov 9 – Dec 11, 2026
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Over the course of a month, we will offer optional weekly
+              online gatherings (90 minutes each) where you can connect
+              with our community and fellow applicants, experience our
+              ways of learning, practicing, and relating, and get a glimpse
+              of the Fellowship before making a deeper commitment.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* STAGE 04 — FINAL INVITATIONS & COMMITMENT */}
+        {/* ===================================================== */}
+
+        <div className="relative pl-14 md:pl-20">
+
+          <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#D9A01B] text-sm font-semibold text-white shadow-[0_4px_14px_rgba(217,160,27,0.16)] md:h-12 md:w-12">
+            04
+          </div>
+
+          <div>
+
+            <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+
+              <h4
+                className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                Final Invitations &amp; Commitment
+              </h4>
+
+              <span className="shrink-0 text-sm font-semibold text-[#D9A01B]">
+                By Dec 15, 2026
+              </span>
+
+            </div>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Those invited to the founding cohort of the Metta Tropical
+              Fellowship will have 2–3 weeks to confirm their participation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* APPLICATION CTA — NO HORIZONTAL DIVIDER */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-14 max-w-4xl">
+
+      <a
+        href="#apply"
+        className="inline-flex items-center justify-center rounded-md bg-olive px-7 py-3.5 text-sm font-medium text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
+      >
+        Begin your application →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+  {/* WHY THIS EXISTS, NOW */}
+<section
+  id="why-now"
+  className="scroll-mt-32 bg-cream py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        Why This Exists, Now
+      </span>
+
+      <h2
+        className="mt-4 max-w-4xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        A generation is inheriting a world in transition and a responsibility{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontSize: "inherit",
+            fontFamily: "inherit",
+            fontWeight: "inherit",
+            lineHeight: "inherit",
+          }}
+        >
+          it was never taught how to carry
+        </span>
+      </h2>
+
+      <div className="mt-9 space-y-6 text-muted-foreground">
+        <p className="leading-relaxed">
+          Beneath the visible crises of our time—ecological breakdown, social
+          fragmentation, institutional instability, technological risk,
+          meaning crisis—lies a deeper predicament often described as the{" "}
+          <strong className="font-semibold text-foreground">
+            metacrisis
+          </strong>
+          : a dysfunction in the underlying ways of perceiving, relating to,
+          and understanding reality that modern civilization has been built
+          upon.
+        </p>
+
+        <p className="leading-relaxed">
+          As this predicament deepens, we see at least three broad attractors
+          pulling at the future: greater fragmentation and chaos; authoritarian
+          forms of order; or the emergence of more life-enhancing and
+          wisdom-centered forms of civilization. Moving toward the third
+          attractor is not a given, it will require profound changes not only
+          in our systems and institutions, but in how we understand ourselves,
+          reality and relate to all life.
+        </p>
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* THE CHALLENGE IS */}
+    {/* ========================================================= */}
+
+    <div className="mt-12">
+      <p className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Challenge Is:
+      </p>
+
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
+
+        {/* CIVILIZATIONAL */}
+        <article className="border-t-4 border-crimson bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <h3
+            className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Civilizational
+          </h3>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            This moment is historically distinct due to the unprecedented
+            power humanity now holds to shape—and potentially destabilize—the
+            conditions of life itself. Our technological power has grown much
+            faster than the wisdom and maturity required to orient them. This
+            ethical discernment and relational maturity requires decades, if
+            not generations to cultivate to the levels we need at this moment.
+          </p>
+        </article>
+
+        {/* DEVELOPMENTAL */}
+        <article className="border-t-4 border-[#D9A01B] bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <h3
+            className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Developmental
+          </h3>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            This period of civilizational breakdown can be understood as a
+            potential rite of passage for humanity—a threshold that could
+            invite us into greater wisdom and maturity. But rupture does not
+            guarantee transformation. Without the practices, communities,
+            elders, and developmental containers capable of holding such a
+            passage, crisis can just as easily deepen fear, fragmentation,
+            tribalism, and attachment to ways of life that are part of the
+            problem.
+          </p>
+        </article>
+
+        {/* GENERATIONAL */}
+        <article className="border-t-4 border-cyan-800 bg-background p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <h3
+            className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Generational
+          </h3>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            A generation of young people feel the weight of this moment and
+            long to participate meaningfully in what comes next, yet few
+            institutions are helping them make consequential life choices—how
+            to live, what to value, what to learn, where to work, and what to
+            devote themselves to—in relation to the depth of the transition
+            underway, while preparing them to carry the responsibilities this
+            civilizational moment is placing before them.
+          </p>
+        </article>
+
+      </div>
+    </div>
+
+    {/* ========================================================= */}
+    {/* INTERGENERATIONAL RESPONSE + IMAGE */}
+    {/* ========================================================= */}
+
+    <div className="mt-12 grid items-stretch gap-8 md:grid-cols-2 lg:gap-10">
+
+      {/* LEFT — TEXT */}
+      <div className="space-y-6 text-muted-foreground">
+
+        <p className="font-semibold leading-relaxed text-foreground">
+          None of this is the work of the young alone.
+        </p>
+
+        <p className="leading-relaxed">
+          Older generations carry hard-won wisdom from lives spent within and
+          outside the systems we have inherited. Younger generations bring their
+          own wisdom, questions, and sensitivity to what no longer holds,
+          alongside a longing to help bring different futures into being. We
+          place young people at the center of this Fellowship not because the
+          responsibility is theirs to carry alone, but because they will live
+          most fully with the consequences of the choices being made today.
+        </p>
+
+        <p className="leading-relaxed">
+          <strong className="font-semibold text-foreground">
+            The work of this moment is therefore intergenerational.
+          </strong>{" "}
+          We need spaces where generations can find one another again—to learn
+          from what has been lived, discern what must be carried forward and
+          what must be left behind, and begin taking responsibility for the
+          future together.
+        </p>
+      </div>
+
+      {/* RIGHT — IMAGE */}
+      <div className="relative min-h-[340px] overflow-hidden md:min-h-0">
+        <img
+          src="https://i.postimg.cc/SxVsRcXW/DSCF5376.jpg"
+          alt="Intergenerational gathering at Metta Tropical"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+
+    </div>
+
+{/* ========================================================= */}
+{/* CLOSING STATEMENT — FULL-WIDTH MANDALA BANNER */}
+{/* ========================================================= */}
+
+<div className="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden bg-background py-8 shadow-[0_8px_30px_rgba(15,23,42,0.06)] md:py-10">
+
+  {/* ======================================================= */}
+  {/* MANDALA — UPPER LEFT */}
+  {/* ======================================================= */}
+
+  <svg
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+    className="pointer-events-none absolute -left-16 -top-20 h-56 w-56 text-[#D9A01B] opacity-[0.18] md:-left-20 md:-top-24 md:h-72 md:w-72"
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {/* Outer circle */}
+      <circle cx="100" cy="100" r="72" />
+
+      {/* Outer petals */}
+      <g>
+        <path d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z" />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      {/* Inner leaf / heart forms */}
+      <g>
+        <path d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z" />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      {/* Inner rings */}
+      <circle cx="100" cy="100" r="32" />
+      <circle cx="100" cy="100" r="14" />
+    </g>
+
+    {/* Small ornamental dots */}
+    <g fill="currentColor">
+      <circle cx="100" cy="10" r="4" />
+      <circle cx="100" cy="190" r="4" />
+      <circle cx="10" cy="100" r="4" />
+      <circle cx="190" cy="100" r="4" />
+      <circle cx="36" cy="36" r="4" />
+      <circle cx="164" cy="36" r="4" />
+      <circle cx="36" cy="164" r="4" />
+      <circle cx="164" cy="164" r="4" />
+    </g>
+  </svg>
+
+  {/* ======================================================= */}
+  {/* MANDALA — LOWER RIGHT */}
+  {/* Same pattern, smaller */}
+  {/* ======================================================= */}
+
+  <svg
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+    className="pointer-events-none absolute -bottom-16 right-[5%] h-40 w-40 rotate-[22deg] text-[#D9A01B] opacity-[0.22] md:-bottom-20 md:right-[7%] md:h-52 md:w-52"
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="100" cy="100" r="72" />
+
+      <g>
+        <path d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z" />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 20 C88 38 88 50 100 63 C112 50 112 38 100 20Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      <g>
+        <path d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z" />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(45 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(90 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(135 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(180 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(225 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(270 100 100)"
+        />
+        <path
+          d="M100 53 C88 66 86 79 100 91 C114 79 112 66 100 53Z"
+          transform="rotate(315 100 100)"
+        />
+      </g>
+
+      <circle cx="100" cy="100" r="32" />
+      <circle cx="100" cy="100" r="14" />
+    </g>
+
+    <g fill="currentColor">
+      <circle cx="100" cy="10" r="4" />
+      <circle cx="100" cy="190" r="4" />
+      <circle cx="10" cy="100" r="4" />
+      <circle cx="190" cy="100" r="4" />
+      <circle cx="36" cy="36" r="4" />
+      <circle cx="164" cy="36" r="4" />
+      <circle cx="36" cy="164" r="4" />
+      <circle cx="164" cy="164" r="4" />
+    </g>
+  </svg>
+
+  {/* Small central yellow accent */}
+  <div className="pointer-events-none absolute left-1/2 top-0 h-1.5 w-20 -translate-x-1/2 bg-[#D9A01B]" />
+
+  {/* ======================================================= */}
+  {/* TEXT */}
+  {/* ======================================================= */}
+
+  <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
+    <p
+      className="mx-auto max-w-3xl text-center text-lg font-medium leading-relaxed text-foreground md:text-xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      The Fellowship exists to help restore the intergenerational fabric
+      through which the wisdom, courage, and capacities this moment demands
+      can be cultivated and carried forward. We hope that, by coming together
+      in intimate and trustworthy relationships across generations, we can
+      become more capable of wisely stewarding our passage through this
+      civilizational threshold.
+    </p>
+  </div>
+
+</div>
+  </div>
+</section>
+
+{/* ========================================================= */}
+{/* THE TEAM */}
+{/* ========================================================= */}
+
+<section
+  id="team"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
+>
+  {/* ========================================================= */}
+  {/* HOVER-ONLY BIOGRAPHY BEHAVIOR */}
+  {/* ========================================================= */}
+
+  <style>
+    {`
+      #team .team-bio {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 300ms ease, visibility 300ms ease;
+      }
+
+      #team .team-photo {
+        transition: transform 500ms ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        #team .team-portrait:hover .team-bio {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+        #team .team-portrait:hover .team-photo {
+          transform: scale(1.035);
+        }
+      }
+    `}
+  </style>
+
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* SECTION INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+
+      {/* Section Label */}
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        The Team
+      </span>
+
+      {/* Main Heading */}
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        We are here because{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            fontWeight: "inherit",
+            fontStyle: "inherit",
+            lineHeight: "inherit",
+            letterSpacing: "inherit",
+          }}
+        >
+          we need this work
+        </span>
+        , too.
+      </h2>
+
+      {/* ===================================================== */}
+      {/* LETTER-STYLE INTRODUCTION */}
+      {/* ===================================================== */}
+
+      <div className="mt-8 space-y-6 text-muted-foreground">
+
+        {/* Letter Opening */}
+        <p className="font-medium leading-relaxed text-foreground">
+          Dear friend,
+        </p>
+
+        <p className="leading-relaxed">
+          Most of us holding this journey have spent years wrestling
+          with the challenges of living at a time between worlds.
+          We have been shaped by the experience of questioning the
+          ways of life we have inherited, longing for what has yet
+          to emerge, and searching for how to offer our lives more
+          meaningfully to this moment.
+        </p>
+
+        <p className="leading-relaxed">
+          For us, the metacrisis is something we feel before we can
+          make sense of it. It's the unsettling texture of everyday
+          life, the disbelief at how strange things have become,
+          the sense that the ground beneath our familiar ways of
+          life has become unreliable, and the deeper knowing that
+          something more truthful, meaningful, and beautiful
+          is possible.
+        </p>
+
+        <p className="leading-relaxed">
+          Our paths have taken us through different traditions,
+          communities, ideas, and transformative experiences in
+          search of guidance, wisdom, and islands of sanity amid
+          the disorientation of our times. Along the way, we have
+          found not only companions who share the depth of these
+          questions, but also teachers, elders, and thinkers whose
+          wisdom, practices, and ways of living have helped us make
+          sense of this moment, deepen our own journeys, and sustain
+          our commitment to more life-affirming futures.
+        </p>
+
+        <p className="leading-relaxed">
+          We are not holding this Fellowship because we have
+          figured out how to navigate the transition ahead.
+          Quite the opposite. We are holding it because we, too,
+          are trying to discern how to live and respond to this
+          moment, and because we have been profoundly shaped by
+          the people, practices, frameworks and wisdom we have
+          encountered along the way.
+        </p>
+
+        <p className="leading-relaxed">
+          The Fellowship is our attempt to bring these gifts into
+          relationship. To gather those who recognize something
+          of this longing, connect them with the teachers, elders,
+          and companions who have nourished our own journeys,
+          and create a community where we can continue learning,
+          practicing, and becoming more capable of meeting this
+          moment together.
+        </p>
+
+        {/* Letter Sign-Off */}
+        <p className="leading-relaxed text-foreground">
+          With love,
+          <br />
+          <span className="font-semibold">
+            The Metta Tropical Team
+          </span>
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION TO THE PEOPLE */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-12 max-w-4xl">
+
+      <p className="leading-relaxed text-muted-foreground">
+        <b>Meet some of the people who will accompany you this journey:</b>
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* CORE TEAM */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-10 max-w-6xl">
+
+      <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
+
+        <h3
+          className="text-xl font-semibold text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Core Team
+        </h3>
+
+        <span className="text-xs text-muted-foreground">
+          Hover over a portrait to read their story
+        </span>
+
+      </div>
+
+      {/* ===================================================== */}
+      {/* CORE TEAM GRID — FOUR COLUMNS */}
+      {/* ===================================================== */}
+
+      <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+
+        {[
+          /* ================================================= */
+          /* MARCELO PETERLINI */
+          /* ================================================= */
+
+          {
+            name: "Marcelo Peterlini",
+            role: "Team Member & Facilitator",
+            image: "https://i.postimg.cc/pL7y0wwR/marcelo.jpg",
+            linkedin:
+              "https://www.linkedin.com/in/marcelo-peterlini-8a03ba22/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Mars
+                </strong>{" "}
+                is an educator who has dedicated his life to understanding
+                how to design educational architectures that enable young
+                people to realize their fullest capacity and become wise
+                elders capable of serving the flourishing of life. To do
+                this, he has been exploring how to integrate spiritual
+                formation, emotional maturity, leadership development,
+                and systems thinking into transformative experiences
+                that help us cultivate the capacities needed to navigate
+                the complexity of life and respond to the metacrisis.
+                Over more than ten years working in education, he has
+                collaborated with major Latin American leadership
+                organizations, developed socio-emotional education
+                programs for schools, mentored young people to enter
+                universities, organized spiritual retreats for youth,
+                initiated a project to explore masculinity with teenage
+                boys in schools in the São Paulo region, and offers
+                therapeutic coaching to young leaders to align their
+                lives with their higher service to the planet.
+              </>
+            ),
+          },
+
+          /* ================================================= */
+          /* CÁSSIUS CARVALHO */
+          /* ================================================= */
+
+          {
+            name: "Cássius Carvalho",
+            role: "Team Member & Researcher",
+            image: "https://i.postimg.cc/9QSzx6v8/Cassius.png",
+            linkedin: "https://www.linkedin.com/in/cassiuscarvalho/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Cássius
+                </strong>{" "}
+                is a self-directed learner, meta-designer, and
+                metacrisis researcher who has spent the past five
+                years exploring the question:{" "}
+                <em>
+                  How can we create systems that help us “play life”
+                  together — coordinating and collaborating toward
+                  increasingly wise and regenerative futures?
+                </em>{" "}
+                At 17, he was the first Latin American participant
+                accepted into a highly competitive career acceleration
+                program in Silicon Valley, and at 19 he was responsible
+                for managing over $4 million in an AI startup. This
+                experience disillusioned him with a techno-solutionist
+                worldview, and since 2019 he has been exploring the
+                intersections of art, technology, consciousness,
+                learning, regeneration, and play as systemic responses
+                to the metacrisis — applying his discoveries across
+                diverse projects and initiatives.
+              </>
+            ),
+          },
+
+          /* ================================================= */
+          /* NATHALIE ZOGBI */
+          /* ================================================= */
+
+          {
+            name: "Nathalie Zogbi",
+            role: "Team Member & Mentor",
+            image: "https://i.postimg.cc/QMTCv6Dj/Nathalie.jpg",
+            linkedin:
+              "https://www.linkedin.com/in/nathalie-zogbi-ruah-53648856/",
+            bio: (
+              <>
+                Before joining Imaginable Futures, Nathalie co-founded
+                CO.LETIVO, a teacher residency program in Brazil aimed
+                at bringing equity and excellence to teacher training
+                in the country. Nathalie was also a partner at SOMOS
+                Educação, where she managed Colégio Anglo 21, the
+                company’s leading primary and secondary school in
+                São Paulo. She also worked in the company’s M&amp;A
+                and school operations teams. During her time in
+                education, Nathalie conducted a deep inquiry into
+                what drives extraordinary learning experiences,
+                connecting research findings from Learning Science
+                to school practices worldwide. As part of this
+                journey, she visited over 40 schools across seven
+                countries and mapped effective learning conditions,
+                curriculum design choices, instructional strategies,
+                and support systems beyond the classroom. Nathalie
+                began her career in investment banking before moving
+                into education in search of meaning and social impact.
+              </>
+            ),
+          },
+
+          /* ================================================= */
+          /* KAREN SUN */
+          /* ================================================= */
+
+          {
+            name: "Karen Sun",
+            role: "Team Member & Guest Teacher",
+            image: "https://i.postimg.cc/y85WfMw2/Karen.jpg",
+            linkedin: "https://www.linkedin.com/in/karenysun/",
+            bio: (
+              <>
+                <strong className="font-semibold text-white">
+                  Karen
+                </strong>{" "}
+                is an educator and advisory Chief Technology Officer
+                with global experience researching and working at
+                the intersection of education and technology, in both
+                for-profit and non-profit organizations. Today, her
+                work focuses on understanding how to make wise,
+                life-conscious decisions around technology — and
+                especially how to bring this inquiry into educational
+                and governmental spaces. She has led initiatives
+                such as a digital school for COVID-displaced elementary
+                students in Colombia, digital literacy training and
+                higher education counseling in South Africa, and the
+                development of adaptive learning tools used by millions
+                of students on Quizlet. Karen is currently the CTO
+                of VélezReyes+, a Latin American philanthropic
+                platform working through education and leadership
+                transformation, and a professor of society and
+                technology at Insper, in Brazil.
+              </>
+            ),
+          },
+
+        ].map((member) => (
+
+          <div key={member.name} className="min-w-0">
+
+            {/* =============================================== */}
+            {/* PORTRAIT WITH HOVER-ONLY BIOGRAPHY */}
+            {/* =============================================== */}
+
+            <div className="team-portrait relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
+
+              <img
+                src={member.image}
+                alt={member.name}
+                loading="lazy"
+                className="team-photo absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="team-bio absolute inset-0 z-10 overflow-y-auto bg-[#17251E]/95 p-4 text-white">
+
+                <p className="text-xs leading-[1.5] text-white/90">
+                  {member.bio}
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* =============================================== */}
+            {/* ALWAYS-VISIBLE NAME, ROLE AND LINKEDIN */}
+            {/* =============================================== */}
+
+            <div className="mt-4">
+
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-lg font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+                style={{
+                  fontFamily:
+                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                }}
+              >
+                {member.name}
+
+                <span
+                  className="shrink-0 text-sm"
+                  aria-hidden="true"
+                >
+                  ↗
+                </span>
+
+              </a>
+
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                {member.role}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* GUEST TEACHERS */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-16 max-w-6xl">
+
+      {/* Section Title */}
+      <div className="mb-7">
+
+        <h3
+          className="text-xl font-semibold text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Guest Teachers
+        </h3>
+
+      </div>
+
+      {/* ===================================================== */}
+      {/* GUEST TEACHERS GRID */}
+      {/* 2 mobile / 3 tablet / 5 desktop */}
+      {/* ===================================================== */}
+
+      <div className="grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
+
+        {[
+          /* ================================================= */
+          /* ROW 1 */
+          /* ================================================= */
+
+          {
+            name: "Bayo Akomolafe",
+            image: "https://i.postimg.cc/VvfYLwS4/Bayo-Akomolafe.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Cristine Takuá",
+            image: "https://i.postimg.cc/bJHm9c6Z/Cristine-Takua.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Nate Hagens",
+            image: "https://i.postimg.cc/L59H6SYp/Nate-Hagens.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Mestre Cobra Mansa",
+            image: "https://i.postimg.cc/LXBx3KxQ/Cobra-Mansa.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Nora Bateson",
+            image: "https://i.postimg.cc/VvKzJhnw/Nora-Bateson.jpg",
+            linkedin: "",
+          },
+
+          /* ================================================= */
+          /* ROW 2 */
+          /* ================================================= */
+
+          {
+            name: "Lourenço Bustani",
+            image: "https://i.postimg.cc/L59H6Sqr/Lourenco-Bustani.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Vanessa Andreotti",
+            image: "https://i.postimg.cc/kGT72HKB/Vanessa-Andreotti.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Ubiraci Pataxó",
+            image: "https://i.postimg.cc/sxjwn68v/Ibiraci-Pataxo.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Zak Stein",
+            image: "https://i.postimg.cc/Y2RrDvVT/Zak-Stein.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "John Vervaeke",
+            image: "https://i.postimg.cc/FzTGwb5j/John-Verveake.jpg",
+            linkedin: "",
+          },
+
+          /* ================================================= */
+          /* ROW 3 */
+          /* ================================================= */
+
+          {
+            name: "Lama Rod",
+            image: "https://i.postimg.cc/SNjhZDcM/Lama-Rod.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Claudio Miranda",
+            image: "https://i.postimg.cc/tTtBNQrb/Claudio-Miranda.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Samantha Sweetwater",
+            image: "https://i.postimg.cc/TYh6kCnJ/Samantha-Sweetwater.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Kaka Verá",
+            image: "https://i.postimg.cc/kGTwLN3F/Kaka-Vera.jpg",
+            linkedin: "",
+          },
+
+          {
+            name: "Adam Bucko",
+            image: "https://i.postimg.cc/FRFqYHZB/Adam-Bucko.jpg",
+            linkedin: "",
+          },
+
+        ].map((teacher) => (
+
+          <div key={teacher.name} className="min-w-0">
+
+            {/* =============================================== */}
+            {/* PORTRAIT */}
+            {/* =============================================== */}
+
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#EAE7DF]">
+
+              <img
+                src={teacher.image}
+                alt={teacher.name}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+
+            </div>
+
+            {/* =============================================== */}
+            {/* NAME AND OPTIONAL LINKEDIN */}
+            {/* =============================================== */}
+
+            <div className="mt-3">
+
+              {teacher.linkedin ? (
+
+                <a
+                  href={teacher.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-baseline gap-1 text-base font-semibold leading-tight text-foreground transition-colors hover:text-[#B88610]"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  {teacher.name}
+
+                  <span
+                    className="shrink-0 text-sm"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+
+                </a>
+
+              ) : (
+
+                <span
+                  className="block text-base font-semibold leading-tight text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  {teacher.name}
+                </span>
+
+              )}
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ========================================================= */}
+{/* FREQUENTLY ASKED QUESTIONS */}
+{/* ========================================================= */}
+
+<section
+  id="faq"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-28"
+>
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* ======================================================= */}
+    {/* SECTION HEADING */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto max-w-4xl">
+      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+        FAQs
+      </span>
+
+      <h2
+        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Frequently Asked Questions
+      </h2>
+    </div>
+
+    {/* ======================================================= */}
+    {/* MINIMALIST FAQ ACCORDION */}
+    {/* ======================================================= */}
+
+    <div className="mx-auto mt-10 max-w-4xl divide-y divide-foreground/15 border-y border-foreground/15">
+
+      {[
+        /* --------------------------------------------------- */
+        /* 01 — TIME COMMITMENT */
+        /* --------------------------------------------------- */
+
+        {
+          question: "What is the time commitment?",
+          answer: (
+            <p>
+              The Fellowship requires approximately 8–10 hours per week
+              during online periods, alongside three week-long, in-person
+              retreats over the ten months. The online journey unfolds in
+              cycles of approximately 12–14 weeks of weekly gatherings,
+              each followed by a week of rest to allow space for integration
+              and renewal.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 02 — LANGUAGE */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Is the Fellowship conducted in Portuguese?",
+          answer: (
+            <p>
+              Yes. The Fellowship is primarily conducted in Portuguese
+              and rooted in the Brazilian context. Some guest teachers
+              may speak English or Spanish, with translation provided.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 03 — COST */
+        /* --------------------------------------------------- */
+
+        {
+          question: "What is the cost of the Fellowship?",
+          answer: (
+            <p>
+              The Fellowship is offered as a gift, with no program fee.
+              This includes online sessions, retreats, accommodation and
+              meals during retreats, and the individual therapeutic and
+              coaching support offered throughout the program. Participants
+              are only responsible for their transportation to and from
+              the in-person retreats.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 04 — LOCATION */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Can I participate if I don't live in São Paulo?",
+          answer: (
+            <p>
+              Yes. The weekly sessions take place online, so you can
+              participate from elsewhere in Brazil or abroad. Full time
+              attendance in all three in-person retreats are required
+              for all participants. We may also organize additional
+              in-person gatherings (philosophical dinners and weekend
+              immersions) throughout the Fellowship, which we highly
+              recommend participation but they won't be required.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 05 — RETREATS */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Do I need to attend all three retreats?",
+          answer: (
+            <p>
+              Yes. The retreats are central to the Fellowship's
+              developmental journey and to building the relationships
+              that will hold our community. We ask applicants to confirm
+              that they can attend all three before committing to the
+              program. If you foresee a conflict or have particular
+              circumstances you would like to discuss, please reach
+              out before applying.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 06 — WORKING OR STUDYING */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Can I participate while working or studying full-time?",
+          answer: (
+            <p>
+              The Fellowship is designed to take place alongside
+              participants' existing lives, but it does require a
+              substantial commitment of time, energy, and attention.
+              We encourage you to consider your current responsibilities
+              and whether you can realistically make space for the
+              weekly gatherings, personal practice, and three retreats.
+              If you're unsure, we would be happy to explore this
+              with you in a discernment conversation.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 07 — SELECTION */
+        /* --------------------------------------------------- */
+
+        {
+          question: "How are fellows selected?",
+          answer: (
+            <>
+              <p>
+                Our intention is to bring together a group of people
+                who resonate deeply with the Fellowship's inquiries,
+                recognize in this invitation something they have been
+                longing for, and feel ready to participate wholeheartedly
+                in this journey.
+              </p>
+
+              <p>
+                We are less interested in what you have accomplished
+                than in the path that has brought you here: the questions
+                you have been living with, the experiences that have
+                shaped you, and what is drawing you toward this work.
+                Because this is our first cohort, we are especially
+                attentive to bringing together a group of people who
+                can genuinely enrich each other's journey. We also want
+                to take time to genuinely meet the applicants and
+                explore the resonance between your aspirations, the
+                inquiries at the heart of the Fellowship, and the
+                community we hope to cultivate together.
+              </p>
+
+              <p>
+                Ultimately, we are looking for people who will not only
+                benefit from this community, but feel the call to help
+                bring it into being.
+              </p>
+            </>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 08 — AGE RANGE */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Can I apply if I am outside the 18–29 age range?",
+          answer: (
+            <p>
+              Yes. Our first Fellowship is primarily designed for
+              Brazilian young adults aged 18–29, but we are open to
+              considering a small number of applicants outside this
+              range whose aspirations and circumstances resonate deeply
+              with our mission. We cannot guarantee admission outside
+              the intended age range, but we encourage you to reach
+              out if you feel strongly drawn to this work. We are also
+              cultivating a wider intergenerational community, with
+              other possibilities of engagement with us.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 09 — AFTER THE FELLOWSHIP */
+        /* --------------------------------------------------- */
+
+        {
+          question: "What happens after the Fellowship?",
+          answer: (
+            <p>
+              We see the Fellowship not as an isolated ten-month
+              experience, but as a doorway into a longer-term community
+              of practice, learning, inquiry and shared responsibility.
+              Our aspiration is for fellows to remain part of the
+              growing Metta Tropical Collective community, where we
+              will intentionally offer multiple online and in-person
+              opportunities to continue practicing, developing,
+              gathering, and collaborating beyond the formal program.
+            </p>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 10 — LEADERSHIP */
+        /* --------------------------------------------------- */
+
+        {
+          question: "What if I don't see myself as a leader?",
+          answer: (
+            <>
+              <p>
+                We totally understand. We recognize that the word
+                leadership carries considerable baggage, often associated
+                with status, authority, achievement, or influence over
+                others. Part of our work is to reclaim a different
+                understanding of leadership as a sacred responsibility
+                toward the flourishing of all life: a way of relating
+                to ourselves, one another, and the world with love,
+                wisdom, courage, and a willingness to care for
+                something larger than ourselves.
+              </p>
+
+              <p>
+                We sometimes use the term post-activism to gesture
+                toward this orientation. This is not a rejection of
+                activism, but as an invitation to question the very
+                ways of perceiving, thinking, relating, and organizing
+                life from which our attempts to change the world
+                tend to arise.
+              </p>
+
+              <p>
+                Ultimately, we are interested in those who feel the
+                pain of the world deeply, and long to offer their
+                lives in service of all life. You do not need to
+                call yourself a leader or post-activist, but If you
+                recognize something of that longing in your own heart,
+                this invitation is for you.
+              </p>
+            </>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 11 — PREVIOUS EXPERIENCE */
+        /* --------------------------------------------------- */
+
+        {
+          question:
+            "Do I need previous experience with spirituality, systems thinking, the metacrisis, or relational practices?",
+          answer: (
+            <>
+              <p>
+                Not necessarily. We do not expect applicants to be
+                experts or experienced practitioners in all these
+                fields. Fellows will arrive with different backgrounds,
+                depths of experience, and ways of engaging with the
+                questions at the heart of our work.
+              </p>
+
+              <p>
+                At the same time, we are looking for people who
+                recognize something of their own journey in these
+                inquiries and long to explore them more deeply, in
+                the company of others who share that commitment.
+                What matters more is your genuine desire and curiosity
+                to step fully into these dimensions of life, and the
+                recognition that this is the type of space your soul
+                is most hungry for at this moment in life.
+              </p>
+            </>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 12 — RELIGION AND SPIRITUALITY */
+        /* --------------------------------------------------- */
+
+        {
+          question:
+            "Is the Fellowship affiliated with a particular religion or spiritual tradition?",
+          answer: (
+            <>
+              <p>
+                No. The Fellowship is not directly affiliated with any
+                religious or spiritual institution, although those of
+                us holding this work have been profoundly shaped and
+                supported by spiritual and wisdom traditions along
+                our paths.
+              </p>
+
+              <p>
+                Buddhism has been a particularly important influence,
+                alongside other contemplative traditions, philosophical
+                inquiries, and contemporary approaches to human
+                development and relational practice. We carry deep
+                gratitude for these lineages and seek to honor the
+                ways they have shaped our understanding of reality,
+                our practices, and how we aspire to live. So, in some
+                way the Fellowship is inevitably shaped by them.
+              </p>
+
+              <p>
+                We believe the roots of the metacrisis are deeply
+                spiritual. Beneath the breakdown of our systems lie
+                deeper questions about how we understand existence,
+                what we recognize as intrinsically valuable, what
+                gives our lives meaning, and how we relate to one
+                another, the living world, and the sacred. Spiritual
+                and religious traditions have spent centuries engaging
+                with these questions, developing profound bodies of
+                wisdom and practice around them. We believe responding
+                meaningfully to this moment requires us to bring these
+                dimensions of life back into the heart of our
+                collective inquiry.
+              </p>
+
+              <p>
+                To be part of the Fellowship you do not need to
+                identify as religious or spiritual, or subscribe
+                to any particular worldview. What we ask is a sincere
+                willingness to engage with these dimensions of life
+                through inquiry, practice, and dialogue.
+              </p>
+
+              <p>
+                We also recognize that spirituality and religion can
+                be delicate territory. Many people carry experiences
+                of harm, exclusion, or disillusionment from religious
+                and spiritual spaces, and we do not take this lightly.
+                Our intention is neither to shy away from these
+                questions nor to impose any specific path, but to
+                create conditions in which we can engage with them
+                with openness, discernment, humility, and care, knowing
+                the importance they have for our time.
+              </p>
+            </>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 13 — DISCERNMENT CONVERSATION */
+        /* --------------------------------------------------- */
+
+        {
+          question:
+            "I'm interested, but I'm unsure whether this is the right moment for me. Can we talk?",
+          answer: (
+            <>
+              <p>
+                Absolutely. We know that committing to a journey
+                like this can involve significant questions about
+                your life, responsibilities, and aspirations.
+              </p>
+
+              <p>
+                We offer discernment conversations as a space to
+                meet you, listen to what is alive for you, and
+                explore together whether the Fellowship feels
+                aligned with your current moment. These conversations
+                are not selection interviews, and there is no
+                pressure to apply afterward.
+              </p>
+
+              <p>
+                Whether or not you eventually join the Fellowship,
+                we would love to meet you.
+              </p>
+
+              <a
+                href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Discernment%20Conversation"
+                className="inline-flex items-center justify-center rounded-md bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                Schedule a conversation →
+              </a>
+            </>
+          ),
+        },
+
+        /* --------------------------------------------------- */
+        /* 14 — WHY METTA TROPICAL? */
+        /* --------------------------------------------------- */
+
+        {
+          question: "Ok, why is this called Metta Tropical Fellowship?",
+          answer: (
+            <>
+              <p>
+                We're glad you asked. Metta Tropical is more than a name
+                for us. It is an invocation of the spirit with which
+                we hope to meet the metacrisis, what we hold sacred,
+                and the possibilities of life we long to bring
+                into being.
+              </p>
+
+              <p>
+                At its heart, Metta comes from the Pali language, which
+                means a kind of boundless and self-giving love towards
+                all living beings. For us,{" "}
+                <strong className="font-semibold text-foreground">
+                  Metta
+                </strong>{" "}
+                is the orientation that allows us to face the metacrisis
+                with the kind of wisdom that prevents us from collapsing
+                into despair, simplistic solutions or domination. And
+                It holds three main energies:
+              </p>
+
+              {/* Three Energies */}
+              <div className="mt-7 space-y-6 border-l-2 border-[#D9A01B] pl-5 md:pl-7">
+
+                <div>
+                  <h3
+                    className="text-lg font-semibold text-foreground"
+                    style={{
+                      fontFamily:
+                        '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                    }}
+                  >
+                    Loving-kindness (Metta)
+                  </h3>
+
+                  <p className="mt-2">
+                    A fierce, boundless and all embracing love towards
+                    the liberation and flourishing of all life. It
+                    evokes the heart of the Bodhisattva in a time
+                    of societal collapse.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="text-lg font-semibold text-foreground"
+                    style={{
+                      fontFamily:
+                        '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                    }}
+                  >
+                    Meta-awareness
+                  </h3>
+
+                  <p className="mt-2">
+                    The capacity to step back, to sense into the deeper
+                    patterns shaping our world, systems and crises.
+                    Meta as within (interiority), meta as between
+                    (relationality), and meta as beyond (different
+                    ways of seeing and being).
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    className="text-lg font-semibold text-foreground"
+                    style={{
+                      fontFamily:
+                        '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                    }}
+                  >
+                    Metamorphosis
+                  </h3>
+
+                  <p className="mt-2">
+                    The recognition that these times are demanding us
+                    to be transformed, to have our Ego be shape-shifted,
+                    to become mature and wise adults in order to fully
+                    embody our soul's work.
+                  </p>
+                </div>
+
+              </div>
+
+              {/* Tropical */}
+              <div className="mt-8 border-t border-foreground/15 pt-7">
+
+                <h3
+                  className="text-xl font-semibold text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Tropical
+                </h3>
+
+                <p className="mt-4">
+                  Tropical is a certain kind of invocation. It calls in
+                  the warmth, the pulse, the wild intelligence of life.
+                  The eros, aliveness and creative force that lives
+                  in Brazil and across the Global South.
+                </p>
+
+                <p className="mt-5">
+                  It's also a call to not be stuck in abstraction, but
+                  to return to the body, the land, the rhythm, and the
+                  relationships. Tropical honors the wisdom that has
+                  long lived in this territory—indigenous, quilombola,
+                  Afro-diasporic, and marginalized communities—which
+                  despite being ignored, silenced and erased, has
+                  endured, holding so many keys for how to live
+                  through collapse.
+                </p>
+
+                <p className="mt-5">
+                  It reminds us that what has survived erasure must
+                  hold something essential. And that any honest
+                  reckoning with collapse must humbly find its
+                  way back to it.
+                </p>
+
+              </div>
+
+              {/* Replace this text with an <a> once its destination is set */}
+              <a
+  href="/about"
+  className="inline-block pt-2 text-sm font-semibold text-[#B88610] transition-opacity hover:opacity-70"
+>
+  Explore the Spirit of Our Work →
+</a>
+            </>
+          ),
+        },
+
+      ].map((faq) => (
+        <details
+          key={faq.question}
+          className="group"
+        >
+
+          {/* Clickable Question */}
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 outline-none transition-colors hover:text-[#B88610] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D9A01B] md:py-6 [&::-webkit-details-marker]:hidden">
+
+            <span
+              className="text-lg font-medium leading-snug text-foreground transition-colors group-hover:text-[#B88610] md:text-xl"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
+            >
+              {faq.question}
+            </span>
+
+            {/* Arrow */}
+            <svg
+              className="h-5 w-5 shrink-0 text-cyan-800 transition-transform duration-200 group-open:rotate-180"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </summary>
+
+          {/* Answer */}
+          <div className="max-w-3xl space-y-5 pb-7 pr-8 leading-relaxed text-muted-foreground md:pb-8">
+            {faq.answer}
+          </div>
+
+        </details>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
 
         {/* FINAL CTA */}
         <section id="apply" className="scroll-mt-24 bg-yellow py-20 lg:py-24">

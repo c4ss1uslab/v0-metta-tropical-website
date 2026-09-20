@@ -706,7 +706,7 @@ export function IntroductionSection() {
           href="https://decolonialfutures.net/wp-content/uploads/2024/05/gtdf-depth-education-wireframe-may-2024.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-cyan-900 underline transition-opacity hover:opacity-80"
+          className="underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity"
         >
           framework
         </a>{" "}
@@ -729,7 +729,7 @@ export function IntroductionSection() {
           href="https://secondrenaissance.net/glossary/Wisdom+Gap"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-cyan-900 underline transition-opacity hover:opacity-80"
+          className="font-medium text-foreground underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity hover:opacity-70"
         >
           the wisdom gap
         </a>
@@ -762,7 +762,7 @@ export function IntroductionSection() {
           href="https://people-shift.com/articles/the-4-ps-of-knowing-per-john-vervaeke/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-cyan-900 underline transition-opacity hover:opacity-80"
+          className="underline decoration-[#D9A01B] decoration-2 underline-offset-4 transition-opacity"
         >
           multiple ways of knowing
         </a>{" "}
