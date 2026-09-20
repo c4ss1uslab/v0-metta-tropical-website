@@ -709,15 +709,15 @@ export default function FellowshipPage() {
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
     {/* ========================================================= */}
-    {/* SECTION TITLE */}
+    {/* SECTION TITLE — MATCHES THE FELLOWSHIP */}
     {/* ========================================================= */}
 
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+    <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       The Invitation
     </span>
 
     {/* ========================================================= */}
-    {/* UPDATED OPENING QUOTE */}
+    {/* OPENING QUOTE */}
     {/* ========================================================= */}
 
     <blockquote className="mt-5 max-w-3xl">
@@ -769,7 +769,6 @@ export default function FellowshipPage() {
         respond without reproducing the same patterns.
       </p>
 
-      {/* Combined paragraph — updated wording */}
       <p className="leading-relaxed">
         There is something profoundly disorienting and overwhelming about this
         experience. But there may also be an invitation within it. When the
@@ -804,7 +803,6 @@ export default function FellowshipPage() {
 
     <div className="space-y-6 text-muted-foreground">
 
-      {/* Civilizational Rite of Passage */}
       <p className="leading-relaxed">
         This is why we understand this moment as a potential civilizational
         rite of passage—one that asks us to question who we are becoming,
@@ -814,7 +812,6 @@ export default function FellowshipPage() {
         living beings.
       </p>
 
-      {/* Updated Closing Paragraph */}
       <p className="leading-relaxed">
         Thresholds of this depth are difficult to cross alone, they need
         relationships strong enough to hold uncertainty. Practices that
@@ -825,7 +822,6 @@ export default function FellowshipPage() {
         what we know to be true.
       </p>
 
-      {/* Final Statement */}
       <p className="font-medium leading-relaxed text-foreground">
         The Metta Tropical Fellowship is our attempt to create such a place.
       </p>
