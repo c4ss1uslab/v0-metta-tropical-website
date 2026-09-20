@@ -287,7 +287,7 @@ export default function FellowshipPage() {
           Metta Tropical Fellowship
         </h1>
 
-        {/* Subtitle — Same Color as Title */}
+        {/* Subtitle */}
         <p
           className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
           style={{
@@ -336,7 +336,7 @@ export default function FellowshipPage() {
 
         <div className="mt-10 flex flex-col items-start gap-3">
 
-          {/* Fellowship Dates — Compact Orange Box */}
+          {/* Dates — Lighter Orange, Matching Button Typography */}
           <div
             className="
               flex
@@ -345,12 +345,11 @@ export default function FellowshipPage() {
               items-center
               justify-center
               rounded-md
-              bg-[#B96A32]
+              bg-[#C7804B]
               px-3
               text-center
               text-sm
-              font-medium
-              tracking-wide
+              font-semibold
               text-white
             "
             style={{
@@ -361,7 +360,7 @@ export default function FellowshipPage() {
             February — December 2027
           </div>
 
-          {/* Primary Application Button — Matching Width */}
+          {/* Primary Application Button */}
           <a
             href="#apply"
             className="
@@ -382,6 +381,10 @@ export default function FellowshipPage() {
               hover:-translate-y-0.5
               hover:bg-[#D9A01B]
             "
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
           >
             Begin Application →
           </a>
