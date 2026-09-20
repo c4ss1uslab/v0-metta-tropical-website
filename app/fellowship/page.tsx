@@ -1051,10 +1051,7 @@ export default function FellowshipPage() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to see ourselves not as observers standing outside the
-          world, but as participants within complex and interdependent social, ecological,
-          historical, and economic systems, becoming more capable of responding
-          with wisdom, discernment, and responsibility.
+          Remembering that we are participants, not spectators, in a living and interdependent world, embedded within social, ecological, historical, and economic systems, where the ways we live ripple far beyond ourselves and carry consequences for the larger web of life.
         </p>
 
       </article>
