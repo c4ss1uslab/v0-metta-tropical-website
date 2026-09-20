@@ -1036,7 +1036,7 @@ export default function FellowshipPage() {
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
           }}
         >
-          From Observers{" "}
+          From Observation{" "}
           <span
             className="mx-2"
             style={{
