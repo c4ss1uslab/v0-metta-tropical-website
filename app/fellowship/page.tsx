@@ -1056,9 +1056,9 @@ export default function FellowshipPage() {
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to see ourselves not as observers standing outside the
-          world, but as participants within complex social, ecological,
+          world, but as participants within complex and interdependent social, ecological,
           historical, and economic systems, becoming more capable of responding
-          with humility, discernment, and responsibility.
+          with wisdom, discernment, and responsibility.
         </p>
 
       </article>
