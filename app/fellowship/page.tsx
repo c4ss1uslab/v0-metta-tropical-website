@@ -895,6 +895,19 @@ export default function FellowshipPage() {
     {/* FOUR RELATIONSHIPS */}
     {/* ========================================================= */}
 
+    {/*
+      Design:
+      - Two columns on desktop.
+      - Small 8px gap between all four boxes.
+      - No visible borders.
+      - Subtle shadows.
+      - Bold relationship titles using the same font as the section label.
+      - Deeper orange titles (#A65325).
+      - Lighter orange arrows (#B96A32).
+      - Smaller Gill Sans transformation phrases.
+      - Soft orange capacity words.
+    */}
+
     <div className="mt-10 grid grid-cols-1 gap-2 md:grid-cols-2">
 
       {/* ===================================================== */}
@@ -903,9 +916,9 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Title — Same font as section label, deeper orange */}
+        {/* Bold Title — Same Font as Section Label */}
         <span
-          className="text-sm font-normal uppercase tracking-[0.14em] md:text-base"
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
             fontFamily: '"Helvetica Neue", Arial, sans-serif',
             color: "#A65325",
@@ -914,7 +927,7 @@ export default function FellowshipPage() {
           Self
         </span>
 
-        {/* Transformation — Gill Sans, lighter orange arrow */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -939,6 +952,7 @@ export default function FellowshipPage() {
           Towards Wholeness
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to meet the different parts of ourselves with greater
           presence, compassion, and love, becoming less governed by unconscious
@@ -946,6 +960,7 @@ export default function FellowshipPage() {
           of acting from a deeper place of wholeness.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Self-awareness · Embodied presence · Emotional maturity · Integration
         </p>
@@ -958,9 +973,9 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Title — Same font as section label, deeper orange */}
+        {/* Bold Title — Same Font as Section Label */}
         <span
-          className="text-sm font-normal uppercase tracking-[0.14em] md:text-base"
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
             fontFamily: '"Helvetica Neue", Arial, sans-serif',
             color: "#A65325",
@@ -969,7 +984,7 @@ export default function FellowshipPage() {
           Other
         </span>
 
-        {/* Transformation — Gill Sans, lighter orange arrow */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -994,6 +1009,7 @@ export default function FellowshipPage() {
           Towards Interbeing
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to encounter others not as objects, obstacles, or resources,
           but as beings whose lives are of transcendental worth, and deeply
@@ -1001,6 +1017,7 @@ export default function FellowshipPage() {
           connection with others despite differences and conflict.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Attunement · Deep listening · Intimacy · Compassion · Presence ·
           Attention
@@ -1014,9 +1031,9 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Title — Same font as section label, deeper orange */}
+        {/* Bold Title — Same Font as Section Label */}
         <span
-          className="text-sm font-normal uppercase tracking-[0.14em] md:text-base"
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
             fontFamily: '"Helvetica Neue", Arial, sans-serif',
             color: "#A65325",
@@ -1025,7 +1042,7 @@ export default function FellowshipPage() {
           World
         </span>
 
-        {/* Transformation — Gill Sans, lighter orange arrow */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -1050,6 +1067,7 @@ export default function FellowshipPage() {
           Towards Participation
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to see ourselves not as observers standing outside the
           world, but as participants within complex social, ecological,
@@ -1057,6 +1075,7 @@ export default function FellowshipPage() {
           with humility, discernment, and responsibility.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Systems perception · Complexity · Historical awareness · Power
           literacy · Ecological belonging · Imagination · Complicity in Harm
@@ -1070,9 +1089,9 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Title — Same font as section label, deeper orange */}
+        {/* Bold Title — Same Font as Section Label */}
         <span
-          className="text-sm font-normal uppercase tracking-[0.14em] md:text-base"
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
             fontFamily: '"Helvetica Neue", Arial, sans-serif',
             color: "#A65325",
@@ -1081,7 +1100,7 @@ export default function FellowshipPage() {
           The Sacred
         </span>
 
-        {/* Transformation — Gill Sans, lighter orange arrow */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -1106,6 +1125,7 @@ export default function FellowshipPage() {
           Towards Reverence
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Recovering the capacity to experience life as intrinsically valuable,
           meaningful, mysterious, and worthy of care—and allowing our
@@ -1113,6 +1133,7 @@ export default function FellowshipPage() {
           service to the larger whole.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Value perception · Reverence · Meaning · Truth · Moral discernment ·
           Devotion · Beauty
