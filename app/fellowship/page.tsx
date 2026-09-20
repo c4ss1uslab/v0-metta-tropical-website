@@ -832,34 +832,58 @@ export default function FellowshipPage() {
 
 </section>
 
+{/* ========================================================= */}
 {/* WHO WE MUST BECOME */}
+{/* ========================================================= */}
+
 <section
   id="who-we-must-become"
   className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
-    {/* Section Title */}
-    <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+
+    {/* ========================================================= */}
+    {/* SECTION TITLE — ONE SIZE BIGGER */}
+    {/* ========================================================= */}
+
+    <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       Who We Must Become
     </span>
 
-    {/* Opening Statement */}
+    {/* ========================================================= */}
+    {/* OPENING STATEMENT — ONE SIZE SMALLER */}
+    {/* ========================================================= */}
+
     <h2
-      className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
+      className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl lg:text-4xl"
       style={{
         fontFamily:
           '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
       }}
     >
       Reclaiming leadership as a{" "}
-      <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+      <span
+        className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+        style={{
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: "inherit",
+          fontStyle: "inherit",
+          lineHeight: "inherit",
+          letterSpacing: "inherit",
+        }}
+      >
         sacred responsibility
       </span>{" "}
       toward the flourishing of all life.
     </h2>
 
-    {/* Introduction */}
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         Human beings grow toward the horizons of possibility they are able to
         imagine. We are formed not only by what we are taught, but by the
@@ -876,22 +900,64 @@ export default function FellowshipPage() {
         life: with ourselves, with one another, with the world we participate
         in, and with the sacred.
       </p>
+
     </div>
 
-    {/* Four Relationships */}
-    <div className="mt-10 overflow-hidden border border-foreground/15 bg-background md:grid md:grid-cols-2">
+    {/* ========================================================= */}
+    {/* FOUR RELATIONSHIPS */}
+    {/* ========================================================= */}
+
+    {/*
+      Design:
+      - Two columns on desktop.
+      - Small 8px gap between all four boxes.
+      - No borders or outer container outline.
+      - White cards with subtle shadows.
+      - Orange titles and arrows.
+    */}
+
+    <div className="mt-10 grid grid-cols-1 gap-2 md:grid-cols-2">
+
+      {/* ===================================================== */}
       {/* SELF */}
-      <article className="border-b border-foreground/15 p-6 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-crimson">
+      {/* ===================================================== */}
+
+      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Self
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-xl font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily: "inherit",
+          }}
+        >
           From Fragmentation
-          <span className="mx-2 text-[#D9A01B]">→</span>
+          <span
+            className="mx-2 text-[#B96A32]"
+            style={{
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: "inherit",
+              lineHeight: "inherit",
+            }}
+          >
+            →
+          </span>
           Towards Wholeness
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to meet the different parts of ourselves with greater
           presence, compassion, and love, becoming less governed by unconscious
@@ -899,23 +965,53 @@ export default function FellowshipPage() {
           of acting from a deeper place of wholeness.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
           Self-awareness · Embodied presence · Emotional maturity · Integration
         </p>
+
       </article>
 
+      {/* ===================================================== */}
       {/* OTHER */}
-      <article className="border-b border-foreground/15 p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#B88610]">
+      {/* ===================================================== */}
+
+      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Other
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-xl font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily: "inherit",
+          }}
+        >
           From Separation
-          <span className="mx-2 text-[#D9A01B]">→</span>
+          <span
+            className="mx-2 text-[#B96A32]"
+            style={{
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: "inherit",
+              lineHeight: "inherit",
+            }}
+          >
+            →
+          </span>
           Towards Interbeing
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to encounter others not as objects, obstacles, or resources,
           but as beings whose lives are of transcendental worth, and deeply
@@ -923,24 +1019,54 @@ export default function FellowshipPage() {
           connection with others despite differences and conflict.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
           Attunement · Deep listening · Intimacy · Compassion · Presence ·
           Attention
         </p>
+
       </article>
 
+      {/* ===================================================== */}
       {/* WORLD */}
-      <article className="border-b border-foreground/15 p-6 md:border-b-0 md:border-r md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-800">
+      {/* ===================================================== */}
+
+      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           World
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-xl font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily: "inherit",
+          }}
+        >
           From Observers
-          <span className="mx-2 text-[#D9A01B]">→</span>
+          <span
+            className="mx-2 text-[#B96A32]"
+            style={{
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: "inherit",
+              lineHeight: "inherit",
+            }}
+          >
+            →
+          </span>
           Towards Participation
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Learning to see ourselves not as observers standing outside the
           world, but as participants within complex social, ecological,
@@ -948,24 +1074,54 @@ export default function FellowshipPage() {
           with humility, discernment, and responsibility.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
           Systems perception · Complexity · Historical awareness · Power
           literacy · Ecological belonging · Imagination · Complicity in Harm
         </p>
+
       </article>
 
-      {/* SACRED */}
-      <article className="p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-[0.16em] text-olive">
+      {/* ===================================================== */}
+      {/* THE SACRED */}
+      {/* ===================================================== */}
+
+      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           The Sacred
         </span>
 
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground">
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-xl font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily: "inherit",
+          }}
+        >
           From Disenchantment
-          <span className="mx-2 text-[#D9A01B]">→</span>
+          <span
+            className="mx-2 text-[#B96A32]"
+            style={{
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: "inherit",
+              lineHeight: "inherit",
+            }}
+          >
+            →
+          </span>
           Towards Reverence
         </h3>
 
+        {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           Recovering the capacity to experience life as intrinsically valuable,
           meaningful, mysterious, and worthy of care—and allowing our
@@ -973,26 +1129,30 @@ export default function FellowshipPage() {
           service to the larger whole.
         </p>
 
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-foreground/65">
           Value perception · Reverence · Meaning · Truth · Moral discernment ·
           Devotion · Beauty
         </p>
+
       </article>
+
     </div>
 
-    {/* Closing */}
+    {/* ========================================================= */}
+    {/* CLOSING — FIRST TWO PARAGRAPHS COMBINED */}
+    {/* ========================================================= */}
+
     <div className="mt-10 space-y-6 text-muted-foreground">
+
       <p className="leading-relaxed">
         This is a simple orientation toward four relationships we believe this
         moment is asking us to deepen if we want to steward civilization
-        towards life-enhancing futures.
-      </p>
-
-      <p className="leading-relaxed">
-        Throughout history, humanity has carried images of such possibility:
-        the saint, the bodhisattva, the spiritual warrior, the sacred
-        activist—figures for whom inner transformation became inseparable from
-        responsibility and service towards the whole.
+        towards life-enhancing futures. Throughout history, humanity has
+        carried images of such possibility: the saint, the bodhisattva,
+        the spiritual warrior, the sacred activist—figures for whom inner
+        transformation became inseparable from responsibility and service
+        towards the whole.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
@@ -1000,7 +1160,9 @@ export default function FellowshipPage() {
         aspiration, but to create the conditions through which such becoming
         can take root.
       </p>
+
     </div>
+
   </div>
 </section>
 
