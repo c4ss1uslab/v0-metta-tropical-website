@@ -1107,9 +1107,8 @@ export default function FellowshipPage() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Recovering the capacity to experience life as intrinsically valuable,
-          meaningful, mysterious, and worthy of care—and allowing our
-          relationship to the sacred to expand our love, devotion, meaning and
+          Recovering the capacity to feel a sense of belonging to the entire cosmos, experiencing life as intrinsically valuable, meaningful, mysterious, and worthy of care—and allowing our
+          relationship to the sacred to expand our love, devotion, and
           service to the larger whole.
         </p>
 
