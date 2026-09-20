@@ -896,27 +896,26 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     {/*
-      Design:
-      - Two columns on desktop.
-      - Small 8px gap between all four boxes.
+      Updated design:
+      - All capacity keywords removed.
+      - Slightly reduced padding for more compact boxes.
+      - Equal-height cards within each row.
+      - Small 8px gap between boxes.
       - No visible borders.
       - Subtle shadows.
-      - Bold relationship titles using the same font as the section label.
-      - Deeper orange titles (#A65325).
-      - Lighter orange arrows (#B96A32).
-      - Smaller Gill Sans transformation phrases.
-      - Soft orange capacity words.
+      - Bold burnt-orange titles.
+      - Lighter orange arrows.
     */}
 
-    <div className="mt-10 grid grid-cols-1 gap-2 md:grid-cols-2">
+    <div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
 
       {/* ===================================================== */}
       {/* SELF */}
       {/* ===================================================== */}
 
-      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
 
-        {/* Bold Title — Same Font as Section Label */}
+        {/* Box Title */}
         <span
           className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
@@ -960,20 +959,15 @@ export default function FellowshipPage() {
           of acting from a deeper place of wholeness.
         </p>
 
-        {/* Capacities */}
-        <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
-          Self-awareness · Presence · Self-compassion · Emotional maturity · 
-        </p>
-
       </article>
 
       {/* ===================================================== */}
       {/* OTHER */}
       {/* ===================================================== */}
 
-      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
 
-        {/* Bold Title — Same Font as Section Label */}
+        {/* Box Title */}
         <span
           className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
@@ -1017,21 +1011,15 @@ export default function FellowshipPage() {
           connection with others despite differences and conflict.
         </p>
 
-        {/* Capacities */}
-        <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
-          Attunement · Deep listening · Intimacy · Compassion · Presence ·
-          Attention
-        </p>
-
       </article>
 
       {/* ===================================================== */}
       {/* WORLD */}
       {/* ===================================================== */}
 
-      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
 
-        {/* Bold Title — Same Font as Section Label */}
+        {/* Box Title */}
         <span
           className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
@@ -1075,21 +1063,15 @@ export default function FellowshipPage() {
           with humility, discernment, and responsibility.
         </p>
 
-        {/* Capacities */}
-        <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
-          Systems perception · Complexity · Historical awareness · Power
-          literacy · Ecological belonging · Imagination · Complicity in Harm
-        </p>
-
       </article>
 
       {/* ===================================================== */}
       {/* THE SACRED */}
       {/* ===================================================== */}
 
-      <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
 
-        {/* Bold Title — Same Font as Section Label */}
+        {/* Box Title */}
         <span
           className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
           style={{
@@ -1131,12 +1113,6 @@ export default function FellowshipPage() {
           meaningful, mysterious, and worthy of care—and allowing our
           relationship to the sacred to expand our love, devotion, meaning and
           service to the larger whole.
-        </p>
-
-        {/* Capacities */}
-        <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
-          Value perception · Reverence · Meaning · Truth · Moral discernment ·
-          Devotion · Beauty
         </p>
 
       </article>
