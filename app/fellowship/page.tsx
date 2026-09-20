@@ -1142,24 +1142,31 @@ export default function FellowshipPage() {
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
     {/* ========================================================= */}
-    {/* FELLOWSHIP OVERVIEW */}
-    {/* ========================================================= */}
+{/* FELLOWSHIP OVERVIEW / STRUCTURE */}
+{/* ========================================================= */}
 
-    <div className="text-center">
-      <h2
-        className="text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl lg:text-[2.75rem]"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        The Fellowship Overview
-      </h2>
-    </div>
+<section
+  id="fellowship-overview"
+  className="scroll-mt-32 bg-background pb-20 lg:pb-28"
+>
+  {/* Full-width section divider — directly follows the previous section */}
+  <div className="w-full bg-[#111827] px-6 py-4 text-center">
+    <h2
+      className="text-2xl font-semibold leading-tight tracking-[-0.025em] text-white md:text-3xl lg:text-4xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      The Fellowship Overview
+    </h2>
+  </div>
+
+  <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
     {/* Structure Introduction */}
     <div className="mx-auto mt-16 max-w-4xl">
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Structure
       </span>
 
@@ -1172,13 +1179,13 @@ export default function FellowshipPage() {
       </p>
 
       <h3
-        className="mt-10 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-4xl"
+        className="mt-10 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
           fontFamily:
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        The Ecology of Transformation 
+        The Ecology of Transformation
       </h3>
     </div>
 
@@ -1187,37 +1194,43 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-16">
-  {/* 01 — CORE RHYTHM / Sticky Section Marker */}
-<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-  <div className="border-t border-[#D9A01B] pt-5">
-    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
-      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
-        01 — The Core Rhythm
-      </span>
+      {/* 01 — CORE RHYTHM / Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-[#D9A01B] pt-5">
+          <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+            <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
+              01 — The Core Rhythm
+            </span>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
-        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-          Immersive Retreats
-        </span>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                Immersive Retreats
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-          Collective Inquiry
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                Collective Inquiry
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-          Collective Practice
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+                Collective Practice
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       {/* ======================================================= */}
       {/* IMMERSIVE RETREATS */}
       {/* ======================================================= */}
 
       <div className="mt-6">
-        <h4 className="font-serif text-2xl font-medium text-foreground">
+        <h4
+          className="text-2xl font-medium text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Immersive Retreats
         </h4>
 
@@ -1234,12 +1247,12 @@ export default function FellowshipPage() {
         <div className="mt-8 grid items-start gap-5 lg:grid-cols-3">
 
           {/* OPENING RETREAT */}
-          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+          <article className="flex flex-col bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] lg:min-h-[410px]">
             <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Opening Retreat
             </span>
 
-            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+            <h5 className="mt-2 text-xl font-medium leading-snug text-foreground">
               Inviting the Sacred
             </h5>
 
@@ -1294,12 +1307,12 @@ export default function FellowshipPage() {
           </article>
 
           {/* MIDPOINT RETREAT */}
-          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+          <article className="flex flex-col bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] lg:min-h-[410px]">
             <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Midpoint Retreat
             </span>
 
-            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+            <h5 className="mt-2 text-xl font-medium leading-snug text-foreground">
               Feeling the Metacrisis
             </h5>
 
@@ -1354,12 +1367,12 @@ export default function FellowshipPage() {
           </article>
 
           {/* CLOSING RETREAT */}
-          <article className="flex flex-col border border-[#D9A01B]/25 bg-[#D9A01B]/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:min-h-[410px]">
+          <article className="flex flex-col bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] lg:min-h-[410px]">
             <span className="text-xs font-semibold uppercase tracking-wide text-[#B88610]">
               Closing Retreat
             </span>
 
-            <h5 className="mt-2 font-serif text-xl font-medium leading-snug text-foreground">
+            <h5 className="mt-2 text-xl font-medium leading-snug text-foreground">
               Serving the Whole
             </h5>
 
@@ -1438,7 +1451,13 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <div className="mt-16">
-        <h4 className="font-serif text-2xl font-medium text-foreground">
+        <h4
+          className="text-2xl font-medium text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Collective Inquiry
         </h4>
 
@@ -1449,10 +1468,10 @@ export default function FellowshipPage() {
           what has been opened through the retreats.
         </p>
 
-        <div className="mt-7 grid items-start gap-5 md:grid-cols-2">
+        <div className="mt-7 grid items-stretch gap-5 md:grid-cols-2">
           {/* COMMUNITY INQUIRY */}
-          <article className="border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-7">
-            <h5 className="font-serif text-xl font-medium text-foreground">
+          <article className="bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:p-7">
+            <h5 className="text-xl font-medium text-foreground">
               Community Inquiry
             </h5>
 
@@ -1470,8 +1489,8 @@ export default function FellowshipPage() {
           </article>
 
           {/* WISDOM DIALOGUES */}
-          <article className="border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-7">
-            <h5 className="font-serif text-xl font-medium text-foreground">
+          <article className="bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:p-7">
+            <h5 className="text-xl font-medium text-foreground">
               Wisdom Dialogues
             </h5>
 
@@ -1494,7 +1513,13 @@ export default function FellowshipPage() {
       {/* ======================================================= */}
 
       <div className="mt-16">
-        <h4 className="font-serif text-2xl font-medium text-foreground">
+        <h4
+          className="text-2xl font-medium text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
           Collective Practice
         </h4>
 
@@ -1505,7 +1530,7 @@ export default function FellowshipPage() {
           relate with life.
         </p>
 
-        <div className="mt-7 border border-border/70 bg-cream p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8">
+        <div className="mt-7 bg-cream p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:p-8">
           <p className="font-medium text-foreground">
             Collective Practice — Wednesdays · 19h30–21h
           </p>
@@ -1561,30 +1586,30 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-20">
-     {/* 02 — RELATIONAL WEB / Sticky Section Marker */}
-<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-  <div className="border-t border-crimson pt-5">
-    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
-      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-crimson">
-        02 — The Relational Web
-      </span>
+      {/* 02 — RELATIONAL WEB / Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-crimson pt-5">
+          <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+            <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-crimson">
+              02 — The Relational Web
+            </span>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
-        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-          Dharma Family
-        </span>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
+              <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+                Dharma Family
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-          Mentorship
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+                Mentorship
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-crimson">
-          Therapy &amp; Coaching
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-crimson">
+                Therapy &amp; Coaching
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         This journey can be overwhelming, challenging and touch a lot of
@@ -1594,11 +1619,11 @@ export default function FellowshipPage() {
         accompaniment:
       </p>
 
-      <div className="mt-8 grid items-start gap-5 md:grid-cols-3">
+      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-3">
 
         {/* DHARMA FAMILY */}
-        <article className="border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
-          <h4 className="font-serif text-xl font-medium text-crimson">
+        <article className="flex flex-col bg-[#FBF6F4] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[300px]">
+          <h4 className="text-xl font-medium text-crimson">
             Dharma Family
           </h4>
 
@@ -1616,8 +1641,8 @@ export default function FellowshipPage() {
         </article>
 
         {/* MENTORSHIP */}
-        <article className="flex flex-col border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
-          <h4 className="font-serif text-xl font-medium text-crimson">
+        <article className="flex flex-col bg-[#FBF6F4] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[300px]">
+          <h4 className="text-xl font-medium text-crimson">
             Mentorship
           </h4>
 
@@ -1662,8 +1687,8 @@ export default function FellowshipPage() {
         </article>
 
         {/* THERAPY & COACHING */}
-        <article className="flex flex-col border border-crimson/20 bg-crimson/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px]">
-          <h4 className="font-serif text-xl font-medium text-crimson">
+        <article className="flex flex-col bg-[#FBF6F4] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[300px]">
+          <h4 className="text-xl font-medium text-crimson">
             Therapy &amp; Coaching
           </h4>
 
@@ -1733,26 +1758,26 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="mt-20">
-     {/* 03 — INTEGRATION WEEK / Sticky Section Marker */}
-<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-  <div className="border-t border-cyan-800 pt-5">
-    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
-      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-cyan-800">
-        03 — The Integration Week
-      </span>
+      {/* 03 — INTEGRATION WEEK / Sticky Section Marker */}
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-cyan-800 pt-5">
+          <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+            <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-cyan-800">
+              03 — The Integration Week
+            </span>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2 md:gap-x-16">
-        <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-          Tending the Field
-        </span>
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2 md:gap-x-16">
+              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+                Tending the Field
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
-          Resourcing Together
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-cyan-800">
+                Resourcing Together
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         At the end of every six week cycle, we interrupt the regular rhythm of
@@ -1767,11 +1792,11 @@ export default function FellowshipPage() {
         We will hold two specific spaces during integration week:
       </p>
 
-      <div className="mt-8 grid items-start gap-5 md:grid-cols-2">
+      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
 
         {/* TENDING THE FIELD */}
-        <article className="flex flex-col border border-cyan-800/20 bg-cyan-800/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[330px] md:p-8">
-          <h4 className="font-serif text-xl font-medium text-[#B88610]">
+        <article className="flex flex-col bg-[#F5F8FA] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[330px] md:p-8">
+          <h4 className="text-xl font-medium text-foreground">
             Tending the Field
           </h4>
 
@@ -1818,8 +1843,8 @@ export default function FellowshipPage() {
         </article>
 
         {/* RESOURCING TOGETHER */}
-        <article className="flex flex-col border border-cyan-800/20 bg-cyan-800/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[330px] md:p-8">
-          <h4 className="font-serif text-xl font-medium text-[#B88610]">
+        <article className="flex flex-col bg-[#F5F8FA] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[330px] md:p-8">
+          <h4 className="text-xl font-medium text-foreground">
             Resourcing Together
           </h4>
 
@@ -1880,25 +1905,25 @@ export default function FellowshipPage() {
 
     <div className="mt-20">
       {/* 04 — EMERGENT SPACES / Sticky Section Marker */}
-<div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-  <div className="border-t border-olive pt-5">
-    <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
-      <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-olive">
-        04 — Emergent Spaces
-      </span>
+      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
+        <div className="border-t border-olive pt-5">
+          <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
+            <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-olive">
+              04 — Emergent Spaces
+            </span>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2 md:gap-x-16">
-        <span className="text-sm font-medium uppercase tracking-wide text-olive">
-          Philosophical Dinners
-        </span>
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2 md:gap-x-16">
+              <span className="text-sm font-medium uppercase tracking-wide text-olive">
+                Philosophical Dinners
+              </span>
 
-        <span className="text-sm font-medium uppercase tracking-wide text-olive">
-          Emergent Immersions
-        </span>
+              <span className="text-sm font-medium uppercase tracking-wide text-olive">
+                Emergent Immersions
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <p className="mt-6 max-w-4xl leading-relaxed text-muted-foreground">
         Even though this Fellowship has been carefully designed, not everything
@@ -1907,11 +1932,11 @@ export default function FellowshipPage() {
         additional spaces in response to what is genuinely alive in the cohort.
       </p>
 
-      <div className="mt-8 grid items-start gap-5 md:grid-cols-2">
+      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
 
         {/* PHILOSOPHICAL DINNERS */}
-        <article className="flex flex-col border border-olive/20 bg-olive/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px] md:p-8">
-          <h4 className="font-serif text-xl font-medium text-olive">
+        <article className="flex flex-col bg-[#F8F9F5] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[300px] md:p-8">
+          <h4 className="text-xl font-medium text-olive">
             Philosophical Dinners
           </h4>
 
@@ -1923,7 +1948,7 @@ export default function FellowshipPage() {
 
           <details className="group mt-auto pt-6">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-olive/20 pt-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
-              <span>How these philosophical dinners work</span>
+              <span>How it works</span>
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
@@ -1945,8 +1970,8 @@ export default function FellowshipPage() {
         </article>
 
         {/* EMERGENT IMMERSIONS */}
-        <article className="flex flex-col border border-olive/20 bg-olive/10 p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] md:min-h-[300px] md:p-8">
-          <h4 className="font-serif text-xl font-medium text-olive">
+        <article className="flex flex-col bg-[#F8F9F5] p-6 shadow-[0_3px_16px_rgba(15,23,42,0.065)] md:min-h-[300px] md:p-8">
+          <h4 className="text-xl font-medium text-olive">
             Emergent Immersions
           </h4>
 
@@ -1959,7 +1984,7 @@ export default function FellowshipPage() {
 
           <details className="group mt-auto pt-6">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-olive/20 pt-4 text-sm font-medium text-olive [&::-webkit-details-marker]:hidden">
-              <span>How these immersions emerge</span>
+              <span>How it works</span>
               <span className="text-lg transition-transform group-open:rotate-45">
                 +
               </span>
