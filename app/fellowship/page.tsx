@@ -741,9 +741,7 @@ export default function FellowshipPage() {
       <p className="leading-relaxed">
         When the old maps no longer lead where we need to go, and there is no
         instruction manual for crossing the threshold. It is the time for those
-        living in this liminal space to learn how to perceive reality
-        differently, cultivate capacities our existing institutions rarely know
-        how to develop, and experiment together with ways of living, relating,
+        living in this liminal space to learn how to cultivate capacities our existing institutions rarely know how to develop, and experiment together with ways of living, relating,
         and responding from which radically different futures might emerge.
       </p>
 
