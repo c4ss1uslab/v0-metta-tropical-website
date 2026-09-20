@@ -717,7 +717,7 @@ export default function FellowshipPage() {
     </span>
 
     {/* ========================================================= */}
-    {/* OPENING QUOTE */}
+    {/* UPDATED OPENING QUOTE */}
     {/* ========================================================= */}
 
     <blockquote className="mt-5 max-w-3xl">
@@ -729,8 +729,8 @@ export default function FellowshipPage() {
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        &ldquo;It&apos;s actually the time of people in that liminal phase to
-        work on developing these new structures.&rdquo;
+        &ldquo;It's actually the time of people in that liminal phase to
+        work on developing the new structures.&rdquo;
       </p>
 
       <cite className="mt-3 block text-xs font-medium not-italic uppercase tracking-wide text-[#D9A01B]">
@@ -757,7 +757,6 @@ export default function FellowshipPage() {
         emergence, between what is dying and what has not yet been born.
       </p>
 
-      {/* Same font size and family as body text */}
       <p className="font-medium leading-relaxed text-foreground">
         You may already know what this feels like.
       </p>
@@ -770,16 +769,16 @@ export default function FellowshipPage() {
         respond without reproducing the same patterns.
       </p>
 
+      {/* Combined paragraph — updated wording */}
       <p className="leading-relaxed">
         There is something profoundly disorienting and overwhelming about this
-        experience. But there may also be an invitation within it.
-      </p>
-
-      <p className="leading-relaxed">
-        When the old maps no longer lead where we need to go, and there is no
-        instruction manual for crossing the threshold. It is the time for those
-        living in this liminal space to learn how to cultivate capacities our existing institutions rarely know how to develop, and experiment together with ways of living, relating,
-        and responding from which radically different futures might emerge.
+        experience. But there may also be an invitation within it. When the
+        old maps no longer lead where we need to go, and there is no
+        instruction manual for crossing the threshold. It is the time for
+        those living in this liminal space to learn how to cultivate the
+        capacities our existing institutions rarely know how to develop,
+        and experiment together with ways of living, relating, and responding
+        from which radically different futures might emerge.
       </p>
 
     </div>
@@ -787,19 +786,6 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
     {/* PHOTOGRAPH — ALIGNED WITH THE TEXT MARGINS */}
     {/* ========================================================= */}
-
-    {/*
-      The photograph now sits inside the SAME max-w-4xl
-      container as all the paragraphs.
-
-      This means:
-      - Its left edge aligns with the text.
-      - Its right edge aligns with the text.
-      - It never touches the edges of the browser.
-      - It creates a visual pause before the closing invitation.
-
-      Adjust aspect-[16/9] if you'd prefer a taller image.
-    */}
 
     <figure className="relative my-10 w-full overflow-hidden bg-[#EAE7DF] shadow-[0_8px_26px_rgba(15,23,42,0.07)] md:my-12">
 
@@ -818,25 +804,25 @@ export default function FellowshipPage() {
 
     <div className="space-y-6 text-muted-foreground">
 
+      {/* Civilizational Rite of Passage */}
       <p className="leading-relaxed">
-        This is why we understand this moment as a potential civilizational rite of passage—one that asks us to question who we are becoming, what we aspire toward, which desires
-        are shaping our lives, what we are willing to let go of and compost,
-        and what may need to change if our lives are to serve the flourishing
-        of all living beings.
+        This is why we understand this moment as a potential civilizational
+        rite of passage—one that asks us to question who we are becoming,
+        what we aspire toward, which desires are shaping our lives,
+        what we are willing to let go of and compost, and what may need
+        to change if our lives are to serve the flourishing of all
+        living beings.
       </p>
 
-      {/* Same font size and family as body text */}
-      <p className="font-medium leading-relaxed text-foreground">
-        And thresholds of this depth are difficult to cross alone.
-      </p>
-
+      {/* Updated Closing Paragraph */}
       <p className="leading-relaxed">
-        They need relationships strong enough to hold uncertainty. Practices
-        that help us remain present when old identities and assumptions begin
+        Thresholds of this depth are difficult to cross alone, they need
+        relationships strong enough to hold uncertainty. Practices that
+        help us remain present when old identities and assumptions begin
         to loosen. Friends and mentors who can challenge and care for us.
-        Places where grief and longing can be taken seriously, and where we
-        can experiment with other possibilities of life aligned to what we
-        know to be true.
+        Places where grief and longing can be taken seriously, and where
+        we can experiment with other possibilities of life aligned to
+        what we know to be true.
       </p>
 
       {/* Final Statement */}
