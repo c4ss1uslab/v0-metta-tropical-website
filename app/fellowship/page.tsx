@@ -1100,9 +1100,7 @@ export default function FellowshipPage() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Recovering the capacity to feel a sense of belonging to the entire cosmos, experiencing life as intrinsically valuable, meaningful, mysterious, and worthy of care—and allowing our
-          relationship to the sacred to expand our love, devotion, and
-          service to the larger whole.
+          Recovering our sense of belonging within a mysterious cosmos, experiencing life as intrinsically valuable, meaningful and sacred, while recognizing ourselves as unique expressions of that same mystery. And allowing our relationship to the sacred to expand love, devotion, and responsibility toward the whole.
         </p>
 
       </article>
