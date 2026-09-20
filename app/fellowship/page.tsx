@@ -784,9 +784,7 @@ export default function FellowshipPage() {
     <div className="space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        This is why we understand this moment not only as a crisis, but
-        potentially as a civilizational rite of passage—one that asks us to
-        question who we are becoming, what we aspire toward, which desires
+        This is why we understand this moment as a potential civilizational rite of passage—one that asks us to question who we are becoming, what we aspire toward, which desires
         are shaping our lives, what we are willing to let go of and compost,
         and what may need to change if our lives are to serve the flourishing
         of all living beings.
