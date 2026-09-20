@@ -1168,7 +1168,7 @@ export default function FellowshipPage() {
       </span>
 
       <p className="mt-8 leading-relaxed text-muted-foreground">
-        The Fellowship is held by an ecology of transformation, structures
+        The Fellowship is held by an ecology of transformation: structures
         that hold the journey together, inviting participants into a shared
         rhythm of immersive experiences, sustained practice, collective
         inquiry, intimate relationships, mentorship, accompaniment, and
