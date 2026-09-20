@@ -896,9 +896,10 @@ export default function FellowshipPage() {
       - Small 8px gap between all four boxes.
       - No visible borders.
       - Subtle shadows.
-      - Regular-weight orange relationship titles.
+      - Relationship titles inherit the page's default font.
+      - Deeper orange titles (#A65325).
+      - Softer orange arrows (#B96A32).
       - Smaller Gill Sans transformation phrases.
-      - Deeper orange arrows.
       - Soft orange capacity words.
     */}
 
@@ -910,18 +911,12 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Relationship Title — No Bold */}
-        <span
-          className="text-sm font-normal uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
+        {/* Relationship Title — Same Font as Section Label */}
+        <span className="text-sm font-normal uppercase tracking-[0.14em] text-[#A65325] md:text-base">
           Self
         </span>
 
-        {/* Transformation — Smaller, Gill Sans */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -931,7 +926,7 @@ export default function FellowshipPage() {
         >
           From Fragmentation
           <span
-            className="mx-2 text-[#A65325]"
+            className="mx-2 text-[#B96A32]"
             style={{
               fontFamily: "inherit",
               fontSize: "inherit",
@@ -952,7 +947,7 @@ export default function FellowshipPage() {
           of acting from a deeper place of wholeness.
         </p>
 
-        {/* Capacities — Soft Orange */}
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Self-awareness · Embodied presence · Emotional maturity · Integration
         </p>
@@ -965,18 +960,12 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Relationship Title — No Bold */}
-        <span
-          className="text-sm font-normal uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
+        {/* Relationship Title — Same Font as Section Label */}
+        <span className="text-sm font-normal uppercase tracking-[0.14em] text-[#A65325] md:text-base">
           Other
         </span>
 
-        {/* Transformation — Smaller, Gill Sans */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -986,7 +975,7 @@ export default function FellowshipPage() {
         >
           From Separation
           <span
-            className="mx-2 text-[#A65325]"
+            className="mx-2 text-[#B96A32]"
             style={{
               fontFamily: "inherit",
               fontSize: "inherit",
@@ -1007,7 +996,7 @@ export default function FellowshipPage() {
           connection with others despite differences and conflict.
         </p>
 
-        {/* Capacities — Soft Orange */}
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Attunement · Deep listening · Intimacy · Compassion · Presence ·
           Attention
@@ -1021,18 +1010,12 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Relationship Title — No Bold */}
-        <span
-          className="text-sm font-normal uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
+        {/* Relationship Title — Same Font as Section Label */}
+        <span className="text-sm font-normal uppercase tracking-[0.14em] text-[#A65325] md:text-base">
           World
         </span>
 
-        {/* Transformation — Smaller, Gill Sans */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -1042,7 +1025,7 @@ export default function FellowshipPage() {
         >
           From Observers
           <span
-            className="mx-2 text-[#A65325]"
+            className="mx-2 text-[#B96A32]"
             style={{
               fontFamily: "inherit",
               fontSize: "inherit",
@@ -1063,7 +1046,7 @@ export default function FellowshipPage() {
           with humility, discernment, and responsibility.
         </p>
 
-        {/* Capacities — Soft Orange */}
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Systems perception · Complexity · Historical awareness · Power
           literacy · Ecological belonging · Imagination · Complicity in Harm
@@ -1077,18 +1060,12 @@ export default function FellowshipPage() {
 
       <article className="min-w-0 bg-white p-6 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-8">
 
-        {/* Relationship Title — No Bold */}
-        <span
-          className="text-sm font-normal uppercase tracking-[0.14em] text-[#B96A32] md:text-base"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
+        {/* Relationship Title — Same Font as Section Label */}
+        <span className="text-sm font-normal uppercase tracking-[0.14em] text-[#A65325] md:text-base">
           The Sacred
         </span>
 
-        {/* Transformation — Smaller, Gill Sans */}
+        {/* Transformation */}
         <h3
           className="mt-3 text-lg font-medium leading-snug text-foreground"
           style={{
@@ -1098,7 +1075,7 @@ export default function FellowshipPage() {
         >
           From Disenchantment
           <span
-            className="mx-2 text-[#A65325]"
+            className="mx-2 text-[#B96A32]"
             style={{
               fontFamily: "inherit",
               fontSize: "inherit",
@@ -1119,7 +1096,7 @@ export default function FellowshipPage() {
           service to the larger whole.
         </p>
 
-        {/* Capacities — Soft Orange */}
+        {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
           Value perception · Reverence · Meaning · Truth · Moral discernment ·
           Devotion · Beauty
