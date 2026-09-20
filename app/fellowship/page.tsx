@@ -236,23 +236,6 @@ export default function FellowshipPage() {
 
   <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      aria-hidden="true"
-      tabIndex={-1}
-      className="absolute inset-0 h-full w-full object-cover"
-    >
-      {/* Replace the URL below with your video link */}
-      <source
-        src="YOUR_VIDEO_URL_HERE.mp4"
-        type="video/mp4"
-      />
-    </video>
-
     {/* Cream overlay to maintain text readability */}
     <div className="absolute inset-0 bg-[#FFFDF6]/80" />
 
