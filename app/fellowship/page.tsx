@@ -962,7 +962,7 @@ export default function FellowshipPage() {
 
         {/* Capacities */}
         <p className="mt-5 text-xs font-medium leading-relaxed text-[#B96A32]/70">
-          Self-awareness · Embodied presence · Emotional maturity · Integration
+          Self-awareness · Presence · Self-compassion · Emotional maturity · 
         </p>
 
       </article>
