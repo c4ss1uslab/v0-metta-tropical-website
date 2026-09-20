@@ -2218,7 +2218,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      {/* Section title — same size as The Structure */}
       <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Path
       </span>
@@ -2235,7 +2234,6 @@ export default function FellowshipPage() {
         and be transformed by what they reveal to us.
       </p>
 
-      {/* Same size as The Ecology of Transformation */}
       <h2
         id="streams"
         className="scroll-mt-32 mt-10 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
@@ -2254,15 +2252,14 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     {/*
-      Compact, consistent stream layout:
+      Updated layout:
 
-      - Desktop cards and images have identical heights.
-      - Maximum desktop height: 550px.
-      - Height adapts to shorter browser windows.
-      - Card content can scroll internally if needed.
-      - Mobile cards retain natural height.
-      - Images remain paired with their respective stream.
-      - Reduced vertical spacing between streams.
+      - No fixed height or internal scrolling on stream cards.
+      - Cards expand naturally to fit their content.
+      - Images stretch to match the cards on desktop.
+      - Opening "Learn more" expands the entire row.
+      - On mobile, images retain a comfortable, fixed visual height.
+      - The five streams retain their alternating image layout.
     */}
 
     <div className="mt-12 space-y-8 lg:space-y-10">
@@ -2274,7 +2271,7 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-4 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[500px] md:p-7 lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0 lg:overflow-y-auto">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
 
           <div>
 
@@ -2292,10 +2289,11 @@ export default function FellowshipPage() {
               Remembering What Ultimately Matters
             </p>
 
+            {/* Updated questions */}
             <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
-              What is intrinsically valuable? What is the ground we are standing
-              on? What makes a life meaningful? What is worthy of our devotion?
-              What is the true nature of reality we participate in?
+              What is intrinsically valuable? What makes a life meaningful?
+              What is worthy of our devotion? What is the true nature of
+              reality we participate in?
             </p>
 
             <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
@@ -2317,6 +2315,7 @@ export default function FellowshipPage() {
 
           </div>
 
+          {/* Learn More */}
           <details className="group mt-auto pt-5">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2385,8 +2384,8 @@ export default function FellowshipPage() {
 
         </article>
 
-        {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[500px] lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0">
+        {/* Image — Matches the card height on desktop */}
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[540px]">
 
           <img
             src="https://i.postimg.cc/L8qnkWsn/cosmos-1430999382.jpg"
@@ -2406,7 +2405,7 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-4 md:grid-cols-2">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[500px] lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[540px]">
 
           <img
             src="https://i.postimg.cc/VLPJ9gCj/cosmos-361211120.jpg"
@@ -2418,7 +2417,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[500px] md:p-7 lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0 lg:overflow-y-auto">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
 
           <div>
 
@@ -2436,12 +2435,12 @@ export default function FellowshipPage() {
               Remembering Who We Are
             </p>
 
+            {/* Updated questions */}
             <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
-              Who are we? What is a human being for? What does it mean to meet
-              ourselves and each other more truthfully? What prevents me from
-              meeting life more fully? How might we recover our capacity to
-              sense the world with soul? How can relationships become a doorway
-              into the sacred?
+              What is my true nature? What is a human being for? What does it
+              mean to meet ourselves and each other more truthfully? How might
+              we recover our capacity to sense the world with soul? How can
+              relationships become a doorway into the sacred?
             </p>
 
             <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
@@ -2460,6 +2459,7 @@ export default function FellowshipPage() {
 
           </div>
 
+          {/* Learn More */}
           <details className="group mt-auto pt-5">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2536,7 +2536,7 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-4 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[500px] md:p-7 lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0 lg:overflow-y-auto">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
 
           <div>
 
@@ -2554,13 +2554,12 @@ export default function FellowshipPage() {
               Remembering Where We Are
             </p>
 
+            {/* Updated questions */}
             <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does it mean to be in a time between worlds? What are the
-              deeper dynamics generating the metacrisis? How does change happen?
-              How is this system learning and changing through its
-              relationships? What needs to be hospiced rather than improved?
-              How deeply have the logics of modernity colonized our minds,
-              desires and imagination?
+              underlying causes of the metacrisis? How does change happen?
+              How do systems learn and collapse? How deeply have the logics
+              of modernity colonized our minds, desires and imagination?
             </p>
 
             <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
@@ -2578,6 +2577,7 @@ export default function FellowshipPage() {
 
           </div>
 
+          {/* Learn More */}
           <details className="group mt-auto pt-5">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2644,7 +2644,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[500px] lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[540px]">
 
           <img
             src="https://i.postimg.cc/nz1zcbdr/cosmos-805790790.jpg"
@@ -2664,7 +2664,7 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-4 md:grid-cols-2">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[500px] lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[540px]">
 
           <img
             src="https://i.postimg.cc/tTjqf30C/cosmos-111542218.jpg"
@@ -2676,7 +2676,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[500px] md:p-7 lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0 lg:overflow-y-auto">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
 
           <div>
 
@@ -2694,12 +2694,12 @@ export default function FellowshipPage() {
               Remembering Our Place In The Web of Life
             </p>
 
+            {/* Updated questions */}
             <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does the more-than-human world know that we have forgotten?
               How might we organize life through reciprocity rather than
               ownership? What would it mean to encounter another world without
-              colonizing it? How might we live in a world that holds multiple
-              worlds? What changes when a river becomes a relative?
+              colonizing it? What changes when a river becomes a relative?
             </p>
 
             <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
@@ -2718,6 +2718,7 @@ export default function FellowshipPage() {
 
           </div>
 
+          {/* Learn More */}
           <details className="group mt-auto pt-5">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2788,7 +2789,7 @@ export default function FellowshipPage() {
       <div className="grid items-stretch gap-4 md:grid-cols-2">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[500px] md:p-7 lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0 lg:overflow-y-auto">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
 
           <div>
 
@@ -2806,12 +2807,13 @@ export default function FellowshipPage() {
               Remembering How to Respond to This Moment
             </p>
 
+            {/* Updated questions */}
             <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does this moment ask of us—together? What is uniquely ours
-              to offer? What is our responsibility at this time? How have people
-              in history dealt with moments of collapse, and what are people
-              doing now? What matters most in a time of civilizational
-              transition? How do movements emerge, grow, and reshape society?
+              to offer? What is our responsibility at this time? How have
+              people in history dealt with moments of collapse, and what are
+              people doing now? How do movements emerge, grow, and reshape
+              society?
             </p>
 
             <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
@@ -2827,6 +2829,7 @@ export default function FellowshipPage() {
 
           </div>
 
+          {/* Learn More */}
           <details className="group mt-auto pt-5">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2903,7 +2906,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[500px] lg:h-[min(550px,calc(100svh-112px))] lg:min-h-0">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:h-auto md:min-h-[540px]">
 
           <img
             src="https://i.postimg.cc/5yyVd6jh/cosmos-892464698.jpg"
