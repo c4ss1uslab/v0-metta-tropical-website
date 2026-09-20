@@ -1005,9 +1005,7 @@ export default function FellowshipPage() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Learning to encounter others not as objects, obstacles, or resources,
-          but as beings whose lives are of transcendental worth, and deeply
-          entangled with our own. Developing the capacity to remain in
+          Learning to encounter others, and the more-than-human world not as objects, obstacles, or resources, but as beings who are deeply entangled with our ourselves, and whose lives are of transcendental worth. Developing the capacity to remain in
           connection with others despite differences and conflict.
         </p>
 
