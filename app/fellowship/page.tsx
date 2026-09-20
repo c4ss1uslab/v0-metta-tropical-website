@@ -1135,13 +1135,6 @@ export default function FellowshipPage() {
 </section>
 
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
-<section
-  id="fellowship-overview"
-  className="scroll-mt-32 bg-background py-20 lg:py-28"
->
-  <div className="mx-auto max-w-6xl px-6 lg:px-8">
-
-    {/* ========================================================= */}
 {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
 {/* ========================================================= */}
 
