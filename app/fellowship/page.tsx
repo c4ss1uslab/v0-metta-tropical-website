@@ -334,23 +334,54 @@ export default function FellowshipPage() {
         {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
         {/* ===================================================== */}
 
-        <div className="mt-10 flex flex-col items-start gap-4">
+        <div className="mt-10 flex flex-col items-start gap-3">
 
-          {/* Dates — Regular Weight, Centered, Same Width as Button */}
-          <span
-            className="block w-[220px] text-center text-base font-normal tracking-wide text-foreground"
+          {/* Fellowship Dates — Compact Orange Box */}
+          <div
+            className="
+              flex
+              h-[36px]
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              bg-[#B96A32]
+              px-3
+              text-center
+              text-sm
+              font-medium
+              tracking-wide
+              text-white
+            "
             style={{
               fontFamily:
                 '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
             }}
           >
             February — December 2027
-          </span>
+          </div>
 
           {/* Primary Application Button — Matching Width */}
           <a
             href="#apply"
-            className="inline-flex w-[220px] items-center justify-center rounded-md bg-[#E8BC2F] px-5 py-3.5 text-sm font-semibold text-foreground shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#D9A01B]"
+            className="
+              inline-flex
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              bg-[#E8BC2F]
+              px-5
+              py-3.5
+              text-sm
+              font-semibold
+              text-foreground
+              shadow-[0_5px_15px_rgba(15,23,42,0.08)]
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:bg-[#D9A01B]
+            "
           >
             Begin Application →
           </a>
