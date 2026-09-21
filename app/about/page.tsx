@@ -359,7 +359,7 @@ export default function AboutPage() {
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-<section className="relative overflow-x-clip -mt-6 bg-[#1b0703] min-h-[200vh]">
+<section className="!bg-[#160702] relative overflow-x-clip -mt-6 min-h-[200vh]">
   {/* Dynamic Keyframes injected safely into the render tree */}
     <ParallaxIncenseSection>
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -492,7 +492,7 @@ export default function AboutPage() {
 </section>
 
 {/* Our Vows */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
+<section className="bg-[#160702] py-16 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
