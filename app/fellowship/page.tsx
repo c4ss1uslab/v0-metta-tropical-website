@@ -5647,11 +5647,8 @@ export default function FellowshipPage() {
         </p>
 
         <p className="leading-relaxed">
-          As this predicament deepens, we see at least three broad attractors
-          pulling at the future: greater fragmentation and chaos; authoritarian
-          forms of order; or the emergence of more life-enhancing and
-          wisdom-centered forms of civilization. Moving toward the third
-          attractor is not a given, it will require profound changes not only
+          As this predicament deepens, moving towards life-enhancing
+          forms of civilization is not a given. It will require profound changes not only
           in our systems and institutions, but in how we understand ourselves,
           reality and relate to all life.
         </p>
