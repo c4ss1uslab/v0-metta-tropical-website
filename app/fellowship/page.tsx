@@ -3618,7 +3618,7 @@ export default function FellowshipPage() {
 
       {/* NEW ONLINE ATTENDANCE REQUIREMENT */}
       <p className="mt-4 text-sm font-semibold text-foreground">
-        Attendance required in all regular online spaces
+        Attendance required in all regular online spaces.
       </p>
 
     </div>
