@@ -36,56 +36,98 @@ export default function LearnMorePage() {
                 Cornerstone Articles
               </h2>
               <p className="mt-4 text-muted-foreground max-w-2xl leading-relaxed">
-                Essential readings that inform our understanding and approach to the metacrisis.
+                Essential readings that inform and get into the spirit of our work.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Education in a Time Between Worlds",
-                  author: "Zak Stein",
-                  desc: "On the nature of educational crises during civilizational transitions and what new forms of learning might emerge.",
-                  color: "border-olive",
-                },
-                {
-                  title: "Making Sanctuary",
-                  author: "Bayo Akomolafe",
-                  desc: "A theory of emancipation that takes bodies, flows, fields, assemblages, networks, and terrains into consideration.",
-                  color: "border-cyan",
-                },
-                {
-                  title: "The Metacrisis",
-                  author: "Various Authors",
-                  desc: "Understanding the interconnected web of crises facing humanity and the planet.",
-                  color: "border-crimson",
-                },
-                {
-                  title: "Postactivism",
-                  author: "Bayo Akomolafe",
-                  desc: "Moving beyond traditional activism towards new forms of response that don&apos;t reproduce the logic of the system.",
-                  color: "border-yellow",
-                },
-                {
-                  title: "Cosmo-Erotic Humanism",
-                  author: "Marc Gafni & Zak Stein",
-                  desc: "A new story of value, meaning, and our place in the cosmos.",
-                  color: "border-olive",
-                },
-                {
-                  title: "The Listening Society",
-                  author: "Hanzi Freinacht",
-                  desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
-                  color: "border-cyan",
-                },
-              ].map((article) => (
-                <article key={article.title} className={`p-6 bg-cream border-t-4 ${article.color}`}>
-                  <h3 className="font-serif text-xl font-medium text-foreground">{article.title}</h3>
-                  <p className="mt-1 text-olive text-sm">{article.author}</p>
-                  <p className="mt-4 text-muted-foreground text-sm leading-relaxed">{article.desc}</p>
-                </article>
-              ))}
-            </div>
+            {[
+              {
+                title: "Love in a Time Between Worlds",
+                author: "Zak Stein",
+                desc: "On the nature of educational crises during civilizational transitions and what new forms of learning might emerge.",
+                color: "border-olive",
+                url: "https://integral-review.org/issues/vol_14_no_1_stein_love_in_a_time_between_worlds.pdf",
+              },
+              {
+                title: "Making Sanctuary",
+                author: "Bayo Akomolafe",
+                desc: "What does \"making sanctuary\" mean in our current day and era? Sanctuaries, in Bayo's sense of the word, are not places where we are set straight; they're invitations to be broken down.",
+                color: "border-cyan",
+                url: "https://www.bayoakomolafe.net/post/making-sanctuary-hope-companionship-race-and-emergence-in-the-anthropocene",
+              },
+              {
+                title: "Deep Adaptation: A Map for Navigating Climate Tragedy",
+                author: "Jem Bendell",
+                desc: "Understanding the interconnected web of crises facing humanity and the planet.",
+                color: "border-crimson",
+                url: "https://lifeworth.com/deepadaptation.pdf",
+              },
+              {
+                title: "Beyond Colonial Futurities in Climate Education",
+                author: "Gesturing Towards Decolonial Futures Collective",
+                desc: "Many pedagogies that seek to address the climate and nature emergency (CNE) promise hope and solutions for an idealized future. In this article, they suggest these pedagogies are rooted in the same modern/colonial system that created the CNE and other ‘wicked’ socio-ecological challenges in the first place, and thus they are not well-suited for preparing students to navigate these challenges. They also ask what kind of climate education could invite students to interrupt the reproduction of colonial futures, and deepen their sense of social and ecological responsibility in the present.",
+                color: "border-yellow",
+                url: "https://www.researchgate.net/publication/372237601_Beyond_colonial_futurities_in_climate_education",
+              },
+              {
+                title: "Relevance, Meaning and the Cognitive Science of Wisdom",
+                author: "John Vervaeke & Leo Ferraro",
+                desc: "A new story of value, meaning, and our place in the cosmos.",
+                color: "border-olive",
+                url: "https://www.researchgate.net/profile/John-Vervaeke/publication/286508333_Relevance_Meaning_and_the_Cognitive_Science_of_Wisdom/links/58f529df458515ff23b56743/Relevance-Meaning-and-the-Cognitive-Science-of-Wisdom.pdf",
+              },
+              {
+                title: "What is the Educational Task? Arousing the Desire for Wanting to Exist in the World in a Grown-up Way",
+                author: "Gert Biesta",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
+                url: "https://www.researchgate.net/publication/332807835_What_is_the_Educational_Task_Arousing_the_Desire_for_Wanting_to_Exist_in_the_World_in_a_Grown-up_Way",
+              },
+              {
+                title: "Education Beyond Green Growth: Regenerative Inquiry for Intergenerational Responsibility",
+                author: "Gesturing Towards Decolonial Futures Collective",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
+                url: "https://www.researchgate.net/publication/380869283_Education_Beyond_Green_Growth_Regenerative_Inquiry_for_Intergenerational_Responsibility",
+              },
+              {
+                title: "The Universe: A Love Story",
+                author: "Marc Gafni, Barbara Marx Hubbard, Daniel Schmachtenberger",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
+                url: "https://worldphilosophyandreligion.org/wp-content/uploads/2020/05/The-Universe-A-Love-Story_Academia.pdf",
+              },
+              {
+                title: "From “education to sustainable development” to “education for the end of the world as we know it”",
+                author: "Gesturing Towards Decolonial Futures Collective",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
+                url: "https://www.researchgate.net/publication/344287447_From_education_for_sustainable_development_to_education_for_the_end_of_the_world_as_we_know_it",
+              },
+            ].map((article) => (
+              <article
+                key={article.title}
+                className={`p-6 bg-cream border-t-4 ${article.color}`}
+              >
+                <h3 className="font-serif text-xl font-medium text-foreground">
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {article.title}
+                  </a>
+                </h3>
+
+                <p className="mt-1 text-olive text-sm">{article.author}</p>
+                <p className="mt-4 text-muted-foreground text-sm leading-relaxed">
+                  {article.desc}
+                </p>
+              </article>
+            ))}
+          </div>
           </div>
         </section>
 
