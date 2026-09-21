@@ -5161,7 +5161,8 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      {/* Same font size as other section labels */}
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Application Process
       </span>
 
@@ -5234,7 +5235,6 @@ export default function FellowshipPage() {
         The Discernment Process
       </h3>
 
-      {/* Regular text — no italics */}
       <p className="mt-5 leading-relaxed text-muted-foreground">
         The process itself is an invitation into some of the questions
         at the heart of our work: How am I experiencing this time between
@@ -5427,16 +5427,162 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* APPLICATION CTA — NO HORIZONTAL DIVIDER */}
+    {/* STAY CONNECTED — NEW SECTION */}
     {/* ========================================================= */}
 
-    <div className="mx-auto mt-14 max-w-4xl">
+    <div className="mx-auto mt-16 max-w-4xl">
+
+      {/* Invitation */}
+      <p className="leading-relaxed text-muted-foreground">
+
+        <strong className="font-semibold text-foreground">
+          Feeling called to apply to the Fellowship?
+        </strong>{" "}
+
+        We encourage you to join our Fellowship WhatsApp group and
+        subscribe to our newsletter to stay informed about the application
+        process, upcoming gatherings, information sessions, and ask
+        questions along the way.
+
+      </p>
+
+      {/* ======================================================= */}
+      {/* WHATSAPP & NEWSLETTER CARDS */}
+      {/* ======================================================= */}
+
+      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
+
+        {/* ===================================================== */}
+        {/* FELLOWSHIP WHATSAPP GROUP */}
+        {/* ===================================================== */}
+
+        <div className="flex h-full flex-col bg-[#FFFDF6] p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-8">
+
+          {/* WhatsApp Icon */}
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366]/10 text-[#228B51]">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27"
+              height="27"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+              <path d="M9 8.5c.3 2.8 2.7 5.2 5.5 5.5l1.5-1.5 2 1.2c-.5 1.7-1.8 2.3-3.2 2.1-4.6-.6-7.9-3.9-8.5-7.9-.2-1.4.4-2.7 2.1-3.2l1.2 2L9 8.5Z" />
+            </svg>
+
+          </div>
+
+          {/* Title */}
+          <h3
+            className="mt-5 text-xl font-semibold leading-tight text-foreground"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Fellowship Updates
+          </h3>
+
+          {/* Description */}
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Stay informed about applications, gatherings, and information
+            sessions.
+          </p>
+
+          {/* WhatsApp CTA */}
+          {/* Replace the placeholder below with your WhatsApp group invite URL. */}
+          <a
+            href="REPLACE_WITH_WHATSAPP_GROUP_INVITE_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold text-[#228B51] transition-opacity hover:opacity-70"
+          >
+            Join the Fellowship WhatsApp Group
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+        {/* ===================================================== */}
+        {/* NEWSLETTER */}
+        {/* ===================================================== */}
+
+        <div className="flex h-full flex-col bg-[#FFFDF6] p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-8">
+
+          {/* Email Icon */}
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-800/10 text-cyan-800">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27"
+              height="27"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>
+
+          </div>
+
+          {/* Title */}
+          <h3
+            className="mt-5 text-xl font-semibold leading-tight text-foreground"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Our Wider Community
+          </h3>
+
+          {/* Description */}
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Stay informed about all of Metta Tropical Collective&apos;s work,
+            offerings and inquires.
+          </p>
+
+          {/* Newsletter CTA */}
+          {/* Replace the placeholder below with your newsletter signup URL. */}
+          <a
+            href="REPLACE_WITH_NEWSLETTER_SUBSCRIPTION_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold text-cyan-800 transition-opacity hover:opacity-70"
+          >
+            Subscribe to Our Newsletter
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* APPLICATION CTA */}
+    {/* ========================================================= */}
+
+    <div className="mx-auto mt-10 max-w-4xl">
 
       <a
         href="#apply"
-        className="inline-flex items-center justify-center rounded-md bg-olive px-7 py-3.5 text-sm font-medium text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
+        className="inline-flex items-center justify-center rounded-md bg-olive px-8 py-4 text-base font-bold text-white shadow-[0_5px_15px_rgba(15,23,42,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
       >
-        Begin your application →
+        Begin Application →
       </a>
 
     </div>
