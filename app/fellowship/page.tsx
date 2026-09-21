@@ -4839,7 +4839,10 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-     {/* OFFERED AS A GIFT */}
+{/* ========================================================= */}
+{/* OFFERED AS A GIFT */}
+{/* ========================================================= */}
+
 <section
   id="cost"
   className="scroll-mt-32 bg-[#FFF9E9] py-20 lg:py-28"
@@ -4851,286 +4854,295 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div>
-      {/* Section Label */}
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+
+      {/* Section Label — same size as previous sections */}
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Cost — Offered as a Gift
       </span>
 
       {/* Main Heading */}
       <h2
-  className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
-  style={{
-    fontFamily:
-      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-  }}
->
-  A{" "}
-  <span
-    className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
-    style={{
-      fontSize: "inherit",
-      fontFamily: "inherit",
-      fontWeight: "inherit",
-      lineHeight: "inherit",
-    }}
-  >
-    post-capitalist
-  </span>{" "}
-  approach to money
-</h2>
-
-    {/* ========================================================= */}
-    {/* OPENING QUOTE */}
-    {/* ========================================================= */}
-
-    <blockquote className="mt-10 border-l-4 border-[#D9A01B] pl-6 font-serif text-lg italic leading-relaxed text-muted-foreground md:text-xl">
-      &ldquo;In the Story of Separation, giving does not come naturally. If
-      I&apos;m separate from you, then more for me is less for you. In the
-      story of Interbeing, life is a gift. We did not earn the sun, the water,
-      our breath, or the beating of our hearts. Life is a gift.&rdquo;
-    </blockquote>
-
-    <cite className="mt-4 block text-sm font-medium not-italic text-muted-foreground/70">
-      — Charles Eisenstein
-    </cite>
-
-    {/* ========================================================= */}
-    {/* WHY WE OFFER THE FELLOWSHIP AS A GIFT */}
-    {/* ========================================================= */}
-
-    <div className="mt-10 space-y-6 text-muted-foreground">
-
-      <p className="leading-relaxed">
-        We believe the practices, relationships, wisdom, and forms of community
-        needed to navigate a time of metacrisis should not become privileges
-        available only to those who can afford them. At a moment when so much
-        is at stake, helping those who feel called to serve life wholeheartedly
-        become more capable of doing so feels like a sacred responsibility we
-        must share.
-      </p>
-
-      <p className="leading-relaxed">
-        This conviction is also personal. Many of us holding this work have
-        spent decades seeking transformational, educational, and developmental
-        spaces that deeply shaped our lives, yet access to them was often
-        limited by cost. Coming from the Global South, opportunities created
-        in the Global North could become prohibitively expensive. At times we
-        found scholarships, made significant sacrifices to participate, or
-        simply could not access experiences we deeply longed for.
-      </p>
-
-      <p className="font-semibold leading-relaxed text-foreground">
-        We want to practice something different.
-      </p>
-
-      <p className="leading-relaxed">
-        For this reason, the Fellowship is offered as a gift, so that financial
-        capacity does not determine who has access to the forms of formation
-        we believe are increasingly important for this time.
-      </p>
-
-    </div>
-
-    {/* ========================================================= */}
-    {/* WHAT DOES OFFERED AS A GIFT MEAN? */}
-    {/* Square edges, no surrounding border, 13px yellow line */}
-    {/* ========================================================= */}
-
-    <details className="group mt-9 border-l-[13px] border-l-[#D9A01B] bg-background">
-
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
-        <span
-          className="text-lg font-medium leading-snug text-foreground md:text-xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          What does &ldquo;offered as a gift&rdquo; mean for us?
-        </span>
-
-        <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
-          +
-        </span>
-      </summary>
-
-      <div className="space-y-6 px-6 pb-8 text-muted-foreground">
-
-        <p className="leading-relaxed">
-          A gift, for us, is not simply a financial agreement. It is an
-          experiment in loosening the logics of separation, transaction, and
-          scarcity so deeply embedded in us by modernity, and remembering
-          ourselves as interdependent beings, part of the same living
-          movement of giving and receiving.
-        </p>
-
-        <p className="font-semibold leading-relaxed text-foreground">
-          Rather than reinforcing the familiar approach to education as
-          consumers, asking:
-        </p>
-
-        <p className="font-serif text-lg italic leading-relaxed text-foreground">
-          How much does this cost? What will I get in return? Is this
-          investment worth it? How will this expand my network? Will this
-          make me a more interesting or accomplished person?
-        </p>
-
-        <p className="font-semibold leading-relaxed text-foreground">
-          We want to make room for another kind of inquiry:
-        </p>
-
-        <p className="font-serif text-lg italic leading-relaxed text-foreground">
-          What is this moment of my life asking of me? Can this fellowship
-          support me on this path? Am I ready to offer myself wholeheartedly
-          to this journey? Does something in this invitation speak to a truth
-          I have been longing to live? Is this a community I long to belong
-          to, and help bring into being?
-        </p>
-
-        <p className="leading-relaxed text-foreground">
-          If something in you comes alive in response to that question, we
-          invite you to listen to it.
-        </p>
-
-      </div>
-    </details>
-
-    {/* ========================================================= */}
-    {/* WHAT DOES THIS GIFT INCLUDE? */}
-    {/* ========================================================= */}
-
-    <div className="mt-12">
-
-      <h3
-        className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+        className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
         style={{
           fontFamily:
             '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         }}
       >
-        What Does This Gift Include?
-      </h3>
+        A{" "}
+        <span
+          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+          style={{
+            fontSize: "inherit",
+            fontFamily: "inherit",
+            fontWeight: "inherit",
+            lineHeight: "inherit",
+          }}
+        >
+          post-capitalist
+        </span>{" "}
+        approach to money
+      </h2>
 
-      <p className="mt-5 leading-relaxed text-muted-foreground">
-        Offering the Fellowship as a gift does not mean it has no material
-        costs. Retreat spaces, food, facilitation, therapy, teachers, travel
-        support, and the labor of holding this community all require real
-        resources. Some are themselves gifted; others are carried by
-        supporters, practitioners, and friends who believe this work matters
-        and want to make it possible for others. Their generosity allows the
-        central discernment to remain about readiness, resonance, and your
-        current moment rather than your financial situation.
-      </p>
+      {/* ========================================================= */}
+      {/* OPENING QUOTE */}
+      {/* ========================================================= */}
 
-      {/* Square-edged Gift Includes Box */}
-      <div className="mt-7 bg-background p-6 md:p-8">
+      <blockquote className="mt-10 border-l-4 border-[#D9A01B] pl-6 font-serif text-lg italic leading-relaxed text-[#526A81] md:text-xl">
+        &ldquo;In the Story of Separation, giving does not come naturally. If
+        I&apos;m separate from you, then more for me is less for you. In the
+        story of Interbeing, life is a gift. We did not earn the sun, the water,
+        our breath, or the beating of our hearts. Life is a gift.&rdquo;
+      </blockquote>
 
-        <h4
+      <cite className="mt-4 block text-sm font-medium not-italic text-[#526A81]/75">
+        — Charles Eisenstein
+      </cite>
+
+      {/* ========================================================= */}
+      {/* WHY WE OFFER THE FELLOWSHIP AS A GIFT */}
+      {/* ========================================================= */}
+
+      <div className="mt-10 space-y-6 text-muted-foreground">
+
+        <p className="leading-relaxed">
+          We believe the practices, relationships, wisdom, and forms of community
+          needed to navigate a time of metacrisis should not become privileges
+          available only to those who can afford them. At a moment when so much
+          is at stake, helping those who feel called to serve life wholeheartedly
+          become more capable of doing so feels like a sacred responsibility we
+          must share.
+        </p>
+
+        <p className="leading-relaxed">
+          This conviction is also personal. Many of us holding this work have
+          spent decades seeking transformational, educational, and developmental
+          spaces that deeply shaped our lives, yet access to them was often
+          limited by cost. Coming from the Global South, opportunities created
+          in the Global North could become prohibitively expensive. At times we
+          found scholarships, made significant sacrifices to participate, or
+          simply could not access experiences we deeply longed for.
+        </p>
+
+        <p className="font-semibold leading-relaxed text-foreground">
+          We want to practice something different.
+        </p>
+
+        <p className="leading-relaxed">
+          For this reason, the Fellowship is offered as a gift, so that financial
+          capacity does not determine who has access to the forms of formation
+          we believe are increasingly important for this time.
+        </p>
+
+      </div>
+
+      {/* ========================================================= */}
+      {/* WHAT DOES OFFERED AS A GIFT MEAN? */}
+      {/* Square edges, no surrounding border, 13px yellow line */}
+      {/* ========================================================= */}
+
+      <details className="group mt-9 border-l-[13px] border-l-[#D9A01B] bg-background">
+
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
+
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What does &ldquo;offered as a gift&rdquo; mean for us?
+          </span>
+
+          <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
+            +
+          </span>
+
+        </summary>
+
+        <div className="space-y-6 px-6 pb-8 text-muted-foreground">
+
+          <p className="leading-relaxed">
+            A gift, for us, is not simply a financial agreement. It is an
+            experiment in loosening the logics of separation, transaction, and
+            scarcity so deeply embedded in us by modernity, and remembering
+            ourselves as interdependent beings, part of the same living
+            movement of giving and receiving.
+          </p>
+
+          <p className="font-semibold leading-relaxed text-foreground">
+            Rather than reinforcing the familiar approach to education as
+            consumers, asking:
+          </p>
+
+          <p className="font-serif text-lg italic leading-relaxed text-foreground">
+            How much does this cost? What will I get in return? Is this
+            investment worth it? How will this expand my network? Will this
+            make me a more interesting or accomplished person?
+          </p>
+
+          <p className="font-semibold leading-relaxed text-foreground">
+            We want to make room for another kind of inquiry:
+          </p>
+
+          <p className="font-serif text-lg italic leading-relaxed text-foreground">
+            What is this moment of my life asking of me? Can this fellowship
+            support me on this path? Am I ready to offer myself wholeheartedly
+            to this journey? Does something in this invitation speak to a truth
+            I have been longing to live? Is this a community I long to belong
+            to, and help bring into being?
+          </p>
+
+          <p className="leading-relaxed text-foreground">
+            If something in you comes alive in response to that question, we
+            invite you to listen to it.
+          </p>
+
+        </div>
+
+      </details>
+
+      {/* ========================================================= */}
+      {/* WHAT DOES THIS GIFT INCLUDE? */}
+      {/* ========================================================= */}
+
+      <div className="mt-12">
+
+        <h3
           className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
           style={{
             fontFamily:
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
           }}
         >
-          This Fellowship gift includes:
-        </h4>
+          What Does This Gift Include?
+        </h3>
 
-        <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
-
-          <li className="flex items-start gap-3 text-muted-foreground">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-            <span>All online sessions and facilitation</span>
-          </li>
-
-          <li className="flex items-start gap-3 text-muted-foreground">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-            <span>All in-person retreat experiences</span>
-          </li>
-
-          <li className="flex items-start gap-3 text-muted-foreground">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-            <span>Accommodation and food during retreats</span>
-          </li>
-
-          <li className="flex items-start gap-3 text-muted-foreground">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-            <span>Coaching/therapy and developmental support</span>
-          </li>
-
-          <li className="flex items-start gap-3 text-muted-foreground">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
-            <span>All resources and materials for sessions</span>
-          </li>
-
-        </ul>
-
-        <p className="mt-7 border-t border-border pt-5 text-sm italic leading-relaxed text-muted-foreground">
-          Participants are only responsible for transportation to and from
-          the in-person retreats.
+        <p className="mt-5 leading-relaxed text-muted-foreground">
+          Offering the Fellowship as a gift does not mean it has no material
+          costs. Retreat spaces, food, facilitation, therapy, teachers, travel
+          support, and the labor of holding this community all require real
+          resources. Some are themselves gifted; others are carried by
+          supporters, practitioners, and friends who believe this work matters
+          and want to make it possible for others. Their generosity allows the
+          central discernment to remain about readiness, resonance, and your
+          current moment rather than your financial situation.
         </p>
 
+        {/* Square-edged Gift Includes Box */}
+        <div className="mt-7 bg-background p-6 md:p-8">
+
+          <h4
+            className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            This Fellowship gift includes:
+          </h4>
+
+          <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+
+            <li className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+              <span>All online sessions and facilitation</span>
+            </li>
+
+            <li className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+              <span>All in-person retreat experiences</span>
+            </li>
+
+            <li className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+              <span>Accommodation and food during retreats</span>
+            </li>
+
+            <li className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+              <span>Coaching/therapy and developmental support</span>
+            </li>
+
+            <li className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D9A01B]" />
+              <span>All resources and materials for sessions</span>
+            </li>
+
+          </ul>
+
+          <p className="mt-7 border-t border-border pt-5 text-sm italic leading-relaxed text-muted-foreground">
+            Participants are only responsible for transportation to and from
+            the in-person retreats.
+          </p>
+
+        </div>
+
       </div>
+
+      {/* ========================================================= */}
+      {/* COLLECTIVE RESOURCE FUND */}
+      {/* Identical design to the Offered as a Gift dropdown */}
+      {/* ========================================================= */}
+
+      <details className="group mt-10 border-l-[13px] border-l-[#D9A01B] bg-background">
+
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
+
+          <span
+            className="text-lg font-medium leading-snug text-foreground md:text-xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            Collective Resource Fund
+          </span>
+
+          <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
+            +
+          </span>
+
+        </summary>
+
+        <div className="space-y-6 px-6 pb-8 text-muted-foreground">
+
+          <p className="leading-relaxed">
+            Beyond making the Fellowship accessible, we are also experimenting
+            with new ways of relating to resources as a community. Our hope is
+            to create a Collective Resource Fund—a shared pool of resources
+            that can support participants throughout the journey based on real
+            needs and opportunities.
+          </p>
+
+          <p className="leading-relaxed">
+            These resources could support: transportation to retreats,
+            complementary developmental experiences, seed funding for projects
+            and initiatives, temporary financial support that help cover basic
+            needs of participants.
+          </p>
+
+          <p className="leading-relaxed">
+            The distribution of these resources will happen through a
+            transparent collective process involving participants and the team,
+            inspired by practices of collective resource sharing and gift
+            economies. This is all part of our practice to learn how resources
+            can flow with greater trust, transparency, and care toward where
+            they are most needed.
+          </p>
+
+          <p className="font-medium text-foreground">
+            We are currently fundraising for this Collective Resource Fund and
+            hope to have resources available throughout the Fellowship journey.
+          </p>
+
+        </div>
+
+      </details>
+
     </div>
 
-    {/* ========================================================= */}
-    {/* COLLECTIVE RESOURCE FUND */}
-    {/* Identical design to the Offered as a Gift dropdown */}
-    {/* ========================================================= */}
-
-    <details className="group mt-10 border-l-[13px] border-l-[#D9A01B] bg-background">
-
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
-        <span
-          className="text-lg font-medium leading-snug text-foreground md:text-xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          Collective Resource Fund
-        </span>
-
-        <span className="shrink-0 text-xl text-[#B88610] transition-transform group-open:rotate-45">
-          +
-        </span>
-      </summary>
-
-      <div className="space-y-6 px-6 pb-8 text-muted-foreground">
-
-        <p className="leading-relaxed">
-          Beyond making the Fellowship accessible, we are also experimenting
-          with new ways of relating to resources as a community. Our hope is
-          to create a Collective Resource Fund—a shared pool of resources
-          that can support participants throughout the journey based on real
-          needs and opportunities.
-        </p>
-
-        <p className="leading-relaxed">
-          These resources could support: transportation to retreats,
-          complementary developmental experiences, seed funding for projects
-          and initiatives, temporary financial support that help cover basic
-          needs of participants.
-        </p>
-
-        <p className="leading-relaxed">
-          The distribution of these resources will happen through a
-          transparent collective process involving participants and the team,
-          inspired by practices of collective resource sharing and gift
-          economies. This is all part of our practice to learn how resources
-          can flow with greater trust, transparency, and care toward where
-          they are most needed.
-        </p>
-
-        <p className="font-medium text-foreground">
-          We are currently fundraising for this Collective Resource Fund and
-          hope to have resources available throughout the Fellowship journey.
-        </p>
-
-      </div>
-    </details>
-
   </div>
-        </div>
 </section>
 
 {/* ========================================================= */}
