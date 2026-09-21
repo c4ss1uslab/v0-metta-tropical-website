@@ -5161,7 +5161,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      {/* Same font size as other section labels */}
       <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         The Application Process
       </span>
@@ -5427,7 +5426,7 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* STAY CONNECTED — NEW SECTION */}
+    {/* STAY CONNECTED */}
     {/* ========================================================= */}
 
     <div className="mx-auto mt-16 max-w-4xl">
@@ -5447,48 +5446,51 @@ export default function FellowshipPage() {
       </p>
 
       {/* ======================================================= */}
-      {/* WHATSAPP & NEWSLETTER CARDS */}
+      {/* WHATSAPP & NEWSLETTER CARDS — COMPACT LAYOUT */}
       {/* ======================================================= */}
 
-      <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2">
+      <div className="mt-7 grid items-stretch gap-4 md:grid-cols-2">
 
         {/* ===================================================== */}
         {/* FELLOWSHIP WHATSAPP GROUP */}
         {/* ===================================================== */}
 
-        <div className="flex h-full flex-col bg-[#FFFDF6] p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-8">
+        <div className="flex h-full flex-col bg-[#FFFDF6] p-5 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-6">
 
-          {/* WhatsApp Icon */}
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366]/10 text-[#228B51]">
+          {/* Icon and title side by side */}
+          <div className="flex items-center gap-3">
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="27"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+            {/* WhatsApp speech bubble icon — no telephone */}
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#25D366]/10 text-[#228B51]">
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+              </svg>
+
+            </div>
+
+            <h3
+              className="text-xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
             >
-              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
-              <path d="M9 8.5c.3 2.8 2.7 5.2 5.5 5.5l1.5-1.5 2 1.2c-.5 1.7-1.8 2.3-3.2 2.1-4.6-.6-7.9-3.9-8.5-7.9-.2-1.4.4-2.7 2.1-3.2l1.2 2L9 8.5Z" />
-            </svg>
+              Fellowship Updates
+            </h3>
 
           </div>
-
-          {/* Title */}
-          <h3
-            className="mt-5 text-xl font-semibold leading-tight text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            Fellowship Updates
-          </h3>
 
           {/* Description */}
           <p className="mt-3 leading-relaxed text-muted-foreground">
@@ -5497,12 +5499,12 @@ export default function FellowshipPage() {
           </p>
 
           {/* WhatsApp CTA */}
-          {/* Replace the placeholder below with your WhatsApp group invite URL. */}
+          {/* Replace with your actual WhatsApp group invite URL. */}
           <a
             href="REPLACE_WITH_WHATSAPP_GROUP_INVITE_URL"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold text-[#228B51] transition-opacity hover:opacity-70"
+            className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-[#228B51] transition-opacity hover:opacity-70"
           >
             Join the Fellowship WhatsApp Group
             <span aria-hidden="true">→</span>
@@ -5514,39 +5516,43 @@ export default function FellowshipPage() {
         {/* NEWSLETTER */}
         {/* ===================================================== */}
 
-        <div className="flex h-full flex-col bg-[#FFFDF6] p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-8">
+        <div className="flex h-full flex-col bg-[#FFFDF6] p-5 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:p-6">
 
-          {/* Email Icon */}
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-800/10 text-cyan-800">
+          {/* Icon and title side by side */}
+          <div className="flex items-center gap-3">
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="27"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+            {/* Email Icon */}
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan-800/10 text-cyan-800">
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 6-10 7L2 6" />
+              </svg>
+
+            </div>
+
+            <h3
+              className="text-xl font-semibold leading-tight text-foreground"
+              style={{
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+              }}
             >
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="m22 6-10 7L2 6" />
-            </svg>
+              Our Wider Community
+            </h3>
 
           </div>
-
-          {/* Title */}
-          <h3
-            className="mt-5 text-xl font-semibold leading-tight text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            Our Wider Community
-          </h3>
 
           {/* Description */}
           <p className="mt-3 leading-relaxed text-muted-foreground">
@@ -5555,12 +5561,12 @@ export default function FellowshipPage() {
           </p>
 
           {/* Newsletter CTA */}
-          {/* Replace the placeholder below with your newsletter signup URL. */}
+          {/* Replace with your actual newsletter signup URL. */}
           <a
             href="REPLACE_WITH_NEWSLETTER_SUBSCRIPTION_URL"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold text-cyan-800 transition-opacity hover:opacity-70"
+            className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-cyan-800 transition-opacity hover:opacity-70"
           >
             Subscribe to Our Newsletter
             <span aria-hidden="true">→</span>
