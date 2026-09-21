@@ -11,47 +11,56 @@ export default function ParallaxIncenseSection({
   const incenseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-  let animationFrame = 0;
+  let targetY = 380;
+  let currentY = 380;
+  let maxY = Infinity;
+  let animationFrame: number;
 
-  const updatePosition = () => {
-    animationFrame = 0;
-
+  const updateTarget = () => {
     const section = sectionRef.current;
     const incense = incenseRef.current;
-    if (!section || !incense) return;
+    const track = incense?.parentElement;
+
+    if (!section || !incense || !track) return;
 
     const sectionRect = section.getBoundingClientRect();
-    const trackTop = 4; // Matches top-1 on the track
     const startY = 380;
+
+    // Final resting position: 16% down the screen.
     const screenY = window.innerHeight * 0.16;
 
-    // Keep the incense at screenY once its natural position reaches it.
-    const followY = screenY - (sectionRect.top + trackTop);
+    // Compensate for the section moving upward as you scroll.
+    const followY = screenY - (sectionRect.top + track.offsetTop);
 
-    // Stop movement at the bottom of the track (bottom-24 = 96px).
-    const maxY = Math.max(
-      0,
-      sectionRect.height - trackTop - 96 - incense.offsetHeight
-    );
+    maxY = Math.max(0, track.clientHeight - incense.offsetHeight);
 
-    const y = Math.min(maxY, Math.max(startY, followY));
-
-    incense.style.transform = `translate3d(0, ${y}px, 0)`;
+    targetY = Math.min(maxY, Math.max(startY, followY));
   };
 
-  const scheduleUpdate = () => {
-    if (!animationFrame) {
-      animationFrame = requestAnimationFrame(updatePosition);
+  const animate = () => {
+    // Original easing: smaller = slower, more floating movement.
+    const smoothing = 0.025;
+
+    currentY += (targetY - currentY) * smoothing;
+    currentY = Math.max(0, Math.min(maxY, currentY));
+
+    if (incenseRef.current) {
+      incenseRef.current.style.transform =
+        `translate3d(0, ${currentY}px, 0)`;
     }
+
+    animationFrame = requestAnimationFrame(animate);
   };
 
-  window.addEventListener("scroll", scheduleUpdate, { passive: true });
-  window.addEventListener("resize", scheduleUpdate);
-  scheduleUpdate();
+  window.addEventListener("scroll", updateTarget, { passive: true });
+  window.addEventListener("resize", updateTarget);
+
+  updateTarget();
+  animationFrame = requestAnimationFrame(animate);
 
   return () => {
-    window.removeEventListener("scroll", scheduleUpdate);
-    window.removeEventListener("resize", scheduleUpdate);
+    window.removeEventListener("scroll", updateTarget);
+    window.removeEventListener("resize", updateTarget);
     cancelAnimationFrame(animationFrame);
   };
 }, []);
