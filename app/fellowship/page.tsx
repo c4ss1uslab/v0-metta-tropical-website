@@ -6061,41 +6061,41 @@ export default function FellowshipPage() {
 
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-    {/* ========================================================= */}
-    {/* SECTION INTRODUCTION */}
-    {/* ========================================================= */}
+{/* ========================================================= */}
+{/* SECTION INTRODUCTION */}
+{/* ========================================================= */}
 
-    <div className="mx-auto max-w-4xl">
+<div className="mx-auto max-w-4xl">
 
-      {/* Section Label */}
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
-        The Team
-      </span>
+  {/* Section Label */}
+  <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
+    The Team
+  </span>
 
-      {/* Main Heading */}
-      <h2
-        className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        We are here because{" "}
-        <span
-          className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
-          style={{
-            fontFamily: "inherit",
-            fontSize: "inherit",
-            fontWeight: "inherit",
-            fontStyle: "inherit",
-            lineHeight: "inherit",
-            letterSpacing: "inherit",
-          }}
-        >
-          we need this work
-        </span>
-        , too.
-      </h2>
+  {/* Main Heading */}
+  <h2
+    className="mt-4 text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+    style={{
+      fontFamily:
+        '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+    }}
+  >
+    We are here because{" "}
+    <span
+      className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+      style={{
+        fontFamily: "inherit",
+        fontSize: "inherit",
+        fontWeight: "inherit",
+        fontStyle: "inherit",
+        lineHeight: "inherit",
+        letterSpacing: "inherit",
+      }}
+    >
+      we need this work
+    </span>
+    , too.
+  </h2>
 
       {/* ===================================================== */}
       {/* LETTER-STYLE INTRODUCTION */}
