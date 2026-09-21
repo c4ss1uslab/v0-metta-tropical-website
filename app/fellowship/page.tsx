@@ -4571,10 +4571,9 @@ export default function FellowshipPage() {
           </strong>{" "}
           who are questioning the limitations of conventional approaches to
           systems change, leadership, and education; who long to contribute to
-          the emergence of new systems, cultures and more life-enhancing way of
-          living; and who recognize that any meaningful response to this moment
-          must begin with a radical shift in the ways we perceive, relate and
-          participate in reality.
+          the emergence of new systems, cultures and life-enhancing futures; and 
+          who recognize that any meaningful response to this moment must begin with 
+          a radical shift in the ways we perceive, relate and participate in the world.
         </p>
 
       </div>
