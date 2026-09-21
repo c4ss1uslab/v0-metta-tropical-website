@@ -11,94 +11,50 @@ export default function ParallaxIncenseSection({
   const incenseRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let targetProgress = 0;
-    let currentProgress = 0;
-    let animationFrame: number;
+  let animationFrame = 0;
 
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
+  const updatePosition = () => {
+    animationFrame = 0;
 
-      const rect = sectionRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+    const section = sectionRef.current;
+    const incense = incenseRef.current;
+    if (!section || !incense) return;
 
-      /*
-       * 1. FIND THE INCENSE ON THE SCREEN
-       * The track wrapper is 64px from the section top (top-16 class).
-       * The incense starts 180px down that track (startY).
-       * Therefore, its natural position is 244px below the top of the section.
-       */
-      const incenseStaticY = rect.top;
+    const sectionRect = section.getBoundingClientRect();
+    const trackTop = 4; // Matches top-1 on the track
+    const startY = 380;
+    const screenY = window.innerHeight * 0.16;
 
-      /*
-       * 2. DEFINE THE TRIGGER LINE
-       * We place an invisible line on the screen. 
-       * 0.3 = 30% from the top of the screen ("somewhat in the middle, going near the top").
-       * Increase to 0.4 or 0.5 if you want it to trigger lower on the screen.
-       */
-      const triggerY = windowHeight * 0.16;
+    // Keep the incense at screenY once its natural position reaches it.
+    const followY = screenY - (sectionRect.top + trackTop);
 
-      if (incenseStaticY > triggerY) {
-        /*
-         * 3A. BEFORE TRIGGER
-         * The incense is currently below the trigger line.
-         * Keep progress at 0. As you scroll down, the section moves up,
-         * so the incense moves UP the screen naturally.
-         */
-        targetProgress = 0;
-      } else {
-        /*
-         * 3B. AFTER TRIGGER
-         * The incense has hit the trigger line.
-         * We calculate how far past the line it has scrolled, and map that 
-         * to a 0-1 progress value based on the remaining height of the section.
-         */
-        const maxScroll = rect.height - windowHeight;
-        const scrolledPast = triggerY - incenseStaticY;
+    // Stop movement at the bottom of the track (bottom-24 = 96px).
+    const maxY = Math.max(
+      0,
+      sectionRect.height - trackTop - 96 - incense.offsetHeight
+    );
 
-        if (maxScroll <= 0) {
-          targetProgress = 0;
-        } else {
-          targetProgress = Math.max(0, Math.min(1, scrolledPast / maxScroll));
-        }
-      }
-    };
+    const y = Math.min(maxY, Math.max(startY, followY));
 
-    /*
-     * SMOOTH ANIMATION LOOP
-     */
-    const animate = () => {
-      const smoothing = 0.025;
+    incense.style.transform = `translate3d(0, ${y}px, 0)`;
+  };
 
-      currentProgress +=
-        (targetProgress - currentProgress) * smoothing;
+  const scheduleUpdate = () => {
+    if (!animationFrame) {
+      animationFrame = requestAnimationFrame(updatePosition);
+    }
+  };
 
-      if (incenseRef.current) {
-        const startY = 380;
-        const travelDistance = 1760;
+  window.addEventListener("scroll", scheduleUpdate, { passive: true });
+  window.addEventListener("resize", scheduleUpdate);
+  scheduleUpdate();
 
-        const y = startY + travelDistance * currentProgress - 5;
-
-        incenseRef.current.style.transform =
-          `translate3d(0, ${y}px, 0)`;
-      }
-
-      animationFrame = requestAnimationFrame(animate);
-    };
-
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-
-    // Run once on mount to set initial position
-    handleScroll();
-
-    animationFrame = requestAnimationFrame(animate);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      cancelAnimationFrame(animationFrame);
-    };
-  }, []);
+  return () => {
+    window.removeEventListener("scroll", scheduleUpdate);
+    window.removeEventListener("resize", scheduleUpdate);
+    cancelAnimationFrame(animationFrame);
+  };
+}, []);
 
   return (
     <section
