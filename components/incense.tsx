@@ -73,7 +73,7 @@ export default function ParallaxIncenseSection({
         (targetProgress - currentProgress) * smoothing;
 
       if (incenseRef.current) {
-        const startY = 140;
+        const startY = 440;
         const travelDistance = 970;
 
         const y = startY + travelDistance * currentProgress;
