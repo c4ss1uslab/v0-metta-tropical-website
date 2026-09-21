@@ -120,9 +120,9 @@ const lineages = [
     url: "https://www.dhamma.org/",
   },
   {
-    name: "Great Vow Zen Monastery",
-    logo: images.greatvow,
-    url: "https://zendust.org/great-vow-zen-monastery/",
+    name: "Chacruna Institute",
+    logo: "https://www.google.com/s2/favicons?domain_url=https://chacruna.net&sz=256",
+    url: "https://chacruna.net/",
       },
     ],
   },
