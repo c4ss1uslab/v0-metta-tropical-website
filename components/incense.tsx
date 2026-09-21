@@ -103,7 +103,7 @@ export default function ParallaxIncenseSection({
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-x-clip pb-16 bg-cream min-h-[200vh]"
+      className="relative overflow-x-clip min-h-[200vh]"
     >
       <style>{`
         @keyframes burnDown {
@@ -123,7 +123,7 @@ export default function ParallaxIncenseSection({
             transform: scale(0.9) translate(-1px, -2px);
             background-color: #9a3412;
             box-shadow: 0 0 3px #7c2d12;
-          }, it is much more reliable to change the initial placement using CSS and the final placement by adjusting the section's scroll height. Here is exactly how to do both:
+          }
           50% {
             transform: scale(1.1) translate(-1px, -2px);
             background-color: #ea580c;
