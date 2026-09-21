@@ -383,7 +383,7 @@ export default function AboutPage() {
     <div>
       {/* Header */}
       <div className="mb-8 pl-12 pt-24 sm:pl-16 md:pl-0 md:pt-0">
-        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
+        <h2 className="text-[#D9A01B] font-serif text-3xl font-medium text-base md:text-4xl lg:text-5xl">
           Who We Must Become
         </h2>
 
