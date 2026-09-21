@@ -35,7 +35,7 @@ export default function ParallaxIncenseSection({
        * 0.3 = 30% from the top of the screen ("somewhat in the middle, going near the top").
        * Increase to 0.4 or 0.5 if you want it to trigger lower on the screen.
        */
-      const triggerY = windowHeight * 0.2;
+      const triggerY = windowHeight * 0.22;
 
       if (incenseStaticY > triggerY) {
         /*
@@ -73,8 +73,8 @@ export default function ParallaxIncenseSection({
         (targetProgress - currentProgress) * smoothing;
 
       if (incenseRef.current) {
-        const startY = 360;
-        const travelDistance = 1670;
+        const startY = 340;
+        const travelDistance = 1720;
 
         const y = startY + travelDistance * currentProgress;
 
