@@ -4561,7 +4561,7 @@ export default function FellowshipPage() {
           organizers, thinkers, change-makers, technologists and spiritual
           practitioners—who feel the depth of our predicament in their bodies,
           and who are called to undergo the kind of transformation that can
-          better prepare us to navigate and respond wisely to these times.
+          better prepare us to navigate and respond to these times.
         </p>
 
         <p className="leading-relaxed">
