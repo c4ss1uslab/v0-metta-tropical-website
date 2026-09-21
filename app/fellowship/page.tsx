@@ -3790,8 +3790,8 @@ export default function FellowshipPage() {
       </h3>
 
       <p className="mt-5 max-w-4xl leading-relaxed text-muted-foreground">
-        We invite fellows to approach this journey as a meaningful commitment,
-        protecting the time and attention needed to participate fully.
+        We invite fellows to approach this journey as a meaningful commitment and
+        protect their time to participate fully.
       </p>
 
       {/* Three Commitments */}
