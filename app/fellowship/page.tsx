@@ -319,7 +319,7 @@ export default function FellowshipPage() {
 
       <div className="mt-10 flex flex-col items-start gap-3">
 
-        {/* Dates — Clickable Link to Schedule Overview */}
+        {/* Dates — Same Font Family as Begin Application */}
         <a
           href="#schedule"
           aria-label="View the Fellowship Schedule Overview"
@@ -345,15 +345,11 @@ export default function FellowshipPage() {
             focus-visible:outline-offset-2
             focus-visible:outline-[#BF7540]
           "
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
         >
           February — December 2027
         </a>
 
-        {/* Primary Application Button — Updated Typography */}
+        {/* Primary Application Button */}
         <a
           href="#apply"
           className="
@@ -374,10 +370,6 @@ export default function FellowshipPage() {
             hover:-translate-y-0.5
             hover:bg-[#D9A01B]
           "
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
         >
           Begin Application →
         </a>
