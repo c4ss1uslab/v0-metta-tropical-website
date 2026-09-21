@@ -5596,7 +5596,7 @@ export default function FellowshipPage() {
   </div>
 </section>
 
-  {/* WHY THIS EXISTS, NOW */}
+{/* WHY THIS EXISTS, NOW */}
 <section
   id="why-now"
   className="scroll-mt-32 bg-cream py-20 lg:py-28"
@@ -5608,7 +5608,7 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     <div className="max-w-4xl">
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         Why This Exists, Now
       </span>
 
