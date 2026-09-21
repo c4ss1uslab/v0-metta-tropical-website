@@ -244,151 +244,151 @@ export default function FellowshipPage() {
 
   </div>
 
-  {/* ========================================================= */}
-  {/* MAIN HERO */}
-  {/* ========================================================= */}
+{/* ========================================================= */}
+{/* MAIN HERO */}
+{/* ========================================================= */}
 
-  <div className="relative py-20 lg:py-28">
+<div className="relative py-20 lg:py-28">
 
-    <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
+  <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
 
-      <div className="max-w-4xl">
+    <div className="max-w-4xl">
 
-        {/* Welcome */}
-        <span className="text-sm font-medium uppercase tracking-[0.14em] text-[#B96A32]">
-          Welcome to the
-        </span>
+      {/* Welcome */}
+      <span className="text-sm font-medium uppercase tracking-[0.14em] text-[#B96A32]">
+        Welcome to the
+      </span>
 
-        {/* Fellowship Name */}
-        <h1
-          className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          Metta Tropical Fellowship
-        </h1>
+      {/* Fellowship Name */}
+      <h1
+        className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Metta Tropical Fellowship
+      </h1>
 
-        {/* Subtitle */}
+      {/* Subtitle */}
+      <p
+        className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
+        style={{
+          fontFamily:
+            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+        }}
+      >
+        Cultivating the Wisdom Required at a Time Between Worlds
+      </p>
+
+      {/* ===================================================== */}
+      {/* CENTRAL QUESTION */}
+      {/* ===================================================== */}
+
+      <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
+
         <p
-          className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
+          className="text-xl italic leading-relaxed text-foreground md:text-2xl"
           style={{
             fontFamily:
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
           }}
         >
-          Cultivating the Wisdom Required at a Time Between Worlds
+          What is this moment in history{" "}
+
+          <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+            asking of your life?
+          </span>
+
         </p>
 
-        {/* ===================================================== */}
-        {/* CENTRAL QUESTION */}
-        {/* ===================================================== */}
+      </div>
 
-        <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
+      {/* ===================================================== */}
+      {/* FELLOWSHIP DESCRIPTION */}
+      {/* ===================================================== */}
 
-          <p
-            className="text-xl italic leading-relaxed text-foreground md:text-2xl"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            What is this moment in history{" "}
+      <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+        A ten-month initiatory journey for a generation called to take
+        responsibility for who we must become at a time of planetary crisis.
+      </p>
 
-            <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
-              asking of your life?
-            </span>
+      {/* ===================================================== */}
+      {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
+      {/* ===================================================== */}
 
-          </p>
+      <div className="mt-10 flex flex-col items-start gap-3">
 
-        </div>
+        {/* Dates — Clickable Link to Schedule Overview */}
+        <a
+          href="#schedule"
+          aria-label="View the Fellowship Schedule Overview"
+          className="
+            inline-flex
+            h-[36px]
+            w-[220px]
+            items-center
+            justify-center
+            rounded-md
+            bg-[#BF7540]
+            px-3
+            text-center
+            text-sm
+            font-semibold
+            text-white
+            transition-all
+            duration-200
+            hover:-translate-y-0.5
+            hover:bg-[#AD6533]
+            focus-visible:outline
+            focus-visible:outline-2
+            focus-visible:outline-offset-2
+            focus-visible:outline-[#BF7540]
+          "
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          February — December 2027
+        </a>
 
-        {/* ===================================================== */}
-        {/* FELLOWSHIP DESCRIPTION */}
-        {/* ===================================================== */}
-
-        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-          A ten-month initiatory journey for a generation called to take
-          responsibility for who we must become at a time of planetary crisis.
-        </p>
-
-        {/* ===================================================== */}
-        {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
-        {/* ===================================================== */}
-
-        <div className="mt-10 flex flex-col items-start gap-3">
-
-          {/* Dates — Clickable Link to Schedule Overview */}
-          <a
-            href="#schedule"
-            aria-label="View the Fellowship Schedule Overview"
-            className="
-              inline-flex
-              h-[36px]
-              w-[220px]
-              items-center
-              justify-center
-              rounded-md
-              bg-[#BF7540]
-              px-3
-              text-center
-              text-sm
-              font-semibold
-              text-white
-              transition-all
-              duration-200
-              hover:-translate-y-0.5
-              hover:bg-[#AD6533]
-              focus-visible:outline
-              focus-visible:outline-2
-              focus-visible:outline-offset-2
-              focus-visible:outline-[#BF7540]
-            "
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            February — December 2027
-          </a>
-
-          {/* Primary Application Button */}
-          <a
-            href="#apply"
-            className="
-              inline-flex
-              w-[220px]
-              items-center
-              justify-center
-              rounded-md
-              bg-[#E8BC2F]
-              px-5
-              py-3.5
-              text-sm
-              font-semibold
-              text-foreground
-              shadow-[0_5px_15px_rgba(15,23,42,0.08)]
-              transition-all
-              duration-200
-              hover:-translate-y-0.5
-              hover:bg-[#D9A01B]
-            "
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            Begin Application →
-          </a>
-
-        </div>
+        {/* Primary Application Button — Updated Typography */}
+        <a
+          href="#apply"
+          className="
+            inline-flex
+            w-[220px]
+            items-center
+            justify-center
+            rounded-md
+            bg-[#E8BC2F]
+            px-5
+            py-3.5
+            text-base
+            font-bold
+            text-foreground
+            shadow-[0_5px_15px_rgba(15,23,42,0.08)]
+            transition-all
+            duration-200
+            hover:-translate-y-0.5
+            hover:bg-[#D9A01B]
+          "
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Begin Application →
+        </a>
 
       </div>
 
     </div>
 
   </div>
+
+</div>
 
 </section>
 
