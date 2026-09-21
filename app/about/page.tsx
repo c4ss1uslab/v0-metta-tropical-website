@@ -505,11 +505,8 @@ export default function AboutPage() {
       </div>
     </div>
   </div>
-  </ParallaxIncenseSection>
-</section>
 
 {/* Our Vows */}
-<section className="bg-[#160702] py-16 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
@@ -657,6 +654,7 @@ export default function AboutPage() {
       </p>
     </div>
   </div>
+  </ParallaxIncenseSection>
 </section>
 
 {/* CTA */}
