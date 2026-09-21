@@ -3485,7 +3485,7 @@ export default function FellowshipPage() {
           <div className="mt-auto pt-5">
 
             <p className="text-sm font-semibold text-foreground">
-              July 11–18, 2027
+              July 4–11, 2027
             </p>
 
             <p className="mt-1 text-sm text-muted-foreground">
