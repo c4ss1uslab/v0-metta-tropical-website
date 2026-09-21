@@ -74,9 +74,9 @@ export default function ParallaxIncenseSection({
 
       if (incenseRef.current) {
         const startY = 380;
-        const travelDistance = 1780;
+        const travelDistance = 1760;
 
-        const y = startY + travelDistance * currentProgress;
+        const y = startY + travelDistance * currentProgress - 5;
 
         incenseRef.current.style.transform =
           `translate3d(0, ${y}px, 0)`;
