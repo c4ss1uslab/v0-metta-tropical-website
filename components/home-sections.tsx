@@ -751,7 +751,7 @@ export function IntroductionSection() {
                 of knowledge. We mean the capacity to perceive reality accurately, to
                 discern what truly matters in a given context, and to participate in
                 life in ways that serve the flourishing of the larger whole — a
-                capacity grounded in a deep understanding of the central existential
+                capacity grounded in a deep engagement with the central existential
                 questions of life.
         </p>
       </div>
