@@ -4744,7 +4744,7 @@ export default function FellowshipPage() {
             meaningfully participate in this moment. What matters most to us is not
             your identity, title or what you have already accomplished, but the
             sincerity of your inquiry, your commitment to individual and
-            collective transformation, and your genuine desire to contribute to
+            collective transformation, and your genuine desire to be part and contribute to
             the life of this community.
           </p>
 
