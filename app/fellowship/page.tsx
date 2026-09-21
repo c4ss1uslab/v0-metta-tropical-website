@@ -475,7 +475,6 @@ export default function FellowshipPage() {
     {/* SECTION HEADING */}
     {/* ========================================================= */}
 
-    {/* Increased from text-sm to text-base */}
     <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
       The Fellowship
     </span>
@@ -669,6 +668,39 @@ export default function FellowshipPage() {
 
 </section>
 
+
+{/* ========================================================= */}
+{/* FELLOWSHIP VIDEO — NEW SECTION */}
+{/* Placed between The Fellowship and The Invitation */}
+{/* ========================================================= */}
+
+<section
+  id="fellowship-video"
+  aria-label="Metta Tropical Fellowship video"
+  className="bg-[#FFFDF6] pb-16 pt-4 lg:pb-20 lg:pt-6"
+>
+
+  <div className="mx-auto max-w-5xl px-6 lg:px-8">
+
+    {/* Responsive 16:9 video container */}
+    <div className="relative aspect-video w-full overflow-hidden bg-[#111827] shadow-[0_8px_30px_rgba(15,23,42,0.12)]">
+
+      <iframe
+        src="https://player.vimeo.com/video/1132652455?h=3111e9c59b"
+        title="Metta Tropical Fellowship Video"
+        className="absolute inset-0 h-full w-full border-0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        loading="lazy"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+
 {/* ========================================================= */}
 {/* THE INVITATION */}
 {/* ========================================================= */}
@@ -677,6 +709,7 @@ export default function FellowshipPage() {
   id="invitation"
   className="scroll-mt-32 bg-background py-20 lg:py-24"
 >
+
   {/* ========================================================= */}
   {/* SINGLE ALIGNED CONTENT CONTAINER */}
   {/* ========================================================= */}
