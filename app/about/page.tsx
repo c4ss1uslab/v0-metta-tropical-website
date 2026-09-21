@@ -387,23 +387,23 @@ export default function AboutPage() {
           Who We Must Become
         </h2>
 
-        <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-2 text-[#A8A49D] font-serif text-base italic leading-relaxed md:text-lg">
           The Bodhisattva Aspiration
         </p>
       </div>
 
       {/* Opening */}
       <div className="mb-6 space-y-6">
-        <p className="text-[#EBE8E1] font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+        <p className="text-[#A8A49D] font-serif text-xl font-medium leading-relaxed text-base md:text-2xl">
           Every culture needs images of the human being worth becoming.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="text-[#7A7771] leading-relaxed text-base">
           Yet at a time asking so much of us, the images we have inherited
           feel too small for the depth of transformation required.
         </p>
 
-        <p className="leading-relaxed text-muted-foreground">
+        <p className="text-[#7A7771] leading-relaxed text-base">
           Our culture can describe the metacrisis in extraordinary detail, and
           has no shortage of frameworks and list of capacities for what this
           moment demands of us. What feels far less available is an image of who
@@ -417,7 +417,7 @@ export default function AboutPage() {
 
       {/* Bodhisattva Highlight */}
       <div className="mb-6 border-l-2 border-[#D9A01B] py-1 pl-6 md:pl-8">
-        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
+        <p className="text-[#7A7771] font-serif text-lg leading-relaxed md:text-l">
           For the bodhisattva, awakening and service to the world become
           inseparable. To awaken is to see through the illusion of being a
           separate self. The suffering of other people, other species, and the
@@ -430,7 +430,7 @@ export default function AboutPage() {
 
       {/* Main Reflection (Block display for the float-right Buddha) */}
       <div className="block">
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
           The bodhisattva trains the heart to become boundless: to meet each
           being with the tenderness a mother offers her only child, to recognize
           the irreducible worth of every life, and to expand their love and
@@ -439,8 +439,8 @@ export default function AboutPage() {
           it more deeply, and find ways to wisely respond to it.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
-          <strong className="font-medium text-foreground">
+        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
+          <strong className="text-[#A8A49D] font-medium text-base">
             Why does such an aspiration matter?
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
@@ -453,7 +453,7 @@ export default function AboutPage() {
           </i>
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
           We are not claiming the image of the Bodhisattva, though it has shaped
           everything we are attempting. We are saying that our culture offers
           nothing of that height to grow toward. And a culture that cannot
@@ -472,13 +472,13 @@ export default function AboutPage() {
           />
         </div>
 
-        <p className="mb-6 font-medium leading-relaxed text-foreground">
+        <p className="mb-6 text-[#A8A49D] font-medium leading-relaxed text-base">
           This is not a small thing missing from our times. It is close to the
           heart of what has gone wrong — and it is part of what our work exists
           to restore.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
           If we are to participate meaningfully in a deeper civilizational
           transition, we believe our time will require contemporary expressions
           of the Bodhisattva aspiration — and new pathways of formation capable
@@ -489,7 +489,7 @@ export default function AboutPage() {
           to the whole.
         </p>
 
-        <p className="mb-6 leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
           We walk on the footsteps of others who have also sensed the need for
           images of human possibility adequate to the demands of their time —
           whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
