@@ -513,7 +513,7 @@ export default function AboutPage() {
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
-      <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+      <h2 className="text-[#D9A01B] font-serif text-3xl font-bold text-base md:text-4xl lg:text-5xl">
         Our Vows
       </h2>
     </div>
