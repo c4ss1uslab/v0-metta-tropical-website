@@ -4739,13 +4739,13 @@ export default function FellowshipPage() {
           </p>
 
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Or perhaps none of these descriptions quite fit. You may still be
-            discovering who you are, what is yours to offer, and how you might
-            meaningfully participate in this moment. What matters most to us is not
+            Or perhaps none of these descriptions quite fit. You may be in a moment of
+            discovering more deeply who you are, what matters to you, and how you might
+            meaningfully participate in this moment. What is important to us is not
             your identity, title or what you have already accomplished, but the
             sincerity of your inquiry, your commitment to individual and
-            collective transformation, and your genuine desire to be part of and 
-            contribute to this community.
+            collective transformation, the call you feel to this Fellowship, and your 
+            genuine desire to be part of and contribute to this community.
           </p>
 
         </div>
