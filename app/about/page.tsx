@@ -354,19 +354,8 @@ export default function AboutPage() {
   <div className="w-full mt-20 flex flex-col relative z-10">
       <svg className="w-full h-10 block overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 25">
         
-        {/* Solid Background Block */}
-        <polygon 
-          points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20 100,25 0,25" 
-          fill="#160702" 
-        />
-        
         {/* Decorative Lines Group */}
-        <g className="opacity-30 text-[#8b0000]" transform="translate(0, -1)">
-          <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-          <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
-        </g>
-        {/* Decorative Lines Group */}
-        <g className="opacity-30 text-[#8b0000]" transform="translate(0, -7)">
+        <g className="opacity-30 text-[#8b0000]">
           <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
           <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
         </g>
@@ -375,35 +364,33 @@ export default function AboutPage() {
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-{/* Increased negative margin to -mt-2 (8px overlap) to guarantee no sub-pixel gaps */}
-<section className="!bg-[#160702] pt-12 relative z-0 overflow-x-clip -mt-2 min-h-[200vh]">
+<section className="relative overflow-x-clip py-12 bg-cream min-h-[200vh]">
   {/* Dynamic Keyframes injected safely into the render tree */}
-    <ParallaxIncenseSection>
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div>
       {/* Header */}
-      <div className="mb-8 pl-12 pt-24 sm:pl-16 md:pl-0 md:pt-0">
-        <h2 className="text-[#D9A01B] font-serif text-3xl font-medium text-base md:text-4xl lg:text-5xl">
+      <div className="mb-8 pl-12 pt-16 sm:pl-16 md:pl-0 md:pt-0">
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
           Who We Must Become
         </h2>
 
-        <p className="mt-2 text-[#A8A49D] font-serif text-base italic leading-relaxed md:text-lg">
+        <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground md:text-lg">
           The Bodhisattva Aspiration
         </p>
       </div>
 
       {/* Opening */}
       <div className="mb-6 space-y-6">
-        <p className="text-[#A8A49D] font-serif text-xl font-medium leading-relaxed text-base md:text-2xl">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
           Every culture needs images of the human being worth becoming.
         </p>
 
-        <p className="text-[#7A7771] leading-relaxed text-base">
+        <p className="leading-relaxed text-muted-foreground">
           Yet at a time asking so much of us, the images we have inherited
           feel too small for the depth of transformation required.
         </p>
 
-        <p className="text-[#7A7771] leading-relaxed text-base">
+        <p className="leading-relaxed text-muted-foreground">
           Our culture can describe the metacrisis in extraordinary detail, and
           has no shortage of frameworks and list of capacities for what this
           moment demands of us. What feels far less available is an image of who
@@ -417,7 +404,7 @@ export default function AboutPage() {
 
       {/* Bodhisattva Highlight */}
       <div className="mb-6 border-l-2 border-[#D9A01B] py-1 pl-6 md:pl-8">
-        <p className="text-[#7A7771] font-serif text-lg leading-relaxed md:text-l">
+        <p className="font-serif text-lg leading-relaxed text-neutral-800 md:text-l">
           For the bodhisattva, awakening and service to the world become
           inseparable. To awaken is to see through the illusion of being a
           separate self. The suffering of other people, other species, and the
@@ -430,7 +417,7 @@ export default function AboutPage() {
 
       {/* Main Reflection (Block display for the float-right Buddha) */}
       <div className="block">
-        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           The bodhisattva trains the heart to become boundless: to meet each
           being with the tenderness a mother offers her only child, to recognize
           the irreducible worth of every life, and to expand their love and
@@ -439,8 +426,8 @@ export default function AboutPage() {
           it more deeply, and find ways to wisely respond to it.
         </p>
 
-        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
-          <strong className="text-[#A8A49D] font-medium text-base">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
+          <strong className="font-medium text-foreground">
             Why does such an aspiration matter?
           </strong>{" "}
           Because we grow to the height of what we can imagine becoming.
@@ -453,7 +440,7 @@ export default function AboutPage() {
           </i>
         </p>
 
-        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           We are not claiming the image of the Bodhisattva, though it has shaped
           everything we are attempting. We are saying that our culture offers
           nothing of that height to grow toward. And a culture that cannot
@@ -472,13 +459,13 @@ export default function AboutPage() {
           />
         </div>
 
-        <p className="mb-6 text-[#A8A49D] font-medium leading-relaxed text-base">
+        <p className="mb-6 font-medium leading-relaxed text-foreground">
           This is not a small thing missing from our times. It is close to the
           heart of what has gone wrong — and it is part of what our work exists
           to restore.
         </p>
 
-        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           If we are to participate meaningfully in a deeper civilizational
           transition, we believe our time will require contemporary expressions
           of the Bodhisattva aspiration — and new pathways of formation capable
@@ -489,7 +476,7 @@ export default function AboutPage() {
           to the whole.
         </p>
 
-        <p className="mb-6 text-[#7A7771] leading-relaxed text-base">
+        <p className="mb-6 leading-relaxed text-muted-foreground">
           We walk on the footsteps of others who have also sensed the need for
           images of human possibility adequate to the demands of their time —
           whether they call it Bodhisattva, EcoSattva, the New Saints, Spiritual
@@ -505,12 +492,14 @@ export default function AboutPage() {
       </div>
     </div>
   </div>
+</section>
 
 {/* Our Vows */}
+<section className="bg-[#FFFDF6] py-12 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
-      <h2 className="text-[#D9A01B] font-serif text-3xl font-bold text-base md:text-4xl lg:text-5xl">
+      <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
         Our Vows
       </h2>
     </div>
@@ -652,33 +641,6 @@ export default function AboutPage() {
         articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
         our own surrender to what this moment is asking of us.
       </p>
-    </div>
-  </div>
-  </ParallaxIncenseSection>
-</section>
-
-{/* CTA */}
-<section className="bg-olive py-14 lg:py-16">
-  <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground">
-      If you want to discover our work in more depth, we invite you to explore
-      our Fellowship and Theory of Change.
-    </p>
-
-    <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <Link
-        href="/fellowship"
-        className="inline-flex w-full items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610] sm:w-56"
-      >
-        Explore the Fellowship
-      </Link>
-
-      <Link
-        href="/theory-of-change"
-        className="inline-flex w-full items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90 sm:w-56"
-      >
-        Theory of Change
-      </Link>
     </div>
   </div>
 </section>
