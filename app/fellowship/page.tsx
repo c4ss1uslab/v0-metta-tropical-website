@@ -6647,7 +6647,7 @@ export default function FellowshipPage() {
     {/* ======================================================= */}
 
     <div className="mx-auto max-w-4xl">
-      <span className="text-sm font-medium uppercase tracking-wide text-[#B88610]">
+      <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         FAQs
       </span>
 
