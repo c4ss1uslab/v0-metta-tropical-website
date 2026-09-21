@@ -44,9 +44,7 @@ export default function LearnMorePage() {
             {[
               {
                 title: "Love in a Time Between Worlds",
-                subtitle: "On the Metamodern \“Return\” to a Metaphysics of Eros",
                 author: "Zak Stein",
-                authorColor: "text-olive",
                 desc: "On the nature of educational crises during civilizational transitions and what new forms of learning might emerge.",
                 color: "border-olive",
                 url: "https://integral-review.org/issues/vol_14_no_1_stein_love_in_a_time_between_worlds.pdf",
@@ -54,68 +52,57 @@ export default function LearnMorePage() {
               {
                 title: "Making Sanctuary",
                 author: "Bayo Akomolafe",
-                authorColor: "text-crimson",
-                desc: "What does \"making sanctuary\" mean in our current day and era? In Bayo's use of the word, sanctuaries are not places where we are set straight; they're invitations to be broken down.",
-                color: "border-crimson",
+                desc: "What does \"making sanctuary\" mean in our current day and era? Sanctuaries, in Bayo's sense of the word, are not places where we are set straight; they're invitations to be broken down.",
+                color: "border-cyan",
                 url: "https://www.bayoakomolafe.net/post/making-sanctuary-hope-companionship-race-and-emergence-in-the-anthropocene",
               },
               {
-                title: "Deep Adaptation",
-                subtitle: "A Map for Navigating Climate Tragedy",
+                title: "Deep Adaptation: A Map for Navigating Climate Tragedy",
                 author: "Jem Bendell",
-                authorColor: "text-olive",
                 desc: "Understanding the interconnected web of crises facing humanity and the planet.",
-                color: "border-olive",
+                color: "border-crimson",
                 url: "https://lifeworth.com/deepadaptation.pdf",
               },
               {
                 title: "Beyond Colonial Futurities in Climate Education",
                 author: "Gesturing Towards Decolonial Futures Collective",
-                authorColor: "text-[#D9A01B]",
-                desc: "\"Many pedagogies that seek to address the climate and nature emergency (CNE) promise hope and solutions for an idealized future. In this article, we suggest these pedagogies are rooted in the same modern/colonial system that created the CNE and other ‘wicked’ socio-ecological challenges in the first place, and thus they are not well-suited for preparing students to navigate these challenges. We also ask what kind of climate education could invite students to interrupt the reproduction of colonial futures, and deepen their sense of social and ecological responsibility in the present.\"",
-                color: "border-[#D9A01B]",
+                desc: "Many pedagogies that seek to address the climate and nature emergency (CNE) promise hope and solutions for an idealized future. In this article, they suggest these pedagogies are rooted in the same modern/colonial system that created the CNE and other ‘wicked’ socio-ecological challenges in the first place, and thus they are not well-suited for preparing students to navigate these challenges. They also ask what kind of climate education could invite students to interrupt the reproduction of colonial futures, and deepen their sense of social and ecological responsibility in the present.",
+                color: "border-yellow",
                 url: "https://www.researchgate.net/publication/372237601_Beyond_colonial_futurities_in_climate_education",
               },
               {
                 title: "Relevance, Meaning and the Cognitive Science of Wisdom",
                 author: "John Vervaeke & Leo Ferraro",
-                authorColor: "text-cyan-600",
-                desc: "\"Overall, the conditions that makes one's' life good are that one judges and experiences that ones life is satisfying, virtuous (morally good), and deeply connected. A theory of the cognitive conditions that afford achieving such ends would be a theory of the flourishing that is necessary to wisdom. Wise people have the knowledge of the nature of selves such that they can promote and protect: agency, meaning in life, the agency‐meaning in life identity formation relation, and the virtues needed to protect selves and communities of selves and to afford participation in this way of life.\"",
-                color: "border-cyan",
+                desc: "A new story of value, meaning, and our place in the cosmos.",
+                color: "border-olive",
                 url: "https://www.researchgate.net/profile/John-Vervaeke/publication/286508333_Relevance_Meaning_and_the_Cognitive_Science_of_Wisdom/links/58f529df458515ff23b56743/Relevance-Meaning-and-the-Cognitive-Science-of-Wisdom.pdf",
               },
               {
-                title: "What is the Educational Task?",
-                subtitle: "Arousing the Desire for Wanting to Exist in the World in a Grown-up Way",
+                title: "What is the Educational Task? Arousing the Desire for Wanting to Exist in the World in a Grown-up Way",
                 author: "Gert Biesta",
-                authorColor: "text-[#D9A01B]",
                 desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
-                color: "border-[#D9A01B]",
+                color: "border-cyan",
                 url: "https://www.researchgate.net/publication/332807835_What_is_the_Educational_Task_Arousing_the_Desire_for_Wanting_to_Exist_in_the_World_in_a_Grown-up_Way",
               },
               {
-                title: "Education Beyond Green Growth",
-                subtitle: "Regenerative Inquiry for Intergenerational Responsibility",
+                title: "Education Beyond Green Growth: Regenerative Inquiry for Intergenerational Responsibility",
                 author: "Gesturing Towards Decolonial Futures Collective",
-                authorColor: "text-olive",
-                desc: "\"Scholars from varied disciplines and knowledge systems have pointed to the disavowed social and ecological costs of the promise that we can continue pursuing infinite economic growth on a finite planet. In this article, we offer an alternative approach to education grounded in a regenerative inquiry methodology. Regenerative inquiry can prepare people to honestly confront the limits and harms of “green growth” and support them to “grow up” by expanding their capacity to navigate complexity and uncertainty and activating a sense of intergenerational responsibility.\"",
-                color: "border-olive",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
                 url: "https://www.researchgate.net/publication/380869283_Education_Beyond_Green_Growth_Regenerative_Inquiry_for_Intergenerational_Responsibility",
               },
               {
                 title: "The Universe: A Love Story",
                 author: "Marc Gafni, Barbara Marx Hubbard, Daniel Schmachtenberger",
-                authorColor: "text-crimson",
-                desc: "\"Leading edge scientists and theorists of evolutionary emergence have shown us that the universe is going somewhere. There is a plot and a direction to this story. In this story we are not puppets, moved by a mythological God. Each of us is a leading actor, playing a unique role, and love is the driving force, the inherent plot of the universe. The universe is a love story. Not an ordinary love story. An Outrageous Love Story. The revelation of evolution is not merely the discovery of an objective fact. Rather it is the realization that the universe is passionately alive, throbbing and pulsating with energy and growth. This is not merely a poetic metaphor. This narrative is what we believe to be the most compelling, post-dogmatic narrative of purpose, Eros and meaning available at this moment in history.\"",
-                color: "border-crimson",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
                 url: "https://worldphilosophyandreligion.org/wp-content/uploads/2020/05/The-Universe-A-Love-Story_Academia.pdf",
               },
               {
-                title: "From “Education to Sustainable Development” to “Education for the End of the World As We Know It”",
+                title: "From “education to sustainable development” to “education for the end of the world as we know it”",
                 author: "Gesturing Towards Decolonial Futures Collective",
-                authorColor: "text-olive",
-                desc: "\"We contend that the predicament we face is not primarily rooted in ignorance and thus solvable with more knowledge, nor primarily rooted in immorality and thus solvable with more normative values; rather, it is rooted in denials that stem from harmful desires for and investments in the continuity of the securities and satisfactions promised by modernity-coloniality. Faced with these denials, we emphasize a collective need to \"grow up\" so that we might \"show up\" differently to do the work that is needed as we collectively face unprecedented global challenges.\"",
-                color: "border-olive",
+                desc: "On metamodern politics and the development of listening capacities for a more beautiful society.",
+                color: "border-cyan",
                 url: "https://www.researchgate.net/publication/344287447_From_education_for_sustainable_development_to_education_for_the_end_of_the_world_as_we_know_it",
               },
             ].map((article) => (
@@ -133,10 +120,8 @@ export default function LearnMorePage() {
                     {article.title}
                   </a>
                 </h3>
-                <p className="mt-1 text-sm text-muted-foreground italic">
-                  {article.subtitle}
-                </p>
-                <p className={`mt-1 text-sm ${article.authorColor}`}>{article.author}</p>
+
+                <p className="mt-1 text-olive text-sm">{article.author}</p>
                 <p className="mt-4 text-muted-foreground text-sm leading-relaxed">
                   {article.desc}
                 </p>

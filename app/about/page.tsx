@@ -294,7 +294,7 @@ export default function AboutPage() {
         </section>
 
 {/* Why Collective? */}
-<section className="pt-12 lg:pt-16 bg-cream text-foreground">
+<section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream text-foreground">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-stretch"> {/* added items-stretch */}
       
@@ -350,40 +350,23 @@ export default function AboutPage() {
     </div>
   </div>
 
-  {/* divider element in the previous section */}
-  <div className="w-full mt-20 flex flex-col relative z-10">
-      <svg className="w-full h-10 block overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 25">
-        
-        {/* Solid Background Block */}
-        <polygon 
-          points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20 100,25 0,25" 
-          fill="#160702" 
-        />
-        
-        {/* Decorative Lines Group */}
-        <g className="opacity-30 text-[#8b0000]" transform="translate(0, -1)">
-          <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-          <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
-        </g>
-        {/* Decorative Lines Group */}
-        <g className="opacity-30 text-[#8b0000]" transform="translate(0, -7)">
-          <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-          <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
-        </g>
+  <div className="w-full mt-20 overflow-hidden opacity-30">
+      <svg className="w-full h-8 text-[#8b0000]" preserveAspectRatio="none" viewBox="0 0 100 20">
+        <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
+        <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
       </svg>
     </div>
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-{/* Increased negative margin to -mt-2 (8px overlap) to guarantee no sub-pixel gaps */}
-<section className="!bg-[#160702] pt-12 relative z-0 overflow-x-clip -mt-2 min-h-[200vh]">
+<section className="relative overflow-x-clip -mt-6 bg-cream min-h-[200vh]">
   {/* Dynamic Keyframes injected safely into the render tree */}
     <ParallaxIncenseSection>
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div>
       {/* Header */}
-      <div className="mb-8 pl-12 pt-24 sm:pl-16 md:pl-0 md:pt-0">
-        <h2 className="text-[#D9A01B] font-serif text-3xl font-medium text-base md:text-4xl lg:text-5xl">
+      <div className="mb-8 pl-12 pt-16 sm:pl-16 md:pl-0 md:pt-0">
+        <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl">
           Who We Must Become
         </h2>
 
@@ -394,7 +377,7 @@ export default function AboutPage() {
 
       {/* Opening */}
       <div className="mb-6 space-y-6">
-        <p className="text-[#EBE8E1] font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+        <p className="font-serif text-xl font-medium leading-relaxed text-foreground md:text-2xl">
           Every culture needs images of the human being worth becoming.
         </p>
 
@@ -509,7 +492,7 @@ export default function AboutPage() {
 </section>
 
 {/* Our Vows */}
-<section className="bg-[#160702] py-16 lg:py-20">
+<section className="bg-[#FFFDF6] py-16 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">

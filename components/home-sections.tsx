@@ -120,9 +120,9 @@ const lineages = [
     url: "https://www.dhamma.org/",
   },
   {
-    name: "Chacruna Institute",
-    logo: "https://www.google.com/s2/favicons?domain_url=https://chacruna.net&sz=256",
-    url: "https://chacruna.net/",
+    name: "Great Vow Zen Monastery",
+    logo: images.greatvow,
+    url: "https://zendust.org/great-vow-zen-monastery/",
       },
     ],
   },
@@ -751,7 +751,7 @@ export function IntroductionSection() {
                 of knowledge. We mean the capacity to perceive reality accurately, to
                 discern what truly matters in a given context, and to participate in
                 life in ways that serve the flourishing of the larger whole — a
-                capacity grounded in a deep engagement with the central existential
+                capacity grounded in a deep understanding of the central existential
                 questions of life.
         </p>
       </div>
