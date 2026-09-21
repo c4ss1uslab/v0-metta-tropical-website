@@ -3289,7 +3289,6 @@ export default function FellowshipPage() {
 
     <div className="mx-auto max-w-4xl">
 
-      {/* Section title — matches The Structure and The Path */}
       <span className="text-base font-medium uppercase tracking-wide text-[#B88610]">
         Practical Commitment
       </span>
@@ -3321,7 +3320,7 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* PROGRAM OVERVIEW — CENTERED */}
+    {/* PROGRAM OVERVIEW */}
     {/* ========================================================= */}
 
     <div className="mx-auto mt-10 max-w-5xl border-y border-border py-7">
@@ -3437,7 +3436,6 @@ export default function FellowshipPage() {
             Opening Retreat
           </span>
 
-          {/* Same font family as the Ecology of Transformation cards */}
           <h4
             className="mt-3 text-lg font-medium leading-snug text-foreground"
             style={{ fontFamily: "inherit" }}
@@ -3535,8 +3533,9 @@ export default function FellowshipPage() {
 
       </div>
 
+      {/* UPDATED RETREAT REQUIREMENT */}
       <p className="mt-4 text-sm font-semibold text-foreground">
-        Full participation in all three retreats is expected.
+        Full participation in all three retreats is required.
       </p>
 
     </div>
@@ -3616,6 +3615,11 @@ export default function FellowshipPage() {
         </article>
 
       </div>
+
+      {/* NEW ONLINE ATTENDANCE REQUIREMENT */}
+      <p className="mt-4 text-sm font-semibold text-foreground">
+        Attendance required in all regular online spaces
+      </p>
 
     </div>
 
@@ -3774,7 +3778,7 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* TIME COMMITMENT — UPDATED AT A GLANCE SECTION */}
+    {/* TIME COMMITMENT */}
     {/* ========================================================= */}
 
     <div className="mx-auto mt-14 max-w-5xl border-t border-border pt-9">
@@ -3790,11 +3794,10 @@ export default function FellowshipPage() {
       </h3>
 
       <p className="mt-5 max-w-4xl leading-relaxed text-muted-foreground">
-        We invite fellows to approach this journey as a meaningful commitment and
-        protect their time to participate fully.
+        We invite fellows to approach this journey as a meaningful commitment,
+        protecting the time and attention needed to participate fully.
       </p>
 
-      {/* Three Commitments */}
       <div className="mt-8 grid border-y border-border py-7 md:grid-cols-3 md:divide-x md:divide-border">
 
         {/* THREE WEEK-LONG RETREATS */}
