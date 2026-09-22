@@ -3254,7 +3254,7 @@ export default function FellowshipPage() {
 
         <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
           Attunement · Compassion · Intimacy · Loving Speech · Deep Listening ·
-          Perspective Taking · Revealing Experience
+          Perspective Taking · Revealing Experience · Co-sensing · Feeling-Saying
         </p>
       </div>
 
