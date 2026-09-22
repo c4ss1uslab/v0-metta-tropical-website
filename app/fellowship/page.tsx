@@ -853,324 +853,6 @@ export default function FellowshipPage() {
 
 </section>
 
-{/* ========================================================= */}
-{/* WHO WE MUST BECOME */}
-{/* ========================================================= */}
-
-<section
-  id="who-we-must-become"
-  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
->
-  <div className="mx-auto max-w-4xl px-6 lg:px-8">
-
-    {/* ========================================================= */}
-    {/* SECTION TITLE */}
-    {/* ========================================================= */}
-
-    <span
-      className="text-base font-medium uppercase tracking-wide text-[#B88610]"
-      style={{
-        fontFamily: '"Helvetica Neue", Arial, sans-serif',
-      }}
-    >
-      Who We Must Become
-    </span>
-
-    {/* ========================================================= */}
-    {/* OPENING STATEMENT */}
-    {/* ========================================================= */}
-
-    <h2
-      className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl lg:text-4xl"
-      style={{
-        fontFamily:
-          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-      }}
-    >
-      Reclaiming leadership as a{" "}
-      <span
-        className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
-        style={{
-          fontFamily: "inherit",
-          fontSize: "inherit",
-          fontWeight: "inherit",
-          fontStyle: "inherit",
-          lineHeight: "inherit",
-          letterSpacing: "inherit",
-        }}
-      >
-        sacred responsibility
-      </span>{" "}
-      toward the flourishing of all life.
-    </h2>
-
-    {/* ========================================================= */}
-    {/* INTRODUCTION */}
-    {/* ========================================================= */}
-
-    <div className="mt-10 space-y-6 text-muted-foreground">
-
-      <p className="leading-relaxed">
-        Human beings grow toward the horizons of possibility they are able to
-        imagine. We are formed not only by what we are taught, but by the
-        images our cultures teach us to admire and aspire toward. Yet at a
-        moment asking so much of humanity, many of the dominant images
-        available to us—the achiever, the entrepreneur, the conscious leader,
-        even the changemaker—feel too small for the depth of transformation
-        this moment requires. It asks for deeper and more integrated forms of
-        human maturity.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        For us, that maturation involves a shift in our relationship to all
-        life: with ourselves, with one another, with the world we participate
-        in, and with the sacred.
-      </p>
-
-    </div>
-
-    {/* ========================================================= */}
-    {/* FOUR RELATIONSHIPS */}
-    {/* ========================================================= */}
-
-    {/*
-      Updated design:
-      - All capacity keywords removed.
-      - Slightly reduced padding for more compact boxes.
-      - Equal-height cards within each row.
-      - Small 8px gap between boxes.
-      - No visible borders.
-      - Subtle shadows.
-      - Bold burnt-orange titles.
-      - Lighter orange arrows.
-    */}
-
-    <div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
-
-      {/* ===================================================== */}
-      {/* SELF */}
-      {/* ===================================================== */}
-
-      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
-
-        {/* Box Title */}
-        <span
-          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-          style={{
-            fontFamily: '"Helvetica Neue", Arial, sans-serif',
-            color: "#A65325",
-          }}
-        >
-          Self
-        </span>
-
-        {/* Transformation */}
-        <h3
-          className="mt-3 text-lg font-medium leading-snug text-foreground"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          From Fragmentation{" "}
-          <span
-            className="mx-2"
-            style={{
-              color: "#B96A32",
-              fontFamily: "inherit",
-              fontSize: "inherit",
-              fontWeight: 700,
-              lineHeight: "inherit",
-              opacity: 1,
-            }}
-          >
-            →
-          </span>{" "}
-          Towards Wholeness
-        </h3>
-
-        {/* Description */}
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Remembering who we are beneath our conditioning, while learning to meet the many parts of ourselves with presence, compassion, and love—becoming less governed by fear, wounds, and protective patterns, and more able to live from a deeper ground of wholeness.
-        </p>
-
-      </article>
-
-      {/* ===================================================== */}
-      {/* OTHER */}
-      {/* ===================================================== */}
-
-      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
-
-        {/* Box Title */}
-        <span
-          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-          style={{
-            fontFamily: '"Helvetica Neue", Arial, sans-serif',
-            color: "#A65325",
-          }}
-        >
-          Other
-        </span>
-
-        {/* Transformation */}
-        <h3
-          className="mt-3 text-lg font-medium leading-snug text-foreground"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          From Separation{" "}
-          <span
-            className="mx-2"
-            style={{
-              color: "#B96A32",
-              fontFamily: "inherit",
-              fontSize: "inherit",
-              fontWeight: 700,
-              lineHeight: "inherit",
-              opacity: 1,
-            }}
-          >
-            →
-          </span>{" "}
-          Towards Interbeing
-        </h3>
-
-        {/* Description */}
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Reawakening to our entanglement with other beings, human and more-than-human, encountering them not as objects or resources, but as lives of intrinsic worth—and cultivating relationships grounded in intimacy, reciprocity, and genuine care for each others flourishing.
-        </p>
-
-      </article>
-
-      {/* ===================================================== */}
-      {/* WORLD */}
-      {/* ===================================================== */}
-
-      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
-
-        {/* Box Title */}
-        <span
-          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-          style={{
-            fontFamily: '"Helvetica Neue", Arial, sans-serif',
-            color: "#A65325",
-          }}
-        >
-          World
-        </span>
-
-        {/* Transformation */}
-        <h3
-          className="mt-3 text-lg font-medium leading-snug text-foreground"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          From Observation{" "}
-          <span
-            className="mx-2"
-            style={{
-              color: "#B96A32",
-              fontFamily: "inherit",
-              fontSize: "inherit",
-              fontWeight: 700,
-              lineHeight: "inherit",
-              opacity: 1,
-            }}
-          >
-            →
-          </span>{" "}
-          Towards Participation
-        </h3>
-
-        {/* Description */}
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Remembering that we are participants, not spectators, in a living and interdependent world, embedded within social, ecological, historical, and economic systems, where the ways we live ripple far beyond ourselves and carry consequences for the larger web of life.
-        </p>
-
-      </article>
-
-      {/* ===================================================== */}
-      {/* THE SACRED */}
-      {/* ===================================================== */}
-
-      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
-
-        {/* Box Title */}
-        <span
-          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-          style={{
-            fontFamily: '"Helvetica Neue", Arial, sans-serif',
-            color: "#A65325",
-          }}
-        >
-          The Sacred
-        </span>
-
-        {/* Transformation */}
-        <h3
-          className="mt-3 text-lg font-medium leading-snug text-foreground"
-          style={{
-            fontFamily:
-              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-          }}
-        >
-          From Disenchantment{" "}
-          <span
-            className="mx-2"
-            style={{
-              color: "#B96A32",
-              fontFamily: "inherit",
-              fontSize: "inherit",
-              fontWeight: 700,
-              lineHeight: "inherit",
-              opacity: 1,
-            }}
-          >
-            →
-          </span>{" "}
-          Towards Reverence
-        </h3>
-
-        {/* Description */}
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Recovering our sense of belonging within a mysterious cosmos, experiencing life as intrinsically valuable, meaningful and sacred, while recognizing ourselves as unique expressions of that same mystery. And allowing our relationship to the sacred to expand love, devotion, and responsibility toward the whole.
-        </p>
-
-      </article>
-
-    </div>
-
-    {/* ========================================================= */}
-    {/* CLOSING */}
-    {/* ========================================================= */}
-
-    <div className="mt-10 space-y-6 text-muted-foreground">
-
-      <p className="leading-relaxed">
-        This is a simple orientation toward four relationships we believe this
-        moment is asking us to deepen if we want to steward civilization
-        towards life-enhancing futures. Throughout history, humanity has
-        carried images of such possibility: the saint, the bodhisattva,
-        the spiritual warrior, the sacred activist—figures for whom inner
-        transformation became inseparable from responsibility and service
-        towards the whole.
-      </p>
-
-      <p className="font-medium leading-relaxed text-foreground">
-        The Fellowship is not only an attempt to reawaken this kind of
-        aspiration, but to create the conditions through which such becoming
-        can take root.
-      </p>
-
-    </div>
-
-  </div>
-</section>
 
         {/* FELLOWSHIP OVERVIEW / STRUCTURE */}
 {/* ========================================================= */}
@@ -3299,6 +2981,325 @@ export default function FellowshipPage() {
       >
         Go Deeper on Relational Ontological Pedagogy →
       </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ========================================================= */}
+{/* WHO WE MUST BECOME */}
+{/* ========================================================= */}
+
+<section
+  id="who-we-must-become"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
+>
+  <div className="mx-auto max-w-4xl px-6 lg:px-8">
+
+    {/* ========================================================= */}
+    {/* SECTION TITLE */}
+    {/* ========================================================= */}
+
+    <span
+      className="text-base font-medium uppercase tracking-wide text-[#B88610]"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+      }}
+    >
+      Who We Must Become
+    </span>
+
+    {/* ========================================================= */}
+    {/* OPENING STATEMENT */}
+    {/* ========================================================= */}
+
+    <h2
+      className="mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl lg:text-4xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      Reclaiming leadership as a{" "}
+      <span
+        className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
+        style={{
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: "inherit",
+          fontStyle: "inherit",
+          lineHeight: "inherit",
+          letterSpacing: "inherit",
+        }}
+      >
+        sacred responsibility
+      </span>{" "}
+      toward the flourishing of all life.
+    </h2>
+
+    {/* ========================================================= */}
+    {/* INTRODUCTION */}
+    {/* ========================================================= */}
+
+    <div className="mt-10 space-y-6 text-muted-foreground">
+
+      <p className="leading-relaxed">
+        Human beings grow toward the horizons of possibility they are able to
+        imagine. We are formed not only by what we are taught, but by the
+        images our cultures teach us to admire and aspire toward. Yet at a
+        moment asking so much of humanity, many of the dominant images
+        available to us—the achiever, the entrepreneur, the conscious leader,
+        even the changemaker—feel too small for the depth of transformation
+        this moment requires. It asks for deeper and more integrated forms of
+        human maturity.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        For us, that maturation involves a shift in our relationship to all
+        life: with ourselves, with one another, with the world we participate
+        in, and with the sacred.
+      </p>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* FOUR RELATIONSHIPS */}
+    {/* ========================================================= */}
+
+    {/*
+      Updated design:
+      - All capacity keywords removed.
+      - Slightly reduced padding for more compact boxes.
+      - Equal-height cards within each row.
+      - Small 8px gap between boxes.
+      - No visible borders.
+      - Subtle shadows.
+      - Bold burnt-orange titles.
+      - Lighter orange arrows.
+    */}
+
+    <div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
+
+      {/* ===================================================== */}
+      {/* SELF */}
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
+          Self
+        </span>
+
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Fragmentation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
+          Towards Wholeness
+        </h3>
+
+        {/* Description */}
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Remembering who we are beneath our conditioning, while learning to meet the many parts of ourselves with presence, compassion, and love—becoming less governed by fear, wounds, and protective patterns, and more able to live from a deeper ground of wholeness.
+        </p>
+
+      </article>
+
+      {/* ===================================================== */}
+      {/* OTHER */}
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
+          Other
+        </span>
+
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Separation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
+          Towards Interbeing
+        </h3>
+
+        {/* Description */}
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Reawakening to our entanglement with other beings, human and more-than-human, encountering them not as objects or resources, but as lives of intrinsic worth—and cultivating relationships grounded in intimacy, reciprocity, and genuine care for each others flourishing.
+        </p>
+
+      </article>
+
+      {/* ===================================================== */}
+      {/* WORLD */}
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
+          World
+        </span>
+
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Observation{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
+          Towards Participation
+        </h3>
+
+        {/* Description */}
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Remembering that we are participants, not spectators, in a living and interdependent world, embedded within social, ecological, historical, and economic systems, where the ways we live ripple far beyond ourselves and carry consequences for the larger web of life.
+        </p>
+
+      </article>
+
+      {/* ===================================================== */}
+      {/* THE SACRED */}
+      {/* ===================================================== */}
+
+      <article className="flex min-w-0 flex-col bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] md:p-7">
+
+        {/* Box Title */}
+        <span
+          className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            color: "#A65325",
+          }}
+        >
+          The Sacred
+        </span>
+
+        {/* Transformation */}
+        <h3
+          className="mt-3 text-lg font-medium leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          From Disenchantment{" "}
+          <span
+            className="mx-2"
+            style={{
+              color: "#B96A32",
+              fontFamily: "inherit",
+              fontSize: "inherit",
+              fontWeight: 700,
+              lineHeight: "inherit",
+              opacity: 1,
+            }}
+          >
+            →
+          </span>{" "}
+          Towards Reverence
+        </h3>
+
+        {/* Description */}
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          Recovering our sense of belonging within a mysterious cosmos, experiencing life as intrinsically valuable, meaningful and sacred, while recognizing ourselves as unique expressions of that same mystery. And allowing our relationship to the sacred to expand love, devotion, and responsibility toward the whole.
+        </p>
+
+      </article>
+
+    </div>
+
+    {/* ========================================================= */}
+    {/* CLOSING */}
+    {/* ========================================================= */}
+
+    <div className="mt-10 space-y-6 text-muted-foreground">
+
+      <p className="leading-relaxed">
+        This is a simple orientation toward four relationships we believe this
+        moment is asking us to deepen if we want to steward civilization
+        towards life-enhancing futures. Throughout history, humanity has
+        carried images of such possibility: the saint, the bodhisattva,
+        the spiritual warrior, the sacred activist—figures for whom inner
+        transformation became inseparable from responsibility and service
+        towards the whole.
+      </p>
+
+      <p className="font-medium leading-relaxed text-foreground">
+        The Fellowship is not only an attempt to reawaken this kind of
+        aspiration, but to create the conditions through which such becoming
+        can take root.
+      </p>
 
     </div>
 
