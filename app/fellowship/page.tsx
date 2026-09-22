@@ -4764,7 +4764,7 @@ export default function FellowshipPage() {
         <p className="leading-relaxed">
           We are calling together post-activist leaders—artists, educators,
           organizers, thinkers, change-makers, technologists and spiritual
-          practitioners—who feel the depth of our predicament in their bodies,
+          practitioners—who feel the depth of our historical moment in their bodies,
           and who are called to undergo the kind of transformation that can
           better prepare us to navigate and respond to these times.
         </p>
@@ -5050,7 +5050,7 @@ export default function FellowshipPage() {
 
 <section
   id="cost"
-  className="scroll-mt-32 bg-[#FFF9E9] py-20 lg:py-28"
+  className="scroll-mt-16 bg-[#FFF9E9] py-16 lg:py-16"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
