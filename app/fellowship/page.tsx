@@ -319,7 +319,7 @@ export default function FellowshipPage() {
 
       <div className="mt-10 flex flex-col items-start gap-3">
 
-        {/* Dates — Matches Educational Architecture Button Style */}
+        {/* Dates — Educational Architecture Button Style */}
         <a
           href="#schedule"
           aria-label="View the Fellowship Schedule Overview"
@@ -354,7 +354,7 @@ export default function FellowshipPage() {
           February — December 2027
         </a>
 
-        {/* Primary Application Button */}
+        {/* Primary Application Button — Subtle Border and Edge Shadow */}
         <a
           href="#apply"
           className="
@@ -363,17 +363,25 @@ export default function FellowshipPage() {
             items-center
             justify-center
             rounded-md
+            border
+            border-[#111827]/15
             bg-[#E8BC2F]
             px-5
             py-3.5
             text-base
             font-bold
             text-foreground
-            shadow-[0_5px_15px_rgba(15,23,42,0.08)]
+            shadow-[0_2px_8px_rgba(15,23,42,0.12)]
             transition-all
             duration-200
             hover:-translate-y-0.5
+            hover:border-[#111827]/25
             hover:bg-[#D9A01B]
+            hover:shadow-md
+            focus-visible:outline
+            focus-visible:outline-2
+            focus-visible:outline-offset-2
+            focus-visible:outline-[#D9A01B]
           "
         >
           Begin Application →
