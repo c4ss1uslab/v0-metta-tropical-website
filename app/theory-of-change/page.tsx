@@ -936,12 +936,8 @@ return (
             title: 'Crisis of Capacity', 
             desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.',
             references: [
-              { 
-                segments: [
-                  { text: 'Consilience Project', url: 'https://consilienceproject.org' },
-                  { text: ' + ' },
-                  { text: 'other link', url: 'https://example.com' }
-                ], 
+              { segments: [
+                  { text: 'Facing Human Wrongs', url: 'https://facinghumanwrongs.net/' }], 
                 logo: '/logos/consilience.png' 
               },
               { segments: [{ text: 'Santa Fe Institute', url: '#' }], logo: '/logos/sfi.png' }
