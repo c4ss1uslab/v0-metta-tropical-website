@@ -319,31 +319,36 @@ export default function FellowshipPage() {
 
       <div className="mt-10 flex flex-col items-start gap-3">
 
-        {/* Dates — Same Font Family as Begin Application */}
+        {/* Dates — Matches Educational Architecture Button Style */}
         <a
           href="#schedule"
           aria-label="View the Fellowship Schedule Overview"
           className="
             inline-flex
-            h-[36px]
             w-[220px]
             items-center
             justify-center
             rounded-md
-            bg-[#BF7540]
-            px-3
+            border
+            border-[#111827]/15
+            bg-[#111827]/[0.04]
+            px-5
+            py-3
             text-center
             text-sm
-            font-semibold
-            text-white
+            font-medium
+            text-[#111827]
+            shadow-sm
             transition-all
             duration-200
             hover:-translate-y-0.5
-            hover:bg-[#AD6533]
+            hover:border-[#111827]/25
+            hover:bg-[#111827]/[0.08]
+            hover:shadow-md
             focus-visible:outline
             focus-visible:outline-2
             focus-visible:outline-offset-2
-            focus-visible:outline-[#BF7540]
+            focus-visible:outline-[#111827]
           "
         >
           February — December 2027
