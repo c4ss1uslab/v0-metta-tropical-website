@@ -3082,21 +3082,22 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* FOUR RELATIONSHIPS — LEFT-SIDE OVERLAPPING IMAGE */}
+    {/* FOUR RELATIONSHIPS — IMAGE + SHIFTED BOXES */}
     {/* ========================================================= */}
 
     {/*
-      Image placement:
-      - Begins near the left edge of the viewport.
-      - Overlaps the left column of cards.
-      - Roughly 20–30% of the image overlaps the cards on typical
-        desktop widths.
-      - Begins approximately one-third of the way down Self.
-      - Extends 32px below World.
-      - The image sits behind the cards.
-      - Self and World use slightly translucent white backgrounds.
-      - All four hover interactions remain intact.
-      - Image is hidden below the lg breakpoint.
+      Updated layout:
+
+      - All four boxes shift 76px (approximately 2 cm) to the right.
+      - The grid becomes 76px narrower to stay within the right page margin.
+      - The image remains anchored near the left viewport edge.
+      - Its right edge extends another 38px (approximately 1 cm)
+        into the boxes relative to their new position.
+      - The image begins partway down Self.
+      - The image extends 32px below World.
+      - Self and World have slightly translucent white backgrounds.
+      - Existing hover interactions remain unchanged.
+      - Desktop adjustments activate at the lg breakpoint.
     */}
 
     <div className="relative isolate mt-12">
@@ -3120,7 +3121,7 @@ export default function FellowshipPage() {
         "
         style={{
           left: "calc(50% - 50vw + 24px)",
-          right: "calc(100% - 5vw)",
+          right: "calc(100% - 76px - 5vw - 38px)",
         }}
       >
         <img
@@ -3132,10 +3133,22 @@ export default function FellowshipPage() {
       </div>
 
       {/* ===================================================== */}
-      {/* FOUR-CARD GRID — ABOVE THE IMAGE */}
+      {/* FOUR-CARD GRID — SHIFTED 2 CM TO THE RIGHT */}
       {/* ===================================================== */}
 
-      <div className="relative z-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
+      <div
+        className="
+          relative
+          z-10
+          grid
+          grid-cols-1
+          items-stretch
+          gap-2
+          md:grid-cols-2
+          lg:ml-[76px]
+          lg:w-[calc(100%-76px)]
+        "
+      >
 
         {/* ===================================================== */}
         {/* SELF */}
