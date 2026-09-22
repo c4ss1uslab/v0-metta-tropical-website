@@ -3008,7 +3008,7 @@ export default function FellowshipPage() {
 
 <section
   id="who-we-must-become"
-  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
+  className="scroll-mt-32 overflow-x-clip bg-[#FFFDF6] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
@@ -3082,25 +3082,26 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* FOUR RELATIONSHIPS */}
+    {/* FOUR RELATIONSHIPS — FULL-WIDTH IMAGE BACKGROUND */}
     {/* ========================================================= */}
 
     {/*
       Updated design:
-      - A single image sits behind the Self and World cards.
-      - It extends approximately 1 cm above and below the two rows.
-      - It begins near the left page margin.
-      - It overlaps slightly more than half the width of the left cards.
-      - Self and World use subtly translucent backgrounds.
-      - Other and The Sacred retain their original white backgrounds.
-      - Hover interactions and card dimensions remain unchanged.
-      - The decorative image is hidden on mobile.
+
+      - The background image spans the entire viewport width.
+      - The image extends 32px above and below the four cards.
+      - Increased spacing between the introduction and image.
+      - Increased spacing between the image and closing paragraph.
+      - Self and World now use 95% opaque white backgrounds.
+      - Other and The Sacred retain their solid white backgrounds.
+      - Cards remain above the image, with their hover interactions intact.
+      - On mobile, the image remains hidden for readability.
     */}
 
-    <div className="relative isolate mt-10">
+    <div className="relative isolate mt-24">
 
       {/* ===================================================== */}
-      {/* DECORATIVE BACKGROUND IMAGE — SELF + WORLD */}
+      {/* FULL-WIDTH BACKGROUND IMAGE */}
       {/* ===================================================== */}
 
       <div
@@ -3108,18 +3109,17 @@ export default function FellowshipPage() {
         className="
           pointer-events-none
           absolute
-          -bottom-[38px]
-          -top-[38px]
+          -bottom-8
+          -top-8
+          left-1/2
           z-0
           hidden
+          w-screen
+          -translate-x-1/2
           overflow-hidden
           shadow-[0_8px_30px_rgba(15,23,42,0.10)]
           md:block
         "
-        style={{
-          left: "calc(50% - 50vw + 24px)",
-          right: "70%",
-        }}
       >
         <img
           src="https://i.postimg.cc/8ctg1rdN/cosmos-422528646.jpg"
@@ -3141,7 +3141,7 @@ export default function FellowshipPage() {
 
         <article
           tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/85 md:p-7"
+          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/95 md:p-7"
         >
 
           {/* Box Title */}
@@ -3327,7 +3327,7 @@ export default function FellowshipPage() {
 
         <article
           tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/85 md:p-7"
+          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/95 md:p-7"
         >
 
           {/* Box Title */}
@@ -3514,10 +3514,10 @@ export default function FellowshipPage() {
     </div>
 
     {/* ========================================================= */}
-    {/* CLOSING */}
+    {/* CLOSING — ADDITIONAL SPACE BELOW THE IMAGE */}
     {/* ========================================================= */}
 
-    <div className="mt-10 space-y-6 text-muted-foreground">
+    <div className="mt-24 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
         These shifts point to the deeper horizon of our journey toward the types
