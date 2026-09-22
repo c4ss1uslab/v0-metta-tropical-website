@@ -5050,7 +5050,7 @@ export default function FellowshipPage() {
 
 <section
   id="cost"
-  className="scroll-mt-16 bg-[#FFF9E9] py-16 lg:py-16"
+  className="scroll-mt-16 bg-[#FFF9E9] py-24 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
@@ -6738,7 +6738,7 @@ export default function FellowshipPage() {
           },
 
           {
-            name: "Kaka Verá",
+            name: "Kaka Werá",
             image: "https://i.postimg.cc/kGTwLN3F/Kaka-Vera.jpg",
             linkedin: "",
           },
