@@ -3130,22 +3130,24 @@ export default function FellowshipPage() {
       </div>
 
       {/* ===================================================== */}
-      {/* FOUR-CARD GRID — ORIGINAL SIZE, SHIFTED RIGHT 1 CM */}
-      {/* ===================================================== */}
+{/* FOUR-CARD GRID — ORIGINAL SIZE, SHIFTED RIGHT 2 CM */}
+{/* ===================================================== */}
 
-      <div
-        className="
-          relative
-          z-10
-          grid
-          w-full
-          grid-cols-1
-          items-stretch
-          gap-2
-          md:grid-cols-2
-          lg:translate-x-[38px]
-        "
-      >
+<div
+  className="
+    relative
+    z-10
+    grid
+    w-full
+    grid-cols-1
+    items-stretch
+    gap-2
+    md:grid-cols-2
+    lg:translate-x-[76px]
+  "
+>
+  {/* Keep all four existing cards here, unchanged. */}
+</div>
 
         {/* ===================================================== */}
         {/* SELF */}
