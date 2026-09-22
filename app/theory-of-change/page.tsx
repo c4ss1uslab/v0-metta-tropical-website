@@ -681,7 +681,7 @@ return (
             <div 
               key={i} 
               className={`group w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
-                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
+                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-crimson shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
             >
               <details className="group/details w-full">
                 <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
@@ -693,7 +693,7 @@ return (
                     {/* Inline Expand Arrow */}
                     {hasReferences && (
                       <svg
-                        className="mt-1 h-3.5 w-3.5 shrink-0 text-olive transition-transform duration-300 group-open/details:rotate-180 hover:text-olive/80"
+                        className="mt-1 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson/80"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -709,8 +709,8 @@ return (
 
                 {/* Hidden references block - expands downward when opened */}
                 {hasReferences && (
-                  <div className="mt-3 border-t border-olive/20 pt-3">
-                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
+                  <div className="mt-3 border-t border-crimson/20 pt-3">
+                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson/80">
                       Suggested resources
                     </p>
 
