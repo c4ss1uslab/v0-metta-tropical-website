@@ -920,8 +920,8 @@ return (
             title: 'Crisis of Relationship', 
             desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
-              { segments: [{ text: 'Elders & communities holding sacred ceremonies throughout generations', url: 'https://www.chacruna-iri.org/', logo: 'https://www.google.com/s2/favicons?domain_url=https://www.chacruna-iri.org////&sz=256' }] },
-              { segments: [{ text: 'Women and community leaders reweaving social fabric', url: 'https://www.chacruna-iri.org/', logo: 'https://www.google.com/s2/favicons?domain_url=https://ibeac.org.br/////&sz=256' }] }
+              { segments: [{ text: 'Elders & communities holding sacred ceremonies throughout generations', url: 'https://www.chacruna-iri.org/', }], logo: 'https://www.google.com/s2/favicons?domain_url=https://www.chacruna-iri.org////&sz=256' },
+              { segments: [{ text: 'Women and community leaders reweaving social fabric', url: 'https://ibeac.org.br', }], logo: 'https://www.google.com/s2/favicons?domain_url=https://ibeac.org.br/////&sz=256' }
             ]
           },
           { 
