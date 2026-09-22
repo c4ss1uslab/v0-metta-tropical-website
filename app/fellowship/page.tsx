@@ -514,43 +514,52 @@ export default function FellowshipPage() {
       of transformative journey for a time of planetary crisis
     </h2>
 
-    {/* ========================================================= */}
-    {/* MAIN TEXT */}
-    {/* ========================================================= */}
+{/* ========================================================= */}
+{/* MAIN TEXT */}
+{/* ========================================================= */}
 
-    <div className="mt-8 space-y-6 text-muted-foreground">
+<div className="mt-8 space-y-6 text-muted-foreground">
 
-      <p className="leading-relaxed">
-        The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
-        emerging from the understanding that we are living through the
-        unraveling of a world whose promises are reaching their limits, while
-        many of our attempts to respond to our crisis continue to reproduce
-        the very logics of separation, extraction, and optimization that
-        brought us here. The crises of our time cannot be met through better
-        ideas, strategies, or solutions alone. They ask for a deeper
-        transformation in{" "}
-        <strong className="font-semibold text-foreground">
-          how we perceive reality, relate to ourselves and one another,
-          encounter the living world and the sacred, and participate in life
-        </strong>
-        .
-      </p>
+  <p className="leading-relaxed">
+    The Metta Tropical Fellowship is a ten-month journey, rooted in Brazil,
+    emerging from the understanding that we are living through the
+    unraveling of a world whose promises are reaching their limits, while
+    many of our attempts to respond to our crisis continue to reproduce
+    the very logics of separation, extraction, and optimization that
+    brought us here. The crises of our time cannot be met through better
+    ideas, strategies, or solutions alone. They ask for a deeper
+    transformation in{" "}
+    <strong className="font-semibold text-foreground">
+      how we perceive reality, relate to ourselves and one another,
+      encounter the living world and the sacred, and participate in life
+    </strong>
+    .
+  </p>
 
-      <p className="leading-relaxed">
-        Rather than a traditional leadership program, the Fellowship is a
-        living process of formation weaving together spiritual formation,
-        relational practice, complexity theory, systems change,
-        civilizational inquiry, and land-based wisdom—bringing into
-        relationship ways of knowing, practices, and lineages rooted across
-        the Global South and Global North that rarely meet within the same
-        educational space.
-      </p>
+  <p className="leading-relaxed">
+    Rather than a traditional leadership program, the Fellowship is a
+    living process of formation weaving together spiritual formation,
+    relational practice, complexity theory, systems change,
+    civilizational inquiry, and land-based wisdom—bringing into
+    relationship ways of knowing, practices, and lineages rooted across
+    the Global South and Global North that rarely meet within the same
+    educational space.
+  </p>
 
-    </div>
+  <p className="leading-relaxed">
+    We are calling together Brazilian young adults aged 18–29 who feel the
+    depth of our crisis in their bones and long to offer their lives
+    meaningfully in response—post-activist artists, educators, leaders,
+    organizers, change-makers, thinkers, and spiritual practitioners,
+    willing to undergo the kind of transformation needed to navigate and
+    respond wisely to these times.
+  </p>
 
-    {/* ========================================================= */}
-    {/* FULL-WIDTH MANIFESTO BANNER */}
-    {/* ========================================================= */}
+</div>
+
+{/* ========================================================= */}
+{/* FULL-WIDTH MANIFESTO BANNER */}
+{/* ========================================================= */}
 
     <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2">
 
