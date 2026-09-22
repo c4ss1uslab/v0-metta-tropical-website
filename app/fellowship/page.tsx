@@ -3021,7 +3021,7 @@ export default function FellowshipPage() {
           '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
       }}
     >
-      Reclaiming leadership as a{" "}
+      Reclaiming Leadership as a{" "}
       <span
         className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4"
         style={{
@@ -3033,9 +3033,9 @@ export default function FellowshipPage() {
           letterSpacing: "inherit",
         }}
       >
-        sacred responsibility
+        Sacred Responsibility
       </span>{" "}
-      toward the flourishing of all life.
+      Towards the Flourishing of All Life.
     </h2>
 
     {/* ========================================================= */}
@@ -3045,11 +3045,22 @@ export default function FellowshipPage() {
     <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        The Fellowship's structure, path, and pedagogy exist in service of a deeper question grounding our journey: Who must we become to respond to this moment with wisdom, maturity, and responsibility?
+        The Fellowship&apos;s structure, path, and pedagogy exist in service of
+        a deeper question grounding our journey: Who must we become to respond
+        to this moment with wisdom, maturity, and responsibility?
+      </p>
+
+      <p className="leading-relaxed">
+        We believe this question matters deeply in a culture where the dominant
+        images of human possibility are often too narrow for the challenges we
+        face. Part of our work is therefore to recover and cultivate richer
+        orientations toward who we might become.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        For us, this becoming involves four main shifts in our most fundamental relationships with all life—with ourselves, one another, the world, and the sacred.
+        For us this becoming involves four main shifts in our most fundamental
+        relationships with all life—with ourselves, one another, the world, and
+        the sacred.
       </p>
 
     </div>
