@@ -912,7 +912,7 @@ export default function TheoryOfChangePage() {
             title: 'Crisis of Relationship', 
             desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
-              { segments: [{ text: 'Deep Ecology Institute', url: '#' }], logo: '/logos/deepecology.png' }
+              { segments: [{ text: 'Elders & communities holding sacred ceremonies throughout generations', url: 'https://www.chacruna-iri.org/' }] }
             ]
           },
           { 
