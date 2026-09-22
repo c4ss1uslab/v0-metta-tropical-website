@@ -621,7 +621,7 @@ export default function TheoryOfChangePage() {
       </svg>
     </div>
 
-    <div className="text-center mb-8 border-b border-border pb-4 relative z-10">
+<div className="text-center mb-8 border-b border-border pb-4 relative z-10">
       <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 2</span>
       <h3 className="font-serif text-xl font-semibold text-foreground">The Structural Layer</h3>
       <p className="text-sm font-medium text-crimson mt-2">Meta-Systemic Dysfunctions</p>
@@ -644,31 +644,31 @@ export default function TheoryOfChangePage() {
             title: 'Crisis of Power', 
             desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.',
             references: [
-              { name: 'Open Society Foundations', logo: '/logos/opensociety.png' },
-              { name: 'Institute for Local Self-Reliance', logo: '/logos/ilsr.png' }
+              { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
+              { segments: [{ text: 'Institute for Local Self-Reliance', url: '#' }], logo: '/logos/ilsr.png' }
             ]
           },
           { 
             title: 'Crisis of Incentives', 
             desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.',
             references: [
-              { name: 'Center for Humane Technology', logo: '/logos/cht.png' }
+              { segments: [{ text: 'Center for Humane Technology', url: '#' }], logo: '/logos/cht.png' }
             ]
           },
           { 
             title: 'Crisis of Trust', 
             desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.',
             references: [
-              { name: 'Sensemaking Networks', logo: '/logos/sensemaking.png' },
-              { name: 'Wikidata Foundation', logo: '/logos/wikidata.png' }
+              { segments: [{ text: 'Sensemaking Networks', url: '#' }], logo: '/logos/sensemaking.png' },
+              { segments: [{ text: 'Wikidata Foundation', url: '#' }], logo: '/logos/wikidata.png' }
             ]
           },
           { 
             title: 'Crisis of Complexity', 
             desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', 
             references: [
-              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' },
-              { name: 'Stockholm Resilience Centre', logo: '/logos/stockholm.png' }
+              { segments: [{ text: 'Santa Fe Institute', url: '#' }], logo: '/logos/sfi.png' },
+              { segments: [{ text: 'Stockholm Resilience Centre', url: '#' }], logo: '/logos/stockholm.png' }
             ]
           }
         ].map((item, i) => {
@@ -715,26 +715,47 @@ export default function TheoryOfChangePage() {
                     </p>
 
                     <ul className="space-y-2">
-                      {item.references.map((ref) => (
-                        <li
-                          key={ref.name}
-                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-white"
-                        >
-                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                            <Image
-                              src={ref.logo}
-                              alt={`${ref.name} logo`}
-                              fill
-                              sizes="40px"
-                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                            />
-                          </div>
+                      {item.references.map((ref, refIndex) => {
+                        // Check if this reference is just one single clickable link
+                        const isOnlyLink = ref.segments.length === 1 && ref.segments[0].url;
 
-                          <span className="text-xs font-medium leading-snug text-foreground">
-                            {ref.name}
-                          </span>
-                        </li>
-                      ))}
+                        return (
+                          <li
+                            key={refIndex}
+                            // Added `relative` here so the stretched link respects this container
+                            className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-white"
+                          >
+                            <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                              <Image
+                                src={ref.logo}
+                                alt={`${ref.segments[0].text} logo`}
+                                fill
+                                sizes="40px"
+                                className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                              />
+                            </div>
+
+                            <span className="text-xs font-medium leading-snug text-foreground">
+                              {ref.segments.map((segment, segIndex) => (
+                                segment.url ? (
+                                  <a
+                                    key={segIndex}
+                                    href={segment.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    // Applies hover styles ONLY if it's not the only link
+                                    className={`transition-colors duration-200 ${isOnlyLink ? 'after:absolute after:inset-0' : 'hover:text-crimson hover:underline relative z-10'}`}
+                                  >
+                                    {segment.text}
+                                  </a>
+                                ) : (
+                                  <span key={segIndex}>{segment.text}</span>
+                                )
+                              ))}
+                            </span>
+                          </li>
+                        )
+                      })}
                     </ul>
 
                     <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
@@ -777,7 +798,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
+            <li className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
               <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
                 <Image
                   src="/logos/consilience.png"
@@ -789,11 +810,13 @@ export default function TheoryOfChangePage() {
               </div>
 
               <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
+                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 after:absolute after:inset-0">
+                  The Consilience Project
+                </a>
               </span>
             </li>
 
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
+            <li className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-cream">
               <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
                 <Image
                   src="/logos/metacrisis.png"
@@ -805,7 +828,9 @@ export default function TheoryOfChangePage() {
               </div>
 
               <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
+                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 after:absolute after:inset-0">
+                  The Meta-Crisis Institute
+                </a>
               </span>
             </li>
           </ul>
@@ -869,31 +894,38 @@ export default function TheoryOfChangePage() {
             title: 'Crisis of Perception', 
             desc: 'Persistent delusions of separation, misapprehending nature and reality.',
             references: [
-              { name: 'Schumacher College', logo: '/logos/schumacher.png' },
-              { name: 'Center for Ecoliteracy', logo: '/logos/ecoliteracy.png' }
+              { segments: [{ text: 'Schumacher College', url: '#' }], logo: '/logos/schumacher.png' },
+              { segments: [{ text: 'Center for Ecoliteracy', url: '#' }], logo: '/logos/ecoliteracy.png' }
             ]
           },
           { 
             title: 'Crisis of Relationship', 
             desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
-              { name: 'Deep Ecology Institute', logo: '/logos/deepecology.png' }
+              { segments: [{ text: 'Deep Ecology Institute', url: '#' }], logo: '/logos/deepecology.png' }
             ]
           },
           { 
             title: 'Crisis of Value', 
             desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', 
             references: [
-              { name: 'Perspectiva', logo: '/logos/perspectiva.png' },
-              { name: 'The Meta-Crisis Institute', logo: '/logos/metacrisis.png' }
+              { segments: [{ text: 'Perspectiva', url: '#' }], logo: '/logos/perspectiva.png' },
+              { segments: [{ text: 'The Meta-Crisis Institute', url: '#' }], logo: '/logos/metacrisis.png' }
             ]
           },
           { 
             title: 'Crisis of Capacity', 
             desc: 'Individuals are not developing the emotional, relational, spiritual and intellectual maturity at the same rate that our technologies are increasing in power and consequence.',
             references: [
-              { name: 'Consilience Project', logo: '/logos/consilience.png' },
-              { name: 'Santa Fe Institute', logo: '/logos/sfi.png' }
+              { 
+                segments: [
+                  { text: 'Consilience Project', url: 'https://consilienceproject.org' },
+                  { text: ' + ' },
+                  { text: 'other link', url: 'https://example.com' }
+                ], 
+                logo: '/logos/consilience.png' 
+              },
+              { segments: [{ text: 'Santa Fe Institute', url: '#' }], logo: '/logos/sfi.png' }
             ]
           }
         ].map((item, i) => {
@@ -940,26 +972,46 @@ export default function TheoryOfChangePage() {
                     </p>
 
                     <ul className="space-y-2">
-                      {item.references.map((ref) => (
-                        <li
-                          key={ref.name}
-                          className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white"
-                        >
-                          <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                            <Image
-                              src={ref.logo}
-                              alt={`${ref.name} logo`}
-                              fill
-                              sizes="40px"
-                              className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                            />
-                          </div>
+                      {item.references.map((ref, refIndex) => {
+                        const isOnlyLink = ref.segments.length === 1 && ref.segments[0].url;
 
-                          <span className="text-xs font-medium leading-snug text-foreground">
-                            {ref.name}
-                          </span>
-                        </li>
-                      ))}
+                        return (
+                          <li
+                            key={refIndex}
+                            // Added `relative` here
+                            className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white"
+                          >
+                            <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                              <Image
+                                src={ref.logo}
+                                alt={`${ref.segments[0].text} logo`}
+                                fill
+                                sizes="40px"
+                                className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                              />
+                            </div>
+
+                            <span className="text-xs font-medium leading-snug text-foreground">
+                              {ref.segments.map((segment, segIndex) => (
+                                segment.url ? (
+                                  <a
+                                    key={segIndex}
+                                    href={segment.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    // Applies hover styles ONLY if it's not the only link
+                                    className={`transition-colors duration-200 ${isOnlyLink ? 'after:absolute after:inset-0' : 'hover:text-olive hover:underline relative z-10'}`}
+                                  >
+                                    {segment.text}
+                                  </a>
+                                ) : (
+                                  <span key={segIndex}>{segment.text}</span>
+                                )
+                              ))}
+                            </span>
+                          </li>
+                        )
+                      })}
                     </ul>
 
                     <p className="mt-3 text-[10px] leading-relaxed text-muted-foreground/70">
@@ -1002,7 +1054,7 @@ export default function TheoryOfChangePage() {
           </p>
 
           <ul className="space-y-2">
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
+            <li className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
               <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
                 <Image
                   src="/logos/consilience.png"
@@ -1014,11 +1066,13 @@ export default function TheoryOfChangePage() {
               </div>
 
               <span className="text-xs font-medium leading-snug text-foreground">
-                The Consilience Project
+                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 after:absolute after:inset-0">
+                  The Consilience Project
+                </a>
               </span>
             </li>
 
-            <li className="group/ref flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
+            <li className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-cream/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-cream">
               <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
                 <Image
                   src="/logos/metacrisis.png"
@@ -1030,7 +1084,9 @@ export default function TheoryOfChangePage() {
               </div>
 
               <span className="text-xs font-medium leading-snug text-foreground">
-                The Meta-Crisis Institute
+                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 after:absolute after:inset-0">
+                  The Meta-Crisis Institute
+                </a>
               </span>
             </li>
           </ul>
