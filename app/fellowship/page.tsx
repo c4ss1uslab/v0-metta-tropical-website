@@ -3542,7 +3542,6 @@ export default function FellowshipPage() {
 
     </div>
 
-  </div>
 </section>
 
 {/* ========================================================= */}
