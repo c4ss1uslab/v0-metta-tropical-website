@@ -3049,9 +3049,7 @@ export default function FellowshipPage() {
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        For us, this transformation involves a shift in our relationship to all
-        life: with ourselves, with one another, with the world we participate
-        in, and with the sacred.
+        For us, this becoming involves four main shifts in our most fundamental relationships with all life—with ourselves, one another, the world, and the sacred.
       </p>
 
     </div>
