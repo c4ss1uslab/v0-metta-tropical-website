@@ -3277,19 +3277,11 @@ export default function FellowshipPage() {
     <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        This is a simple orientation toward four relationships we believe this
-        moment is asking us to deepen if we want to steward civilization
-        towards life-enhancing futures. Throughout history, humanity has
-        carried images of such possibility: the saint, the bodhisattva,
-        the spiritual warrior, the sacred activist—figures for whom inner
-        transformation became inseparable from responsibility and service
-        towards the whole.
+        These shifts point to the deeper horizon of our journey toward the types relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        The Fellowship is not only an attempt to reawaken this kind of
-        aspiration, but to create the conditions through which such becoming
-        can take root.
+        The Fellowship exists to cultivate the conditions for this becoming to take root, not merely as an aspiration, but as a different way of seeing, being, relating, and participating in the world.
       </p>
 
     </div>
