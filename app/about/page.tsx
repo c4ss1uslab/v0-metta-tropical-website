@@ -294,7 +294,7 @@ export default function AboutPage() {
         </section>
 
 {/* Why Collective? */}
-<section className="py-12 pt-12 lg:py-24 lg:pt-16 bg-cream text-foreground">
+<section className="pt-12 lg:pt-16 bg-cream text-foreground">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-stretch"> {/* added items-stretch */}
       
@@ -350,18 +350,22 @@ export default function AboutPage() {
     </div>
   </div>
 
-  <div className="w-full mt-20 overflow-hidden opacity-30">
-      <svg className="w-full h-8 text-[#8b0000]" preserveAspectRatio="none" viewBox="0 0 100 20">
-        <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-        <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
+  {/* divider element in the previous section */}
+  <div className="w-full mt-20 flex flex-col relative z-10">
+      <svg className="w-full h-10 block overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 25">
+        
+        {/* Decorative Lines Group */}
+        <g className="opacity-30 text-[#8b0000]">
+          <polyline points="0,20 5,0 10,20 15,0 20,20 25,0 30,20 35,0 40,20 45,0 50,20 55,0 60,20 65,0 70,20 75,0 80,20 85,0 90,20 95,0 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
+          <polyline points="0,18 5,2 10,18 15,2 20,18 25,2 30,18 35,2 40,18 45,2 50,18 55,2 60,18 65,2 70,18 75,2 80,18 85,2 90,18 95,2 100,18" fill="none" stroke="#b8860b" strokeWidth="0.5" />
+        </g>
       </svg>
     </div>
 </section>
 
 {/* Who We Must Become — The Bodhisattva Aspiration */}
-<section className="relative overflow-x-clip -mt-6 bg-cream min-h-[200vh]">
+<section className="relative overflow-x-clip py-12 bg-cream min-h-[200vh]">
   {/* Dynamic Keyframes injected safely into the render tree */}
-    <ParallaxIncenseSection>
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
     <div>
       {/* Header */}
@@ -488,11 +492,10 @@ export default function AboutPage() {
       </div>
     </div>
   </div>
-  </ParallaxIncenseSection>
 </section>
 
 {/* Our Vows */}
-<section className="bg-[#FFFDF6] py-16 lg:py-20">
+<section className="bg-[#FFFDF6] py-12 lg:py-20">
   <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     {/* Header */}
     <div className="mb-12 text-center">
@@ -638,32 +641,6 @@ export default function AboutPage() {
         articulated by Alnoor Ladha and Lynn Murphy. We offer ours as part of
         our own surrender to what this moment is asking of us.
       </p>
-    </div>
-  </div>
-</section>
-
-{/* CTA */}
-<section className="bg-olive py-14 lg:py-16">
-  <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground">
-      If you want to discover our work in more depth, we invite you to explore
-      our Fellowship and Theory of Change.
-    </p>
-
-    <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <Link
-        href="/fellowship"
-        className="inline-flex w-full items-center justify-center bg-[#D9A01B] px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-[#B88610] sm:w-56"
-      >
-        Explore the Fellowship
-      </Link>
-
-      <Link
-        href="/theory-of-change"
-        className="inline-flex w-full items-center justify-center bg-foreground px-8 py-3 text-sm font-medium tracking-wide text-background transition-colors hover:bg-foreground/90 sm:w-56"
-      >
-        Theory of Change
-      </Link>
     </div>
   </div>
 </section>
