@@ -7259,42 +7259,66 @@ export default function FellowshipPage() {
 </section>
 
 
-        {/* FINAL CTA */}
-        <section id="apply" className="scroll-mt-24 bg-yellow py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-            <p className="text-sm font-medium uppercase tracking-wide text-foreground/60">
-              Metta Tropical Fellowship
-            </p>
+{/* ========================================================= */}
+{/* FINAL CTA */}
+{/* ========================================================= */}
 
-            <h2 className="mx-auto mt-4 max-w-3xl font-serif text-3xl font-medium leading-tight text-foreground md:text-4xl lg:text-5xl">
-              What is this moment in history asking of your life?
-            </h2>
+<section
+  id="apply"
+  className="scroll-mt-24 bg-[#E2EDAA] py-16 lg:py-20"
+>
+  <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
 
-            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-foreground/80">
-              If something in you comes alive in response to this journey, we
-              invite you to listen to it.
-            </p>
+    {/* Fellowship Label — Dark Blue */}
+    <p className="text-sm font-medium uppercase tracking-wide text-[#111827]">
+      Metta Tropical Fellowship
+    </p>
 
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="mailto:fellowship@mettatropical.org?subject=Metta%20Tropical%20Fellowship%20Application"
-                className="inline-flex items-center justify-center bg-foreground px-8 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
-              >
-                Begin Application
-              </a>
+    {/* Main Question — Gill Sans and Smaller Font */}
+    <h2
+      className="mx-auto mt-4 max-w-3xl text-2xl font-semibold leading-[1.12] tracking-[-0.025em] text-foreground md:text-3xl"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      What is this moment in history asking of your life?
+    </h2>
 
-              <a
-                href="mailto:fellowship@mettatropical.org?subject=Fellowship%20Question"
-                className="inline-flex items-center justify-center border border-foreground px-8 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/10"
-              >
-                Ask a Question
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
+    {/* Invitation Text */}
+    <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-foreground/80">
+      If something in you comes alive in response to this journey, we
+      invite you to listen to it.
+    </p>
 
-      <Footer />
-    </>
-  )
+    {/* CTA Buttons */}
+    <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+
+      {/* Begin Application */}
+      <a
+        href="mailto:fellowship@mettatropical.org?subject=Metta%20Tropical%20Fellowship%20Application"
+        className="inline-flex items-center justify-center bg-foreground px-8 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+      >
+        Begin Application
+      </a>
+
+      {/* Join the Newsletter */}
+      <a
+        href="REPLACE_WITH_NEWSLETTER_SUBSCRIPTION_URL"
+        className="inline-flex items-center justify-center border border-foreground px-8 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground/10"
+      >
+        Join the Newsletter
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<Footer />
+
+</>
+)
 }
