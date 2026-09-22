@@ -3291,10 +3291,6 @@ export default function FellowshipPage() {
         These shifts point to the deeper horizon of our journey toward the types of relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
       </p>
 
-      <p className="font-medium leading-relaxed text-foreground">
-        The Fellowship exists to cultivate the conditions for this becoming to take root, not merely as an aspiration, but as a different way of seeing, being, relating, and participating in the world.
-      </p>
-
     </div>
 
   </div>
