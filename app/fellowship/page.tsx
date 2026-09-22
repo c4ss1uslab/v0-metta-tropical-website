@@ -549,10 +549,10 @@ export default function FellowshipPage() {
   <p className="leading-relaxed">
     We are calling together Brazilian young adults aged 18–29 who feel the
     depth of our crisis in their bones and long to offer their lives
-    meaningfully in response—post-activist artists, educators, leaders,
+    meaningfully in response—post-activist leaders, artists, educators,
     organizers, change-makers, thinkers, and spiritual practitioners,
-    willing to undergo the kind of transformation needed to navigate and
-    respond wisely to these times.
+    willing to undergo the kind of transformation needed to wisely navigate and
+    respond to these collapsing times.
   </p>
 
 </div>
