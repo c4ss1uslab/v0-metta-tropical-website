@@ -2292,9 +2292,10 @@ export default function FellowshipPage() {
     {/*
       Stable stream layout:
       - 60% text / 40% image on desktop, alternating sides.
-      - Images keep their original proportions via object-cover and never grow
-        when Learn more expands the neighboring text card. On desktop, each
-        image stays in view as the reader scrolls the expanded text.
+      - Images retain their crop via object-cover and never grow
+        when Learn more expands the neighboring text card.
+      - Closed cards and images are 505px tall on desktop; internal vertical
+        spacing is slightly tighter so Learn more is easier to see.
       - Details remain click/tap/keyboard accessible and expand in normal page
         flow: no nested scrollbar or hidden text.
     */}
@@ -2308,7 +2309,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
 
           <div>
 
@@ -2326,14 +2327,13 @@ export default function FellowshipPage() {
               Remembering What Ultimately Matters
             </p>
 
-            {/* Updated questions */}
-            <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What is intrinsically valuable? What makes a life meaningful?
               What is worthy of our devotion? What is the true nature of
               reality we participate in?
             </p>
 
-            <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
+            <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 We begin here because every path of transformation is oriented
@@ -2353,9 +2353,9 @@ export default function FellowshipPage() {
           </div>
 
           {/* Learn More */}
-          <details className="group mt-auto pt-5">
+          <details className="group mt-auto pt-3">
 
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
 
               <span>Learn more</span>
 
@@ -2421,8 +2421,8 @@ export default function FellowshipPage() {
 
         </article>
 
-        {/* Fixed-height image: does not stretch when details expand */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[540px] md:self-start">
+        {/* Fixed-height image */}
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
 
           <img
             src="https://i.postimg.cc/L8qnkWsn/cosmos-1430999382.jpg"
@@ -2442,7 +2442,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[540px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
 
           <img
             src="https://i.postimg.cc/VLPJ9gCj/cosmos-361211120.jpg"
@@ -2454,7 +2454,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
 
           <div>
 
@@ -2472,15 +2472,14 @@ export default function FellowshipPage() {
               Remembering Who We Are
             </p>
 
-            {/* Updated questions */}
-            <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What is my true nature? What is a human being for? What does it
               mean to meet ourselves and each other more truthfully? How might
               we recover our capacity to sense the world with soul? How can
               relationships become a doorway into the sacred?
             </p>
 
-            <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
+            <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 This stream explores the emotional, psychological, relational,
@@ -2497,9 +2496,9 @@ export default function FellowshipPage() {
           </div>
 
           {/* Learn More */}
-          <details className="group mt-auto pt-5">
+          <details className="group mt-auto pt-3">
 
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
 
               <span>Learn more</span>
 
@@ -2573,7 +2572,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
 
           <div>
 
@@ -2591,15 +2590,14 @@ export default function FellowshipPage() {
               Remembering Where We Are
             </p>
 
-            {/* Updated questions */}
-            <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does it mean to be in a time between worlds? What are the
               underlying causes of the metacrisis? How does change happen?
               How do systems learn and collapse? How deeply have the logics
               of modernity colonized our minds, desires and imagination?
             </p>
 
-            <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
+            <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 With a deeper sense of who we are, we turn toward the complexity
@@ -2615,9 +2613,9 @@ export default function FellowshipPage() {
           </div>
 
           {/* Learn More */}
-          <details className="group mt-auto pt-5">
+          <details className="group mt-auto pt-3">
 
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
 
               <span>Learn more</span>
 
@@ -2681,7 +2679,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[540px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
 
           <img
             src="https://i.postimg.cc/nz1zcbdr/cosmos-805790790.jpg"
@@ -2701,7 +2699,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[540px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
 
           <img
             src="https://i.postimg.cc/tTjqf30C/cosmos-111542218.jpg"
@@ -2713,7 +2711,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
 
           <div>
 
@@ -2731,15 +2729,14 @@ export default function FellowshipPage() {
               Remembering Our Place In The Web of Life
             </p>
 
-            {/* Updated questions */}
-            <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does the more-than-human world know that we have forgotten?
               How might we organize life through reciprocity rather than
               ownership? What would it mean to encounter another world without
               colonizing it? What changes when a river becomes a relative?
             </p>
 
-            <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
+            <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 Having explored the systems of the human world, we return to
@@ -2756,9 +2753,9 @@ export default function FellowshipPage() {
           </div>
 
           {/* Learn More */}
-          <details className="group mt-auto pt-5">
+          <details className="group mt-auto pt-3">
 
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
 
               <span>Learn more</span>
 
@@ -2826,7 +2823,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[540px] md:p-7">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
 
           <div>
 
@@ -2844,8 +2841,7 @@ export default function FellowshipPage() {
               Remembering How to Respond to This Moment
             </p>
 
-            {/* Updated questions */}
-            <p className="mt-4 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does this moment ask of us—together? What is uniquely ours
               to offer? What is our responsibility at this time? How have
               people in history dealt with moments of collapse, and what are
@@ -2853,7 +2849,7 @@ export default function FellowshipPage() {
               society?
             </p>
 
-            <div className="mt-5 border-t border-[#D9A01B]/40 pt-4">
+            <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 This stream brings us into direct contact with people,
@@ -2867,9 +2863,9 @@ export default function FellowshipPage() {
           </div>
 
           {/* Learn More */}
-          <details className="group mt-auto pt-5">
+          <details className="group mt-auto pt-3">
 
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-4 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
 
               <span>Learn more</span>
 
@@ -2943,7 +2939,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[540px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
 
           <img
             src="https://i.postimg.cc/5yyVd6jh/cosmos-892464698.jpg"
