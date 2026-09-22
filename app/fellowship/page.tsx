@@ -3045,7 +3045,7 @@ export default function FellowshipPage() {
     <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        The Fellowship's structure, path, and pedagogy laid out above exist in service of a deeper question grounding our journey: Who must we become to respond to this moment with wisdom, maturity, and responsibility?
+        The Fellowship's structure, path, and pedagogy exist in service of a deeper question grounding our journey: Who must we become to respond to this moment with wisdom, maturity, and responsibility?
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
@@ -3277,7 +3277,7 @@ export default function FellowshipPage() {
     <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        These shifts point to the deeper horizon of our journey toward the types relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
+        These shifts point to the deeper horizon of our journey toward the types of relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
