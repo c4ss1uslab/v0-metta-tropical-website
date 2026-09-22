@@ -719,7 +719,7 @@ return (
                         const isOnlyLink = ref.segments.length === 1 && ref.segments[0].url;
 
                         return (
-<li
+                        <li
                             key={refIndex}
                             // We dynamically change the padding/gap of the whole box here!
                             className={`group/ref relative flex items-center rounded-lg border border-gray-200/80 bg-white/70 transition-all duration-200 hover:border-olive/40 hover:bg-white ${
@@ -920,7 +920,8 @@ return (
             title: 'Crisis of Relationship', 
             desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
-              { segments: [{ text: 'Elders & communities holding sacred ceremonies throughout generations', url: 'https://www.chacruna-iri.org/' }] }
+              { segments: [{ text: 'Elders & communities holding sacred ceremonies throughout generations', url: 'https://www.chacruna-iri.org/', logo: 'https://www.google.com/s2/favicons?domain_url=https://www.chacruna-iri.org////&sz=256' }] },
+              { segments: [{ text: 'Women and community leaders reweaving social fabric', url: 'https://www.chacruna-iri.org/', logo: 'https://www.google.com/s2/favicons?domain_url=https://ibeac.org.br/////&sz=256' }] }
             ]
           },
           { 
