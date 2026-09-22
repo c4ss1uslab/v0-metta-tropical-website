@@ -3045,13 +3045,7 @@ export default function FellowshipPage() {
     <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        Human beings grow toward the horizons of possibility they are able to
-        imagine. We are formed not only by what we are taught, but by the
-        images our cultures teach us to admire and aspire toward. Yet at a
-        moment asking so much of humanity, many of the dominant images
-        available to us—the achiever, the entrepreneur, the conscious leader,
-        even the changemaker—feel too small for the depth of transformation
-        this moment requires.
+        The Fellowship's structure, path, and pedagogy laid out above exist in service of a deeper question grounding our journey: Who must we become to respond to this moment with wisdom, maturity, and responsibility?
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
