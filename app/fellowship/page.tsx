@@ -3088,14 +3088,11 @@ export default function FellowshipPage() {
     {/*
       Updated layout:
 
-      - All four boxes shift 76px (approximately 2 cm) to the right.
-      - The grid becomes 76px narrower to stay within the right page margin.
-      - The image remains anchored near the left viewport edge.
-      - Its right edge extends another 38px (approximately 1 cm)
-        into the boxes relative to their new position.
-      - The image begins partway down Self.
-      - The image extends 32px below World.
-      - Self and World have slightly translucent white backgrounds.
+      - Restores the original full-width grid.
+      - All four boxes shift 38px (approximately 1 cm) to the right.
+      - No reduction in box width.
+      - Image remains anchored near the left viewport edge.
+      - Image overlap is adjusted to match the new box position.
       - Existing hover interactions remain unchanged.
       - Desktop adjustments activate at the lg breakpoint.
     */}
@@ -3121,7 +3118,7 @@ export default function FellowshipPage() {
         "
         style={{
           left: "calc(50% - 50vw + 24px)",
-          right: "calc(100% - 76px - 5vw - 38px)",
+          right: "calc(100% - 38px - 5vw - 38px)",
         }}
       >
         <img
@@ -3133,7 +3130,7 @@ export default function FellowshipPage() {
       </div>
 
       {/* ===================================================== */}
-      {/* FOUR-CARD GRID — SHIFTED 2 CM TO THE RIGHT */}
+      {/* FOUR-CARD GRID — ORIGINAL SIZE, SHIFTED RIGHT 1 CM */}
       {/* ===================================================== */}
 
       <div
@@ -3141,12 +3138,12 @@ export default function FellowshipPage() {
           relative
           z-10
           grid
+          w-full
           grid-cols-1
           items-stretch
           gap-2
           md:grid-cols-2
-          lg:ml-[76px]
-          lg:w-[calc(100%-76px)]
+          lg:translate-x-[38px]
         "
       >
 
