@@ -904,7 +904,7 @@ export default function TheoryOfChangePage() {
             references: [
               { segments: [{ text: 'GTDF - 4 Denials', url: 'https://decolonialfutures.net/4denials/' }, { text: ' + '}, { text: 'House of Modernity', url: 'https://www.researchgate.net/publication/341801995_Gesturing_Towards_Decolonial_Futures_Reflections_on_Our_Learnings_Thus_Far' }],
               logo: '/logos/gtdf.png' },
-              { segments: [{ text: 'Center for Ecoliteracy', url: '#' }], logo: '/logos/ecoliteracy.png' }
+              { segments: [{ text: 'Jason Hickel on Neocolonialism', url: 'https://www.sciencedirect.com/science/article/pii/S0921800926001400' }], logo: '/logos/ecoliteracy.png' }
             ]
           },
 
