@@ -2294,10 +2294,9 @@ export default function FellowshipPage() {
       - 60% text / 40% image on desktop, alternating sides.
       - Images retain their crop via object-cover and never grow
         when Learn more expands the neighboring text card.
-      - Closed cards and images are 505px tall on desktop; internal vertical
-        spacing is slightly tighter so Learn more is easier to see.
-      - Details remain click/tap/keyboard accessible and expand in normal page
-        flow: no nested scrollbar or hidden text.
+      - Closed cards have a minimum height of 486px on desktop.
+      - Images are fixed at 486px on desktop.
+      - Details expand in normal page flow without internal scrolling.
     */}
 
     <div className="mt-12 space-y-8 lg:space-y-10">
@@ -2309,7 +2308,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2422,7 +2421,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Fixed-height image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
             src="https://i.postimg.cc/L8qnkWsn/cosmos-1430999382.jpg"
@@ -2442,7 +2441,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
             src="https://i.postimg.cc/VLPJ9gCj/cosmos-361211120.jpg"
@@ -2454,7 +2453,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2572,7 +2571,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2679,7 +2678,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
             src="https://i.postimg.cc/nz1zcbdr/cosmos-805790790.jpg"
@@ -2699,7 +2698,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
             src="https://i.postimg.cc/tTjqf30C/cosmos-111542218.jpg"
@@ -2711,7 +2710,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2823,7 +2822,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[505px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col bg-white/80 p-6 shadow-[0_5px_22px_rgba(15,23,42,0.09)] md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2939,7 +2938,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* Image */}
-        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[505px] md:self-start">
+        <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
             src="https://i.postimg.cc/5yyVd6jh/cosmos-892464698.jpg"
