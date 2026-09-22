@@ -938,9 +938,10 @@ return (
             references: [
               { segments: [
                   { text: 'Facing Human Wrongs', url: 'https://facinghumanwrongs.net/' }], 
-                logo: '/logos/consilience.png' 
+                logo: 'https://www.google.com/s2/favicons?domain_url=https://facinghumanwrongs.net/////&sz=256'
               },
-              { segments: [{ text: 'Santa Fe Institute', url: '#' }], logo: '/logos/sfi.png' }
+              { segments: [{ text: 'School of Wise Innovation', url: 'https://wiseinnovation.school/' }], logo: 'https://media.licdn.com/dms/image/v2/D560BAQHxVTF3D6Uqyw/company-logo_200_200/company-logo_200_200/0/1704693403750?e=1791417600&v=beta&t=gHZ8oMlMUsAL2b8sXdIaceplHYjBV0FtviyD545Z3aU'},
+              { segments: [{ text: 'Ecoversities Alliance', url: 'https://ecoversities.org/' }], logo: 'https://i.postimg.cc/dtZb1BMN/ecoversities-logo.png'},
             ]
           }
         ].map((item, i) => {
