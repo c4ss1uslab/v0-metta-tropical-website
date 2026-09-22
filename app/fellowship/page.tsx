@@ -2962,21 +2962,16 @@ export default function FellowshipPage() {
 
     </div>
 
-    {/* ========================================================= */}
-    {/* CLOSING — WIDER YELLOW BOX */}
-    {/* ========================================================= */}
+{/* ========================================================= */}
+{/* CLOSING — WIDER YELLOW BOX + IMAGE */}
+{/* ========================================================= */}
 
-    {/*
-      Previous width: max-w-4xl (896px).
-      New width: up to 1100px, within the section container.
+<div className="mx-auto mt-12 w-full max-w-[1100px]">
+  <div className="grid grid-cols-1 gap-5 md:grid-cols-[3fr_2fr] md:items-stretch">
 
-      This adds approximately 2–3cm on each side on desktop.
-      The left border increases from 4px to 8px.
-    */}
-
-    <div className="mx-auto mt-12 w-full max-w-[1100px] border-l-8 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
-
-      <p className="mt-4 text-lg leading-relaxed text-foreground md:text-xl">
+    {/* Text Box — 60% */}
+    <div className="flex h-full flex-col justify-between border-l-8 border-[#D9A01B] bg-[#FFF9E9] px-6 py-8 shadow-[0_8px_24px_rgba(15,23,42,0.04)] md:px-8">
+      <p className="text-lg leading-relaxed text-foreground md:text-xl">
         At the heart of our pedagogy lies an aspiration not simply to understand
         interdependence, sacredness, love, and the intrinsic value of life, but
         to cultivate the practices, relationships, and conditions through which
@@ -2990,10 +2985,21 @@ export default function FellowshipPage() {
       >
         Go Deeper on Relational Ontological Pedagogy →
       </a>
+    </div>
 
+    {/* Image — 40% */}
+    <div className="h-full overflow-hidden shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
+      <img
+        src="https://i.postimg.cc/qvNpQjrX/DSCF5581.jpg"
+        alt="Metta Tropical Fellowship gathering"
+        className="h-full w-full object-cover"
+      />
     </div>
 
   </div>
+</div>
+
+</div>
 </section>
 
 {/* ========================================================= */}
