@@ -677,11 +677,11 @@ export default function TheoryOfChangePage() {
           const isGlowing = animationState === 'looping' && inLayer2 && Math.abs(verticalPos - targetY) < 15;
           const hasReferences = item.references && item.references.length > 0;
 
-          return (
+return (
             <div 
               key={i} 
-              className={`group w-full p-4 rounded-xl border-l-4 border-crimson bg-cream transition-all duration-300
-                ${isGlowing ? 'shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'shadow-sm hover:shadow-[0_0_15px_rgba(220,20,60,0.2)]'}`}
+              className={`group w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
+                ${isGlowing ? 'border-crimson shadow-[0_0_15px_rgba(220,20,60,0.5)] scale-[1.03]' : 'border-olive shadow-sm hover:shadow-[0_0_15px_rgba(107,142,35,0.2)]'}`}
             >
               <details className="group/details w-full">
                 <summary className={`list-none outline-none [&::-webkit-details-marker]:hidden ${hasReferences ? 'cursor-pointer' : 'cursor-default'}`}>
@@ -693,7 +693,7 @@ export default function TheoryOfChangePage() {
                     {/* Inline Expand Arrow */}
                     {hasReferences && (
                       <svg
-                        className="mt-1 h-3.5 w-3.5 shrink-0 text-crimson transition-transform duration-300 group-open/details:rotate-180 hover:text-crimson/80"
+                        className="mt-1 h-3.5 w-3.5 shrink-0 text-olive transition-transform duration-300 group-open/details:rotate-180 hover:text-olive/80"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -709,32 +709,37 @@ export default function TheoryOfChangePage() {
 
                 {/* Hidden references block - expands downward when opened */}
                 {hasReferences && (
-                  <div className="mt-3 border-t border-crimson/20 pt-3">
-                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-crimson/80">
+                  <div className="mt-3 border-t border-olive/20 pt-3">
+                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-olive/80">
                       Suggested resources
                     </p>
 
                     <ul className="space-y-2">
                       {item.references.map((ref, refIndex) => {
-                        // Check if this reference is just one single clickable link
                         const isOnlyLink = ref.segments.length === 1 && ref.segments[0].url;
 
                         return (
-                          <li
+<li
                             key={refIndex}
-                            // Added `relative` here so the stretched link respects this container
-                            className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-crimson/40 hover:bg-white"
+                            // We dynamically change the padding/gap of the whole box here!
+                            className={`group/ref relative flex items-center rounded-lg border border-gray-200/80 bg-white/70 transition-all duration-200 hover:border-olive/40 hover:bg-white ${
+                              ref.logo ? 'gap-3 p-2' : 'px-5 py-3'
+                            }`}
                           >
-                            <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                              <Image
-                                src={ref.logo}
-                                alt={`${ref.segments[0].text} logo`}
-                                fill
-                                sizes="40px"
-                                className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                              />
-                            </div>
+                            {/* ONLY render this block if ref.logo exists */}
+                            {ref.logo && (
+                              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                                <Image
+                                  src={ref.logo}
+                                  alt={`${ref.segments[0].text} logo`}
+                                  fill
+                                  sizes="40px"
+                                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                                />
+                              </div>
+                            )}
 
+                            {/* Removed the margin from here, relying on the li padding instead */}
                             <span className="text-xs font-medium leading-snug text-foreground">
                               {ref.segments.map((segment, segIndex) => (
                                 segment.url ? (
@@ -743,8 +748,11 @@ export default function TheoryOfChangePage() {
                                     href={segment.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    // Applies hover styles ONLY if it's not the only link
-                                    className={`transition-colors duration-200 ${isOnlyLink ? 'after:absolute after:inset-0' : 'hover:text-crimson hover:underline relative z-10'}`}
+                                    className={`transition-colors duration-200 ${
+                                      isOnlyLink
+                                        ? 'after:absolute after:inset-0'
+                                        : 'hover:text-olive hover:underline relative z-10'
+                                    }`}
                                   >
                                     {segment.text}
                                   </a>
@@ -754,7 +762,7 @@ export default function TheoryOfChangePage() {
                               ))}
                             </span>
                           </li>
-                        )
+                          )
                       })}
                     </ul>
 
@@ -766,7 +774,7 @@ export default function TheoryOfChangePage() {
               </details>
             </div>
           )
-        })}
+                  })}
       </div>
     </div>
     
@@ -944,7 +952,7 @@ export default function TheoryOfChangePage() {
           const isGlowing = animationState === 'looping' && inLayer3 && Math.abs(verticalPos - targetY) < 15;
           const hasReferences = item.references && item.references.length > 0;
 
-          return (
+return (
             <div 
               key={i} 
               className={`group w-full p-4 rounded-xl border-l-4 bg-cream transition-all duration-300
@@ -991,15 +999,18 @@ export default function TheoryOfChangePage() {
                             // Added `relative` here
                             className="group/ref relative flex items-center gap-3 rounded-lg border border-gray-200/80 bg-white/70 p-2 transition-all duration-200 hover:border-olive/40 hover:bg-white"
                           >
-                            <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
-                              <Image
-                                src={ref.logo}
-                                alt={`${ref.segments[0].text} logo`}
-                                fill
-                                sizes="40px"
-                                className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
-                              />
-                            </div>
+                            {/* ONLY render this block if ref.logo exists */}
+                            {ref.logo && (
+                              <div className="relative flex h-8 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-white">
+                                <Image
+                                  src={ref.logo}
+                                  alt={`${ref.segments[0].text} logo`}
+                                  fill
+                                  sizes="40px"
+                                  className="object-contain p-1 opacity-80 grayscale transition-all duration-300 group-hover/ref:opacity-100 group-hover/ref:grayscale-0"
+                                />
+                              </div>
+                            )}
 
                             <span className="text-xs font-medium leading-snug text-foreground">
                               {ref.segments.map((segment, segIndex) => (
@@ -1010,7 +1021,7 @@ export default function TheoryOfChangePage() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     // Applies hover styles ONLY if it's not the only link
-                                    className={`transition-colors duration-200 ${isOnlyLink ? 'after:absolute after:inset-0' : 'hover:text-olive hover:underline relative z-10'}`}
+                                    className={`transition-colors duration-200 ${isOnlyLink ? 'after:absolute after:inset-5' : 'hover:text-olive hover:underline relative z-10'}`}
                                   >
                                     {segment.text}
                                   </a>
