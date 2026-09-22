@@ -126,7 +126,7 @@ export default function TheoryOfChangePage() {
       className="absolute inset-0 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://i.postimg.cc/C5m58hp3/cosmos-505503782.jpg')",
+          "url('https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg')",
       }}
     />
 
