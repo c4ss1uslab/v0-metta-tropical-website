@@ -3008,7 +3008,7 @@ export default function FellowshipPage() {
 
 <section
   id="who-we-must-become"
-  className="scroll-mt-32 overflow-x-clip bg-[#FFFDF6] py-20 lg:py-24"
+  className="scroll-mt-32 bg-[#FFFDF6] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
@@ -3075,455 +3075,402 @@ export default function FellowshipPage() {
       <p className="font-medium leading-relaxed text-foreground">
         For us this becoming involves four main shifts in our most fundamental
         relationships with all life—with ourselves, one another, the world, and
-        the sacred. Each shift is supported by capacities that help these deeper
-        ways of relating become lived realities.
+        the sacred. Each shift is supported by capacities that help these deeper ways of relating become lived realities.
       </p>
 
     </div>
 
-    {/* ========================================================= */}
-    {/* FOUR RELATIONSHIPS — FULL-WIDTH IMAGE BACKGROUND */}
-    {/* ========================================================= */}
+{/* ========================================================= */}
+{/* FOUR RELATIONSHIPS */}
+{/* ========================================================= */}
 
-    {/*
-      Updated design:
+{/*
+  Updated interaction:
+  - The four cards remain equal-height and visually clean.
+  - Capacities are hidden by default.
+  - Hovering over a card reveals a soft overlay with the capacities.
+  - Keyboard focus / tapping can also reveal the capacities.
+  - The overlay does not change the height of the card or shift the layout.
+*/}
 
-      - The background image spans the entire viewport width.
-      - The image extends 32px above and below the four cards.
-      - Increased spacing between the introduction and image.
-      - Increased spacing between the image and closing paragraph.
-      - Self and World now use 95% opaque white backgrounds.
-      - Other and The Sacred retain their solid white backgrounds.
-      - Cards remain above the image, with their hover interactions intact.
-      - On mobile, the image remains hidden for readability.
-    */}
+<div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
 
-    <div className="relative isolate mt-24">
+  {/* ===================================================== */}
+  {/* SELF */}
+  {/* ===================================================== */}
 
-      {/* ===================================================== */}
-      {/* FULL-WIDTH BACKGROUND IMAGE */}
-      {/* ===================================================== */}
+  <article
+    tabIndex={0}
+    className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+  >
 
-      <div
-        aria-hidden="true"
-        className="
-          pointer-events-none
-          absolute
-          -bottom-8
-          -top-8
-          left-1/2
-          z-0
-          hidden
-          w-screen
-          -translate-x-1/2
-          overflow-hidden
-          shadow-[0_8px_30px_rgba(15,23,42,0.10)]
-          md:block
-        "
+    {/* Box Title */}
+    <span
+      className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+        color: "#A65325",
+      }}
+    >
+      Self
+    </span>
+
+    {/* Transformation */}
+    <h3
+      className="mt-3 text-lg font-medium leading-snug text-foreground"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      From Fragmentation{" "}
+      <span
+        className="mx-2"
+        style={{
+          color: "#B96A32",
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: 700,
+          lineHeight: "inherit",
+          opacity: 1,
+        }}
       >
-        <img
-          src="https://i.postimg.cc/8ctg1rdN/cosmos-422528646.jpg"
-          alt=""
-          loading="lazy"
-          className="h-full w-full object-cover"
-        />
-      </div>
+        →
+      </span>{" "}
+      Towards Wholeness
+    </h3>
 
-      {/* ===================================================== */}
-      {/* FOUR-CARD GRID — ABOVE THE IMAGE */}
-      {/* ===================================================== */}
+    {/* Description */}
+    <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+      Remembering who we are beneath our conditioning, while learning to meet
+      the many parts of ourselves with presence, compassion, and love—becoming
+      less governed by fear, wounds, and protective patterns, and more able to
+      live from a deeper ground of wholeness.
+    </p>
 
-      <div className="relative z-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
+    {/* Hover Cue */}
+    <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
+      Explore capacities →
+    </p>
 
-        {/* ===================================================== */}
-        {/* SELF */}
-        {/* ===================================================== */}
+    {/* Capacities Hover Overlay */}
+    <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
 
-        <article
-          tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/95 md:p-7"
+      <div>
+        <p
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+          }}
         >
+          Self
+        </p>
 
-          {/* Box Title */}
-          <span
-            className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              color: "#A65325",
-            }}
-          >
-            Self
-          </span>
-
-          {/* Transformation */}
-          <h3
-            className="mt-3 text-lg font-medium leading-snug text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            From Fragmentation{" "}
-            <span
-              className="mx-2"
-              style={{
-                color: "#B96A32",
-                fontFamily: "inherit",
-                fontSize: "inherit",
-                fontWeight: 700,
-                lineHeight: "inherit",
-                opacity: 1,
-              }}
-            >
-              →
-            </span>{" "}
-            Towards Wholeness
-          </h3>
-
-          {/* Description */}
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-            Remembering who we are beneath our conditioning, while learning to meet
-            the many parts of ourselves with presence, compassion, and love—becoming
-            less governed by fear, wounds, and protective patterns, and more able to
-            live from a deeper ground of wholeness.
-          </p>
-
-          {/* Hover Cue */}
-          <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
-            Explore capacities →
-          </p>
-
-          {/* Capacities Hover Overlay */}
-          <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
-
-            <div>
-
-              <p
-                className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
-                style={{
-                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
-                }}
-              >
-                Self
-              </p>
-
-              <p
-                className="mt-4 text-lg font-semibold leading-snug text-foreground"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Capacities we cultivate
-              </p>
-
-              <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
-                Self-Awareness · Presence · Self-Inquiry · Self-Compassion ·
-                Emotional Maturity · Attunement · Embodied Awareness
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
-        {/* ===================================================== */}
-        {/* OTHER */}
-        {/* ===================================================== */}
-
-        <article
-          tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+        <p
+          className="mt-4 text-lg font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
         >
+          Capacities we cultivate
+        </p>
 
-          {/* Box Title */}
-          <span
-            className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              color: "#A65325",
-            }}
-          >
-            Other
-          </span>
-
-          {/* Transformation */}
-          <h3
-            className="mt-3 text-lg font-medium leading-snug text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            From Separation{" "}
-            <span
-              className="mx-2"
-              style={{
-                color: "#B96A32",
-                fontFamily: "inherit",
-                fontSize: "inherit",
-                fontWeight: 700,
-                lineHeight: "inherit",
-                opacity: 1,
-              }}
-            >
-              →
-            </span>{" "}
-            Towards Interbeing
-          </h3>
-
-          {/* Description */}
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-            Reawakening to our entanglement with other beings, human and
-            more-than-human, encountering them not as objects or resources, but as
-            lives of intrinsic worth—and cultivating relationships grounded in
-            intimacy, reciprocity, and genuine care for each others flourishing.
-          </p>
-
-          {/* Hover Cue */}
-          <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
-            Explore capacities →
-          </p>
-
-          {/* Capacities Hover Overlay */}
-          <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
-
-            <div>
-
-              <p
-                className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
-                style={{
-                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
-                }}
-              >
-                Other
-              </p>
-
-              <p
-                className="mt-4 text-lg font-semibold leading-snug text-foreground"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Capacities we cultivate
-              </p>
-
-              <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
-                Attunement · Compassion · Intimacy · Loving Speech · Deep Listening ·
-                Perspective Taking · Revealing Experience · Co-sensing · Feeling-Saying
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
-        {/* ===================================================== */}
-        {/* WORLD */}
-        {/* ===================================================== */}
-
-        <article
-          tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:bg-white/95 md:p-7"
-        >
-
-          {/* Box Title */}
-          <span
-            className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              color: "#A65325",
-            }}
-          >
-            World
-          </span>
-
-          {/* Transformation */}
-          <h3
-            className="mt-3 text-lg font-medium leading-snug text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            From Observation{" "}
-            <span
-              className="mx-2"
-              style={{
-                color: "#B96A32",
-                fontFamily: "inherit",
-                fontSize: "inherit",
-                fontWeight: 700,
-                lineHeight: "inherit",
-                opacity: 1,
-              }}
-            >
-              →
-            </span>{" "}
-            Towards Participation
-          </h3>
-
-          {/* Description */}
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-            Remembering that we are participants, not spectators, in a living and
-            interdependent world, embedded within social, ecological, historical, and
-            economic systems, where the ways we live ripple far beyond ourselves and
-            carry consequences for the larger web of life.
-          </p>
-
-          {/* Hover Cue */}
-          <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
-            Explore capacities →
-          </p>
-
-          {/* Capacities Hover Overlay */}
-          <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
-
-            <div>
-
-              <p
-                className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
-                style={{
-                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
-                }}
-              >
-                World
-              </p>
-
-              <p
-                className="mt-4 text-lg font-semibold leading-snug text-foreground"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Capacities we cultivate
-              </p>
-
-              <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
-                Systems Thinking · Complexity Literacy · Historical Consciousness ·
-                Ecological Awareness · Sensemaking · Critical Thinking · Intellectual
-                Humility
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
-        {/* ===================================================== */}
-        {/* THE SACRED */}
-        {/* ===================================================== */}
-
-        <article
-          tabIndex={0}
-          className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
-        >
-
-          {/* Box Title */}
-          <span
-            className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              color: "#A65325",
-            }}
-          >
-            The Sacred
-          </span>
-
-          {/* Transformation */}
-          <h3
-            className="mt-3 text-lg font-medium leading-snug text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            From Disenchantment{" "}
-            <span
-              className="mx-2"
-              style={{
-                color: "#B96A32",
-                fontFamily: "inherit",
-                fontSize: "inherit",
-                fontWeight: 700,
-                lineHeight: "inherit",
-                opacity: 1,
-              }}
-            >
-              →
-            </span>{" "}
-            Towards Reverence
-          </h3>
-
-          {/* Description */}
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-            Recovering our sense of belonging within a mysterious cosmos, experiencing
-            life as intrinsically valuable, meaningful and sacred, while recognizing
-            ourselves as unique expressions of that same mystery. And allowing our
-            relationship to the sacred to expand love, devotion, and responsibility
-            toward the whole.
-          </p>
-
-          {/* Hover Cue */}
-          <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
-            Explore capacities →
-          </p>
-
-          {/* Capacities Hover Overlay */}
-          <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
-
-            <div>
-
-              <p
-                className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
-                style={{
-                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
-                }}
-              >
-                The Sacred
-              </p>
-
-              <p
-                className="mt-4 text-lg font-semibold leading-snug text-foreground"
-                style={{
-                  fontFamily:
-                    '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-                }}
-              >
-                Capacities we cultivate
-              </p>
-
-              <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
-                Contemplative Depth · Value Perception · Meaning-making · Ethical
-                Discernment · Devotion · Truthfulness · Beauty
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
+        <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
+          Self-Awareness · Presence · Self-Inquiry · Self-Compassion ·
+          Emotional Maturity · Attunement · Embodied Awareness
+        </p>
       </div>
 
     </div>
 
+  </article>
+
+  {/* ===================================================== */}
+  {/* OTHER */}
+  {/* ===================================================== */}
+
+  <article
+    tabIndex={0}
+    className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+  >
+
+    {/* Box Title */}
+    <span
+      className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+        color: "#A65325",
+      }}
+    >
+      Other
+    </span>
+
+    {/* Transformation */}
+    <h3
+      className="mt-3 text-lg font-medium leading-snug text-foreground"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      From Separation{" "}
+      <span
+        className="mx-2"
+        style={{
+          color: "#B96A32",
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: 700,
+          lineHeight: "inherit",
+          opacity: 1,
+        }}
+      >
+        →
+      </span>{" "}
+      Towards Interbeing
+    </h3>
+
+    {/* Description */}
+    <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+      Reawakening to our entanglement with other beings, human and
+      more-than-human, encountering them not as objects or resources, but as
+      lives of intrinsic worth—and cultivating relationships grounded in
+      intimacy, reciprocity, and genuine care for each others flourishing.
+    </p>
+
+    {/* Hover Cue */}
+    <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
+      Explore capacities →
+    </p>
+
+    {/* Capacities Hover Overlay */}
+    <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
+
+      <div>
+        <p
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+          }}
+        >
+          Other
+        </p>
+
+        <p
+          className="mt-4 text-lg font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Capacities we cultivate
+        </p>
+
+        <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
+          Attunement · Compassion · Intimacy · Loving Speech · Deep Listening ·
+          Perspective Taking · Revealing Experience · Co-sensing · Feeling-Saying
+        </p>
+      </div>
+
+    </div>
+
+  </article>
+
+  {/* ===================================================== */}
+  {/* WORLD */}
+  {/* ===================================================== */}
+
+  <article
+    tabIndex={0}
+    className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+  >
+
+    {/* Box Title */}
+    <span
+      className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+        color: "#A65325",
+      }}
+    >
+      World
+    </span>
+
+    {/* Transformation */}
+    <h3
+      className="mt-3 text-lg font-medium leading-snug text-foreground"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      From Observation{" "}
+      <span
+        className="mx-2"
+        style={{
+          color: "#B96A32",
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: 700,
+          lineHeight: "inherit",
+          opacity: 1,
+        }}
+      >
+        →
+      </span>{" "}
+      Towards Participation
+    </h3>
+
+    {/* Description */}
+    <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+      Remembering that we are participants, not spectators, in a living and
+      interdependent world, embedded within social, ecological, historical, and
+      economic systems, where the ways we live ripple far beyond ourselves and
+      carry consequences for the larger web of life.
+    </p>
+
+    {/* Hover Cue */}
+    <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
+      Explore capacities →
+    </p>
+
+    {/* Capacities Hover Overlay */}
+    <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
+
+      <div>
+        <p
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+          }}
+        >
+          World
+        </p>
+
+        <p
+          className="mt-4 text-lg font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Capacities we cultivate
+        </p>
+
+        <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
+          Systems Thinking · Complexity Literacy · Historical Consciousness ·
+          Ecological Awareness · Sensemaking · Critical Thinking · Intellectual
+          Humility
+        </p>
+      </div>
+
+    </div>
+
+  </article>
+
+  {/* ===================================================== */}
+  {/* THE SACRED */}
+  {/* ===================================================== */}
+
+  <article
+    tabIndex={0}
+    className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+  >
+
+    {/* Box Title */}
+    <span
+      className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+      style={{
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+        color: "#A65325",
+      }}
+    >
+      The Sacred
+    </span>
+
+    {/* Transformation */}
+    <h3
+      className="mt-3 text-lg font-medium leading-snug text-foreground"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
+    >
+      From Disenchantment{" "}
+      <span
+        className="mx-2"
+        style={{
+          color: "#B96A32",
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: 700,
+          lineHeight: "inherit",
+          opacity: 1,
+        }}
+      >
+        →
+      </span>{" "}
+      Towards Reverence
+    </h3>
+
+    {/* Description */}
+    <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+      Recovering our sense of belonging within a mysterious cosmos, experiencing
+      life as intrinsically valuable, meaningful and sacred, while recognizing
+      ourselves as unique expressions of that same mystery. And allowing our
+      relationship to the sacred to expand love, devotion, and responsibility
+      toward the whole.
+    </p>
+
+    {/* Hover Cue */}
+    <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
+      Explore capacities →
+    </p>
+
+    {/* Capacities Hover Overlay */}
+    <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
+
+      <div>
+        <p
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+          }}
+        >
+          The Sacred
+        </p>
+
+        <p
+          className="mt-4 text-lg font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Capacities we cultivate
+        </p>
+
+        <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
+          Contemplative Depth · Value Perception · Meaning-making · Ethical
+          Discernment · Devotion · Truthfulness · Beauty
+        </p>
+      </div>
+
+    </div>
+
+  </article>
+
+</div>
+
     {/* ========================================================= */}
-    {/* CLOSING — ADDITIONAL SPACE BELOW THE IMAGE */}
+    {/* CLOSING */}
     {/* ========================================================= */}
 
-    <div className="mt-24 space-y-6 text-muted-foreground">
+    <div className="mt-10 space-y-6 text-muted-foreground">
 
       <p className="leading-relaxed">
-        These shifts point to the deeper horizon of our journey toward the types
-        of relationships, capacities and maturation we believe this moment is
-        asking us to deepen if we want to help steward civilization towards
-        life-enhancing futures.
+        These shifts point to the deeper horizon of our journey toward the types of relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
       </p>
 
     </div>
