@@ -3060,7 +3060,7 @@ export default function FellowshipPage() {
       <p className="font-medium leading-relaxed text-foreground">
         For us this becoming involves four main shifts in our most fundamental
         relationships with all life—with ourselves, one another, the world, and
-        the sacred.
+        the sacred. Each shift is supported by capacities that help these deeper ways of relating become lived realities.
       </p>
 
     </div>
