@@ -3051,12 +3051,11 @@ export default function FellowshipPage() {
         moment asking so much of humanity, many of the dominant images
         available to us—the achiever, the entrepreneur, the conscious leader,
         even the changemaker—feel too small for the depth of transformation
-        this moment requires. It asks for deeper and more integrated forms of
-        human maturity.
+        this moment requires.
       </p>
 
       <p className="font-medium leading-relaxed text-foreground">
-        For us, that maturation involves a shift in our relationship to all
+        For us, this transformation involves a shift in our relationship to all
         life: with ourselves, with one another, with the world we participate
         in, and with the sacred.
       </p>
