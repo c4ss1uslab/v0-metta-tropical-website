@@ -3438,7 +3438,7 @@ export default function FellowshipPage() {
 
         <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
           Contemplative Depth · Value Perception · Meaning-making · Ethical
-          Discernment · Devotion · Truthfulness
+          Discernment · Devotion · Truthfulness · Beauty
         </p>
       </div>
 
