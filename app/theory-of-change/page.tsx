@@ -899,6 +899,16 @@ export default function TheoryOfChangePage() {
             ]
           },
           { 
+            title: 'Crisis of Denial', 
+            desc: 'Denial of systemic violence and our complicity in harm. Denials of the limits of the planet and the magnitude of the problems that we face: our tendencies to search for ”hope” in simplistic solutions and to turn away from difficult and painful work.',
+            references: [
+              { segments: [{ text: 'GTDF - 4 Denials', url: 'https://decolonialfutures.net/4denials/' }, { text: ' + '}, { text: 'House of Modernity', url: 'https://www.researchgate.net/publication/341801995_Gesturing_Towards_Decolonial_Futures_Reflections_on_Our_Learnings_Thus_Far' }],
+              logo: '/logos/gtdf.png' },
+              { segments: [{ text: 'Center for Ecoliteracy', url: '#' }], logo: '/logos/ecoliteracy.png' }
+            ]
+          },
+
+          { 
             title: 'Crisis of Relationship', 
             desc: 'The widespread prevalence of rilvarous dynamics and the loss of our intimate relationships with all life: ourselves, others, the world and the sacred.',
             references: [
