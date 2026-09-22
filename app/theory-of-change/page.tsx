@@ -902,8 +902,9 @@ return (
             title: 'Crisis of Perception', 
             desc: 'Persistent delusions of separation, misapprehending nature and reality.',
             references: [
-              { segments: [{ text: 'Schumacher College', url: '#' }], logo: '/logos/schumacher.png' },
-              { segments: [{ text: 'Center for Ecoliteracy', url: '#' }], logo: '/logos/ecoliteracy.png' }
+              { segments: [{ text: 'Fritjof Capra - The Systems View of Life', url: 'https://medium.com/age-of-awareness/from-the-crisis-of-perception-to-the-systems-view-of-life-df6973a754a3' }], logo: 'https://i.postimg.cc/ZqQg4Bf7/systems-view-of-life.jpg' },
+              { segments: [{ text: 'Chief Ninawa Huni Kui - Healing the Disease of Separation', url: 'https://www.culturehack.io/issues/issue-07-beyond-the-carbon-fixation-pathways-to-regenerative-futures/healing-the-disease-of-separation/' }], logo: 'https://static.wixstatic.com/media/712e10_d8e58db134014697828b7a48d9336d22~mv2.png/v1/fill/w_500,h_518,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5curascompleto.png' },
+              { segments: [{ text: 'Thích Nhất Hạnh - Interbeing', url: 'https://www.parallax.org/product/interbeing-4th-edition/' }], logo: 'https://i.etsystatic.com/33861321/r/il/f87383/6462206700/il_1080xN.6462206700_8yr6.jpg' }
             ]
           },
           { 
