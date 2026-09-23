@@ -641,7 +641,7 @@ export default function TheoryOfChangePage() {
       <div className="w-full flex flex-col gap-4 relative z-10">
         {[
           { 
-            title: 'Escalating Power Asymmetries & Positive Feedback Loops', 
+            title: 'Escalating Power Asymmetries & Reinforcing Feedback Loops', 
             desc: 'Increasing concentration of capital and capability within an ever-smaller set of hyper-agents (states, corporations, or individuals) whose scale then lets them further tilt the system’s rules in their own favour.',
             references: [
               { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
