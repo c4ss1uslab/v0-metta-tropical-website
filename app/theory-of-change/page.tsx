@@ -650,7 +650,7 @@ export default function TheoryOfChangePage() {
           },
           { 
             title: 'Perverse Incentive Structures & Embedded Growth Obligations', 
-            desc: 'Systems optimizing for short-term, rivalrous, and harmful behaviors, externalising the costs of degradation, while those who refuse to defect are competitively disadvantaged and driven out.',
+            desc: 'Systems that reward short-term, rivalrous, and harmful behaviors, externalising the costs of degradation, while those who refuse to abide by it are competitively disadvantaged and driven out.',
             references: [
               { segments: [{ text: 'Center for Humane Technology', url: '#' }], logo: '/logos/cht.png' }
             ]

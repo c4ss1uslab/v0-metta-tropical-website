@@ -2017,32 +2017,37 @@ export default function FellowshipPage() {
               Remembering What Ultimately Matters
             </p>
 
+            {/* Guiding Questions */}
             <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What is intrinsically valuable? What makes a life meaningful?
-              What is worthy of our devotion? What is the true nature of
+              What is worthy of our devotion? What is the true nature of the
               reality we participate in?
             </p>
 
+            {/* Introduction */}
             <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 We begin here because every path of transformation is oriented
                 by what we ultimately value. We approach the sacred not as a
-                realm above or outside of ordinary life, but as a depth
-                dimension of life itself—one that becomes available through
-                particular qualities of attention, perception and participation
-                that modernity has largely taught us to close. Rather than
-                prescribing a single metaphysical belief, we engage multiple
-                wisdom traditions and lineages that can help reawaken our
-                capacity to encounter this dimension of life more
-                wholeheartedly.
+                realm above or outside ordinary life, but as a depth dimension
+                of life itself—one that becomes available through particular
+                qualities of attention, perception, and participation that
+                modernity has often taught us to close ourselves off from.
+                Rather than prescribing a single metaphysical belief, we
+                engage with multiple wisdom traditions and lineages that can
+                help reawaken our capacity to encounter this dimension of life
+                more wholeheartedly.
               </p>
 
             </div>
 
           </div>
 
-          {/* Learn More */}
+          {/* ===================================================== */}
+          {/* LEARN MORE */}
+          {/* ===================================================== */}
+
           <details className="group mt-auto pt-3">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2057,48 +2062,130 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-5 text-sm leading-relaxed text-muted-foreground">
 
+              {/* Expanded Introduction */}
               <p>
                 To encounter the sacred is to experience the world as radically
-                interdependent, intrinsically valuable, alive with meaning and
-                worthy of reverence. We will explore how modernity&apos;s
-                desacralization of the world may be one of the deeper
-                conditions underlying the metacrisis: what we cease to
-                experience as intrinsically valuable becomes easier to
-                instrumentalize, commodify, and destroy.
-              </p>
-
-              <p>
-                The Sacred is therefore not simply one stream among others. It
-                is the{" "}
+                interdependent, intrinsically valuable, alive with meaning, and
+                worthy of reverence. The Sacred is therefore not simply one
+                stream among others. It is the{" "}
                 <strong className="font-medium text-foreground">
                   orienting horizon
                 </strong>{" "}
-                within which the other streams acquire meaning, significance,
-                and continually return us to the question of what our lives and
-                our transformation are ultimately in service of.
+                within which the other streams acquire meaning and significance,
+                continually returning us to the question of what our lives and
+                transformation are ultimately in service of.
               </p>
 
-              <p>
-                This stream brings contemplative and wisdom traditions into
-                dialogue with philosophy, theology, and contemporary attempts
-                to recover the sacred within a disenchanted world. We engage
-                the practices and forms of perception through which different
-                traditions have cultivated relationships with mystery, meaning,
-                devotion, and the intrinsic worth of life.
-              </p>
+              {/* ================================================= */}
+              {/* THEMES */}
+              {/* ================================================= */}
 
               <div className="border-t border-border pt-5">
 
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                  People we are learning with / voices informing this stream
-                </p>
+                <h4
+                  className="text-base font-semibold leading-snug text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Some of the themes we will explore
+                </h4>
 
-                <p className="mt-3 font-serif leading-relaxed text-foreground">
-                  Brother Phap Huu · Adam Bucko · Zak Stein · Henrique Vieira ·
-                  David Dias · Ilia Delio
-                </p>
+                <div className="mt-5 space-y-5">
 
-                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  {/* Theme 01 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">01 ·</span>
+                      The Nature of Reality &amp; the Sacred
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring different ontological and metaphysical
+                      understandings of reality, existence, consciousness, and
+                      the sacred.
+                    </p>
+                  </div>
+
+                  {/* Theme 02 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">02 ·</span>
+                      Interbeing &amp; the Illusion of Separation
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring the movement from separateness toward a lived
+                      realization of interdependence and our belonging within
+                      the whole.
+                    </p>
+                  </div>
+
+                  {/* Theme 03 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">03 ·</span>
+                      Disenchantment &amp; the Recovery of the Sacred
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how our ways of perceiving reality shape our
+                      relationships with life, and what it means to recover a
+                      more soulful and reverential way of seeing.
+                    </p>
+                  </div>
+
+                  {/* Theme 04 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">04 ·</span>
+                      Intrinsic Value &amp; the Eyes of Perception
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Cultivating value perception while exploring how the Eyes
+                      of Mind, Heart, Spirit, and Value disclose different
+                      dimensions of reality.
+                    </p>
+                  </div>
+
+                  {/* Theme 05 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">05 ·</span>
+                      Contemplative &amp; Spiritual Practice
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring practices and capacities that deepen our
+                      sensitivity to, encounter with, and participation in
+                      the sacred.
+                    </p>
+                  </div>
+
+                  {/* Theme 06 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">06 ·</span>
+                      Wisdom, Love &amp; Meaning
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how love opens us to deeper dimensions of
+                      reality, how wisdom guides our participation in life,
+                      and what makes a life truly meaningful.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Resources */}
+              <div className="border-t border-border pt-5">
+
+                <p className="text-sm font-medium text-[#B88610]">
                   Explore some of the teachings, traditions, and resources
                   informing this stream →
                 </p>
