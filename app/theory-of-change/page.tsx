@@ -651,14 +651,14 @@ export default function TheoryOfChangePage() {
           },
           { 
             title: 'Perverse Incentive Structures & Embedded Growth Obligations', 
-            desc: 'Systems that reward short-term, rivalrous, and harmful behaviors, externalising the costs of degradation, while those who refuse to abide by it are competitively disadvantaged and driven out.',
+            desc: 'Systems that reward short-term, rivalrous, and harmful behaviors, while punishing those who refuse to abide by it, making them competitively disadvantaged and pressured until driven out.',
             references: [
               { segments: [{ text: 'Center for Humane Technology', url: '#' }], logo: '/logos/cht.png' }
             ]
           },
           { 
             title: 'The Collapse of Sensemaking, Trust & Legitimacy', 
-            desc: 'The perpetuity of an  information ecology that\'s fragmented and adversarial, undermines our capacity for collective sensemaking and discernment of truth, breaking down trust and coordination.',
+            desc: 'The perpetuity of an  information ecology that\'s fragmented and adversarial, which undermines our capacity for collective sensemaking and discernment of truth, breaking down trust and coordination.',
             references: [
               { segments: [{ text: 'Sensemaking Networks', url: '#' }], logo: '/logos/sensemaking.png' },
               { segments: [{ text: 'Wikidata Foundation', url: '#' }], logo: '/logos/wikidata.png' }
