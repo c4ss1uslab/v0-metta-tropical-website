@@ -641,31 +641,31 @@ export default function TheoryOfChangePage() {
       <div className="w-full flex flex-col gap-4 relative z-10">
         {[
           { 
-            title: 'Crisis of Power', 
-            desc: 'Increasing concentration of power within individuals and institutions serving their personal agendas.',
+            title: 'Escalating Power Asymmetries & Positive Feedback Loops', 
+            desc: 'Increasing concentration of capital and capability within an ever-smaller set of hyper-agents (states, corporations, or individuals) whose scale then lets them further tilt the system’s rules in their own favour.',
             references: [
               { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
               { segments: [{ text: 'Institute for Local Self-Reliance', url: '#' }], logo: '/logos/ilsr.png' }
             ]
           },
           { 
-            title: 'Crisis of Incentives', 
-            desc: 'Systems optimizing for short-term, rivalrous, and extractive behaviors.',
+            title: 'Perverse Incentive Structures', 
+            desc: 'Systems optimizing for short-term, rivalrous, and harmful behaviors, externalising the costs of degradation, while those who refuse to defect are competitively disadvantaged and driven out.',
             references: [
               { segments: [{ text: 'Center for Humane Technology', url: '#' }], logo: '/logos/cht.png' }
             ]
           },
           { 
-            title: 'Crisis of Trust', 
-            desc: 'Fragmented information ecology undermining collective sensemaking and discernment of truth, breaking down coordination.',
+            title: 'Crisis of Trust & Legitimacy', 
+            desc: 'A fragmented and adversarial information ecology, undermining collective sensemaking and discernment of truth, breaking down capacity for trust and coordination.',
             references: [
               { segments: [{ text: 'Sensemaking Networks', url: '#' }], logo: '/logos/sensemaking.png' },
               { segments: [{ text: 'Wikidata Foundation', url: '#' }], logo: '/logos/wikidata.png' }
             ]
           },
           { 
-            title: 'Crisis of Complexity', 
-            desc: 'Systematic optimization of simplistic metrics extracting from a complex living ecosystem and web of relationships.', 
+            title: 'Narrow Metric Optimization & Negative Externalities', 
+            desc: 'The systematic optimization of simplistic metrics predating upon the complex living ecosystem and web of relationships we all depend on.', 
             references: [
               { segments: [{ text: 'Santa Fe Institute', url: '#' }], logo: '/logos/sfi.png' },
               { segments: [{ text: 'Stockholm Resilience Centre', url: '#' }], logo: '/logos/stockholm.png' }
@@ -900,7 +900,7 @@ return (
         {[
           { 
             title: 'Crisis of Perception', 
-            desc: 'Persistent delusions of separation, misapprehending nature and reality.',
+            desc: 'Persistent delusions of separation between self and other, humans and the world, misapprehending nature and reality.',
             references: [
               { segments: [{ text: 'Fritjof Capra - The Systems View of Life', url: 'https://medium.com/age-of-awareness/from-the-crisis-of-perception-to-the-systems-view-of-life-df6973a754a3' }], logo: 'https://i.postimg.cc/ZqQg4Bf7/systems-view-of-life.jpg' },
               { segments: [{ text: 'Chief Ninawa Huni Kui - Healing the Disease of Separation', url: 'https://www.culturehack.io/issues/issue-07-beyond-the-carbon-fixation-pathways-to-regenerative-futures/healing-the-disease-of-separation/' }], logo: 'https://static.wixstatic.com/media/712e10_d8e58db134014697828b7a48d9336d22~mv2.png/v1/fill/w_500,h_518,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5curascompleto.png' },
@@ -927,7 +927,7 @@ return (
           },
           { 
             title: 'Crisis of Value', 
-            desc: 'The erosion of meaning, connection to the sacred and orientation towards the good, truth and beautiful.', 
+            desc: 'The erosion of the connection with the sacred, the collapse of meaning and a loss of orientation towards the good, truth and beautiful.', 
             references: [
               { segments: [{ text: 'Perspectiva', url: '#' }], logo: '/logos/perspectiva.png' },
               { segments: [{ text: 'The Meta-Crisis Institute', url: '#' }], logo: '/logos/metacrisis.png' }
