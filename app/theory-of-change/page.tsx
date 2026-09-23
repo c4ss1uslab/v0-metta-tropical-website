@@ -501,7 +501,7 @@ export default function TheoryOfChangePage() {
     In the same way that a symptom points to an underlying disease that is causing it, the <em>polycrisis</em> is pointing to the <em>metacrisis</em> as the deeper civilizational patterns and dysfunctions driving our global challenges.
   </p>
   <p className="text-muted-foreground leading-relaxed">
-    We understand the metacrisis as unfolding across three interconnected layers:
+    We understand the metacrisis as unfolding across three interconnected layers
     <span className="group relative inline-block cursor-help">
       <span className="font-semibold text-crimson text-sm">
         <sup><em>4</em></sup>
@@ -517,6 +517,7 @@ export default function TheoryOfChangePage() {
         <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-foreground" />
       </span>
     </span>
+    :
   </p>
 </div>
 
@@ -657,7 +658,7 @@ export default function TheoryOfChangePage() {
           },
           { 
             title: 'The Collapse of Sensemaking, Trust & Legitimacy', 
-            desc: 'We live in and reproduce an  information ecology that\'s fragmented and adversarial, which undermines our capacity for collective sensemaking and discernment of truth, breaking down trust and coordination.',
+            desc: 'The perpetuity of an  information ecology that\'s fragmented and adversarial, undermines our capacity for collective sensemaking and discernment of truth, breaking down trust and coordination.',
             references: [
               { segments: [{ text: 'Sensemaking Networks', url: '#' }], logo: '/logos/sensemaking.png' },
               { segments: [{ text: 'Wikidata Foundation', url: '#' }], logo: '/logos/wikidata.png' }
@@ -881,7 +882,7 @@ return (
       <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground block mb-1">Layer 3</span>
       <h3 className="font-serif text-xl font-semibold text-foreground">The Spiritual-Ontological Layer</h3>
       <p className="text-sm font-medium text-olive mt-2">
-        Foundational Dysfunctions<sub className="text-[9px] font-sans font-extrabold opacity-80 ml-0.5">5</sub>
+        Foundational Dysfunctions
       </p>
     </div>
 
@@ -927,7 +928,7 @@ return (
           },
           { 
             title: 'Crisis of Value', 
-            desc: 'The erosion of the connection with the sacred, the collapse of meaning and a loss of orientation towards the good, truth and beautiful.', 
+            desc: 'The erosion of the connection with the sacred, a loss of meaning and the abandonment of an orientation towards the good, truth and beautiful.', 
             references: [
               { segments: [{ text: 'Perspectiva', url: '#' }], logo: '/logos/perspectiva.png' },
               { segments: [{ text: 'The Meta-Crisis Institute', url: '#' }], logo: '/logos/metacrisis.png' }
@@ -1586,7 +1587,7 @@ return (
               <p className="text-muted-foreground leading-relaxed">
                 At its core, the metacrisis reveals a widening gap between the complexity and power of the world humanity has created and the depth of wisdom required to navigate it responsibly - and design accordingly. This is known as the growing <strong><em>wisdom gap</em></strong>.<span className="group relative inline-block cursor-help">
       <span className="font-semibold text-crimson text-sm">
-        <sup><em>6</em></sup>
+        <sup><em>5</em></sup>
       </span>
       <span className="invisible absolute bottom-full left-1/2 z-50 mb-2 w-100 -translate-x-1/2 rounded-lg bg-[#fdfbf7] p-3 text-center text-sm text-foreground shadow-lg opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
       <div>
