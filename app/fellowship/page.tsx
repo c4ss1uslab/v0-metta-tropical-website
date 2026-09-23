@@ -231,169 +231,177 @@ export default function FellowshipPage() {
 <section className="relative isolate overflow-hidden bg-[#FFFDF6]">
 
   {/* ========================================================= */}
-  {/* VIDEO BACKGROUND */}
+  {/* IMAGE BACKGROUND */}
   {/* ========================================================= */}
 
   <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
+    {/* Full-width background image */}
+    <img
+      src="https://i.postimg.cc/gJKjLWf8/tree-crown-shyness.webp"
+      alt=""
+      aria-hidden="true"
+      className="absolute inset-0 h-full w-full object-cover object-center"
+    />
+
     {/* Cream overlay to maintain text readability */}
-    <div className="absolute inset-0 bg-[#FFFDF6]/80" />
+    <div className="absolute inset-0 bg-[#FFFDF6]/75" />
 
     {/* Subtle gradient for additional visual depth */}
     <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF6]/40 via-transparent to-[#FFFDF6]/10" />
 
   </div>
 
-{/* ========================================================= */}
-{/* MAIN HERO */}
-{/* ========================================================= */}
+  {/* ========================================================= */}
+  {/* MAIN HERO */}
+  {/* ========================================================= */}
 
-<div className="relative py-20 lg:py-28">
+  <div className="relative py-20 lg:py-28">
 
-  <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
+    <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
 
-    <div className="max-w-4xl">
+      <div className="max-w-4xl">
 
-      {/* Welcome */}
-      <span className="text-sm font-medium uppercase tracking-[0.14em] text-[#B96A32]">
-        Welcome to the
-      </span>
+        {/* Welcome */}
+        <span className="text-sm font-medium uppercase tracking-[0.14em] text-[#B96A32]">
+          Welcome to the
+        </span>
 
-      {/* Fellowship Name */}
-      <h1
-        className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Metta Tropical Fellowship
-      </h1>
-
-      {/* Subtitle */}
-      <p
-        className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        Cultivating the Wisdom Required at a Time Between Worlds
-      </p>
-
-      {/* ===================================================== */}
-      {/* CENTRAL QUESTION */}
-      {/* ===================================================== */}
-
-      <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
-
-        <p
-          className="text-xl italic leading-relaxed text-foreground md:text-2xl"
+        {/* Fellowship Name */}
+        <h1
+          className="mt-4 text-4xl font-medium leading-tight text-foreground md:text-5xl lg:text-6xl"
           style={{
             fontFamily:
               '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
           }}
         >
-          What is this moment in history{" "}
+          Metta Tropical Fellowship
+        </h1>
 
-          <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
-            asking of your life?
-          </span>
-
+        {/* Subtitle */}
+        <p
+          className="mt-3 text-xl italic leading-relaxed text-foreground md:text-2xl"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Cultivating the Wisdom Required at a Time Between Worlds
         </p>
 
-      </div>
+        {/* ===================================================== */}
+        {/* CENTRAL QUESTION */}
+        {/* ===================================================== */}
 
-      {/* ===================================================== */}
-      {/* FELLOWSHIP DESCRIPTION */}
-      {/* ===================================================== */}
+        <div className="mt-8 max-w-3xl border-l-4 border-[#D9A01B] pl-6">
 
-      <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-        A ten-month initiatory journey for a generation called to take
-        responsibility for who we must become at a time of planetary crisis.
-      </p>
+          <p
+            className="text-xl italic leading-relaxed text-foreground md:text-2xl"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            What is this moment in history{" "}
 
-      {/* ===================================================== */}
-      {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
-      {/* ===================================================== */}
+            <span className="text-[#D9A01B] underline decoration-cyan-800 decoration-2 underline-offset-4">
+              asking of your life?
+            </span>
 
-      <div className="mt-10 flex flex-col items-start gap-3">
+          </p>
 
-        {/* Dates — Educational Architecture Button Style */}
-        <a
-          href="#schedule"
-          aria-label="View the Fellowship Schedule Overview"
-          className="
-            inline-flex
-            w-[220px]
-            items-center
-            justify-center
-            rounded-md
-            border
-            border-[#111827]/15
-            bg-[#111827]/[0.04]
-            px-5
-            py-3
-            text-center
-            text-sm
-            font-medium
-            text-[#111827]
-            shadow-sm
-            transition-all
-            duration-200
-            hover:-translate-y-0.5
-            hover:border-[#111827]/25
-            hover:bg-[#111827]/[0.08]
-            hover:shadow-md
-            focus-visible:outline
-            focus-visible:outline-2
-            focus-visible:outline-offset-2
-            focus-visible:outline-[#111827]
-          "
-        >
-          February — December 2027
-        </a>
+        </div>
 
-        {/* Primary Application Button — Subtle Border and Edge Shadow */}
-        <a
-          href="#apply"
-          className="
-            inline-flex
-            w-[220px]
-            items-center
-            justify-center
-            rounded-md
-            border
-            border-[#111827]/15
-            bg-[#E8BC2F]
-            px-5
-            py-3.5
-            text-base
-            font-bold
-            text-foreground
-            shadow-[0_2px_8px_rgba(15,23,42,0.12)]
-            transition-all
-            duration-200
-            hover:-translate-y-0.5
-            hover:border-[#111827]/25
-            hover:bg-[#D9A01B]
-            hover:shadow-md
-            focus-visible:outline
-            focus-visible:outline-2
-            focus-visible:outline-offset-2
-            focus-visible:outline-[#D9A01B]
-          "
-        >
-          Begin Application →
-        </a>
+        {/* ===================================================== */}
+        {/* FELLOWSHIP DESCRIPTION */}
+        {/* ===================================================== */}
+
+        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          A ten-month initiatory journey for a generation called to take
+          responsibility for who we must become at a time of planetary crisis.
+        </p>
+
+        {/* ===================================================== */}
+        {/* FELLOWSHIP DATES + APPLICATION BUTTON */}
+        {/* ===================================================== */}
+
+        <div className="mt-10 flex flex-col items-start gap-3">
+
+          {/* Dates — Educational Architecture Button Style */}
+          <a
+            href="#schedule"
+            aria-label="View the Fellowship Schedule Overview"
+            className="
+              inline-flex
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              border
+              border-[#111827]/15
+              bg-[#111827]/[0.04]
+              px-5
+              py-3
+              text-center
+              text-sm
+              font-medium
+              text-[#111827]
+              shadow-sm
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:border-[#111827]/25
+              hover:bg-[#111827]/[0.08]
+              hover:shadow-md
+              focus-visible:outline
+              focus-visible:outline-2
+              focus-visible:outline-offset-2
+              focus-visible:outline-[#111827]
+            "
+          >
+            February — December 2027
+          </a>
+
+          {/* Primary Application Button — Subtle Border and Edge Shadow */}
+          <a
+            href="#apply"
+            className="
+              inline-flex
+              w-[220px]
+              items-center
+              justify-center
+              rounded-md
+              border
+              border-[#111827]/15
+              bg-[#E8BC2F]
+              px-5
+              py-3.5
+              text-base
+              font-bold
+              text-foreground
+              shadow-[0_2px_8px_rgba(15,23,42,0.12)]
+              transition-all
+              duration-200
+              hover:-translate-y-0.5
+              hover:border-[#111827]/25
+              hover:bg-[#D9A01B]
+              hover:shadow-md
+              focus-visible:outline
+              focus-visible:outline-2
+              focus-visible:outline-offset-2
+              focus-visible:outline-[#D9A01B]
+            "
+          >
+            Begin Application →
+          </a>
+
+        </div>
 
       </div>
 
     </div>
 
   </div>
-
-</div>
 
 </section>
 
