@@ -641,23 +641,31 @@ export default function TheoryOfChangePage() {
       <div className="w-full flex flex-col gap-4 relative z-10">
         {[
           { 
-            title: 'Escalating Power Asymmetries & Reinforcing Feedback Loops', 
-            desc: 'Increasing concentration of capital and capability within an ever-smaller set of hyper-agents (states, corporations, or individuals) whose scale then lets them further tilt the system’s rules in their own favour.',
+            title: 'Agency Loss & The Knowing-Becoming-Doing Gap', 
+            desc: 'The increasing sense that our voice, our action, does not matter in terms of where we are going and our collective decision-making. The gap between what we know and what we\'re able to do.',
             references: [
               { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
               { segments: [{ text: 'Institute for Local Self-Reliance', url: '#' }], logo: '/logos/ilsr.png' }
             ]
           },
           { 
-            title: 'Perverse Incentive Structures', 
+            title: 'Escalating Power Asymmetries & Reinforcing Feedback Loops', 
+            desc: 'Increasing concentration of capital and capability within an ever-smaller set of hyper-agents (states, corporations, or individuals) whose scale then lets them further tilt the system\’s rules in their own favour.',
+            references: [
+              { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
+              { segments: [{ text: 'Institute for Local Self-Reliance', url: '#' }], logo: '/logos/ilsr.png' }
+            ]
+          },
+          { 
+            title: 'Perverse Incentive Structures & Embedded Growth Obligations', 
             desc: 'Systems optimizing for short-term, rivalrous, and harmful behaviors, externalising the costs of degradation, while those who refuse to defect are competitively disadvantaged and driven out.',
             references: [
               { segments: [{ text: 'Center for Humane Technology', url: '#' }], logo: '/logos/cht.png' }
             ]
           },
           { 
-            title: 'Crisis of Trust & Legitimacy', 
-            desc: 'A fragmented and adversarial information ecology, undermining collective sensemaking and discernment of truth, breaking down capacity for trust and coordination.',
+            title: 'The Collapse of Sensemaking, Trust & Legitimacy', 
+            desc: 'We live in and reproduce an  information ecology that\'s fragmented and adversarial, which undermines our capacity for collective sensemaking and discernment of truth, breaking down trust and coordination.',
             references: [
               { segments: [{ text: 'Sensemaking Networks', url: '#' }], logo: '/logos/sensemaking.png' },
               { segments: [{ text: 'Wikidata Foundation', url: '#' }], logo: '/logos/wikidata.png' }
@@ -1504,7 +1512,7 @@ return (
 
             <div className="mt-8 space-y-8">
               <p className="text-muted-foreground leading-relaxed">
-                So, if one were to summarize the dynamics underlying the metacrisis, as articulated by Stephen Reid and adapted by us, we could say:
+                So, if one were to summarize the dynamics underlying the metacrisis, we could say:
               </p>
             </div>
 
@@ -1516,7 +1524,7 @@ return (
     {/* Box 1 */}
     <div className="relative flex flex-col items-center justify-center text-center">
       <div className="w-full py-2.5 px-4 rounded bg-foreground text-background text-l font-serif font-medium shadow-inner border border-border">
-        A collapse in our shared capacities to perceive reality as disclosing intrinsic value and to make decisions accordingly
+        A collapse in our shared capacity to perceive reality as intrinsically valuable and to make decisions accordingly
       </div>
       {/* Desktop Operator Badge centered in the gap after Box 1 */}
       <div className="hidden md:flex absolute left-[calc(100%+0.75rem)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center">
