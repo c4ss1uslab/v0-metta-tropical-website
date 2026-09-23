@@ -231,21 +231,13 @@ export default function FellowshipPage() {
 <section className="relative isolate overflow-hidden bg-[#FFFDF6]">
 
   {/* ========================================================= */}
-  {/* IMAGE BACKGROUND */}
+  {/* VIDEO BACKGROUND */}
   {/* ========================================================= */}
 
   <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 
-    {/* Full-width background image */}
-    <img
-      src="https://i.postimg.cc/gJKjLWf8/tree-crown-shyness.webp"
-      alt=""
-      aria-hidden="true"
-      className="absolute inset-0 h-full w-full object-cover object-center"
-    />
-
     {/* Cream overlay to maintain text readability */}
-    <div className="absolute inset-0 bg-[#FFFDF6]/75" />
+    <div className="absolute inset-0 bg-[#FFFDF6]/80" />
 
     {/* Subtle gradient for additional visual depth */}
     <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF6]/40 via-transparent to-[#FFFDF6]/10" />
