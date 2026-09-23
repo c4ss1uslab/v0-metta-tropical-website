@@ -1981,13 +1981,12 @@ export default function FellowshipPage() {
     {/* ========================================================= */}
 
     {/*
-      Stable stream layout:
-      - 60% text / 40% image on desktop, alternating sides.
-      - Images retain their crop via object-cover and never grow
-        when Learn more expands the neighboring text card.
-      - Closed cards have a minimum height of 486px on desktop.
-      - Images are fixed at 486px on desktop.
-      - Details expand in normal page flow without internal scrolling.
+      Layout:
+      - 60% text / 40% image on desktop.
+      - Alternating image positions.
+      - Fixed image heights prevent distortion when details expand.
+      - Cards have a minimum height of 486px on desktop.
+      - Learn more sections expand naturally without internal scrolling.
     */}
 
     <div className="mt-12 space-y-8 lg:space-y-10">
@@ -2218,7 +2217,7 @@ export default function FellowshipPage() {
 
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
-        {/* Image */}
+        {/* Fixed-height image */}
         <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
@@ -2249,30 +2248,34 @@ export default function FellowshipPage() {
               Remembering Who We Are
             </p>
 
+            {/* Guiding Questions */}
             <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What is my true nature? What is a human being for? What does it
-              mean to meet ourselves and each other more truthfully? How might
+              mean to meet ourselves and one another more truthfully? How might
               we recover our capacity to sense the world with soul? How can
               relationships become a doorway into the sacred?
             </p>
 
+            {/* Introduction */}
             <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 This stream explores the emotional, psychological, relational,
-                embodied and spiritual work of becoming more whole. A process
-                of encountering our conditioning and protective patterns,
-                tending to fragmentation and wounds, learning to discern the
-                desires that shape us, questioning the stories through which we
-                understand ourselves, and opening space for the totality of our
-                being to come to life.
+                embodied, and spiritual work of becoming more whole. We inquire
+                into our true nature, encounter the conditioning and protective
+                patterns that shape us, tend to our wounds, discern the desires
+                moving through us, and open space for the fullness of our being
+                to come alive.
               </p>
 
             </div>
 
           </div>
 
-          {/* Learn More */}
+          {/* ===================================================== */}
+          {/* LEARN MORE */}
+          {/* ===================================================== */}
+
           <details className="group mt-auto pt-3">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2287,47 +2290,127 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-5 text-sm leading-relaxed text-muted-foreground">
 
+              {/* Expanded Introduction */}
               <p>
-                Grounded in the sacred, we turn toward the depths of human
-                experience, because the quality of our actions emerges from the
-                quality of our being, and who we are becoming is always shaped
-                in relationship.
+                Grounded in the sacred, we turn toward the inner and relational
+                dimensions of transformation, recognizing that who we become
+                is inseparable from how we meet ourselves, relate to others,
+                and participate in the world. Without this dimension of
+                formation, our attempts to transform the world can
+                unintentionally reproduce the very patterns of separation,
+                projection, and domination we seek to change.
               </p>
 
-              <p>
-                We not only explore our inner worlds, but the spaces between us:
-                how we listen, attune, navigate differences, communicate
-                lovingly, build intimacy, meet another more fully, and
-                participate in relationships where more of our humanity can
-                become available.
-              </p>
-
-              <p>
-                Without this dimension of formation, our attempts to transform
-                the world can easily reproduce the patterns of separation,
-                domination, projection and fragmentation we hope to heal.
-              </p>
-
-              <p>
-                This stream draws from contemplative practice, depth and
-                developmental psychology, relational and somatic practices,
-                trauma-informed approaches, nature-based initiation, and
-                traditions of human formation concerned with wholeness,
-                maturation, eros, intimacy, and soul.
-              </p>
+              {/* ================================================= */}
+              {/* THEMES */}
+              {/* ================================================= */}
 
               <div className="border-t border-border pt-5">
 
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                  People we are learning with / voices informing this stream
-                </p>
+                <h4
+                  className="text-base font-semibold leading-snug text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Some of the themes we will explore
+                </h4>
 
-                <p className="mt-3 font-serif leading-relaxed text-foreground">
-                  Bill Plotkin · Steffi Bednarek · Vanessa Ferreira · Francis
-                  Weller · Sean Wilkinson
-                </p>
+                <div className="mt-5 space-y-5">
 
-                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  {/* Theme 01 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">01 ·</span>
+                      True Nature &amp; the Human Self
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring who we are beneath our conditioning, how our
+                      identities are constructed, and the relationship between
+                      our deeper nature and the many parts of ourselves.
+                    </p>
+                  </div>
+
+                  {/* Theme 02 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">02 ·</span>
+                      Parts Work &amp; Ego Development
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Encountering the protective patterns, wounds, and inner
+                      conflicts that shape our lives, and cultivating the
+                      compassion needed to move toward greater wholeness.
+                    </p>
+                  </div>
+
+                  {/* Theme 03 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">03 ·</span>
+                      Embodiment, Emotion &amp; Desire
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Deepening our capacity to inhabit our bodies, meet our
+                      emotional experience, and clarify the desires and
+                      unconscious forces shaping our choices.
+                    </p>
+                  </div>
+
+                  {/* Theme 04 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">04 ·</span>
+                      Relational Depth &amp; Intimacy
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how attunement, loving-presence, authentic
+                      expression, and genuine contact with another can make
+                      relationships a ground for transformation.
+                    </p>
+                  </div>
+
+                  {/* Theme 05 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">05 ·</span>
+                      Grief, Sorrow &amp; Ritual
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring grief as a doorway into deeper relationship
+                      with life, alongside rituals and the processes through
+                      which we grow into mature adulthood.
+                    </p>
+                  </div>
+
+                  {/* Theme 06 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">06 ·</span>
+                      Soul, Eros &amp; Vocation
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring our deepest longings, our aliveness, what
+                      makes our lives unique, and how our gifts might find
+                      meaningful expression in service of the whole.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Resources */}
+              <div className="border-t border-border pt-5">
+
+                <p className="text-sm font-medium text-[#B88610]">
                   Explore some of the practices, lineages, and resources
                   informing this stream →
                 </p>
@@ -2367,13 +2450,15 @@ export default function FellowshipPage() {
               Remembering Where We Are
             </p>
 
+            {/* Guiding Questions */}
             <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does it mean to be in a time between worlds? What are the
               underlying causes of the metacrisis? How does change happen?
               How do systems learn and collapse? How deeply have the logics
-              of modernity colonized our minds, desires and imagination?
+              of modernity colonized our minds, desires, and imagination?
             </p>
 
+            {/* Introduction */}
             <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
@@ -2389,7 +2474,10 @@ export default function FellowshipPage() {
 
           </div>
 
-          {/* Learn More */}
+          {/* ===================================================== */}
+          {/* LEARN MORE */}
+          {/* ===================================================== */}
+
           <details className="group mt-auto pt-3">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2404,15 +2492,15 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-5 text-sm leading-relaxed text-muted-foreground">
 
+              {/* Expanded Introduction */}
               <p>
                 We investigate how dominant worldviews, colonial histories,
                 incentive structures, institutions, and economic systems have
                 shaped not only society, but also our desires, identities,
-                relationships, and imagination. This means learning to recognize
-                how deeply the logics of the systems we inhabit—mechanistic,
-                linear, transactional, extractive—are deeply embedded within
-                us, guiding our ways of perceiving, being and acting in the
-                world.
+                relationships, and imagination. We examine how the logics of
+                the systems we inhabit—mechanistic, linear, transactional,
+                and extractive—can become embedded within us, shaping how we
+                perceive, relate, and act.
               </p>
 
               <p>
@@ -2422,29 +2510,116 @@ export default function FellowshipPage() {
                 are being produced.
               </p>
 
-              <p>
-                This stream brings systems thinking and complexity science into
-                conversation with metacrisis research, political economy,
-                decolonial thought, historical analysis, post-capitalist
-                experimentation, and metamodernism—cultivating both a clearer
-                diagnosis of the world we inhabit and a wider imagination of
-                what might come next.
-              </p>
+              {/* ================================================= */}
+              {/* THEMES */}
+              {/* ================================================= */}
 
               <div className="border-t border-border pt-5">
 
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                  People we are learning with / voices informing this stream
-                </p>
+                <h4
+                  className="text-base font-semibold leading-snug text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Some of the themes we will explore
+                </h4>
 
-                <p className="mt-3 font-serif leading-relaxed text-foreground">
-                  Alnoor Ladha · Zak Stein · Vanessa Andreotti · Indy Johar ·
-                  Nora Bateson · Kate Raworth · Nate Hagens
-                </p>
+                <div className="mt-5 space-y-5">
 
-                <p className="mt-5 text-sm font-medium text-[#B88610]">
-                  Explore some of the maps, ideas, and resources informing this
-                  stream →
+                  {/* Theme 01 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">01 ·</span>
+                      The Metacrisis &amp; Our Civilizational Predicament
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Investigating the roots of our crises, from rivalrous
+                      dynamics and systemic externalities to disenchantment
+                      and spiritual crisis.
+                    </p>
+                  </div>
+
+                  {/* Theme 02 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">02 ·</span>
+                      Systems Thinking &amp; Complexity
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring interdependence, feedback loops, emergence,
+                      nonlinear change, and the unintended consequences of
+                      our interventions.
+                    </p>
+                  </div>
+
+                  {/* Theme 03 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">03 ·</span>
+                      Modernity &amp; Colonialism
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Examining modernity&apos;s historical roots, its assumptions
+                      about reality and progress, and the colonial logics
+                      shaping our institutions, desires, and imagination.
+                    </p>
+                  </div>
+
+                  {/* Theme 04 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">04 ·</span>
+                      Economy, Incentives &amp; Planetary Limits
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how economic systems and institutional
+                      incentives drive extraction and growth on a finite planet.
+                    </p>
+                  </div>
+
+                  {/* Theme 05 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">05 ·</span>
+                      Technology, AI &amp; Energy
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Investigating exponential technologies, AI risks,
+                      energy, and the growing consequences of humanity&apos;s
+                      technological power.
+                    </p>
+                  </div>
+
+                  {/* Theme 06 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">06 ·</span>
+                      Collapse &amp; Civilizational Transition
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring the consequences of systemic breakdown and
+                      what it might take to move toward a third attractor.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Resources */}
+              <div className="border-t border-border pt-5">
+
+                <p className="text-sm font-medium text-[#B88610]">
+                  Explore some of the maps, ideas, and resources informing
+                  this stream →
                 </p>
 
               </div>
@@ -2455,7 +2630,7 @@ export default function FellowshipPage() {
 
         </article>
 
-        {/* Image */}
+        {/* Fixed-height image */}
         <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
@@ -2475,7 +2650,7 @@ export default function FellowshipPage() {
 
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
 
-        {/* Image */}
+        {/* Fixed-height image */}
         <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
@@ -2503,9 +2678,10 @@ export default function FellowshipPage() {
                   '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
               }}
             >
-              Remembering Our Place In The Web of Life
+              Remembering Our Place in the Web of Life
             </p>
 
+            {/* Guiding Questions */}
             <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does the more-than-human world know that we have forgotten?
               How might we organize life through reciprocity rather than
@@ -2513,13 +2689,14 @@ export default function FellowshipPage() {
               colonizing it? What changes when a river becomes a relative?
             </p>
 
+            {/* Introduction */}
             <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 Having explored the systems of the human world, we return to
                 the larger living world to which we have always belonged.
                 This stream tends our relationship with land, place, ancestry,
-                and the more-than-human world. It investigates what becomes
+                and the more-than-human world. It explores what becomes
                 possible when Earth is no longer encountered primarily as a
                 resource, but as kin, teacher, community, and living participant
                 in our becoming.
@@ -2529,7 +2706,10 @@ export default function FellowshipPage() {
 
           </div>
 
-          {/* Learn More */}
+          {/* ===================================================== */}
+          {/* LEARN MORE */}
+          {/* ===================================================== */}
+
           <details className="group mt-auto pt-3">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2544,41 +2724,130 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-5 text-sm leading-relaxed text-muted-foreground">
 
+              {/* Expanded Introduction */}
               <p>
-                This stream moves beyond abstractions and intellectual study.
-                Through relationships with Indigenous, Quilombola, land-based,
-                and territorial communities and movements in Brazil and Latin
-                America, we seek to learn by experiencing forms of life grounded
-                in reciprocity, ancestry, autonomy, collective memory, and
-                relationship with land. The invitation is not simply to
-                experience another way of living, but to allow these encounters
-                to unsettle us, to reveal assumptions about life, land,
-                progress and relationships that modernity has taught us to
-                treat as normal, and open us to other ways of seeing, being, and
-                relating to life that are essential for the survival of our
-                species and all life on earth.
+                This stream moves beyond abstraction and intellectual study,
+                through encounters with Indigenous, Quilombola, and other
+                territorial communities in Brazil and Latin America, we
+                explore ways of life grounded in reciprocity, ancestry,
+                autonomy, and belonging.
               </p>
 
               <p>
-                This stream draws from Indigenous and Quilombola wisdom,
-                agroecology, land-based movements, bioregional thought,
-                nature-based practice, and communities across Latin America
-                that have preserved and regenerated forms of relationship with
-                life despite centuries of dispossession and erasure.
+                These encounters invite us to question our inherited
+                assumptions about land, progress, and development—and open
+                ourselves to ways of seeing, knowing, and living that might
+                transform our relationship with the Earth.
               </p>
+
+              {/* ================================================= */}
+              {/* THEMES */}
+              {/* ================================================= */}
 
               <div className="border-t border-border pt-5">
 
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                  People we are learning with / voices informing this stream
-                </p>
+                <h4
+                  className="text-base font-semibold leading-snug text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Some of the themes we will explore
+                </h4>
 
-                <p className="mt-3 font-serif leading-relaxed text-foreground">
-                  Cristine Takuá · Kaká Werá · Tainá Marajoara · Jera Guarani ·
-                  Ailton Krenak · Mestre Cobra Mansa · Joelson Ferreira
-                </p>
+                <div className="mt-5 space-y-5">
 
-                <p className="mt-5 text-sm font-medium text-[#B88610]">
+                  {/* Theme 01 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">01 ·</span>
+                      Ecological Belonging &amp; More-Than-Human Kinship
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring our place within the web of life and what
+                      changes when we encounter other beings as kin rather
+                      than resources.
+                    </p>
+                  </div>
+
+                  {/* Theme 02 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">02 ·</span>
+                      Territory, Ancestry &amp; Memory
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how land, ancestry, and collective memory
+                      shape identity, belonging, and ways of life.
+                    </p>
+                  </div>
+
+                  {/* Theme 03 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">03 ·</span>
+                      Indigenous &amp; Quilombola Ways of Knowing
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Encountering diverse cosmologies, philosophies, and
+                      practices that offer different ways of understanding
+                      and relating to life.
+                    </p>
+                  </div>
+
+                  {/* Theme 04 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">04 ·</span>
+                      Land, Dispossession &amp; Autonomy
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Investigating struggles over land and territory,
+                      and how communities sustain their ways of life in
+                      the face of dispossession.
+                    </p>
+                  </div>
+
+                  {/* Theme 05 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">05 ·</span>
+                      Agroecology &amp; Regeneration
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring practices of care, cultivation, and
+                      regeneration that nurture reciprocal relationships
+                      between human communities and the Earth.
+                    </p>
+                  </div>
+
+                  {/* Theme 06 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">06 ·</span>
+                      Colonialism, Decolonization &amp; Countercolonialism
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how colonial logics shape our relationships
+                      with land, knowledge, and all aspects of life itself.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Resources */}
+              <div className="border-t border-border pt-5">
+
+                <p className="text-sm font-medium text-[#B88610]">
                   Explore some of the communities, teachings, and resources
                   informing this stream →
                 </p>
@@ -2618,28 +2887,37 @@ export default function FellowshipPage() {
               Remembering How to Respond to This Moment
             </p>
 
+            {/* Guiding Questions */}
             <p className="mt-3 font-serif text-sm italic leading-relaxed text-muted-foreground md:text-base">
               What does this moment ask of us—together? What is uniquely ours
               to offer? What is our responsibility at this time? How have
-              people in history dealt with moments of collapse, and what are
-              people doing now? How do movements emerge, grow, and reshape
-              society?
+              people responded to moments of historical rupture? How do
+              movements emerge, grow, and reshape society?
             </p>
 
+            {/* Introduction */}
             <div className="mt-4 border-t border-[#D9A01B]/40 pt-3">
 
               <p className="text-sm leading-relaxed text-muted-foreground md:text-[15px]">
                 This stream brings us into direct contact with people,
-                communities, movements and initiatives at the living edge of
-                cultural and societal renewal—those experimenting with how to
-                organize their lives and work in response to the metacrisis.
+                communities, movements, and initiatives at the living edge
+                of cultural and societal renewal—those experimenting with
+                how to organize their lives and work in response to the
+                metacrisis. We encounter people and communities responding
+                to historical rupture through organizing, peacebuilding,
+                cultural renewal, and institution-building. Their experiences
+                invite us to discern where our own gifts, responsibilities,
+                and commitments might belong.
               </p>
 
             </div>
 
           </div>
 
-          {/* Learn More */}
+          {/* ===================================================== */}
+          {/* LEARN MORE */}
+          {/* ===================================================== */}
+
           <details className="group mt-auto pt-3">
 
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-t border-[#D9A01B]/25 pt-3 text-sm font-medium text-[#B88610] [&::-webkit-details-marker]:hidden">
@@ -2654,11 +2932,12 @@ export default function FellowshipPage() {
 
             <div className="space-y-5 pt-5 text-sm leading-relaxed text-muted-foreground">
 
+              {/* Expanded Introduction */}
               <p>
-                Having explored what is sacred, deepened our relationship with
-                ourselves and one another, investigated the systems shaping our
-                world, and remembered our belonging within the living Earth, we
-                ask:
+                Having explored what is sacred, deepened our relationship
+                with ourselves and one another, investigated the systems
+                shaping our world, and remembered our belonging within
+                the living Earth, we ask:
               </p>
 
               <p className="font-semibold text-foreground">
@@ -2666,45 +2945,122 @@ export default function FellowshipPage() {
               </p>
 
               <p>
-                We will explore movement-building, community organizing,
-                institution-building, peacebuilding, ethical uses of power, and
-                the many ways people have responded to moments of profound
-                historical rupture. Their lives and stories become invitations
-                to discern more deeply where our own gifts, responsibilities,
-                and commitments might belong.
-              </p>
-
-              <p>
-                This stream also asks us to move beyond the mythology of the
-                solitary hero, leader, or changemaker. We explore what it means
-                to act collectively as one body—to cultivate the trust,
-                coherence, relational capacity, and coordination required to
-                respond to this moment in ways that no individual could
-                possibly hold alone.
-              </p>
-
-              <p>
                 This is where wisdom, power, and love learn to walk together
-                towards building the life-enhancing futures we most long for.
+                toward the futures we long to bring into being.
               </p>
 
-              <p>
-                In this stream, we draw inspiration from social movements,
-                organizers, peacebuilders, institution-builders, cultural
-                leaders, and communities that have been attempting to respond
-                to moments of civilizational rupture with devotion, courage and
-                imagination.
-              </p>
+              {/* ================================================= */}
+              {/* THEMES */}
+              {/* ================================================= */}
 
               <div className="border-t border-border pt-5">
 
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground/60">
-                  People we are learning with / voices informing this stream
-                </p>
+                <h4
+                  className="text-base font-semibold leading-snug text-foreground"
+                  style={{
+                    fontFamily:
+                      '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+                  }}
+                >
+                  Some of the themes we will explore
+                </h4>
 
-                <p className="mt-3 font-serif leading-relaxed text-foreground">
-                  John Paul Lederach · Rachel Donald · Lourenço Bustani ·
-                  Cristiane Figueiras · Bruno Torturra · Thiago Ávila
+                <div className="mt-5 space-y-5">
+
+                  {/* Theme 01 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">01 ·</span>
+                      Historical Movements &amp; Social Transformation
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how people and movements have responded
+                      to historical crises, challenged existing systems,
+                      and contributed to societal change.
+                    </p>
+                  </div>
+
+                  {/* Theme 02 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">02 ·</span>
+                      Community Organizing &amp; Movement-Building
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Understanding how communities mobilize, build
+                      collective power, sustain commitment, and organize
+                      for lasting change.
+                    </p>
+                  </div>
+
+                  {/* Theme 03 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">03 ·</span>
+                      Power, Leadership &amp; Responsibility
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring the ethical exercise of power, leadership
+                      as service to all life, and the responsibilities
+                      of living at a time of collapse.
+                    </p>
+                  </div>
+
+                  {/* Theme 04 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">04 ·</span>
+                      Post-Capitalist Philanthropy &amp; Resource Stewardship
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how money, philanthropy, and other forms
+                      of wealth can be mobilized and stewarded in service
+                      of life-affirming futures.
+                    </p>
+                  </div>
+
+                  {/* Theme 05 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">05 ·</span>
+                      Cultural Renewal &amp; Institution-Building
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Exploring how new narratives, practices, communities,
+                      and institutions have been embodying life-affirming
+                      alternatives.
+                    </p>
+                  </div>
+
+                  {/* Theme 06 */}
+                  <div>
+                    <p className="font-semibold text-foreground">
+                      <span className="mr-2 text-[#B88610]">06 ·</span>
+                      Vocation, Commitment &amp; Sacred Responsibility
+                    </p>
+
+                    <p className="mt-1 leading-relaxed">
+                      Discerning how we are called to serve life at this
+                      moment, and what it would take to orient our lives
+                      more fully toward that calling.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Resources */}
+              <div className="border-t border-border pt-5">
+
+                <p className="text-sm font-medium text-[#B88610]">
+                  Explore some of the movements, practices, and resources
+                  informing this stream →
                 </p>
 
               </div>
@@ -2715,7 +3071,7 @@ export default function FellowshipPage() {
 
         </article>
 
-        {/* Image */}
+        {/* Fixed-height image */}
         <div className="relative h-[280px] min-w-0 overflow-hidden shadow-[0_5px_22px_rgba(15,23,42,0.09)] sm:h-[360px] md:sticky md:top-24 md:h-[486px] md:self-start">
 
           <img
