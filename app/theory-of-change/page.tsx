@@ -642,7 +642,7 @@ export default function TheoryOfChangePage() {
         {[
           { 
             title: 'Agency Loss & The Knowing-Becoming-Doing Gap', 
-            desc: 'The increasing sense that our voice, our action, does not matter in terms of where we are going and our collective decision-making. The gap between what we know and what we\'re able to do.',
+            desc: 'The sense that our voice, our action, does not matter in terms of where we are going and our collective decision-making. No one wants climate change. 69% say that they would be willing to sacrifice part of their personal income to combat it. Yet, this public intention does not translate into capacity for collective action.',
             references: [
               { segments: [{ text: 'Open Society Foundations', url: '#' }], logo: '/logos/opensociety.png' },
               { segments: [{ text: 'Institute for Local Self-Reliance', url: '#' }], logo: '/logos/ilsr.png' }
