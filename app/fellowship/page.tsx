@@ -3528,14 +3528,12 @@ export default function FellowshipPage() {
 {/* ========================================================= */}
 
 {/*
-  Updated layout:
-  - The image sits to the right of The Sacred.
-  - Approximately 20% of its width overlaps the Sacred card.
-  - Its right edge stops 24px from the viewport edge.
-  - It extends 56px above and 32px below the Sacred card.
-  - The image uses a cream background and multiply blend.
-  - The four cards retain their original dimensions and interactions.
-  - Decorative image appears on desktop only.
+  Updated interaction:
+  - The four cards remain equal-height and visually clean.
+  - Capacities are hidden by default.
+  - Hovering over a card reveals a soft overlay with the capacities.
+  - Keyboard focus / tapping can also reveal the capacities.
+  - The overlay does not change the height of the card or shift the layout.
 */}
 
 <div className="mt-10 grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
@@ -3815,165 +3813,112 @@ export default function FellowshipPage() {
   </article>
 
   {/* ===================================================== */}
-  {/* THE SACRED — WITH RIGHT-SIDE IMAGE */}
+  {/* THE SACRED */}
   {/* ===================================================== */}
 
-  <div className="relative isolate min-w-0">
+  <article
+    tabIndex={0}
+    className="group relative flex min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7"
+  >
 
-    {/* =================================================== */}
-    {/* DECORATIVE IMAGE */}
-    {/* =================================================== */}
-
-    {/*
-      This image is positioned relative to the Sacred card.
-
-      The section's parent uses max-w-4xl and lg:px-8:
-      - Inner grid width at desktop: 832px.
-      - Image right edge: 24px from the viewport edge.
-      - Image width gives approximately 20% overlap with the card.
-
-      At smaller screen widths, the image is hidden to avoid
-      horizontal overflow and preserve card readability.
-    */}
-
-    <div
-      aria-hidden="true"
-      className="
-        pointer-events-none
-        absolute
-        -bottom-8
-        -top-14
-        z-0
-        hidden
-        overflow-hidden
-        bg-[#FFFDF6]
-        lg:block
-      "
+    {/* Box Title */}
+    <span
+      className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
       style={{
-        right: "calc(440px - 50vw)",
-        width: "calc(62.5vw - 550px)",
+        fontFamily: '"Helvetica Neue", Arial, sans-serif',
+        color: "#A65325",
       }}
     >
-      <img
-        src="https://i.postimg.cc/rp0YpytT/cosmos-1393956137.jpg"
-        alt=""
-        loading="lazy"
-        className="h-full w-full object-contain object-center mix-blend-multiply"
-      />
-    </div>
+      The Sacred
+    </span>
 
-    {/* =================================================== */}
-    {/* SACRED CARD — ORIGINAL CONTENT AND DIMENSIONS */}
-    {/* =================================================== */}
-
-    <article
-      tabIndex={0}
-      className="group relative z-10 flex h-full min-w-0 flex-col overflow-hidden bg-white p-5 shadow-[0_3px_16px_rgba(15,23,42,0.075)] outline-none md:p-7 lg:bg-white/95"
+    {/* Transformation */}
+    <h3
+      className="mt-3 text-lg font-medium leading-snug text-foreground"
+      style={{
+        fontFamily:
+          '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+      }}
     >
-
-      {/* Box Title */}
+      From Disenchantment{" "}
       <span
-        className="text-sm font-bold uppercase tracking-[0.14em] md:text-base"
+        className="mx-2"
         style={{
-          fontFamily: '"Helvetica Neue", Arial, sans-serif',
-          color: "#A65325",
+          color: "#B96A32",
+          fontFamily: "inherit",
+          fontSize: "inherit",
+          fontWeight: 700,
+          lineHeight: "inherit",
+          opacity: 1,
         }}
       >
-        The Sacred
-      </span>
+        →
+      </span>{" "}
+      Towards Reverence
+    </h3>
 
-      {/* Transformation */}
-      <h3
-        className="mt-3 text-lg font-medium leading-snug text-foreground"
-        style={{
-          fontFamily:
-            '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-        }}
-      >
-        From Disenchantment{" "}
-        <span
-          className="mx-2"
+    {/* Description */}
+    <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+      Recovering our sense of belonging within a mysterious cosmos, experiencing
+      life as intrinsically valuable, meaningful and sacred, while recognizing
+      ourselves as unique expressions of that same mystery. And allowing our
+      relationship to the sacred to expand love, devotion, and responsibility
+      toward the whole.
+    </p>
+
+    {/* Hover Cue */}
+    <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
+      Explore capacities →
+    </p>
+
+    {/* Capacities Hover Overlay */}
+    <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
+
+      <div>
+        <p
+          className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
           style={{
-            color: "#B96A32",
-            fontFamily: "inherit",
-            fontSize: "inherit",
-            fontWeight: 700,
-            lineHeight: "inherit",
-            opacity: 1,
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
           }}
         >
-          →
-        </span>{" "}
-        Towards Reverence
-      </h3>
+          The Sacred
+        </p>
 
-      {/* Description */}
-      <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-        Recovering our sense of belonging within a mysterious cosmos, experiencing
-        life as intrinsically valuable, meaningful and sacred, while recognizing
-        ourselves as unique expressions of that same mystery. And allowing our
-        relationship to the sacred to expand love, devotion, and responsibility
-        toward the whole.
-      </p>
+        <p
+          className="mt-4 text-lg font-semibold leading-snug text-foreground"
+          style={{
+            fontFamily:
+              '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+          }}
+        >
+          Capacities we cultivate
+        </p>
 
-      {/* Hover Cue */}
-      <p className="mt-auto pt-5 text-xs font-medium uppercase tracking-wide text-[#A65325]/70">
-        Explore capacities →
-      </p>
-
-      {/* Capacities Hover Overlay */}
-      <div className="pointer-events-none absolute inset-0 flex items-center bg-[#FFFDF6]/95 p-6 opacity-0 backdrop-blur-[2px] transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100 md:p-8">
-
-        <div>
-          <p
-            className="text-sm font-bold uppercase tracking-[0.14em] text-[#A65325]"
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-            }}
-          >
-            The Sacred
-          </p>
-
-          <p
-            className="mt-4 text-lg font-semibold leading-snug text-foreground"
-            style={{
-              fontFamily:
-                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
-            }}
-          >
-            Capacities we cultivate
-          </p>
-
-          <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
-            Contemplative Depth · Value Perception · Meaning-making · Ethical
-            Discernment · Devotion · Truthfulness · Beauty
-          </p>
-        </div>
-
+        <p className="mt-4 text-sm leading-[1.8] text-muted-foreground md:text-base">
+          Contemplative Depth · Value Perception · Meaning-making · Ethical
+          Discernment · Devotion · Truthfulness · Beauty
+        </p>
       </div>
 
-    </article>
+    </div>
+
+  </article>
+
+</div>
+
+    {/* ========================================================= */}
+    {/* CLOSING */}
+    {/* ========================================================= */}
+
+    <div className="mt-10 space-y-6 text-muted-foreground">
+
+      <p className="leading-relaxed">
+        These shifts point to the deeper horizon of our journey toward the types of relationships, capacities and maturation we believe this moment is asking us to deepen if we want to help steward civilization towards life-enhancing futures. 
+      </p>
+
+    </div>
 
   </div>
-
-</div>
-
-{/* ========================================================= */}
-{/* CLOSING */}
-{/* ========================================================= */}
-
-<div className="mt-10 space-y-6 text-muted-foreground">
-
-  <p className="leading-relaxed">
-    These shifts point to the deeper horizon of our journey toward the types
-    of relationships, capacities and maturation we believe this moment is
-    asking us to deepen if we want to help steward civilization towards
-    life-enhancing futures.
-  </p>
-
-</div>
-
-</div>
 </section>
 
 {/* ========================================================= */}
