@@ -879,8 +879,6 @@ export default function FellowshipPage() {
 
       </div>
 
-    </div>
-
       <div className="fellowship-statement paper-sample paper-variation-3 relative isolate overflow-hidden border-y border-[#D9A01B]/20 paper-panel bg-[#E7E3D8]">
 
         {/* ===================================================== */}
@@ -1002,8 +1000,6 @@ export default function FellowshipPage() {
         </div>
 
       </div>
-
-    </div>
 
   </div>
 
@@ -6264,7 +6260,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* ===================================================== */}
-        {/* STAGE 02 — INDIVIDUAL CONVERSATIONS */}
+        {/* STAGE 02 �� INDIVIDUAL CONVERSATIONS */}
         {/* ===================================================== */}
 
         <div className="relative pb-4 pl-14 md:pb-5 md:pl-20">
