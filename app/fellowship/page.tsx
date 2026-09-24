@@ -225,28 +225,47 @@ export default function FellowshipPage() {
 
     <main className="fellowship-page min-h-screen bg-[#FFFDF6] pt-16">
       <style>{`
-        /* Surface variations preserve the site's yellow, blue, cyan and olive. */
-        .fellowship-page .ecology-marker > div > div {
-          grid-template-columns: 1fr;
-          gap: 0.875rem;
+        /* Variation 1 — opaque writing paper; brand colors remain in the ink. */
+        .fellowship-page .paper-panel {
+          background-color: #E7E3D8;
+          border-color: #CBC5B7;
+          border-radius: 0;
+          box-shadow: none;
         }
-        .fellowship-page .ecology-marker .flex {
-          justify-content: flex-start;
-          gap: 0.5rem;
+        .fellowship-page .paper-variation-2 {
+          background-color: #DFE3DF;
+          border-color: #BDC6C1;
         }
+        .fellowship-page .paper-variation-3 {
+          background-color: #E8E1CF;
+          border-color: #C9BFA8;
+        }
+        .fellowship-page .paper-sample + .paper-sample { margin-top: 1.5rem; }
+        .fellowship-page .paper-sample-label {
+          margin: 0 0 1.25rem;
+          color: #626052;
+          font: 400 0.75rem/1.5 Georgia, "Times New Roman", serif;
+          letter-spacing: 0.04em;
+        }
+        .fellowship-page .fellowship-statement p:not(.paper-sample-label) {
+          font-family: Georgia, "Times New Roman", serif !important;
+          font-weight: 400;
+          line-height: 1.85;
+        }
+
         .fellowship-page .ecology-marker .flex > span {
           border: 1px solid currentColor;
-          border-color: color-mix(in srgb, currentColor 22%, transparent);
-          background: rgba(255, 253, 246, 0.65);
+          border-color: #C8C3B5;
+          background: #EDE9DF;
           border-radius: 2px;
-          padding: 0.45rem 0.7rem;
-          font-size: 0.6875rem;
+          padding: 0.35rem 0.5rem;
+          font-size: 0.75rem;
           line-height: 1.5;
           letter-spacing: 0.055em;
         }
-        .fellowship-page .fellowship-statement > svg { opacity: 0.16; }
+        .fellowship-page .fellowship-statement > svg { opacity: 0.09; }
         .fellowship-page .gift-panel summary { transition: background-color 160ms ease; }
-        .fellowship-page .gift-panel summary:hover { background-color: rgba(217, 160, 27, 0.055); }
+        .fellowship-page .gift-panel summary:hover { background-color: #DDD8CB; }
         .fellowship-page .gift-panel[open] summary { margin-bottom: 0.5rem; }
         .fellowship-page :is(a, summary, [tabindex]):focus-visible {
           outline: 2px solid #155e75;
@@ -614,7 +633,7 @@ export default function FellowshipPage() {
 
     <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2">
 
-      <div className="fellowship-statement relative isolate overflow-hidden border-y border-[#D9A01B]/20 bg-[#F7F1E2]">
+      <div className="fellowship-statement paper-sample paper-variation-1 relative isolate overflow-hidden border-y border-[#D9A01B]/20 paper-panel bg-[#E7E3D8]">
 
         {/* ===================================================== */}
         {/* CENTRAL HORIZONTAL YELLOW LINE — APPROX. 4 CM */}
@@ -701,6 +720,255 @@ export default function FellowshipPage() {
         {/* ===================================================== */}
 
         <div className="relative z-10 mx-auto max-w-4xl px-8 py-9 text-center md:px-12 md:py-11">
+          <p className="paper-sample-label">Variation 1 — Writing paper · applied throughout</p>
+
+          <p
+            className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            At its heart, the Fellowship is an attempt to create the kinds
+            of educational and communal spaces this moment demands:{" "}
+            <span
+              style={{
+                fontFamily: "inherit",
+                fontSize: "inherit",
+                fontWeight: "inherit",
+                fontStyle: "inherit",
+                lineHeight: "inherit",
+                letterSpacing: "inherit",
+                WebkitTextStroke: "0.3px currentColor",
+              }}
+            >
+              sanctuaries of transformation
+            </span>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which what we
+            come to know begins to reshape how we live, what we value, how
+            we relate, what we take responsibility for, and what we
+            ultimately offer our lives to.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      <div className="fellowship-statement paper-sample paper-variation-2 relative isolate overflow-hidden border-y border-[#D9A01B]/20 paper-panel bg-[#E7E3D8]">
+
+        {/* ===================================================== */}
+        {/* CENTRAL HORIZONTAL YELLOW LINE — APPROX. 4 CM */}
+        {/* ===================================================== */}
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 h-px w-24 -translate-x-1/2 bg-[#D9A01B]"
+        />
+
+        {/* ===================================================== */}
+        {/* TOP RIGHT — LARGE, DELICATE HALF-MOON */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 220 220"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-5 -top-12 z-0 h-36 w-36 text-[#E8BC2F] opacity-35 md:-right-8 md:-top-16 md:h-56 md:w-56 md:opacity-45"
+        >
+
+          {/* Main half-circle */}
+          <path
+            d="M 150 5 A 105 105 0 0 0 150 215"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Smaller concentric arc */}
+          <path
+            d="M 150 32 A 78 78 0 0 0 150 188"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+          {/* Delicate innermost crescent */}
+          <path
+            d="M 150 61 A 49 49 0 0 0 150 159"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            opacity="0.45"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* BOTTOM LEFT — SMALLER ASYMMETRICAL CRESCENT */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 180 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-12 -left-8 z-0 h-28 w-28 -rotate-[20deg] text-[#E8BC2F] opacity-40 md:-bottom-14 md:-left-10 md:h-44 md:w-44 md:opacity-50"
+        >
+
+          {/* Main half-moon */}
+          <path
+            d="M 40 5 A 85 85 0 0 1 40 175"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Inner crescent */}
+          <path
+            d="M 40 28 A 62 62 0 0 1 40 152"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* CENTERED MANIFESTO TEXT */}
+        {/* ===================================================== */}
+
+        <div className="relative z-10 mx-auto max-w-4xl px-8 py-9 text-center md:px-12 md:py-11">
+          <p className="paper-sample-label">Variation 2 — Faded blue-grey stationery</p>
+
+          <p
+            className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
+            style={{
+              fontFamily:
+                '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
+            }}
+          >
+            At its heart, the Fellowship is an attempt to create the kinds
+            of educational and communal spaces this moment demands:{" "}
+            <span
+              style={{
+                fontFamily: "inherit",
+                fontSize: "inherit",
+                fontWeight: "inherit",
+                fontStyle: "inherit",
+                lineHeight: "inherit",
+                letterSpacing: "inherit",
+                WebkitTextStroke: "0.3px currentColor",
+              }}
+            >
+              sanctuaries of transformation
+            </span>{" "}
+            where we can live inside the questions that matter most for this
+            time, and undergo the kind of shape-shift through which what we
+            come to know begins to reshape how we live, what we value, how
+            we relate, what we take responsibility for, and what we
+            ultimately offer our lives to.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      <div className="fellowship-statement paper-sample paper-variation-3 relative isolate overflow-hidden border-y border-[#D9A01B]/20 paper-panel bg-[#E7E3D8]">
+
+        {/* ===================================================== */}
+        {/* CENTRAL HORIZONTAL YELLOW LINE — APPROX. 4 CM */}
+        {/* ===================================================== */}
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 h-px w-24 -translate-x-1/2 bg-[#D9A01B]"
+        />
+
+        {/* ===================================================== */}
+        {/* TOP RIGHT — LARGE, DELICATE HALF-MOON */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 220 220"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-5 -top-12 z-0 h-36 w-36 text-[#E8BC2F] opacity-35 md:-right-8 md:-top-16 md:h-56 md:w-56 md:opacity-45"
+        >
+
+          {/* Main half-circle */}
+          <path
+            d="M 150 5 A 105 105 0 0 0 150 215"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Smaller concentric arc */}
+          <path
+            d="M 150 32 A 78 78 0 0 0 150 188"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+          {/* Delicate innermost crescent */}
+          <path
+            d="M 150 61 A 49 49 0 0 0 150 159"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            opacity="0.45"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* BOTTOM LEFT — SMALLER ASYMMETRICAL CRESCENT */}
+        {/* ===================================================== */}
+
+        <svg
+          viewBox="0 0 180 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-12 -left-8 z-0 h-28 w-28 -rotate-[20deg] text-[#E8BC2F] opacity-40 md:-bottom-14 md:-left-10 md:h-44 md:w-44 md:opacity-50"
+        >
+
+          {/* Main half-moon */}
+          <path
+            d="M 40 5 A 85 85 0 0 1 40 175"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+
+          {/* Inner crescent */}
+          <path
+            d="M 40 28 A 62 62 0 0 1 40 152"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            opacity="0.7"
+          />
+
+        </svg>
+
+        {/* ===================================================== */}
+        {/* CENTERED MANIFESTO TEXT */}
+        {/* ===================================================== */}
+
+        <div className="relative z-10 mx-auto max-w-4xl px-8 py-9 text-center md:px-12 md:py-11">
+          <p className="paper-sample-label">Variation 3 — Aged cream letter</p>
 
           <p
             className="mx-auto max-w-3xl text-base font-medium leading-relaxed text-foreground md:text-lg"
@@ -976,7 +1244,7 @@ export default function FellowshipPage() {
 
       {/* Sticky Section Marker */}
       <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
-        <div className="rounded-sm border border-[#D9A01B]/20 bg-[#FAF4E5] px-4 py-4 md:px-5">
+        <div className="rounded-sm border border-[#D9A01B]/20 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
@@ -1436,7 +1704,7 @@ export default function FellowshipPage() {
 
       {/* Sticky Section Marker */}
       <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
-        <div className="rounded-sm border border-crimson/15 bg-[#F8F0EC] px-4 py-4 md:px-5">
+        <div className="rounded-sm border border-crimson/15 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-crimson">
@@ -1649,7 +1917,7 @@ export default function FellowshipPage() {
 
       {/* Sticky Section Marker */}
       <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
-        <div className="rounded-sm border border-cyan-800/15 bg-[#EEF4F4] px-4 py-4 md:px-5">
+        <div className="rounded-sm border border-cyan-800/15 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-cyan-800">
@@ -1828,7 +2096,7 @@ export default function FellowshipPage() {
 
       {/* Sticky Section Marker */}
       <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
-        <div className="rounded-sm border border-olive/25 bg-[#F0F2E9] px-4 py-4 md:px-5">
+        <div className="rounded-sm border border-olive/25 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-olive">
@@ -2049,7 +2317,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col border border-[#D9A01B]/15 bg-[#FFFDF6] p-6 md:min-h-[486px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col paper-panel border border-[#D9A01B]/15 bg-[#E7E3D8] p-6 md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2281,7 +2549,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col border border-[#D9A01B]/15 bg-[#FFFDF6] p-6 md:min-h-[486px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col paper-panel border border-[#D9A01B]/15 bg-[#E7E3D8] p-6 md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2483,7 +2751,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col border border-[#D9A01B]/15 bg-[#FFFDF6] p-6 md:min-h-[486px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col paper-panel border border-[#D9A01B]/15 bg-[#E7E3D8] p-6 md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2714,7 +2982,7 @@ export default function FellowshipPage() {
         </div>
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col border border-[#D9A01B]/15 bg-[#FFFDF6] p-6 md:min-h-[486px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col paper-panel border border-[#D9A01B]/15 bg-[#E7E3D8] p-6 md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -2920,7 +3188,7 @@ export default function FellowshipPage() {
       <div className="grid items-start gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
 
         {/* Stream Card */}
-        <article className="flex min-w-0 flex-col border border-[#D9A01B]/15 bg-[#FFFDF6] p-6 md:min-h-[486px] md:px-7 md:py-5">
+        <article className="flex min-w-0 flex-col paper-panel border border-[#D9A01B]/15 bg-[#E7E3D8] p-6 md:min-h-[486px] md:px-7 md:py-5">
 
           <div>
 
@@ -3263,7 +3531,7 @@ export default function FellowshipPage() {
       {/* 01 — ONTOLOGICAL */}
       {/* ======================================================= */}
 
-      <article className="pedagogy-movement rounded-sm border border-[#D9A01B]/20 bg-[#FAF4E5] p-6 md:p-8">
+      <article className="pedagogy-movement rounded-sm border border-[#D9A01B]/20 paper-panel bg-[#E7E3D8] p-6 md:p-8">
 
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
@@ -3313,7 +3581,7 @@ export default function FellowshipPage() {
       {/* 02 — RELATIONAL */}
       {/* ======================================================= */}
 
-      <article className="pedagogy-movement rounded-sm border border-crimson/20 bg-[#F8F0EC] p-6 md:p-8">
+      <article className="pedagogy-movement rounded-sm border border-crimson/20 paper-panel bg-[#E7E3D8] p-6 md:p-8">
 
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
@@ -3361,7 +3629,7 @@ export default function FellowshipPage() {
       {/* 03 — COLLECTIVE */}
       {/* ======================================================= */}
 
-      <article className="pedagogy-movement rounded-sm border border-cyan-800/20 bg-[#EEF4F4] p-6 md:p-8">
+      <article className="pedagogy-movement rounded-sm border border-cyan-800/20 paper-panel bg-[#E7E3D8] p-6 md:p-8">
 
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
@@ -3409,7 +3677,7 @@ export default function FellowshipPage() {
       {/* 04 — TRANSFORMATIONAL */}
       {/* ======================================================= */}
 
-      <article className="pedagogy-movement rounded-sm border border-olive/20 bg-[#F0F2E9] p-6 md:p-8">
+      <article className="pedagogy-movement rounded-sm border border-olive/20 paper-panel bg-[#E7E3D8] p-6 md:p-8">
 
         <div className="md:grid md:grid-cols-[210px_1fr] md:gap-10">
 
@@ -3464,7 +3732,7 @@ export default function FellowshipPage() {
   <div className="grid grid-cols-1 gap-5 md:grid-cols-[3fr_2fr] md:items-stretch">
 
     {/* Text Box — 60% */}
-    <div className="flex h-full flex-col justify-between border border-[#D9A01B]/20 bg-[#F5EEDC] px-6 py-8 md:px-8">
+    <div className="flex h-full flex-col justify-between border border-[#D9A01B]/20 paper-panel bg-[#E7E3D8] px-6 py-8 md:px-8">
       <p className="max-w-prose text-base leading-[1.8] text-foreground md:text-[17px]">
         At the heart of our pedagogy lies an aspiration not simply to understand
         interdependence, sacredness, love, and the intrinsic value of life, but
@@ -4978,8 +5246,8 @@ export default function FellowshipPage() {
                   <span
                     className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
                       isOnline
-                        ? "border-[#D9A01B]/25 bg-[#F7F0DD] text-[#796019]"
-                        : "border-olive/30 bg-[#EFF1E7] text-[#586344]"
+                        ? "border-[#D9A01B]/25 bg-[#E7E3D8] text-[#796019]"
+                        : "border-olive/30 bg-[#E7E3D8] text-[#586344]"
                     }`}
                   >
 
@@ -5637,7 +5905,7 @@ export default function FellowshipPage() {
       {/* Fine yellow outline and a softly tinted surface */}
       {/* ========================================================= */}
 
-      <details className="gift-panel group mt-9 rounded-sm border border-[#D9A01B]/25 bg-[#F7F0DF]">
+      <details className="gift-panel group mt-9 rounded-sm border border-[#D9A01B]/25 paper-panel bg-[#E7E3D8]">
 
         <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
 
@@ -5727,7 +5995,7 @@ export default function FellowshipPage() {
         </p>
 
         {/* Square-edged Gift Includes Box */}
-        <div className="gift-includes mt-7 rounded-sm border border-olive/25 bg-[#F0F2E9] p-6 md:p-8">
+        <div className="gift-includes mt-7 rounded-sm border border-olive/25 paper-panel bg-[#E7E3D8] p-6 md:p-8">
 
           <h4
             className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
@@ -5782,7 +6050,7 @@ export default function FellowshipPage() {
       {/* Identical design to the Offered as a Gift dropdown */}
       {/* ========================================================= */}
 
-      <details className="gift-panel group mt-10 rounded-sm border border-[#D9A01B]/25 bg-[#F7F0DF]">
+      <details className="gift-panel group mt-10 rounded-sm border border-[#D9A01B]/25 paper-panel bg-[#E7E3D8]">
 
         <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
 
@@ -6364,7 +6632,7 @@ export default function FellowshipPage() {
       <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
 
         {/* CIVILIZATIONAL */}
-        <article className="rounded-sm border border-crimson/20 bg-[#F8F0EC] p-6 md:p-7">
+        <article className="rounded-sm border border-crimson/20 paper-panel bg-[#E7E3D8] p-6 md:p-7">
           <h3
             className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
             style={{
@@ -6386,7 +6654,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* DEVELOPMENTAL */}
-        <article className="rounded-sm border border-[#D9A01B]/20 bg-[#FAF4E5] p-6 md:p-7">
+        <article className="rounded-sm border border-[#D9A01B]/20 paper-panel bg-[#E7E3D8] p-6 md:p-7">
           <h3
             className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
             style={{
@@ -6410,7 +6678,7 @@ export default function FellowshipPage() {
         </article>
 
         {/* GENERATIONAL */}
-        <article className="rounded-sm border border-cyan-800/20 bg-[#EEF4F4] p-6 md:p-7">
+        <article className="rounded-sm border border-cyan-800/20 paper-panel bg-[#E7E3D8] p-6 md:p-7">
           <h3
             className="text-xl font-semibold leading-tight text-foreground md:text-2xl"
             style={{
@@ -6485,7 +6753,7 @@ export default function FellowshipPage() {
 {/* CLOSING STATEMENT — FULL-WIDTH MANDALA BANNER */}
 {/* ========================================================= */}
 
-<div className="fellowship-statement relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-cyan-800/15 bg-[#EDF3F2] py-10 md:py-12">
+<div className="fellowship-statement relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden border-y border-cyan-800/15 paper-panel bg-[#E7E3D8] py-10 md:py-12">
 
   {/* ======================================================= */}
   {/* MANDALA — UPPER LEFT */}
@@ -7918,7 +8186,7 @@ export default function FellowshipPage() {
 
 <section
   id="apply"
-  className="fellowship-closing scroll-mt-24 border-y border-olive/25 bg-[#E9ECDF] py-20 lg:py-24"
+  className="fellowship-closing scroll-mt-24 border-y border-olive/25 paper-panel bg-[#E7E3D8] py-20 lg:py-24"
 >
   <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
 
