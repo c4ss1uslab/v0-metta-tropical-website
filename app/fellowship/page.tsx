@@ -924,8 +924,8 @@ export default function FellowshipPage() {
     <div className="mt-16">
 
       {/* Sticky Section Marker */}
-      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-        <div className="border-t border-[#D9A01B] pt-5">
+      <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
+        <div className="rounded-sm border border-[#D9A01B]/20 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-[#B88610]">
@@ -1384,8 +1384,8 @@ export default function FellowshipPage() {
     <div className="mt-20">
 
       {/* Sticky Section Marker */}
-      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-        <div className="border-t border-crimson pt-5">
+      <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
+        <div className="rounded-sm border border-crimson/15 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-crimson">
@@ -1597,8 +1597,8 @@ export default function FellowshipPage() {
     <div className="mt-20">
 
       {/* Sticky Section Marker */}
-      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-        <div className="border-t border-cyan-800 pt-5">
+      <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
+        <div className="rounded-sm border border-cyan-800/15 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-cyan-800">
@@ -1776,8 +1776,8 @@ export default function FellowshipPage() {
     <div className="mt-20">
 
       {/* Sticky Section Marker */}
-      <div className="sticky top-16 z-20 -mx-6 bg-background/95 px-6 pb-4 pt-1 backdrop-blur-sm lg:-mx-8 lg:px-8">
-        <div className="border-t border-olive pt-5">
+      <div className="ecology-marker relative z-20 bg-[#FFFDF6] py-3 md:sticky md:top-16">
+        <div className="rounded-sm border border-olive/25 paper-panel bg-[#E7E3D8] px-4 py-4 md:px-5">
           <div className="grid gap-3 md:grid-cols-[auto_1fr] md:items-center md:gap-10">
 
             <span className="shrink-0 text-sm font-medium uppercase tracking-wide text-olive">
@@ -5585,10 +5585,10 @@ export default function FellowshipPage() {
 
       {/* ========================================================= */}
       {/* WHAT DOES OFFERED AS A GIFT MEAN? */}
-      {/* Square edges, no surrounding border, 13px yellow line */}
+      {/* Fine yellow outline and a softly tinted surface */}
       {/* ========================================================= */}
 
-      <details className="group mt-9 border-l-[13px] border-l-[#D9A01B] bg-background">
+      <details className="gift-panel group mt-9 rounded-sm border border-[#D9A01B]/25 paper-panel bg-[#E7E3D8]">
 
         <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
 
@@ -5733,7 +5733,7 @@ export default function FellowshipPage() {
       {/* Identical design to the Offered as a Gift dropdown */}
       {/* ========================================================= */}
 
-      <details className="group mt-10 border-l-[13px] border-l-[#D9A01B] bg-background">
+      <details className="gift-panel group mt-10 rounded-sm border border-[#D9A01B]/25 paper-panel bg-[#E7E3D8]">
 
         <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 [&::-webkit-details-marker]:hidden">
 
@@ -6083,7 +6083,7 @@ export default function FellowshipPage() {
       <p className="leading-relaxed text-muted-foreground">
 
         <strong className="font-semibold text-foreground">
-          Feeling called to apply to the Fellowship?
+          Feeling called to apply?
         </strong>{" "}
 
         We encourage you to join our Fellowship WhatsApp group and
